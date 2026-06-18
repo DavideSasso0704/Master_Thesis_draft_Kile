@@ -198,6 +198,7 @@
 
 \vspace{1cm}
 
+The upcoming Laser Interferometer Space Antenna (LISA) is expected to detect gravitational waves (GWs) with frequencies lying within $10^{-4}-10^{-1}\,\mathrm{Hz}$ out to redshift $z \approx 20$. This new observational window makes it essential to investigate possible LISA-loud sources, the corresponding emission mechanisms, and the physical properties of their signals. Among all of them, binaries hosting intermediate-mass black holes (IMBHs) are particularly compelling, as GWs produced during the inspiral phase would provide unique insights into this still poorly constrained population of massive black holes (MBHs). Empirical scaling relations indicate that IMBHs reside in the central regions of low-mass and dwarf galaxies. In contrast to their more massive counterparts, these galaxies exhibit a broader diversity of both structural and kinematical properties, resulting in multiple possible pathways toward final coalescence. In this work, the dynamical evolution of BH binaries---with a focus on the coalescence timescale, binary separation, and eccentricity evolution---is reconstructed using both the Sesana (2010) hybrid model and Ketju N-body numerical simulations. The former approach provides a straightforward framework within which to determine binary evolution once the host galaxy properties at the binary influence radius are specified, allowing for efficient sampling of the parameter space. These simulations predict that IMBH binaries embedded in nucleated dwarf galaxies can coalesce within a few Myr, identifying them as potential sources of observable GWs. In light of these results, a suite of Ketju N-body simulations---which model BHs as point particles within algorithmically regularized regions---is performed in order to consistently capture all the relevant hardening processes taking place from the merger of the host galaxies onward: (I) dynamical friction, which is not taken into account by the hybrid model, (II) scattering by unbound stars replenishing the loss cone, and (III) GW emission.
 
 
 \clearpage
@@ -222,7 +223,6 @@
 \addcontentsline{toc}{chapter}{Introduction}
 
 
-PROVA kile,prova2, prova salvataggio.
 
 Massive black holes (MBHs) play a central role in the formation and evolution of galaxies. They are  found at centers of nearby galaxies \parencite{Kormendy_1995}, and their masses are closely linked to the properties of the host galactic bulge as pointed out by \textcite{Magorrian_1998}. MBHs are belived to be common in galaxy centres at all cosmic epochs; a piece of evidence for their existence, from low to high redshift, comes from the transient activity of galactic nuclei (AGN) over the hosts lifetime \parencite{Jahnke_2025}.\\Black holes (BHs) span a wide range of masses $(\sim 10-10^{9}\,M_\odot)$ and various formation models have been proposed depending on the BH final mass. At the two extremes of the BH mass function, we find stellar BHs and supermassive black holes (SMBHs). Stellar evolution theory describes stellar BHs $(\lesssim 100\,M_\odot)$ as the relic of massive stars, lighter then the trashold imposed by the pair-instability supernovae \parencite{Farmer_2019}; the properties of this population have been recently constrained through both the detection of gravitational waves (GWs) from merging binaries \parencite{Abbott_2016} and the development of new microlensing analysis techniques \parencite{bennett_2002}. On the opposite side $(\sim 10^6-10^9\,M_\odot)$, instead, Pulsar timing arrays (PTA) as already probed the upper mass range of SMBHs population \parencite{Taylor_2021} and the most accepted model interpret them as the final stage of a secular accreation onto initially lighter black hole seeds.\\Therefore, while substantial progresses have been achieved in detecting and characterizing both stellar BHS  and SMBHs, the identification and study of intermediate-mass black holes, lying in the mass range $\sim 10^4-10^6\,M_\odot$, considered as possible SMBH seeds candidate \parencite{Devecchi_2009}, still remain considerably more challenging, in particular at high redshift, due to the high spatial resolution required. A simple extrapolation of BH mass-host stellar bulge mass suggests that these elusive, compact objects should reside in the central region of dwarf galaxies (DWs) galaxies, with total
 luminosity below $5 \cdot 10^8\, L_\odot$, as confirmed by \textcite{Reines_2013}.\\Within the framework of galaxy hierarchical growth scenario, the creation of massive black hole binaries (MBHBs) is expected to occur, over cosmic time, as a natural consequence of mergers between galaxies. These systems are among the most powerful emitters of gravitational waves (GWs) in the universe, making them prime targets for detection with current and future GW observatories.\\Although the merger rate of low mass galaxies has not been well determined yet, the interaction and merging of these structures should lead to the formation of IMBH-IMBH binaries. The upcoming Laser Interferometer Space Antenna (LISA), a joint ESA/NASA space mission, promises to demystify IMBHs, being sensitive to GW signals, from $\sim 10^{-4}$ Hz to $\sim 10^{-1}$ Hz, produced at late stage of the merger \parencite{Amaro-Seoane_2017}; their masses, within $10^4-10^7\,M_\odot$, and redshift will be estimated out to $z=20$ with very high precision \parencite{Colpi_2024}.\\Despite dwarf galaxies have been identified at incredibly high redshift \parencite{Kikuchihara_2020}, hence opening to the possibility of reciving GW signals from merging IMBH binaries if this process takes place within the Hubble time, numerical simulations \parencite{Khan_2024} proved that in non-nucleated dwarfs the low stellar density in the central regions results in inefficient hardening and stalling of the binary. However, the vast majority of galaxies with stellar mass $10^8-10^{11}\,M_\odot$ harbor a nuclear star cluster (NSC), an extraordinarily dense and dynamically distinct stellar assembly, in their innermost regions; the existence of a such dense envirnoment inside dwarf galaxies, as reported by e.g. \textcite{Nguyen_2018}, may drastically reduce the coalescence time of the IMBH pair.\\This thesis work is aimed at studying the evolution of the main orbital parameters of the binary, with focus on semimajor axis $a$ and eccentricity $e$, and analyzing how the variation of BHs masses, host galaxy properties and IC of the binary, i.e. $(a_0,e_0)$ impacts , impact its evolution and coalescence time. In this spirit, the study combines a self-consistent hybrid model developed by \textcite{Sesana_2010} with N-body simulations performed using the KETJU code \parencite{Mannerkoski_2023}, which will be described in more detail later.\\The structure of this thesis is outlined as follows.\\In \autoref{chap:chapter1}, we provide a brief overview of the main physical mechanisms responsible for the BH binary shrinking; this includes dynamical friction, stellar scattering processes and GWs emission,which dominates the late stages of the inspiral.\\In \autoref{chap:chapter2}, we introduce the self-consistent hybrid model developed by \textcite{Quinlan_1996} and \textcite{Sesana_2010}; it is thus applied to a sample of galaxies and exploring the parameters space in order to emphasise how different environmental and initial conditions lead to different binary evolution.\\In \autoref{chap:chapter3} we describe the main features of the codes used to generate N-body initial condition and N-body numerical simulations and compare the obtained binary evolutionary tracks with those of the previous chapter.\\Finally, the main results of this work are summarized, and possible future improvements are reported in the concluding chapter.
@@ -582,7 +582,15 @@ Previously it has been pointed out that the majority of the stellar capture invo
 
 
 
-
+Several times beyond $t_{2b}$ the system enters the collisional regime and first order
+corrections to the CBE are needed; the Fokker-Planck equation is an example of this:
+\begin{equation}
+    \frac{Df}{Dt}=C[f]
+\end{equation}
+where simplifications on the collision operator $C[f]$ can be done.\\In this scenario $f$ is
+no longer conserved along the orbit of the potential $\Phi$ and diffusion in the PS occurs,
+both $E$ and $L$ of a single star can change due to collisions, at odds with the CBE regime
+where, for istance $DH/Dt=0$. It is used in the loss cone problem.
 
 
 
@@ -1675,92 +1683,124 @@ Therefore, forming in tha past at $z>0$, they all merge before the present time.
 
 
 
-\chapter{N-body}\label{chap:chapter3}
+\chapter{Generation of Initial Conditions for N-body Stellar Systems}\label{chap:chapter3}
 
-Within $t_{2b}$, usually much shorter than the age of the universe for common galaxies, 
-granularity is unimportant, collisions are negligible and stars can be described as
- particles moving in a smooth potential
-generated by a continous $\rho$. Hence, stars will have a DF satisfying the CBE: 
+
+\section{Dynamical Equilibrium of Stellar Systems}
+Galaxies are multi-component systems in dynamical equilibrium, where different stellar populations, gaseous phases, dust, and dark matter coexist. These environments host an enormous number of stars, typically ranging from ,which makes it impossible to track the orbit of each individual object. Neverthless, by abandoning the idea of characterizing the time evolution of each degree of freedom in the phase-space, a probabilistic description of the stellar population is still possible in terms of the one-particle DF as anticipated in Section 1.1.\\As long as the stellar component is observed within $t_{2b}$, granularity  is unimportant, collisions are negligible and stars can be described as particles moving in a smooth potential
+generated by a continous mass density distribution $\rho$, proxy of stellar distribution. In this regime, when dealing with stars that are all identical to one another, the DF will be unique and will satisfy the Collisionless Boltzmann Equation (CBE). By denoting with $\mathbf{w}$ an arbitrary set of canonical coordinates of PS, this conservation equation descends from differentiating with respect to the time---along the orbits of the potential $\Phi(\mathbf{x},t)$ associated to $\rho(\mathbf{x},t)$---of the normalization condition
+
+\begin{equation}\label{DF normalization}
+ \int_{\mathbb{R}^6}d\mathbf{w}\, f(\mathbf{w})=1.
+\end{equation}
+By extending the Lagrangian derivative notion $D/Dt$ to the coordinates of the phase-space, the CBE reads:
 
 \begin{equation}\label{CBE}
     \frac{Df}{Dt}=\frac{\partial f}{\partial t}+
     \mathbf{\dot{w}}\cdot \frac{\partial f}{\partial \mathbf{w}}=
-    \frac{\partial f}{\partial t}+[f,H]=0
+    \frac{\partial f}{\partial t}+[f,H]=0,
 \end{equation}
+where the square bracket indicates the Poisson bracket, which is defined as
 
-
-
-In cartesian coordinates the Hamiltonian is
+\begin{equation}\label{Poisson bracket}
+[f,H]
+=
+\sum_i
+\left(
+\frac{\partial f}{\partial q_i}
+\frac{\partial H}{\partial p_i}
+-
+\frac{\partial f}{\partial p_i}
+\frac{\partial H}{\partial q_i}
+\right),
+\end{equation}
+and $H$ is the Hamiltonian function of the system.\\The arbitrariness of the canonical coordinates $\mathbf{w}$ enables us to specialize Equation (\ref{CBE}) to the inertial Cartesian coordinates $(\mathbf{x},\mathbf{v})$. With this choice, the Hamiltonian becomes
 \begin{equation}\label{Hamiltonian in cartesian coord.}
-    H(\mathbf{x},\mathbf{v})=\frac{1}{2}v^2+\Phi(\mathbf{x})
+    H(\mathbf{x},\mathbf{v},t)=\frac{1}{2}v^2+\Phi(\mathbf{x},t)
 \end{equation}
-
-and the CBE becomes
-
+and the CBE turns into
 \begin{equation}\label{CBE in cartesian coord.}
-    0=\frac{\partial f}{\partial t}+\mathbf{v}\cdot 
+    \frac{\partial f}{\partial t}+\mathbf{v}\cdot
     \frac{\partial f}{\partial \mathbf{x}}-
     \frac{\partial \Phi}{\partial \mathbf{x}}
-    \cdot \frac{\partial f}{\partial \mathbf{v}}
+    \cdot \frac{\partial f}{\partial \mathbf{v}}=0.
 \end{equation}
-
-Several times beyond $t_{2b}$ the system enters the collisional regime and first order 
-corrections to the CBE are needed; the Fokker-Planck equation is an example of this:
-\begin{equation}
-    \frac{Df}{Dt}=C[f]
+Being interested in studying the equilibrium condition of galaxies and in particular of spherically symmetric models, it is usefull the following definition: a dynamical system is said to be stationary if $\partial f/\partial t=0$. Therefore, collisionless systems that have achieved equilibrium will be provided of a DF obeying to the steady-state CBE
+\begin{equation}\label{Stationary CBE}
+    \frac{Df}{Dt}=
+    \mathbf{\dot{w}}\cdot \frac{\partial f}{\partial \mathbf{w}}=
+    [f,H]=0.
 \end{equation}
-where simplifications on the collision operator $C[f]$ can be done.\\In this scenario $f$ is 
-no longer conserved along the orbit of the potential $\Phi$ and diffusion in the PS occurs, 
-both $E$ and $L$ of a single star can change due to collisions, at odds with the CBE regime 
-where, for istance $DH/Dt=0$. It is used in the loss cone problem.\\In order to exploit the 
-properties of the CBE it is usefull to introduce the velocity moments, which will appear 
-inside the Jeans equations:
-\begin{equation}
-    \overline{v_i}(\mathbf{x},t)\equiv 
-    \frac{1}{\rho(\mathbf{x},t)}\int_\mathcal{R}^3 d^3 \mathbf{v} f v_i
-\end{equation}
-\begin{equation}
-    \sigma_{ij}^2(\mathbf{x},t)\equiv 
-    \frac{1}{\rho(\mathbf{x},t)}\int_\mathcal{R}^3 d^3 \mathbf{v}
-    f (v_i-\overline{v_i})(v_j-\overline{v_j})=\overline{v_iv_j}-
-    \overline{v_i}\,\overline{v_j}
-\end{equation}
-A function $I(\mathbf{x},\mathbf{v})$
-is an integral of motion if and only if
+Noteworthy, for this condition to apply it is sufficient to have a steady-state potential $\Phi(\mathbf{x},\mathbf{v})$.
+Solutions to Equation (\ref{Stationary CBE}) are referred to as integrals of motion; specifically, the function $I(\mathbf{x},\mathbf{v})$ is an integral of motion for the potential $\Phi(\mathbf{x},\mathbf{v})$ if it satisfies
 \begin{equation}\label{Integral of motion def}
     \frac{D}{Dt}[I(\mathbf{x}(t),\mathbf{v}(t))]=0
 \end{equation}
-along any orbit of the potential $\Phi$.
-\\Jeans Theorem: 
-Any steady-state solution of the collisionless Boltzmann equation depends on 
-the phase-space coordinates only through integrals of motion in the given potential, and any 
-function of the integrals yields a steady-state solution of the collisionless Boltzmann 
-equation.\\In a steady-state potential the Hamiltonian is an integral of motion; therefore $f$
-will be any non-negative function of $H$.
-\\Ergodic DFs: they are of the kind $f=f(H)$.
-\\Equilibrium stellar systems have $\overline{v_i}=0$ and isotropic velocity-dispersion tensor
-(being symmetric it can be diagonalized at any point in a proper orthogonal set of axes), i.e 
-$\sigma^2_{ij}=\sigma^2 \delta_{ij}$. Thus every system with an ergodic DF is isotropic.
-\\If the potential $\Phi$ is time-indipendent and spherically symmetric, then $\mathbf{L}$ 
-appears as three isolating integral of motions but DF will depend on them only through 
-$|\mathbf{L}|=L$, i.e. $f=f(H,L)$.Adopting spherical coordinates and splitting 
-$v^2=v_r^2+v_t^2$, it holds 
+along any orbit of the potential and a relevant example is represented by the Hamiltonian itself of the system, provided
 \begin{equation}
-    \overline{v_r}=0
+ [H,H]=0.
 \end{equation}
-\begin{equation}
-    \overline{\mathbf{v_t}}=\mathbf{0}
+The comparison between Equation (\ref{Integral of motion def}) and Equation (\ref{Stationary CBE}) reveals that solving the steady-state CBE is equivalent to being an integral of motion; this leads to the formulation of the Jeans theorem.
+\medskip
+
+\noindent\textbf{Jeans Theorem. --}
+\emph{Any steady-state solution of the collisionless Boltzmann equation depends on
+the phase-space coordinates only through integrals of motion in the given potential, and any function of the integrals yields a steady-state solution of the collisionless Boltzmann
+equation.}
+\medskip
+
+\noindent The remaining quantities to be defined, which correspond to observables that can be inferred from kinematic measurements, are the first- and second-order velocity moments of the distribution function. These are
+
+\begin{equation}\label{mean velocity of DF}
+    \overline{v_i}(\mathbf{x},t)\equiv 
+    \frac{1}{\rho(\mathbf{x},t)}\int_{\mathbb{R}^6} d^3 \mathbf{v}\,f v_i
 \end{equation}
-and in general $\sigma_{ij}$ is diagonal with $\sigma^2_r\ne \sigma^2_\theta=\sigma^2_\phi$.\\Recovering
-the DF from $\rho$ can be done by Eddington's formula, which applies to spherically symmetric,
-globally isotropic stellar systems,
+and
+\begin{equation}\label{velocity-dispersion of DF}
+    \sigma_{ij}^2(\mathbf{x},t)\equiv 
+    \frac{1}{\rho(\mathbf{x},t)}\int_{\mathbb{R}^6} d^3 \mathbf{v}\,
+    f (v_i-\overline{v_i})(v_j-\overline{v_j})=\overline{v_iv_j}-
+    \overline{v_i}\,\overline{v_j},
+\end{equation}
+respectively the mean velocity and the velocity dispersion tensor.\\We are now finally in a position to recall the most peculiar kinematical properties of an important subclass of equilibrium models, namely Ergodic systems. The Jeans Theorem imposes that the DF $f$ of systems at equilibrium will be any non-negative function of $H$; in case $f$ depends on $H$ only, i.e. $f=f(H)$, then systems with this type of DF are said Ergodic.\\Let us focus on first-order moment of the DF. In the inertial Cartesian frame where stars move under the action of a steady-state potential $\Phi(\mathbf{x})$, the Hamiltonian of the system is an even function of $\mathbf{v}$, causing $\overline{v_x}(\mathbf{x})=\overline{v_y}(\mathbf{x})=\overline{v_z}(\mathbf{x})$ to vanish.\\Similarly, it can be demonstrated that the velocity-dispersion tensor is isotropic; thus it holds
+\begin{equation}\label{Ergodic velocity dispersion tensor}
+ \sigma^2_{ij}(\mathbf{x})=\sigma^2(\mathbf{x})\delta_{ij}=\delta_{ij}\frac{4\pi}{3\rho(\mathbf{x})}\int_0^{+\infty}dv\,v^4f\left(\frac{1}{2}v^2+\Phi(\mathbf{x})\right)
+\end{equation}
+Therefore, every system characterized by an ergodic DF is isotropic. In the next Section, the properties of the generated steady-state isotropic stellar distributions will be presented and compared with the theoretical predictions summarized above.\\So far, we have been concerned with the velocity-moments of the distribution function of Ergodic systems; however, the generation of initial conditions (ICs) for N-body, equilibrium models relies on the correct sampling of the DF itself. Recovering it from $\rho$ for globally isotropic stellar systems can be done by means of the Eddington's formula
 \begin{equation}\label{Eddington's formula}
 f(\varepsilon)=\frac{1}{\sqrt{8}\pi^2}\frac{d}{d\varepsilon}
 \int_{\varepsilon_t}^{\varepsilon}
 \frac{d\rho}{d\Psi}\frac{d\Psi}{\sqrt{\varepsilon-\Psi}}
 \end{equation}
 with $\varepsilon=-H$ and $\Psi=-\Phi$ being the relative energy and potential respectively
-and $\varepsilon_t$ the truncation energy of the system.\\Given the density profile, IC for N-body
+and $\varepsilon_t$ the truncation energy of the system.\\Finally, the last tool introduced in this Section is the virial ratio, closely connected with the Virial theorem, which provides a fast diagnostic for determining whether the generated model is in equilibrium or is either evolving toward collapse or expansion. By definition a self-gravitating system, constituted by N particles, with total kinteic energy
+\begin{equation}
+K = \sum_{i=1}^{N} \frac{1}{2} m_i v_i^2
+\end{equation}
+and gravitational potential energy
+\begin{equation}
+U = -\frac{1}{2} \sum_{i=1}^{N} \sum_{j \ne i} \frac{Gm_i m_j}{|\mathbf{x_i}-\mathbf{x_j}|}
+\end{equation}
+is virialized if it holds
+\begin{equation}
+   2K'+U=0 \qquad \forall t
+\end{equation}
+in the barycentric inertial reference system $S_{CM}$. For these systems the virial ratio
+\begin{equation}\label{virial ratio}
+    Q\equiv\frac{2K'}{|U|}
+\end{equation}
+should be close to unity. In presence of a non vanishing velocity of the system center of mass, which flags that the time evolution is studied in a frame $S$ moving with respet to $S_{CM}$, Equation (\ref{virial ratio}) must be adjusted as follows:
+\begin{equation}\label{virial ratio without offset}
+    Q\equiv\frac{2(K-K_{CM})}{|U|}.
+\end{equation}
+
+
+
+\section{OpOpGadget and Galaxy Modeling}
+
+
+
+Given the density profile, IC for N-body
 simulations are generated by OpOpgadget software by sampling uniformly the internal mass profile
 and the potential produced by the smooth profile $\rho$.\\The Sersic profile introduced by 
 \textcite{Prugniel} has (with standard substitution $Z=b\left(\frac{r}{R_e}\right)^{1/n}$)
@@ -1823,6 +1863,13 @@ approximation
 \begin{equation}
     \ln{R_{eff}/a}=\frac{0.6950-\ln{\nu}}{\nu}-0.1789
 \end{equation}
+
+
+
+\section{Analysis of the Generated Initial Conditions}
+
+
+
 
 \begin{figure}
     \centering
@@ -1965,29 +2012,27 @@ Numerically is found $r_{half}=...=... R_{eff}$.
 \end{figure}
 Yet, we get $t_{dyn}=...$, which agrees within $x\%$ the estimate obtained from the Analysis
 tool provided by OpOpgadget, which measures this quantity directely from the generated model.
-\\Waiting for evolution with Ketju.\\Additionaly, the virial ratio $Q$ has been computed as well as it gives a first indication
-of whether the model is virialized, i.e. at equilibrium, or expansion/contraction operate 
-within several dynamical times. In $S_{CM}$, it is defined as
-\begin{equation}\label{virial ratio}
-    Q=\frac{2K}{|U|}
-\end{equation}
-where
-\begin{equation}
-K = \sum_{i=1}^{N} \frac{1}{2} m_i v_i^2
-\end{equation}
-and
-\begin{equation}
-U = -\frac{1}{2} \sum_{i=1}^{N} \sum_{j \ne i} \frac{Gm_i m_j}{|\mathbf{x_i}-\mathbf{x_j}|}
-\end{equation}
-stand for the total kinetic and gravitational potential energies respsectively.
-\\By erasing the offset due the COM kinetic energy contribute, i.e.
-\begin{equation}\label{virial ratio without offset}
-    Q=\frac{2(K-K_{CM})}{|U|}
-\end{equation}
-it is found $Q=x$.
+\\Waiting for evolution with Ketju.
 
 
 
+\section{Ketju Numerical Simulations}
+
+\newpage
+Things done:
+\begin{itemize}
+ \item created double galaxy
+ \item modified BHs position and velocity
+ \item modified their position and velocity according to Nipoti paper $(r_{90})$
+ \item built Hists to check position and velocity distribution
+ \item verified dyn equilibrium
+ \item computed the softening length in several ways
+ \item computed dyn time
+ \item ketju run
+ \item BHs analysis with ketju-utils
+ \item snapshot analysis with OpOpgadget
+ \item method of shrinking spheres to get the density peak position
+\end{itemize}
 
 
 
