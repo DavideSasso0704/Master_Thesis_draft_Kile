@@ -96,7 +96,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxbibnames</bcf:key>
-      <bcf:value>99</bcf:value>
+      <bcf:value>3</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxcitenames</bcf:key>
@@ -104,7 +104,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxsortnames</bcf:key>
-      <bcf:value>99</bcf:value>
+      <bcf:value>3</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxitems</bcf:key>
@@ -331,7 +331,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxbibnames</bcf:key>
-      <bcf:value>99</bcf:value>
+      <bcf:value>3</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxcitenames</bcf:key>
@@ -339,7 +339,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxsortnames</bcf:key>
-      <bcf:value>99</bcf:value>
+      <bcf:value>3</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxitems</bcf:key>
@@ -2419,8 +2419,11 @@
     <bcf:citekey order="55" intorder="1">Khan_2021</bcf:citekey>
     <bcf:citekey order="56" intorder="1">Holley-Bockelmann_2025</bcf:citekey>
     <bcf:citekey order="57" intorder="1">Ono_2023</bcf:citekey>
-    <bcf:citekey order="58" intorder="1">Prugniel</bcf:citekey>
-    <bcf:citekey order="59" intorder="1">Neto_1999</bcf:citekey>
+    <bcf:citekey order="58" intorder="1">Springel_2005</bcf:citekey>
+    <bcf:citekey order="59" intorder="1">Sesana_2010</bcf:citekey>
+    <bcf:citekey order="60" intorder="1">Khan_2021</bcf:citekey>
+    <bcf:citekey order="61" intorder="1">Prugniel</bcf:citekey>
+    <bcf:citekey order="62" intorder="1">Neto_1999</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

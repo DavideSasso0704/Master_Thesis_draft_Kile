@@ -25,12 +25,14 @@
 \contentsline {subsection}{\numberline {2.2.2}Sesana 2010 Results and Comparison}{28}{subsection.2.2.2}%
 \contentsline {section}{\numberline {2.3}NGC 205 IMBH Binary evolution}{36}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}NGC 205 Hybrid Model Evolution}{36}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Cosmic Size Evolution Down to NGC 205}{40}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}Cosmic Size Evolution Down to NGC 205}{41}{subsection.2.3.2}%
 \contentsline {chapter}{\numberline {3}Generation of Initial Conditions for N-body Stellar Systems}{45}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Dynamical Equilibrium of Stellar Systems}{45}{section.3.1}%
 \contentsline {section}{\numberline {3.2}OpOpGadget and Galaxy Modeling}{47}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Analysis of the Generated Initial Conditions}{48}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Ketju Numerical Simulations}{50}{section.3.4}%
-\contentsline {chapter}{\numberline {A}Physics Equation}{53}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Numerical Methods}{54}{appendix.B}%
-\contentsline {section}{\numberline {2.1}Runge-Kutta (4)}{54}{section.B.1}%
+\contentsline {section}{\numberline {3.3}Analysis of the Generated Initial Conditions}{50}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}NCG 205 N-body Initial Conditions}{50}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}NCG 5206 N-body Initial Conditions}{52}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Ketju Numerical Simulations}{52}{section.3.4}%
+\contentsline {chapter}{\numberline {A}Physics Equation}{54}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Numerical Methods}{55}{appendix.B}%
+\contentsline {section}{\numberline {2.1}Runge-Kutta (4)}{55}{section.B.1}%
