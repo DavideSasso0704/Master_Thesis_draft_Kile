@@ -1,39 +1,44 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{Introduction}{3}{chapter*.1}%
-\contentsline {chapter}{\numberline {1}Physical Mechanisms of Binary Hardening}{6}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Galaxy Merger and Violent Relaxation}{7}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Two-Body Relaxation and Dynamical Friction}{10}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Black Hole Binary–Star Three-Body Scattering}{13}{section.1.3}%
-\contentsline {paragraph}{Binary hardening.}{14}{equation.1.3.51}%
-\contentsline {paragraph}{Binary softening.}{14}{equation.1.3.52}%
-\contentsline {section}{\numberline {1.4}Stellar Scattering and Loss Cone Problem}{15}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Bound stars consumption}{16}{subsection.1.4.1}%
-\contentsline {subsubsection}{One-Dimensional Analysis }{16}{subsection.1.4.1}%
-\contentsline {subsubsection}{Two-dimensional Analysis: Loss Cone effects}{16}{equation.1.4.61}%
-\contentsline {subsection}{\numberline {1.4.2}Unbound stars consumption}{17}{subsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.4.3}Loss cone theory role in Hybrid Model}{17}{subsection.1.4.3}%
-\contentsline {section}{\numberline {1.5}Gravitational Radiation from Black Hole Binaries}{18}{section.1.5}%
-\contentsline {subsection}{\numberline {1.5.1}Linearized Gravitational Field Equation}{18}{subsection.1.5.1}%
-\contentsline {subsection}{\numberline {1.5.2}Generation and Propagation of Gravitational Waves}{20}{subsection.1.5.2}%
-\contentsline {subsection}{\numberline {1.5.3}Gravitational Waves from Black Hole Binaries and Back-Reaction}{22}{subsection.1.5.3}%
-\contentsline {chapter}{\numberline {2}A Hybrid Approach to Binary Evolution}{27}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Quinlan Formalism}{27}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Introduction}{27}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Quinlan Scattering Experiments}{27}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Aplication to a galaxy model}{29}{subsection.2.1.3}%
-\contentsline {section}{\numberline {2.2}Sesana Hybrid Model}{31}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Sesana Scattering Experiments}{31}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Sesana 2010 Results and Comparison}{33}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}NGC 205 IMBH Binary evolution}{41}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}NGC 205 Hybrid Model Evolution}{41}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Cosmic Size Evolution Down to NGC 205}{46}{subsection.2.3.2}%
-\contentsline {chapter}{\numberline {3}Generation of Initial Conditions for N-body Stellar Systems}{50}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Dynamical Equilibrium of Stellar Systems}{50}{section.3.1}%
-\contentsline {section}{\numberline {3.2}OpOpGadget and Galaxy Modeling}{52}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Analysis of the Generated Initial Conditions}{55}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}NCG 205 N-body Initial Conditions}{55}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}NCG 5206 N-body Initial Conditions}{57}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Ketju Numerical Simulations}{57}{section.3.4}%
-\contentsline {chapter}{\numberline {A}Physics Equation}{59}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Numerical Methods}{60}{appendix.B}%
-\contentsline {section}{\numberline {2.1}Runge-Kutta (4)}{60}{section.B.1}%
+\contentsline {paragraph}{Pop III.}{4}{chapter*.1}%
+\contentsline {paragraph}{Directe collapse.}{4}{chapter*.1}%
+\contentsline {paragraph}{Gravitational runaway.}{4}{chapter*.1}%
+\contentsline {chapter}{\numberline {1}Physical Mechanisms of Binary Hardening}{7}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Galaxy Merger and Violent Relaxation}{8}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Two-Body Relaxation and Dynamical Friction}{11}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Black Hole Binary–Star Three-Body Scattering}{14}{section.1.3}%
+\contentsline {paragraph}{Binary hardening.}{15}{equation.1.3.51}%
+\contentsline {paragraph}{Binary softening.}{15}{equation.1.3.52}%
+\contentsline {section}{\numberline {1.4}Stellar Scattering and Loss Cone Problem}{16}{section.1.4}%
+\contentsline {paragraph}{Empty Loss Cone.}{17}{equation.1.4.60}%
+\contentsline {paragraph}{Full Loss Cone.}{17}{equation.1.4.60}%
+\contentsline {subsection}{\numberline {1.4.1}Bound stars consumption}{20}{subsection.1.4.1}%
+\contentsline {subsubsection}{One-Dimensional Analysis }{20}{subsection.1.4.1}%
+\contentsline {subsubsection}{Two-dimensional Analysis: Loss Cone effects}{20}{equation.1.4.74}%
+\contentsline {subsection}{\numberline {1.4.2}Unbound stars consumption}{20}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Loss cone theory role in Hybrid Model}{21}{subsection.1.4.3}%
+\contentsline {section}{\numberline {1.5}Gravitational Radiation from Black Hole Binaries}{21}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Linearized Gravitational Field Equation}{21}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Generation and Propagation of Gravitational Waves}{23}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.3}Gravitational Waves from Black Hole Binaries and Back-Reaction}{25}{subsection.1.5.3}%
+\contentsline {chapter}{\numberline {2}A Hybrid Approach to Binary Evolution}{29}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Quinlan Formalism}{29}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Introduction}{29}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Quinlan Scattering Experiments}{29}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Aplication to a galaxy model}{31}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Sesana Hybrid Model}{33}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Sesana Scattering Experiments}{33}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Sesana 2010 Results and Comparison}{35}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}NGC 205 IMBH Binary evolution}{43}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}NGC 205 Hybrid Model Evolution}{43}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Cosmic Size Evolution Down to NGC 205}{48}{subsection.2.3.2}%
+\contentsline {chapter}{\numberline {3}Generation of Initial Conditions for N-body Stellar Systems}{52}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Dynamical Equilibrium of Stellar Systems}{52}{section.3.1}%
+\contentsline {section}{\numberline {3.2}OpOpGadget and Galaxy Modeling}{54}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Analysis of the Generated Initial Conditions}{57}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}NCG 205 N-body Initial Conditions}{57}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}NCG 5206 N-body Initial Conditions}{59}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Ketju Numerical Simulations}{59}{section.3.4}%
+\contentsline {chapter}{\numberline {A}Physics Equation}{61}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Numerical Methods}{62}{appendix.B}%
+\contentsline {section}{\numberline {2.1}Runge-Kutta (4)}{62}{section.B.1}%

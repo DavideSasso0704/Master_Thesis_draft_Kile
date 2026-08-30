@@ -198,7 +198,7 @@
 
 \vspace{1cm}
 \noindent
-The next generation of gravitational-wave (GW) observatories, Laser Interferometer Space Antenna (LISA) and the Einstein Telescope (ET), will jointly probe compact objects with masses ranging from a few to $\sim 10^7\,M_\odot$ over the frequency interval extending from $10^{-4}$ to $10^{4}\,\mathrm{Hz}$. This unprecedented observational window makes it essential to identify promising GW sources, investigate their formation channels, and characterize the physical properties of the emitted signals.\\Among the most compelling candidates are binaries hosting intermediate-mass black holes (IMBHs), whose inspiral GW emission would offer unique insights into this still poorly constrained population of massive black holes (MBHs). Empirical scaling relations suggest that IMBHs preferentially reside in the nuclei of low-mass and dwarf galaxies. Unlike their massive counterparts, these systems display a wide variety of structural and kinematical properties, potentially giving rise to quite different evolutionary pathways toward binary coalescence.\\This thesis investigates the dynamical evolution of IMBH binaries, with particular emphasis on the coalescence timescale and the evolution of the binary separation and eccentricity. To this end, both the Quinlan--Sesana hybrid model and Ketju direct N-body simulations are employed. While the former approach provides an efficient framework for reconstructing the evolution of BH binaries once the stellar background properties and the binary initial conditions are specified, the Ketju module, implemented into GADGET-4, models SMBHs and stars as point particles during close encounters through an algorithmically regularized integrator, thereby accurately capturing the orbital decay driven by stellar scattering with unprecedented spatial resolution from the merger of the host galaxies to the final coalescence.\\The analysis explores different stellar backgrounds, including nucleated dwarf galaxies and observationally motivated high-redshift galaxy models with enhanced stellar densities resulting from cosmic size evolution. The results confirm that IMBH binaries embedded in nucleated dwarf galaxies can merge within a few Myr. More remarkably, they show that even non-nucleated high-redshift galaxies may drive binary coalescence within a Hubble time, identifying these systems as promising sources of detectable gravitational waves. Finally, the reconstructed binary evolution is finally exploited to compute the associated GW signals, providing observational predictions for the LISA and Einstein Telescope era.
+The next generation of gravitational-wave (GW) observatories, Laser Interferometer Space Antenna (LISA) and the Einstein Telescope (ET), will jointly probe compact objects with masses ranging from a few to $\sim 10^7\,M_\odot$ over the frequency interval extending from $10^{-4}$ to $10^{4}\,\mathrm{Hz}$. This unprecedented observational window makes it essential to identify promising GW sources, investigate their formation channels, and characterize the physical properties of the emitted signals. Among the most compelling candidates are binaries hosting intermediate-mass black holes (IMBHs), whose inspiral GW emission would offer unique insights into this still poorly constrained population of massive black holes (MBHs). Empirical scaling relations suggest that IMBHs preferentially reside in the nuclei of low-mass and dwarf galaxies. Unlike their massive counterparts, these systems display a wide variety of structural and kinematical properties, potentially giving rise to quite different evolutionary pathways toward binary coalescence.\\This thesis investigates the dynamical evolution of IMBH binaries embedded in stellar environments, with particular emphasis on the coalescence timescale and the time evolution of the binary separation and eccentricity. To this end, both the Quinlan--Sesana hybrid model and Ketju direct N-body simulations are employed. While the former approach provides an efficient framework for reconstructing the evolution of BH binaries once the stellar background properties and the binary initial conditions are specified, the Ketju module, implemented into GADGET-4, models SMBHs and stars as point particles during close encounters through an algorithmically regularized integrator, thereby accurately capturing the orbital decay driven by stellar scattering with unprecedented spatial resolution. The analysis explores different stellar backgrounds, including nucleated dwarf galaxies and observationally motivated high-redshift stellar clumps and galaxy models with enhanced stellar densities resulting from cosmic size evolution. The results confirm that IMBH binaries embedded in nucleated dwarf galaxies can merge within a few Myr. More remarkably, they show that even non-nucleated high-redshift galaxies may drive binary coalescence within a Hubble time, identifying these systems as promising sources of detectable gravitational waves. Finally, the reconstructed binary evolution is finally exploited to compute the associated GW signals, providing observational predictions for the LISA and Einstein Telescope era.
 
 
 
@@ -225,23 +225,59 @@ The next generation of gravitational-wave (GW) observatories, Laser Interferomet
 
 
 Massive black holes play a fundamental role in the formation and evolution of galaxies. Observations have established that they are ubiquitously found at the centers of nearby galaxies \parencite{Kormendy_1995}, while tight empirical correlations between their masses and the properties of the host galactic bulges suggest a close co-evolution of black holes and galaxies \parencite{Magorrian_1998}.
-MBHs are belived to be common in galaxy centres at all cosmic epochs; a piece of evidence for their existence, from low to high redshift, comes from the transient activity of galactic nuclei (AGN) over the hosts lifetime (see, e.g., \textcite{Jahnke_2025}).\\Black holes (BHs) span a wide range of masses $(\sim 10-10^{9}\,M_\odot)$ and various formation models have been proposed based on their mass. At the two extremes of the black-hole mass spectrum lie stellar-mass black holes and supermassive black holes (SMBHs). Stellar evolution theory predicts that stellar-mass BHs may be the remnants of massive stars with either Zero Age Main Sequence mass $M_{ZAMS}\lesssim 140\,M_\odot$ or $M_{ZAMS}\gtrsim 260\,M_\odot$; otherwise, they undergo fully disruption and end their life as Pair Instability Super Novae \parencite{Farmer_2019}. In recent years, the properties of this population have been significantly constrained through the detection of gravitational waves (GWs) from merging compact binaries \parencite{Abbott_2016}, as well as by advances in microlensing techniques capable of identifying isolated BH candidates \parencite{Bennett_2002}.
-On the opposite side $(\sim 10^6-10^9\,M_\odot)$, instead, Pulsar timing arrays has already probed the upper mass range of SMBHs population \parencite{Taylor_2021}, whose most accepted formation model interpret them as the final stage of a secular accretion onto initially lighter black hole seeds.\\While substantial progress has been made in detecting and characterizing both stellar-mass BHs and SMBHs, the observational confirmation and detailed investigation of intermediate-mass black holes (IMBHs), spanning the mass range $\sim 10^2$--$10^5,M_\odot$, remain significantly more challenging. Although an increasing number of candidates have been identified in the local Universe, particularly in dwarf galaxies, through accretion signatures (see, e.g., \textcite{Reines_2013}), their sphere of influence—conventionally defined as the radius enclosing a stellar mass equal to twice that of the central BH \parencite{Sesana_2015}, within which the BH gravitational potential dominates—is typically too small for reliable stellar or gas dynamical measurements, especially at higher redshift. Nevertheless, the discovery of high-redshift quasars (see, e.g., \textcite{Banados_2018}) points to the existence of BH seeds with masses comparable to those of IMBHs already in the early Universe and motivates the common practice of inferring the presence of IMBHs by extrapolating the empirical correlation between BH mass and the stellar bulge mass of the host galaxy \parencite{Schutte_2019}.\\Figure \ref{IMBH_Pathways} illustrates three distinct theoretical pathways for IMBH formation, highlighting the number of BHs expected to form through each channel, their corresponding mass ranges, and the redshift range over which each formation mechanism is expected to be most efficient. Each formation channel is expected to proceed as follows:
-\begin{itemize}
- \item Sufficiently massive primordial stars, commonly referred to as Population III (Pop III) stars, may possess enough gravitational binding energy to withstand the energy released during the photodisintegration-induced collapse of their cores, ultimately leading to the formation of a BH remnant \parencite{Fryer_2001}.
- \item At high redshift, metal-free gas clouds may undergo nearly monolithic gravitational collapse without significant fragmentation, in contrast to what is typically observed in the present-day Universe, owing to the inefficient cooling of neutral hydrogen and lead to the formation of IMBHs \parencite{Lodato_2006}.
- \item Runaway stellar collisions in high-density clusters may trigger a sequence of stellar mergers, progressively producing more massive stars that can undergo further collisions. The final product of this repeated merger process may eventually collapse into an IMBH (see, e.g., \textcite{Rodriguez_2019}; \textcite{Devecchi_2009}).
-\end{itemize}
+MBHs are belived to be common in galaxy centres at all cosmic epochs; a piece of evidence for their existence, from low to high redshift, comes from the transient activity of galactic nuclei (AGN) over the hosts lifetime (see, e.g., \textcite{Jahnke_2025}).\\Black holes (BHs) span a wide range of masses $(\sim 10-10^{9}\,M_\odot)$ and various formation models have been proposed based on their mass. At the two extremes of the black-hole mass spectrum lie stellar-mass black holes and supermassive black holes (SMBHs). Stellar evolution theory predicts that stellar-mass BHs may be the remnants of massive stars with either Zero Age Main Sequence mass $M_{ZAMS}\lesssim 140\,M_\odot$ or $M_{ZAMS}\gtrsim 260\,M_\odot$; otherwise, they undergo fully disruption and end their life as Pair Instability Super Novae \parencite{Farmer_2019}. In recent years, the properties of this population have been significantly constrained through the detection of gravitational waves from merging compact binaries \parencite{Abbott_2016}, as well as by advances in microlensing techniques capable of identifying isolated BH candidates \parencite{Bennett_2002}.
+On the opposite side $(\sim 10^6-10^9\,M_\odot)$, instead, Pulsar timing arrays has already probed the upper mass range of SMBHs population \parencite{Taylor_2021}, whose most accepted formation model interpret them as the final stage of a secular accretion onto initially lighter black hole seeds(see, e.g., \textcite{Peterson_book}).\\While substantial progress has been made in detecting and characterizing both stellar-mass BHs and SMBHs, the observational confirmation and detailed investigation of intermediate-mass black holes (IMBHs), spanning the mass range $\sim 10^2$--$10^5,M_\odot$, remain significantly more challenging. Although an increasing number of candidates have been identified in the local Universe, particularly in dwarf galaxies, through accretion signatures (see, e.g., \textcite{Reines_2013}), their sphere of influence—conventionally defined as the sphere enclosing a stellar mass equal to twice that of the central BH \parencite{Sesana_2015}, within which the BH gravitational potential dominates—is typically too small for reliable stellar or gas dynamical measurements, especially at higher redshift. Nevertheless, the discovery of high-redshift quasars (see, e.g., \textcite{Banados_2018}) points to the existence of BH seeds with masses comparable to those of IMBHs already in the early Universe and motivates the common practice of inferring the presence of IMBHs by extrapolating the empirical correlation between BH mass and the stellar bulge mass of the host galaxy \parencite{Schutte_2019}.\\Figure \ref{IMBH_Pathways} illustrates three distinct theoretical pathways for IMBH formation, highlighting the number of BHs expected to form through each channel, their corresponding mass ranges, and the redshift range over which each formation mechanism is expected to be most efficient. Each formation channel proceeds as follows \parencite{Greene_2020}:
+\paragraph{Pop III.}
+Sufficiently massive primordial stars, commonly referred to as Population III (Pop III) stars, may possess enough gravitational binding energy to withstand the energy released during the photodisintegration-induced collapse of their cores, ultimately leading to the formation of a BH remnant \parencite{Fryer_2001}.
+\paragraph{Directe collapse.}
+At high redshift, metal-free gas clouds may undergo nearly monolithic gravitational collapse without significant fragmentation, in contrast to what is typically observed in the present-day Universe, owing to the inefficient cooling of neutral hydrogen and lead to the formation of IMBHs \parencite{Lodato_2006}.
+\paragraph{Gravitational runaway.}
+Runaway stellar collisions in high-density clusters may trigger a sequence of stellar mergers, progressively producing more massive stars that can undergo further collisions. The final product of this repeated merger process may eventually collapse into an IMBH (see, e.g., \textcite{Rodriguez_2019}; \textcite{Devecchi_2009}).
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\linewidth]{IMBH_Review_Formation.png}
     \caption{Schematic representation of different BH seeding channels, from their formation and subsequent growth through mergers and accretion to the present day: Pop III stars (blue), direct collapse (red), and gravitational runaway (green). The corresponding present-day BH mass functions, occupation fractions, and BH–galaxy scaling relations are shown on the right. Picture from \textcite{Greene_2020}.}
     \label{IMBH_Pathways}
 \end{figure}
-Within the framework of galaxy hierarchical growth scenario (see, e.g., \textcite{White_1978}; SESANA2020), the creation of massive black hole binaries (MBHBs) is expected to occur, over cosmic time, as a natural consequence of mergers of possible hosts:
+Within the framework of the hierarchical growth scenario of galaxies \parencite{White_1978}, the formation of IMBH binaries is expected to occur naturally as a consequence of mergers between their host stellar systems \parencite{Maiolino_2024}. These systems are among the most powerful sources of gravitational waves (GWs) in the Universe \parencite{Maggiore_book}, making them prime targets for current and future GW observatories. In particular, the upcoming Laser Interferometer Space Antenna (LISA), a joint ESA/NASA space mission, will probe the low-frequency GW regime, from $\sim 10^{-4}$ to $\sim 10^{-1}$ Hz \parencite{Amaro-Seoane_2017,Amaro-Seaone_2023}, providing access to compact-object binaries with masses of $\sim10^4-10^7,M_\odot$ and enabling the detection of their mergers out to redshift $z\sim20$ \parencite{Colpi_2024}. At higher frequencies, the ground-based Einstein Telescope (ET) will complement LISA by extending the accessible frequency and mass ranges towards lower-mass systems, being expected to detect IMBH binaries with masses of $\sim10^2-10^3,M_\odot$ out to redshifts of a few \parencite{ET_book}.\\This thesis work aims to investigate the evolution of the main orbital parameters of IMBH binaries, focusing on the semimajor axis $a$ and eccentricity $e$, and to assess how the BH masses, properties of the stellar background, and initial binary conditions, i.e. $(a_0,e_0)$, affect their dynamical evolution and coalescence time through a series of numerical experiments. To this end, different stellar environments hosting the binary—or the individual unbound IMBHs—are considered, with dwarf galaxies representing the first candidate systems.\\Although the merger rate of such low-mass galaxies is not yet well constrained, the growing evidence of the existence at high redshifts of such candidates \parencite{Kikuchihara_2020} rises the possibility of detecting GWs from merging IMBH binaries if coalescence occurs within the Hubble time.\\According to the findings of \parencite{Khan_2024}, the low central stellar density of non-nucleated dwarfs leads to inefficient hardening and, ultimately, to binary stalling. However, the vast majority of galaxies with stellar masses of $10^8-10^{11},M_\odot$ host a nuclear star cluster (NSC), an exceptionally dense and dynamically distinct stellar component in their innermost regions (see, e.g., \textcite{Neumayer_2020}). The presence of such a dense environment within dwarf galaxies, as reported, e.g., by \textcite{Nguyen_2018}, has been confirmed to substantially shorten the coalescence time of an IMBH pair.\\Having established the key role of stellar scattering, and hence of the stellar density at the binary influence radius, the time evolution of the IMBH binary separation and eccentricity, $a(t)$ and $e(t)$, is then obtained by numerically integrating their evolution while artificially placing present-day non-nucleated dwarf galaxies at higher redshifts, following the cosmic size evolution low inferred by \textcite{Ono_2023}.\\Furthermore,
 
 
-between galaxies. These systems are among the most powerful emitters of gravitational waves (GWs) in the universe, making them prime targets for detection with current and future GW observatories.\\Although the merger rate of low mass galaxies has not been well determined yet, the interaction and merging of these structures should lead to the formation of IMBH-IMBH binaries. The upcoming Laser Interferometer Space Antenna (LISA), a joint ESA/NASA space mission, promises to demystify IMBHs, being sensitive to GW signals, from $\sim 10^{-4}$ Hz to $\sim 10^{-1}$ Hz, produced at late stage of the merger \parencite{Amaro-Seoane_2017}; their masses, within $10^4-10^7\,M_\odot$, and redshift will be estimated out to $z=20$ with very high precision \parencite{Colpi_2024}.\\Despite dwarf galaxies have been identified at incredibly high redshift \parencite{Kikuchihara_2020}, hence opening to the possibility of reciving GW signals from merging IMBH binaries if this process takes place within the Hubble time, numerical simulations \parencite{Khan_2024} proved that in non-nucleated dwarfs the low stellar density in the central regions results in inefficient hardening and stalling of the binary. However, the vast majority of galaxies with stellar mass $10^8-10^{11}\,M_\odot$ harbor a nuclear star cluster (NSC), an extraordinarily dense and dynamically distinct stellar assembly, in their innermost regions; the existence of a such dense envirnoment inside dwarf galaxies, as reported by e.g. \textcite{Nguyen_2018}, may drastically reduce the coalescence time of the IMBH pair.\\This thesis work is aimed at studying the evolution of the main orbital parameters of the binary, with focus on semimajor axis $a$ and eccentricity $e$, and analyzing how the variation of BHs masses, host galaxy properties and IC of the binary, i.e. $(a_0,e_0)$ impacts , impact its evolution and coalescence time. In this spirit, the study combines a self-consistent hybrid model developed by \textcite{Sesana_2010} with N-body simulations performed using the KETJU code \parencite{Mannerkoski_2023}, which will be described in more detail later.\\The structure of this thesis is outlined as follows.\\In \autoref{chap:chapter1}, we provide a brief overview of the main physical mechanisms responsible for the BH binary shrinking; this includes dynamical friction, stellar scattering processes and GWs emission,which dominates the late stages of the inspiral.\\In \autoref{chap:chapter2}, we introduce the self-consistent hybrid model developed by \textcite{Quinlan_1996} and \textcite{Sesana_2010}; it is thus applied to a sample of galaxies and exploring the parameters space in order to emphasise how different environmental and initial conditions lead to different binary evolution.\\In \autoref{chap:chapter3} we describe the main features of the codes used to generate N-body initial condition and N-body numerical simulations and compare the obtained binary evolutionary tracks with those of the previous chapter.\\Finally, the main results of this work are summarized, and possible future improvements are reported in the concluding chapter.
+
+
+
+Then stellar clumps because:
+
+1)Observation and numerical experiments The emergence of x-ray signatures from Globular Clusters (GCs), combined with the \textcite{Gebhardt_2005}
+
+2)Observation of high z stellar clumps \textcite{Eros_2026}
+
+plot di Eros
+
+e plot di \textcite{Maiolino_2024} per Mbh vs Mstar
+
+
+
+the study combines a self-consistent hybrid model developed by \textcite{Quinlan_1996} and extended by \textcite{Sesana_2010} with N-body simulations performed using the KETJU module \parencite{Mannerkoski_2023}, implemented into GADGET-4. which will be described in more detail later. These powerfull tools, that will be properly discussed in chapter \ref{chap:chapter2} and chapter \ref{chap:chapter3}, enable to
+\\N-body numerical experiments have proved different stellar backgrounds give rise to different pathways to the possible coalescence of MBHBs (see, e.g. \textcite{Khan_2021}; \textcite{Khan_2024}). Therefore, in this work, evolutionary tracks of BH binaries are reconstructed by considering different host models, motivated by observational evidences or strong indications from numerical simulations.
+
+
+
+
+
+
+
+Among them, in this work have been considered: dwarf galaxies
+
+
+
+
+
+between galaxies. . .\\Despite,
+
+
+
+
+The structure of this thesis is outlined as follows.\\In \autoref{chap:chapter1}, we provide a brief overview of the main physical mechanisms responsible for the BH binary shrinking; this includes violent relaxation, dynamical friction, stellar scattering from low-angular momentum stars and GWs emission.\\In \autoref{chap:chapter2}, we introduce the self-consistent hybrid model developed by \textcite{Quinlan_1996} and \textcite{Sesana_2010}, hence showing the obtained evolutionary tracks related to a sample of adopted host galaxies and discussing  the parameters space in order to emphasise how different environmental and initial conditions lead to different binary evolution.\\In \autoref{chap:chapter3} we describe the main features of the codes used to generate N-body initial condition and N-body numerical simulations and compare the obtained binary evolutionary tracks with those of the previous chapter.\\Finally, the main results of this work are summarized, and possible future improvements are reported in the concluding chapter.
 %\clearpage
 
 
@@ -698,19 +734,118 @@ At this stage, it should be clear that stellar scattering plays a fundamental ro
 
 
 \section{Stellar Scattering and Loss Cone Problem}\label{sec:Loss Cone}
-\cite{Lightman_1977}Let us consider a massive object $M$- it may be a BH binary- residing at center of a stellar distribution; far enough from it, stars are unbound, move with rms velocity $\langle v^2\rangle^{1/2}$ and obey to the Maxwellian distribution, i.e. velocity field is isotropic.\\Combining $M$ and the rms velocity, we define the influence radius, beyond which stars are mainly unbound, $r_a\sim 2GM/\langle v^2\rangle$. Stellar orbits are assumed to be driven by the gravity of $M$ at $r<r_a$.\\Moreover, close encounters between stars and $M$ may lead to stellar consumption via several processes; they occur on a time scale of the order of the dynamical one, i.e. one orbital period, if $r$ is smaller than the tidal radius $r_t$, where
+In \S~\ref{sec:Gravitational Slingshot Effect} we have been concerned in describing the phisics of three-body scattering, pointing out its relevance to the orbital decay of the BH binary. In the following Section, instead, we will be explaining which stars can effectively exchange energy and angular momentum with the binary, the rate at which these close encounters take place and how all of this enters the self consistent model for MBHBs evolution by \textcite{Quinlan_1996} and \textcite{Sesana_2010} that will be presented in the next Chapter.\\Let $a(t)$ be the binary semimajor axis. Numerical experiments demonstrated that only stars intersecting the binary orbit can efficiently extract energy and angular momentum from when ejected at higher velocity \parencite{Mikkola_1992}. This class of stars of the stellar background populates the so-called “binary loss cone” and comprises both low-energy stars and high-energy, low-angular momentum stars. Under the assumption of Keplerian orbits, the former have small mean radius $(\langle r\rangle<a)$ and specific energy $E_*<-GM/a$, while latter spend most of their orbital period $P(E_*)$ far from the binary but a close encounter can occur at the pericenter $r_P$ if $r_P<a$.\\The size $J_{lc}$ of the binary loss in the specific angular momentum space, hereafter J-space, is a function of $E_*$; at the configuration of closest approach, the star radial velocity vanishes and the specific energy in terms of $r_P$ is
+\begin{equation}\label{Pericenter stellar energy}
+ E_*=\frac{J^2}{2r_P^2}-\frac{GM}{r_P}
+\end{equation}
+From Equation (\ref{Pericenter stellar energy}) follows that the minimum value of $J$, below which the star enters the binary loss cone, is
+\begin{equation}\label{loss cone definition}
+    J_{lc}(E_*)\equiv \left[2\left(E_*+\frac{GM}{a}\right)\right]^{1/2}a
+\end{equation}
+and can be approximated to $\sim \sqrt{2GMa}$ as the vast majority of stars orbit far from the binary and have a specific angular energy $|E_*|\ll GM/a$.\\Stars of fixed specific energy $E_*$, other than a minimum of the specific angular momentum $J_{min}=J_{lc}(E_*)$, possess a maximum set by the chain of inequalities
 \begin{equation}
-    t_d=P(E)=\frac{2\pi GM}{(2|E|)^{3/2}}.
+ E_*\ge \frac{J^2}{2r^2}-\frac{GM}{r}\equiv V_{eff}(r)\ge V_{eff,\,min}=-\frac{G^2M^2}{2J^2},
+\end{equation}
+which holds because of the non-negative behavior of the radial kinetic term. This constrain poses a limit to $J$, i.e.
+\begin{equation}
+ J_{max}(E_*)=\frac{GM}{\sqrt{2|E_*|}},
+\end{equation}
+corresponding to the specific angular momentum of a circular orbit of specific energy $E_*$ \parencite{Capozziello_2008}. Once the binary has removed in a dynamical time $P(E_*)$ the stars inside the influence sphere, the further hardening of the binary via stellar slinghot relies on the rate at which the loss cone is fed by stellar diffusion in both energy and angular momentum space, which causes stars to enter the loss cone.
+This diffusion arises from stellar encounters
+that have been proven to be efficient in exchanging angular momentum and results in a Random Walk in J-space. Let us define $j_2$ the rms angular momentum transferred in one orbital period  and $J_{max}(E_*)$ the same quantity associated with the timescale $t_{2b}$, only stars with $J_{lc}\le J\le J_{lc}+j_2$ can penetrate into the loss cone over one orbital period.
+The mechanism of loss cone replenishing and the associated timescale are set by the dimensionless quantity
+\begin{equation}
+    q(E)\equiv\frac{j_2^2}{J_{min}^2}.
+\end{equation}
+Taking Figure \ref{loss cone image} as a refernce, $q(E_*)$ enables us to distinguish between two extreme scenarios:
+\paragraph{Empty Loss Cone.}
+This condition is represented by picture on the left in Figure \ref{loss cone image}(b).\\When $q(E_*)\ll1$ the RW step size is very small compared to the loss cone size, making the process ascribable to a diffusion problem with timescale $t_{2b}$. Therefore, stars are removed from the loss cone faster than the rate at which it is fed, hence, remeining nearly empty.
+
+\paragraph{Full Loss Cone.}
+This condition is represented by the picture on the right in Figure \ref{loss cone image}(b).\\The loss cone is smaller than the RW step size and even high $J$ stars can be scattered into the loss cone by many, weak stellar encounters taking place during one robital period. Thus, the rate at which loss cone stars are expelled is lower than the rate of refilling, causing the loss cone to remain almost full.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Loss_cone.png}
+    \caption{Fig. 1(a).—Velocity distribution of stars with fixed energy $E$;$J$ varies accordingly to the direction of $\mathbf{v}$ emphasising the two-dimensional nature of the problem. The vertical axis points towards the compact object of mass $M$.
+Fig. 1(6).—The velocity sphere viewed from below. On the left the empty loss cone scenario; stellar density is nearly indipendent of $J$ everywhere but $J\gtrsim J_{min}$ where is quickly declines. On the right the full loss cone regime; consumed stars are immediately replenished by stars from a region much more extended- and uniform density- than the loss cone itself (the “pinhole” limit). Picture from \textcite{Lightman_1977}.}
+    \label{loss cone image}
+\end{figure}
+By employng the same dimensional analysis carried out by \textcite{Lightman_1977}, we expect that the stellar capture rate per unit energy $\Gamma_E(E_*)$ could be written as
+\begin{equation}
+ \Gamma_E(E_*)\equiv\frac{d\Gamma}{dE}\approx \epsilon|E_*|^{-1}F_{max}(E_*)
+\end{equation}
+where $F_{max}(E_*)\sim N(E_*)/P(E_*)$ denotes the maximum rate of loss cone replenishing from stars with specific energy $E_*$ and $\epsilon$ is a correction factor helping us to account for the fraction of stars within the loss cone.\\Let us focus on the full loss cone regime. The 2-D nature of the problem in the J-space suggests that the area correction factor
+\begin{equation}
+ \epsilon \sim \frac{J_{lc}^2}{(J_{lc}+j_2)^2}
+\end{equation}
+scales as $\sim J_{lc}^2/J_{max}^2$.\\Therefore, in the pinhole regime, it follows
+\begin{equation}\label{stellar flux per unit energy}
+ \Gamma_E(E_*)\approx |E_*|^{-1}\frac{a}{r}\frac{N(E_*)}{P(E_*)}.
+\end{equation}
+From Equation (\ref{stellar flux per unit energy}), we can now derive the stellar flux $F(E_*)$ for an assumed an isothermal sphere of mass $M_*$ and influence radius $r_{inf}$. If all stars have the same mass $m_*$, the total number of stars inside $r$ is simply proportional to tha stellar mass enclosed within this sphere, that is
+\begin{equation}
+ N(<r)=\frac{M}{m_*}\frac{r}{r_{inf}}.
+\end{equation}
+Under the assumption of Keplerian orbits bound to the binary, the energy of each star depends on the semimajor only through the relation
+\begin{equation}
+ E_*(r)=-\frac{GMm_*}{2r},
+\end{equation}
+while the orbital period is
+\begin{equation}
+    P(E)=\frac{2\pi GM}{(2|E|)^{3/2}}.
+\end{equation}
+\parencite{Perets_2007} \parencite{Perets_2008}
+\begin{equation}
+ \frac{d\Gamma}{d\log{r}}=\frac{a}{r}\frac{N(<r)}{P(r)}
 \end{equation}
 
-A steady state solution in the range $r_t<r<r_a$ requires the rate of stars diffusing inward, crossing $r_a$, over $t_{2b}$, equal to the rate of stars consumed at $r_t$, behaving as a sink of this problem. \\If $E$ and $J$ denote respectively the star specific energy and angular momentum, it is worth of noticing  that  not only stars with low energy, i.e. $E\approx E_t\equiv -GM/r_t$ are removed but also high $E$ low $J$ might experience the same fate. At pericenter the radial velocity vanishes and 
+
+
 \begin{equation}
-    E=\frac{J^2}{2r^2}-\frac{GM}{r};
+ \Gamma_Q=\left(\frac{\rho}{m_*}\right)\Sigma v
 \end{equation}
-hence a star can find itself inside $r_t$ if 
-\begin{equation}\label{loss cone definition}
-    J\le J_{min}\equiv \left[2\left(E+\frac{GM}{r_t}\right)\right]^{1/2}r_t.
+
+
+
+if we set $\Sigma=\pi a^2$
+
+unbound orbit equation
+\begin{equation}
+ r(\phi)=\frac{l}{1+\cos{\phi}}
 \end{equation}
+with $l=J^2/GM$ semilatus rectum.
+
+$b$ impact parameter and $v$ velocity at infinity, grav focusing $J=bv$ and $r_P=l/2$ leads to
+\begin{equation}
+ b^2=\frac{2GMr_P}{v^2}
+\end{equation}
+
+\begin{equation}
+ \Gamma_Q=2\pi \left(\frac{M}{m_*}\right) \frac{G\rho a}{v}
+\end{equation}
+
+
+
+
+
+Full loss cone regime $q\gg 1$
+
+
+
+For bound almost radial orbit $dE_*=|E_*|\log{r}$ and
+
+
+
+
+
+
+
+\cite{Lightman_1977}Let us consider a massive object $M$- it may be a BH binary- residing at center of a stellar distribution; far enough from it, stars are unbound, move with rms velocity $\langle v^2\rangle^{1/2}$ and obey to the Maxwellian distribution, i.e. velocity field is isotropic.\\Combining $M$ and the rms velocity, we define the influence radius, beyond which stars are mainly unbound, $r_a\sim 2GM/\langle v^2\rangle$. Stellar orbits are assumed to be driven by the gravity of $M$ at $r<r_a$.\\Moreover, close encounters between stars and $M$ may lead to stellar consumption via several processes; they occur on a time scale of the order of the dynamical one, i.e. one orbital period, if $r$ is smaller than the tidal radius $r_t$, where
+
+A steady state solution in the range $r_t<r<r_a$ requires the rate of stars diffusing inward, crossing $r_a$, over $t_{2b}$, equal to the rate of stars consumed at $r_t$, behaving as a sink of this problem. \\If $E$ and $J$ denote respectively the star specific energy and angular momentum, it is worth of noticing  that  not only stars with low energy, i.e. $E\approx E_t\equiv -GM/r_t$ are removed but also high $E$ low $J$ might experience the same fate. At pericenter the radial velocity vanishes and 
+
 Inequality (\ref{loss cone definition}) defines the so called "Loss Cone".
 
 \subsection{Bound stars consumption}
@@ -734,15 +869,7 @@ Let us focus on loss cone effects; the DF is now in general a function of both $
     j_2\sim J_{max}(t_d/t_r)^{1/2},
 \end{equation}
 
-it represents the dispersion in $J$ suffered over $t_d$.\\The dimensionless quantity
-\begin{equation}
-    q(E)\equiv\frac{j_2^2}{J_{min}^2}
-\end{equation}
-enables us to distinguish two extreme scenarios in terms of stellar consumption rate:
-\begin{itemize}
-  \item  \(q \ll 1\) (Empty Loss Cone): $j_2\ll J_{min}$ implies a too small RW step size for diffusion to be effective and only stars with $J$ close to $J_{min}$ can enter the loss cone.\\Since $t_{2b}\gg t_d$ the loss cone remeins nearly empty and the capture rate is limited by diffusion.
-  \item  \(q \gg 1\) (Full Loss Cone): $j_2\gg J_{min}$ implies a large RW step size compared to loss cone size and many stars in the range $J_{min}<J<J_{min}+j_2$ can be captured.\\In this regime equation (\ref{j_2 definition}) predicts many weak stellar encounters per orbital period and thus an almost full loss cone as the star consumption, takes place over $t_d$,is slower than stellar capture rate; stellar consumption rate is limited by orbital period.
-\end{itemize}
+it represents the dispersion in $J$ suffered over $t_d$.
 
 The stellar consumption rate per unit energy is
 \begin{equation}  
@@ -782,13 +909,7 @@ Devoted to determine evolutionary tracks for BH binaries evolving via three-body
 
 
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\linewidth]{Loss_cone.png}
-    \caption{Fig. 1(a).—Velocity distribution of stars with fixed energy $E$;$J$ varies accordingly to the direction of $\mathbf{v}$ emphasising the two-dimensional nature of the problem. The vertical axis points towards the compact object of mass $M$.
-Fig. 1(6).—The velocity sphere viewed from below. On the left the empty loss cone scenario; stellar density is nearly indipendent of $J$ everywhere but $J\gtrsim J_{min}$ where is quickly declines. On the right the full loss cone regime; consumed stars are immediately replenished by stars from a region much more extended- and uniform density- than the loss cone itself (the “pinhole” limit).}
-    \label{loss cone image}
-\end{figure}
+
 
 
 
