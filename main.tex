@@ -116,7 +116,7 @@
   mincitenames=1,
   maxbibnames=3
 ]{biblatex}
-\addbibresource{bibliografia.bib}
+\addbibresource{Bibliografia.bib}
 
 
 
@@ -198,7 +198,7 @@
 
 \vspace{1cm}
 \noindent
-The next generation of gravitational-wave (GW) observatories, Laser Interferometer Space Antenna (LISA) and the Einstein Telescope (ET), will jointly probe compact objects with masses ranging from a few to $\sim 10^7\,M_\odot$ over the frequency interval extending from $10^{-4}$ to $10^{4}\,\mathrm{Hz}$. This unprecedented observational window makes it essential to identify promising GW sources, investigate their formation channels, and characterize the physical properties of the emitted signals. Among the most compelling candidates are binaries hosting intermediate-mass black holes (IMBHs), whose inspiral GW emission would offer unique insights into this still poorly constrained population of massive black holes (MBHs). Empirical scaling relations suggest that IMBHs preferentially reside in the nuclei of low-mass and dwarf galaxies. Unlike their massive counterparts, these systems display a wide variety of structural and kinematical properties, potentially giving rise to quite different evolutionary pathways toward binary coalescence.\\This thesis investigates the dynamical evolution of IMBH binaries embedded in stellar environments, with particular emphasis on the coalescence timescale and the time evolution of the binary separation and eccentricity. To this end, both the Quinlan--Sesana hybrid model and Ketju direct N-body simulations are employed. While the former approach provides an efficient framework for reconstructing the evolution of BH binaries once the stellar background properties and the binary initial conditions are specified, the Ketju module, implemented into GADGET-4, models SMBHs and stars as point particles during close encounters through an algorithmically regularized integrator, thereby accurately capturing the orbital decay driven by stellar scattering with unprecedented spatial resolution. The analysis explores different stellar backgrounds, including nucleated dwarf galaxies and observationally motivated high-redshift stellar clumps and galaxy models with enhanced stellar densities resulting from cosmic size evolution. The results confirm that IMBH binaries embedded in nucleated dwarf galaxies can merge within a few Myr. More remarkably, they show that even non-nucleated high-redshift galaxies may drive binary coalescence within a Hubble time, identifying these systems as promising sources of detectable gravitational waves. Finally, the reconstructed binary evolution is finally exploited to compute the associated GW signals, providing observational predictions for the LISA and Einstein Telescope era.
+The next generation of gravitational-wave (GW) observatories, Laser Interferometer Space Antenna (LISA) and the Einstein Telescope (ET), will jointly probe compact objects with masses ranging from a few to $\sim 10^7\,M_\odot$ over the frequency interval extending from $10^{-4}$ to $10^{4}\,\mathrm{Hz}$. This unprecedented observational window makes it essential to identify promising GW sources, determine which of them may emit a detectable signal and characterize its physical properties. Among the most compelling candidates are intermediate-mass black hole (IMBH) binaries, whose inspiral GW emission would offer unique insights into this still poorly constrained population of massive black holes (MBHs).\\This thesis investigates the dynamical evolution of IMBH binaries embedded in stellar backgrounds, with particular emphasis on the  coalescence timescale and the time evolution of the binary separation and eccentricity. To this end, both the Quinlan--Sesana hybrid model and Ketju direct N-body simulations are employed. While the former approach provides an efficient framework for reconstructing the evolution of BH binaries once the stellar background properties and the binary initial conditions are specified, the Ketju module, implemented into GADGET-4, modeling SMBHs and stars as point particles during close encounters through an algorithmically regularized integrator, accurately captures the orbital decay driven by stellar scattering with unprecedented spatial resolution. The analysis explores different stellar backgrounds, including nucleated dwarf galaxies and observationally motivated high-redshift stellar clumps and galaxy models with enhanced stellar densities resulting from cosmic size evolution. The obtained results confirm that IMBH binaries embedded in nucleated dwarf galaxies can merge within a few Myr. More remarkably, they show that even non-nucleated high-redshift dwarf galaxies and stellar clumps may drive binary coalescence within a Hubble time, identifying these systems as promising sources of detectable gravitational waves. Finally, the reconstructed binary evolution is finally exploited to compute the associated GW signals, providing observational predictions for the LISA and Einstein Telescope era.
 
 
 
@@ -225,59 +225,35 @@ The next generation of gravitational-wave (GW) observatories, Laser Interferomet
 
 
 Massive black holes play a fundamental role in the formation and evolution of galaxies. Observations have established that they are ubiquitously found at the centers of nearby galaxies \parencite{Kormendy_1995}, while tight empirical correlations between their masses and the properties of the host galactic bulges suggest a close co-evolution of black holes and galaxies \parencite{Magorrian_1998}.
-MBHs are belived to be common in galaxy centres at all cosmic epochs; a piece of evidence for their existence, from low to high redshift, comes from the transient activity of galactic nuclei (AGN) over the hosts lifetime (see, e.g., \textcite{Jahnke_2025}).\\Black holes (BHs) span a wide range of masses $(\sim 10-10^{9}\,M_\odot)$ and various formation models have been proposed based on their mass. At the two extremes of the black-hole mass spectrum lie stellar-mass black holes and supermassive black holes (SMBHs). Stellar evolution theory predicts that stellar-mass BHs may be the remnants of massive stars with either Zero Age Main Sequence mass $M_{ZAMS}\lesssim 140\,M_\odot$ or $M_{ZAMS}\gtrsim 260\,M_\odot$; otherwise, they undergo fully disruption and end their life as Pair Instability Super Novae \parencite{Farmer_2019}. In recent years, the properties of this population have been significantly constrained through the detection of gravitational waves from merging compact binaries \parencite{Abbott_2016}, as well as by advances in microlensing techniques capable of identifying isolated BH candidates \parencite{Bennett_2002}.
-On the opposite side $(\sim 10^6-10^9\,M_\odot)$, instead, Pulsar timing arrays has already probed the upper mass range of SMBHs population \parencite{Taylor_2021}, whose most accepted formation model interpret them as the final stage of a secular accretion onto initially lighter black hole seeds(see, e.g., \textcite{Peterson_book}).\\While substantial progress has been made in detecting and characterizing both stellar-mass BHs and SMBHs, the observational confirmation and detailed investigation of intermediate-mass black holes (IMBHs), spanning the mass range $\sim 10^2$--$10^5,M_\odot$, remain significantly more challenging. Although an increasing number of candidates have been identified in the local Universe, particularly in dwarf galaxies, through accretion signatures (see, e.g., \textcite{Reines_2013}), their sphere of influence—conventionally defined as the sphere enclosing a stellar mass equal to twice that of the central BH \parencite{Sesana_2015}, within which the BH gravitational potential dominates—is typically too small for reliable stellar or gas dynamical measurements, especially at higher redshift. Nevertheless, the discovery of high-redshift quasars (see, e.g., \textcite{Banados_2018}) points to the existence of BH seeds with masses comparable to those of IMBHs already in the early Universe and motivates the common practice of inferring the presence of IMBHs by extrapolating the empirical correlation between BH mass and the stellar bulge mass of the host galaxy \parencite{Schutte_2019}.\\Figure \ref{IMBH_Pathways} illustrates three distinct theoretical pathways for IMBH formation, highlighting the number of BHs expected to form through each channel, their corresponding mass ranges, and the redshift range over which each formation mechanism is expected to be most efficient. Each formation channel proceeds as follows \parencite{Greene_2020}:
+Moreover, MBHs are belived to be common in galaxy centres at all cosmic epochs; a piece of evidence for their existence, from low to high redshift, comes from the transient activity of galactic nuclei (AGN) over the hosts lifetime (see, e.g., \textcite{Jahnke_2025}).\\Black holes (BHs) span a wide range of masses $(\sim 10-10^{9}\,M_\odot)$ and various formation and accretion models have been proposed based on their mass. At the two extremes of the black-hole mass spectrum lie stellar-mass black holes and supermassive black holes (SMBHs). Stellar evolution theory predicts that stellar-mass BHs may be the remnants of massive stars with either Zero Age Main Sequence mass $M_{ZAMS}\lesssim 140\,M_\odot$ or $M_{ZAMS}\gtrsim 260\,M_\odot$; otherwise, they undergo fully disruption and end their life as Pair Instability Super Novae, leaving no remnant behind \parencite{Farmer_2019}. In recent years, the properties of this population have been significantly constrained through the detection of gravitational waves from merging compact binaries \parencite{Abbott_2016}, as well as by advances in microlensing techniques capable of identifying isolated BH candidates \parencite{Bennett_2002}.
+On the opposite side $(\sim 10^6-10^9\,M_\odot)$, instead, Pulsar timing arrays has already probed the upper mass range of SMBHs population \parencite{Taylor_2021}, whose most accepted formation model interpret them as the final stage of a secular accretion onto initially lighter black hole seeds (see, e.g., \textcite{Peterson_book}).\\While substantial progress has been made in detecting and characterizing both stellar-mass BHs and SMBHs, the observational confirmation and detailed investigation of intermediate-mass black holes (IMBHs), lying in the mass range $\sim 10^2$--$10^5,M_\odot$, remain significantly more challenging. Although an increasing number of candidates have been identified in the local Universe, particularly in dwarf galaxies, through accretion signatures (see, e.g., \textcite{Reines_2013}), their sphere of influence—conventionally defined as the sphere enclosing a stellar mass equal to twice that of the central BH \parencite{Sesana_2015}, within which the BH gravitational potential dominates—is typically too small for reliable stellar or gas dynamical measurements, especially at higher redshift. Nevertheless, the discovery of high-redshift quasars (see, e.g., \textcite{Banados_2018}) points to the existence of BH seeds with masses comparable to those of IMBHs already in the early Universe, strengthening the idea that even the nuclei of less massive galaxies harbor MBHs. Therefore, it is common practice to infer the central BH mass by extrapolating the empirical correlation between BH mass and the stellar mass of the host galaxy's bulge, even for quiescent galactic nuclei (see, e.g., \textcite{Schutte_2019}; \textcite{Maiolino_2024}).\\Figure \ref{IMBH_Pathways} illustrates three distinct theoretical pathways for IMBH formation, highlighting the number of BHs expected to form through each channel, their corresponding mass ranges, and the redshift range over which each formation mechanism is expected to be most efficient. Each formation channel proceeds as follows \parencite{Greene_2020}:
 \paragraph{Pop III.}
 Sufficiently massive primordial stars, commonly referred to as Population III (Pop III) stars, may possess enough gravitational binding energy to withstand the energy released during the photodisintegration-induced collapse of their cores, ultimately leading to the formation of a BH remnant \parencite{Fryer_2001}.
 \paragraph{Directe collapse.}
-At high redshift, metal-free gas clouds may undergo nearly monolithic gravitational collapse without significant fragmentation, in contrast to what is typically observed in the present-day Universe, owing to the inefficient cooling of neutral hydrogen and lead to the formation of IMBHs \parencite{Lodato_2006}.
+At high redshift, metal-free gas clouds may undergo nearly monolithic gravitational collapse without significant fragmentation, in contrast to what is typically observed in the present-day Universe, owing to the inefficient cooling of neutral hydrogen, and lead to the formation of IMBHs \parencite{Lodato_2006}.
 \paragraph{Gravitational runaway.}
-Runaway stellar collisions in high-density clusters may trigger a sequence of stellar mergers, progressively producing more massive stars that can undergo further collisions. The final product of this repeated merger process may eventually collapse into an IMBH (see, e.g., \textcite{Rodriguez_2019}; \textcite{Devecchi_2009}).
+Runaway stellar collisions in high-density clusters may trigger a sequence of stellar mergers, progressively producing more massive stars that can undergo further collisions. The final product of this repeated mergers process may eventually collapse into an IMBH (see, e.g., \textcite{Rodriguez_2019}; \textcite{Devecchi_2009}).
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\linewidth]{IMBH_Review_Formation.png}
     \caption{Schematic representation of different BH seeding channels, from their formation and subsequent growth through mergers and accretion to the present day: Pop III stars (blue), direct collapse (red), and gravitational runaway (green). The corresponding present-day BH mass functions, occupation fractions, and BH–galaxy scaling relations are shown on the right. Picture from \textcite{Greene_2020}.}
     \label{IMBH_Pathways}
 \end{figure}
-Within the framework of the hierarchical growth scenario of galaxies \parencite{White_1978}, the formation of IMBH binaries is expected to occur naturally as a consequence of mergers between their host stellar systems \parencite{Maiolino_2024}. These systems are among the most powerful sources of gravitational waves (GWs) in the Universe \parencite{Maggiore_book}, making them prime targets for current and future GW observatories. In particular, the upcoming Laser Interferometer Space Antenna (LISA), a joint ESA/NASA space mission, will probe the low-frequency GW regime, from $\sim 10^{-4}$ to $\sim 10^{-1}$ Hz \parencite{Amaro-Seoane_2017,Amaro-Seaone_2023}, providing access to compact-object binaries with masses of $\sim10^4-10^7,M_\odot$ and enabling the detection of their mergers out to redshift $z\sim20$ \parencite{Colpi_2024}. At higher frequencies, the ground-based Einstein Telescope (ET) will complement LISA by extending the accessible frequency and mass ranges towards lower-mass systems, being expected to detect IMBH binaries with masses of $\sim10^2-10^3,M_\odot$ out to redshifts of a few \parencite{ET_book}.\\This thesis work aims to investigate the evolution of the main orbital parameters of IMBH binaries, focusing on the semimajor axis $a$ and eccentricity $e$, and to assess how the BH masses, properties of the stellar background, and initial binary conditions, i.e. $(a_0,e_0)$, affect their dynamical evolution and coalescence time through a series of numerical experiments. To this end, different stellar environments hosting the binary—or the individual unbound IMBHs—are considered, with dwarf galaxies representing the first candidate systems.\\Although the merger rate of such low-mass galaxies is not yet well constrained, the growing evidence of the existence at high redshifts of such candidates \parencite{Kikuchihara_2020} rises the possibility of detecting GWs from merging IMBH binaries if coalescence occurs within the Hubble time.\\According to the findings of \parencite{Khan_2024}, the low central stellar density of non-nucleated dwarfs leads to inefficient hardening and, ultimately, to binary stalling. However, the vast majority of galaxies with stellar masses of $10^8-10^{11},M_\odot$ host a nuclear star cluster (NSC), an exceptionally dense and dynamically distinct stellar component in their innermost regions (see, e.g., \textcite{Neumayer_2020}). The presence of such a dense environment within dwarf galaxies, as reported, e.g., by \textcite{Nguyen_2018}, has been confirmed to substantially shorten the coalescence time of an IMBH pair.\\Having established the key role of stellar scattering, and hence of the stellar density at the binary influence radius, the time evolution of the IMBH binary separation and eccentricity, $a(t)$ and $e(t)$, is then obtained by numerically integrating their evolution while artificially placing present-day non-nucleated dwarf galaxies at higher redshifts, following the cosmic size evolution low inferred by \textcite{Ono_2023}.\\Furthermore,
-
-
-
-
-
-Then stellar clumps because:
-
-1)Observation and numerical experiments The emergence of x-ray signatures from Globular Clusters (GCs), combined with the \textcite{Gebhardt_2005}
-
-2)Observation of high z stellar clumps \textcite{Eros_2026}
-
-plot di Eros
-
-e plot di \textcite{Maiolino_2024} per Mbh vs Mstar
-
-
-
-the study combines a self-consistent hybrid model developed by \textcite{Quinlan_1996} and extended by \textcite{Sesana_2010} with N-body simulations performed using the KETJU module \parencite{Mannerkoski_2023}, implemented into GADGET-4. which will be described in more detail later. These powerfull tools, that will be properly discussed in chapter \ref{chap:chapter2} and chapter \ref{chap:chapter3}, enable to
-\\N-body numerical experiments have proved different stellar backgrounds give rise to different pathways to the possible coalescence of MBHBs (see, e.g. \textcite{Khan_2021}; \textcite{Khan_2024}). Therefore, in this work, evolutionary tracks of BH binaries are reconstructed by considering different host models, motivated by observational evidences or strong indications from numerical simulations.
-
-
-
-
-
-
-
-Among them, in this work have been considered: dwarf galaxies
-
-
-
-
-
-between galaxies. . .\\Despite,
-
-
-
-
-The structure of this thesis is outlined as follows.\\In \autoref{chap:chapter1}, we provide a brief overview of the main physical mechanisms responsible for the BH binary shrinking; this includes violent relaxation, dynamical friction, stellar scattering from low-angular momentum stars and GWs emission.\\In \autoref{chap:chapter2}, we introduce the self-consistent hybrid model developed by \textcite{Quinlan_1996} and \textcite{Sesana_2010}, hence showing the obtained evolutionary tracks related to a sample of adopted host galaxies and discussing  the parameters space in order to emphasise how different environmental and initial conditions lead to different binary evolution.\\In \autoref{chap:chapter3} we describe the main features of the codes used to generate N-body initial condition and N-body numerical simulations and compare the obtained binary evolutionary tracks with those of the previous chapter.\\Finally, the main results of this work are summarized, and possible future improvements are reported in the concluding chapter.
+Within the framework of the hierarchical growth scenario of galaxies \parencite{White_1978}, the formation of IMBH binaries is expected to occur naturally as a consequence of mergers between their host stellar systems \parencite{Maiolino_2024}. These systems are among the most powerful sources of gravitational waves (GWs) in the Universe \parencite{Maggiore_book}, making them prime targets for current and future GW observatories. In particular, the upcoming Laser Interferometer Space Antenna (LISA), a joint ESA/NASA space mission, will probe the low-frequency GW regime, from $\sim 10^{-4}$ to $\sim 10^{-1}$ Hz \parencite{Amaro-Seoane_2017,Amaro-Seaone_2023}, providing access to compact-object binaries with masses of $\sim10^4-10^7,M_\odot$ and enabling the detection of their mergers out to redshift $z\sim20$ \parencite{Colpi_2024}. At higher frequencies, the ground-based Einstein Telescope (ET) will complement LISA by extending the accessible frequency and mass ranges towards lower-mass systems, being expected to detect IMBH binaries with masses of $\sim10^2-10^3,M_\odot$ out to redshifts of a few \parencite{ET_book}. Therefore, current and future GW observatories may provide a unique opportunity to unveil the population of IMBHs through their gravitational-wave emission, which may be detectable even when their electromagnetic signatures are too faint to be observed.\\In light of this perspective, this thesis investigates the time evolution of the main orbital parameters of IMBH binaries, with particular focus on the semimajor axis $a$ and eccentricity $e$, and examines how BH masses, stellar background properties, and the binary initial condition influence their dynamical evolution and coalescence timescale through a series of numerical experiments. To this end, the evolution of IMBH binaries is studied using two complementary approaches: the numerical integration of the differential equations for the binary separation and eccentricity provided by the hybrid model developed by \textcite{Quinlan_1996} and extended by \textcite{Sesana_2010}, and high-resolution, gas-free N-body simulations of mergers between BHs and their stellar hosts performed with the hybrid tree-regularized code KETJU \parencite{Mannerkoski_2023}.\\The suite of numerical experiments presented in \textcite{Khan_2021} and \textcite{Khan_2024} on both nucleated and non-nucleated dwarf galaxies have highlighted the crucial role of the stellar background density,particularly in the vicinity of the BHB sphere of influence, in driving fast and efficient mergers. In particular, high-density stellar environments ensure an adequate supply of low-angular-momentum stars, thereby sustaining efficient hardening via stellar slinghot (see, e.g., \textcite{Mikkola_1992}), while in low-density environments, the insufficient replenishment of such orbits may lead to binary stalling, giving rise to the so-called "last-parsec problem" \parencite{Milosavljevic_2003}. The evidence that different stellar environments produce peculiar pathways to coalescence highlights the need to investigate the dynamical evolution of IMBH binaries across a representative range of realistic stellar hosts. The first class considered here comprises dwarf galaxies, whose most commonly adopted definition relies on an upper limit of $M_V>-18$ in absolute (V)-band magnitude \textcite{Grebel_2003}. The observation of these systems even at high redshifts (see, e.g., \textcite{Nguyen_2018}; \parencite{Kikuchihara_2020}) makes them plausible stellar hosts at the time of IMBH pairing, whose GW emission may be probed by present-day observatories. Although N-body simulations have shown that IMBH binaries embedded in non-nucleated dwarf galaxies have coalescence times exceeding the Hubble time, and despite the fact that most dwarf galaxies harbor a nuclear star cluster (see, e.g., \textcite{Neumayer_2020}), we artificially evolve non-nucleated dwarf galaxies back to redshift $z$ according to the cosmic size evolution law derived by \textcite{Ono_2023}. Together with the observed increase in the BH-to-bulge mass ratio towards higher redshifts as shown in Figure \ref{BH-Bulge mass}, this effect is expected to partially compensate for the absence of a nuclear star cluster, potentially allowing the binary to coalesce within the present-day Universe.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Maiolino.png}
+    \caption{Black hole mass as a function of host galaxy stellar mass. Golden circles denote the JADES results, blue symbols high-z JWST measurements, grey triangles high-z QSOs, and red symbols local galaxies. Dashed orange lines connect candidate merging BHs. Picture from \textcite{Maiolino_2024}.}
+    \label{BH-Bulge mass}
+\end{figure}
+In recent years, several claims have been made regarding the possible presence of IMBHs in Galactic and extragalactic globular clusters (GCs). Although these detections are not always conclusive, dynamical measurements and signatures of accretion in the X-ray band have provided indications of central IMBHs in a number of old stellar clusters (e.g., \textcite{Gebhardt_2005}; \textcite{Baumgardt_2017}). At the same time, observations of galaxies at very high redshift are revealing stellar systems with properties that may provide insights into the possible progenitors of present-day GCs. An example of this is constituted by the "Misty Moons" \parencite{Eros_2026} and the "Bullet arc" \parencite{Bradac_2025}, two strongly lensed galaxies at a photometric redshift of \(z_{phot}\sim11-12\) and spectroscopic redshift $z_{spec}\sim11$ respectively, which are resolved into several massive stellar clumps. This suggests that star formation in the early universe may have been clump-dominated, with such stellar clumps potentially representing the progenitors of the more compact and less massive GCs observed in the local Universe, before undergoing substantial mass loss due to tidal interactions with their host galaxies. Figure \ref{size-mass} shows the size–mass relation of local star clusters, star-forming clumps, and dwarf galaxies, providing a direct comparison between the properties of local GCs and high-\(z\) stellar clumps.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Eros.png}
+    \caption{Size–mass relation. Stars denote the entire systems, while circles denote individual stellar clumps. Other symbols denote local Globular Clusters, young massive star clusters, and Nuclear Star Clusters. Picture from \textcite{Eros_2026}.}
+    \label{size-mass}
+\end{figure}
+Mindful of these considerations, we also include stellar-clump-like backgrounds in our suite of numerical experiments, adopting IMBH masses consistent with the empirical scaling relation shown in Figure~\ref{BH-Bulge mass}.\\The structure of this thesis is outlined as follows.\\In \autoref{chap:chapter1}, we provide a brief overview of the main physical mechanisms promoting the shrinking of BH binaries, including violent relaxation, dynamical friction, stellar scattering by low-angular-momentum stars, and GW emission.\\In \autoref{chap:chapter2}, it will be introduced the self-consistent hybrid model developed by \textcite{Quinlan_1996} and \textcite{Sesana_2010}. We then present the evolutionary tracks obtained for the adopted sample of host galaxies and explore the relevant parameter space, highlighting how different environmental properties and initial conditions affect the binary evolution.\\In \autoref{chap:chapter3} are reported the main features of the codes used to generate equilibrium N-body initial conditions and carry out the numerical simulations. The chapter then presents the results obtained by combining the KETJU evolution, which follows the BH pair from early merger to the stellar-scattering-dominated regime, with the hybrid model used to track its subsequent evolution towards final coalescence.\\Finally, the main results of this work are summarized, and possible future improvements are reported in the concluding chapter.
 %\clearpage
 
 
@@ -310,7 +286,7 @@ The structure of this thesis is outlined as follows.\\In \autoref{chap:chapter1}
 \begin{center}
 \begin{minipage}{0.65\textwidth}
 \centering
-\textit{In the "bottom-up" scenario, where low-mass structures form earlier and more massive ones assembly later through clustering and mergers, MBHs binaries are belived to form due to galaxy mergers. Various and different physical mechanisms are involved and in competition from the pairing to the final coalescence. This chapter aims at resuming the main aspects of these processes, listing them in chronological order by significance.\\It begins by addressing dynamical friction, effective down to the formation of a gravitationally bound pair, and by providing dynamical friction timescales for stellar environments of astrophysical interest. Then, the main features of the gravitational slinghot will be discussed, as it rules the binary hardening via stellar ejection, along with the importance of loss-cone refilling in driving the system toward the inspiral phase.\\The chapter ends with a derivation of the key equations describing the binary's time evolution once it enters the gravitational-wave-dominated phase, leading to its final coalescence.}
+\textit{In the "bottom-up" scenario, in which low-mass structures form first and progressively more massive systems assemble through hierarchical clustering and mergers, MBH binaries are expected to form as a consequence of mergers involving stellar systems or galaxies embidding such compact objects.\\This chapter reviews the main physical mechanisms driving the hardening of MBH binaries, from the initial merger of their hosts to the final coalescence. We first discuss violent relaxation, which efficiently converts the orbital energy of the merging systems into disordered kinetic energy of the newly formed system. Then, dynamical friction is considered. It acts on massive components such as MBHs and drags them toward the centre of the merger remnant, eventually leading to the formation of a gravitationally bound binary. The subsequent evolution is governed by three-body interactions with low-angular momentum stars: we discuss the gravitational slingshot mechanism, through which stellar ejections extract energy and angular momentum from the binary and promote its hardening, as well as the role of loss-cone refilling. Finally, we derive the key equations describing the binary orbital evolution once gravitational-wave emission becomes the dominant mechanism governing the orbital decay.}
 \end{minipage}
 \end{center}
 
@@ -333,40 +309,61 @@ The structure of this thesis is outlined as follows.\\In \autoref{chap:chapter1}
 
 \section{Galaxy Merger and Violent Relaxation}
 \label{sec:Galaxy Mergers and Violent Relaxation}
-When two galaxies interact with sufficiently low relative velocity and small impact parameter, we classify this event as binary galaxy merger. Galaxy mergers can be classified according to the physical properties of the involved systems. Of particular interest for our purposes are the so-called dissipationless, or dry, mergers, involving gas-poor galaxies, in which radiative energy losses are negligible and the total energy is approximately conserved.\\Numerical N-body experiments have proved that when galaxies of comparable masses collide---giving rise to the so-called major mergers---they usually leave behind a signle, virialized remnant as end-product of this encounter (REFERENCE). This stage is achieved through a series of relaxation processes that drive the initially out-of-equilibrium system, consisting of two colliding galaxies, toward a new equilibrium configuration.
-
-
-A simple order of magnitude estimate of the violent relaxation time can be obtained if one is capable of making some predictions about the outcome of the galaxy merger. In this sense, some indications on virial velocity dispersion $\sigma_v$ and the virial radius $r_v$ of the resulting galaxy can be derived; for an isolated galaxy of mass $M$, total kinetic $T$ and total gravitational energy $U$, they are defined as
-\begin{equation}
- \sigma_v^2=\frac{2T}{M}, \qquad  r_v=-\frac{GM^2}{U}.
+When two galaxies approach each other with sufficiently low relative velocity and small impact parameter, the encounter may result in a galaxy merger (see, e.g., \textcite{Toomre_1972}; \textcite{Cimatti_book}). Galaxy mergers can be broadly classified according to the physical properties of the systems involved. Of particular relevance here are dissipationless, or dry, mergers, which involve gas-poor galaxies and are characterized by negligible radiative energy losses, so that the total energy of the system is approximately conserved \parencite{Khochfar_2009}. Numerical $N$-body simulations have shown that collisions between galaxies of comparable mass, commonly referred to "major mergers", generally result in a single, virialized remnant (see, e.g.  \parencite{Barnes_1992}; \textcite{Hilz_2012}). The formation of this remnant proceeds through a series of relaxation processes driven by the rapidly varying gravitational potential during the encounter, which redistributes the energy and angular momentum of the system and drives the initially out-of-equilibrium configuration toward a new equilibrium state (see, e.g. \textcite{Lynden_1967}; \textcite{Saslaw_1970}).\\In the scientific literature, several approaches have been proposed to define and derive the timescale of violent relaxation. Here, we follow the approach of \textcite{Lynden_1967} and define it as the characteristic oscillation period of the newly formed galaxy around the equilibrium configuration established by the virial condition
+\begin{equation}\label{virial condition}
+ 2K+W=0,
 \end{equation}
-Let us consider two galaxies of mass $M_i$ and energy $E_i=T_i+U_i$ each; an ideal dissipationless merger between them, where both the total mass and energy are conserved, will produce a remnant having mass $M=M_1+M_2$ and energy $E=E_1+E_2+E_{orb}$, with $E_{orb}$ accounting for the ordered kinetic energy of the pair and the mutual gravitational energy. By combining the virial theorem and the energy conservation equation, it is straightforward to prove that
+holding in its barycentric inertial reference system $S_{CM}$, with $K$ and $W$ standing for the total kinetic and gravitational potential energy of the galaxy remnant respectively. We therefore first characterize the equilibrium state attained by the system following the relaxation process.\\Let us consider two galaxies, each with mass $M_i$ and total energy $E_i=K_i+W_i$. In an ideal dissipationless merger, the total mass and energy are conserved, so the resulting remnant has mass $M=M_1+M_2$ and energy $E=E_1+E_2+E_{\rm orb}$, where $E_{\rm orb}$ accounts for the orbital energy of the pair, including both its ordered kinetic and mutual gravitational contributions. Following violent relaxation on a timescale $T_r$, the remnant settles into an equilibrium configuration that can be characterized by the virial velocity dispersion $\sigma_v$ and virial radius $r_v$, defined by
+\begin{equation}
+\sigma_v^2=\frac{2K}{M}, \qquad r_v=-\frac{GM^2}{W},
+\end{equation}
+which provide proxies for the characteristic stellar velocity dispersion and size of the galaxy in equilibrium, thus representing key information on the final stage reached by the merging galaxies.\\By combining the virial condition (\ref{virial condition})—which applies both to the progenitor galaxies prior to the interaction and to the remnant after the violent relaxation timescale $T_r$—with energy conservation, one obtains
 \begin{equation}\label{remnant_virial_sigma}
- \sigma^2=\frac{M_1\sigma_{v,1}^2+M_2\sigma_{v,2}^2-2E_{orb}}{M_1+M_2}
+\sigma_v^2=\frac{M_1\sigma_{v,1}^2+M_2\sigma_{v,2}^2-2E_{\rm orb}}{M_1+M_2}
 \end{equation}
 and
 \begin{equation}\label{remnant_gravitational_radius}
- \frac{(M_1+M_2)^2}{r_v}=\frac{M_1^2}{r_{v,1}}+\frac{M_2^2}{r_{v,2}}-\frac{2E_{orb}}{G}.
+\frac{(M_1+M_2)^2}{r_v}=\frac{M_1^2}{r_{v,1}}+\frac{M_2^2}{r_{v,2}}-\frac{2E_{\rm orb}}{G},
 \end{equation}
-By looking at Equation (\ref{remnant_virial_sigma}) and (\ref{remnant_gravitational_radius}), one concludes that for equal-mass parabolic encounters, the ones that have been taken into account in order to analyze MBHBs pairing and orbital decay, $M=2M_1$, $r_v=2r_{v,1}$ and $\sigma_v=\sigma_{v,1}$, since $E_{orb}=0$ and $M_1=M_2$.\\Therefore, the remnant galaxy formed as a consequence of an head-on collision between two identical galaxies at rest when they are at infinite relative separation will lose its memory about after a time
-
-
-
-
-While two-body relaxation operates on a too much long timescale for the galaxy remnant to become collisional within the Hubble time $t_H$, violent relaxation plays a central role in redistributing the energy, converting the ordered orbital kinetic energy into disordered internal energy \parencite{Lynden_1967}.\\In general, during galactic encounters, two main distinct mechanisms are at work in shaping the formation and subsequent evolution of the post-merged galaxy: violent relaxation and dynamical friction. The former arises from rapidly changing gravitational fields, such as those of a newly formed galaxies, and results particles heating. The latter, instead, actes on massive particles, e.g. MBHs, slowing them down and pushing the heaviest objects towards the newly formed galactic center (CIOTTI BOOK).\\We start our discussion by introducing the concept of violent relaxation time $T_r$. According to the physical origin of this phenomenon, the first step in this direction is proving that the energy $\epsilon_*$ of a star, moving under the action of the gravitational potential $\psi(\mathbf{x},t)$,
-can change if and only if the latter varies itself with time. If we impose $\psi(\mathbf{x},t)$ to vanish at infinity, then the expression of the energy for a star of mass $m_*$ and velocity $\mathbf{v}$ becomes
+where $\sigma_{v,i}$ and $r_{v,i}$ denote the virial velocity dispersion and virial radius, respectively, of the colliding systems \parencite{Cimatti_book}. From Equations~(\ref{remnant_virial_sigma}) and~(\ref{remnant_gravitational_radius}), it follows that parabolic encounters between identical progenitors, defined by $E_{orb}=0$, which are the configuration considered here to carry out $N$-body numerical experiments, give rise to a galaxy remnant having
+\begin{equation}
+M=2M_1=2M_2, \qquad r_v=2r_{v,1}=2r_{v,2}, \qquad \sigma_v=\sigma_{v,1}=\sigma_{v,2}.
+\end{equation}
+Therefore, before the merger to occur, each progenitor galaxy, which is assumed to be made of $N$ stars of masses $m_i$ and velocities $\mathbf{v_i}$, is individually virialized and satisfies the virial equilibrium condition
+\begin{equation}
+2\sum_{i=1}^{N} \frac{1}{2} m_i v_i^2-\frac{1}{2} \sum_{i=1}^{N} \sum_{j \ne i} \frac{Gm_i m_j}{|\mathbf{x_i}-\mathbf{x_j}|}=2K+W=0.
+\label{extended virial condition}
+\end{equation}
+This condition is temporarily violated once the collision begins, as the newly formed remnant is driven far from equilibrium by the coherent motion inherited from the relative orbital motion of the progenitors. Consequently, during violent relaxation, Equation (\ref{virial condition}) is no longer satisfied at every instant; rather, the system obeys the time-dependent virial theorem,
+\begin{equation}
+\frac{1}{2}\ddot{I}=2K+W,
+\label{time_dependent_virial}
+\end{equation}
+where $I$ denotes the polar moment of inertia.\\To quantitatively characterize the level of virialization of any system evolving towards equilibrium, it is usefull to introduce the so-called virial ratio
+\begin{equation}
+Q\equiv \frac{2K}{|W|}.
+\end{equation}
+Figure \ref{Virial ratio image}, and particularly the green curves, illustrates how the virial ratio $Q$ oscillates about its equilibrium value, $Q=1$, while the amplitude of these oscillations rapidly decreases with time as the ordered kinetic energy is progressively redistributed into random stellar motions. This behaviour, also observed in numerical $N$-body simulations of galaxy mergers (see, e.g., \textcite{Nipoti_Londrillo_2007}), indicates that the system progressively approaches virial equilibrium and that most of the virialization process takes place in the vicinity of the final equilibrium configuration.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Nipoti_Londrillo_2007.png}
+    \caption{Time evolution of the virial ratio (top panels) and of
+the barycentric relative speed (bottom panels) for the two sets of galaxy merger simulations: head-on (left panels) and off-centre (right panels). Blue, red, and green curves refer to MOND, equivalent Newtonian, and purely baryonic Newtonian simulations, respectively. Picture from \textcite{Nipoti_Londrillo_2007}.}
+    \label{Virial ratio image}
+\end{figure}
+We are now in a position to introduce the violent relaxation timescale $T_r$ and derive an estimate for it. To this end, it is useful to start from the physical mechanism underlying violent relaxation and consider the evolution of the energy $\epsilon_*$ of an individual star moving in a time-dependent gravitational potential $\psi(\mathbf{x},t)$. We first show that the stellar energy can change only as a consequence of an explicit time dependence of the gravitational potential. Thus, if the potential is chosen to vanish at infinity, the energy $\epsilon_*$ of a star with mass $m_*$ and velocity $\mathbf{v}$ is given by
 \begin{equation}\label{Stellar energy}
- \epsilon_*=\frac{1}{2}m_*v^2+m_*\psi(\mathbf{x},t)
+ \epsilon_*=\frac{1}{2}m_*v^2+m_*\psi(\mathbf{x},t).
 \end{equation}
-and by differentiating with respect to the time both sides one obtains
+Differentiating both sides of Equation~(\ref{Stellar energy}) with respect to time yields
 \begin{equation}
  \frac{d\epsilon_*}{dt}=m_*\left[\mathbf{v}\cdot \dot{\mathbf{v}}+\nabla\psi \cdot \mathbf{v} +\frac{\partial\psi}{\partial t}\right].
 \end{equation}
-Since $\dot{\mathbf{v}}=-\nabla \psi$, the previous identity reduces to
+For a star moving under the gravitational potential $\psi$, its acceleration satisfies $\dot{\mathbf{v}}=-\nabla\psi$ and the previous equation reduces to
 \begin{equation}\label{stellar energy derivative}
- \frac{d \epsilon}{dt}=\frac{\partial \psi}{\partial t},
+\frac{d\epsilon}{dt}=\frac{\partial\psi}{\partial t},
 \end{equation}
-where $\epsilon=\epsilon_*/m_*$ denotes the stellar energy per unit mass.\\Equation (\ref{stellar energy derivative}) shows that individual stars continuously gain and lose orbital energy  due to a rapidly evolving gravitational field.Therefore, $T_r$ can be naturally defined as the timescale over which the change in the energy of a typical star becomes comparable to its initial value, i.e.
+where $\epsilon=\epsilon_*/m_*$ is the stellar energy per unit mass. Equation~(\ref{stellar energy derivative}) shows that individual stars continuously gain and lose orbital energy as a consequence of the rapidly varying gravitational field. This naturally motivates defining the violent relaxation timescale $T_r$ as the timescale over which the energy change of a typical star becomes comparable to its initial energy \parencite{Lynden_1967}, i.e.
 \begin{equation}
 T_r =
 \left\langle
@@ -378,78 +375,56 @@ T_r =
 \right\rangle^{-1/2}.
 \label{violent_relaxation_time}
 \end{equation}
-At the beginning of the merger, the single galaxies are virialized, thus in equilibrium condition, and obey to
+As discussed above, during violent relaxation, the remnant progressively approaches virial equilibrium set by $Q=1$, as indicated by the damped oscillations of the virial ratio around this value. However, in this regime $\ddot{I}$ remains small but non-zero and a mean star experiences changes in both kinetic and gravitational energies in a coupled manner, approximately satisfying
 \begin{equation}
-   2\sum_{i=1}^{N} \frac{1}{2} m_i v_i^2-\frac{1}{2} \sum_{i=1}^{N} \sum_{j \ne i} \frac{Gm_i m_j}{|\mathbf{x_i}-\mathbf{x_j}|}=2K+W=0 \qquad \forall t
-   \label{virial condition}
-\end{equation}
-in their barycentric inertial reference system $S_{CM}$ each, with $K$ and $W$ standing for the total kinetic and gravitational potential energy of the galaxy respectively. However, once the collision takes place, the resulting galaxy has not reached the equilibrium yet as there is still some remaining ordered kinetic energy that needs to be converted first. To quantitatively characterize the level of virialization of any system evolving towards equilibrium, it is usefull to introduce the so-called virial ratio
-\begin{equation}
- Q\equiv \frac{2K}{|W|}.
-\end{equation}
-Figure \ref{Virial ratio image}, and particularly the green curves, illustrates how the virial ratio Q oscillates about its equilibrium value, Q=1, while the amplitude of these oscillations rapidly decreases with time. This behaviour, observed in numerical N-body simulations of galaxy mergers, indicates that the system undergoes most of its virialization process in the vicinity of the equilibrium state toward which it evolves.
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{Nipoti_Londrillo_2007.png}
-    \caption{Time evolution of the virial ratio (top panels) and of
-the barycentric relative speed (bottom panels) for the two sets of galaxy merger simulations: head-on (left panels) and off-centre (right panels). Blue, red, and green curves refer to MOND, equivalent Newtonian, and purely baryonic Newtonian simulations, respectively. Picture from \textcite{Nipoti_Londrillo_2007}.}
-    \label{Virial ratio image}
-\end{figure}
-Therefore, during the virialization process, both $K$ and $W$ undergo oscillations about their equilibrium values. Consequently, Equation (\ref{virial condition}) is no longer satisfied at every instant; rather, the system obeys the time-dependent virial theorem,
-\begin{equation}
-\frac{1}{2}\ddot{I}=2K+W,
-\label{time_dependent_virial}
-\end{equation}
-where $I$ denotes the polar moment of inertia. In this regime, $\ddot{I}$ remains small but non-zero, quantifying the departure from virial equilibrium. Owing to Equation (\ref{virial condition}), the mean star undergoes corresponding variations in its kinetic and gravitational potential energies, maintaining the approximate relation
-\begin{equation}
-\frac{1}{2}m_*v^2 \sim - \frac{1}{4}m_*\psi
+\frac{1}{2}m_*v^2 \sim - \frac{1}{4}m_*\psi,
 \label{mean_star_kinetic_potential_relation}
 \end{equation}
-By plugging Equation (\ref{mean_star_kinetic_potential_relation}) into Equation (\ref{Stellar energy}), we obtain the following equivalent expression for the violent relaxation time
+as dictated by Equation (\ref{extended virial condition}).\\By substituting Equation~(\ref{mean_star_kinetic_potential_relation}) into Equation~(\ref{Stellar energy}), we can express the specific stellar energy solely in terms of the gravitational potential and, mindful of Equation (\ref{violent_relaxation_time}), obtain the following equivalent form for the violent relaxation timescale:
 \begin{equation}
 T_r \equiv \frac{3}{4}
 \left\langle
-\frac{\psi^2}{\dot{\psi}^{\,2}}
-\right\rangle^{-1/2}.
+\frac{\psi^2}{\dot{\psi}^{2}}
+\right\rangle^{1/2}.
 \label{violent_relaxation_time_reformulation}
 \end{equation}
-Since the polar moment of inertia scales with the total mass $M_*$ of the system and the square of its instantaneous characteristic radius $R_*(t)$, it can be written as
+Dimensional analysis suggests that the polar moment of inertia can be expressed in terms of the total mass $M$ and the square of the instantaneous characteristic radius $R(t)$ as
 \begin{equation}
-I(t)=\lambda^2 M_*R_*^2(t)
+I(t)=\lambda^2 MR^2(t),
 \label{moment_of_inertia}
 \end{equation}
-where $\lambda^2$ is a dimensionless structural parameter expected to be of order unity.\\Let the system undergo small radial perturbations about its virial equilibrium configuration. Specifically, we write the instantaneous characteristic radius as
+where $\lambda^2$ is a dimensionless structural factor of order unity that encodes the instantaneous mass distribution and is determined by the geometrical configuration of the masses $m_i$.\\Let us consider small radial perturbations of the system about its virial equilibrium configuration. In this regime, the instantaneous characteristic radius of the system can be expressed as a small deviation from its equilibrium value, which we identify with the gravitational radius. Therefore, to the first order,
 \begin{equation}
- R_*(t)\approx r_v+\delta R_*
+R(t)\approx r_v+\delta R,
 \end{equation}
-where $r_v$ is the gravitational radius,
+with $|\delta R|\ll r_v$ representing the small radial displacement from equilibrium. Under this approximation, linearizing Equation (\ref{virial condition}), written in terms of $\sigma_v$ and $r_v$, with respect to the perturbation yields the equation
 \begin{equation}
-r_v=-\frac{GM^2}{U},
-\label{gravitational radius}
+2\lambda^2r_v\ddot{\delta R}
+-\frac{GM}{r_v^2},\delta R,
 \end{equation}
-and $|\delta R_*| \ll r_v$. Linearizing Equation (\ref{virial condition}) with respect to the perturbation then yields the equation of a simple harmonic oscillator,
-\begin{equation}
-2\lambda^2r_v\ddot{\delta R_*}
--\frac{GM}{r_v^2},\delta R_*,
-\end{equation}
-with angular frequency
+which we recognize to be that of a simple harmonic oscillator, with angular frequency
 \begin{equation}
 \omega=\left(
-\frac{GM}{2\lambda^2R_0^3}
+\frac{GM}{2\lambda^2r_v^3}
 \right)^{1/2}
-=
+\end{equation}
+It is worth of noticing that, introducing the galaxy mean density $\bar{\rho}=3M/(4\pi r_v^3)$, the latter quantity can be expressed as:
+\begin{equation}
+\omega=
 \left(
 2\pi G\bar{\rho}
-\right)^{1/2},
+\right)^{1/2}.
 \end{equation}
-in which is introduced the galaxy mean density $\bar{\rho}=3M_*/(4\pi r_v^3)$. Yet, as the gravitational potential $\psi \sim 1/r$, it varies on exactly the same timescale as the radius, i.e. $\dot{\psi} \sim \omega \psi$ , leading to
+Since the gravitational potential scales as $\psi\sim 1/r$, its time variation is governed by the same characteristic timescale as the radial oscillations, i.e. $\sim \omega^{-1}$. Plugging this scaling into the definition of the violent relaxation timescale in Equation (\ref{violent_relaxation_time_reformulation}) returns
 \begin{equation}
 T_r\simeq
-\frac{3}{4\omega}.
+\frac{3}{4\omega}=\frac{3}{\sqrt{32\pi G\bar{\rho}}}.
 \label{violent_relaxation_time_final}
 \end{equation}
+Thus, the violent relaxation timescale is directly related to the characteristic dynamical timescale of the newly formed system and is expected to be of the order of its free-fall timescale $t_{ff}\propto 1/\sqrt{G\bar{\rho}}$.\\To obtain an order-of-magnitude estimate of this timescale for the merger of two identical non-nucleated dwarf galaxies, we may consider ... . In this case, the violent relaxation timescale is expected to be of the order of ..., demonstrating that this mechanism can redistribute the orbital energy of the progenitor galaxies on a much shorter timescale than that associated with two-body relaxation $t_{2b}$. The latter will be introduced in \S~\ref{sec:Two-Body Relaxation and Dynamical Friction} as a key process responsible for replenishing the so-called binary "loss cone".
 
-EXAMPLE
+
+
 
 
 
@@ -459,72 +434,69 @@ EXAMPLE
 
 \section{Two-Body Relaxation and Dynamical Friction}
 \label{sec:Two-Body Relaxation and Dynamical Friction}
-
-
-
-
-
-
-
-
-
-
-
-Let us begin with deriving the two-body relaxitation time, hereafter $t_{2b}$, beyond which gravitational encounters alter stellar trajectories driven by the potential generated by $\rho(r)$, proxy of the real distribution of stars. Thus, systems whose age does not exceed the associated two-body relaxitation time, i.e. $t_{age}<t_{2b}$, will be referred to as collisionless, otherwise  we talk about collisional systems and granularity will be important.\\\textcite{Chandrasekhar_1943} approach  provides an estimate of $t_{2b}$ by considering cumulative orbital deflections under the Impulsive Approximation. It consists of the following two assumptions:
+Galaxies are multi-component systems in dynamical equilibrium, where different stellar populations, gaseous phases, dust, and dark matter coexist \parencite{Cimatti_book}. These environments host an enormous number of stars, which makes it impossible to track the orbit of each element. Neverthless, by abandoning the idea of characterizing the time evolution of each degree of freedom in the phase-space (PS), a probabilistic description of the stellar population is still possible in terms of the one-particle distribution function (DF) $f(\mathbf{x},\mathbf{v},t)$. This can be interpreted as the probability density of finding a star at a given point $\mathbf{w}=(\mathbf{x},\mathbf{v})$ in phase space at time $t$. It is conventionally normalized so that
+\begin{equation}
+\rho(\mathbf{x},t)=\int_{\mathbb{R}^3}d^3\mathbf{v}\,f(\mathbf{x},\mathbf{v},t),
+\end{equation}
+where $\rho(\mathbf{x},t)$ is the stellar density providing a smooth approximation to the actual, discrete distribution of $N$ stars.\\In the collisionless approximation, DF is conserved along the orbits of the gravitational potential $\Phi(\mathbf{x},t)$ associated with the stellar density $\rho(\mathbf{x},t)$. In this regime, it thus obeys the so-called Collisionless Boltzmann Equation (CBE),
+\begin{equation}\label{CBE}
+\frac{df}{dt}\equiv \frac{\partial f}{\partial t}+\frac{d\mathbf{x}}{dt}\cdot \frac{\partial f}{\partial \mathbf{x}}+\frac{d\mathbf{v}}{dt}\cdot \frac{\partial f}{\partial \mathbf{v}}=0.
+\end{equation}
+Equation (\ref{CBE}) is expected to hold as long as the effects of repeated gravitational encounters between stars remain negligible over the age of the system. Although individual encounters are typically weak, their cumulative effect can progressively redistribute energy and angular momentum among stars, causing their trajectories to deviate from those drawn by the smooth potential $\Phi$ and DF to diffuse in PS \parencite{Binney_book}.\\The characteristic timescale over which these cumulative encounters significantly alter stellar trajectories is the two-body relaxation time $t_{2b}$, which provides a natural criterion for assessing the validity of the collisionless approximation. Systems whose age is shorter than their two-body relaxation time, i.e $t_{age}<t_{2b}$, are conventionally referred to as collisionless; otherwise, they will be referred to as collisional \parencite{Ciotti_book}.\\The approach of \textcite{Chandrasekhar_1943} for estimating $t_{b}$ relies on the Impulsive Approximation. It consists of two main assumptions:
 \begin{enumerate}
-    \item   All stellar encounters are indipendent of the others. Therefore, multiple interactions are suppressed.
-    \item  The gravitational influence of the remaining $N-2$ stars is negletted, resulting in hyperbolic two-body encounters only.
+\item Stellar encounters are treated as independent events, so that correlations between consecutive encounters and simultaneous multiple interactions are neglected.
+\item The gravitational influence of the remaining $N-2$ stars is neglected during each encounter, reducing the problem to a sequence of isolated hyperbolic two-body interactions.
 \end{enumerate}
-The first tool we need to introduce in order to deal with this treatment, but will be used in the next Sections as well, is the one-particle phase-space distribution function (DF) $f(\mathbf{x_f},\mathbf{v_f},t)$ of the field stars, which depends on the star position $\mathbf{x_f}$, velocity $\mathbf{v_f}$ and time.
-provides the probability density of finding a particle at point $((\mathbf{x_f},\mathbf{v_f})$ of the phase-space at time $t$. By definition, the stellar density is thus
+Let us work under the simplifying assumption of a spatially homogeneous distribution of field stars with isotropic velocity field. The DF $f(\mathbf{x_f},\mathbf{v_f})$ of such system can be expressed as the product of the position-indipendent number density and probability density function $g(v)$ in the velocity space,
 \begin{equation}
-\rho(\mathbf{x_f},t)=\int_{\mathcal{R}^3}d^3\mathbf{v_f}f(\mathbf{x_f},\mathbf{v_f},t).
+    f(\mathbf{x_f},\mathbf{v_f})=n_fg(v_f).
 \end{equation}
-Under the simplifying assumption of a spatially homogeneous distribution and an isotropic velocity field, the degrees of freedom (d.o.f.) are reduced, and the distribution function can be expressed as
-\begin{equation}
-    f(\mathbf{x_f},\mathbf{v_f})=n_fg(v_f);
-\end{equation}
-hence, the DF has become the product of the position-indipendent number density and probability density function $g$ in the velocity space\\Two-body encounters between the test particle $m_t$ and the field star $m_f$ will induce change in some orbital property $P$. The cumulative effect of two-body encounters leads to a time variation of $P$, which is quantified by the diffusion coefficient $D(P)$; the Impulsive Approximation enables us ti write it as
+Two-body encounters between a test particle of mass $m_t$ and a field star of mass $m_f$ induce small changes in an orbital property $P$ of the test particle. Although each interaction produces only a small perturbation, the cumulative effect of many encounters causes $P$ to diffusive. This process is quantified by the diffusion coefficient $D(P)$, which measures the rate at which $P$ changes per unit time. Owing to the Impulsive Approximation, it can be written as
 \begin{equation}\label{diffusion coeff def}
-    D(P)\equiv 2\pi n_f\int_{\mathcal{R}^3} d^3\mathbf{v_f}\|\mathbf{v_t}-\mathbf{v_f}\|g(v_f)\int_0^\infty db\langle P\rangle b,
+    D(P)\equiv 2\pi n_f\int_{\mathbb{R}^3} d^3\mathbf{v_f}\|\mathbf{v_t}-\mathbf{v_f}\|g(v_f)\int_0^\infty db\langle P\rangle b,
  \end{equation}
-where $\langle P\rangle$ indicates the angle average and $b$ the impact parameter.\\A usefull indicator of changes in the stellar trajectories may be the orbital property $P=\Delta\mathbf{v_{t\perp}}$, that is the component of the test particle velocity variation perpendicular to the initial relative velocity. However, under the assumption of isotropy, the first-order diffusion coefficients in the velocity components vanish \parencite{binney_2011}. Therefore, at higher order, the quantity $P=\|\Delta v_{t\perp} \|^2$ becomes the relevant orbital parameter for determining $t_{2b}$ at leading order. Taking advantage of the Born aproximation of small angle scattering, holding for small deflection angles, 
-\begin{equation}
-    \|\Delta v_{t\perp} \|\simeq \frac{2Gm_f}{vb}
+where $\langle P\rangle$ denotes the angle-averaged value of the orbital property $P$, and $b$ is the impact parameter of the hyperbolic encounter \parencite{Ciotti_book}.
+Since significant deflections of the original orbits are expected beyond $t_{2b}$, corresponding to the onset of the collisional regime, a useful indicator for determining $t_{2b}$ may be the orbital property $P=\Delta\mathbf{v}_{t\perp}$, that is the component of the test-particle velocity change perpendicular to the initial relative velocity with respect to the field particle. However, under the assumption of isotropy, the first-order diffusion coefficients of the velocity components vanish \parencite{Binney_book}. Consequently, the leading non-vanishing contribution is represented by the second-order diffusion coefficient, hence, making the quantity $P=\|\Delta \mathbf{v}_{t\perp}\|^2$ the relevant orbital parameter for our analysis. By taking advantage of the small-angle scattering approximation (see, e.g., \textcite{Meneghetti_book}),
+\begin{equation}\label{small angle approximation}
+    \|\Delta \mathbf{v}_{t\perp} \|\simeq \frac{2Gm_f}{vb},
 \end{equation}
-and plugging it into Equation (\ref{diffusion coeff def}) returns
-\begin{equation}
-    D(\|\Delta v_{t\perp} \|^2)\simeq 8\pi G^2m_f^2n_f\int_{\mathcal{R}^3}d^3\mathbf{v_f}\frac{g(v_f)}{v}\int_0^\infty \frac{db}{b}.
+with $v$ denoting the modulus of the relative velocity between $m_t$ and $m_f$ at infinity,
+and Equation (\ref{diffusion coeff def}) becomes
+\begin{equation}\label{two divergences}
+    D(\|\Delta \mathbf{v}_{t\perp} \|^2)\simeq 8\pi G^2m_f^2n_f\int_{\mathbb{R}^3}d^3\mathbf{v_f}\frac{g(v_f)}{v}\int_0^\infty \frac{db}{b}.
 \end{equation}
-Two logarithmic divergences arise from the integral over $b$: the so-called ultraviolet divergence at $b=0$, due to the Born approximation, and the infrared divergence at $b=+\,\infty$ because of the used model, i.e. an infinite and homogeneus system. Neverthless, Adopting $b_{\pi/2}$ as lower limit and introducing a fiducial upper limit $b_{max}$, that we expect to exist due to the finite size of real stellar systems, it follows
-\begin{equation}
-D(\|\Delta \mathbf{v}_{t\perp}\|^2) \sim 8\pi G^2 n_f m_f^2 
-\int_{\mathbb{R}^3} \frac{g(v_f)\ln \Lambda}{v} \, d^3 \mathbf{v}_f,
+The integral in Equation (\ref{two divergences}) exhibits two logarithmic divergences. The former, known as ultraviolet (UV) divergence, arises in the limit $b\rightarrow 0$ and results from extending the small-angle scattering approximation to encounters with sufficiently small impact parameters, where it breaks down. The latter, the infrared (IR) divergence, arises in the limit $b\rightarrow\infty$ and is a consequence of modelling the stellar system as infinite and homogeneous. The UV divergence is avoided by replacing the small-angle approximated solution in Equation (\ref{small angle approximation}) with the exact two-body scattering solution; mathematically, this operation is equivalento to impose a lower cutoff to the impact parameter equals $b_{\pi/2}(v)$, corresponding to the impact parameter associated with a deflection angle of $\pi/2$. The IR divergence cannot be eliminated and thus we have to set a fiducial  upper cutoff $b_{\max}$.\\The resulting diffusion coefficient can then be written as
+\begin{equation}\label{diffusion with C log}
+D(\|\Delta \mathbf{v}_{t\perp}\|^2) \sim 8\pi G^2 n_f m_f^2 \int_{\mathbb{R}^3} \frac{g(v_f)\ln \Lambda}{v} \, d^3 \mathbf{v}_f,
 \end{equation}
-where $\ln{(\Lambda)}=\ln{(b_{max}/b_{\pi/2})}$, is the so called Coulomb logarithm. Although it depends on the velocity field, through the impact parameter $b_{\pi/2}$ corresponding to a deflection angle of $\pi/2$, it can be defined the velocity-weighted Coulomb logarithm $\ln{(\bar{\lambda})}$ so that
+where $\ln{(\Lambda)}=\ln{(b_{max}/b_{\pi/2})}$, is the so-called Coulomb logarithm. Although it depends on test-field particle relative velocity through $b_{\pi/2}(v)$, corresponding to a deflection angle of $\pi/2$, by defining the velocity-weighted Coulomb logarithm $\ln{(\bar{\Lambda})}$ so that
 \begin{equation}
 \int_{\mathbb{R}^3} \frac{g(v_f)\ln \Lambda}{\|\mathbf{v}_t - \mathbf{v}_f\|} \, d^3 \mathbf{v}_f
-\equiv \Psi(v_t)\ln \bar{\Lambda},
+\equiv \Psi(v_t)\ln{\bar{\Lambda}},
 \end{equation}
 with
 \begin{equation}\label{Rosenbluth potential}
     \Psi(v_t)=\int_{\mathcal{R}^3}\frac{g(v_f)}{\|\mathbf{v_t}-\mathbf{v_f}\|}d^3\mathbf{v_f},
 \end{equation}
-being the Rosenbluth potential. One of the greatest semplifications brung by isotropy consist of the possibility to express $\Psi(v_t)$ as
+being the Rosenbluth potential, Equation (\ref{diffusion with C log}) turns into
+\begin{equation}
+D(\|\Delta \mathbf{v}_{t\perp}\|^2) \sim 8\pi G^2 n_f m_f^2 \Psi(v_t)\ln{\bar{\Lambda}}.
+\end{equation}
+One of the major simplifications introduced by the assumption of isotropy is that $\Psi(v_t)$ can be expressed as
 \begin{equation}\label{Rosenbluth potential if isotropy}
 \Psi(v_t) = \int_{\mathbb{R}^3} \frac{g(v_f)}{\|\mathbf{v}_t - \mathbf{v}_f\|} \, d^3 \mathbf{v}_f
 \equiv \frac{\Xi(v_t)}{v_t} + 4\pi \int_{v_t}^{\infty} g(v_f) v_f \, dv_f,
 \end{equation}
 where
 \begin{equation}
-\Xi(v_t) = 4\pi \int_{0}^{v_t} g(v_f) v_f^2 \, dv_f,
-\qquad
-\Xi(\infty) = 1
+\Xi(v_t) = 4\pi \int_{0}^{v_t} g(v_f) v_f^2 \, dv_f
 \end{equation}
-is a normalized function by virtue of the $g(v_f)$ function normalization.\\In the high velocity limit, the monopole term of Equation (\ref{Rosenbluth potential if isotropy}) is the dominant to the leading order and 
+is normalized to unity as a consequence of the normalization of velocity-space distribution function $g(v_f)$.\\Finally, if one defines the two-body relaxation time $t_{2b}$ as the ratio between the orbital parameter $P=\|\Delta \mathbf{v}_{t\perp}\|^2$ and the associated diffusion coefficient, it turns out that
 \begin{equation}\label{t_2b}
-    t_{2b}\equiv\frac{v_t^2(-\infty)}{D(\Delta E_{t\perp})}\sim \frac{v_t^3}{8\pi G^2n_fm_f^2ln\bar\Lambda}.
+    t_{2b}\equiv\frac{v_t^2(-\infty)}{D(\Delta E_{t\perp})}\sim \frac{v_t^3}{8\pi G^2n_fm_f^2ln\bar\Lambda},
 \end{equation}
+holding in the high velocity limit from Equation (\ref{Rosenbluth potential if isotropy}).
+
 
 On one hand, as just seen, two-body encounters give rise to the heating of the test particle in the direction perpendicular to the initial relative velocity, being deflected; on the other hand the same particle is slowed down by Dynamical friction as result of long range interaction \cite{Baumgardt_2006}.
 
@@ -640,8 +612,31 @@ Being intrinsically inelastic,, give rise to mergers, hosting an MBH binary (see
 
 
 
+
+
+
+
+
+
+xxxxxxxxxxx
+
+While two-body relaxation operates on a too much long timescale for the galaxy remnant to become collisional within the Hubble time $t_H$, violent relaxation plays a central role in redistributing the energy, converting the ordered orbital kinetic energy into disordered internal energy \parencite{Lynden_1967}.\\In general, during galactic encounters, two main distinct mechanisms are at work in shaping the formation and subsequent evolution of the post-merged galaxy: violent relaxation and dynamical friction. The former arises from rapidly changing gravitational fields, such as those of a newly formed galaxies, and results particles heating. The latter, instead, actes on massive particles, e.g. MBHs, slowing them down and pushing the heaviest objects towards the newly formed galactic center (CIOTTI BOOK).\\
+
+xxxxxxxxxxx
+
+
+
+
+
+
+
+
+
+
 \section{Black Hole Binary–Star Three-Body Scattering}\label{sec:Gravitational Slingshot Effect}
-When operating during major merger events, the dynamical friction brings both MBHs towards the galactic center of the merger remnant, reducing their separation and eventually causing the BHs to cross other sphere of influence. At the end of this process, beyond which three-body stellar encounters take over the long-range intercations with field stars, they find themselves tied together due to their mutual gravitational attraction and at a relative distance of the order of $a_0$, defined as the binary separation at which the enclosed stellar mass is equal to the secondary BH mass $M_2$  \parencite{Baumgardt_2006}. Therefore, in this section we report the main theoretical aspects of three-body encounters, as they represent the dominant process promoting the shrinking of the binary and prepare the conditions for the subsequent inspiral phase.\\Each time a low angular momentum star, hereafter "loss-cone" star, passes close to the BH binary, an exchange of energy and angular momentum between three bodies takes place. Under suitable conditions, the incoming star is ejected at a higher velocity, carrying away the excess energy extracted from the BH pair and thus promoting its progressive hardening. This process is known as  "Slingshot effect" \parencite{Mikkola_1992}.\\Let us focus on the so-called "two-body problem" and some the related results as they will be usefull in dealing with the physics of the stellar slingshot. Given the test and field particles, of masses $m_t$ and $m_f$ respectively and reduced mass $\mu$, the system total energy in the mass center frame $S_{CM}$ turns out to be
+As discussed in \S~\ref{sec:Two-Body Relaxation and Dynamical Friction} and \S~\ref{sec:Galaxy Mergers and Violent Relaxation}, during a dry, major merger, the remnant evolves towards virial equilibrium on the violent relaxation timescale $T_r$, while the MBHs initially located at the centers of the progenitor galaxies sink towards the center of the remnant through dynamical friction on a timescale $t_{fric}$. As their separation decreases, the MBHs eventually cross each other sphere of influence and form a gravitationally bound pair at a separation of order $a_0$, defined as the binary separation at which the enclosed stellar mass equals the secondary BH mass $M_2$ \parencite{Baumgardt_2006}.
+At this stage, the binary separation is sufficiently small that distant stars mainly perturb the motion of the binary's center of mass, with negligible effect on its orbital energy \parencite{Quinlan_1996}. Further hardening is therefore driven predominantly by low angular momentum stars passing in the vicinity of the binary and extracting both energy and angular momentum from it. Each time such a star, hereafter referred to as a "loss-cone star, passes sufficiently close to the binary, a three-body encounter takes place. Under suitable conditions,
+this interaction produces hyper-velocity stars \parencite{Sesana_2006} through the so-called stellar slingshot mechanism \parencite{Mikkola_1992}. In this section, we review the main physical aspects of three-body encounters.\\Let us focus on the so-called "two-body problem" and some the related results as they will be usefull in dealing with the physics of the stellar slingshot. Given the test and field particles, of masses $m_t$ and $m_f$ respectively and reduced mass $\mu$, the system total energy in the mass center frame $S_{CM}$ turns out to be
 \begin{equation}
 \label{E_in_S_cm}
     E=\frac{1}{2}\mu\|\mathbf{v}\|^2-\frac{Gm_fm_t}{r},
@@ -2039,7 +2034,7 @@ Therefore, forming in tha past at $z>0$, they all merge before the present time.
 
 
 \section{Dynamical Equilibrium of Stellar Systems}
-Galaxies are multi-component systems in dynamical equilibrium, where different stellar populations, gaseous phases, dust, and dark matter coexist. These environments host an enormous number of stars, typically ranging from ,which makes it impossible to track the orbit of each individual object. Neverthless, by abandoning the idea of characterizing the time evolution of each degree of freedom in the phase-space, a probabilistic description of the stellar population is still possible in terms of the one-particle DF as anticipated in Section 1.1.\\As long as the stellar component is observed within $t_{2b}$, granularity  is unimportant, collisions are negligible and stars can be described as particles moving in a smooth potential
+ as anticipated in Section 1.1.\\As long as the stellar component is observed within $t_{2b}$, granularity  is unimportant, collisions are negligible and stars can be described as particles moving in a smooth potential
 generated by a continous mass density $\rho$, proxy of the actual stellar distribution. In this regime, when dealing with stars that are all identical to one another, the DF will be unique and will satisfy the Collisionless Boltzmann Equation (CBE). By denoting with $\mathbf{w}$ an arbitrary set of canonical coordinates of PS, this conservation equation descends from differentiating with respect to the time---along the orbits of the potential $\Phi(\mathbf{x},t)$ associated to $\rho(\mathbf{x},t)$---of the normalization condition
 
 \begin{equation}\label{DF normalization}
@@ -2441,6 +2436,5 @@ with $\epsilon\le 1$.
 
 
 \printbibliography
-
 
 \end{document}
