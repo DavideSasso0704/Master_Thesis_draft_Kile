@@ -9,8 +9,8 @@
 \contentsline {section}{\numberline {1.3}Black Hole Binary–Star Three-Body Scattering}{15}{section.1.3}%
 \contentsline {paragraph}{Binary hardening.}{16}{equation.1.3.55}%
 \contentsline {paragraph}{Binary softening.}{17}{equation.1.3.56}%
-\contentsline {section}{\numberline {1.4}Stellar Scattering and Loss Cone Problem}{17}{section.1.4}%
-\contentsline {paragraph}{Empty Loss Cone.}{18}{equation.1.4.64}%
+\contentsline {section}{\numberline {1.4}Stellar Scattering and Loss Cone Problem}{18}{section.1.4}%
+\contentsline {paragraph}{Empty Loss Cone.}{19}{equation.1.4.64}%
 \contentsline {paragraph}{Full Loss Cone.}{19}{equation.1.4.64}%
 \contentsline {subsection}{\numberline {1.4.1}Bound stars consumption}{21}{subsection.1.4.1}%
 \contentsline {subsubsection}{One-Dimensional Analysis }{21}{subsection.1.4.1}%
@@ -22,23 +22,17 @@
 \contentsline {subsection}{\numberline {1.5.2}Generation and Propagation of Gravitational Waves}{24}{subsection.1.5.2}%
 \contentsline {subsection}{\numberline {1.5.3}Gravitational Waves from Black Hole Binaries and Back-Reaction}{26}{subsection.1.5.3}%
 \contentsline {chapter}{\numberline {2}A Hybrid Approach to Binary Evolution}{31}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Quinlan Formalism}{31}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Introduction}{31}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Quinlan Scattering Experiments}{31}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Aplication to a galaxy model}{33}{subsection.2.1.3}%
-\contentsline {section}{\numberline {2.2}Sesana Hybrid Model}{35}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Sesana Scattering Experiments}{35}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Sesana 2010 Results and Comparison}{37}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}NGC 205 IMBH Binary evolution}{45}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}NGC 205 Hybrid Model Evolution}{45}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Cosmic Size Evolution Down to NGC 205}{50}{subsection.2.3.2}%
-\contentsline {chapter}{\numberline {3}Generation of Initial Conditions for N-body Stellar Systems}{54}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Dynamical Equilibrium of Stellar Systems}{54}{section.3.1}%
-\contentsline {section}{\numberline {3.2}OpOpGadget and Galaxy Modeling}{56}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Analysis of the Generated Initial Conditions}{59}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}NCG 205 N-body Initial Conditions}{59}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}NCG 5206 N-body Initial Conditions}{60}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Ketju Numerical Simulations}{60}{section.3.4}%
-\contentsline {chapter}{\numberline {A}Physics Equation}{62}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Numerical Methods}{63}{appendix.B}%
-\contentsline {section}{\numberline {2.1}Runge-Kutta (4)}{63}{section.B.1}%
+\contentsline {section}{\numberline {2.1}Quinlan-Sesana Hybrid Model}{31}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Stellar Cusps IMBH Binary Evolution}{35}{section.2.2}%
+\contentsline {section}{\numberline {2.3}NGC 205 IMBH Binary evolution}{43}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Cosmic Size Evolution Down to NGC 205}{49}{subsection.2.3.1}%
+\contentsline {chapter}{\numberline {3}Generation of Initial Conditions for N-body Stellar Systems}{55}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Dynamical Equilibrium of Stellar Systems}{55}{section.3.1}%
+\contentsline {section}{\numberline {3.2}OpOpGadget and Galaxy Modeling}{57}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Analysis of the Generated Initial Conditions}{60}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}NCG 205 N-body Initial Conditions}{60}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}NCG 5206 N-body Initial Conditions}{61}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Ketju Numerical Simulations}{61}{section.3.4}%
+\contentsline {chapter}{\numberline {A}Physics Equation}{63}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Numerical Methods}{64}{appendix.B}%
+\contentsline {section}{\numberline {2.1}Runge-Kutta (4)}{64}{section.B.1}%

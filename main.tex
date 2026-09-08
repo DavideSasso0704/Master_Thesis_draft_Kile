@@ -635,33 +635,38 @@ xxxxxxxxxxx
 
 \section{Black Hole Binary–Star Three-Body Scattering}\label{sec:Gravitational Slingshot Effect}
 As discussed in \S~\ref{sec:Two-Body Relaxation and Dynamical Friction} and \S~\ref{sec:Galaxy Mergers and Violent Relaxation}, during a dry, major merger, the remnant evolves towards virial equilibrium on the violent relaxation timescale $T_r$, while the MBHs initially located at the centers of the progenitor galaxies sink towards the center of the remnant through dynamical friction on a timescale $t_{fric}$. As their separation decreases, the MBHs eventually cross each other sphere of influence and form a gravitationally bound pair at a separation of order $a_0$, defined as the binary separation at which the enclosed stellar mass equals the secondary BH mass $M_2$ \parencite{Baumgardt_2006}.
-At this stage, the binary separation is sufficiently small that distant stars mainly perturb the motion of the binary's center of mass, with negligible effect on its orbital energy \parencite{Quinlan_1996}. Further hardening is therefore driven predominantly by low angular momentum stars passing in the vicinity of the binary and extracting both energy and angular momentum from it. Each time such a star, hereafter referred to as a "loss-cone star, passes sufficiently close to the binary, a three-body encounter takes place. Under suitable conditions,
-this interaction produces hyper-velocity stars \parencite{Sesana_2006} through the so-called stellar slingshot mechanism \parencite{Mikkola_1992}. In this section, we review the main physical aspects of three-body encounters.\\Let us focus on the so-called "two-body problem" and some the related results as they will be usefull in dealing with the physics of the stellar slingshot. Given the test and field particles, of masses $m_t$ and $m_f$ respectively and reduced mass $\mu$, the system total energy in the mass center frame $S_{CM}$ turns out to be
+At this stage, the binary separation is sufficiently small that distant stars mainly perturb the binary center of mass, with negligible effect on its orbital energy \parencite{Quinlan_1996}. Further hardening is therefore driven predominantly by low angular momentum stars passing in the vicinity of the binary and extracting both energy and angular momentum from it. Each time such a star---belonging to the so-called binary "loss cone", as we will discuss in more detail in \S~\ref{sec:Loss Cone}---passes sufficiently close to the binary, a three-body encounter takes place. Under suitable conditions, this interaction produces hyper-velocity stars (see, e.g., \textcite{Quinlan_1996}; \textcite{Sesana_2006}) through the so-called stellar slingshot mechanism \parencite{Mikkola_1992}. In this section, we review the main physical aspects of three-body scattering and the stellar slingshot mechanism, which are key processes driving the hardening of MBHBs.\\We begin by considering the so-called "two-body problem" and reviewing some of its key results, which will be useful in understanding the physics of the stellar slingshot. Adopting the same notation as in the previous Section, let us consider a test particle and a field particle, with masses $m_t$ and $m_f$, respectively, interacting solely through gravity. Introducing the total mass of the system, $M=m_t+m_f$, and the reduced mass, $\mu=m_tm_f/M$, the total energy in the mass centre frame $S_{CM}$ is given by
 \begin{equation}
 \label{E_in_S_cm}
     E=\frac{1}{2}\mu\|\mathbf{v}\|^2-\frac{Gm_fm_t}{r},
 \end{equation}
- where  $r(t)\equiv \|\mathbf{x_t}-\mathbf{x_f}\|$ and $\mathbf{v}(t)\equiv \mathbf{v_t}-\mathbf{v_f}$ denote particles relative separation and velocity.\\For two unbound particles, moving along hyperbolic orbits in $S_{CM}$, the energy conservation imposed by Equation (\ref{E_in_S_cm}) at two infinity configuarations $r(-\infty)=r(+\infty)=+\infty$ returns
+ where  $r(t)\equiv \|\mathbf{x_t}-\mathbf{x_f}\|$ and $\mathbf{v}(t)\equiv \mathbf{v_t}-\mathbf{v_f}$ denote particles relative separation and velocity.\\For two unbound particles moving along hyperbolic orbits in $S_{CM}$, energy conservation, as expressed by Equation (\ref{E_in_S_cm}), evaluated in the asymptotic limit $r(-\infty)=r(+\infty)\rightarrow+\infty$, yields
 \begin{equation}\label{relative velocity modulus conservation}
      \|\mathbf{v}(-\infty)\|=  \|\mathbf{v}(+\infty)\|.
 \end{equation}
-According to Equation (\ref{relative velocity modulus conservation}), the magnitude of the test particle velocity is conserved in the inertial frame centered on
-the field particle. Therefore, the encounter results only in a rotation of the velocity vector $\mathbf{v}$ and the corresponding velocity change $\Delta\mathbf{v}=\mathbf{v}(+\infty)-\mathbf{v}(-\infty)$ can be conveniently decomposed  as the sum of the components perpendicular and parallel to the initial relative velocity $\mathbf{v}(-\infty)$ as follows
-\begin{equation}
+Although it is not conserved along the entire orbit, Equation (\ref{relative velocity modulus conservation}) shows that the magnitude of the relative velocity---i.e., the velocity of the test particle as measured by an observer comoving with the field particle---is the same at the two asymptotic limits. Therefore, the encounter results only in a rotation of the velocity vector $\mathbf{v}$ and the corresponding velocity change $\Delta\mathbf{v}=\mathbf{v}(+\infty)-\mathbf{v}(-\infty)$ can be conveniently decomposed  as the sum of the components perpendicular and parallel to the initial relative velocity $\mathbf{v}(-\infty)$ as follows:
+\begin{equation}\label{rel vel decomposition}
     \mathbf{v}(+\infty)=\mathbf{v}(-\infty)+\Delta\mathbf{v}_\parallel +\Delta\mathbf{v}_\perp.
 \end{equation}
-Plugging this expression for $\mathbf{v}(+\infty)$ into Equation (\ref{relative velocity modulus conservation}) allows us to obtain the identity
-\begin{equation}\label{slingshot negative scalr product}
+Substituting the expression for $\mathbf{v}(+\infty)$ given in Equation (\ref{rel vel decomposition}) into Equation (\ref{relative velocity modulus conservation}) leads to the identity
+\begin{equation}\label{slingshot negative scalar product}
      \| \Delta\mathbf{v}_\parallel\|^2+  \| \Delta\mathbf{v}_\perp\|^2+\langle \Delta\mathbf{v}_\parallel, \mathbf{v}(-\infty) \rangle=0.
 \end{equation}
-A first glance at this formula reveals that a necessary condition for it to hold is that the scalar product must be a negative term. This observation will be crucial in assessing whether binary BH-star interaction leads to the shrinking or the softening.\\The just derived results correspond to a constraint on particles relative velocity valid in a specific inertial frame. However, one is free to describe the interaction in an arbitrary inertial frame $S_0$, where both bodies may be seen moving; hence, a generalization is required.\\In $S_0$ the close encounter causes both $E_t$ and $E_f$ to change, preserving at each time the validity of energy conservation equation of the system. Between the two configurations at infinite relative separation, the test particle experience a net variation of mechanical energy
+A first inspection of Equation (\ref{slingshot negative scalar product}) reveals that a necessary condition for it to hold is that the scalar product be negative. This observation will be crucial for assessing whether a binary BH--star interaction results in binary hardening or softening \parencite{Ciotti_book}.\\The results derived above impose a constraint on the relative velocity of the interacting particles in a specific inertial frame. However, the interaction can be described in any inertial frame $S_0$. Indeed, while Equation (\ref{relative velocity modulus conservation}) shows that both the total energy and the individual mechanical energies of the particles are conserved between the two asymptotic limits, the close encounter generally induces changes in the individual energies $E_t$ and $E_f$ in $S_0$.\\Between the two configurations at infinite relative separation, the test particle undergoes a net variation in mechanical energy,
 \begin{equation}\label{t energy variation 1}
-    \Delta E_t=\frac{1}{2}m_t[\|\mathbf{v_t}(+\infty)\|^2-  \|\mathbf{v_t}(-\infty)\|^2]=-\Delta E_f,
+\Delta E_t=\frac{1}{2}m_t[|\mathbf{v_t}(+\infty)|^2-  |\mathbf{v_t}(-\infty)|^2]=-\Delta E_f,
 \end{equation}
-which is perfectely compensated by the variation of the field particle mechanical energy, that is
+which is exactly compensated by the corresponding variation in the mechanical energy of the field particle, such that
 \begin{equation}
- \Delta E= \Delta E_t+\Delta E_f=0.
+\Delta E= \Delta E_t+\Delta E_f=0.
 \end{equation}
+
+
+
+HERE
+
+
+
 By combinig the velocity composition law
 \begin{equation}
     \mathbf{v_t}(t)=\mathbf{v_{CM}}+\frac{\mu}{m_t}\mathbf{v}(t)
@@ -1248,8 +1253,8 @@ By substituting Equation (\ref{a=a(e) Maggiore}) into Equation (\ref{tau coal. a
 
 
 
-\section{Quinlan Formalism}
-\subsection{Introduction}
+\section{Quinlan-Sesana Hybrid Model}
+
 In this work, binary evolution embedded in a fixed stellar background problem is addressed in a hybrid fashion providing a self consistent analytical framework where dimensioless rates are directely estimated from scattering experiments.\\Scattering experiments are carried out for the restricted three-body problem and proceed until either the binary coalesce or stellar ejection has become so important that the host galaxy can no longer be considered fixed.\\Three dimensionless quantities $(H,K,J)$ are measured from numerical experiments and defined as:
 \begin{equation}\label{H Q96}
     H=\frac{\sigma}{G\rho}\frac{d}{dt}\left(\frac{1}{a}\right),
@@ -1267,7 +1272,7 @@ rate H, eccentricity growth rate K and mass loss rate. Once $(H,J,K)$ are obtain
 
 
 
-\subsection{Quinlan Scattering Experiments}
+
 Although stars approach the binary with a wide velocity distribution, consistent with the adopted $\sigma$, simulations are performed considering a unique value of the velocity at infinity (thus are $\mathbf{UNBOUND}$) then accounting for a Maxwellian distribution \cite{Quinlan_1996}.\\This semplification leads to the estimate of the so called $H_1(v)$ first, which thus allows to obtian $H(\sigma)$ by integration over all possible velocities and weighted by MB distribution.\\Therefore from each scattering experiment is measured the dimensionless energy change 
 \begin{equation}\label{C quinlan}
     C=\frac{a\Delta E_*}{G\mu}
@@ -1338,7 +1343,7 @@ All free parameters are obtained for different masses ratio.
 
 $\mathbf{NOTE:}$ in Sesana 2010, Fig \ref{H_1 quinlann} is reported as H vs a but this agrees with the functional form of $H_1$ and $V_{bin}=\sqrt{GM_{12}/a}$.\\Therefore, the hardening rate for a circular binary have been used for all eccentricities.
 
-\subsection{Aplication to a galaxy model}
+
 Once stellar density $\rho$ and velocity dispersion $\sigma$ are specified, the binary BH is introduced at center of the system with a given initial eccentricity $e_0$ and separation $a_0$ such that $V_{bin}=\sigma/5$.\\The last  corresponds to a condition about $a_0$ which is model indipendent and for the binary to be soft at beginning of the integration; a BH binary is indeed called hard 
 if it hardens at a constant rate, that is if $\sigma\ll \omega$ or equivalently
 if $V_{bin}/\sigma \gg (1+m_1/m_2)^{1/2}$.\\Peters (1964) equation for gravitational wave emission
@@ -1373,9 +1378,9 @@ in Fig. 7(a); the other lines assume initial eccentricities of 0.3
 
 
 
-\section{Sesana Hybrid Model}
+\section{Stellar Cusps IMBH Binary Evolution}
 
-\subsection{Sesana Scattering Experiments}
+
 This work \cite{Sesana_2006} is aimed at unvieling by  full three-body scattering experiments how a population of HVS form as a result of the interaction between a MBHB and ambient stars, unbound to the binary, drawn from a MB distribution . Other than the dynamical properties of these HVS, binary hardening, mass ejection rate and eccentricity growth rate $(H,J,K)$ are tracked by numerical simulations.\\Dynamical friction is efficient (especially in wet major mergers) in dragging two  massive BHs towards the innermost region of the new formed galaxy; over the time scale $t_{df}$ the binary forms and hardens  through gravitational slingshot, hence ejecting low angular momentum stars passing close to the binary. \\Following Q96 approach, the equations defining $(H,J,K)$ are (\ref{H Q96}),(\ref{J Q96}) and (\ref{K Q96}).\\At odds with Q96, where three-body scattering experiments are conducted for a fixed impact velocity, varying the binary separation and then averaging over the Maxwellian distribution, now the separation is fixed, i.e. $V_c=(GM_{12}/a)^{1/2}=const$, and the quantity $v/V_c$ is sampled over four decades, corresponding to a sampling of about four decades in binary separation.\\Each run is set by the inital configuration, corrseponding to a point in the parameter space $(q,e_0)$; the combination of binary masses ratio $q=1,1/3,1/9,1/27,1/81,1/243$ and initial eccentricity $e_0=0.01,0.3,0.6,0.9$ leads to 24 runs, involving $4\cdot10^6$ stars each.\\The (Maxwellian averaged) rates H, J,
 and K derived from scattering experiments are fitted by the following functions
 
@@ -1419,7 +1424,7 @@ Figure \ref{H Sesana 2006} shows that the hardening rate is nearly constant when
  
 Bound stars \cite{Sesana_2008}     ,\cite{Sesana_2010}
 \newpage
-\subsection{Sesana 2010 Results and  Comparison}
+
 As confirmed by observations of galaxies hosting a dynamically evolved BH binary, stellar scouring by binary hardening seems to imprint an inner cusp to the original stellar background. Motivated by this emerging picture, Sesana \cite{Sesana_2010} adopted a stellar density profile matching a SIS outside the binary influence radius $r_{inf}$ and a power low distribution inside; in formulae:
 \begin{flushleft}\label{Sesana_2010 stellar cusp profile}
   $
@@ -1499,13 +1504,6 @@ and that setting $\rho=\rho_{inf}$ inside Equation (\ref{da/dt UNBOUND}) is equi
      H=A(1+a/a_0)^\gamma;
 \end{equation}
 the function is shown in Figure \ref{Sesana comparison H plot}.
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{H_vs_a.png}
-    \caption{H as a function of $a$ expressed in $a_h$ units.}
-    \label{Sesana comparison H plot}
-\end{figure}
-
 
 
 
@@ -1522,76 +1520,22 @@ Similarly, by interpolation over the eccentricty grid of Table 3 \cite{Sesana_20
     K=A(1+a/a_0)^\gamma+B.
 \end{equation}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{Sesana_2006_Table_3.png}
-    \caption{Note: $a_0$ is given in $a_h$ units.}
-    \label{Sesana_2006_Table_3}
-\end{figure}
 
 Figure \ref{A of K fit Sesana comparison},\ref{a_0 of K fit Sesana comparison}, \ref{gamma of K fit Sesana comparison} and \ref{B of K fit Sesana comparison} report the results of this mathematical operation.
 
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{A_K_vs_e.png}
-    \caption{$A$ as a function of $e$ derived by interpolation of grid points.}
-    \label{A of K fit Sesana comparison}
-\end{figure}
-
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{a0_K_vs_e.png}
-    \caption{$A$ as a function of $e$ derived by interpolation of grid points.}
-    \label{a_0 of K fit Sesana comparison}
-\end{figure}
-
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{gamma_K_vs_e.png}
-    \caption{$\gamma$ as a function of $e$ derived by interpolation of grid points.}
-    \label{gamma of K fit Sesana comparison}
-\end{figure}
 
 
 
-
-
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{B_K_vs_e.png}
-    \caption{$B$ as a function of $e$ derived by interpolation of grid points.}
-    \label{B of K fit Sesana comparison}
-\end{figure}
 
 Therefore, at odds with $H$, $K$ is a function of $(a,e)$; we list below the plots of the 1-D functions $K(a)=K(a,e_0)$ and $K(e)=K(a_h,e)$.
 
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{K_vs_a.png}
-    \caption{}
-    \label{K vs a Sesana comparison}
-\end{figure}
 
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{K_vs_e.png}
-    \caption{}
-    \label{K vs e Sesana comparison}
-\end{figure}
 We anticipate that Equations (\ref{Sesana_2010 da/dt TOT}) and (\ref{Sesana_2010 de/dt TOT}) will be integrated with the help of RK(4) and $dK/de$ is needed as well; Figure \ref{dK/de vs e Sesana comparison} depicts the step-like function.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{dK_de_vs_e.png}
-    \caption{}
-    \label{dK/de vs e Sesana comparison}
-\end{figure}
+
 The time step is adjusted at each iteration according to the prescription
 \begin{equation}
     \Delta t \le  min\left \{\frac{2.79}{|\lambda_i|}\right\} \qquad \forall i=1,N
@@ -1623,69 +1567,15 @@ where $\lambda_i$ are the Jacobian $\mathbf{J}$ eigenvalues. The elements of thi
 In order to compare Sesana predictions with our model we set $(t_0,a_0,e_0)$ for the unbound phase to be effective and selecting these values directely from Sesana plot: $(t_0,a_0,e_0)=(12Myr,0.05\cdot a_0, 0.131 )$.
 
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{a_vs_t_check.png}
-    \caption{}
-    \label{a vs t Sesana comparison}
-\end{figure}
-
-
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{e_vs_t_check.png}
-    \caption{}
-    \label{e vs t Sesana comparison}
-\end{figure}
-
 Figure \ref{a vs t Sesana comparison} and \ref{e vs t Sesana comparison} indicate a good agreement between our model and Sesana one. In the first plot $a$ decreases more slowly than Sesana prediction as we are negletting the bound cusp erosion contribute, which hardens the binary even when the unbond phase takes over at $\sim a_h$. On the other hand eccentricity reaches a lower peak compared to the reference model because of bound cusp erosion leads to $e$ growth as well.\\Furthermore, we test the feedback of the various shrinking mechanisms by assuming them working in isoletion, hence suppressing all the others.
 
 Figure \ref{a_vs_t_UN} and \ref{e_vs_t_UN} refers to the evolution under the effect of slinghot of unbound stars; as the initial separation is below $a_h$ we can appreciate the expected linear decay of $a$ and the overall eccentricity growth. 
-\begin{figure}[H]
-    \centering
-  \begin{minipage}[c]{0.45\textwidth}
-    \centering
-    \includegraphics[height=5cm]{a_vs_t_UN.png}
-    \caption{}
-    \label{a_vs_t_UN}
-    \vspace{2mm}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[c]{0.45\textwidth}
-    \centering
-    \includegraphics[height=5cm]{e_vs_t_UN.png}
-    \caption{}
-    \label{e_vs_t_UN}
-    \vspace{2mm}
-  \end{minipage}
-\end{figure}
 
 
 
 Figure \ref{a_vs_t_GW} and \ref{e_vs_t_GW} refers to the evolution under GWs production; this becomes effective only at very close separation and causes both the fast binary coalescence once effective and binary circularization. The coalescence time agrees perfectly to the theoretical prediction of Equation \ref{t_coal Maggiore} 
 
 
-
-
-\begin{figure}[H]
-    \centering
-  \begin{minipage}[c]{0.45\textwidth}
-    \centering
-    \includegraphics[height=5cm]{a_vs_t_GW.png}
-    \caption{}
-    \label{a_vs_t_GW}
-    \vspace{2mm}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[c]{0.45\textwidth}
-    \centering
-    \includegraphics[height=5cm]{e_vs_t_GW.png}
-    \caption{}
-    \label{e_vs_t_GW}
-    \vspace{2mm}
-  \end{minipage}
-\end{figure}
 
 
 
@@ -1732,11 +1622,70 @@ Below, the Figure \ref{error_a_vs_e_GW} gives us the possibility of visualizing 
 
 
 
+HERE
+
+
+
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Cusps_density.png}
+    \caption{...}
+    \label{Cusps_density}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Cusps_H.png}
+    \caption{...}
+    \label{Cusps_H}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Cusps_K_vs_a.png}
+    \caption{...}
+    \label{Cusps_K_vs_a}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Cusps_K_vs_e.png}
+    \caption{...}
+    \label{Cusps_K_vs_e}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Cusps_a_vs_t_log.png}
+    \caption{...}
+    \label{Cusps_a_vs_t_log}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Cusps_e_vs_t_log.png}
+    \caption{...}
+    \label{Cusps_e_vs_t_log}
+\end{figure}
+
+
+
+
+
+HERE
+
+
+
+
+
+
 
 
 \section{NGC 205 IMBH Binary evolution}
 
-\subsection{NGC 205 Hybrid Model Evolution}
+
 NGC 205 is a nearby dwarf galaxy with a NSC residing at its innermost region; it is belived to host an IMBH binary, whose estimated mass is $\sim 10^4 M_\odot$.\\The 2-D surface brightness profile of the dwarf, both the bulge and NSC treated as indipendent stellar components, is translated into 3-D Sersic density profile using Prugniel \& Simien \cite{Prugniel}:
 
 \begin{equation}\label{Prugniel Sersic profile}
@@ -1918,6 +1867,37 @@ t(z) = \int_z^{\infty}
 \end{equation}
 and compare it with LISA upper limit $(z\sim20)$, hence addressing the problem of a possible detection.\\If the binary is in the initial configuration at $z\approx 10$, it will coalesce at $z\approx 9.4$.
 
+
+HERE
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{NGC205_density_profile.png}
+    \caption{...}
+    \label{NGC205_density_profile}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{NGC205_a_vs_t_log_e_sampling.png}
+    \caption{...}
+    \label{NGC205_a_vs_t_log_e_sampling}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{NGC205_e_vs_t_log_e_sampling.png}
+    \caption{...}
+    \label{NGC205_e_vs_t_log_e_sampling}
+\end{figure}
+
+HERE
+
+
+
+
+
 \subsection{Cosmic Size Evolution Down to NGC 205}
 Here, we explore the importance of the existence of NSC to the binary evolution and coalescence time. A such structure is expected to drastically reduce the time taken by system to merge as a consequence of the larger number of stars capable of passing close to the binary.\\In this spirit, we will be referring to the same parameters table a procedure of the prevois SubSection but the NSC which is artificially removed from the dwarf galaxy; hence, the only stellar background affecting binary evolution is the stellar bulge.\\By repeating the same analysis and setting $(t_0,a_0,e_0)=(0yr,15pc,0.7)$, we show Figure \ref{NGC205 bulge a vs t plot} and \ref{NGC205 bulge e vs t plot}.
 
@@ -2019,7 +1999,56 @@ Therefore, forming in tha past at $z>0$, they all merge before the present time.
 
 
 
+Here
 
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Bulges_vs_NSC_density_profile.png}
+    \caption{...}
+    \label{Bulges_vs_NSC_density_profile}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Galaxies_H_unbound.png}
+    \caption{...}
+    \label{Galaxies_H_unbound}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Galaxies_K_vs_e.png}
+    \caption{...}
+    \label{Galaxies_K_vs_e}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Galaxies_K_vs_a.png}
+    \caption{...}
+    \label{Galaxies_K_vs_a}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Galaxies_a_vs_t.png}
+    \caption{...}
+    \label{Galaxies_a_vs_t}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Galaxies_e_vs_t.png}
+    \caption{...}
+    \label{Galaxies_e_vs_t}
+\end{figure}
+
+
+
+
+HERE
 
 
 
