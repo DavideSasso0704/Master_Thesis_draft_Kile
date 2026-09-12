@@ -1298,14 +1298,93 @@
       \endverb
       \keyw{Astrophysics - Astrophysics of Galaxies}
     \endentry
+    \entry{Gualandris_2022}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=87d87265c253b5ab12d0d518826bfe06}{%
+           family={Gualandris},
+           familyi={G\bibinitperiod},
+           given={Alessia},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4a6db1a29a44ed71522d8bb11681a1ae}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={Fazeel\bibnamedelima Mahmood},
+           giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=75ad2d6b767cdc9392ac54e204263246}{%
+           family={Bortolas},
+           familyi={B\bibinitperiod},
+           given={Elisa},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0b1b04308b732c135e406da0f5ed3c5b}{%
+           family={Bonetti},
+           familyi={B\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a81beec3c846959fbcf748413d66e38b}{%
+           family={Sesana},
+           familyi={S\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c15637f3028468f3ff8666b5a3a01d0e}{%
+           family={Berczik},
+           familyi={B\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=433970a019fb801df9654f4939d8bc27}{%
+           family={Holley-Bockelmann},
+           familyi={H\bibinithyphendelim B\bibinitperiod},
+           given={Kelly},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press (OUP)}%
+      }
+      \strng{namehash}{a12da7460c027ac4cc88f6e5dea54f41}
+      \strng{fullhash}{57b0ab5dadfc8942d07ea6dae9c8c9b1}
+      \strng{bibnamehash}{a12da7460c027ac4cc88f6e5dea54f41}
+      \strng{authorbibnamehash}{a12da7460c027ac4cc88f6e5dea54f41}
+      \strng{authornamehash}{a12da7460c027ac4cc88f6e5dea54f41}
+      \strng{authorfullhash}{57b0ab5dadfc8942d07ea6dae9c8c9b1}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1365-2966}
+      \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
+      \field{month}{1}
+      \field{number}{4}
+      \field{title}{Eccentricity evolution of massive black hole binaries from formation to coalescence}
+      \field{volume}{511}
+      \field{year}{2022}
+      \field{pages}{4753\bibrangedash 4765}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1093/mnras/stac241
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1093/mnras/stac241
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1093/mnras/stac241
+      \endverb
+    \endentry
     \entry{Heggie_1975}{article}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=2214a54be6a8ea258193c24c605e2083}{%
+        {{un=2,uniquepart=given,hash=2214a54be6a8ea258193c24c605e2083}{%
            family={{Heggie}},
            familyi={H\bibinitperiod},
            given={D.\bibnamedelimi C.},
            giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod},
-           givenun=0}}%
+           givenun=2}}%
       }
       \strng{namehash}{2214a54be6a8ea258193c24c605e2083}
       \strng{fullhash}{2214a54be6a8ea258193c24c605e2083}
@@ -1330,6 +1409,45 @@
       \verb 10.1093/mnras/173.3.729
       \endverb
       \keyw{Binary Stars,Many Body Problem,Stellar Evolution,Equations Of Motion,Kinetic Energy,Numerical Integration,Stellar Motions,Astronomy}
+    \endentry
+    \entry{Heggie_1993}{article}{}
+      \name{author}{2}{}{%
+        {{un=2,uniquepart=given,hash=a59840b2188323e52648715d2aceb951}{%
+           family={{Heggie}},
+           familyi={H\bibinitperiod},
+           given={Douglas\bibnamedelima C.},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=2415d1eb2ef7263f34db8fe37de9604a}{%
+           family={{Hut}},
+           familyi={H\bibinitperiod},
+           given={Piet},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1bd96e0d020945e8ad0ae1338ee0531e}
+      \strng{fullhash}{1bd96e0d020945e8ad0ae1338ee0531e}
+      \strng{bibnamehash}{1bd96e0d020945e8ad0ae1338ee0531e}
+      \strng{authorbibnamehash}{1bd96e0d020945e8ad0ae1338ee0531e}
+      \strng{authornamehash}{1bd96e0d020945e8ad0ae1338ee0531e}
+      \strng{authorfullhash}{1bd96e0d020945e8ad0ae1338ee0531e}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{apjs}
+      \field{month}{4}
+      \field{title}{{Binary--Single-Star Scattering. IV. Analytic Approximations and Fitting Formulae for Cross Sections and Reaction Rates}}
+      \field{volume}{85}
+      \field{year}{1993}
+      \field{pages}{347}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1086/191768
+      \endverb
+      \keyw{Binary Stars,Celestial Mechanics,Gravitational Effects,Scattering Cross Sections,Stellar Gravitation,Three Body Problem,Adiabatic Conditions,Asymptotic Properties,Energy Conservation,Fokker-Planck Equation,Astrophysics,STARS: BINARIES: GENERAL,CELESTIAL MECHANICS,STELLAR DYNAMICS}
     \endentry
     \entry{Hilz_2012}{article}{}
       \name{author}{6}{}{%
@@ -2424,6 +2542,49 @@
       \field{labeltitlesource}{title}
       \field{title}{{Introduction to Gravitational Lensing: With Python Examples}}
       \field{year}{2022}
+    \endentry
+    \entry{Merritt_2013}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=41811beb71bf2a9116384e0ad5637cac}{%
+           family={Merritt},
+           familyi={M\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{41811beb71bf2a9116384e0ad5637cac}
+      \strng{fullhash}{41811beb71bf2a9116384e0ad5637cac}
+      \strng{bibnamehash}{41811beb71bf2a9116384e0ad5637cac}
+      \strng{authorbibnamehash}{41811beb71bf2a9116384e0ad5637cac}
+      \strng{authornamehash}{41811beb71bf2a9116384e0ad5637cac}
+      \strng{authorfullhash}{41811beb71bf2a9116384e0ad5637cac}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1361-6382}
+      \field{journaltitle}{Classical and Quantum Gravity}
+      \field{month}{11}
+      \field{number}{24}
+      \field{title}{Loss-cone dynamics}
+      \field{volume}{30}
+      \field{year}{2013}
+      \field{pages}{244005}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/0264-9381/30/24/244005
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1088/0264-9381/30/24/244005
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1088/0264-9381/30/24/244005
+      \endverb
     \endentry
     \entry{Mikkola_1992}{article}{}
       \name{author}{2}{}{%
@@ -3827,7 +3988,6 @@
       \keyw{Astronomical Models,Galactic Clusters,Galactic Evolution,Galactic Nuclei,Gravitational Effects,Halos,Critical Mass,Dark Matter,Dynamic Models,Interstellar Gas,Luminosity,Many Body Problem,Red Shift,Astrophysics,Formation:Galaxies}
     \endentry
   \enddatalist
-  \missing{Ciotti_2021}
   \missing{Prugniel}
   \missing{Terzic}
 \endrefsection

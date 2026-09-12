@@ -442,12 +442,12 @@ where $\rho(\mathbf{x},t)$ is the stellar density providing a smooth approximati
 \begin{equation}\label{CBE}
 \frac{df}{dt}\equiv \frac{\partial f}{\partial t}+\frac{d\mathbf{x}}{dt}\cdot \frac{\partial f}{\partial \mathbf{x}}+\frac{d\mathbf{v}}{dt}\cdot \frac{\partial f}{\partial \mathbf{v}}=0.
 \end{equation}
-Equation (\ref{CBE}) is expected to hold as long as the effects of repeated gravitational encounters between stars remain negligible over the age of the system. Although individual encounters are typically weak, their cumulative effect can progressively redistribute energy and angular momentum among stars, causing their trajectories to deviate from those drawn by the smooth potential $\Phi$ and DF to diffuse in PS \parencite{Binney_book}.\\The characteristic timescale over which these cumulative encounters significantly alter stellar trajectories is the two-body relaxation time $t_{2b}$, which provides a natural criterion for assessing the validity of the collisionless approximation. Systems whose age is shorter than their two-body relaxation time, i.e $t_{age}<t_{2b}$, are conventionally referred to as collisionless; otherwise, they will be referred to as collisional \parencite{Ciotti_book}.\\The approach of \textcite{Chandrasekhar_1943} for estimating $t_{b}$ relies on the Impulsive Approximation. It consists of two main assumptions:
+Equation (\ref{CBE}) is expected to hold as long as the effects of repeated gravitational encounters between stars remain negligible over the age of the system. Although individual encounters are typically weak, their cumulative effect can progressively redistribute energy and angular momentum among stars, causing their trajectories to deviate from those drawn by the smooth potential $\Phi$ and DF to diffuse in PS \parencite{Binney_book}.\\The characteristic timescale over which these cumulative encounters significantly alter stellar trajectories is the two-body relaxation time $t_{2b}$, which provides a natural criterion for assessing the validity of the collisionless approximation. Systems whose age is shorter than their two-body relaxation time, i.e $t_{age}<t_{2b}$, are conventionally referred to as collisionless; otherwise, they will be referred to as collisional \parencite{Ciotti_book}.\\The approach of \textcite{Chandrasekhar_1943} for estimating $t_{2b}$ relies on the Impulsive Approximation. It consists of two main assumptions:
 \begin{enumerate}
 \item Stellar encounters are treated as independent events, so that correlations between consecutive encounters and simultaneous multiple interactions are neglected.
 \item The gravitational influence of the remaining $N-2$ stars is neglected during each encounter, reducing the problem to a sequence of isolated hyperbolic two-body interactions.
 \end{enumerate}
-Let us work under the simplifying assumption of a spatially homogeneous distribution of field stars with isotropic velocity field. The DF $f(\mathbf{x_f},\mathbf{v_f})$ of such system can be expressed as the product of the position-indipendent number density and probability density function $g(v)$ in the velocity space,
+Let us work under the simplifying assumption of a spatially homogeneous distribution of field stars with isotropic velocity field. The DF $f(\mathbf{x_f},\mathbf{v_f})$ of such system can be expressed as the product of the position-indipendent number density $n_f$ and probability density function $g(v_f)$ in the velocity space,
 \begin{equation}
     f(\mathbf{x_f},\mathbf{v_f})=n_fg(v_f).
 \end{equation}
@@ -496,134 +496,86 @@ is normalized to unity as a consequence of the normalization of velocity-space d
     t_{2b}\equiv\frac{v_t^2(-\infty)}{D(\Delta E_{t\perp})}\sim \frac{v_t^3}{8\pi G^2n_fm_f^2ln\bar\Lambda},
 \end{equation}
 holding in the high velocity limit from Equation (\ref{Rosenbluth potential if isotropy}).
-
-
-On one hand, as just seen, two-body encounters give rise to the heating of the test particle in the direction perpendicular to the initial relative velocity, being deflected; on the other hand the same particle is slowed down by Dynamical friction as result of long range interaction \cite{Baumgardt_2006}.
-
-
-
-
-
+As discussed above, two-body encounters redistribute the test particle's kinetic energy, increasing its velocity component perpendicular to the initial direction of motion. In this sense, two-body interactions act as a heating mechanism in the transverse direction. Conversely, dynamical friction produces a systematic loss of kinetic energy along the direction of motion and behaving as cooling process(see, e.g., \textcite{Chandrasekhar_1943}; \textcite{Binney_book}). This results in the sinking of massive objects, such as an intruding secondary BH, and \(N\)-body simulations by \textcite{Baumgardt_2006} have demonstrated that dynamical friction efficiently drives the secondary BH down to $a_0$, defined as the radius enclosing a stellar mass equal to twice that of $M_2$, that is
+\begin{equation}
+ M_*(<a_0)=2M_2.
+\end{equation}
+In order to derive an estimate for the dynamical friction timescale $t_{df}$, we follow the same approach and notation adopted above and first calculate the diffusion coefficient associated with the orbital property $P=\Delta \mathbf{v_t}$ for a test particle of mass $m_t$ moving through a stellar field composed of particles of mass $m_f$, i.e.
 \begin{equation}\label{velocity first order diffusion coefficient}
-    \frac{d\mathbf{v_t}}{dt}=D[\Delta \mathbf{v_t}]=-4\pi G^2 m_t m_f\ln{\Lambda}\int d^3\mathbf{v_f}f(\mathbf{v_f})\frac{\mathbf{v_t}-\mathbf{v_f}}{|\mathbf{v_t}-\mathbf{v_f}|^3}
+    \frac{d\mathbf{v_t}}{dt}=D[\Delta \mathbf{v_t}]=-4\pi G^2 m_t m_f\ln{\Lambda}\int d^3\mathbf{v_f}f(\mathbf{v_f})\frac{\mathbf{v_t}-\mathbf{v_f}}{|\mathbf{v_t}-\mathbf{v_f}|^3}.
 \end{equation}
-
-
-
+Assuming an isotropic velocity field, Equation (\ref{velocity first order diffusion coefficient}) simplifies to
 \begin{equation}\label{Chandrasekhar dynamical friction equation}
-    \frac{d\mathbf{v_t}}{dt}=-16\pi^2 G^2 m_t m_f\ln{\Lambda}\left[\int_{0}^{v_t}dv_f\, v_f^2 f(v_f)\right]\frac{\mathbf{v_t}}{v_t^3}
+    \frac{d\mathbf{v_t}}{dt}=-16\pi^2 G^2 m_t m_f\ln{\Lambda}\left[\int_{0}^{v_t}dv_f\, v_f^2 f(v_f)\right]\frac{\mathbf{v_t}}{v_t^3},
 \end{equation}
-
-
+known as Chandrasekhar's dynamical friction formula \parencite{Chandrasekhar_1943}. Equation (\ref{Chandrasekhar dynamical friction equation}) shows that the effect of dynamical friction is to systematically decreases the test particle's velocity through an acceleration directed antiparallel to its velocity vector.\\By following an analogous derivation to that used to estimate the two-body relaxation timescale $t_{2b}$ in Equation (\ref{t_2b}), the dynamical friction timescale $t_{df}$ can be expressed as
+\begin{equation}
+ t_{df}\equiv \frac{\|\mathbf{v_t}(-\infty)\|}{\|D(\Delta \mathbf{v_{t\parallel}})\|}\sim \frac{v_t^3}{4\pi G^2 n_fm_f(m_f+m_t)\ln{(\bar{\Lambda})}\Xi(v_t)},
+\end{equation}
+We conclude this Section by deriving, under physically motivated assumptions, an analytic expression for the dynamical friction timescale $t_{df}$ of an intruding secondary BH of mass $m_t$, which sinks towards the center of a stellar background characterized by a Maxwellian velocity distribution and a power-law density profile
+\begin{equation}\label{Power low distribution}
+    \rho(r)=\rho_0\left(\frac{r}{r_0}\right)^{-\gamma}
+\end{equation}
+and hosting a primary BH of mass $m_f$.\\For a Maxwellian velocity distribution, the integral over the stellar velocity distribution appearing in Equation (\ref{Chandrasekhar dynamical friction equation}) can be evaluated analytically, yielding
 \begin{equation}\label{Chandrasekhar dynamical friction equation for MB}
-    \frac{d\mathbf{v_t}}{dt}=-4\pi \ln{\Lambda}\left[erf(X)-\frac{2X}{\sqrt{\pi}}e^{-X^2}\right]\frac{G^2m_t\rho(r)}{v_c^3}\mathbf{v_t}
+    \frac{d\mathbf{v_t}}{dt}=-4\pi \ln{\Lambda}\left[erf(X)-\frac{2X}{\sqrt{\pi}}e^{-X^2}\right]\frac{G^2m_t\rho(r)}{v_t^3}\mathbf{v_t}
 \end{equation}
-
-
 where 
 \begin{equation}\label{error function}
-    erf(X)=\frac{2}{\sqrt{pi}}\int_{0}^{X}dt \, e^{-t^2}
+    erf(X)=\frac{2}{\sqrt{\pi}}\int_{0}^{X}dt \, e^{-t^2}
 \end{equation}
-
-
-
+is the so-called error function \parencite{Binney_book}. Here, $X\equiv v_c/(\sqrt{2}\sigma)$ is a dimensionless parameter that combines the circular velocity $v_c$ of the test particle with the velocity dispersion $\sigma$ of the stellar background.\\Let us now consider the orbital decay of the intruding BH along quasi-circular orbits after it enters the primary BH's sphere of influence. In this region, the gravitational potential is dominated by the primary BH of mass $m_f$, so that the angular momentum of the secondary BH and the dynamical friction force acting on it are given by
+\begin{equation}\label{dynamical friction angular momentum}
+    \tilde{L}=m_t\sqrt{Gm_fr}
+\end{equation}
+and
+\begin{equation}\label{dynamical friction force}
+  \tilde{F}=m_t\frac{dv_t}{dt}=-C(\Lambda,X)\frac{G^2m_t^2\rho(r)}{v_c^2}
+\end{equation}
+respectively. Here, $C(\Lambda,X)$ is the dimensionless factor implicitly defined through the Equations (\ref{Chandrasekhar dynamical friction equation for MB}) and (\ref{dynamical friction force}).\\At this point, we can exploit the fact that, within the primary BH's sphere of influence, the circular velocity can be approximated as
+\begin{equation}\label{dynamical friction v_c}
+ v_c^2=\frac{Gm_f}{r}.
+\end{equation}
+Under these assumptions, the second cardinal equation of dynamics takes the form
 \begin{equation}\label{dynamical friction angular momentum loss eq}
-    \frac{d\tilde{L}}{dt}=\tilde{F}r
+    \frac{d\tilde{L}}{dt}=\tilde{F}r,
 \end{equation}
-
-with 
-
-\begin{equation}\label{dynamical friction angular momentum and force}
-    \tilde{L}=m_t\sqrt{Gm_fr}        \qquad  \tilde{F}=-C(\Lambda,X)\frac{G^2m_t^2\rho(r)}{v_c^2}
-\end{equation}
-
-with $C(\Lambda,X)$ implicitly defined by Equation (\ref{dynamical friction angular momentum and force})
-and $X\equiv v_c/\sigma\sqrt{2}$
-
+and leads to the differential equation for \(r=r(t)\) upon substituting the expressions given in Equations (\ref{dynamical friction force}), (\ref{dynamical friction angular momentum}) and (\ref{dynamical friction v_c}) (see, e.g., \textcite{Baumgardt_2006}; \textcite{Gualandris_2022}):
 \begin{equation}\label{r(t) diff. eq. for dynamical friction}
-    r^{-5/2}\frac{dr}{dt}=-C(\Lambda,X(r))\frac{G^2m_t^2}{m_f^{3/2}}\rho(r)
+    r^{-5/2}\frac{dr}{dt}=-2C(\Lambda,X(r))\frac{\sqrt{G}m_t}{m_f^{3/2}}\rho(r).
 \end{equation}
-
-
-
-
-\begin{equation}\label{SIS matched with stellar cusp}
-\rho(r) =
-\begin{cases}
-\rho_{\mathrm{inf}}\left(\dfrac{r}{r_{\mathrm{inf}}}\right)^{-\gamma}
-& \text{if } r < r_{\mathrm{inf}} \\[6pt]
-\dfrac{\sigma^2}{2\pi G r^2}
-& \text{if } r > r_{\mathrm{inf}}
-\end{cases}
+Finally, we note that Equation (\ref{r(t) diff. eq. for dynamical friction}) admits an analytic solution for an isotropic power-law density profile. In this case,
+\begin{equation}
+ X=\sqrt{\gamma-1}
 \end{equation}
-
-
-
-\begin{equation}\label{Power low distribution}
-    \rho(r)=\rho_0\left(\frac{r}{r_0}\right)^\gamma
-\end{equation}
-
-
-
-
-
-If $M_*(r<a_0)=2M_2$ then 
-
-\begin{equation}\label{a_0 of stellar cusp model}
-a_0 = (3 - \gamma)\,\frac{G M}{\sigma^2}
-\left(\frac{q}{1 + q}\right)^{\frac{1}{3 - \gamma}}
-= r_{\mathrm{inf}}
-\left(\frac{q}{1 + q}\right)^{\frac{1}{3 - \gamma}}
-\end{equation}
-
-
-\begin{equation}\label{X of the stellar cusp}
-    \sigma^2(r)=\frac{v_c^2(r)}{2(\gamma-1)} \quad \Rightarrow \quad X=\sqrt{\gamma-1}
-\end{equation}
-
-Integrating from $r_{0}$ to $r(t)$ leads to
-
+and is therefore independent of radius. Integrating the differential equation subject to the initial condition $r(t=0)=r_0<r_{inf}$, we obtain
 \begin{equation}\label{r(t) of stellar cusp under dynamical friction}
 r(t)=
 \begin{cases}
-\left[r_0^{\gamma-3/2}-C(\Lambda,X)\frac{\sqrt{G}m_t}{m_f^{3/2}}\left(\gamma-\frac{3}{2}\right)\rho_0r_0^{\gamma}t\right]^{\frac{1}{\gamma-3/2}}
-& \text{if } \gamma \ne \frac{3}{2} \\[6pt]
-r_0\exp\left[-C(\Lambda,X)\frac{\sqrt{G}m_t}{m_f^{3/2}}\rho_0r_0^{3/2}t\right]
+r_0\left[1-2C(\Lambda,X)\frac{\sqrt{G}m_t}{m_f^{3/2}}\left(\gamma-\frac{3}{2}\right)\rho_0r_0^{3/2}t\right]^{\frac{1}{\gamma-3/2}}
+& \text{if } 1<\gamma\le 3 \land \gamma \ne \frac{3}{2} \\[6pt]
+r_0\exp\left[-2C(\Lambda,X)\frac{\sqrt{G}m_t}{m_f^{3/2}}\rho_0r_0^{3/2}t\right]
 & \text{if } \gamma = \frac{3}{2}
 \end{cases}
 \end{equation}
-
-
-If we define $t_{fric}$ such that $r(t_{fric})=a_0$ we get
-
-
+Equation (\ref{r(t) of stellar cusp under dynamical friction}) applies to an isotropic, power-law stellar background, or more generally to a stellar distribution that approaches such a density profile within the sphere of influence of the central BH and provides an estimate of the duration of the final stage of dynamical friction, from $r_{inf}$ down to $a_0$. Indeed, setting the reference radius $r_0$ and density $\rho_0$ to their respective values at the influence radius, and defining $t_{\rm fric}$ such that $r(t_{\rm fric})=a_0$, we obtain
 \begin{equation}\label{t_fric of stellar cusp}
-t_{fric}=
+t_{\rm fric}=
 \begin{cases}
-\frac{m_f^{3/2}(r_{inf}^{\gamma-3/2}-a_0^{\gamma-3/2})}{C(\Lambda,X)\sqrt{G}m_t\left(\gamma-\frac{3}{2}\right)\rho_{inf}r_{inf}^{\gamma}(\gamma-3/2)}
-& \text{if } \gamma \ne \frac{3}{2} \\[6pt]
-\frac{m_f^{3/2}}{C(\Lambda,X)\sqrt{G}m_t\rho_0r_0^{3/2}}  \ln{\left(\frac{r_{inf}}{a_0}\right)}
-& \text{if } \gamma = \frac{3}{2}
+\displaystyle
+\frac{m_f^{3/2}}
+{2C(\Lambda,X)\sqrt{G}\,m_t\,\rho_{\rm inf}r_{\rm inf}^{\gamma}}
+\frac{r_{\rm inf}^{\gamma-3/2}-a_0^{\gamma-3/2}}
+{\gamma-\frac{3}{2}},
+& \text{if } \gamma\neq\frac{3}{2}, \\[10pt]
+\displaystyle
+\frac{m_f^{3/2}}
+{2C(\Lambda,X)\sqrt{G}\,m_t\,\rho_{\rm inf}r_{\rm inf}^{3/2}}
+\ln\left(\frac{r_{\rm inf}}{a_0}\right),
+& \text{if } \gamma=\frac{3}{2}.
 \end{cases}
 \end{equation}
-
-
-Being intrinsically inelastic,, give rise to mergers, hosting an MBH binary (see e.g. \textcite{Baumgardt_2006}).
-
-
-
-
-
-
-
-
-
-xxxxxxxxxxx
-
-While two-body relaxation operates on a too much long timescale for the galaxy remnant to become collisional within the Hubble time $t_H$, violent relaxation plays a central role in redistributing the energy, converting the ordered orbital kinetic energy into disordered internal energy \parencite{Lynden_1967}.\\In general, during galactic encounters, two main distinct mechanisms are at work in shaping the formation and subsequent evolution of the post-merged galaxy: violent relaxation and dynamical friction. The former arises from rapidly changing gravitational fields, such as those of a newly formed galaxies, and results particles heating. The latter, instead, actes on massive particles, e.g. MBHs, slowing them down and pushing the heaviest objects towards the newly formed galactic center (CIOTTI BOOK).\\
-
-xxxxxxxxxxx
-
+From $a_0$ onward, dynamical friction, which has driven the orbital decay and pairing of the BHs up to this point, becomes inefficient and the further hardening of the binary becomes primarily driven by individual encounters with low-angular-momentum stars that are unbound to the binary and can extract energy and angular momentum from it. We address this shrinking mechanism in \S~\ref{sec:Gravitational Slingshot Effect}.
 
 
 
@@ -660,18 +612,11 @@ which is exactly compensated by the corresponding variation in the mechanical en
 \begin{equation}
 \Delta E= \Delta E_t+\Delta E_f=0.
 \end{equation}
-
-
-
-HERE
-
-
-
 By combinig the velocity composition law
 \begin{equation}
     \mathbf{v_t}(t)=\mathbf{v_{CM}}+\frac{\mu}{m_t}\mathbf{v}(t)
 \end{equation}
-and the conservation of the mass center velocity vector $\mathbf{v_{CM}}$, valid for isolated systems, Equation (\ref{t energy variation 1}) takes the form \parencite{Ciotti_2021}
+with the conservation of the center-of-mass velocity vector $\mathbf{v_{CM}}$, which holds for isolated systems, Equation (\ref{t energy variation 1}) can be written as \parencite{Ciotti_book}
 \begin{equation}
     \Delta E_t=\mu\langle \Delta\mathbf{v}, \mathbf{v_{CM}} \rangle.
 \end{equation}
@@ -682,15 +627,15 @@ We are now in a position to address three-body scattering involving a gravitatio
 applies and the mass center will move locally at costant velocity if the observation time is short compared to the orbital period, thus making negligible its acceleration.\\Hereafter, by analogy with the previous notation, we identify $M_2\equiv m_f$ and $m_*\equiv m_t$.
 
 \paragraph{Binary hardening.}
-When the star is place outside the secondary BH orbit, the Keplerian velocity profile imposes $\|\mathbf{v_f}(-\infty) \| =\| \mathbf{v_{CM}}\| > \|\mathbf{v_t}(-\infty) \|$. Therefore, at point where $m_f$ surpasses $m_t$ and they are both located on the same radius, $\mathbf{v}(-\infty)$ is nearly antiparallel to $\mathbf{v_{CM}}$ and $\Delta\mathbf{v}_\parallel$ can be read as the projected vector along $\mathbf{v_{CM}}$ rather than $\mathbf{v}(-\infty)$. Taking advantage of Equation (\ref{slingshot negative scalr product}), it follows that
+When the star is place outside the secondary BH orbit, the Keplerian velocity profile imposes $\|\mathbf{v_f}(-\infty) \| =\| \mathbf{v_{CM}}\| > \|\mathbf{v_t}(-\infty) \|$. Therefore, at point where $m_f$ surpasses $m_t$ and they are both located on the same radius, $\mathbf{v}(-\infty)$ is nearly antiparallel to $\mathbf{v_{CM}}$ and $\Delta\mathbf{v}_\parallel$ can be read as the projected vector along $\mathbf{v_{CM}}$ rather than $\mathbf{v}(-\infty)$. Taking advantage of Equation (\ref{slingshot negative scalar product}), it follows that
 \begin{equation}
 \label{stellar_hardening_inequality}
     0<\langle \Delta\mathbf{v}_\parallel, \mathbf{v_{CM}} \rangle=\langle \Delta\mathbf{v}, \mathbf{v_{CM}}\rangle=\Delta E_t/\mu.
 \end{equation}
-Equation (\ref{stellar_hardening_inequality}) shows that in the reference system centered on $M_1$ the star gains orbital energy and is scattered onto a wider orbit. On the other hand, the secondary BH experiences an equal and opposite change in orbital energy, leading to a reduction of the binary separation and, consequently, to binary hardening.\\ It is worth of noticing that if $\Delta E_t>|E_t(-\infty)|$, which occurs at very high circular velocity of the binary BHs, stellar ejection occurs; in this regime ‘‘hypervelocity stars’’ (HVSs) travelling along nearly radial orbits are produced \parencite{Sesana_2006}.
+Equation (\ref{stellar_hardening_inequality}) shows that in the reference system centered on $M_1$ the star gains orbital energy and is scattered onto a wider orbit. On the other hand, the secondary BH experiences an equal and opposite change in orbital energy, leading to a reduction of the binary separation and, consequently, to binary hardening.\\ It is worth of noticing that if $\Delta E_t>|E_t(-\infty)|$, which occurs at very high circular velocity of the binary BHs, stellar ejection occurs; in this regime ‘‘hypervelocity stars’’ (HVSs) travelling along nearly radial orbits are produced (see, e.g., \textcite{Quinlan_1996};\textcite{Sesana_2006}).
 
 \paragraph{Binary softening.}
-Contrary to the previous case, binary softening takes place when the star is place inside the secondary BH orbit. Now $\mathbf{v}(-\infty)$ is nearly parallel to $\mathbf{v_{CM}}$ at the crossover point and by repeating the same arguments used above it is found
+Contrary to the previous case, binary softening takes place when the star is place inside the secondary BH orbit. Now $\mathbf{v}(-\infty)$ is nearly parallel to $\mathbf{v_{CM}}$ at the crossover point and by repeating the same arguments used above it follows
 \begin{equation}
      E_t/\mu=\langle \Delta\mathbf{v}, \mathbf{v_{CM}}\rangle=\langle \Delta\mathbf{v}_\parallel, \mathbf{v_{CM}} \rangle<0.
 \end{equation}
@@ -702,7 +647,7 @@ Although our discussion has so far focused on a specific three-body scattering c
 \begin{equation}
  E_b=\frac{G\mu}{2a}
 \end{equation}
-and the specific energy of the loss-cone star is of the order of $\sigma^2$, the velocity criterion can be conveniently reformulated in terms of the specific energy. When $E_b\ll \sigma^2$, the binary is said to be soft, and repeated stellar encounters tend to further decrease its binding energy. Conversely, when $E_b\gg \sigma^2$, the binary is hard, and stellar encounters, on average, increase its binding energy. This behavior is well summarized by Heggie's law \parencite{Heggie_1975}.
+and the specific energy of the loss-cone star is of the order of $\sigma^2$, the velocity criterion can be conveniently reformulated in terms of the specific energy. When $E_b\ll \sigma^2$, the binary is said to be soft, and repeated stellar encounters tend to further decrease its binding energy. On the other hand, when $E_b\gg \sigma^2$, the binary is hard, and stellar encounters, on average, increase its binding energy. This behavior is well summarized by Heggie's law (see, e.g., \textcite{Heggie_1975}; \textcite{Heggie_1993}.
 \medskip
 
 \noindent\textbf{Heggie's law. --}
@@ -713,7 +658,8 @@ softer.}
 \noindent By extrapolation of the two limiting cases, one can define the "hardening radius" $a_h$ as the binary separation at which binary passes from the soft to the hard regime. Despite its expected weak dependence on the BH mass ratio, throughout this work we adopt the definition proposed by \textcite{Quinlan_1996}, unless otherwise specified:\begin{equation}\label{a_h definition}
  a_h=\frac{GM_2}{4\sigma^2}.
 \end{equation}
-At this stage, it should be clear that stellar scattering plays a fundamental role in driving the binary toward the regime in which GWs emission dominates its evolution. Nevertheless, one may wonder how a binary can evolve from the soft to the hard regime. The key point is that most of the work for this evolution to continue in the the direction of binary hardening is done by dynamical friction with the stellar background rather than individual encounters, as explained in Section \ref{sec:Two-Body Relaxation and Dynamical Friction}.
+At this stage, it should be clear that stellar scattering plays a fundamental role in driving the binary toward the regime in which GWs emission dominates its evolution. Nevertheless, one may wonder how a binary can evolve from the soft to the hard regime. The key point is that most of the work for this evolution to continue in the the direction of binary hardening is done by dynamical friction with the stellar background rather than individual encounters, as explained in Section \ref{sec:Two-Body Relaxation and Dynamical Friction}.\\The discussion then turns to the loss-cone refilling problem, whose efficient replenishment is essential to ensure a sustained supply of low angular momentum stars capable of driving the continued hardening of the binary through stellar ejection.
+
 
 
 
@@ -734,26 +680,25 @@ At this stage, it should be clear that stellar scattering plays a fundamental ro
 
 
 \section{Stellar Scattering and Loss Cone Problem}\label{sec:Loss Cone}
-In \S~\ref{sec:Gravitational Slingshot Effect} we have been concerned in describing the phisics of three-body scattering, pointing out its relevance to the orbital decay of the BH binary. In the following Section, instead, we will be explaining which stars can effectively exchange energy and angular momentum with the binary, the rate at which these close encounters take place and how all of this enters the self consistent model for MBHBs evolution by \textcite{Quinlan_1996} and \textcite{Sesana_2010} that will be presented in the next Chapter.\\Let $a(t)$ be the binary semimajor axis. Numerical experiments demonstrated that only stars intersecting the binary orbit can efficiently extract energy and angular momentum from when ejected at higher velocity \parencite{Mikkola_1992}. This class of stars of the stellar background populates the so-called “binary loss cone” and comprises both low-energy stars and high-energy, low-angular momentum stars. Under the assumption of Keplerian orbits, the former have small mean radius $(\langle r\rangle<a)$ and specific energy $E_*<-GM/a$, while latter spend most of their orbital period $P(E_*)$ far from the binary but a close encounter can occur at the pericenter $r_P$ if $r_P<a$.\\The size $J_{lc}$ of the binary loss in the specific angular momentum space, hereafter J-space, is a function of $E_*$; at the configuration of closest approach, the star radial velocity vanishes and the specific energy in terms of $r_P$ is
+In \S~\ref{sec:Gravitational Slingshot Effect} we have been concerned in describing the phisics of three-body scattering, pointing out its relevance to the orbital decay of the BH binary. In the following Section, instead, we will be explaining which stars can effectively exchange energy and angular momentum with the binary, the rate at which these close encounters take place and how all of this enters the self consistent model for MBHBs evolution developed by \textcite{Quinlan_1996} and \textcite{Sesana_2010} that will be presented in Chapter \ref{chap:chapter2}.\\Let $a(t)$ be the binary semimajor axis. Numerical experiments demonstrated that only stars intersecting the binary orbit can efficiently extract energy and angular momentum from when ejected at higher velocity \parencite{Mikkola_1992}. This class of stars of the stellar background populates the so-called “binary loss cone” and comprises both low-energy stars and high-energy, low angular momentum stars. Under the assumption of Keplerian orbits, the former have small mean radius $(\langle r\rangle<a)$ and specific energy $E_*<-GM/a$, while latter spend most of their orbital period $P(E_*)$ far from the binary but a close encounter can occur at the pericenter $r_P$ whenever $r_P<a$.\\The size of the binary loss cone, $J_{lc}$, in specific angular momentum space, hereafter J-space, is a function of $E_*$ and can be determined from the maximum and minimum angular momentum values allowed at a given specific energy.
+ At the configuration of closest approach, the star radial velocity vanishes and the specific energy in terms of $r_P$ is
 \begin{equation}\label{Pericenter stellar energy}
- E_*=\frac{J^2}{2r_P^2}-\frac{GM}{r_P}
+ E_*=\frac{J^2}{2r_P^2}-\frac{GM}{r_P}.
 \end{equation}
 From Equation (\ref{Pericenter stellar energy}) follows that the minimum value of $J$, below which the star enters the binary loss cone, is
 \begin{equation}\label{loss cone definition}
-    J_{lc}(E_*)\equiv \left[2\left(E_*+\frac{GM}{a}\right)\right]^{1/2}a
+    J_{lc}(E_*)\equiv \left[2\left(E_*+\frac{GM}{a}\right)\right]^{1/2}a,
 \end{equation}
-and can be approximated to $\sim \sqrt{2GMa}$ as the vast majority of stars orbit far from the binary and have a specific angular energy $|E_*|\ll GM/a$.\\Stars of fixed specific energy $E_*$, other than a minimum of the specific angular momentum $J_{min}=J_{lc}(E_*)$, possess a maximum set by the chain of inequalities
+which can be approximated to $\sim \sqrt{2GMa}$ as the vast majority of stars orbit far from the binary and have a specific angular energy $|E_*|\ll GM/a$.\\Besides, stars of fixed specific energy $E_*$, other than a minimum of the specific angular momentum $J_{min}=J_{lc}(E_*)$, possess a maximum set by the chain of inequalities
 \begin{equation}
  E_*\ge \frac{J^2}{2r^2}-\frac{GM}{r}\equiv V_{eff}(r)\ge V_{eff,\,min}=-\frac{G^2M^2}{2J^2},
 \end{equation}
-which holds because of the non-negative behavior of the radial kinetic term. This constrain poses a limit to $J$, i.e.
+holding because of the non-negative behavior of the radial kinetic term. This constrain poses an upper limit to $J$, that is
 \begin{equation}
  J_{max}(E_*)=\frac{GM}{\sqrt{2|E_*|}},
 \end{equation}
-corresponding to the specific angular momentum of a circular orbit of specific energy $E_*$ \parencite{Capozziello_2008}. Once the binary has removed in a dynamical time $P(E_*)$ the stars inside the influence sphere, the further hardening of the binary via stellar slinghot relies on the rate at which the loss cone is fed by stellar diffusion in both energy and angular momentum space, which causes stars to enter the loss cone.
-This diffusion arises from stellar encounters
-that have been proven to be efficient in exchanging angular momentum and results in a Random Walk in J-space. Let us define $j_2$ the rms angular momentum transferred in one orbital period  and $J_{max}(E_*)$ the same quantity associated with the timescale $t_{2b}$, only stars with $J_{lc}\le J\le J_{lc}+j_2$ can penetrate into the loss cone over one orbital period.
-The mechanism of loss cone replenishing and the associated timescale are set by the dimensionless quantity
+corresponding to the specific angular momentum of a circular orbit of specific energy $E_*$ \parencite{Capozziello_2008}.\\Once the binary has depleted, on a dynamical timescale $P(E_*)$, the population of stars that are bound to it and intersect its orbit—most of which, hence, reside within the binar sphere of influence—further hardening through stellar slingshot interactions depends on the rate at which the binary loss cone is replenished by stellar diffusion in both energy and angular momentum space, allowing new stars to enter the loss cone \parencite{Lightman_1977}. This diffusion arises from stellar encounters
+that have been proven to be efficient in exchanging angular momentum and results in a Random Walk in J-space (see, e.g., \textcite{Milosavljevic_2003}; \textcite{Merritt_2013}). Determining the rate at which this process occurs is crucial for assessing its role in the Quinlan–Sesana hybrid model.\\Let us define $j_2$ the rms angular momentum transferred in one orbital period  and $J_{max}(E_*)$ the same quantity associated with the timescale $t_{2b}$. Only stars with $J_{lc}\le J\le J_{lc}+j_2$ can be scattered into the loss cone over one orbital period and the kind of loss cone replenishing mechanism, along with the associated timescale, are set by the dimensionless quantity
 \begin{equation}
     q(E)\equiv\frac{j_2^2}{J_{min}^2}.
 \end{equation}
@@ -763,8 +708,6 @@ This condition is represented by picture on the left in Figure \ref{loss cone im
 
 \paragraph{Full Loss Cone.}
 This condition is represented by the picture on the right in Figure \ref{loss cone image}(b).\\The loss cone is smaller than the RW step size and even high $J$ stars can be scattered into the loss cone by many, weak stellar encounters taking place during one robital period. Thus, the rate at which loss cone stars are expelled is lower than the rate of refilling, causing the loss cone to remain almost full.
-
-
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\linewidth]{Loss_cone.png}
@@ -773,139 +716,53 @@ Fig. 1(6).—The velocity sphere viewed from below. On the left the empty loss c
     \label{loss cone image}
 \end{figure}
 By employng the same dimensional analysis carried out by \textcite{Lightman_1977}, we expect that the stellar capture rate per unit energy $\Gamma_E(E_*)$ could be written as
-\begin{equation}
+\begin{equation}\label{Lightman lc rate}
  \Gamma_E(E_*)\equiv\frac{d\Gamma}{dE}\approx \epsilon|E_*|^{-1}F_{max}(E_*)
 \end{equation}
-where $F_{max}(E_*)\sim N(E_*)/P(E_*)$ denotes the maximum rate of loss cone replenishing from stars with specific energy $E_*$ and $\epsilon$ is a correction factor helping us to account for the fraction of stars within the loss cone.\\Let us focus on the full loss cone regime. The 2-D nature of the problem in the J-space suggests that the area correction factor
+where $F_{max}(E_*)\sim N(E_*)/P(E_*)$ denotes the maximum rate of loss cone replenishing from stars with specific energy $E_*$ and $\epsilon$ is a correction factor helping us to account for the fraction of stars within the loss cone.\\Owing to the 2-D nature of the loss-cone problem in the J-space, $\epsilon$ is expected to be an area correction factor, thus scaling as
 \begin{equation}
- \epsilon \sim \frac{J_{lc}^2}{(J_{lc}+j_2)^2}
+ \epsilon \sim \frac{J_{lc}^2}{(J_{lc}+j_2)^2}.
 \end{equation}
-scales as $\sim J_{lc}^2/J_{max}^2$.\\Therefore, in the pinhole regime, it follows
+Therefore, in the full loss cone regime, where $J_{lc}\ll j_2\approx J_{max}$, one easily finds that
+$\sim J_{lc}^2/J_{max}^2\sim a/r$ and, by substitution into Equation (\ref{Lightman lc rate}),
 \begin{equation}\label{stellar flux per unit energy}
  \Gamma_E(E_*)\approx |E_*|^{-1}\frac{a}{r}\frac{N(E_*)}{P(E_*)}.
 \end{equation}
-From Equation (\ref{stellar flux per unit energy}), we can now derive the stellar flux $F(E_*)$ for an assumed an isothermal sphere of mass $M_*$ and influence radius $r_{inf}$. If all stars have the same mass $m_*$, the total number of stars inside $r$ is simply proportional to tha stellar mass enclosed within this sphere, that is
-\begin{equation}
- N(<r)=\frac{M}{m_*}\frac{r}{r_{inf}}.
+Equation (\ref{stellar flux per unit energy}) allows us to finally discuss how loss-cone refilling is accounted for in the Quinlan–Sesana hybrid model.\\In his scattering experiments, \textcite{Quinlan_1996} quantified the binary dimensioness hardening rate $H$ and eccentricity growth rate $K$ through the flux of stars
+\begin{equation}\label{Quinlan Gamma_Q}
+\Gamma_Q=\left(\frac{\rho}{m_*}\right)\Sigma v
 \end{equation}
-Under the assumption of Keplerian orbits bound to the binary, the energy of each star depends on the semimajor only through the relation
-\begin{equation}
- E_*(r)=-\frac{GMm_*}{2r},
+across the binary effective cross section $\Sigma$, where $\rho$ is the stellar mass density, $m_*$ is the stellar mass, and $v$ is the stellar velocity. Let $b$ denote the impact parameter of a star initially unbound to the binary of mass $M$ and undergoing a three-body interaction with it. The corresponding interaction cross section can then be defined as
+\begin{equation}\label{binary cross section}
+\Sigma \equiv \pi b_{\rm max}^2,
 \end{equation}
-while the orbital period is
-\begin{equation}
-    P(E)=\frac{2\pi GM}{(2|E|)^{3/2}}.
-\end{equation}
-\parencite{Perets_2007} \parencite{Perets_2008}
-\begin{equation}
- \frac{d\Gamma}{d\log{r}}=\frac{a}{r}\frac{N(<r)}{P(r)}
-\end{equation}
-
-
-
-\begin{equation}
- \Gamma_Q=\left(\frac{\rho}{m_*}\right)\Sigma v
-\end{equation}
-
-
-
-if we set $\Sigma=\pi a^2$
-
-unbound orbit equation
-\begin{equation}
- r(\phi)=\frac{l}{1+\cos{\phi}}
-\end{equation}
-with $l=J^2/GM$ semilatus rectum.
-
-$b$ impact parameter and $v$ velocity at infinity, grav focusing $J=bv$ and $r_P=l/2$ leads to
-\begin{equation}
+where $b_{\rm max}$ is the maximum impact parameter for which stellar capture occurs. If we assume this to take place whenever $r_p<a$,
+mindful of the gravitational focusing
+\begin{equation}\label{gravitational focusing}
  b^2=\frac{2GMr_P}{v^2}
 \end{equation}
-
+relating impact parameter and pericenter distance, then we can pose $b_{max}=b(a)$ and
+express $\Gamma_Q$ in Equation (\ref{Quinlan Gamma_Q}) as
 \begin{equation}
- \Gamma_Q=2\pi \left(\frac{M}{m_*}\right) \frac{G\rho a}{v}
+ \Gamma_Q=2\pi \left(\frac{M}{m_*}\right) \frac{G\rho a}{v},
 \end{equation}
-
-
-
-
-
-Full loss cone regime $q\gg 1$
-
-
-
-For bound almost radial orbit $dE_*=|E_*|\log{r}$ and
-
-
-
-
-
-
-
-\cite{Lightman_1977}Let us consider a massive object $M$- it may be a BH binary- residing at center of a stellar distribution; far enough from it, stars are unbound, move with rms velocity $\langle v^2\rangle^{1/2}$ and obey to the Maxwellian distribution, i.e. velocity field is isotropic.\\Combining $M$ and the rms velocity, we define the influence radius, beyond which stars are mainly unbound, $r_a\sim 2GM/\langle v^2\rangle$. Stellar orbits are assumed to be driven by the gravity of $M$ at $r<r_a$.\\Moreover, close encounters between stars and $M$ may lead to stellar consumption via several processes; they occur on a time scale of the order of the dynamical one, i.e. one orbital period, if $r$ is smaller than the tidal radius $r_t$, where
-
-A steady state solution in the range $r_t<r<r_a$ requires the rate of stars diffusing inward, crossing $r_a$, over $t_{2b}$, equal to the rate of stars consumed at $r_t$, behaving as a sink of this problem. \\If $E$ and $J$ denote respectively the star specific energy and angular momentum, it is worth of noticing  that  not only stars with low energy, i.e. $E\approx E_t\equiv -GM/r_t$ are removed but also high $E$ low $J$ might experience the same fate. At pericenter the radial velocity vanishes and 
-
-Inequality (\ref{loss cone definition}) defines the so called "Loss Cone".
-
-\subsection{Bound stars consumption}
-\subsubsection{One-Dimensional Analysis }
-As stellar orbit shape and size around $M$ are set by $E$ and $J$, the one particle DF can be written as $f=f(E,J)$ according to Jean's theorem. Therefore, the nature of the problem is 2-dmensional; neverthless, by negletting loss cone effects, an approximated one-dimensional solution can be obtained under the assumption of quasi-circular orbits where $J=J_{max}(E)=GM/\sqrt{2|E|}$.\\In this scenario the boundary conditions for bound stars at $r_t<r<r_a$ read $E_t<E<E_a$ and the DF is $f=f(E)$. The steady stae self-similar solution obtained by Peebles relies on the power law DF $f(E)=k|E|^p$ and the corresponding maximum flux of stars in the $E$ space is $F_{max}\sim N(<r)/t_{2b}(r)$.\\By definition \begin{equation}
-    N(<r)=\int f(E)d^3\mathbf{v}\sim |E|^{p-3/2}
-\end{equation}
-and $t_{2b}\sim v^3/n\sim |E|^{-p}$; they combine into
+with $\rho$ standing for the mass density of the homogeneous stellar background.\\On the other hand, \textcite{Sesana_2010} estimated the rate $\Gamma$ in Equation (\ref{Lightman lc rate}) under the assumption of a full loss cone, adopting an isothermal stellar sphere of total mass $M_*$, influence radius $r_{\rm inf}$ and costant stellar velocity dispersion $\sigma$.\\If all stars have the same mass $m_*$, the total number of stars inside $r$ is simply proportional to tha stellar mass enclosed within this sphere, that is
 \begin{equation}
-    F_{max}(E)\sim |E|^{2p-3/2}.
+ N(<r)=\frac{M}{m_*}\frac{r}{r_{inf}},
 \end{equation}
-A more accurate analysis yields
+while, under the assumption of Keplerian orbits bound to the binary, the energy of each star depends on the semimajor only through the relation
 \begin{equation}
-    F(E)=-F_{max}(E)\beta(p),
+ E_*(r)=-\frac{GMm_*}{2r}.
 \end{equation}
-where the the exact solution, that is the value of $p$, can be derived by imposing $F(E)=const$ from the stationarity condition.\\Bahcall and Wolf (1976) found the solution $p=1/4$.
-\subsubsection{Two-dimensional Analysis: Loss Cone effects}
-
-Let us focus on loss cone effects; the DF is now in general a function of both $E$ and $J$.\\By assuming stellar encounters to be dominated by distant and weak gravitational interactions, $J$ diffusion problem can be treated with RW theory and it can be defined the angular momentum step size
-\begin{equation}\label{j_2 definition}
-    j_2\sim J_{max}(t_d/t_r)^{1/2},
+In this regime, by exploiting the relation $dE_=|E_|,d\ln r$, we can rewrite Equation (\ref{stellar flux per unit energy}) as (see, e.g., \textcite{Perets_2007}; \textcite{Perets_2008})
+\begin{equation}\label{Sesana differential Gamma}
+\frac{d\Gamma}{d\log r}=\frac{a}{r}\frac{N(<r)}{P(r)}.
 \end{equation}
-
-it represents the dispersion in $J$ suffered over $t_d$.
-
-The stellar consumption rate per unit energy is
-\begin{equation}  
--F_E(E) \sim
-\begin{cases}
-\frac{F_{max}(E)|E|^{-1}}{ln\left(\frac{GM}{|E|r_t}\right)}, & q \ll 1 \\
-q^{-1}F_{max}(E)|E|^{-1},   & q \gg 1
-\end{cases}
+Finally, approximating the orbital period as $P(r)\sim r/\sigma$ and substituting the estimates for $N(<r)$ and $P(r)$ derived above into Equation (\ref{Sesana differential Gamma}), integration yields
+\begin{equation}\label{Sesana Gamma}
+\Gamma=2\pi \frac{M}{m_*}\frac{G\rho_{\rm inf}a}{\sigma}.
 \end{equation}
-and is strongly peaked at $E_{crit}$- or equivalently at $r_t$- at which $q(E_{crit})\approx1$.
-
-\subsection{Unbound stars consumption}
-Previously it has been pointed out that the majority of the stellar capture involves stars at $E_{cri}$ (or $r_{crit}$), this indicates that if the critical radius exceeds the influence radius, within which stars are mainly bound, this process affects primarly Unbound stars.\\In this region the stellar flux becomes
-\begin{equation}
-    F_{max}\sim \frac{N(<r)}{t_{2b}(r)}\sim \left(\frac{r}{r_a}\right)^3 F_{max}(E_a)
-\end{equation}
-
-
-
-Several times beyond $t_{2b}$ the system enters the collisional regime and first order
-corrections to the CBE are needed; the Fokker-Planck equation is an example of this:
-\begin{equation}
-    \frac{Df}{Dt}=C[f]
-\end{equation}
-where simplifications on the collision operator $C[f]$ can be done.\\In this scenario $f$ is
-no longer conserved along the orbit of the potential $\Phi$ and diffusion in the PS occurs,
-both $E$ and $L$ of a single star can change due to collisions, at odds with the CBE regime
-where, for istance $DH/Dt=0$. It is used in the loss cone problem.
-
-
-
-
-
-
-\subsection{Loss cone theory role in Hybrid Model}
-Devoted to determine evolutionary tracks for BH binaries evolving via three-body scattering with background stars and GWs emission \cite{Quinlan_1996} \cite{Sesana_2010}, one of the key points of the adopted model turns out to be the nature of stars involved in close encounters with the binary. At beginning, when the pair forms, all stars intersecting its orbit, i.e. populating the "Loss cone" are expelled via gravitational slingshot effect mainly; this mechanism results in the erosion of the stellar core and drives efficiently the binary down to a separation of the order of the hardening radius. Thereafter, for the shrinking to proceed, loss cone orbits must be refilled. Without addressing the problem concerning how this process takes place, it is relevant to point out that, once depleted all the stars inside $a_h$, stars candidate to replenish the loss cone come from outside this region.\\Therefore, for nearly equal mass BHs, having $a_h\sim r_{inf}$, or shallow stellar cores from the transistion soft/hard on, the scattering with unbound stars becomes dominant until the binary develops efficient GWs emission phase.\\Once established whether the vast majority of stars exchanging energy and angular momentum with the binary are bound or unbound to such a pair, the Hybrid model should take into account loss cone status through some parameters. This information enters the model by means of the normalizing density and velocity dispersion of $H_u$ and $K_u$; when they are set equal to their value at $r_{inf}$, the model is assuming that the loss cone is always full at $r>r_{inf}$ (pinhole regime) and empty at $r<r_{inf}$ (diffusive regime).\\Testing the model by changing the normalizing quantities  serves to investigate how the loss cone refilling affects the binary evolution.
+A comparison between Equations (\ref{Quinlan Gamma_Q})  and (\ref{Sesana Gamma}) shows that, by associating the velocity $v$ of an unbound star at infinity with the velocity dispersion $\sigma$ of the isothermal sphere, the prescriptions adopted for $H$ and $K$ effectively describe a system in which the loss cone is full at $r_{\rm inf}$. However, by introducing the dimensioless factor $LCN$, it is possible to describe, within the hybrid model formulation, different regimes of the loss-cone simply by replacing $\rho_{inf}$ with $LCN\cdot \rho_{inf}$ as will shown in chapter \ref{chap:chapter3}.
 
 
 
