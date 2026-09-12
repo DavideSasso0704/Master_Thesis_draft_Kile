@@ -2470,36 +2470,45 @@
     <bcf:citekey order="105" intorder="1">Quinlan_1996</bcf:citekey>
     <bcf:citekey order="106" intorder="1">Sesana_2010</bcf:citekey>
     <bcf:citekey order="107" intorder="1">Quinlan_1996</bcf:citekey>
-    <bcf:citekey order="108" intorder="1">Sesana_2006</bcf:citekey>
-    <bcf:citekey order="109" intorder="1">Sesana_2008</bcf:citekey>
+    <bcf:citekey order="108" intorder="1">Sesana_2010</bcf:citekey>
+    <bcf:citekey order="109" intorder="1">Quinlan_1996</bcf:citekey>
     <bcf:citekey order="110" intorder="1">Sesana_2010</bcf:citekey>
-    <bcf:citekey order="111" intorder="1">Sesana_2010</bcf:citekey>
-    <bcf:citekey order="112" intorder="1">Tremaine_2002</bcf:citekey>
+    <bcf:citekey order="111" intorder="1">Quinlan_1996</bcf:citekey>
+    <bcf:citekey order="112" intorder="1">Sesana_2006</bcf:citekey>
     <bcf:citekey order="113" intorder="1">Peters_1963</bcf:citekey>
-    <bcf:citekey order="114" intorder="1">Sesana_2010</bcf:citekey>
+    <bcf:citekey order="114" intorder="1">Quinlan_1996</bcf:citekey>
     <bcf:citekey order="115" intorder="1">Sesana_2006</bcf:citekey>
-    <bcf:citekey order="116" intorder="1">Sesana_2006</bcf:citekey>
-    <bcf:citekey order="117" intorder="1">Prugniel</bcf:citekey>
-    <bcf:citekey order="118" intorder="1">Terzic</bcf:citekey>
-    <bcf:citekey order="119" intorder="1">Khan_2021</bcf:citekey>
-    <bcf:citekey order="120" intorder="1">Khan_2021</bcf:citekey>
-    <bcf:citekey order="121" intorder="1">Holley-Bockelmann_2025</bcf:citekey>
-    <bcf:citekey order="122" intorder="1">Quinlan_1996</bcf:citekey>
-    <bcf:citekey order="123" intorder="1">Sesana_2006</bcf:citekey>
-    <bcf:citekey order="124" intorder="1">Peters_1963</bcf:citekey>
-    <bcf:citekey order="125" intorder="1">Sesana_2008</bcf:citekey>
-    <bcf:citekey order="126" intorder="1">Sesana_2015</bcf:citekey>
+    <bcf:citekey order="116" intorder="1">Quinlan_1996</bcf:citekey>
+    <bcf:citekey order="117" intorder="1">Sesana_2006</bcf:citekey>
+    <bcf:citekey order="118" intorder="1">Sesana_2008</bcf:citekey>
+    <bcf:citekey order="119" intorder="1">Sesana_2010</bcf:citekey>
+    <bcf:citekey order="120" intorder="1">Sesana_2010</bcf:citekey>
+    <bcf:citekey order="121" intorder="1">Tremaine_2002</bcf:citekey>
+    <bcf:citekey order="122" intorder="1">Peters_1963</bcf:citekey>
+    <bcf:citekey order="123" intorder="1">Sesana_2010</bcf:citekey>
+    <bcf:citekey order="124" intorder="1">Sesana_2006</bcf:citekey>
+    <bcf:citekey order="125" intorder="1">Sesana_2006</bcf:citekey>
+    <bcf:citekey order="126" intorder="1">Prugniel</bcf:citekey>
     <bcf:citekey order="127" intorder="1">Terzic</bcf:citekey>
-    <bcf:citekey order="128" intorder="1">Sesana_2006</bcf:citekey>
-    <bcf:citekey order="129" intorder="1">Sesana_2006</bcf:citekey>
-    <bcf:citekey order="130" intorder="1">Khan_2021</bcf:citekey>
-    <bcf:citekey order="131" intorder="1">Holley-Bockelmann_2025</bcf:citekey>
-    <bcf:citekey order="132" intorder="1">Ono_2023</bcf:citekey>
-    <bcf:citekey order="133" intorder="1">Springel_2005</bcf:citekey>
-    <bcf:citekey order="134" intorder="1">Sesana_2010</bcf:citekey>
-    <bcf:citekey order="135" intorder="1">Khan_2021</bcf:citekey>
-    <bcf:citekey order="136" intorder="1">Prugniel</bcf:citekey>
-    <bcf:citekey order="137" intorder="1">Neto_1999</bcf:citekey>
+    <bcf:citekey order="128" intorder="1">Khan_2021</bcf:citekey>
+    <bcf:citekey order="129" intorder="1">Khan_2021</bcf:citekey>
+    <bcf:citekey order="130" intorder="1">Holley-Bockelmann_2025</bcf:citekey>
+    <bcf:citekey order="131" intorder="1">Quinlan_1996</bcf:citekey>
+    <bcf:citekey order="132" intorder="1">Sesana_2006</bcf:citekey>
+    <bcf:citekey order="133" intorder="1">Peters_1963</bcf:citekey>
+    <bcf:citekey order="134" intorder="1">Sesana_2008</bcf:citekey>
+    <bcf:citekey order="135" intorder="1">Sesana_2015</bcf:citekey>
+    <bcf:citekey order="136" intorder="1">Terzic</bcf:citekey>
+    <bcf:citekey order="137" intorder="1">Sesana_2006</bcf:citekey>
+    <bcf:citekey order="138" intorder="1">Sesana_2006</bcf:citekey>
+    <bcf:citekey order="139" intorder="1">Khan_2021</bcf:citekey>
+    <bcf:citekey order="140" intorder="1">Holley-Bockelmann_2025</bcf:citekey>
+    <bcf:citekey order="141" intorder="1">Ono_2023</bcf:citekey>
+    <bcf:citekey order="142" intorder="1">Springel_2005</bcf:citekey>
+    <bcf:citekey order="143" intorder="1">Sesana_2010</bcf:citekey>
+    <bcf:citekey order="144" intorder="1">Khan_2021</bcf:citekey>
+    <bcf:citekey order="145" intorder="1">Prugniel</bcf:citekey>
+    <bcf:citekey order="146" intorder="1">Neto_1999</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

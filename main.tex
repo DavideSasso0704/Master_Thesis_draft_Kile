@@ -777,7 +777,7 @@ A comparison between Equations (\ref{Quinlan Gamma_Q})  and (\ref{Sesana Gamma})
 
 
 \section{Gravitational Radiation from Black Hole Binaries}
-
+\label{sec:Gravitational Radiation from Black Hole Binaries}
 
 
 
@@ -1110,9 +1110,35 @@ By substituting Equation (\ref{a=a(e) Maggiore}) into Equation (\ref{tau coal. a
 
 
 
-\section{Quinlan-Sesana Hybrid Model}
 
-In this work, binary evolution embedded in a fixed stellar background problem is addressed in a hybrid fashion providing a self consistent analytical framework where dimensioless rates are directely estimated from scattering experiments.\\Scattering experiments are carried out for the restricted three-body problem and proceed until either the binary coalesce or stellar ejection has become so important that the host galaxy can no longer be considered fixed.\\Three dimensionless quantities $(H,K,J)$ are measured from numerical experiments and defined as:
+
+
+\vspace*{\fill}
+
+\begin{center}
+\begin{minipage}{0.65\textwidth}
+\centering
+\textit{In light of the forthcoming GW observatories, LISA and ET, investigating the properties and evolution of GW-loud sources is of particular importance. Among these, IMBH binaries are especially compelling and studying their dynamical evolution, along with the associated coalescence time, is essential for assessing their prospects as GW sources.\\This chapter aims to review the physical framework underlying the Quinlan-Sesana hybrid model for the dynamical evolution of black hole binaries and to present the main results of the numerical experiments performed using this approach. The chapter begins with a detailed description of the hybrid model, focusing on its main parameters and on the numerical integration of the differential equations governing the evolution of the binary semimajor axis and eccentricity. The model is then applied to physically motivated stellar backgrounds. The second section is devoted to numerical experiments in stellar-cusp environments. Finally, the chapter ends by reporting the main predictions of the model for nucleated dwarf galaxies and for non-nucleated, artificially evolved galaxies at redshift $z$, according to the observed cosmic evolution of galaxy sizes.}
+\end{minipage}
+\end{center}
+
+\vspace*{\fill}
+
+
+
+
+
+
+
+\newpage
+
+
+
+
+
+
+\section{Quinlan-Sesana Hybrid Model}
+As already discussed in Chapter \ref{chap:chapter1}, the coalescence time of a BH binary driven solely by GW emission depends strongly on several parameters, including the initial binary separation $a_0$ and eccentricity $e_0$. However, the GW-driven regime is reached only after a sequence of earlier hardening mechanisms, primarily dynamical friction and three-body stellar scattering, which dominate the early stages of the binary evolution. It is therefore essential to model the dynamical evolution of the binary by consistently accounting for the different hardening processes from its formation to final coalescence in order to obtain a reliable description of the binary evolutionary track, $a(t)$ and $e(t)$ and  its coalescence time.\\Although direct $N$-body simulations provide a self-consistent approach to carrying out this analysis, they remain computationally too demanding to efficiently explore the broad parameter space governing binary evolution. This parameter space, for our purposes, includes the BH masses, the binary separation and eccentricity at pairing, and the properties of the stellar background. In this context, the self-consistent hybrid model developed by \textcite{Quinlan_1996} and \textcite{Sesana_2010} provides an efficient alternative, overcoming the computational limitations and long runtimes associated with direct $N$-body experiments while retaining the key physical processes driving the binary evolution.\\Let us begin by introducing the Quinlan formalism and the main model parameters were determined through restricted three-body scattering experiment, eventually leading to the coupled differential equation for $(a(t),e(t))$. Adopting the original notation, we denote by $m_1$ and $m_2<m_1$ the primary and secondary BH masses, respectively, by $M_{12}=m_1+m_2$ the total binary mass, and by $m_*\ll m_2$ the mass of an individual star, assuming all stars have the same mass. In his work, \textcite{Quinlan_1996} studied the dynamical evolution of a BH binary embedded in a fixed, homogeneous background of unbound stars with density $\rho$ and a Maxwellian velocity distribution characterised by a constant velocity dispersion $\sigma$. The description relies on three dimensionless quantities, $H$, $K$, and $J$, which denote the dimensionless binary hardening rate, eccentricity growth rate, and stellar mass ejection rate, respectively. They are defined as follows:
 \begin{equation}\label{H Q96}
     H=\frac{\sigma}{G\rho}\frac{d}{dt}\left(\frac{1}{a}\right),
 \end{equation}
@@ -1124,6 +1150,90 @@ and
 \begin{equation}\label{J Q96}
     J=\frac{1}{M_{12}}\frac{dM_{ej}}{d\ln({1/a})}.
 \end{equation}
+Let us focus on Equations (\ref{H Q96}) and (\ref{K Q96}). Both dimensioless rates and the derviatives of the binary parameters account for the various, indipendent mechanisms driving its evolution, i.e.
+\begin{equation}
+\left\{
+\begin{aligned}
+\frac{da}{dt} &= \sum_i \left.\frac{da}{dt}\right|_i
+= -\frac{a^2 G \rho}{\sigma}\sum_i H_i \\
+\frac{de}{dt} &= \sum_i \left.\frac{de}{dt}\right|_i
+= -\frac{a G \rho}{\sigma}\sum_i H_iK_i
+\end{aligned}
+\right.
+\label{Sesana_2010 a and e derivatives}
+\end{equation}
+and
+\begin{equation}
+\left\{
+\begin{aligned}
+&H_i=\frac{\sigma}{a^2G\rho} \left.\frac{da}{dt}\right|_i\\
+&K_i= a \left.\frac{de}{dt}\right|_i
+\left(\sum_j\left.\frac{da}{dt}\right|_j\right)^{-1}
+\end{aligned}
+\right.
+\label{Sesana_2010 H_i and K_i}
+\end{equation}
+where the index $i$ identifies a precise dynamical process \parencite{Sesana_2010}.\\As in \textcite{Quinlan_1996} and \textcite{Sesana_2006}, in our numerical experiments based on this hybrid model, we account for the binary evolution driven close encounters with unbound, loss-cone stars and by GW emission, as described by the equations derived by \textcite{Peters_1963}. Therefore, we assume in our numerical experiments
+\begin{equation}
+\left\{
+\begin{aligned}
+\frac{da}{dt} &= \left.\frac{da}{dt}\right|_u+\left.\frac{da}{dt}\right|_{GW}
+= -\frac{a^2 G \rho}{\sigma}( H_u + H_{GW}) \\
+\frac{de}{dt} &= \left.\frac{de}{dt}\right|_u+\left.\frac{de}{dt}\right|_{GW}
+= -\frac{a G \rho}{\sigma}( H_uK_u+H_{GW}K_{GW})
+\end{aligned}
+\right.
+\label{Sesana_2010 a and e derivatives for u and GW}
+\end{equation}
+The latter, derived in \S~\ref{sec:Gravitational Radiation from Black Hole Binaries}, is reported here for completeness and to ensure consistency with the notation adopted in this chapter:
+\begin{equation}
+    \left.\frac{da}{dt}\right|_{GW} = -\frac{64}{5} \frac{G^3 \mu m^2}{c^5 a^3} \frac{1}{(1 - e^2)^{7/2}} \left( 1 + \frac{73}{24}e^2 + \frac{37}{96}e^4 \right),
+\end{equation}
+\begin{equation}
+    \left.\frac{de}{dt}\right|_{GW} = -\frac{304}{15} \frac{G^3 \mu m^2}{c^5 a^4}  \frac{e}{(1 - e^2)^{5/2}} \left( 1 + \frac{121}{304}e^2 \right).
+\end{equation}
+The former, instead, was independently derived by \textcite{Quinlan_1996} and \textcite{Sesana_2006} using two different approaches, as shown below.
+
+
+
+
+
+We anticipate that Equations (\ref{Sesana_2010 da/dt TOT}) and (\ref{Sesana_2010 de/dt TOT}) will be integrated with the help of RK(4) and $dK/de$ is needed as well; Figure \ref{dK/de vs e Sesana comparison} depicts the step-like function.
+
+
+The time step is adjusted at each iteration according to the prescription
+\begin{equation}
+    \Delta t \le  min\left \{\frac{2.79}{|\lambda_i|}\right\} \qquad \forall i=1,N
+\end{equation}
+where $\lambda_i$ are the Jacobian $\mathbf{J}$ eigenvalues. The elements of this matrix are:
+\begin{equation}\label{J_11 of Sesana comparison}
+    J_{11}=\left. \frac{da}{dt}\right|_u\left(\frac{2}{a}+\frac{\gamma}{a+a_0a_h}\right)-\left.\frac{da}{dt}\right|_{gw}\left(\frac{3}{a}\right)
+\end{equation}
+
+
+\begin{equation}\label{J_12 of Sesana comparison}
+    J_{12}=\left. \frac{da}{dt}\right|_{GW}\left(\frac{{7e}}{1-e^2}+\frac{73e/12+37e^3/24}{1+73e^2/24+37e^4/96}\right)
+\end{equation}
+
+
+
+
+
+\begin{equation}\label{J_21 of Sesana comparison}
+    J_{21}=\left.\frac{de}{dt}\right|_u\left(\frac{1}{a}+\frac{\gamma_H}{a+a_{0,H}a_h}+\frac{\gamma_K}{a+a_{0,K}a_h}\right)-\left.\frac{de}{dt}\right|_{GW}\left(\frac{4}{a}\right)
+\end{equation}
+
+
+\begin{equation}\label{J_22 of Sesana comparison}
+    J_{22}=\left.\frac{de}{dt}\right|_u\left(\frac{\partial \ln{K}}{\partial e}\right)+\left.\frac{de}{dt}\right|_{GW}\left(\frac{5e}{1-e^2}+\frac{1+363e^2/304}{e+121e^3/304}\right)
+\end{equation}
+
+
+
+
+
+
+
 Equations (\ref{H Q96}), (\ref{K Q96}) and (\ref{J Q96}) introduce the so called dimensionless hardening
 rate H, eccentricity growth rate K and mass loss rate. Once $(H,J,K)$ are obtained from scattering experiments, the system of coupled differential equations can be solved for the binary semi-major axis, eccentricity and ejected mass time derivatives and numerical methods will eventually return their evolution within the fixed galaxy model of interest.
 
@@ -1337,13 +1447,7 @@ Being indipendet of each other, by superposition, we can put
 the pieces together and the evolution of the binary obeys to
 
 
-\begin{equation}\label{Sesana_2010 da/dt TOT}
-    \frac{da}{dt} = \sum_i \left.\frac{da}{dt}\right|_i
-\end{equation}
 
-\begin{equation}\label{Sesana_2010 de/dt TOT}
-    \frac{de}{dt} = \sum_i \left.\frac{de}{dt}\right|_i.
-\end{equation}
 Besides, an equal number of regimes can be introduced whereby one single mechanism is dominant over the others; lengthscale boundaries are $a_0$,
 \begin{equation}\label{Sesana_2010 a_h}
     a_h\approx\frac{1}{4(3-\gamma)}\left(\frac{q}{1+q}\right)^{(2-\gamma)(3-\gamma)}
@@ -1389,36 +1493,6 @@ Therefore, at odds with $H$, $K$ is a function of $(a,e)$; we list below the plo
 
 
 
-
-We anticipate that Equations (\ref{Sesana_2010 da/dt TOT}) and (\ref{Sesana_2010 de/dt TOT}) will be integrated with the help of RK(4) and $dK/de$ is needed as well; Figure \ref{dK/de vs e Sesana comparison} depicts the step-like function.
-
-
-The time step is adjusted at each iteration according to the prescription
-\begin{equation}
-    \Delta t \le  min\left \{\frac{2.79}{|\lambda_i|}\right\} \qquad \forall i=1,N
-\end{equation}
-where $\lambda_i$ are the Jacobian $\mathbf{J}$ eigenvalues. The elements of this matrix are:
-\begin{equation}\label{J_11 of Sesana comparison}
-    J_{11}=\left. \frac{da}{dt}\right|_u\left(\frac{2}{a}+\frac{\gamma}{a+a_0a_h}\right)-\left.\frac{da}{dt}\right|_{gw}\left(\frac{3}{a}\right)
-\end{equation}
-
-
-\begin{equation}\label{J_12 of Sesana comparison}
-    J_{12}=\left. \frac{da}{dt}\right|_{GW}\left(\frac{{7e}}{1-e^2}+\frac{73e/12+37e^3/24}{1+73e^2/24+37e^4/96}\right)
-\end{equation}
-
-
-
-
-
-\begin{equation}\label{J_21 of Sesana comparison}
-    J_{21}=\left.\frac{de}{dt}\right|_u\left(\frac{1}{a}+\frac{\gamma_H}{a+a_{0,H}a_h}+\frac{\gamma_K}{a+a_{0,K}a_h}\right)-\left.\frac{de}{dt}\right|_{GW}\left(\frac{4}{a}\right)
-\end{equation}
-
-
-\begin{equation}\label{J_22 of Sesana comparison}
-    J_{22}=\left.\frac{de}{dt}\right|_u\left(\frac{\partial \ln{K}}{\partial e}\right)+\left.\frac{de}{dt}\right|_{GW}\left(\frac{5e}{1-e^2}+\frac{1+363e^2/304}{e+121e^3/304}\right)
-\end{equation}
 
 
 In order to compare Sesana predictions with our model we set $(t_0,a_0,e_0)$ for the unbound phase to be effective and selecting these values directely from Sesana plot: $(t_0,a_0,e_0)=(12Myr,0.05\cdot a_0, 0.131 )$.
