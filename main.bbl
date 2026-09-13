@@ -1449,6 +1449,39 @@
       \endverb
       \keyw{Binary Stars,Celestial Mechanics,Gravitational Effects,Scattering Cross Sections,Stellar Gravitation,Three Body Problem,Adiabatic Conditions,Asymptotic Properties,Energy Conservation,Fokker-Planck Equation,Astrophysics,STARS: BINARIES: GENERAL,CELESTIAL MECHANICS,STELLAR DYNAMICS}
     \endentry
+    \entry{Hills_1983}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=66d4bbc842ac7a9568204100bf31a828}{%
+           family={{Hills}},
+           familyi={H\bibinitperiod},
+           given={J.\bibnamedelimi G.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{66d4bbc842ac7a9568204100bf31a828}
+      \strng{fullhash}{66d4bbc842ac7a9568204100bf31a828}
+      \strng{bibnamehash}{66d4bbc842ac7a9568204100bf31a828}
+      \strng{authorbibnamehash}{66d4bbc842ac7a9568204100bf31a828}
+      \strng{authornamehash}{66d4bbc842ac7a9568204100bf31a828}
+      \strng{authorfullhash}{66d4bbc842ac7a9568204100bf31a828}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{aj}
+      \field{month}{8}
+      \field{title}{{The effect of low-velocity, low-mass intruders (collisionless gas) on the dynamical evolution of a binary system}}
+      \field{volume}{88}
+      \field{year}{1983}
+      \field{pages}{1269\bibrangedash 1283}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1086/113418
+      \endverb
+      \keyw{Astrodynamics,Binary Stars,Celestial Mechanics,Stellar Motions,Computerized Simulation,Eccentric Orbits,Mass Ratios,Orbital Velocity,Stellar Mass,Stellar Models,Astrophysics}
+    \endentry
     \entry{Hilz_2012}{article}{}
       \name{author}{6}{}{%
         {{un=0,uniquepart=base,hash=f2d4512a4986bfac25629cb02addb7a4}{%

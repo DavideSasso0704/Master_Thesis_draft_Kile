@@ -1138,7 +1138,7 @@ By substituting Equation (\ref{a=a(e) Maggiore}) into Equation (\ref{tau coal. a
 
 
 \section{Quinlan-Sesana Hybrid Model}
-As already discussed in Chapter \ref{chap:chapter1}, the coalescence time of a BH binary driven solely by GW emission depends strongly on several parameters, including the initial binary separation $a_0$ and eccentricity $e_0$. However, the GW-driven regime is reached only after a sequence of earlier hardening mechanisms, primarily dynamical friction and three-body stellar scattering, which dominate the early stages of the binary evolution. It is therefore essential to model the dynamical evolution of the binary by consistently accounting for the different hardening processes from its formation to final coalescence in order to obtain a reliable description of the binary evolutionary track, $a(t)$ and $e(t)$ and  its coalescence time.\\Although direct $N$-body simulations provide a self-consistent approach to carrying out this analysis, they remain computationally too demanding to efficiently explore the broad parameter space governing binary evolution. This parameter space, for our purposes, includes the BH masses, the binary separation and eccentricity at pairing, and the properties of the stellar background. In this context, the self-consistent hybrid model developed by \textcite{Quinlan_1996} and \textcite{Sesana_2010} provides an efficient alternative, overcoming the computational limitations and long runtimes associated with direct $N$-body experiments while retaining the key physical processes driving the binary evolution.\\Let us begin by introducing the Quinlan formalism and the main model parameters were determined through restricted three-body scattering experiment, eventually leading to the coupled differential equation for $(a(t),e(t))$. Adopting the original notation, we denote by $m_1$ and $m_2<m_1$ the primary and secondary BH masses, respectively, by $M_{12}=m_1+m_2$ the total binary mass, and by $m_*\ll m_2$ the mass of an individual star, assuming all stars have the same mass. In his work, \textcite{Quinlan_1996} studied the dynamical evolution of a BH binary embedded in a fixed, homogeneous background of unbound stars with density $\rho$ and a Maxwellian velocity distribution characterised by a constant velocity dispersion $\sigma$. The description relies on three dimensionless quantities, $H$, $K$, and $J$, which denote the dimensionless binary hardening rate, eccentricity growth rate, and stellar mass ejection rate, respectively. They are defined as follows:
+As already discussed in Chapter \ref{chap:chapter1}, the coalescence time of a BH binary driven solely by GW emission depends strongly on several parameters, including the initial binary separation $a_0$ and eccentricity $e_0$. However, the GW-driven regime is reached only after a sequence of earlier hardening mechanisms, primarily dynamical friction and three-body stellar scattering, which dominate the early stages of the binary evolution. It is therefore essential to model the dynamical evolution of the binary by consistently accounting for the different hardening processes from its formation to final coalescence in order to obtain a reliable description of the binary evolutionary track, $a(t)$ and $e(t)$ and  its coalescence time.\\Although direct $N$-body simulations provide a self-consistent approach to carrying out this analysis, they remain computationally too demanding to efficiently explore the broad parameter space governing binary evolution. This parameter space, for our purposes, includes the BH masses, the binary separation and eccentricity at pairing, and the properties of the stellar background. In this context, the self-consistent hybrid model developed by \textcite{Quinlan_1996} and \textcite{Sesana_2010} provides an efficient alternative, overcoming the computational limitations and long runtimes associated with direct $N$-body experiments while retaining the key physical processes driving the binary evolution.\\Let us begin by introducing the Quinlan formalism and the main model parameters were determined through restricted three-body scattering experiment, eventually leading to the coupled differential equation for $(a(t),e(t))$. Adopting the original notation, we denote by $m_1$ and $m_2<m_1$ the primary and secondary BH masses, respectively, by $M_{12}=m_1+m_2$ the total binary mass, $q=m_2/m_2$ the BHs mass ratio ,and by $m_*\ll m_2$ the mass of an individual star, assuming all stars have the same mass. In his work, \textcite{Quinlan_1996} studied the dynamical evolution of a BH binary embedded in a fixed, homogeneous background of unbound stars with density $\rho$ and a Maxwellian velocity distribution characterised by a constant velocity dispersion $\sigma$. The description relies on three dimensionless quantities, $H$, $K$, and $J$, which denote the dimensionless binary hardening rate, eccentricity growth rate, and stellar mass ejection rate, respectively. They are defined as follows:
 \begin{equation}\label{H Q96}
     H=\frac{\sigma}{G\rho}\frac{d}{dt}\left(\frac{1}{a}\right),
 \end{equation}
@@ -1192,13 +1192,147 @@ The latter, derived in \S~\ref{sec:Gravitational Radiation from Black Hole Binar
 \begin{equation}
     \left.\frac{de}{dt}\right|_{GW} = -\frac{304}{15} \frac{G^3 \mu m^2}{c^5 a^4}  \frac{e}{(1 - e^2)^{5/2}} \left( 1 + \frac{121}{304}e^2 \right).
 \end{equation}
-The former, instead, was independently derived by \textcite{Quinlan_1996} and \textcite{Sesana_2006} using two different approaches, as shown below.
+The former, instead, was independently derived by \textcite{Quinlan_1996} and \textcite{Sesana_2006} using two different approaches, as shown below. Indeed, with the aim of deriving the dimensionless rates, both works employ suites of three-body scattering experiments designed to characterize the response of a BH binary to repeated close encounters with stars over its lifetime. However, while \textcite{Quinlan_1996} fix the incoming stellar velocity $v$ and vary the binary separation $a$, \textcite{Sesana_2006} adopt the opposite approach, varying $v$ at fixed $a$. It is worth noting that the two approaches are physically equivalent, but lead to different parametrizations of the functions $H_u$ and $K_u$. When numerically integrating Equations (\ref{Sesana_2010 a and e derivatives for u and GW}), the latter parametrization will be adopted, as it directly involves the quantities being integrated.\\Let us now briefly review how $H_u$ and $K_u$ were originally estimated. The underlying idea is to infer the variations in the binary orbital energy and angular momentum from the corresponding changes experienced by the scattered star, which are equal in magnitude and opposite in sign as a consequence of energy and angular momentum conservation. The first step is to define the dimensionless energy change
+\begin{equation}\label{C quinlan}
+    C\equiv\frac{a\Delta E_*}{G\mu},
+\end{equation}
+introduced by \textcite{Hills_1983}, and the dimensionless impact parameter
+\begin{equation}
+ x\equiv \frac{b}{b_0}
+\end{equation}
+with $b_0^2=2GM_{12}a/v^2$.\\Denoting by $\langle C\rangle$ the average over all angular variables, the “single-velocity” hardening rate $H_1(v)$, derived from restricted three-body scattering experiments in which all stars have the same velocity at infinity, is given by
+\begin{equation}\label{H_1 Quinlan}
+H_1(v)=\frac{1}{\pi b_0^2}\int db,(2\pi b) 4 \pi \langle C\rangle=8 \pi \int dx, \langle C\rangle x \equiv8\pi I_x(C).
+\end{equation}
+where the operator $I_x(C)$ is implicitly defined by Equation (\ref{H_1 Quinlan}). Finally, the hardening rate $H_u(\sigma)$ is obtained by averaging the single-velocity hardening rate $H_1(v)$ over the Maxwellian distribution of stellar velocities:
+\begin{equation}
+H_u(\sigma)=\int_0^\infty dv\, 4\pi v^2 H_1(v)\frac{\sigma}{v} f(v,\sigma)
+\end{equation}
+where
+\begin{equation}
+f(v,\sigma)=\frac{1}{(2\pi\sigma^2)^{3/2}}
+e^{-\frac{v^2}{2\sigma^2}}
+\end{equation}
+is the Maxwellian velocity distribution associated with the velocity dispersion $\sigma$.\\Similarly, one finds $K_u$ from the “single-velocity” dimensionless eccentricity growth rate $K_1$, which has the same meaning of $H_1$. It can be derived starting from the expression for the binary eccentricity,
+\begin{equation}\label{Quinlan eccentricity formula}
+e^2=1+\frac{2EL^2}{\mu(GM_{12})^2},
+\end{equation}
+which relates the eccentricity to the binary orbital energy $E$ and angular momentum $L$. Differentiating Equation (\ref{Quinlan eccentricity formula}) and expressing the resulting variations in terms of finite differences yields
+\begin{equation}
+    \frac{\Delta e}{\Delta ln(1/a)}=\frac{1-e^2}{2e}\left[-2\left(\frac{E}{\Delta E}\right)\left(\frac{\Delta L_z}{L_z}\right)-1\right]=\frac{1-e^2}{2e}(B-C),
+\end{equation}
+where
+\begin{equation}\label{B quinlan}
+    B\equiv-\frac{M_{12}}{m_*}\frac{\Delta L_z}{L_z}.
+\end{equation}
+is the dimensionless angular momentum change. Finally, by integrating over all possible impact parameters and angular variables and normalizing the result to $B$, the single-velocity eccentricity growth rate $K_1$ turns out to be
+\begin{equation}
+K_1=\frac{\int dx,xC(x)\left\langle \frac{\Delta e}{\Delta\ln(1/a)}\right\rangle}{\int dx,xC(x)}
+=\frac{1-e^2}{2e}\left[\frac{I_x(B-C)}{I_x(C)}\right].
+\end{equation}
+The best-fitting functions found by \textcite{Sesana_2006} from numerical experiments to $H_u$ and $K_u$ are
+\begin{equation}\label{H fit Sesana}
+ H(a)=A_H\left(1+\frac{a}{a_{0,H}}\right)^{\gamma_H}
+\end{equation}
+and
+\begin{equation}\label{K fit Sesana}
+ K(a,e)=A_K\left(1+\frac{a}{a_{0,K}}\right)^{\gamma_K}+B_K,
+\end{equation}
+with best-fitting parameters listed in Tables \ref{tab:H best-fit parameters} and \ref{tab:K best-fit_parameters}.
+\begin{table}[H]
+\centering
+\begin{tabular}{cccc}
+\toprule
+$q$ & $A_H$  & $a_{0,H}$ & $\gamma_H$ \\
+\midrule
+1     & 14.55  & 3.48 & -0.95 \\
+1/3   & 15.82  & 4.18 & -0.90 \\
+1/9   & 17.17  & 3.59 & -0.79 \\
+1/27  & 18.15  & 3.32 & -0.77 \\
+1/81  & 18.81  & 3.87 & -0.82 \\
+1/243 & 19.16  & 4.16 & -0.86 \\
+\bottomrule
+\end{tabular}
+\caption{H values}
+\label{tab:H best-fit parameters}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ccccc}
+\specialrule{0.8pt}{0pt}{0pt}
+$e$ & $A_K$ & $a_{0,K}$ & $\gamma_K$ & $B_K$ \\
+\specialrule{0.8pt}{0pt}{0pt}
+
+\multicolumn{5}{c}{$q=1$} \\
+\specialrule{0.8pt}{0pt}{0pt}
+0.15 & 0.037 & 0.339 & -3.335 & -0.012 \\
+0.3  & 0.075 & 0.151 & -1.548 & -0.008 \\
+0.45 & 0.105 & 0.088 & -0.893 & -0.005 \\
+0.6  & 0.121 & 0.090 & -0.895 & -0.008 \\
+0.75 & 0.134 & 0.064 & -0.544 & -0.006 \\
+0.9  & 0.082 & 0.085 & -0.663 & -0.004 \\
+
+\specialrule{0.8pt}{0pt}{0pt}
+\multicolumn{5}{c}{$q=1/3$} \\
+\specialrule{0.8pt}{0pt}{0pt}
+0.15 & 0.082 & 0.042 & -0.168 & -0.048 \\
+0.3  & 0.095 & 0.213 & -1.152 & -0.012 \\
+0.45 & 0.129 & 0.137 & -0.655 & -0.006 \\
+0.6  & 0.166 & 0.081 & -0.546 & -0.006 \\
+0.75 & 0.159 & 0.079 & -0.497 & -0.010 \\
+0.9  & 0.095 & 0.122 & -0.716 & -0.008 \\
+
+\specialrule{0.8pt}{0pt}{0pt}
+\multicolumn{5}{c}{$q=1/9$} \\
+\specialrule{0.8pt}{0pt}{0pt}
+0.15 & 0.051 & 0.385 & -0.891 & -0.011 \\
+0.3  & 0.111 & 0.307 & -1.107 & -0.007 \\
+0.45 & 0.172 & 0.526 & -1.174 & -0.016 \\
+0.6  & 0.181 & 0.251 & -1.169 & -0.007 \\
+0.75 & 0.179 & 0.195 & -0.846 & -0.004 \\
+0.9  & 0.117 & 0.400 & -1.170 & -0.001 \\
+
+\specialrule{0.8pt}{0pt}{0pt}
+\multicolumn{5}{c}{$q=1/27$} \\
+\specialrule{0.8pt}{0pt}{0pt}
+0.15 & 0.064 & 0.284 & -1.206 & 0.021 \\
+0.3  & 0.143 & 1.033 & -1.537 & -0.021 \\
+0.45 & 0.212 & 0.722 & -1.257 & -0.022 \\
+0.6  & 0.216 & 0.430 & -1.163 & -0.014 \\
+0.75 & 0.173 & 0.771 & -1.934 & -0.014 \\
+0.9  & 0.129 & 0.329 & -1.125 & -0.020 \\
+
+\specialrule{0.8pt}{0pt}{0pt}
+\end{tabular}
+\caption{Best-fit parameters.}
+\label{tab:K best-fit_parameters}
+\end{table}
+The absence of a column dedicated to the eccentricty sampling in Table \ref{tab:H best-fit parameters} reflects one of the main findings from \textcite{Quinlan_1996} and \textcite{Sesana_2006} scattering experiments, that is the dimensionless hardening rate $H_u$ is almost indipendent of the BH binary eccentricity. This result, shown in Figure \ref{fig:H_comparison}, is in perfect agreement with the main statement of Heggie's law discussed in \S~\ref{sec:Gravitational Slingshot Effect}.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[c]{0.48\textwidth}
+        \centering
+        \includegraphics[height=6cm]{H_1.png}
+        \caption{Quinlan}
+        \label{fig:H_Quinlan}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[c]{0.48\textwidth}
+        \centering
+        \includegraphics[height=6cm]{H_Sesana2006.png}
+        \caption{Sesana}
+        \label{fig:H_Sesana2006}
+    \end{subfigure}
+    \caption{Comparison of the $H$ function according to Quinlan and Sesana.}
+    \label{fig:H_comparison}
+\end{figure}
 
 
 
 
-
-We anticipate that Equations (\ref{Sesana_2010 da/dt TOT}) and (\ref{Sesana_2010 de/dt TOT}) will be integrated with the help of RK(4) and $dK/de$ is needed as well; Figure \ref{dK/de vs e Sesana comparison} depicts the step-like function.
+We anticipate that Equations  will be integrated with the help of RK(4) and $dK/de$ is needed as well; Figure depicts the step-like function.
 
 
 The time step is adjusted at each iteration according to the prescription
@@ -1241,33 +1375,10 @@ rate H, eccentricity growth rate K and mass loss rate. Once $(H,J,K)$ are obtain
 
 
 Although stars approach the binary with a wide velocity distribution, consistent with the adopted $\sigma$, simulations are performed considering a unique value of the velocity at infinity (thus are $\mathbf{UNBOUND}$) then accounting for a Maxwellian distribution \cite{Quinlan_1996}.\\This semplification leads to the estimate of the so called $H_1(v)$ first, which thus allows to obtian $H(\sigma)$ by integration over all possible velocities and weighted by MB distribution.\\Therefore from each scattering experiment is measured the dimensionless energy change 
-\begin{equation}\label{C quinlan}
-    C=\frac{a\Delta E_*}{G\mu}
-\end{equation}
-and is then avereged over binary orientation $(4\pi)$ and phase $(2\pi)$.\\By introducing the quantity
-\begin{equation}
-    b_0^2=\frac{2GM_{12}a}{v^2}
-\end{equation}
-in order to work with the dimensionless impact parameter $x=b/b_0$, finally:
-\begin{equation}
-    H_1=\frac{1}{\pi b_0^2}\int db2\pi b 4 \pi \langle C\rangle=8 \pi \int dx\quad x \langle C\rangle\equiv8\pi I_x(C).
-\end{equation}
-Similarly, assuming a given velocity for scattering experiments, the eccentricity growth rate $K$ is obtained from $K_1$.\\The differentiation of
-\begin{equation}
-    e^2=1+\frac{2EL^2}{\mu(GM_{12})^2}
-\end{equation}
-returns
-\begin{equation}
-    \frac{\Delta e}{\Delta ln(1/a)}=\frac{1-e^2}{2e}\left[-2\left(\frac{E}{\Delta E}\right)\left(\frac{\Delta L_z}{L_z}\right)-1\right]=\frac{1-e^2}{2e}(B-C),
-\end{equation}
-where B is the dimensionless angular momentum change defined as 
-\begin{equation}\label{B quinlan}
-    B\equiv-\frac{M_{12}}{m_*}\frac{\Delta L_z}{L_z}.
-\end{equation}
-Finally, integrating over all possible impact parameter, angles and normalizing the result, $K_1$ can be computed as
-\begin{equation}
-    K_1=\frac{\int dx\quad xC(x)\langle \frac{\Delta e}{\Delta ln(1/a)}\rangle}{\int dx\quad xC(x)}=\frac{(1-e^2)}{2e}\left[\frac{I_x(B-C)}{I_x(C)}\right].
-\end{equation}
+
+
+
+
 $\mathbf{NOTE}$:During three-body encounters, star-binary energy and angular momentum exchange ensures the conservation of both of them; thus the binary evolution can be inferred from stellar orbial properties evolution.
 
 
@@ -1301,12 +1412,6 @@ $\mathbf{NOTE}$: $H_1$ is a function of v only while $K_1$ on both e and v.
 All free parameters are obtained for different masses ratio.
 
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\linewidth]{H_1.png}
-    \caption{This plot shows that $H_1$ is almost indipendet of the eccentricity.}
-    \label{H_1 quinlann}
-\end{figure}
 
 $\mathbf{NOTE:}$ in Sesana 2010, Fig \ref{H_1 quinlann} is reported as H vs a but this agrees with the functional form of $H_1$ and $V_{bin}=\sqrt{GM_{12}/a}$.\\Therefore, the hardening rate for a circular binary have been used for all eccentricities.
 
@@ -1364,14 +1469,6 @@ and K derived from scattering experiments are fitted by the following functions
     K=A(1+a/a_0)^\gamma+B.
 \end{equation}
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\linewidth]{H_Sesana2006.png}
-    \caption{Binary hardening rate H (averaged over a Maxwellian velocity
-distribution) vs. $a/a_h$. Left: $e= 0, 0.3, 0.6, 0.9$ for $q=1$. Right: q ¼ 1/3, 1/9,
-1/27, and 1/81 for e ¼ 0. Line style as in Fig. 1}
-    \label{H Sesana 2006}
-\end{figure}
 
 
 \begin{figure}
