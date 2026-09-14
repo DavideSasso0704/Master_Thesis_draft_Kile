@@ -2646,6 +2646,52 @@
       \verb http://dx.doi.org/10.1088/0264-9381/30/24/244005
       \endverb
     \endentry
+    \entry{Merritt_2005}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=41811beb71bf2a9116384e0ad5637cac}{%
+           family={Merritt},
+           familyi={M\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9220b8556b3848c519deee37000cdb86}{%
+           family={Milosavljević},
+           familyi={M\bibinitperiod},
+           given={Miloš},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{399d4909031feb1e5ac63651e0ff66dc}
+      \strng{fullhash}{399d4909031feb1e5ac63651e0ff66dc}
+      \strng{bibnamehash}{399d4909031feb1e5ac63651e0ff66dc}
+      \strng{authorbibnamehash}{399d4909031feb1e5ac63651e0ff66dc}
+      \strng{authornamehash}{399d4909031feb1e5ac63651e0ff66dc}
+      \strng{authorfullhash}{399d4909031feb1e5ac63651e0ff66dc}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1433-8351}
+      \field{journaltitle}{Living Reviews in Relativity}
+      \field{title}{Massive Black Hole Binary Evolution}
+      \field{volume}{8}
+      \field{year}{2005}
+      \verb{doi}
+      \verb 10.12942/lrr-2005-8
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.12942/lrr-2005-8
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.12942/lrr-2005-8
+      \endverb
+    \endentry
     \entry{Mikkola_1992}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=d6282fd62c34dcf8e2e3b4c4024dfc19}{%
@@ -2734,6 +2780,51 @@
       \endverb
       \verb{url}
       \verb http://dx.doi.org/10.1063/1.1629432
+      \endverb
+    \endentry
+    \entry{Milosavljevic_2001}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=9220b8556b3848c519deee37000cdb86}{%
+           family={Milosavljević},
+           familyi={M\bibinitperiod},
+           given={Miloš},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=41811beb71bf2a9116384e0ad5637cac}{%
+           family={Merritt},
+           familyi={M\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9492743d8f614ce2e88933629eeeef88}
+      \strng{fullhash}{9492743d8f614ce2e88933629eeeef88}
+      \strng{bibnamehash}{9492743d8f614ce2e88933629eeeef88}
+      \strng{authorbibnamehash}{9492743d8f614ce2e88933629eeeef88}
+      \strng{authornamehash}{9492743d8f614ce2e88933629eeeef88}
+      \strng{authorfullhash}{9492743d8f614ce2e88933629eeeef88}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Astrophysical Journal}
+      \field{month}{12}
+      \field{number}{1}
+      \field{title}{Formation of Galactic Nuclei}
+      \field{volume}{563}
+      \field{year}{2001}
+      \field{pages}{34}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1086/323830
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1086/323830
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1086/323830
       \endverb
     \endentry
     \entry{Eros_2026}{misc}{}
