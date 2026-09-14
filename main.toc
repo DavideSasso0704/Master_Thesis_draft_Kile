@@ -18,16 +18,13 @@
 \contentsline {subsection}{\numberline {1.5.3}Gravitational Waves from Black Hole Binaries and Back-Reaction}{26}{subsection.1.5.3}%
 \contentsline {chapter}{\numberline {2}A Hybrid Approach to Binary Evolution}{30}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Quinlan-Sesana Hybrid Model}{31}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Stellar Cusps IMBH Binary Evolution}{38}{section.2.2}%
-\contentsline {section}{\numberline {2.3}NGC 205 IMBH Binary evolution}{45}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Cosmic Size Evolution Down to NGC 205}{51}{subsection.2.3.1}%
-\contentsline {chapter}{\numberline {3}Generation of Initial Conditions for N-body Stellar Systems}{57}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Dynamical Equilibrium of Stellar Systems}{57}{section.3.1}%
-\contentsline {section}{\numberline {3.2}OpOpGadget and Galaxy Modeling}{59}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Analysis of the Generated Initial Conditions}{62}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}NCG 205 N-body Initial Conditions}{62}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}NCG 5206 N-body Initial Conditions}{63}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Ketju Numerical Simulations}{63}{section.3.4}%
-\contentsline {chapter}{\numberline {A}Physics Equation}{65}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Numerical Methods}{66}{appendix.B}%
-\contentsline {section}{\numberline {2.1}Runge-Kutta (4)}{66}{section.B.1}%
+\contentsline {section}{\numberline {2.2}Stellar Cusps IMBH Binary Evolution}{36}{section.2.2}%
+\contentsline {section}{\numberline {2.3}NGC 205 IMBH Binary evolution}{44}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Cosmic Size Evolution Down to NGC 205}{50}{subsection.2.3.1}%
+\contentsline {chapter}{\numberline {3}Generation of Initial Conditions for N-body Stellar Systems}{56}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Dynamical Equilibrium of Stellar Systems}{56}{section.3.1}%
+\contentsline {section}{\numberline {3.2}OpOpGadget and Galaxy Modeling}{58}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Analysis of the Generated Initial Conditions}{61}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}NCG 205 N-body Initial Conditions}{61}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}NCG 5206 N-body Initial Conditions}{62}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Ketju Numerical Simulations}{62}{section.3.4}%

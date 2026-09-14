@@ -1308,8 +1308,7 @@ $e$ & $A_K$ & $a_{0,K}$ & $\gamma_K$ & $B_K$ \\
 \caption{Best-fit parameters.}
 \label{tab:K best-fit_parameters}
 \end{table}
-The absence of a column dedicated to the eccentricty sampling in Table \ref{tab:H best-fit parameters} reflects one of the main findings from \textcite{Quinlan_1996} and \textcite{Sesana_2006} scattering experiments, that is the dimensionless hardening rate $H_u$ is almost indipendent of the BH binary eccentricity. This result, shown in Figure \ref{fig:H_comparison}, is in perfect agreement with the main statement of Heggie's law discussed in \S~\ref{sec:Gravitational Slingshot Effect}.
-
+The absence of a column dedicated to the eccentricity sampling in Table \ref{tab:K best-fit_parameters} reflects one of the main findings of the scattering experiments by \textcite{Quinlan_1996} and \textcite{Sesana_2006}: the dimensionless hardening rate $H_u$ is almost independent of the BH binary eccentricity. This result, shown in Figure \ref{fig:H_comparison}, is in excellent agreement with the main statement of Heggie's law, discussed in \S~\ref{sec:Gravitational Slingshot Effect}.
 \begin{figure}[H]
     \centering
     \begin{subfigure}[c]{0.48\textwidth}
@@ -1328,130 +1327,69 @@ The absence of a column dedicated to the eccentricty sampling in Table \ref{tab:
     \caption{Comparison of the $H$ function according to Quinlan and Sesana.}
     \label{fig:H_comparison}
 \end{figure}
-
-
-
-
-We anticipate that Equations  will be integrated with the help of RK(4) and $dK/de$ is needed as well; Figure depicts the step-like function.
-
-
-The time step is adjusted at each iteration according to the prescription
+In contrast, the dimensionless eccentricity growth rate $K_u$ depends on both the binary eccentricity $e$ and the separation $a$. Following the procedure illustrated by \textcite{Sesana_2010}, at a given binary separation, $K_u(a,e)$ is obtained from Equation (\ref{K fit Sesana}) by linearly interpolating in the eccentricity domain the best-fitting parameters reported in Table \ref{tab:K best-fit_parameters}. The interpolation is supplemented by the boundary conditions $K(a,e=0)=0$, as theoretically predicted in the test-particle limit for circular orbits, since circular binaries remain circular, and $K(a,e=1)=0$.\\Thus far, this Section has focused on introducing the main quantities and equations that characterize the self-consistent hybrid model for the dynamical evolution of BH binaries in stellar environments. We are now in a position to illustrate how the model can be applied to an arbitrary stellar background and how the corresponding evolution of the binary separation and eccentricity, $a(t)$ and $e(t)$, is obtained numerically.\\As discussed by \textcite{Quinlan_1996} and \textcite{Sesana_2006}, the three-body scattering experiments underlying the hybrid model consider stars that are initially unbound to the binary and whose velocities follow a Maxwellian distribution. Since these calculations are performed in a specific stellar background, a prescription is required to extend their results to the diverse stellar distributions hosting MBHs. A useful calibration is provided by \textcite{Sesana_2015}, who showed that the hardening rate of a MBHB embedded in a spherically symmetric and isotropic stellar system, characterized by a mass density $\rho(r)$ and velocity dispersion $\sigma(r)$ measured from direct $N$-body simulations, agrees to within approximately $30\%$ with that predicted by the hybrid model for a homogeneous stellar background characterized by a constant density $\rho_{inf}$ and velocity dispersion $\sigma_{inf}$, denoting the stellar mass density and velocity dispertion values at the binary influence radius respectively. Indeed, once the binary has ejected most of the stars initially bound within its radius of influence, the loss cone is predominantly replenished by stars coming from just outside $r_{inf}$, thus having locally a nearly homogeneous spatial distribution with $\rho=\rho_{inf}$ and velocity dispersion $\sigma=\sigma_{inf}$. In summary, once the BH masses and the properties of the stellar background are specified, the dynamical evolution of the binary is governed by the following system of coupled differential equations:
+\begin{equation}
+\left\{
+\begin{aligned}
+\frac{da}{dt} &=-\frac{a^2 G \rho_{inf}}{\sigma_{inf}}H_u(a)-\frac{64}{5} \frac{G^3 \mu M_{12}^2}{c^5 a^3} \frac{1}{(1 - e^2)^{7/2}} \left( 1 + \frac{73}{24}e^2 + \frac{37}{96}e^4 \right)    \\
+\frac{de}{dt} &= -\frac{a G \rho_{inf}}{\sigma_{inf}}H_u(a)K_u(a,e) -\frac{304}{15} \frac{G^3 \mu M_{12}^2}{c^5 a^4}  \frac{e}{(1 - e^2)^{5/2}} \left( 1 + \frac{121}{304}e^2 \right)
+\end{aligned}
+\right.
+\label{hybrid model used differential equations}
+\end{equation}
+which can be solved numerically for a given set of initial conditions $(a_0,e_0)$.\\The system of Equations (\ref{hybrid model used differential equations}) constitutes a set of first-order autonomous ordinary differential equations (ODEs), which can be written in the general form
+\begin{equation}\label{ODEs}
+    \frac{d\mathbf{u}}{dt}=\mathbf{f}(\mathbf{u}),
+\end{equation}
+where $\mathbf{u}=(a,e)$ is the vector of dynamical variables.\\The numerical integration of this system with the adopted fourth-order Runge--Kutta (RK4) method requires the time step to satisfy an appropriate stability condition. The stability analysis to the first order of RK4 applied to a system of $N$ ODEs in the $N$-dimensional vector $\mathbf{u}$ yields the following criterion \parencite{Butcher_book}:
 \begin{equation}
     \Delta t \le  min\left \{\frac{2.79}{|\lambda_i|}\right\} \qquad \forall i=1,N
 \end{equation}
-where $\lambda_i$ are the Jacobian $\mathbf{J}$ eigenvalues. The elements of this matrix are:
+where $\lambda_i$ denotes the $i$-th eigenvalue of the Jacobian matrix $\mathbf{J}=\partial\mathbf{f}/\partial\mathbf{u}$. For the system considered here, the Jacobian elements can be derived directly from Equations (\ref{hybrid model used differential equations}) as
 \begin{equation}\label{J_11 of Sesana comparison}
-    J_{11}=\left. \frac{da}{dt}\right|_u\left(\frac{2}{a}+\frac{\gamma}{a+a_0a_h}\right)-\left.\frac{da}{dt}\right|_{gw}\left(\frac{3}{a}\right)
+    J_{11}=\left. \frac{da}{dt}\right|_u\left(\frac{2}{a}+\frac{\gamma}{a+a_0a_h}\right)-\left.\frac{da}{dt}\right|_{gw}\left(\frac{3}{a}\right),
 \end{equation}
-
-
 \begin{equation}\label{J_12 of Sesana comparison}
-    J_{12}=\left. \frac{da}{dt}\right|_{GW}\left(\frac{{7e}}{1-e^2}+\frac{73e/12+37e^3/24}{1+73e^2/24+37e^4/96}\right)
+    J_{12}=\left. \frac{da}{dt}\right|_{GW}\left(\frac{{7e}}{1-e^2}+\frac{73e/12+37e^3/24}{1+73e^2/24+37e^4/96}\right),
 \end{equation}
-
-
-
-
-
 \begin{equation}\label{J_21 of Sesana comparison}
-    J_{21}=\left.\frac{de}{dt}\right|_u\left(\frac{1}{a}+\frac{\gamma_H}{a+a_{0,H}a_h}+\frac{\gamma_K}{a+a_{0,K}a_h}\right)-\left.\frac{de}{dt}\right|_{GW}\left(\frac{4}{a}\right)
+    J_{21}=\left.\frac{de}{dt}\right|_u\left(\frac{1}{a}+\frac{\gamma_H}{a+a_{0,H}a_h}+\frac{\gamma_K}{a+a_{0,K}a_h}\right)-\left.\frac{de}{dt}\right|_{GW}\left(\frac{4}{a}\right),
 \end{equation}
-
-
 \begin{equation}\label{J_22 of Sesana comparison}
-    J_{22}=\left.\frac{de}{dt}\right|_u\left(\frac{\partial \ln{K}}{\partial e}\right)+\left.\frac{de}{dt}\right|_{GW}\left(\frac{5e}{1-e^2}+\frac{1+363e^2/304}{e+121e^3/304}\right)
+    J_{22}=\left.\frac{de}{dt}\right|_u\left(\frac{\partial \ln{K}}{\partial e}\right)+\left.\frac{de}{dt}\right|_{GW}\left(\frac{5e}{1-e^2}+\frac{1+363e^2/304}{e+121e^3/304}\right).
 \end{equation}
-
-
-
-
-
-
-
-Equations (\ref{H Q96}), (\ref{K Q96}) and (\ref{J Q96}) introduce the so called dimensionless hardening
-rate H, eccentricity growth rate K and mass loss rate. Once $(H,J,K)$ are obtained from scattering experiments, the system of coupled differential equations can be solved for the binary semi-major axis, eccentricity and ejected mass time derivatives and numerical methods will eventually return their evolution within the fixed galaxy model of interest.
-
-
-
-
-Although stars approach the binary with a wide velocity distribution, consistent with the adopted $\sigma$, simulations are performed considering a unique value of the velocity at infinity (thus are $\mathbf{UNBOUND}$) then accounting for a Maxwellian distribution \cite{Quinlan_1996}.\\This semplification leads to the estimate of the so called $H_1(v)$ first, which thus allows to obtian $H(\sigma)$ by integration over all possible velocities and weighted by MB distribution.\\Therefore from each scattering experiment is measured the dimensionless energy change 
-
-
-
-
-$\mathbf{NOTE}$:During three-body encounters, star-binary energy and angular momentum exchange ensures the conservation of both of them; thus the binary evolution can be inferred from stellar orbial properties evolution.
-
-
-The initial setup of each scattering experimet is completely fixed by the following $d=5$ uniformly distributed- within a proper interval- parameters :
-\begin{enumerate}
-    \item $b^2$ rather than $b$ because $t_{coll}\propto \lambda\propto \sigma^{-1}\propto b^{-2}$. Thus reproducing correctly the encounter rate.
-    \item  cosine of the inclination: angle between binary $\mathbf{L}$ and $\mathbf{v}(-\infty)$.
-    \item  longitude of ascending node: azimuthal angle of $\mathbf{v}(-\infty)$ in $\mathbf{L}$ equatorial plane
-    \item  the argument of pericenter (point of closest approach): it fixes ellipse orientation over the orbital plane
-    \item  the mean anomaly to specify BHs position along the ellipse at a given time.
-
-\end{enumerate}
-
-Once these parameters are drawn and convinient coordinates are adopted, the numerical integration starts at binary-star separation $r=50a$ and is stopped when the star leaves this sphere around the binary with posity energy, hence recording the main quantities of interest.\\Systematic errors arise from approximations used in order to semplify the numerical simulation, for istance: assuming keplerian orbit outside that sphere, thus stopping at zero order term in multipole expansion.\\Statistical errors in any average quantity scale, at large number of scatterings N, as $(ln\quad N)^d/N$ because quasi-random numbers are used.\\$H_1$ is measured for a wide range of masses ratio and eccentricity and fitted with the two free-parameters model
+These expressions allow the two eigenvalues, $\lambda_1$ and $\lambda_2$, of the Jacobian matrix to be evaluated at each point along the binary evolutionary track and the adaptive time-step to be calculated as
 \begin{equation}
-    H_1(v)=H_0(1+(v/w)^4)^{-1/2}.
+    \Delta t \le 2.79 \cdot \min\left\{
+    \frac{1}{|\lambda_1|};
+    \frac{1}{|\lambda_2|}
+    \right\}.
 \end{equation}
-
-
-
-
-$\mathbf{NOTE}$: "This fits the data well at high and low velocities. It does not fit so well when $H_1$ first starts to decrease"
-
-Similarly $K_1$ is derived as a function of "e" and fitted with the following three parameters model:
-\begin{equation}
-    K_1(e)=e(1-e^2)^{k_0}(k_1+k_2e)
-\end{equation}
-$\mathbf{NOTE}$: $H_1$ is a function of v only while $K_1$ on both e and v.
-
-
-All free parameters are obtained for different masses ratio.
-
-
-
-$\mathbf{NOTE:}$ in Sesana 2010, Fig \ref{H_1 quinlann} is reported as H vs a but this agrees with the functional form of $H_1$ and $V_{bin}=\sqrt{GM_{12}/a}$.\\Therefore, the hardening rate for a circular binary have been used for all eccentricities.
-
-
-Once stellar density $\rho$ and velocity dispersion $\sigma$ are specified, the binary BH is introduced at center of the system with a given initial eccentricity $e_0$ and separation $a_0$ such that $V_{bin}=\sigma/5$.\\The last  corresponds to a condition about $a_0$ which is model indipendent and for the binary to be soft at beginning of the integration; a BH binary is indeed called hard 
-if it hardens at a constant rate, that is if $\sigma\ll \omega$ or equivalently
-if $V_{bin}/\sigma \gg (1+m_1/m_2)^{1/2}$.\\Peters (1964) equation for gravitational wave emission
-\begin{equation}
-    \frac{da}{dt} = -\frac{64}{5} \frac{G^3 \mu m^2}{c^5 a^3} \frac{1}{(1 - e^2)^{7/2}} \left( 1 + \frac{73}{24}e^2 + \frac{37}{96}e^4 \right)
-\end{equation}
-
-\begin{equation}
-    \frac{de}{dt} = -\frac{304}{15} \frac{G^3 \mu m^2}{c^5 a^4}  \frac{e}{(1 - e^2)^{5/2}} \left( 1 + \frac{121}{304}e^2 \right)
-\end{equation}
-are considered as well in order to compute $da/dt$ and $de/dt$.\\Despite $dM_{ej}/dt$ is computed, a and e evolution can be assumed to occur in a fixed background whenever this is negligible; the ejected mass hardly exceeds a few times $M_{12}$.\\Neverthless, the stellar mass ejection makes the binary hardening less and less efficient; once nearby stars are expelled, the hardening rate depends on the diffusion of stars back into the "Loss cone" due to two-body relaxation.\\If stars removal is efficient, correction to the density profile must be applied assuming a given rate for the process above.\\Fig.\ref{a and e quinlan} shows that the binary evolves mainly through three phases separated by two trashold destances:\begin{enumerate}
-    \item $a_h=\frac{Gm_2}{4\sigma^2}$
-    \item $a_{gw}$
-\end{enumerate}
-Quasi-circular binaries ($e_0<0.3$) remain circular with little e-growth before entering the GWs emission domain, while eccentricity increment is more important if $e_0>0.3$.
+The following sections, \S~\ref{sec:Stellar Cusps IMBH Binary Evolution}-\ref{sec:NGC 205 IMBH Binary evolution}, present the results of the numerical experiments performed with the hybrid model described above, considering different IMBH binaries masses, initial conditions and host stellar systems.
 
 
 
 
 
 
-\newpage
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\linewidth]{a_and_e_quinlan.png}
-    \caption{Eccentricity evolution. The solid line is the same as
-in Fig. 7(a); the other lines assume initial eccentricities of 0.3
-(dotted), 0.5, 0.7, and 0.9 (dashed-dotted).}
-    \label{a and e quinlan}
-\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 \section{Stellar Cusps IMBH Binary Evolution}
-
+\label{sec:Stellar Cusps IMBH Binary Evolution}
 
 This work \cite{Sesana_2006} is aimed at unvieling by  full three-body scattering experiments how a population of HVS form as a result of the interaction between a MBHB and ambient stars, unbound to the binary, drawn from a MB distribution . Other than the dynamical properties of these HVS, binary hardening, mass ejection rate and eccentricity growth rate $(H,J,K)$ are tracked by numerical simulations.\\Dynamical friction is efficient (especially in wet major mergers) in dragging two  massive BHs towards the innermost region of the new formed galaxy; over the time scale $t_{df}$ the binary forms and hardens  through gravitational slingshot, hence ejecting low angular momentum stars passing close to the binary. \\Following Q96 approach, the equations defining $(H,J,K)$ are (\ref{H Q96}),(\ref{J Q96}) and (\ref{K Q96}).\\At odds with Q96, where three-body scattering experiments are conducted for a fixed impact velocity, varying the binary separation and then averaging over the Maxwellian distribution, now the separation is fixed, i.e. $V_c=(GM_{12}/a)^{1/2}=const$, and the quantity $v/V_c$ is sampled over four decades, corresponding to a sampling of about four decades in binary separation.\\Each run is set by the inital configuration, corrseponding to a point in the parameter space $(q,e_0)$; the combination of binary masses ratio $q=1,1/3,1/9,1/27,1/81,1/243$ and initial eccentricity $e_0=0.01,0.3,0.6,0.9$ leads to 24 runs, involving $4\cdot10^6$ stars each.\\The (Maxwellian averaged) rates H, J,
 and K derived from scattering experiments are fitted by the following functions
@@ -1712,7 +1650,7 @@ HERE
 
 
 \section{NGC 205 IMBH Binary evolution}
-
+\label{sec:NGC 205 IMBH Binary evolution}
 
 NGC 205 is a nearby dwarf galaxy with a NSC residing at its innermost region; it is belived to host an IMBH binary, whose estimated mass is $\sim 10^4 M_\odot$.\\The 2-D surface brightness profile of the dwarf, both the bulge and NSC treated as indipendent stellar components, is translated into 3-D Sersic density profile using Prugniel \& Simien \cite{Prugniel}:
 
@@ -2451,44 +2389,6 @@ Things done:
 
 
 
-
-\appendix
-\renewcommand{\cftchappresnum}{APPENDIX~}
-\renewcommand{\cftchapnumwidth}{9em}
-
-\chapter{Physics Equation}
-
-\chapter{Numerical Methods}
-\section{Runge-Kutta (4)}
-Given the first order autonomous ODE 
-\begin{equation}
-    \frac{du}{dt}=f(u),
-\end{equation}
-the stability anylisis of RK (4) applied to this equation leads to the following stability criterion on the time step size when $f(u)=au$:
-\begin{equation}\label{RK (4) stability}
-    \Delta t \le \frac{2.79}{|a|}.
-\end{equation}
-A system of first order autonomous ODEs can be written in vectorial form as:
-\begin{equation}
-    \mathbf{u}'=\mathbf{f}(\mathbf{u}).
-\end{equation}
-At linear order, the stability analysis we are allowed to perform the stability analysis to the linearized system
-\begin{equation}
-    \delta \mathbf{u}'=\mathbf{J}\delta \mathbf{u},
-\end{equation}
-where $\lambda_i$ is the i-th eigenvalue of the jacobian matrix $\mathbf{J}=\partial \mathbf{f}/\partial \mathbf{u}$.\\In the eigenvectors frame, equations look like
-\begin{equation}
-    \delta u'_i=\lambda_i\delta u_i\qquad\forall i=1,N
-\end{equation}
-and according to Equation (\ref{RK (4) stability}), one would get 
-\begin{equation}
-    \Delta t_i \le \frac{2.79}{|\lambda_i|} \qquad \forall i=1,N.
-\end{equation}
-Therefore, for a system of N Equations, a proper choice of the time step should be
-\begin{equation}
-    \Delta t=\epsilon \cdot min\left \{\frac{2.79}{|\lambda_i|}\right\} \qquad \forall i=1,N
-\end{equation}
-with $\epsilon\le 1$.
 
 
 

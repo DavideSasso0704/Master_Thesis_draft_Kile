@@ -811,6 +811,33 @@
       \verb https://doi.org/10.3847/2041-8213/ae27d2
       \endverb
     \endentry
+    \entry{Butcher_book}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=46bc4fd2d52037f2f1c13542b61acbb8}{%
+           family={Butcher},
+           familyi={B\bibinitperiod},
+           given={John\bibnamedelima Charles},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{46bc4fd2d52037f2f1c13542b61acbb8}
+      \strng{fullhash}{46bc4fd2d52037f2f1c13542b61acbb8}
+      \strng{bibnamehash}{46bc4fd2d52037f2f1c13542b61acbb8}
+      \strng{authorbibnamehash}{46bc4fd2d52037f2f1c13542b61acbb8}
+      \strng{authornamehash}{46bc4fd2d52037f2f1c13542b61acbb8}
+      \strng{authorfullhash}{46bc4fd2d52037f2f1c13542b61acbb8}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Numerical methods for ordinary differential equations}
+      \field{year}{2016}
+    \endentry
     \entry{Capozziello_2008}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=c3f883d4ffb254b8f74a624eb31ccdd3}{%
