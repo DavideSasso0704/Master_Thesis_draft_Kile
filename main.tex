@@ -20,8 +20,8 @@
 \usepackage[a4paper,top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
 \usepackage{setspace}
 \usepackage{enumitem}
-
-
+\usepackage{array}
+\raggedbottom
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1412,56 +1412,47 @@ provided by \textcite{Tremaine_2002}, with $\sigma_{70}$ indicating the stellar 
  \rho_{inf}=\frac{\sigma^2}{2\pi G r_{inf}^2}.
  \label{stellar cusp rho_inf}
 \end{equation}
-As already mentioned in Section..., dynamical friction exerted by the stellar background on an intruding secondary BH efficiently drags it towards the galactic center, where it eventually forms a gravitationally bound binary with the primary BH, with semimajor axis $a_0$. This separation is defined as the radius enclosing a stellar mass equal to the secondary BH mass $M_2$ and, for the adopted stellar cusp profile, is given analytically by
+As already mentioned in \S~\ref{sec:Two-Body Relaxation and Dynamical Friction}, dynamical friction exerted by the stellar background on an intruding secondary BH efficiently drags it towards the galactic center, where it eventually forms a gravitationally bound binary with the primary BH, with semimajor axis $a_0$. This separation is defined as the radius enclosing a stellar mass equal to the secondary BH mass $m_2$ and, for the adopted stellar cusp profile, can expressed as
 \begin{equation}\label{Sesana_2010 a_0}
-a_0=(3-\gamma)\frac{GM}{\sigma^2}\left(\frac{q}{1+q}\right)^{1/(3-\gamma)}=r_{inf}\left(\frac{q}{1+q}\right)^{1/(3-\gamma)},
+a_0=(3-\gamma)\frac{GM_{12}}{\sigma^2}\left(\frac{q}{1+q}\right)^{1/(3-\gamma)}=r_{inf}\left(\frac{q}{1+q}\right)^{1/(3-\gamma)},
 \end{equation}
-This separation is adopted as the initial condition for the numerical integration of Equations (\ref{hybrid model used differential equations}) using RK4 method, with the initial eccentricity specified later in this Section. The integration is terminated when the binary separation falls below the Schwarzschild radius of the system,
+In addition to $a_0$, it is useful to define a set of characteristic distances associated with different binary separations, which allows us to distinguish the various stages of binary evolution and identify the dominant physical mechanism governing each stage. Starting the binary evolution from $a_0$, the binary is initially too “soft”, in the sense of Heggie's law, for scattering with unbound stars to significantly contribute to its hardening. Therefore, once dynamical friction has become inefficient at $a_0$, the subsequent binary evolution is driven by interactions with bound stars orbiting within the binary sphere of influence \parencite{Sesana_2008}. As the binary hardens, these stars are progressively ejected from the central region, carrying away the orbital energy extracted from the binary and causing its separation to decrease towards the hardening radius
 \begin{equation}
-R_s=\frac{2GM_{12}}{c^2}.
-\end{equation}
-Before presenting and discussing the main results of the numerical experiments for this stellar environment, it is useful to introduce a set of characteristic distances, associated to different binary separations, that allow us to distinguish between the different stages of binary evolution and identify the dominant physical mechanism governing each stage. Starting the binary evolution from $a_0$, the binary is initially too “soft”, in the sense of Heggie's law, for scattering interactions with unbound stars to efficiently contribute to its hardening. Therefore, once dynamical friction has become inefficient at $a_0$, the subsequent binary evolution is driven by interactions with bound stars orbiting within the binary sphere of influence \parencite{Sesana_2008}. As the binary hardens, these stars are progressively ejected from the central region, carrying away the orbital energy extracted from the binary and causing its separation to decrease towards the hardening radius
-\begin{equation}
-a_h=\frac{Gm_2}{4\sigma^2},
+a_h=\frac{1}{4(3-\gamma)}\left(\frac{q}{1+q}\right)^{(2-\gamma)/(3-\gamma)},
 \label{hardening radius sec 2.2}
 \end{equation}
-below which the stellar-scattering term included in Equations (\ref{hybrid model used differential equations}) becomes effective.\\Provided that a sufficient supply of loss-cone stars is available, the binary eventually enters the GW-dominated regime, in which GW emission drives the orbital decay towards final coalescence. The transition occurs at the separation
+below which the stellar-scattering term included in Equations (\ref{hybrid model used differential equations}) becomes effective \parencite{Sesana_2010}.\\Provided that a sufficient supply of loss-cone stars is available, the binary eventually enters the GW-dominated regime, in which GW emission drives the orbital decay towards final coalescence. For a stellar cups like stellar background, the transition occurs at the binary separation $a_{GW}$ defined by the condition $H_u=H_{GW}$ \parencite{Sesana_2010}, which is
 \begin{equation}
-a_{GW}=4\left[\frac{128\pi(3-\gamma) F(e)}{5H}\right]^{1/5}\frac{\sigma}{c}q^{-4/5}(1+q)^{3/5}a_h,
+\label{cusp a_GW}
+a_{GW}=4\left[\frac{128\pi(3-\gamma) F(e)}{5H_u}\right]^{1/5}\frac{\sigma}{c}q^{-4/5}(1+q)^{3/5}a_h
 \end{equation}
-for a stellar cups like stellar background and defined by the condition $H_u=H_{GW}$ \parencite{Sesana_2010}.\\In conclusion, for the equal-mass BH binaries considered in this work, the initial binary separation $a_0$ given by Equation (\ref{Sesana_2010 a_0}) and the hardening radius $a_h$ defined in Equation (\ref{hardening radius sec 2.2}) are of the same order of magnitude. Therefore, the contribution of hardening due to the erosion of the bound stellar cusp is negligible over the range of separations considered here and can be omitted from our analysis \parencite{Sesana_2015}.
+and $F(e)$ is  a function of the eccentricity $e$ introduced in Equation (\ref{F(e) definition}).\\In conclusion, for the equal-mass BH binaries considered in this work, the initial binary separation $a_0$, given by Equation (\ref{Sesana_2010 a_0}), and the hardening radius $a_h$, defined in Equation (\ref{hardening radius sec 2.2}), are comparable. In particular, their separation in logarithmic space is small compared with the overall range of binary separations spanned during the subsequent evolution. Consequently, the binary is already close to the hard-binary regime at its birth, and the additional hardening associated with the erosion of the bound stellar cusp can safely be omitted from our analysis \parencite{Sesana_2015}.\\To investigate the role played by the central stellar density in the overall evolution of the binary, while keeping all other relevant conditions fixed, we consider three numerical experiments, one for each value of the stellar cusp slope $\gamma=(1,1.5,2)$. Using the hybrid model described above, we follow the evolutionary tracks of the same equal-mass IMBH binary, with $m_1=m_2=10^5\,M_\odot$, initially placed at the same initial conditions $(a_0,e_0)$ in all cases, but embedded in stellar backgrounds characterized by different cusp slopes. Although the value of $a_0$ depends on the adopted cusp slope $\gamma$, as determined from Equation (\ref{Sesana_2010 a_0}), we adopt a common initial configuration for all binaries, $(\bar{a}_0,0.5)$, where $\bar{a}_0$ is the average of the $a_0$ values obtained for the different stellar cusps. All stellar cusps are instead characterized by the same velocity dispersion, $\sigma=48.9,\mathrm{km/s}$, owing to Equation (\ref{Tremaine_2002 M_bh}). Combined with the different cusp slopes, this common value of $\sigma$ yields the corresponding stellar densities at the influence radius, $\rho_{inf}=(1.71,3.04,6.83)\times10^5 \,M_\odot/pc^3$ for $\gamma=(1,1.5,2)$, respectively.\\Following the prescriptions given by Equations (\ref{Stellar cusps r_inf}), (\ref{Sesana_2010 a_0}), (\ref{hardening radius sec 2.2}), and (\ref{cusp a_GW}), the characteristic transition lengthscales are computed for each stellar background, or equivalently for each value of $\gamma$, and reported in Table \ref{tab:cusps lengthscales}.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-HERE
-
-
-
-
-
+\begin{table}[H]
+\centering
+\begin{tabular}{p{2.5cm}cccc}
+\specialrule{0.8pt}{0pt}{0pt}
+\makebox[0.7cm][c]{$\gamma$} & $r_{inf}\,[pc]$ & $a_0\,[pc]$ & $a_h\,[pc]$ & $a_{GW}\,[10^{-4}pc]$ \\
+\specialrule{0.8pt}{0pt}{0pt}
+\makebox[0.7cm][c]{$1$}\dotfill   & 0.72 & 0.51 & 0.016 & 0.97 \\
+\makebox[0.7cm][c]{$1.5$}\dotfill & 0.54 & 0.34 & 0.034 & 0.91 \\
+\makebox[0.7cm][c]{$2$}\dotfill   & 0.36 & 0.18 & 0.045 & 0.84 \\
+\specialrule{0.8pt}{0pt}{0pt}
+\end{tabular}
+\caption{Column 1: Stellar cusp slope. Column 2: Influence radius of the stellar cusp. Column 3: Initial binary separation. Column 4: Binary hardening radius. Column 5:
+Hard–GW-dominated regime transition lengthscale.
+}
+\label{tab:cusps lengthscales}
+\end{table}
+A first inspection of Table \ref{tab:cusps lengthscales} and Figure \ref{Cusps_density} shows that, for fixed BH masses, increasing $\gamma$ leads to an increasingly concentrated stellar distribution and, consequently, to a higher stellar density within the binary sphere of influence. As a result, the characteristic lengthscales $r_{inf}$, $a_0$, and $a_{GW}$ progressively decrease with increasing $\gamma$. This reflects the fact that, in a steeper cusp, the stellar mass reaches twice the binary mass and twice the secondary BH mass at smaller radii, while the transition to the GW-dominated regime occurs at a smaller binary separation.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\linewidth]{Cusps_density.png}
     \caption{...}
     \label{Cusps_density}
 \end{figure}
+As all three numerical experiments involve equal-mass binaries, the mass ratio is fixed to $q=1$ for all values of $\gamma$. The dimensionless hardening rate $H_u$ is therefore determined directly from Equation (\ref{H fit Sesana}), using the hardening radii $a_h$ listed in Table \ref{tab:cusps lengthscales} for each cusp slope and the fitting parameters reported in the first row of Table \ref{tab:H best-fit parameters}. The resulting hardening rates for the three stellar cusps are shown in Figure \ref{Cusps_H}.
 
 \begin{figure}[H]
     \centering
@@ -1469,207 +1460,93 @@ HERE
     \caption{...}
     \label{Cusps_H}
 \end{figure}
-
+The final quantity required to numerically integrate Equations (\ref{hybrid model used differential equations}) is the dimensionless eccentricity growth function $K_u$. Unlike $H_u$, $K_u$ depends not only on the binary semimajor axis but also on its eccentricity. This dependence on eccentricity is encoded in the best-fitting parameters of Equation (\ref{K fit Sesana}), as reported in Table \ref{tab:K best-fit_parameters}. Although the best-fitting parameters are provided only at a discrete set of eccentricities, namely $e=0.15,0.3,0.45,0.6,0.75,0.9$, their values over the full interval $e\in[0,1]$ can be obtained by linear interpolation in eccentricity, once the mass ratio $q$ is specified (see, e.g., \textcite{Sesana_2006}; \textcite{Sesana_2010}). Figure \ref{Cusps: K best-fitting parameters} (a)-(b)-(c)-(d) illustrates this procedure. To extend the interpolation to the boundaries of the physical eccentricity interval, two additional points are manually introduced at $e=0$ and $e=1$ in order to ensure $K_u(a,0)=K_u(a,1)=0$.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\linewidth]{Cusps_K_vs_a.png}
-    \caption{...}
-    \label{Cusps_K_vs_a}
-\end{figure}
 
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{A_K_vs_e.png}
+        \caption{}
+        \label{fig:plot_1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{a0_K_vs_e.png}
+        \caption{}
+        \label{fig:plot_2}
+    \end{subfigure}
+
+    \vspace{0.5cm}
+
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{gamma_K_vs_e.png}
+        \caption{}
+        \label{fig:plot_3}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{B_K_vs_e.png}
+        \caption{}
+        \label{fig:plot_4}
+    \end{subfigure}
+
+    \caption{Panels (a)-(b)-(c)-(d) show $K_u$ best-fitting parameters $A_k$, $a_{0,k}$, $\gamma_k$ and $B_k$ as a function of binary eccentricity, respectively. Red points mark the values obtained from scattering experiments, Table \ref{tab:K best-fit_parameters}, while the blue piecewise-linear curves show their linear interpolation. Vertical red dashed lines indicate the sampled eccentricity values.}
+    \label{Cusps: K best-fitting parameters}
+\end{figure}
+These interpolated best-fitting parameters can then be used to derive $K_u(a,e)$. As discussed above, this two-variable function is smooth when evaluated at fixed $e$, while it is piecewise linear when evaluated at fixed $a$. Figure \ref{Cusps K_u vs a and e} (a)–(b) show $K_u(a)=K_u(a,e_0)$ and $K_u(e)=K_u(\bar{a}_0,e)$, respectively, where $(\bar{a}_0,e_0)=(0.34pc,0.5)$ corresponds to the initial condition adopted in all three numerical simulations.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\linewidth]{Cusps_K_vs_e.png}
+    \begin{subfigure}[c]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Cusps_K_vs_a.png}
+        \caption{}
+        \label{Cusps_K_vs_a}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[c]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Cusps_K_vs_e.png}
+        \caption{}
+        \label{Cusps_K_vs_e}
+    \end{subfigure}
     \caption{...}
-    \label{Cusps_K_vs_e}
+    \label{Cusps K_u vs a and e}
 \end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{Cusps_a_vs_t_log.png}
-    \caption{...}
-    \label{Cusps_a_vs_t_log}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{Cusps_e_vs_t_log.png}
-    \caption{...}
-    \label{Cusps_e_vs_t_log}
-\end{figure}
-
-
-
-
-
-HERE
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Bound cusp erosion:
-\begin{equation}\label{Sesana_2010 da/dt BOUND}
-    \left.\frac{da}{dt}\right|_{b} = -\frac{2a^2}{G M_1 M_2} \int_0^\infty \Delta \mathcal{E}\frac{d^2 N_{\mathrm{ej}}}{da_\star dt} da_\star
-\end{equation}
-
-\begin{equation}\label{Sesana_2010 de/dt BOUND}
-    \left.\frac{de}{dt}\right|_{b}= \int_0^\infty \Delta e \frac{d^2 N_{\mathrm{ej}}}{da_\star dt} da_\star
-\end{equation}
-
-
-
-
-
-
-
-
-
-This work \cite{Sesana_2006} is aimed at unvieling by  full three-body scattering experiments how a population of HVS form as a result of the interaction between a MBHB and ambient stars, unbound to the binary, drawn from a MB distribution . Other than the dynamical properties of these HVS, binary hardening, mass ejection rate and eccentricity growth rate $(H,J,K)$ are tracked by numerical simulations.\\Dynamical friction is efficient (especially in wet major mergers) in dragging two  massive BHs towards the innermost region of the new formed galaxy; over the time scale $t_{df}$ the binary forms and hardens  through gravitational slingshot, hence ejecting low angular momentum stars passing close to the binary. \\Following Q96 approach, the equations defining $(H,J,K)$ are (\ref{H Q96}),(\ref{J Q96}) and (\ref{K Q96}).\\At odds with Q96, where three-body scattering experiments are conducted for a fixed impact velocity, varying the binary separation and then averaging over the Maxwellian distribution, now the separation is fixed, i.e. $V_c=(GM_{12}/a)^{1/2}=const$, and the quantity $v/V_c$ is sampled over four decades, corresponding to a sampling of about four decades in binary separation.\\Each run is set by the inital configuration, corrseponding to a point in the parameter space $(q,e_0)$; the combination of binary masses ratio $q=1,1/3,1/9,1/27,1/81,1/243$ and initial eccentricity $e_0=0.01,0.3,0.6,0.9$ leads to 24 runs, involving $4\cdot10^6$ stars each.\\The (Maxwellian averaged) rates H, J,
-and K derived from scattering experiments are fitted by the following functions
-
-
- \begin{equation}
-     H=A(1+a/a_0)^\gamma
-\end{equation}
-
- \begin{equation}
-    J=A(a/a_0)^\alpha [(1+(a/a_0)^\beta]^\gamma
-\end{equation}
-
+Having discussed all the essential ingredients of the hybrid model describing the dynamical evolution of a BH binary in a fixed stellar background, we can now specify the initial and final conditions adopted for the numerical integrations. As already anticipated, the integration begins at $(\bar{a}_0,e_0)=(0.34pc,0.5)$ and is terminated when the binary separation reaches the Schwarzschild radius of the binary, defined as
 \begin{equation}
-    K=A(1+a/a_0)^\gamma+B.
+R_s=\frac{2GM_{12}}{c^2},
 \end{equation}
-
-
-
-
- shows that the hardening rate is nearly constant when $a<a_h$, in perfect agreement with Q96 results. Therefore hard binary can be characterised by a costant hardening rate. Additionally, $H$ decreases with $q$ (asymmetric binaries harden faster) and increases with eccentricity (circular binaries harden more slowly).\\As reported in Figure \ref{K Sesana 2006}, $K$ is close to zero at any binary separation for circular binary; if the binary is eccentric at $a_h$ already, then K (and $e$) increases monotonically with binary shrinking.\\$\mathbf{NOTE}$: in this paper the binary shrinking is studied taking into account gravitational slingshot on UNBOUND stars passing close to binary and ejected at higher velocity. In particular:
-\begin{enumerate}
-    \item the ejection criterion relies on the stellar background model (here SIS stellar Bulge is considered)
-    \item The stellar background is assumed to be fixed; this approximation holds if the ejected mass does not exceed a trashold
-    \item Binary shrinking requires low angular momentum stars as they havo to pass closer and closer to the binary BHs for slingshot to be effective; however from $a<a_h$ the fraction of stars with these properties, populating the so called "Loss cone", is very small. Being depletd by three-body encounters, binary hardening when binary is hard depends on the efficiency of loss cone refilling.
-\end{enumerate}
- 
-Bound stars \cite{Sesana_2008}     ,\cite{Sesana_2010}
-
-
-
-
-
-
-and is adopted as starting point of the numerical integration.\\Hereafter, three competing mechanisms are involved:
-
-
-
-
-Being indipendet of each other, by superposition, we can put
-the pieces together and the evolution of the binary obeys to
-
-
-
-Besides, ; lengthscale boundaries are $a_0$,
-\begin{equation}\label{Sesana_2010 a_h}
-    a_h\approx\frac{1}{4(3-\gamma)}\left(\frac{q}{1+q}\right)^{(2-\gamma)(3-\gamma)}
-\end{equation}
-and 
-
-respectively.\\We recall that
-\begin{equation}\label{Sesana_2010 rho_inf}
-    \rho_{inf}=\frac{\sigma^2}{2\pi G r_{inf}^2}
-\end{equation}
-and that setting $\rho=\rho_{inf}$ inside Equation (\ref{da/dt UNBOUND}) is equivalent to impose a full loss-cone outside the binary sphere of influence during the unbound phase; the effects due to different normalizations could be explored.\\Sesana \cite{Sesana_2010} explored a relatively wide region of the phase space related to the initial configuration of the binary; here, we report the comparison between Sesana and our evolutionary track for $(q,\gamma,e_0,M)=(1,1.5,0.1,10^5 M_\odot)$.\\This kind of configuration, among the analyzed ones, is quite relevant to our studies on IMBH binaries at high z as they are expected to be more symmetric then their local universe cousins. As pointed out at the end of Section \ref{sec:Loss Cone}, $a_h$ and $r_{inf}$ are of the order of $\sim GM/\sigma^2$ and the bound cusp erosion process can be suppressed at first istance.\\The estimate of the hardening radius, below which $a_h$ is nearly costant, and the best fitting parameters in Table 1 \cite{Sesana_2006} allows us to find 
- \begin{equation}\label{Sesana_2006 H fit}
-     H=A(1+a/a_0)^\gamma;
-\end{equation}
-the function is shown in Figure \ref{Sesana comparison H plot}.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Therefore, at odds with $H$, $K$ is a function of $(a,e)$; we list below the plots of the 1-D functions $K(a)=K(a,e_0)$ and $K(e)=K(a_h,e)$.
-
-
-
-
-
-In order to compare Sesana predictions with our model we set $(t_0,a_0,e_0)$ for the unbound phase to be effective and selecting these values directely from Sesana plot: $(t_0,a_0,e_0)=(12Myr,0.05\cdot a_0, 0.131 )$.
-
-
-indicate a good agreement between our model and Sesana one. In the first plot $a$ decreases more slowly than Sesana prediction as we are negletting the bound cusp erosion contribute, which hardens the binary even when the unbond phase takes over at $\sim a_h$. On the other hand eccentricity reaches a lower peak compared to the reference model because of bound cusp erosion leads to $e$ growth as well.\\Furthermore, we test the feedback of the various shrinking mechanisms by assuming them working in isoletion, hence suppressing all the others.
-
-Figure  refers to the evolution under the effect of slinghot of unbound stars; as the initial separation is below $a_h$ we can appreciate the expected linear decay of $a$ and the overall eccentricity growth.
-
-
-
-Figure refers to the evolution under GWs production; this becomes effective only at very close separation and causes both the fast binary coalescence once effective and binary circularization. The coalescence time agrees perfectly to the theoretical prediction of Equation \ref{t_coal Maggiore}
-
-
-
-
-
-The dataset used above help us to construct another curve, precisely $(e(t,a(t)))$ which can be compared to the close form solution provided by Equation (\ref{a=a(e) Maggiore}) as shown in Figure \ref{a_vs_e_GW} and \ref{a_vs_e_Maggiore}.
-
-
-
-
+which, for the total binary mass considered here, corresponds to $R_s=5.9\times10^5\, km$. Figure \ref{Cusps (a(t),e(t))} (a)–(b) show the time evolution of the binary semimajor axis, $a(t)$, and eccentricity, $e(t)$, respectively, for the three stellar cusp slopes considered, $\gamma=(1,1.5,2)$.
 \begin{figure}[H]
     \centering
-  \begin{minipage}[c]{0.45\textwidth}
-    \centering
-    \includegraphics[height=5cm]{a_vs_e_GW.png}
-    \caption{}
-    \label{a_vs_e_GW}
-    \vspace{2mm}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[c]{0.45\textwidth}
-    \centering
-    \includegraphics[height=5cm]{a_vs_e_Maggiore.png}
-    \caption{}
-    \label{a_vs_e_Maggiore}
-    \vspace{2mm}
-  \end{minipage}
+    \begin{subfigure}[c]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Cusps_a_vs_t_log.png}
+        \caption{}
+        \label{Cusps a vs t}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[c]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Cusps_e_vs_t_log.png}
+        \caption{}
+        \label{Cusps e vs t}
+    \end{subfigure}
+    \caption{...}
+    \label{Cusps (a(t),e(t))}
 \end{figure}
+The first relevant result concerns the estimated coalescence timescales, $\tau_{\rm coal}=(\ldots)$. All three values are shorter than the Hubble time, $t_H=13.8,\mathrm{Gyr}$, indicating that, for the considered initial conditions, an equal-mass IMBH binary with $m_1=m_2=10^5,M_\odot$ may emit a potentially detectable GW signal in the LISA frequency band. Moreover, the coalescence time is found to decrease systematically with increasing cusp slope $\gamma$. This behaviour, shown in Figure \ref{Cusps (a(t),e(t))} (a), can be attributed to the higher central stellar densities associated with steeper cusps, which provide a larger supply of stars interacting with the binary through loss-cone dynamics. The enhanced rate of stellar interactions accelerates the binary hardening, allowing it to reach the separation at which GW emission becomes the dominant mechanism driving the orbital evolution earlier, and consequently shortening the overall time to coalescence.\\Figure \ref{Cusps (a(t),e(t))} (b), instead, shows that the binary eccentricity tends to increase during the phase dominated by stellar scattering. As the cusp becomes steeper, this dynamical regime becomes progressively shorter, allowing GW-driven circularization to take over at an earlier stage of the evolution. Consequently, the maximum eccentricity reached by the binary decreases with increasing $\gamma$.\\These results motivate a more detailed investigation of the role played by the compactness of the stellar background in shaping the binary evolution and determining its corresponding coalescence time. This aspect will be explored in the next Section.
 
 
-Below, the Figure \ref{error_a_vs_e_GW} gives us the possibility of visualizing the relative error of the numerical solution with respect to the analytical one; it turnsout to be within one part over $10^{12}$.
 
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{error_a_vs_e_GW.png}
-    \caption{}
-    \label{error_a_vs_e_GW}
-\end{figure}
+
+
+
 
 
 
