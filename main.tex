@@ -1343,6 +1343,7 @@ which can be solved numerically for a given set of initial conditions $(a_0,e_0)
 \end{equation}
 where $\mathbf{u}=(a,e)$ is the vector of dynamical variables.\\The numerical integration of this system with the adopted fourth-order Runge--Kutta (RK4) method requires the time step to satisfy an appropriate stability condition. The stability analysis to the first order of RK4 applied to a system of $N$ ODEs in the $N$-dimensional vector $\mathbf{u}$ yields the following criterion \parencite{Butcher_book}:
 \begin{equation}
+\label{RK4 stability criterion}
     \Delta t \le  min\left \{\frac{2.79}{|\lambda_i|}\right\} \qquad \forall i=1,N
 \end{equation}
 where $\lambda_i$ denotes the $i$-th eigenvalue of the Jacobian matrix $\mathbf{J}=\partial\mathbf{f}/\partial\mathbf{u}$. For the system considered here, the Jacobian elements can be derived directly from Equations (\ref{hybrid model used differential equations}) as
@@ -1516,11 +1517,15 @@ These interpolated best-fitting parameters can then be used to derive $K_u(a,e)$
     \caption{...}
     \label{Cusps K_u vs a and e}
 \end{figure}
-Having discussed all the essential ingredients of the hybrid model describing the dynamical evolution of a BH binary in a fixed stellar background, we can now specify the initial and final conditions adopted for the numerical integrations. As already anticipated, the integration begins at $(\bar{a}_0,e_0)=(0.34pc,0.5)$ and is terminated when the binary separation reaches the Schwarzschild radius of the binary, defined as
+Having discussed the essential ingredients of the hybrid model describing the dynamical evolution of a BH binary in a fixed stellar background, we can now specify the setup adopted for the numerical integrations. In all the experiments presented in this work, the integration starts from the initial conditions $(\bar{a}_0,e_0)=(0.34,\mathrm{pc},0.5)$ and is terminated when the binary separation reaches the Schwarzschild radius of the binary, defined as
 \begin{equation}
 R_s=\frac{2GM_{12}}{c^2},
 \end{equation}
-which, for the total binary mass considered here, corresponds to $R_s=5.9\times10^5\, km$. Figure \ref{Cusps (a(t),e(t))} (a)–(b) show the time evolution of the binary semimajor axis, $a(t)$, and eccentricity, $e(t)$, respectively, for the three stellar cusp slopes considered, $\gamma=(1,1.5,2)$.
+which, for the total binary mass considered here, corresponds to $R_s=5.9\times10^5\, km$. Moreover, the integration time step $\Delta t$ is chosen to ensure the numerical stability of the RK4 scheme according to the criterion given in Equation (\ref{RK4 stability criterion}). For all numerical runs, we adopt
+\begin{equation}
+    \Delta t =\epsilon \cdot  2.79\,min\left \{\frac{1}{|\lambda_1|};\frac{1}{|\lambda_2|}\right\}
+\end{equation}
+where $\epsilon=0.001$ is the adopted safety factor.\\ Figure \ref{Cusps (a(t),e(t))} (a)–(b) show the time evolution of the binary semimajor axis, $a(t)$, and eccentricity, $e(t)$, respectively, for the three stellar cusp slopes considered, $\gamma=(1,1.5,2)$.
 \begin{figure}[H]
     \centering
     \begin{subfigure}[c]{0.49\textwidth}
@@ -1539,7 +1544,7 @@ which, for the total binary mass considered here, corresponds to $R_s=5.9\times1
     \caption{...}
     \label{Cusps (a(t),e(t))}
 \end{figure}
-The first relevant result concerns the estimated coalescence timescales, $\tau_{\rm coal}=(\ldots)$. All three values are shorter than the Hubble time, $t_H=13.8,\mathrm{Gyr}$, indicating that, for the considered initial conditions, an equal-mass IMBH binary with $m_1=m_2=10^5,M_\odot$ may emit a potentially detectable GW signal in the LISA frequency band. Moreover, the coalescence time is found to decrease systematically with increasing cusp slope $\gamma$. This behaviour, shown in Figure \ref{Cusps (a(t),e(t))} (a), can be attributed to the higher central stellar densities associated with steeper cusps, which provide a larger supply of stars interacting with the binary through loss-cone dynamics. The enhanced rate of stellar interactions accelerates the binary hardening, allowing it to reach the separation at which GW emission becomes the dominant mechanism driving the orbital evolution earlier, and consequently shortening the overall time to coalescence.\\Figure \ref{Cusps (a(t),e(t))} (b), instead, shows that the binary eccentricity tends to increase during the phase dominated by stellar scattering. As the cusp becomes steeper, this dynamical regime becomes progressively shorter, allowing GW-driven circularization to take over at an earlier stage of the evolution. Consequently, the maximum eccentricity reached by the binary decreases with increasing $\gamma$.\\These results motivate a more detailed investigation of the role played by the compactness of the stellar background in shaping the binary evolution and determining its corresponding coalescence time. This aspect will be explored in the next Section.
+The first relevant result concerns the estimated coalescence timescales, $\tau_{\rm coal}=(34.7, 17.6,  8.18 )\,Myr$. All three values are shorter than the Hubble time, $t_H=13.8,\mathrm{Gyr}$, indicating that, for the considered initial conditions, an equal-mass IMBH binary with $m_1=m_2=10^5,M_\odot$ may emit a potentially detectable GW signal in the LISA frequency band. Moreover, the coalescence time is found to decrease systematically with increasing cusp slope $\gamma$. This behaviour, shown in Figure \ref{Cusps (a(t),e(t))} (a), can be attributed to the higher central stellar densities associated with steeper cusps, which provide a larger supply of stars interacting with the binary through loss-cone dynamics. The enhanced rate of stellar interactions accelerates the binary hardening, allowing it to reach the separation at which GW emission becomes the dominant mechanism driving the orbital evolution earlier, and consequently shortening the overall time to coalescence.\\Figure \ref{Cusps (a(t),e(t))} (b), instead, shows that the binary eccentricity tends to increase during the phase dominated by stellar scattering. As the cusp becomes steeper, this dynamical regime becomes progressively shorter, allowing GW-driven circularization to take over at an earlier stage of the evolution. Consequently, the maximum eccentricity reached by the binary decreases with increasing $\gamma$.\\These results motivate a more detailed investigation of the role played by the compactness of the stellar background in shaping the binary evolution and determining its corresponding coalescence time. This aspect will be explored in the next Section.
 
 
 
@@ -1644,10 +1649,60 @@ and NGC 205 density profile is reconstructed in  Figure (\ref{NGC205 density pro
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\linewidth]{NGC205_density_profile.png}
-    \caption{NGC 205 bulge, NSC and total mass density profile of stellar distribution.}
-    \label{NGC205 density profile}
+    \begin{subfigure}{0.49\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{NGC205_density_profile.png}
+        \caption{}
+        \label{NGC205 density profile}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.49\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{NGC205_mass_profile.png}
+        \caption{}
+        \label{NGC 205 mass profile}
+    \end{subfigure}
 \end{figure}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{NGC205_sigma_profile.png}
+    \caption{....}
+    \label{sigma/Vc NGC205}
+\end{figure}
+
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.49\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{NGC205_a_vs_t_log_e_sampling.png}
+        \caption{...}
+        \label{NGC205_a_vs_t_log_e_sampling}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.49\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{NGC205_e_vs_t_log_e_sampling.png}
+        \caption{...}
+        \label{NGC205_e_vs_t_log_e_sampling}
+    \end{subfigure}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Adopting the same prescription of \cite{Khan_2021} and \cite{Holley-Bockelmann_2025}, a symmetric IMBH binary of masses $M_1=M_2=4\cdot10^4M_\odot$ is introduced into NGC 205 core and its evolution, due to stellar and GWs hardening, is tracked combining 3-body scattering experiment hybrid model \cite{Quinlan_1996},\cite{Sesana_2006} and \cite{Peters_1963} equations.\\It is quite relevant to point out that in this astrophysical system the hardening due to bound stars \cite{Sesana_2008} is negligible in light of the symmetry of the binary and the arguments exposed at the end of Sec.(\ref{sec:Loss Cone}).\\Therefore, combining the set of equations related to Unbound evolution
 \begin{equation}\label{da/dt UNBOUND}
     \frac{da}{dt}|_u = -\frac{a^2 G \rho_{\mathrm{inf}}}{\sigma}  H
@@ -1695,12 +1750,7 @@ The integral leads to $\sigma_{inf}=$32.6km/s.
 As both $\sigma(r)$ and the circular speed $V_c(r)=\sqrt{GM(<r)/r}$ depend on $M(<r)$, previously obtained, we can derive them and Figure \ref{sigma/Vc NGC205} displays their ratio as afunction of the radius.  
 
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{NGC205_Vc_over_sigma_profile.png}
-    \caption{NGC 205 $V_c/\sigma$ vs r}
-    \label{sigma/Vc NGC205}
-\end{figure}
+
 
 The last quantity we have to specify in order to implement the hybrid model is the binary hardening radius $a_h$; indeed Sesana \cite{Sesana_2006} found out from 3-body scattering experiments that $H$ and $K$ functions can be fitted to
  \begin{equation}
@@ -1720,20 +1770,7 @@ unless otherwise stated. This definition leads to $a_h\approx 0.04 pc$.\\We can 
 \end{equation}
 where $\epsilon\sim 10^{-3-4}$, and the initial conditions $(a_0,e_0)=(15pc, 0.7)$, the integration returns $a(t)$ and $e(t)$.\\They are shown in Figure \ref{NGC205 a vs t} and \ref{NGC205 e vs t}.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{NGC205_a_vs_t.png}
-    \caption{NGC 205 a vs t}
-    \label{NGC205 a vs t}
-\end{figure}
 
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{NGC205_e_vs_t.png}
-    \caption{NGC 205 e vs t}
-    \label{NGC205 e vs t}
-\end{figure}
 
 The estimeted coalescence time is $t_{coal}=13.15 Myr$; it is of the same order of magnitude of\cite{Khan_2021} and \cite{Holley-Bockelmann_2025} predictions of $t_{coal}=74Myr$.\\$\mathbf{NOTE}$: Khan estimate comes from N-body simulations and in the special case of NGC 205 a costant value of eccentricity $e=0.39$ is assumed for the late evolution of the binary.\\Assuming a reliable time (universal time) at which the binary is in the configuration $(a_0,e_0)$ it might be interesting to get an estimate of the corresponding $z_{coal}$ from
 \begin{equation}
@@ -1743,31 +1780,6 @@ t(z) = \int_z^{\infty}
 and compare it with LISA upper limit $(z\sim20)$, hence addressing the problem of a possible detection.\\If the binary is in the initial configuration at $z\approx 10$, it will coalesce at $z\approx 9.4$.
 
 
-HERE
-
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{NGC205_density_profile.png}
-    \caption{...}
-    \label{NGC205_density_profile}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{NGC205_a_vs_t_log_e_sampling.png}
-    \caption{...}
-    \label{NGC205_a_vs_t_log_e_sampling}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{NGC205_e_vs_t_log_e_sampling.png}
-    \caption{...}
-    \label{NGC205_e_vs_t_log_e_sampling}
-\end{figure}
-
-HERE
 
 
 
@@ -1776,59 +1788,15 @@ HERE
 \subsection{Cosmic Size Evolution Down to NGC 205}
 Here, we explore the importance of the existence of NSC to the binary evolution and coalescence time. A such structure is expected to drastically reduce the time taken by system to merge as a consequence of the larger number of stars capable of passing close to the binary.\\In this spirit, we will be referring to the same parameters table a procedure of the prevois SubSection but the NSC which is artificially removed from the dwarf galaxy; hence, the only stellar background affecting binary evolution is the stellar bulge.\\By repeating the same analysis and setting $(t_0,a_0,e_0)=(0yr,15pc,0.7)$, we show Figure \ref{NGC205 bulge a vs t plot} and \ref{NGC205 bulge e vs t plot}.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{NGC205_Bulge_a_vs_t.png}
-    \caption{}
-    \label{NGC205 bulge a vs t plot}
-\end{figure}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{NGC205_Bulge_e_vs_t.png}
-    \caption{}
-    \label{NGC205 bulge e vs t plot}
-\end{figure}
 
 Now $t_{coal}=14.93 Gyr$, almost three orders of magnitude longer than the NSC scenario.\\Following Ono cosmic size evolution relation $R_{eff}(z)=R_{eff}(z=0)(1+z)^{-1.22}$ \cite{Ono_2023}, we take NGC 205 as a $z=0$ reference model and we discuss the evolution of the same IMBH binary inside its plausible progenitors distributed between $z=1$ and $z=20$. All galaxies share same bulge mass and Sersic index; density profiles differ from each other only because of the different effective radius as diplayed in Figure \ref{Cosmic size density plot}.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{Galaxies_density_profile.png}
-    \caption{}
-    \label{Cosmic size density plot}
-\end{figure}
+
 High redshift galaxies tend to be more compact than low redshift counterparts.\\Hardening radii are easly derived from these profiles according to Equation \ref{a_h dynamical definition} and a comparison between different hosts H and K functions- see Figure \ref{Cosmic size H plot} and \ref{Cosmic size K plot}- suggest that IMBH binary becomes "hard" at lower separation if embedded in a denser environment.
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{Galaxies_H_unbound.png}
-    \caption{}
-    \label{Cosmic size H plot}
-\end{figure}
 
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{Galaxies_K_unbound.png}
-    \caption{This family of functions is obtained evaluating $K(a,e)$ of each galaxy at their mean hardening radius.}
-    \label{Cosmic size K plot}
-\end{figure}
 We present in Figure \ref{Cosmic size a vs t plot} and \ref{Cosmic size e vs t plot} the evolutionary tracks of a sample of galaxies obtained by applying RK(4) to the Equations (\ref{da/dt Un+GW}) and (\ref{de/dt Un+GW}) and initial condition $(t_,a_0,e_0)=(0yr,15pc,0.7)$.
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{Galaxies_a_vs_t.png}
-    \caption{}
-    \label{Cosmic size a vs t plot}
-\end{figure}
 
-
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{Galaxies_e_vs_t.png}
-    \caption{}
-    \label{Cosmic size e vs t plot}
-\end{figure}
 
 
 \begin{table}[htbp]
@@ -1863,18 +1831,36 @@ z & $t_{coal}$ (Gyr) \\
 \end{tabular}
 \end{table}
 We note that higher compactness tends to compensate the effects of NSC removal in terms of the coalescence time.\\Lastly, we modifiy the initial time $t_0$ of each run, turning it into $t(z)$, thus focusing on the possibility of coalescence within the present time and consequently a potential GWs observation.
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{Galaxies_a_vs_t_from_t(z).png}
-    \caption{}
-    \label{Cosmic size a vs t from t(z) plot}
-\end{figure}
+
  
 Therefore, forming in tha past at $z>0$, they all merge before the present time.
 
 
 
-Here
+HERE
+
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{NGC205_Bulge_a_vs_t.png}
+    \caption{}
+    \label{NGC205 bulge a vs t plot}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{NGC205_Bulge_e_vs_t.png}
+    \caption{}
+    \label{NGC205 bulge e vs t plot}
+\end{figure}
+
+
+
+
+
+
+
 
 
 

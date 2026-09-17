@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.14)  17 SEP 2026 02:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.14)  17 SEP 2026 20:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -987,346 +987,339 @@ Package pdftex.def Info: Thesis_images/H_Sesana2006.png  used on input line 132
 File: Thesis_images/Cusps_density.png Graphic file (type png)
 <use Thesis_images/Cusps_density.png>
 Package pdftex.def Info: Thesis_images/Cusps_density.png  used on input line 14
-51.
+52.
 (pdftex.def)             Requested size: 241.84843pt x 181.00316pt.
  [38 <./Thesis_images/Cusps_density.png>]
 <Thesis_images/Cusps_H.png, id=865, 411.2163pt x 309.3156pt>
 File: Thesis_images/Cusps_H.png Graphic file (type png)
 <use Thesis_images/Cusps_H.png>
-Package pdftex.def Info: Thesis_images/Cusps_H.png  used on input line 1459.
+Package pdftex.def Info: Thesis_images/Cusps_H.png  used on input line 1460.
 (pdftex.def)             Requested size: 241.84843pt x 181.9188pt.
 <Thesis_images/A_K_vs_e.png, id=872, 433.62pt x 325.215pt>
 File: Thesis_images/A_K_vs_e.png Graphic file (type png)
 <use Thesis_images/A_K_vs_e.png>
-Package pdftex.def Info: Thesis_images/A_K_vs_e.png  used on input line 1469.
+Package pdftex.def Info: Thesis_images/A_K_vs_e.png  used on input line 1470.
 (pdftex.def)             Requested size: 232.17242pt x 174.12973pt.
 <Thesis_images/a0_K_vs_e.png, id=873, 433.62pt x 325.215pt>
 File: Thesis_images/a0_K_vs_e.png Graphic file (type png)
 <use Thesis_images/a0_K_vs_e.png>
-Package pdftex.def Info: Thesis_images/a0_K_vs_e.png  used on input line 1476.
+Package pdftex.def Info: Thesis_images/a0_K_vs_e.png  used on input line 1477.
 (pdftex.def)             Requested size: 232.17242pt x 174.12973pt.
 <Thesis_images/gamma_K_vs_e.png, id=874, 433.62pt x 325.215pt>
 File: Thesis_images/gamma_K_vs_e.png Graphic file (type png)
 <use Thesis_images/gamma_K_vs_e.png>
 Package pdftex.def Info: Thesis_images/gamma_K_vs_e.png  used on input line 148
-5.
+6.
 (pdftex.def)             Requested size: 232.17242pt x 174.12973pt.
 <Thesis_images/B_K_vs_e.png, id=875, 433.62pt x 325.215pt>
 File: Thesis_images/B_K_vs_e.png Graphic file (type png)
 <use Thesis_images/B_K_vs_e.png>
-Package pdftex.def Info: Thesis_images/B_K_vs_e.png  used on input line 1492.
+Package pdftex.def Info: Thesis_images/B_K_vs_e.png  used on input line 1493.
 (pdftex.def)             Requested size: 232.17242pt x 174.12973pt.
  [39 <./Thesis_images/Cusps_H.png>]
-<Thesis_images/Cusps_K_vs_a.png, id=886, 421.0932pt x 324.4923pt>
+<Thesis_images/Cusps_K_vs_a.png, id=886, 433.62pt x 325.215pt>
 File: Thesis_images/Cusps_K_vs_a.png Graphic file (type png)
 <use Thesis_images/Cusps_K_vs_a.png>
 Package pdftex.def Info: Thesis_images/Cusps_K_vs_a.png  used on input line 150
-5.
-(pdftex.def)             Requested size: 237.01411pt x 182.6453pt.
-<Thesis_images/Cusps_K_vs_e.png, id=887, 435.3063pt x 323.7696pt>
+6.
+(pdftex.def)             Requested size: 237.01411pt x 177.76219pt.
+<Thesis_images/Cusps_K_vs_e.png, id=887, 433.62pt x 325.215pt>
 File: Thesis_images/Cusps_K_vs_e.png Graphic file (type png)
 <use Thesis_images/Cusps_K_vs_e.png>
 Package pdftex.def Info: Thesis_images/Cusps_K_vs_e.png  used on input line 151
-2.
-(pdftex.def)             Requested size: 237.01411pt x 176.28543pt.
+3.
+(pdftex.def)             Requested size: 237.01411pt x 177.76219pt.
  [40 <./Thesis_images/A_K_vs_e.png> <./Thesis_images/a0_K_vs_e.png> <./Thesis_i
 mages/gamma_K_vs_e.png> <./Thesis_images/B_K_vs_e.png>]
-<Thesis_images/Cusps_a_vs_t_log.png, id=898, 422.5386pt x 324.9741pt>
+<Thesis_images/Cusps_a_vs_t_log.png, id=899, 433.62pt x 325.215pt>
 File: Thesis_images/Cusps_a_vs_t_log.png Graphic file (type png)
 <use Thesis_images/Cusps_a_vs_t_log.png>
 Package pdftex.def Info: Thesis_images/Cusps_a_vs_t_log.png  used on input line
- 1528.
-(pdftex.def)             Requested size: 237.01411pt x 182.28673pt.
-<Thesis_images/Cusps_e_vs_t_log.png, id=899, 414.5889pt x 324.9741pt>
+ 1533.
+(pdftex.def)             Requested size: 237.01411pt x 177.76219pt.
+<Thesis_images/Cusps_e_vs_t_log.png, id=900, 433.62pt x 325.215pt>
 File: Thesis_images/Cusps_e_vs_t_log.png Graphic file (type png)
 <use Thesis_images/Cusps_e_vs_t_log.png>
 Package pdftex.def Info: Thesis_images/Cusps_e_vs_t_log.png  used on input line
- 1535.
-(pdftex.def)             Requested size: 237.01411pt x 185.78262pt.
+ 1540.
+(pdftex.def)             Requested size: 237.01411pt x 177.76219pt.
+
+Overfull \hbox (37.71481pt too wide) in paragraph at lines 1547--1548
+[]\T1/cmr/m/n/12 The first rel-e-vant re-sult con-cerns the es-ti-mated co-a-le
+s-cence timescales, $\OML/cmm/m/it/12 ^^\[] \OT1/cmr/m/n/12 = (34\OML/cmm/m/it/
+12 :\OT1/cmr/m/n/12 7\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 17\OML/cmm/m/it/12 :\OT
+1/cmr/m/n/12 6\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 8\OML/cmm/m/it/12 :\OT1/cmr/m/
+n/12 18) \OML/cmm/m/it/12 Myr$\T1/cmr/m/n/12 .
+ []
 
 [41 <./Thesis_images/Cusps_K_vs_a.png> <./Thesis_images/Cusps_K_vs_e.png> <./Th
 esis_images/Cusps_a_vs_t_log.png> <./Thesis_images/Cusps_e_vs_t_log.png>]
 
-LaTeX Warning: Citation 'Prugniel' on page 42 undefined on input line 1564.
+LaTeX Warning: Citation 'Prugniel' on page 42 undefined on input line 1569.
 
 
-LaTeX Warning: Citation 'Terzic' on page 42 undefined on input line 1569.
+LaTeX Warning: Citation 'Terzic' on page 42 undefined on input line 1574.
 
-<Thesis_images/Khan_2021_table.png, id=914, 618.05907pt x 146.04562pt>
+<Thesis_images/Khan_2021_table.png, id=916, 618.05907pt x 146.04562pt>
 File: Thesis_images/Khan_2021_table.png Graphic file (type png)
 <use Thesis_images/Khan_2021_table.png>
 Package pdftex.def Info: Thesis_images/Khan_2021_table.png  used on input line 
-1579.
+1584.
 (pdftex.def)             Requested size: 241.84843pt x 57.14697pt.
 [42 <./Thesis_images/Khan_2021_table.png>]
-<Thesis_images/NGC205_density_profile.png, id=925, 423.984pt x 312.9291pt>
+<Thesis_images/NGC205_density_profile.png, id=926, 433.62pt x 325.215pt>
 File: Thesis_images/NGC205_density_profile.png Graphic file (type png)
 <use Thesis_images/NGC205_density_profile.png>
 Package pdftex.def Info: Thesis_images/NGC205_density_profile.png  used on inpu
-t line 1647.
-(pdftex.def)             Requested size: 241.84843pt x 178.50513pt.
+t line 1654.
+(pdftex.def)             Requested size: 237.01411pt x 177.76219pt.
+<Thesis_images/NGC205_mass_profile.png, id=927, 433.62pt x 325.215pt>
+File: Thesis_images/NGC205_mass_profile.png Graphic file (type png)
+<use Thesis_images/NGC205_mass_profile.png>
+Package pdftex.def Info: Thesis_images/NGC205_mass_profile.png  used on input l
+ine 1661.
+(pdftex.def)             Requested size: 237.01411pt x 177.76219pt.
+ [43]
+<Thesis_images/NGC205_sigma_profile.png, id=945, 433.62pt x 325.215pt>
+File: Thesis_images/NGC205_sigma_profile.png Graphic file (type png)
+<use Thesis_images/NGC205_sigma_profile.png>
+Package pdftex.def Info: Thesis_images/NGC205_sigma_profile.png  used on input 
+line 1670.
+(pdftex.def)             Requested size: 241.84843pt x 181.38968pt.
+<Thesis_images/NGC205_a_vs_t_log_e_sampling.png, id=946, 433.62pt x 325.215pt>
+File: Thesis_images/NGC205_a_vs_t_log_e_sampling.png Graphic file (type png)
+<use Thesis_images/NGC205_a_vs_t_log_e_sampling.png>
+Package pdftex.def Info: Thesis_images/NGC205_a_vs_t_log_e_sampling.png  used o
+n input line 1680.
+(pdftex.def)             Requested size: 237.01411pt x 177.76219pt.
+<Thesis_images/NGC205_e_vs_t_log_e_sampling.png, id=947, 433.62pt x 325.215pt>
+File: Thesis_images/NGC205_e_vs_t_log_e_sampling.png Graphic file (type png)
+<use Thesis_images/NGC205_e_vs_t_log_e_sampling.png>
+Package pdftex.def Info: Thesis_images/NGC205_e_vs_t_log_e_sampling.png  used o
+n input line 1687.
+(pdftex.def)             Requested size: 237.01411pt x 177.76219pt.
 
-Overfull \hbox (7.18593pt too wide) in paragraph at lines 1651--1652
+Overfull \hbox (7.18593pt too wide) in paragraph at lines 1706--1707
 []\T1/cmr/m/n/12 Adopting the same pre-scrip-tion of []Khan and Holley-Bockelma
 nn []2021[] and []Holley-Bockelmann
  []
 
-[43 <./Thesis_images/NGC205_density_profile.png>]
+[44 <./Thesis_images/NGC205_density_profile.png> <./Thesis_images/NGC205_mass_p
+rofile.png> <./Thesis_images/NGC205_sigma_profile.png> <./Thesis_images/NGC205_
+a_vs_t_log_e_sampling.png> <./Thesis_images/NGC205_e_vs_t_log_e_sampling.png>]
 
-LaTeX Warning: Citation 'Terzic' on page 44 undefined on input line 1668.
+LaTeX Warning: Citation 'Terzic' on page 45 undefined on input line 1723.
 
 
-Overfull \hbox (3.68037pt too wide) in paragraph at lines 1693--1696
+Overfull \hbox (3.68037pt too wide) in paragraph at lines 1748--1751
 \T1/cmr/m/n/12 The in-te-gral leads to $\OML/cmm/m/it/12 ^^[[] \OT1/cmr/m/n/12 
 =$\T1/cmr/m/n/12 32.6km/s. As both $\OML/cmm/m/it/12 ^^[\OT1/cmr/m/n/12 (\OML/c
 mm/m/it/12 r\OT1/cmr/m/n/12 )$ \T1/cmr/m/n/12 and the cir-cu-lar speed $\OML/cm
 m/m/it/12 V[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 r\OT1/cmr/m/n/12 ) = []$
  []
 
-<Thesis_images/NGC205_Vc_over_sigma_profile.png, id=956, 417.9615pt x 311.9655p
-t>
-File: Thesis_images/NGC205_Vc_over_sigma_profile.png Graphic file (type png)
-<use Thesis_images/NGC205_Vc_over_sigma_profile.png>
-Package pdftex.def Info: Thesis_images/NGC205_Vc_over_sigma_profile.png  used o
-n input line 1700.
-(pdftex.def)             Requested size: 241.84843pt x 180.51645pt.
-[44]
-<Thesis_images/NGC205_a_vs_t.png, id=976, 422.5386pt x 324.9741pt>
-File: Thesis_images/NGC205_a_vs_t.png Graphic file (type png)
-<use Thesis_images/NGC205_a_vs_t.png>
-Package pdftex.def Info: Thesis_images/NGC205_a_vs_t.png  used on input line 17
-25.
-(pdftex.def)             Requested size: 241.84843pt x 186.00575pt.
- [45 <./Thesis_images/NGC205_Vc_over_sigma_profile.png>]
-<Thesis_images/NGC205_e_vs_t.png, id=988, 414.5889pt x 324.9741pt>
-File: Thesis_images/NGC205_e_vs_t.png Graphic file (type png)
-<use Thesis_images/NGC205_e_vs_t.png>
-Package pdftex.def Info: Thesis_images/NGC205_e_vs_t.png  used on input line 17
-33.
-(pdftex.def)             Requested size: 241.84843pt x 189.57602pt.
-File: Thesis_images/NGC205_density_profile.png Graphic file (type png)
-<use Thesis_images/NGC205_density_profile.png>
-Package pdftex.def Info: Thesis_images/NGC205_density_profile.png  used on inpu
-t line 1751.
-(pdftex.def)             Requested size: 241.84843pt x 178.50513pt.
- [46 <./Thesis_images/NGC205_a_vs_t.png> <./Thesis_images/NGC205_e_vs_t.png>]
-<Thesis_images/NGC205_a_vs_t_log_e_sampling.png, id=998, 422.5386pt x 324.7332p
-t>
-File: Thesis_images/NGC205_a_vs_t_log_e_sampling.png Graphic file (type png)
-<use Thesis_images/NGC205_a_vs_t_log_e_sampling.png>
-Package pdftex.def Info: Thesis_images/NGC205_a_vs_t_log_e_sampling.png  used o
-n input line 1758.
-(pdftex.def)             Requested size: 241.84843pt x 185.86787pt.
-<Thesis_images/NGC205_e_vs_t_log_e_sampling.png, id=999, 414.5889pt x 324.7332p
-t>
-File: Thesis_images/NGC205_e_vs_t_log_e_sampling.png Graphic file (type png)
-<use Thesis_images/NGC205_e_vs_t_log_e_sampling.png>
-Package pdftex.def Info: Thesis_images/NGC205_e_vs_t_log_e_sampling.png  used o
-n input line 1765.
-(pdftex.def)             Requested size: 241.84843pt x 189.43549pt.
- [47 <./Thesis_images/NGC205_a_vs_t_log_e_sampling.png> <./Thesis_images/NGC205
-_e_vs_t_log_e_sampling.png>]
-<Thesis_images/NGC205_Bulge_a_vs_t.png, id=1011, 416.757pt x 311.9655pt>
+[45]
+
+LaTeX Warning: Reference `NGC205 a vs t' on page 46 undefined on input line 177
+1.
+
+
+LaTeX Warning: Reference `NGC205 e vs t' on page 46 undefined on input line 177
+1.
+
+
+LaTeX Warning: Reference `Cosmic size density plot' on page 46 undefined on inp
+ut line 1793.
+
+
+LaTeX Warning: Reference `Cosmic size H plot' on page 46 undefined on input lin
+e 1796.
+
+
+LaTeX Warning: Reference `Cosmic size K plot' on page 46 undefined on input lin
+e 1796.
+
+[46]
+
+LaTeX Warning: Reference `Cosmic size a vs t plot' on page 47 undefined on inpu
+t line 1798.
+
+
+LaTeX Warning: Reference `Cosmic size e vs t plot' on page 47 undefined on inpu
+t line 1798.
+
+
+Overfull \hbox (11.70291pt too wide) in paragraph at lines 1798--1799
+\T1/cmr/m/n/12 ap-ply-ing RK(4) to the Equa-tions ([]2.50[]) and ([]2.51[]) and
+ ini-tial con-di-tion $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t[]a[]; e[]\OT1/cmr/m/
+n/12 ) = (0\OML/cmm/m/it/12 yr; \OT1/cmr/m/n/12 15\OML/cmm/m/it/12 pc; \OT1/cmr
+/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 7)$\T1/cmr/m/n/12 . 
+ []
+
+<Thesis_images/NGC205_Bulge_a_vs_t.png, id=1007, 416.757pt x 311.9655pt>
 File: Thesis_images/NGC205_Bulge_a_vs_t.png Graphic file (type png)
 <use Thesis_images/NGC205_Bulge_a_vs_t.png>
 Package pdftex.def Info: Thesis_images/NGC205_Bulge_a_vs_t.png  used on input l
-ine 1781.
+ine 1846.
 (pdftex.def)             Requested size: 241.84843pt x 181.03531pt.
-<Thesis_images/NGC205_Bulge_e_vs_t.png, id=1012, 409.53pt x 311.9655pt>
+[47]
+<Thesis_images/NGC205_Bulge_e_vs_t.png, id=1013, 409.53pt x 311.9655pt>
 File: Thesis_images/NGC205_Bulge_e_vs_t.png Graphic file (type png)
 <use Thesis_images/NGC205_Bulge_e_vs_t.png>
 Package pdftex.def Info: Thesis_images/NGC205_Bulge_e_vs_t.png  used on input l
-ine 1788.
+ine 1853.
 (pdftex.def)             Requested size: 241.84843pt x 184.23418pt.
-<Thesis_images/Galaxies_density_profile.png, id=1015, 436.7517pt x 314.3745pt>
-File: Thesis_images/Galaxies_density_profile.png Graphic file (type png)
-<use Thesis_images/Galaxies_density_profile.png>
-Package pdftex.def Info: Thesis_images/Galaxies_density_profile.png  used on in
-put line 1797.
-(pdftex.def)             Requested size: 241.84843pt x 174.08176pt.
- [48 <./Thesis_images/NGC205_Bulge_a_vs_t.png> <./Thesis_images/NGC205_Bulge_e_
-vs_t.png>]
-<Thesis_images/Galaxies_H_unbound.png, id=1028, 411.2163pt x 309.3156pt>
-File: Thesis_images/Galaxies_H_unbound.png Graphic file (type png)
-<use Thesis_images/Galaxies_H_unbound.png>
-Package pdftex.def Info: Thesis_images/Galaxies_H_unbound.png  used on input li
-ne 1804.
-(pdftex.def)             Requested size: 241.84843pt x 181.9188pt.
-<Thesis_images/Galaxies_K_unbound.png, id=1029, 424.2249pt x 311.7246pt>
-File: Thesis_images/Galaxies_K_unbound.png Graphic file (type png)
-<use Thesis_images/Galaxies_K_unbound.png>
-Package pdftex.def Info: Thesis_images/Galaxies_K_unbound.png  used on input li
-ne 1812.
-(pdftex.def)             Requested size: 241.84843pt x 177.7134pt.
-<Thesis_images/Galaxies_a_vs_t.png, id=1034, 413.8662pt x 324.9741pt>
-File: Thesis_images/Galaxies_a_vs_t.png Graphic file (type png)
-<use Thesis_images/Galaxies_a_vs_t.png>
-Package pdftex.def Info: Thesis_images/Galaxies_a_vs_t.png  used on input line 
-1819.
-(pdftex.def)             Requested size: 241.84843pt x 189.90329pt.
- [49 <./Thesis_images/Galaxies_density_profile.png> <./Thesis_images/Galaxies_H
-_unbound.png> <./Thesis_images/Galaxies_K_unbound.png>]
-<Thesis_images/Galaxies_e_vs_t.png, id=1045, 405.9165pt x 324.9741pt>
-File: Thesis_images/Galaxies_e_vs_t.png Graphic file (type png)
-<use Thesis_images/Galaxies_e_vs_t.png>
-Package pdftex.def Info: Thesis_images/Galaxies_e_vs_t.png  used on input line 
-1828.
-(pdftex.def)             Requested size: 241.84843pt x 193.62231pt.
-<Thesis_images/Galaxies_a_vs_t_from_t(z).png, id=1046, 416.757pt x 311.9655pt>
-File: Thesis_images/Galaxies_a_vs_t_from_t(z).png Graphic file (type png)
-<use Thesis_images/Galaxies_a_vs_t_from_t(z).png>
-Package pdftex.def Info: Thesis_images/Galaxies_a_vs_t_from_t(z).png  used on i
-nput line 1868.
-(pdftex.def)             Requested size: 241.84843pt x 181.03531pt.
-
-[50 <./Thesis_images/Galaxies_a_vs_t.png> <./Thesis_images/Galaxies_e_vs_t.png>
-]
-<Thesis_images/Bulges_vs_NSC_density_profile.png, id=1055, 418.4433pt x 312.929
+<Thesis_images/Bulges_vs_NSC_density_profile.png, id=1014, 418.4433pt x 312.929
 1pt>
 File: Thesis_images/Bulges_vs_NSC_density_profile.png Graphic file (type png)
 <use Thesis_images/Bulges_vs_NSC_density_profile.png>
 Package pdftex.def Info: Thesis_images/Bulges_vs_NSC_density_profile.png  used 
-on input line 1883.
+on input line 1869.
 (pdftex.def)             Requested size: 241.84843pt x 180.86392pt.
- [51 <./Thesis_images/Galaxies_a_vs_t_from_t(z).png>]
+<Thesis_images/Galaxies_H_unbound.png, id=1015, 411.2163pt x 309.3156pt>
 File: Thesis_images/Galaxies_H_unbound.png Graphic file (type png)
 <use Thesis_images/Galaxies_H_unbound.png>
 Package pdftex.def Info: Thesis_images/Galaxies_H_unbound.png  used on input li
-ne 1890.
+ne 1876.
 (pdftex.def)             Requested size: 241.84843pt x 181.9188pt.
-<Thesis_images/Galaxies_K_vs_e.png, id=1063, 435.3063pt x 323.7696pt>
+ [48 <./Thesis_images/NGC205_Bulge_a_vs_t.png> <./Thesis_images/NGC205_Bulge_e_
+vs_t.png> <./Thesis_images/Bulges_vs_NSC_density_profile.png>]
+<Thesis_images/Galaxies_K_vs_e.png, id=1024, 435.3063pt x 323.7696pt>
 File: Thesis_images/Galaxies_K_vs_e.png Graphic file (type png)
 <use Thesis_images/Galaxies_K_vs_e.png>
 Package pdftex.def Info: Thesis_images/Galaxies_K_vs_e.png  used on input line 
-1897.
+1883.
 (pdftex.def)             Requested size: 241.84843pt x 179.88199pt.
-<Thesis_images/Galaxies_K_vs_a.png, id=1064, 421.0932pt x 324.4923pt>
+<Thesis_images/Galaxies_K_vs_a.png, id=1025, 421.0932pt x 324.4923pt>
 File: Thesis_images/Galaxies_K_vs_a.png Graphic file (type png)
 <use Thesis_images/Galaxies_K_vs_a.png>
 Package pdftex.def Info: Thesis_images/Galaxies_K_vs_a.png  used on input line 
-1904.
+1890.
 (pdftex.def)             Requested size: 241.84843pt x 186.36871pt.
- [52 <./Thesis_images/Bulges_vs_NSC_density_profile.png> <./Thesis_images/Galax
-ies_K_vs_e.png>]
+<Thesis_images/Galaxies_a_vs_t.png, id=1026, 413.8662pt x 324.9741pt>
 File: Thesis_images/Galaxies_a_vs_t.png Graphic file (type png)
 <use Thesis_images/Galaxies_a_vs_t.png>
 Package pdftex.def Info: Thesis_images/Galaxies_a_vs_t.png  used on input line 
-1911.
+1897.
 (pdftex.def)             Requested size: 241.84843pt x 189.90329pt.
+ [49 <./Thesis_images/Galaxies_H_unbound.png> <./Thesis_images/Galaxies_K_vs_e.
+png> <./Thesis_images/Galaxies_K_vs_a.png>]
+<Thesis_images/Galaxies_e_vs_t.png, id=1038, 405.9165pt x 324.9741pt>
 File: Thesis_images/Galaxies_e_vs_t.png Graphic file (type png)
 <use Thesis_images/Galaxies_e_vs_t.png>
 Package pdftex.def Info: Thesis_images/Galaxies_e_vs_t.png  used on input line 
-1918.
+1904.
 (pdftex.def)             Requested size: 241.84843pt x 193.62231pt.
- [53 <./Thesis_images/Galaxies_K_vs_a.png>]
+ [50 <./Thesis_images/Galaxies_a_vs_t.png> <./Thesis_images/Galaxies_e_vs_t.png
+>]
 Chapter 3.
-[54
+[51
 
-] [55]
+] [52]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
-051.
+037.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [56]
+) [53]
 
-LaTeX Warning: Citation 'Prugniel' on page 57 undefined on input line 2091.
+LaTeX Warning: Citation 'Prugniel' on page 54 undefined on input line 2077.
 
-[57] [58]
-<Thesis_images/NGC205_bulge_scatter_XY_XZ.png, id=1154, 300.1614pt x 382.3083pt
+[54] [55]
+<Thesis_images/NGC205_bulge_scatter_XY_XZ.png, id=1119, 300.1614pt x 382.3083pt
 >
 File: Thesis_images/NGC205_bulge_scatter_XY_XZ.png Graphic file (type png)
 <use Thesis_images/NGC205_bulge_scatter_XY_XZ.png>
 Package pdftex.def Info: Thesis_images/NGC205_bulge_scatter_XY_XZ.png  used on 
-input line 2142.
+input line 2128.
 (pdftex.def)             Requested size: 145.11053pt x 184.82428pt.
-<Thesis_images/NGC205_NSC_scatter_XY_XZ.png, id=1155, 300.1614pt x 382.3083pt>
+<Thesis_images/NGC205_NSC_scatter_XY_XZ.png, id=1120, 300.1614pt x 382.3083pt>
 File: Thesis_images/NGC205_NSC_scatter_XY_XZ.png Graphic file (type png)
 <use Thesis_images/NGC205_NSC_scatter_XY_XZ.png>
 Package pdftex.def Info: Thesis_images/NGC205_NSC_scatter_XY_XZ.png  used on in
-put line 2148.
+put line 2134.
 (pdftex.def)             Requested size: 145.11053pt x 184.82428pt.
-<Thesis_images/NGC205_halfmass.png, id=1156, 409.53pt x 327.8649pt>
+<Thesis_images/NGC205_halfmass.png, id=1121, 409.53pt x 327.8649pt>
 File: Thesis_images/NGC205_halfmass.png Graphic file (type png)
 <use Thesis_images/NGC205_halfmass.png>
 Package pdftex.def Info: Thesis_images/NGC205_halfmass.png  used on input line 
-2154.
+2140.
 (pdftex.def)             Requested size: 145.11053pt x 116.17522pt.
-<Thesis_images/NGC205_bulge_space_hist.png, id=1157, 431.6928pt x 327.8649pt>
+<Thesis_images/NGC205_bulge_space_hist.png, id=1122, 431.6928pt x 327.8649pt>
 File: Thesis_images/NGC205_bulge_space_hist.png Graphic file (type png)
 <use Thesis_images/NGC205_bulge_space_hist.png>
 Package pdftex.def Info: Thesis_images/NGC205_bulge_space_hist.png  used on inp
-ut line 2172.
+ut line 2158.
 (pdftex.def)             Requested size: 145.11053pt x 110.20688pt.
-<Thesis_images/NGC205_NSC_space_hist.png, id=1158, 431.6928pt x 327.8649pt>
+<Thesis_images/NGC205_NSC_space_hist.png, id=1123, 431.6928pt x 327.8649pt>
 File: Thesis_images/NGC205_NSC_space_hist.png Graphic file (type png)
 <use Thesis_images/NGC205_NSC_space_hist.png>
 Package pdftex.def Info: Thesis_images/NGC205_NSC_space_hist.png  used on input
- line 2178.
+ line 2164.
 (pdftex.def)             Requested size: 145.11053pt x 110.20688pt.
-<Thesis_images/NGC205_space_hist.png, id=1159, 431.6928pt x 327.8649pt>
+<Thesis_images/NGC205_space_hist.png, id=1124, 431.6928pt x 327.8649pt>
 File: Thesis_images/NGC205_space_hist.png Graphic file (type png)
 <use Thesis_images/NGC205_space_hist.png>
 Package pdftex.def Info: Thesis_images/NGC205_space_hist.png  used on input lin
-e 2184.
+e 2170.
 (pdftex.def)             Requested size: 145.11053pt x 110.20688pt.
-<Thesis_images/NGC205_bulge_velocity_hist.png, id=1160, 425.4294pt x 327.1422pt
+<Thesis_images/NGC205_bulge_velocity_hist.png, id=1125, 425.4294pt x 327.1422pt
 >
 File: Thesis_images/NGC205_bulge_velocity_hist.png Graphic file (type png)
 <use Thesis_images/NGC205_bulge_velocity_hist.png>
 Package pdftex.def Info: Thesis_images/NGC205_bulge_velocity_hist.png  used on 
-input line 2196.
+input line 2182.
 (pdftex.def)             Requested size: 145.11053pt x 111.58627pt.
-<Thesis_images/NGC205_NSC_velocity_hist.png, id=1161, 425.4294pt x 327.1422pt>
+<Thesis_images/NGC205_NSC_velocity_hist.png, id=1126, 425.4294pt x 327.1422pt>
 File: Thesis_images/NGC205_NSC_velocity_hist.png Graphic file (type png)
 <use Thesis_images/NGC205_NSC_velocity_hist.png>
 Package pdftex.def Info: Thesis_images/NGC205_NSC_velocity_hist.png  used on in
-put line 2202.
+put line 2188.
 (pdftex.def)             Requested size: 145.11053pt x 111.58627pt.
-<Thesis_images/NGC205_velocity_hist.png, id=1162, 425.4294pt x 327.1422pt>
+<Thesis_images/NGC205_velocity_hist.png, id=1127, 425.4294pt x 327.1422pt>
 File: Thesis_images/NGC205_velocity_hist.png Graphic file (type png)
 <use Thesis_images/NGC205_velocity_hist.png>
 Package pdftex.def Info: Thesis_images/NGC205_velocity_hist.png  used on input 
-line 2208.
+line 2194.
 (pdftex.def)             Requested size: 145.11053pt x 111.58627pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Thesis_images/NGC205_bulge_density_Nbody.png, id=1163, 413.3844pt x 327.1422pt
+<Thesis_images/NGC205_bulge_density_Nbody.png, id=1128, 413.3844pt x 327.1422pt
 >
 File: Thesis_images/NGC205_bulge_density_Nbody.png Graphic file (type png)
 <use Thesis_images/NGC205_bulge_density_Nbody.png>
 Package pdftex.def Info: Thesis_images/NGC205_bulge_density_Nbody.png  used on 
-input line 2220.
+input line 2206.
 (pdftex.def)             Requested size: 145.11053pt x 114.83592pt.
-<Thesis_images/NGC205_NSC_density_Nbody.png, id=1164, 417.7206pt x 327.1422pt>
+<Thesis_images/NGC205_NSC_density_Nbody.png, id=1129, 417.7206pt x 327.1422pt>
 File: Thesis_images/NGC205_NSC_density_Nbody.png Graphic file (type png)
 <use Thesis_images/NGC205_NSC_density_Nbody.png>
 Package pdftex.def Info: Thesis_images/NGC205_NSC_density_Nbody.png  used on in
-put line 2226.
+put line 2212.
 (pdftex.def)             Requested size: 145.11053pt x 113.64288pt.
 File: Thesis_images/NGC205_NSC_density_Nbody.png Graphic file (type png)
 <use Thesis_images/NGC205_NSC_density_Nbody.png>
 Package pdftex.def Info: Thesis_images/NGC205_NSC_density_Nbody.png  used on in
-put line 2232.
+put line 2218.
 (pdftex.def)             Requested size: 145.11053pt x 113.64288pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Thesis_images/NGC205_density_Nbody_vs_analytic.png, id=1165, 426.393pt x 327.8
+<Thesis_images/NGC205_density_Nbody_vs_analytic.png, id=1130, 426.393pt x 327.8
 649pt>
 File: Thesis_images/NGC205_density_Nbody_vs_analytic.png Graphic file (type png
 )
 <use Thesis_images/NGC205_density_Nbody_vs_analytic.png>
 Package pdftex.def Info: Thesis_images/NGC205_density_Nbody_vs_analytic.png  us
-ed on input line 2245.
+ed on input line 2231.
 (pdftex.def)             Requested size: 217.66211pt x 167.36397pt.
-<Thesis_images/NGC205_mass_Nbody_vs_analytic.png, id=1166, 411.2163pt x 327.142
+<Thesis_images/NGC205_mass_Nbody_vs_analytic.png, id=1131, 411.2163pt x 327.142
 2pt>
 File: Thesis_images/NGC205_mass_Nbody_vs_analytic.png Graphic file (type png)
 <use Thesis_images/NGC205_mass_Nbody_vs_analytic.png>
 Package pdftex.def Info: Thesis_images/NGC205_mass_Nbody_vs_analytic.png  used 
-on input line 2251.
+on input line 2237.
 (pdftex.def)             Requested size: 217.66211pt x 173.16489pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1334,41 +1327,44 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: Thesis_images/NGC205_halfmass.png Graphic file (type png)
 <use Thesis_images/NGC205_halfmass.png>
 Package pdftex.def Info: Thesis_images/NGC205_halfmass.png  used on input line 
-2271.
+2257.
 (pdftex.def)             Requested size: 241.84843pt x 193.6237pt.
-[59 <./Thesis_images/NGC205_bulge_scatter_XY_XZ.png> <./Thesis_images/NGC205_NS
+[56 <./Thesis_images/NGC205_bulge_scatter_XY_XZ.png> <./Thesis_images/NGC205_NS
 C_scatter_XY_XZ.png> <./Thesis_images/NGC205_halfmass.png> <./Thesis_images/NGC
 205_bulge_space_hist.png> <./Thesis_images/NGC205_NSC_space_hist.png> <./Thesis
-_images/NGC205_space_hist.png>] [60 <./Thesis_images/NGC205_bulge_velocity_hist
+_images/NGC205_space_hist.png>] [57 <./Thesis_images/NGC205_bulge_velocity_hist
 .png> <./Thesis_images/NGC205_NSC_velocity_hist.png> <./Thesis_images/NGC205_ve
 locity_hist.png> <./Thesis_images/NGC205_bulge_density_Nbody.png> <./Thesis_ima
-ges/NGC205_NSC_density_Nbody.png>] [61 <./Thesis_images/NGC205_density_Nbody_vs
+ges/NGC205_NSC_density_Nbody.png>] [58 <./Thesis_images/NGC205_density_Nbody_vs
 _analytic.png> <./Thesis_images/NGC205_mass_Nbody_vs_analytic.png>]
-Overfull \hbox (31.19432pt too wide) in paragraph at lines 2305--2305
+Overfull \hbox (31.19432pt too wide) in paragraph at lines 2291--2291
 [][]\T1/cmr/m/n/12 Colpi, Mon-ica et al. (Feb. 2024). ^^P  LISA Def-i-ni-tion S
 tudy Re-port^^Q. In: \T1/cmr/m/it/12 arXiv e-prints\T1/cmr/m/n/12 , arXiv:2402.
 07571,
  []
 
-[62
+[59
 
 ]
-Overfull \hbox (13.10652pt too wide) in paragraph at lines 2305--2305
+Overfull \hbox (13.10652pt too wide) in paragraph at lines 2291--2291
 [][]\T1/cmr/m/n/12 Khan, Fazeel Mah-mood, Fiza Javed, et al. (Nov. 2024). ^^P  
 The Po-ten-tial for Long-lived Intermediate-
  []
 
-[63] [64]
-Overfull \hbox (11.28075pt too wide) in paragraph at lines 2305--2305
+[60] [61]
+Overfull \hbox (11.28075pt too wide) in paragraph at lines 2291--2291
 [][]\T1/cmr/m/n/12 Ono, Yoshi-aki et al. (July 2023). ^^P  Mor-pholo-gies of Ga
 lax-ies at z $\U/msa/m/n/12 &$ \T1/cmr/m/n/12 9 Un-cov-ered by JWST/NIRCam
  []
 
-[65] [66] (./main.aux)
+[62] [63] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1380,10 +1376,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24416 strings out of 476182
- 437065 string characters out of 5795595
- 1946975 words of memory out of 5000000
- 45688 multiletter control sequences out of 15000+600000
+ 24372 strings out of 476182
+ 435485 string characters out of 5795595
+ 1947975 words of memory out of 5000000
+ 45656 multiletter control sequences out of 15000+600000
  581495 words of font info for 93 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  75i,17n,81p,4407b,1835s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1421,10 +1417,10 @@ cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.
 pfb>
-Output written on main.pdf (66 pages, 6614794 bytes).
+Output written on main.pdf (63 pages, 6073467 bytes).
 PDF statistics:
- 2085 PDF objects out of 2487 (max. 8388607)
- 1368 compressed objects within 14 object streams
- 441 named destinations out of 1000 (max. 500000)
- 417 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2047 PDF objects out of 2073 (max. 8388607)
+ 1340 compressed objects within 14 object streams
+ 429 named destinations out of 1000 (max. 500000)
+ 397 words of extra memory for PDF output out of 10000 (max. 10000000)
 
