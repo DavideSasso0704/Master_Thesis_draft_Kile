@@ -20,11 +20,11 @@
 \contentsline {section}{\numberline {2.1}Quinlan-Sesana Hybrid Model}{31}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Stellar Cusps IMBH Binary Evolution}{36}{section.2.2}%
 \contentsline {section}{\numberline {2.3}NGC 205 IMBH Binary evolution}{42}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Cosmic Size Evolution Down to NGC 205}{46}{subsection.2.3.1}%
-\contentsline {chapter}{\numberline {3}Generation of Initial Conditions for N-body Stellar Systems}{51}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Dynamical Equilibrium of Stellar Systems}{51}{section.3.1}%
-\contentsline {section}{\numberline {3.2}OpOpGadget and Galaxy Modeling}{53}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Analysis of the Generated Initial Conditions}{56}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}NCG 205 N-body Initial Conditions}{56}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}NCG 5206 N-body Initial Conditions}{57}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Ketju Numerical Simulations}{57}{section.3.4}%
+\contentsline {section}{\numberline {2.4}Cosmic Size Evolution Down to NGC 205}{46}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Generation of Initial Conditions for N-body Stellar Systems}{52}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Dynamical Equilibrium of Stellar Systems}{52}{section.3.1}%
+\contentsline {section}{\numberline {3.2}OpOpGadget and Galaxy Modeling}{54}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Analysis of the Generated Initial Conditions}{57}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}NCG 205 N-body Initial Conditions}{57}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}NCG 5206 N-body Initial Conditions}{58}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Ketju Numerical Simulations}{58}{section.3.4}%

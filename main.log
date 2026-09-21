@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.14)  17 SEP 2026 20:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.14)  21 SEP 2026 17:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -309,18 +309,78 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@lastruleclass=\count293
 \@thisrulewidth=\dimen194
 )
+(/usr/share/texlive/texmf-dist/tex/latex/diagbox/diagbox.sty
+Package: diagbox 2020/02/09 v2.3 Making table heads with diagonal lines
+
+(/usr/share/texlive/texmf-dist/tex/latex/pict2e/pict2e.sty
+Package: pict2e 2020/09/30 v0.4b Improved picture commands (HjG,RN,JT)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pict2e/pict2e.cfg
+File: pict2e.cfg 2016/02/05 v0.1u pict2e configuration for teTeX/TeXLive
+)
+Package pict2e Info: Driver file: pdftex.def on input line 112.
+Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 114.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pict2e/p2e-pdftex.def
+File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
+)
+\pIIe@GRAPH=\toks36
+\@arclen=\dimen195
+\@arcrad=\dimen196
+\pIIe@tempdima=\dimen197
+\pIIe@tempdimb=\dimen198
+\pIIe@tempdimc=\dimen199
+\pIIe@tempdimd=\dimen256
+\pIIe@tempdime=\dimen257
+\pIIe@tempdimf=\dimen258
+)
+\diagbox@boxa=\box59
+\diagbox@boxb=\box60
+\diagbox@boxm=\box61
+\diagbox@wd=\dimen259
+\diagbox@ht=\dimen260
+\diagbox@insepl=\dimen261
+\diagbox@insepr=\dimen262
+\diagbox@outsepl=\dimen263
+\diagbox@outsepr=\dimen264
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
+\everycr=\toks37
+\minrowclearance=\skip63
+\rownum=\count294
+)
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 
-\f@nch@headwidth=\skip63
-\f@nch@O@elh=\skip64
-\f@nch@O@erh=\skip65
-\f@nch@O@olh=\skip66
-\f@nch@O@orh=\skip67
-\f@nch@O@elf=\skip68
-\f@nch@O@erf=\skip69
-\f@nch@O@olf=\skip70
-\f@nch@O@orf=\skip71
+\f@nch@headwidth=\skip64
+\f@nch@O@elh=\skip65
+\f@nch@O@erh=\skip66
+\f@nch@O@olh=\skip67
+\f@nch@O@orh=\skip68
+\f@nch@O@elf=\skip69
+\f@nch@O@erf=\skip70
+\f@nch@O@olf=\skip71
+\f@nch@O@orf=\skip72
 )
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
@@ -366,15 +426,15 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count294
+\c@section@level=\count295
 )
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count295
+\etb@tempcnta=\count296
 )
-\@linkdim=\dimen195
-\Hy@linkcounter=\count296
-\Hy@pagecounter=\count297
+\@linkdim=\dimen265
+\Hy@linkcounter=\count297
+\Hy@pagecounter=\count298
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
@@ -384,7 +444,7 @@ Now handling font encoding PD1 ...
 (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count298
+\Hy@SavedSpaceFactor=\count299
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
@@ -398,14 +458,14 @@ Package hyperref Info: Plain pages OFF on input line 4194.
 Package hyperref Info: Backreferencing OFF on input line 4199.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4446.
-\c@Hy@tempcnt=\count299
+\c@Hy@tempcnt=\count300
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4784.
-\XeTeXLinkMargin=\dimen196
+\XeTeXLinkMargin=\dimen266
 
 (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -414,9 +474,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count300
-\Field@Width=\dimen197
-\Fld@charsize=\dimen198
+\Fld@menulength=\count301
+\Field@Width=\dimen267
+\Fld@charsize=\dimen268
 Package hyperref Info: Hyper figures OFF on input line 6063.
 Package hyperref Info: Link nesting OFF on input line 6068.
 Package hyperref Info: Hyper index ON on input line 6071.
@@ -429,9 +489,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6093.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count301
-\c@Item=\count302
-\c@Hfootnote=\count303
+\Hy@abspage=\count302
+\c@Item=\count303
+\c@Hfootnote=\count304
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -443,8 +503,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count304
-\c@bookmark@seq@number=\count305
+\Fld@listcount=\count305
+\c@bookmark@seq@number=\count306
 
 (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
@@ -455,17 +515,17 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 85.
 )
-\Hy@SectionHShift=\skip72
+\Hy@SectionHShift=\skip73
 )
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2022-09-14 v5.2n context-sensitive quotations (JAW)
-\csq@reset=\count306
-\csq@gtype=\count307
-\csq@glevel=\count308
-\csq@qlevel=\count309
-\csq@maxlvl=\count310
-\csq@tshold=\count311
-\csq@ltx@everypar=\toks36
+\csq@reset=\count307
+\csq@gtype=\count308
+\csq@glevel=\count309
+\csq@qlevel=\count310
+\csq@maxlvl=\count311
+\csq@tshold=\count312
+\csq@ltx@everypar=\toks38
 
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2022-09-14 v5.2n csquotes generic definitions (JAW)
@@ -481,7 +541,7 @@ Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
 
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count312
+\lrq@indent=\count313
 
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -489,63 +549,63 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count313
-\c@listtotal=\count314
-\c@listcount=\count315
-\c@liststart=\count316
-\c@liststop=\count317
-\c@citecount=\count318
-\c@citetotal=\count319
-\c@multicitecount=\count320
-\c@multicitetotal=\count321
-\c@instcount=\count322
-\c@maxnames=\count323
-\c@minnames=\count324
-\c@maxitems=\count325
-\c@minitems=\count326
-\c@citecounter=\count327
-\c@maxcitecounter=\count328
-\c@savedcitecounter=\count329
-\c@uniquelist=\count330
-\c@uniquename=\count331
-\c@refsection=\count332
-\c@refsegment=\count333
-\c@maxextratitle=\count334
-\c@maxextratitleyear=\count335
-\c@maxextraname=\count336
-\c@maxextradate=\count337
-\c@maxextraalpha=\count338
-\c@abbrvpenalty=\count339
-\c@highnamepenalty=\count340
-\c@lownamepenalty=\count341
-\c@maxparens=\count342
-\c@parenlevel=\count343
-\blx@tempcnta=\count344
-\blx@tempcntb=\count345
-\blx@tempcntc=\count346
-\c@blx@maxsection=\count347
-\blx@maxsegment@0=\count348
-\blx@notetype=\count349
-\blx@parenlevel@text=\count350
-\blx@parenlevel@foot=\count351
-\blx@sectionciteorder@0=\count352
-\blx@sectionciteorderinternal@0=\count353
-\blx@entrysetcounter=\count354
-\blx@biblioinstance=\count355
-\labelnumberwidth=\skip73
-\labelalphawidth=\skip74
-\biblabelsep=\skip75
-\bibitemsep=\skip76
-\bibnamesep=\skip77
-\bibinitsep=\skip78
-\bibparsep=\skip79
-\bibhang=\skip80
+\c@tabx@nest=\count314
+\c@listtotal=\count315
+\c@listcount=\count316
+\c@liststart=\count317
+\c@liststop=\count318
+\c@citecount=\count319
+\c@citetotal=\count320
+\c@multicitecount=\count321
+\c@multicitetotal=\count322
+\c@instcount=\count323
+\c@maxnames=\count324
+\c@minnames=\count325
+\c@maxitems=\count326
+\c@minitems=\count327
+\c@citecounter=\count328
+\c@maxcitecounter=\count329
+\c@savedcitecounter=\count330
+\c@uniquelist=\count331
+\c@uniquename=\count332
+\c@refsection=\count333
+\c@refsegment=\count334
+\c@maxextratitle=\count335
+\c@maxextratitleyear=\count336
+\c@maxextraname=\count337
+\c@maxextradate=\count338
+\c@maxextraalpha=\count339
+\c@abbrvpenalty=\count340
+\c@highnamepenalty=\count341
+\c@lownamepenalty=\count342
+\c@maxparens=\count343
+\c@parenlevel=\count344
+\blx@tempcnta=\count345
+\blx@tempcntb=\count346
+\blx@tempcntc=\count347
+\c@blx@maxsection=\count348
+\blx@maxsegment@0=\count349
+\blx@notetype=\count350
+\blx@parenlevel@text=\count351
+\blx@parenlevel@foot=\count352
+\blx@sectionciteorder@0=\count353
+\blx@sectionciteorderinternal@0=\count354
+\blx@entrysetcounter=\count355
+\blx@biblioinstance=\count356
+\labelnumberwidth=\skip74
+\labelalphawidth=\skip75
+\biblabelsep=\skip76
+\bibitemsep=\skip77
+\bibnamesep=\skip78
+\bibinitsep=\skip79
+\bibparsep=\skip80
+\bibhang=\skip81
 \blx@bcfin=\read3
 \blx@bcfout=\write3
 \blx@langwohyphens=\language6
-\c@mincomprange=\count356
-\c@maxcomprange=\count357
-\c@mincompwidth=\count358
+\c@mincomprange=\count357
+\c@maxcomprange=\count358
+\c@mincompwidth=\count359
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -556,88 +616,88 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'authoryear.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count359
-\c@savedafterword=\count360
-\c@annotator=\count361
-\c@savedannotator=\count362
-\c@author=\count363
-\c@savedauthor=\count364
-\c@bookauthor=\count365
-\c@savedbookauthor=\count366
-\c@commentator=\count367
-\c@savedcommentator=\count368
-\c@editor=\count369
-\c@savededitor=\count370
-\c@editora=\count371
-\c@savededitora=\count372
-\c@editorb=\count373
-\c@savededitorb=\count374
-\c@editorc=\count375
-\c@savededitorc=\count376
-\c@foreword=\count377
-\c@savedforeword=\count378
-\c@holder=\count379
-\c@savedholder=\count380
-\c@introduction=\count381
-\c@savedintroduction=\count382
-\c@namea=\count383
-\c@savednamea=\count384
-\c@nameb=\count385
-\c@savednameb=\count386
-\c@namec=\count387
-\c@savednamec=\count388
-\c@translator=\count389
-\c@savedtranslator=\count390
-\c@shortauthor=\count391
-\c@savedshortauthor=\count392
-\c@shorteditor=\count393
-\c@savedshorteditor=\count394
-\c@labelname=\count395
-\c@savedlabelname=\count396
-\c@institution=\count397
-\c@savedinstitution=\count398
-\c@lista=\count399
-\c@savedlista=\count400
-\c@listb=\count401
-\c@savedlistb=\count402
-\c@listc=\count403
-\c@savedlistc=\count404
-\c@listd=\count405
-\c@savedlistd=\count406
-\c@liste=\count407
-\c@savedliste=\count408
-\c@listf=\count409
-\c@savedlistf=\count410
-\c@location=\count411
-\c@savedlocation=\count412
-\c@organization=\count413
-\c@savedorganization=\count414
-\c@origlocation=\count415
-\c@savedoriglocation=\count416
-\c@origpublisher=\count417
-\c@savedorigpublisher=\count418
-\c@publisher=\count419
-\c@savedpublisher=\count420
-\c@language=\count421
-\c@savedlanguage=\count422
-\c@origlanguage=\count423
-\c@savedoriglanguage=\count424
-\c@pageref=\count425
-\c@savedpageref=\count426
-\shorthandwidth=\skip81
-\shortjournalwidth=\skip82
-\shortserieswidth=\skip83
-\shorttitlewidth=\skip84
-\shortauthorwidth=\skip85
-\shorteditorwidth=\skip86
-\locallabelnumberwidth=\skip87
-\locallabelalphawidth=\skip88
-\localshorthandwidth=\skip89
-\localshortjournalwidth=\skip90
-\localshortserieswidth=\skip91
-\localshorttitlewidth=\skip92
-\localshortauthorwidth=\skip93
-\localshorteditorwidth=\skip94
+\c@afterword=\count360
+\c@savedafterword=\count361
+\c@annotator=\count362
+\c@savedannotator=\count363
+\c@author=\count364
+\c@savedauthor=\count365
+\c@bookauthor=\count366
+\c@savedbookauthor=\count367
+\c@commentator=\count368
+\c@savedcommentator=\count369
+\c@editor=\count370
+\c@savededitor=\count371
+\c@editora=\count372
+\c@savededitora=\count373
+\c@editorb=\count374
+\c@savededitorb=\count375
+\c@editorc=\count376
+\c@savededitorc=\count377
+\c@foreword=\count378
+\c@savedforeword=\count379
+\c@holder=\count380
+\c@savedholder=\count381
+\c@introduction=\count382
+\c@savedintroduction=\count383
+\c@namea=\count384
+\c@savednamea=\count385
+\c@nameb=\count386
+\c@savednameb=\count387
+\c@namec=\count388
+\c@savednamec=\count389
+\c@translator=\count390
+\c@savedtranslator=\count391
+\c@shortauthor=\count392
+\c@savedshortauthor=\count393
+\c@shorteditor=\count394
+\c@savedshorteditor=\count395
+\c@labelname=\count396
+\c@savedlabelname=\count397
+\c@institution=\count398
+\c@savedinstitution=\count399
+\c@lista=\count400
+\c@savedlista=\count401
+\c@listb=\count402
+\c@savedlistb=\count403
+\c@listc=\count404
+\c@savedlistc=\count405
+\c@listd=\count406
+\c@savedlistd=\count407
+\c@liste=\count408
+\c@savedliste=\count409
+\c@listf=\count410
+\c@savedlistf=\count411
+\c@location=\count412
+\c@savedlocation=\count413
+\c@organization=\count414
+\c@savedorganization=\count415
+\c@origlocation=\count416
+\c@savedoriglocation=\count417
+\c@origpublisher=\count418
+\c@savedorigpublisher=\count419
+\c@publisher=\count420
+\c@savedpublisher=\count421
+\c@language=\count422
+\c@savedlanguage=\count423
+\c@origlanguage=\count424
+\c@savedoriglanguage=\count425
+\c@pageref=\count426
+\c@savedpageref=\count427
+\shorthandwidth=\skip82
+\shortjournalwidth=\skip83
+\shortserieswidth=\skip84
+\shorttitlewidth=\skip85
+\shortauthorwidth=\skip86
+\shorteditorwidth=\skip87
+\locallabelnumberwidth=\skip88
+\locallabelalphawidth=\skip89
+\localshorthandwidth=\skip90
+\localshortjournalwidth=\skip91
+\localshortserieswidth=\skip92
+\localshorttitlewidth=\skip93
+\localshortauthorwidth=\skip94
+\localshorteditorwidth=\skip95
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -649,19 +709,19 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
-\c@textcitecount=\count427
-\c@textcitetotal=\count428
-\c@textcitemaxnames=\count429
-\c@biburlbigbreakpenalty=\count430
-\c@biburlbreakpenalty=\count431
-\c@biburlnumpenalty=\count432
-\c@biburlucpenalty=\count433
-\c@biburllcpenalty=\count434
+\c@textcitecount=\count428
+\c@textcitetotal=\count429
+\c@textcitemaxnames=\count430
+\c@biburlbigbreakpenalty=\count431
+\c@biburlbreakpenalty=\count432
+\c@biburlnumpenalty=\count433
+\c@biburlucpenalty=\count434
+\c@biburllcpenalty=\count435
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count435
+\c@smartand=\count436
 )
 Package biblatex Info: Trying to load bibliography style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.bbx' found.
@@ -673,8 +733,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count436
-\c@bbx:relatedtotal=\count437
+\c@bbx:relatedcount=\count437
+\c@bbx:relatedtotal=\count438
 ))
 Package biblatex Info: Trying to load citation style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.cbx' found.
@@ -703,8 +763,8 @@ Package: expl3 2024-01-22 L3 programming layer (loader)
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count438
-\l__pdf_internal_box=\box59
+\l__color_backend_stack_int=\count439
+\l__pdf_internal_box=\box62
 ))
 Package biblatex Info: ... and expl3
 (biblatex)             2024-01-22 L3 programming layer (loader) 
@@ -720,54 +780,54 @@ Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
 (/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 51.
-\cftparskip=\skip95
-\cftbeforetoctitleskip=\skip96
-\cftaftertoctitleskip=\skip97
-\cftbeforepartskip=\skip98
-\cftpartnumwidth=\skip99
-\cftpartindent=\skip100
-\cftbeforechapskip=\skip101
-\cftchapindent=\skip102
-\cftchapnumwidth=\skip103
-\cftbeforesecskip=\skip104
-\cftsecindent=\skip105
-\cftsecnumwidth=\skip106
-\cftbeforesubsecskip=\skip107
-\cftsubsecindent=\skip108
-\cftsubsecnumwidth=\skip109
-\cftbeforesubsubsecskip=\skip110
-\cftsubsubsecindent=\skip111
-\cftsubsubsecnumwidth=\skip112
-\cftbeforeparaskip=\skip113
-\cftparaindent=\skip114
-\cftparanumwidth=\skip115
-\cftbeforesubparaskip=\skip116
-\cftsubparaindent=\skip117
-\cftsubparanumwidth=\skip118
-\cftbeforeloftitleskip=\skip119
-\cftafterloftitleskip=\skip120
-\cftbeforefigskip=\skip121
-\cftfigindent=\skip122
-\cftfignumwidth=\skip123
-\c@lofdepth=\count439
-\c@lotdepth=\count440
-\cftbeforelottitleskip=\skip124
-\cftafterlottitleskip=\skip125
-\cftbeforetabskip=\skip126
-\cfttabindent=\skip127
-\cfttabnumwidth=\skip128
+\cftparskip=\skip96
+\cftbeforetoctitleskip=\skip97
+\cftaftertoctitleskip=\skip98
+\cftbeforepartskip=\skip99
+\cftpartnumwidth=\skip100
+\cftpartindent=\skip101
+\cftbeforechapskip=\skip102
+\cftchapindent=\skip103
+\cftchapnumwidth=\skip104
+\cftbeforesecskip=\skip105
+\cftsecindent=\skip106
+\cftsecnumwidth=\skip107
+\cftbeforesubsecskip=\skip108
+\cftsubsecindent=\skip109
+\cftsubsecnumwidth=\skip110
+\cftbeforesubsubsecskip=\skip111
+\cftsubsubsecindent=\skip112
+\cftsubsubsecnumwidth=\skip113
+\cftbeforeparaskip=\skip114
+\cftparaindent=\skip115
+\cftparanumwidth=\skip116
+\cftbeforesubparaskip=\skip117
+\cftsubparaindent=\skip118
+\cftsubparanumwidth=\skip119
+\cftbeforeloftitleskip=\skip120
+\cftafterloftitleskip=\skip121
+\cftbeforefigskip=\skip122
+\cftfigindent=\skip123
+\cftfignumwidth=\skip124
+\c@lofdepth=\count440
+\c@lotdepth=\count441
+\cftbeforelottitleskip=\skip125
+\cftafterlottitleskip=\skip126
+\cftbeforetabskip=\skip127
+\cfttabindent=\skip128
+\cfttabnumwidth=\skip129
 )
 (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2023/10/27 v2.16 Sectioning titles
-\ttl@box=\box60
-\beforetitleunit=\skip129
-\aftertitleunit=\skip130
-\ttl@plus=\dimen199
-\ttl@minus=\dimen256
-\ttl@toksa=\toks37
-\titlewidth=\dimen257
-\titlewidthlast=\dimen258
-\titlewidthfirst=\dimen259
+\ttl@box=\box63
+\beforetitleunit=\skip130
+\aftertitleunit=\skip131
+\ttl@plus=\dimen269
+\ttl@minus=\dimen270
+\ttl@toksa=\toks39
+\titlewidth=\dimen271
+\titlewidthlast=\dimen272
+\titlewidthfirst=\dimen273
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -783,24 +843,24 @@ LaTeX Warning: Label `3 NGC205_velocity_hist' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 192.
+LaTeX Font Info:    ... okay on input line 192.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 192.
+LaTeX Font Info:    ... okay on input line 192.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 192.
+LaTeX Font Info:    ... okay on input line 192.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 192.
+LaTeX Font Info:    ... okay on input line 192.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 192.
+LaTeX Font Info:    ... okay on input line 192.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 192.
+LaTeX Font Info:    ... okay on input line 192.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 192.
+LaTeX Font Info:    ... okay on input line 192.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 192.
+LaTeX Font Info:    ... okay on input line 192.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 192.
+LaTeX Font Info:    ... okay on input line 192.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -838,17 +898,17 @@ LaTeX Font Info:    ... okay on input line 189.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count441
-\scratchdimen=\dimen260
-\scratchbox=\box61
-\nofMPsegments=\count442
-\nofMParguments=\count443
-\everyMPshowfont=\toks38
-\MPscratchCnt=\count444
-\MPscratchDim=\dimen261
-\MPnumerator=\count445
-\makeMPintoPDFobject=\count446
-\everyMPtoPDFconversion=\toks39
+\scratchcounter=\count442
+\scratchdimen=\dimen274
+\scratchbox=\box64
+\nofMPsegments=\count443
+\nofMParguments=\count444
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count445
+\MPscratchDim=\dimen275
+\MPnumerator=\count446
+\makeMPintoPDFobject=\count447
+\everyMPtoPDFconversion=\toks41
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -861,7 +921,7 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 189.
+Package hyperref Info: Link coloring OFF on input line 192.
 
 (./main.out) (./main.out)
 \@outlinefile=\write4
@@ -888,22 +948,15 @@ Package biblatex Warning: The following entry could not be found
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Terzic
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
 )
-Package biblatex Info: Reference section=0 on input line 189.
-Package biblatex Info: Reference segment=0 on input line 189.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 201
+Package biblatex Info: Reference section=0 on input line 192.
+Package biblatex Info: Reference segment=0 on input line 192.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 204
 .
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 201
+LaTeX Font Info:    Trying to load font information for U+msb on input line 204
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -923,18 +976,18 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: Thesis_images/IMBH_Review_Formation.png Graphic file (type png)
 <use Thesis_images/IMBH_Review_Formation.png>
 Package pdftex.def Info: Thesis_images/IMBH_Review_Formation.png  used on input
- line 238.
+ line 241.
 (pdftex.def)             Requested size: 241.84843pt x 189.43405pt.
 <Thesis_images/Maiolino.png, id=197, 1716.4125pt x 526.96875pt>
 File: Thesis_images/Maiolino.png Graphic file (type png)
 <use Thesis_images/Maiolino.png>
-Package pdftex.def Info: Thesis_images/Maiolino.png  used on input line 245.
+Package pdftex.def Info: Thesis_images/Maiolino.png  used on input line 248.
 (pdftex.def)             Requested size: 386.95897pt x 118.79604pt.
  [4 <./Thesis_images/IMBH_Review_Formation.png>]
 <Thesis_images/Eros.png, id=221, 800.9925pt x 734.745pt>
 File: Thesis_images/Eros.png Graphic file (type png)
 <use Thesis_images/Eros.png>
-Package pdftex.def Info: Thesis_images/Eros.png  used on input line 252.
+Package pdftex.def Info: Thesis_images/Eros.png  used on input line 255.
 (pdftex.def)             Requested size: 241.84843pt x 221.83781pt.
  [5 <./Thesis_images/Maiolino.png>] [6 <./Thesis_images/Eros.png>]
 Chapter 1.
@@ -945,10 +998,10 @@ Chapter 1.
 File: Thesis_images/Nipoti_Londrillo_2007.png Graphic file (type png)
 <use Thesis_images/Nipoti_Londrillo_2007.png>
 Package pdftex.def Info: Thesis_images/Nipoti_Londrillo_2007.png  used on input
- line 349.
+ line 352.
 (pdftex.def)             Requested size: 241.84843pt x 235.18979pt.
  [9 <./Thesis_images/Nipoti_Londrillo_2007.png>] [10]
-Overfull \hbox (2.76476pt too wide) in paragraph at lines 423--425
+Overfull \hbox (2.76476pt too wide) in paragraph at lines 426--428
 \T1/cmr/m/n/12 Thus, the vi-o-lent re-lax-ation timescale is di-rectly re-lated
  to the char-ac-ter-is-tic dy-nam-i-cal timescale
  []
@@ -957,10 +1010,10 @@ Overfull \hbox (2.76476pt too wide) in paragraph at lines 423--425
 <Thesis_images/Loss_cone.png, id=513, 320.48303pt x 399.6359pt>
 File: Thesis_images/Loss_cone.png Graphic file (type png)
 <use Thesis_images/Loss_cone.png>
-Package pdftex.def Info: Thesis_images/Loss_cone.png  used on input line 713.
+Package pdftex.def Info: Thesis_images/Loss_cone.png  used on input line 716.
 (pdftex.def)             Requested size: 241.84843pt x 301.59215pt.
  [20 <./Thesis_images/Loss_cone.png>] [21] [22] [23] [24] [25]
-Overfull \hbox (11.55556pt too wide) in paragraph at lines 943--943
+Overfull \hbox (11.55556pt too wide) in paragraph at lines 946--946
 |[]\T1/cmr/bx/n/14.4 Gravitational Waves from Black Hole Bi-na-ries and Back-Re
 action| 
  []
@@ -970,356 +1023,295 @@ Chapter 2.
 [30
 
 ] [31] [32] [33]
-<Thesis_images/H_1.png, id=776, 235.30768pt x 364.79143pt>
+<Thesis_images/H_1.png, id=777, 235.30768pt x 364.79143pt>
 File: Thesis_images/H_1.png Graphic file (type png)
 <use Thesis_images/H_1.png>
-Package pdftex.def Info: Thesis_images/H_1.png  used on input line 1316.
+Package pdftex.def Info: Thesis_images/H_1.png  used on input line 1320.
 (pdftex.def)             Requested size: 110.12067pt x 170.71652pt.
-<Thesis_images/H_Sesana2006.png, id=777, 338.55054pt x 318.33214pt>
+<Thesis_images/H_Sesana2006.png, id=778, 338.55054pt x 318.33214pt>
 File: Thesis_images/H_Sesana2006.png Graphic file (type png)
 <use Thesis_images/H_Sesana2006.png>
 Package pdftex.def Info: Thesis_images/H_Sesana2006.png  used on input line 132
-3.
+7.
 (pdftex.def)             Requested size: 181.55927pt x 170.71652pt.
  [34] [35 <./Thesis_images/H_1.png> <./Thesis_images/H_Sesana2006.png>] [36] [3
 7]
-<Thesis_images/Cusps_density.png, id=853, 418.4433pt x 313.17pt>
+<Thesis_images/Cusps_density.png, id=856, 418.4433pt x 313.17pt>
 File: Thesis_images/Cusps_density.png Graphic file (type png)
 <use Thesis_images/Cusps_density.png>
 Package pdftex.def Info: Thesis_images/Cusps_density.png  used on input line 14
-52.
+56.
 (pdftex.def)             Requested size: 241.84843pt x 181.00316pt.
- [38 <./Thesis_images/Cusps_density.png>]
-<Thesis_images/Cusps_H.png, id=865, 411.2163pt x 309.3156pt>
+ [38]
+<Thesis_images/Cusps_H.png, id=867, 411.2163pt x 309.3156pt>
 File: Thesis_images/Cusps_H.png Graphic file (type png)
 <use Thesis_images/Cusps_H.png>
-Package pdftex.def Info: Thesis_images/Cusps_H.png  used on input line 1460.
+Package pdftex.def Info: Thesis_images/Cusps_H.png  used on input line 1463.
 (pdftex.def)             Requested size: 241.84843pt x 181.9188pt.
-<Thesis_images/A_K_vs_e.png, id=872, 433.62pt x 325.215pt>
+<Thesis_images/A_K_vs_e.png, id=874, 433.62pt x 325.215pt>
 File: Thesis_images/A_K_vs_e.png Graphic file (type png)
 <use Thesis_images/A_K_vs_e.png>
-Package pdftex.def Info: Thesis_images/A_K_vs_e.png  used on input line 1470.
+Package pdftex.def Info: Thesis_images/A_K_vs_e.png  used on input line 1473.
 (pdftex.def)             Requested size: 232.17242pt x 174.12973pt.
-<Thesis_images/a0_K_vs_e.png, id=873, 433.62pt x 325.215pt>
+<Thesis_images/a0_K_vs_e.png, id=875, 433.62pt x 325.215pt>
 File: Thesis_images/a0_K_vs_e.png Graphic file (type png)
 <use Thesis_images/a0_K_vs_e.png>
-Package pdftex.def Info: Thesis_images/a0_K_vs_e.png  used on input line 1477.
+Package pdftex.def Info: Thesis_images/a0_K_vs_e.png  used on input line 1480.
 (pdftex.def)             Requested size: 232.17242pt x 174.12973pt.
-<Thesis_images/gamma_K_vs_e.png, id=874, 433.62pt x 325.215pt>
+<Thesis_images/gamma_K_vs_e.png, id=876, 433.62pt x 325.215pt>
 File: Thesis_images/gamma_K_vs_e.png Graphic file (type png)
 <use Thesis_images/gamma_K_vs_e.png>
 Package pdftex.def Info: Thesis_images/gamma_K_vs_e.png  used on input line 148
-6.
+9.
 (pdftex.def)             Requested size: 232.17242pt x 174.12973pt.
-<Thesis_images/B_K_vs_e.png, id=875, 433.62pt x 325.215pt>
+<Thesis_images/B_K_vs_e.png, id=877, 433.62pt x 325.215pt>
 File: Thesis_images/B_K_vs_e.png Graphic file (type png)
 <use Thesis_images/B_K_vs_e.png>
-Package pdftex.def Info: Thesis_images/B_K_vs_e.png  used on input line 1493.
+Package pdftex.def Info: Thesis_images/B_K_vs_e.png  used on input line 1496.
 (pdftex.def)             Requested size: 232.17242pt x 174.12973pt.
- [39 <./Thesis_images/Cusps_H.png>]
-<Thesis_images/Cusps_K_vs_a.png, id=886, 433.62pt x 325.215pt>
+ [39 <./Thesis_images/Cusps_density.png> <./Thesis_images/Cusps_H.png>]
+<Thesis_images/Cusps_K_vs_a.png, id=889, 433.62pt x 325.215pt>
 File: Thesis_images/Cusps_K_vs_a.png Graphic file (type png)
 <use Thesis_images/Cusps_K_vs_a.png>
 Package pdftex.def Info: Thesis_images/Cusps_K_vs_a.png  used on input line 150
-6.
+9.
 (pdftex.def)             Requested size: 237.01411pt x 177.76219pt.
-<Thesis_images/Cusps_K_vs_e.png, id=887, 433.62pt x 325.215pt>
+<Thesis_images/Cusps_K_vs_e.png, id=890, 433.62pt x 325.215pt>
 File: Thesis_images/Cusps_K_vs_e.png Graphic file (type png)
 <use Thesis_images/Cusps_K_vs_e.png>
 Package pdftex.def Info: Thesis_images/Cusps_K_vs_e.png  used on input line 151
-3.
+6.
 (pdftex.def)             Requested size: 237.01411pt x 177.76219pt.
  [40 <./Thesis_images/A_K_vs_e.png> <./Thesis_images/a0_K_vs_e.png> <./Thesis_i
 mages/gamma_K_vs_e.png> <./Thesis_images/B_K_vs_e.png>]
-<Thesis_images/Cusps_a_vs_t_log.png, id=899, 433.62pt x 325.215pt>
+<Thesis_images/Cusps_a_vs_t_log.png, id=902, 433.62pt x 325.215pt>
 File: Thesis_images/Cusps_a_vs_t_log.png Graphic file (type png)
 <use Thesis_images/Cusps_a_vs_t_log.png>
 Package pdftex.def Info: Thesis_images/Cusps_a_vs_t_log.png  used on input line
- 1533.
+ 1536.
 (pdftex.def)             Requested size: 237.01411pt x 177.76219pt.
-<Thesis_images/Cusps_e_vs_t_log.png, id=900, 433.62pt x 325.215pt>
+<Thesis_images/Cusps_e_vs_t_log.png, id=903, 433.62pt x 325.215pt>
 File: Thesis_images/Cusps_e_vs_t_log.png Graphic file (type png)
 <use Thesis_images/Cusps_e_vs_t_log.png>
 Package pdftex.def Info: Thesis_images/Cusps_e_vs_t_log.png  used on input line
- 1540.
+ 1543.
 (pdftex.def)             Requested size: 237.01411pt x 177.76219pt.
-
-Overfull \hbox (37.71481pt too wide) in paragraph at lines 1547--1548
-[]\T1/cmr/m/n/12 The first rel-e-vant re-sult con-cerns the es-ti-mated co-a-le
-s-cence timescales, $\OML/cmm/m/it/12 ^^\[] \OT1/cmr/m/n/12 = (34\OML/cmm/m/it/
-12 :\OT1/cmr/m/n/12 7\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 17\OML/cmm/m/it/12 :\OT
-1/cmr/m/n/12 6\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 8\OML/cmm/m/it/12 :\OT1/cmr/m/
-n/12 18) \OML/cmm/m/it/12 Myr$\T1/cmr/m/n/12 .
- []
 
 [41 <./Thesis_images/Cusps_K_vs_a.png> <./Thesis_images/Cusps_K_vs_e.png> <./Th
 esis_images/Cusps_a_vs_t_log.png> <./Thesis_images/Cusps_e_vs_t_log.png>]
-
-LaTeX Warning: Citation 'Prugniel' on page 42 undefined on input line 1569.
-
-
-LaTeX Warning: Citation 'Terzic' on page 42 undefined on input line 1574.
-
-<Thesis_images/Khan_2021_table.png, id=916, 618.05907pt x 146.04562pt>
-File: Thesis_images/Khan_2021_table.png Graphic file (type png)
-<use Thesis_images/Khan_2021_table.png>
-Package pdftex.def Info: Thesis_images/Khan_2021_table.png  used on input line 
-1584.
-(pdftex.def)             Requested size: 241.84843pt x 57.14697pt.
-[42 <./Thesis_images/Khan_2021_table.png>]
-<Thesis_images/NGC205_density_profile.png, id=926, 433.62pt x 325.215pt>
+[42] [43]
+<Thesis_images/NGC205_density_profile.png, id=966, 433.62pt x 325.215pt>
 File: Thesis_images/NGC205_density_profile.png Graphic file (type png)
 <use Thesis_images/NGC205_density_profile.png>
 Package pdftex.def Info: Thesis_images/NGC205_density_profile.png  used on inpu
-t line 1654.
+t line 1644.
 (pdftex.def)             Requested size: 237.01411pt x 177.76219pt.
-<Thesis_images/NGC205_mass_profile.png, id=927, 433.62pt x 325.215pt>
+<Thesis_images/NGC205_mass_profile.png, id=967, 433.62pt x 325.215pt>
 File: Thesis_images/NGC205_mass_profile.png Graphic file (type png)
 <use Thesis_images/NGC205_mass_profile.png>
 Package pdftex.def Info: Thesis_images/NGC205_mass_profile.png  used on input l
-ine 1661.
+ine 1651.
 (pdftex.def)             Requested size: 237.01411pt x 177.76219pt.
- [43]
-<Thesis_images/NGC205_sigma_profile.png, id=945, 433.62pt x 325.215pt>
+ [44 <./Thesis_images/NGC205_density_profile.png> <./Thesis_images/NGC205_mass_
+profile.png>]
+<Thesis_images/NGC205_sigma_profile.png, id=986, 433.62pt x 325.215pt>
 File: Thesis_images/NGC205_sigma_profile.png Graphic file (type png)
 <use Thesis_images/NGC205_sigma_profile.png>
 Package pdftex.def Info: Thesis_images/NGC205_sigma_profile.png  used on input 
-line 1670.
+line 1682.
 (pdftex.def)             Requested size: 241.84843pt x 181.38968pt.
-<Thesis_images/NGC205_a_vs_t_log_e_sampling.png, id=946, 433.62pt x 325.215pt>
+<Thesis_images/NGC205_a_vs_t_log_e_sampling.png, id=991, 433.62pt x 325.215pt>
 File: Thesis_images/NGC205_a_vs_t_log_e_sampling.png Graphic file (type png)
 <use Thesis_images/NGC205_a_vs_t_log_e_sampling.png>
 Package pdftex.def Info: Thesis_images/NGC205_a_vs_t_log_e_sampling.png  used o
-n input line 1680.
+n input line 1705.
 (pdftex.def)             Requested size: 237.01411pt x 177.76219pt.
-<Thesis_images/NGC205_e_vs_t_log_e_sampling.png, id=947, 433.62pt x 325.215pt>
+<Thesis_images/NGC205_e_vs_t_log_e_sampling.png, id=992, 433.62pt x 325.215pt>
 File: Thesis_images/NGC205_e_vs_t_log_e_sampling.png Graphic file (type png)
 <use Thesis_images/NGC205_e_vs_t_log_e_sampling.png>
 Package pdftex.def Info: Thesis_images/NGC205_e_vs_t_log_e_sampling.png  used o
-n input line 1687.
+n input line 1712.
 (pdftex.def)             Requested size: 237.01411pt x 177.76219pt.
-
-Overfull \hbox (7.18593pt too wide) in paragraph at lines 1706--1707
-[]\T1/cmr/m/n/12 Adopting the same pre-scrip-tion of []Khan and Holley-Bockelma
-nn []2021[] and []Holley-Bockelmann
+ [45 <./Thesis_images/NGC205_sigma_profile.png>]
+Overfull \hbox (1.40335pt too wide) in paragraph at lines 1720--1721
+\T1/cmr/m/n/12 Specifically, it is found $\OML/cmm/m/it/12 ^^\[] \OT1/cmr/m/n/1
+2 = (67\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 57
+\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 27\OML/cm
+m/m/it/12 :\OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 11\OML/cmm/m/it/
+12 :\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 :\OT1
+/cmr/m/n/12 4) \OML/cmm/m/it/12 Myr$ \T1/cmr/m/n/12 for $\OML/cmm/m/it/12 e \OT
+1/cmr/m/n/12 = (0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 01\OML/cmm/m/it/12 ; \OT1/cm
+r/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 25\OML/cmm/m/it/12 ; \OT1/cmr/m/n/1
+2 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 50\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML
+/cmm/m/it/12 :\OT1/cmr/m/n/12 75\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/
+it/12 :\OT1/cmr/m/n/12 99)$\T1/cmr/m/n/12 ,
  []
 
-[44 <./Thesis_images/NGC205_density_profile.png> <./Thesis_images/NGC205_mass_p
-rofile.png> <./Thesis_images/NGC205_sigma_profile.png> <./Thesis_images/NGC205_
-a_vs_t_log_e_sampling.png> <./Thesis_images/NGC205_e_vs_t_log_e_sampling.png>]
-
-LaTeX Warning: Citation 'Terzic' on page 45 undefined on input line 1723.
-
-
-Overfull \hbox (3.68037pt too wide) in paragraph at lines 1748--1751
-\T1/cmr/m/n/12 The in-te-gral leads to $\OML/cmm/m/it/12 ^^[[] \OT1/cmr/m/n/12 
-=$\T1/cmr/m/n/12 32.6km/s. As both $\OML/cmm/m/it/12 ^^[\OT1/cmr/m/n/12 (\OML/c
-mm/m/it/12 r\OT1/cmr/m/n/12 )$ \T1/cmr/m/n/12 and the cir-cu-lar speed $\OML/cm
-m/m/it/12 V[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 r\OT1/cmr/m/n/12 ) = []$
- []
-
-[45]
-
-LaTeX Warning: Reference `NGC205 a vs t' on page 46 undefined on input line 177
-1.
-
-
-LaTeX Warning: Reference `NGC205 e vs t' on page 46 undefined on input line 177
-1.
-
-
-LaTeX Warning: Reference `Cosmic size density plot' on page 46 undefined on inp
-ut line 1793.
-
-
-LaTeX Warning: Reference `Cosmic size H plot' on page 46 undefined on input lin
-e 1796.
-
-
-LaTeX Warning: Reference `Cosmic size K plot' on page 46 undefined on input lin
-e 1796.
-
-[46]
-
-LaTeX Warning: Reference `Cosmic size a vs t plot' on page 47 undefined on inpu
-t line 1798.
-
-
-LaTeX Warning: Reference `Cosmic size e vs t plot' on page 47 undefined on inpu
-t line 1798.
-
-
-Overfull \hbox (11.70291pt too wide) in paragraph at lines 1798--1799
-\T1/cmr/m/n/12 ap-ply-ing RK(4) to the Equa-tions ([]2.50[]) and ([]2.51[]) and
- ini-tial con-di-tion $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t[]a[]; e[]\OT1/cmr/m/
-n/12 ) = (0\OML/cmm/m/it/12 yr; \OT1/cmr/m/n/12 15\OML/cmm/m/it/12 pc; \OT1/cmr
-/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 7)$\T1/cmr/m/n/12 . 
- []
-
-<Thesis_images/NGC205_Bulge_a_vs_t.png, id=1007, 416.757pt x 311.9655pt>
+[46 <./Thesis_images/NGC205_a_vs_t_log_e_sampling.png> <./Thesis_images/NGC205_
+e_vs_t_log_e_sampling.png>]
+<Thesis_images/NGC205_Bulge_a_vs_t.png, id=1020, 433.62pt x 325.215pt>
 File: Thesis_images/NGC205_Bulge_a_vs_t.png Graphic file (type png)
 <use Thesis_images/NGC205_Bulge_a_vs_t.png>
 Package pdftex.def Info: Thesis_images/NGC205_Bulge_a_vs_t.png  used on input l
-ine 1846.
-(pdftex.def)             Requested size: 241.84843pt x 181.03531pt.
-[47]
-<Thesis_images/NGC205_Bulge_e_vs_t.png, id=1013, 409.53pt x 311.9655pt>
+ine 1761.
+(pdftex.def)             Requested size: 237.01411pt x 177.76219pt.
+<Thesis_images/NGC205_Bulge_e_vs_t.png, id=1021, 433.62pt x 325.215pt>
 File: Thesis_images/NGC205_Bulge_e_vs_t.png Graphic file (type png)
 <use Thesis_images/NGC205_Bulge_e_vs_t.png>
 Package pdftex.def Info: Thesis_images/NGC205_Bulge_e_vs_t.png  used on input l
-ine 1853.
-(pdftex.def)             Requested size: 241.84843pt x 184.23418pt.
-<Thesis_images/Bulges_vs_NSC_density_profile.png, id=1014, 418.4433pt x 312.929
+ine 1768.
+(pdftex.def)             Requested size: 237.01411pt x 177.76219pt.
+<Thesis_images/Bulges_vs_NSC_density_profile.png, id=1030, 418.4433pt x 312.929
 1pt>
 File: Thesis_images/Bulges_vs_NSC_density_profile.png Graphic file (type png)
 <use Thesis_images/Bulges_vs_NSC_density_profile.png>
 Package pdftex.def Info: Thesis_images/Bulges_vs_NSC_density_profile.png  used 
-on input line 1869.
+on input line 1783.
 (pdftex.def)             Requested size: 241.84843pt x 180.86392pt.
-<Thesis_images/Galaxies_H_unbound.png, id=1015, 411.2163pt x 309.3156pt>
+ [47 <./Thesis_images/NGC205_Bulge_a_vs_t.png> <./Thesis_images/NGC205_Bulge_e_
+vs_t.png>] [48 <./Thesis_images/Bulges_vs_NSC_density_profile.png>]
+<Thesis_images/Galaxies_H_unbound.png, id=1054, 433.62pt x 325.215pt>
 File: Thesis_images/Galaxies_H_unbound.png Graphic file (type png)
 <use Thesis_images/Galaxies_H_unbound.png>
 Package pdftex.def Info: Thesis_images/Galaxies_H_unbound.png  used on input li
-ne 1876.
-(pdftex.def)             Requested size: 241.84843pt x 181.9188pt.
- [48 <./Thesis_images/NGC205_Bulge_a_vs_t.png> <./Thesis_images/NGC205_Bulge_e_
-vs_t.png> <./Thesis_images/Bulges_vs_NSC_density_profile.png>]
-<Thesis_images/Galaxies_K_vs_e.png, id=1024, 435.3063pt x 323.7696pt>
-File: Thesis_images/Galaxies_K_vs_e.png Graphic file (type png)
-<use Thesis_images/Galaxies_K_vs_e.png>
-Package pdftex.def Info: Thesis_images/Galaxies_K_vs_e.png  used on input line 
-1883.
-(pdftex.def)             Requested size: 241.84843pt x 179.88199pt.
-<Thesis_images/Galaxies_K_vs_a.png, id=1025, 421.0932pt x 324.4923pt>
+ne 1838.
+(pdftex.def)             Requested size: 154.78653pt x 116.0898pt.
+<Thesis_images/Galaxies_K_vs_a.png, id=1055, 433.62pt x 325.215pt>
 File: Thesis_images/Galaxies_K_vs_a.png Graphic file (type png)
 <use Thesis_images/Galaxies_K_vs_a.png>
 Package pdftex.def Info: Thesis_images/Galaxies_K_vs_a.png  used on input line 
-1890.
-(pdftex.def)             Requested size: 241.84843pt x 186.36871pt.
-<Thesis_images/Galaxies_a_vs_t.png, id=1026, 413.8662pt x 324.9741pt>
+1845.
+(pdftex.def)             Requested size: 154.78653pt x 116.0898pt.
+<Thesis_images/Galaxies_K_vs_e.png, id=1056, 433.62pt x 325.215pt>
+File: Thesis_images/Galaxies_K_vs_e.png Graphic file (type png)
+<use Thesis_images/Galaxies_K_vs_e.png>
+Package pdftex.def Info: Thesis_images/Galaxies_K_vs_e.png  used on input line 
+1852.
+(pdftex.def)             Requested size: 154.78653pt x 116.0898pt.
+<Thesis_images/Galaxies_a_vs_t.png, id=1057, 413.8662pt x 324.9741pt>
 File: Thesis_images/Galaxies_a_vs_t.png Graphic file (type png)
 <use Thesis_images/Galaxies_a_vs_t.png>
 Package pdftex.def Info: Thesis_images/Galaxies_a_vs_t.png  used on input line 
-1897.
+1866.
 (pdftex.def)             Requested size: 241.84843pt x 189.90329pt.
- [49 <./Thesis_images/Galaxies_H_unbound.png> <./Thesis_images/Galaxies_K_vs_e.
-png> <./Thesis_images/Galaxies_K_vs_a.png>]
-<Thesis_images/Galaxies_e_vs_t.png, id=1038, 405.9165pt x 324.9741pt>
+ [49 <./Thesis_images/Galaxies_H_unbound.png> <./Thesis_images/Galaxies_K_vs_a.
+png> <./Thesis_images/Galaxies_K_vs_e.png>]
+<Thesis_images/Galaxies_e_vs_t.png, id=1068, 405.9165pt x 324.9741pt>
 File: Thesis_images/Galaxies_e_vs_t.png Graphic file (type png)
 <use Thesis_images/Galaxies_e_vs_t.png>
 Package pdftex.def Info: Thesis_images/Galaxies_e_vs_t.png  used on input line 
-1904.
+1873.
 (pdftex.def)             Requested size: 241.84843pt x 193.62231pt.
  [50 <./Thesis_images/Galaxies_a_vs_t.png> <./Thesis_images/Galaxies_e_vs_t.png
->]
+>] [51]
 Chapter 3.
-[51
+[52
 
-] [52]
+] [53]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
-037.
+132.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [53]
+) [54]
 
-LaTeX Warning: Citation 'Prugniel' on page 54 undefined on input line 2077.
+LaTeX Warning: Citation 'Prugniel' on page 55 undefined on input line 2172.
 
-[54] [55]
-<Thesis_images/NGC205_bulge_scatter_XY_XZ.png, id=1119, 300.1614pt x 382.3083pt
+[55] [56]
+<Thesis_images/NGC205_bulge_scatter_XY_XZ.png, id=1154, 300.1614pt x 382.3083pt
 >
 File: Thesis_images/NGC205_bulge_scatter_XY_XZ.png Graphic file (type png)
 <use Thesis_images/NGC205_bulge_scatter_XY_XZ.png>
 Package pdftex.def Info: Thesis_images/NGC205_bulge_scatter_XY_XZ.png  used on 
-input line 2128.
+input line 2223.
 (pdftex.def)             Requested size: 145.11053pt x 184.82428pt.
-<Thesis_images/NGC205_NSC_scatter_XY_XZ.png, id=1120, 300.1614pt x 382.3083pt>
+<Thesis_images/NGC205_NSC_scatter_XY_XZ.png, id=1155, 300.1614pt x 382.3083pt>
 File: Thesis_images/NGC205_NSC_scatter_XY_XZ.png Graphic file (type png)
 <use Thesis_images/NGC205_NSC_scatter_XY_XZ.png>
 Package pdftex.def Info: Thesis_images/NGC205_NSC_scatter_XY_XZ.png  used on in
-put line 2134.
+put line 2229.
 (pdftex.def)             Requested size: 145.11053pt x 184.82428pt.
-<Thesis_images/NGC205_halfmass.png, id=1121, 409.53pt x 327.8649pt>
+<Thesis_images/NGC205_halfmass.png, id=1156, 409.53pt x 327.8649pt>
 File: Thesis_images/NGC205_halfmass.png Graphic file (type png)
 <use Thesis_images/NGC205_halfmass.png>
 Package pdftex.def Info: Thesis_images/NGC205_halfmass.png  used on input line 
-2140.
+2235.
 (pdftex.def)             Requested size: 145.11053pt x 116.17522pt.
-<Thesis_images/NGC205_bulge_space_hist.png, id=1122, 431.6928pt x 327.8649pt>
+<Thesis_images/NGC205_bulge_space_hist.png, id=1157, 431.6928pt x 327.8649pt>
 File: Thesis_images/NGC205_bulge_space_hist.png Graphic file (type png)
 <use Thesis_images/NGC205_bulge_space_hist.png>
 Package pdftex.def Info: Thesis_images/NGC205_bulge_space_hist.png  used on inp
-ut line 2158.
+ut line 2253.
 (pdftex.def)             Requested size: 145.11053pt x 110.20688pt.
-<Thesis_images/NGC205_NSC_space_hist.png, id=1123, 431.6928pt x 327.8649pt>
+<Thesis_images/NGC205_NSC_space_hist.png, id=1158, 431.6928pt x 327.8649pt>
 File: Thesis_images/NGC205_NSC_space_hist.png Graphic file (type png)
 <use Thesis_images/NGC205_NSC_space_hist.png>
 Package pdftex.def Info: Thesis_images/NGC205_NSC_space_hist.png  used on input
- line 2164.
+ line 2259.
 (pdftex.def)             Requested size: 145.11053pt x 110.20688pt.
-<Thesis_images/NGC205_space_hist.png, id=1124, 431.6928pt x 327.8649pt>
+<Thesis_images/NGC205_space_hist.png, id=1159, 431.6928pt x 327.8649pt>
 File: Thesis_images/NGC205_space_hist.png Graphic file (type png)
 <use Thesis_images/NGC205_space_hist.png>
 Package pdftex.def Info: Thesis_images/NGC205_space_hist.png  used on input lin
-e 2170.
+e 2265.
 (pdftex.def)             Requested size: 145.11053pt x 110.20688pt.
-<Thesis_images/NGC205_bulge_velocity_hist.png, id=1125, 425.4294pt x 327.1422pt
+<Thesis_images/NGC205_bulge_velocity_hist.png, id=1160, 425.4294pt x 327.1422pt
 >
 File: Thesis_images/NGC205_bulge_velocity_hist.png Graphic file (type png)
 <use Thesis_images/NGC205_bulge_velocity_hist.png>
 Package pdftex.def Info: Thesis_images/NGC205_bulge_velocity_hist.png  used on 
-input line 2182.
+input line 2277.
 (pdftex.def)             Requested size: 145.11053pt x 111.58627pt.
-<Thesis_images/NGC205_NSC_velocity_hist.png, id=1126, 425.4294pt x 327.1422pt>
+<Thesis_images/NGC205_NSC_velocity_hist.png, id=1161, 425.4294pt x 327.1422pt>
 File: Thesis_images/NGC205_NSC_velocity_hist.png Graphic file (type png)
 <use Thesis_images/NGC205_NSC_velocity_hist.png>
 Package pdftex.def Info: Thesis_images/NGC205_NSC_velocity_hist.png  used on in
-put line 2188.
+put line 2283.
 (pdftex.def)             Requested size: 145.11053pt x 111.58627pt.
-<Thesis_images/NGC205_velocity_hist.png, id=1127, 425.4294pt x 327.1422pt>
+<Thesis_images/NGC205_velocity_hist.png, id=1162, 425.4294pt x 327.1422pt>
 File: Thesis_images/NGC205_velocity_hist.png Graphic file (type png)
 <use Thesis_images/NGC205_velocity_hist.png>
 Package pdftex.def Info: Thesis_images/NGC205_velocity_hist.png  used on input 
-line 2194.
+line 2289.
 (pdftex.def)             Requested size: 145.11053pt x 111.58627pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Thesis_images/NGC205_bulge_density_Nbody.png, id=1128, 413.3844pt x 327.1422pt
+<Thesis_images/NGC205_bulge_density_Nbody.png, id=1163, 413.3844pt x 327.1422pt
 >
 File: Thesis_images/NGC205_bulge_density_Nbody.png Graphic file (type png)
 <use Thesis_images/NGC205_bulge_density_Nbody.png>
 Package pdftex.def Info: Thesis_images/NGC205_bulge_density_Nbody.png  used on 
-input line 2206.
+input line 2301.
 (pdftex.def)             Requested size: 145.11053pt x 114.83592pt.
-<Thesis_images/NGC205_NSC_density_Nbody.png, id=1129, 417.7206pt x 327.1422pt>
+<Thesis_images/NGC205_NSC_density_Nbody.png, id=1164, 417.7206pt x 327.1422pt>
 File: Thesis_images/NGC205_NSC_density_Nbody.png Graphic file (type png)
 <use Thesis_images/NGC205_NSC_density_Nbody.png>
 Package pdftex.def Info: Thesis_images/NGC205_NSC_density_Nbody.png  used on in
-put line 2212.
+put line 2307.
 (pdftex.def)             Requested size: 145.11053pt x 113.64288pt.
 File: Thesis_images/NGC205_NSC_density_Nbody.png Graphic file (type png)
 <use Thesis_images/NGC205_NSC_density_Nbody.png>
 Package pdftex.def Info: Thesis_images/NGC205_NSC_density_Nbody.png  used on in
-put line 2218.
+put line 2313.
 (pdftex.def)             Requested size: 145.11053pt x 113.64288pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Thesis_images/NGC205_density_Nbody_vs_analytic.png, id=1130, 426.393pt x 327.8
+<Thesis_images/NGC205_density_Nbody_vs_analytic.png, id=1165, 426.393pt x 327.8
 649pt>
 File: Thesis_images/NGC205_density_Nbody_vs_analytic.png Graphic file (type png
 )
 <use Thesis_images/NGC205_density_Nbody_vs_analytic.png>
 Package pdftex.def Info: Thesis_images/NGC205_density_Nbody_vs_analytic.png  us
-ed on input line 2231.
+ed on input line 2326.
 (pdftex.def)             Requested size: 217.66211pt x 167.36397pt.
-<Thesis_images/NGC205_mass_Nbody_vs_analytic.png, id=1131, 411.2163pt x 327.142
+<Thesis_images/NGC205_mass_Nbody_vs_analytic.png, id=1166, 411.2163pt x 327.142
 2pt>
 File: Thesis_images/NGC205_mass_Nbody_vs_analytic.png Graphic file (type png)
 <use Thesis_images/NGC205_mass_Nbody_vs_analytic.png>
 Package pdftex.def Info: Thesis_images/NGC205_mass_Nbody_vs_analytic.png  used 
-on input line 2237.
+on input line 2332.
 (pdftex.def)             Requested size: 217.66211pt x 173.16489pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1327,66 +1319,63 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: Thesis_images/NGC205_halfmass.png Graphic file (type png)
 <use Thesis_images/NGC205_halfmass.png>
 Package pdftex.def Info: Thesis_images/NGC205_halfmass.png  used on input line 
-2257.
+2352.
 (pdftex.def)             Requested size: 241.84843pt x 193.6237pt.
-[56 <./Thesis_images/NGC205_bulge_scatter_XY_XZ.png> <./Thesis_images/NGC205_NS
+[57 <./Thesis_images/NGC205_bulge_scatter_XY_XZ.png> <./Thesis_images/NGC205_NS
 C_scatter_XY_XZ.png> <./Thesis_images/NGC205_halfmass.png> <./Thesis_images/NGC
 205_bulge_space_hist.png> <./Thesis_images/NGC205_NSC_space_hist.png> <./Thesis
-_images/NGC205_space_hist.png>] [57 <./Thesis_images/NGC205_bulge_velocity_hist
+_images/NGC205_space_hist.png>] [58 <./Thesis_images/NGC205_bulge_velocity_hist
 .png> <./Thesis_images/NGC205_NSC_velocity_hist.png> <./Thesis_images/NGC205_ve
 locity_hist.png> <./Thesis_images/NGC205_bulge_density_Nbody.png> <./Thesis_ima
-ges/NGC205_NSC_density_Nbody.png>] [58 <./Thesis_images/NGC205_density_Nbody_vs
+ges/NGC205_NSC_density_Nbody.png>] [59 <./Thesis_images/NGC205_density_Nbody_vs
 _analytic.png> <./Thesis_images/NGC205_mass_Nbody_vs_analytic.png>]
-Overfull \hbox (31.19432pt too wide) in paragraph at lines 2291--2291
+Overfull \hbox (31.19432pt too wide) in paragraph at lines 2386--2386
 [][]\T1/cmr/m/n/12 Colpi, Mon-ica et al. (Feb. 2024). ^^P  LISA Def-i-ni-tion S
 tudy Re-port^^Q. In: \T1/cmr/m/it/12 arXiv e-prints\T1/cmr/m/n/12 , arXiv:2402.
 07571,
  []
 
-[59
+[60
 
 ]
-Overfull \hbox (13.10652pt too wide) in paragraph at lines 2291--2291
+Overfull \hbox (13.10652pt too wide) in paragraph at lines 2386--2386
 [][]\T1/cmr/m/n/12 Khan, Fazeel Mah-mood, Fiza Javed, et al. (Nov. 2024). ^^P  
 The Po-ten-tial for Long-lived Intermediate-
  []
 
-[60] [61]
-Overfull \hbox (11.28075pt too wide) in paragraph at lines 2291--2291
+[61] [62]
+Overfull \hbox (11.28075pt too wide) in paragraph at lines 2386--2386
 [][]\T1/cmr/m/n/12 Ono, Yoshi-aki et al. (July 2023). ^^P  Mor-pholo-gies of Ga
 lax-ies at z $\U/msa/m/n/12 &$ \T1/cmr/m/n/12 9 Un-cov-ered by JWST/NIRCam
  []
 
-[62] [63] (./main.aux)
+[63] [64] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3BE60AB202BB24943DA4F45809770CA7;5691.
+(rerunfilecheck)             Checksum: FDF665E677E72C89EDAB81E60A966CEE;5684.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24372 strings out of 476182
- 435485 string characters out of 5795595
- 1947975 words of memory out of 5000000
- 45656 multiletter control sequences out of 15000+600000
+ 25248 strings out of 476182
+ 449142 string characters out of 5795595
+ 1968975 words of memory out of 5000000
+ 46508 multiletter control sequences out of 15000+600000
  581495 words of font info for 93 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,17n,81p,4407b,1835s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,20n,81p,4407b,1835s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/davide/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1200.60
 0pk> </home/davide/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi1200.
-600pk> </home/davide/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt120
-0.600pk> </home/davide/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1
+600pk> </home/davide/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm120
+0.600pk> </home/davide/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1
 200.600pk> </home/davide/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecr
 m1095.600pk> </home/davide/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/e
 crm1000.600pk> </home/davide/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec
@@ -1417,10 +1406,10 @@ cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.
 pfb>
-Output written on main.pdf (63 pages, 6073467 bytes).
+Output written on main.pdf (64 pages, 6071683 bytes).
 PDF statistics:
- 2047 PDF objects out of 2073 (max. 8388607)
- 1340 compressed objects within 14 object streams
- 429 named destinations out of 1000 (max. 500000)
- 397 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2088 PDF objects out of 2487 (max. 8388607)
+ 1383 compressed objects within 14 object streams
+ 427 named destinations out of 1000 (max. 500000)
+ 392 words of extra memory for PDF output out of 10000 (max. 10000000)
 

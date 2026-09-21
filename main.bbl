@@ -1234,6 +1234,67 @@
       \verb 10.1086/497023
       \endverb
     \endentry
+    \entry{Geha_2006}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=66b054994681c71098dc6c477211e952}{%
+           family={Geha},
+           familyi={G\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9837be36162899c3c2c2ae765c29cfbc}{%
+           family={Guhathakurta},
+           familyi={G\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4bb68cd2da0e3040ebfb9ccc1c2a57c3}{%
+           family={Rich},
+           familyi={R\bibinitperiod},
+           given={R.\bibnamedelimi M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=faa4d6e46f6fe7f42aa6e63f4ab78b77}{%
+           family={Cooper},
+           familyi={C\bibinitperiod},
+           given={M.\bibnamedelimi C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Astronomical Society}%
+      }
+      \strng{namehash}{0bb14d772b560ffb1531579668df72f9}
+      \strng{fullhash}{a6a4fe1349102518cb5145d3167535a8}
+      \strng{bibnamehash}{0bb14d772b560ffb1531579668df72f9}
+      \strng{authorbibnamehash}{0bb14d772b560ffb1531579668df72f9}
+      \strng{authornamehash}{0bb14d772b560ffb1531579668df72f9}
+      \strng{authorfullhash}{a6a4fe1349102518cb5145d3167535a8}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1538-3881}
+      \field{journaltitle}{The Astronomical Journal}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Local Group Dwarf Elliptical Galaxies. I. Mapping the Dynamics of NGC 205 Beyond the Tidal Radius}
+      \field{volume}{131}
+      \field{year}{2006}
+      \field{pages}{332\bibrangedash 342}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1086/498686
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1086/498686
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1086/498686
+      \endverb
+    \endentry
     \entry{Grebel_2003}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=9f08ac064f718cdeab5f1e6bb7e3bf1d}{%
@@ -1581,94 +1642,6 @@
       \verb{url}
       \verb https://doi.org/10.1111/j.1365-2966.2012.21541.x
       \endverb
-    \endentry
-    \entry{Holley-Bockelmann_2025}{article}{}
-      \name{author}{9}{}{%
-        {{un=0,uniquepart=base,hash=433970a019fb801df9654f4939d8bc27}{%
-           family={{Holley-Bockelmann}},
-           familyi={H\bibinitperiod},
-           given={Kelly},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=4a6db1a29a44ed71522d8bb11681a1ae}{%
-           family={{Khan}},
-           familyi={K\bibinitperiod},
-           given={Fazeel\bibnamedelima Mahmood},
-           giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ce7e878615dea8e29d00ce79ddd2e378}{%
-           family={{Williams}},
-           familyi={W\bibinitperiod},
-           given={Isaiah},
-           giveni={I\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d0ab6815e299f609f71852eac0c60f30}{%
-           family={{Roth}},
-           familyi={R\bibinitperiod},
-           given={Jaelyn},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=92f7d7932d0bcc116c2a31ac2f205617}{%
-           family={{Rizzo Smith}},
-           familyi={R\bibinitperiod},
-           given={Michael},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=5c5e6603358c47cefebc64e6281dd2d6}{%
-           family={{Porter}},
-           familyi={P\bibinitperiod},
-           given={Kaitlin},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=1daa658d56e33b1c27349b0b280553ed}{%
-           family={{Bellovary}},
-           familyi={B\bibinitperiod},
-           given={Jillian},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=1790594977576cb8e81292e1cb507a2a}{%
-           family={{Derdzinski}},
-           familyi={D\bibinitperiod},
-           given={Andrea},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=2d73c6a15db8db8ab4b474a58abdc161}{%
-           family={{Macciò}},
-           familyi={M\bibinitperiod},
-           given={Andrea\bibnamedelima V.},
-           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{5eced5d690227ef8052314b3bf144529}
-      \strng{fullhash}{7450c64925ba3664c37be5380a0daa38}
-      \strng{bibnamehash}{5eced5d690227ef8052314b3bf144529}
-      \strng{authorbibnamehash}{5eced5d690227ef8052314b3bf144529}
-      \strng{authornamehash}{5eced5d690227ef8052314b3bf144529}
-      \strng{authorfullhash}{7450c64925ba3664c37be5380a0daa38}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eid}{L32}
-      \field{eprintclass}{astro-ph.GA}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{Astrophysical Journal Letters}
-      \field{month}{12}
-      \field{number}{1}
-      \field{title}{{Handy Relation between Binary Black Hole Merger Times and Host Galaxy Properties}}
-      \field{volume}{995}
-      \field{year}{2025}
-      \field{pages}{L32}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.3847/2041-8213/ae1ccd
-      \endverb
-      \verb{eprint}
-      \verb 2508.14253
-      \endverb
-      \keyw{Astrophysical black holes,Galaxy dynamics,Gravitational wave astronomy,98,591,675,Astrophysics of Galaxies}
     \endentry
     \entry{Jahnke_2025}{article}{}
       \name{author}{1}{}{%
@@ -2579,6 +2552,75 @@
       \endverb
       \keyw{black hole physics,methods: numerical,software: public release,software: simulations,galaxies: kinematics and dynamics,Astrophysics - Instrumentation and Methods for Astrophysics,Astrophysics - Astrophysics of Galaxies}
     \endentry
+    \entry{McConnachie_2005}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=99032394499bab9c9d4532f2cd65340c}{%
+           family={{McConnachie}},
+           familyi={M\bibinitperiod},
+           given={A.\bibnamedelimi W.},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=124f20903e2d9fa81beb791c3b50939b}{%
+           family={{Irwin}},
+           familyi={I\bibinitperiod},
+           given={M.\bibnamedelimi J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b149faffcf58bf52fc435a5b033890c}{%
+           family={{Ferguson}},
+           familyi={F\bibinitperiod},
+           given={A.\bibnamedelimi M.\bibnamedelimi N.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5e86a29416b548e5d2dd47ab8b8e6b76}{%
+           family={{Ibata}},
+           familyi={I\bibinitperiod},
+           given={R.\bibnamedelimi A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=25e9f0ce0f43313e2b9aa086ebb6ecd8}{%
+           family={{Lewis}},
+           familyi={L\bibinitperiod},
+           given={G.\bibnamedelimi F.},
+           giveni={G\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7226114a5b17d78c516977e827c831c0}{%
+           family={{Tanvir}},
+           familyi={T\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4c223cd33728ec6cd13d031654e256b7}
+      \strng{fullhash}{eb64be8e2bc85ed36379b90116476b7a}
+      \strng{bibnamehash}{4c223cd33728ec6cd13d031654e256b7}
+      \strng{authorbibnamehash}{4c223cd33728ec6cd13d031654e256b7}
+      \strng{authornamehash}{4c223cd33728ec6cd13d031654e256b7}
+      \strng{authorfullhash}{eb64be8e2bc85ed36379b90116476b7a}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{astro-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{MNRAS}
+      \field{month}{1}
+      \field{number}{3}
+      \field{title}{{Distances and metallicities for 17 Local Group galaxies}}
+      \field{volume}{356}
+      \field{year}{2005}
+      \field{pages}{979\bibrangedash 997}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1111/j.1365-2966.2004.08514.x
+      \endverb
+      \verb{eprint}
+      \verb astro-ph/0410489
+      \endverb
+      \keyw{galaxies: general,Local Group,galaxies: stellar content,Astrophysics}
+    \endentry
     \entry{Meneghetti_book}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=df584c04c9fa52c76ce1f32969645e73}{%
@@ -3412,6 +3454,42 @@
       \field{title}{An introduction to active galactic nuclei}
       \field{year}{1997}
     \endentry
+    \entry{Prugniel_1997}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=85e9de1e2661bdaa0993971d30bd00d1}{%
+           family={{Prugniel}},
+           familyi={P\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d464b5ee89a5b251c3f021287a822a24}{%
+           family={{Simien}},
+           familyi={S\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b2e15b4e2736065042e03c13ff4fa9ad}
+      \strng{fullhash}{b2e15b4e2736065042e03c13ff4fa9ad}
+      \strng{bibnamehash}{b2e15b4e2736065042e03c13ff4fa9ad}
+      \strng{authorbibnamehash}{b2e15b4e2736065042e03c13ff4fa9ad}
+      \strng{authornamehash}{b2e15b4e2736065042e03c13ff4fa9ad}
+      \strng{authorfullhash}{b2e15b4e2736065042e03c13ff4fa9ad}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Astronomy \& Astrophysics}
+      \field{month}{5}
+      \field{title}{{The fundamental plane of early-type galaxies: non-homology of the spatial structure.}}
+      \field{volume}{321}
+      \field{year}{1997}
+      \field{pages}{111\bibrangedash 122}
+      \range{pages}{12}
+      \keyw{GALAXIES: ELLIPTICAL \& LENTICULAR,CD,GALAXIES: FUNDAMENTAL PARAMETERS,GALAXIES: GENERAL,GALAXIES: PHOTOMETRY,GALAXIES: KINEMATICS AND DYNAMICS}
+    \endentry
     \entry{Quinlan_1996}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=46fe2e5115390ae31f4aa693550c1ba9}{%
@@ -3938,6 +4016,51 @@
       \verb https://arxiv.org/abs/2105.13270
       \endverb
     \endentry
+    \entry{Terzic_2005}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=86590bbed7821e2fd5d3a3ae74e40542}{%
+           family={{Terzić}},
+           familyi={T\bibinitperiod},
+           given={Balša},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1f24ddcf9c5a8b5372d1b89278bdd1d1}{%
+           family={{Graham}},
+           familyi={G\bibinitperiod},
+           given={Alister\bibnamedelima W.},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4a5a3f4b2a5a3d2998f20c2b3ec93dd2}
+      \strng{fullhash}{4a5a3f4b2a5a3d2998f20c2b3ec93dd2}
+      \strng{bibnamehash}{4a5a3f4b2a5a3d2998f20c2b3ec93dd2}
+      \strng{authorbibnamehash}{4a5a3f4b2a5a3d2998f20c2b3ec93dd2}
+      \strng{authornamehash}{4a5a3f4b2a5a3d2998f20c2b3ec93dd2}
+      \strng{authorfullhash}{4a5a3f4b2a5a3d2998f20c2b3ec93dd2}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{astro-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{MNRAS}
+      \field{month}{9}
+      \field{number}{1}
+      \field{title}{{Density-potential pairs for spherical stellar systems with Sérsic light profiles and (optional) power-law cores}}
+      \field{volume}{362}
+      \field{year}{2005}
+      \field{pages}{197\bibrangedash 212}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1111/j.1365-2966.2005.09269.x
+      \endverb
+      \verb{eprint}
+      \verb astro-ph/0506192
+      \endverb
+      \keyw{stellar dynamics,galaxies: elliptical and lenticular,cD,galaxies: kinematics and dynamics,galaxies: nuclei,galaxies: structure,Astrophysics}
+    \endentry
     \entry{Toomre_1972}{article}{}
       \name{author}{2}{}{%
         {{un=1,uniquepart=given,hash=9c0d4732fbb0545b6aefde58eb6b699f}{%
@@ -4099,6 +4222,66 @@
       \endverb
       \keyw{Black Hole Physics,Galaxies: Bulges,Galaxies: Fundamental Parameters,Galaxies: Nuclei,Galaxy: Bulge,Galaxy: Kinematics and Dynamics,Astrophysics}
     \endentry
+    \entry{Valluri_2005}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=09b31c7c0510c687a7cafdfc1807ff7b}{%
+           family={Valluri},
+           familyi={V\bibinitperiod},
+           given={Monica},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b81f5f34f2bf138e28ce6a2eb523e44}{%
+           family={Ferrarese},
+           familyi={F\bibinitperiod},
+           given={Laura},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=41811beb71bf2a9116384e0ad5637cac}{%
+           family={Merritt},
+           familyi={M\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d7a596a40873151b64b694940f3f6cdd}{%
+           family={Joseph},
+           familyi={J\bibinitperiod},
+           given={Charles\bibnamedelima L.},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Astronomical Society}%
+      }
+      \strng{namehash}{9b0ccf7568fa87e34b55ed72b7c54774}
+      \strng{fullhash}{ecf17f3323f7b2bd898b33c4b4c991d6}
+      \strng{bibnamehash}{9b0ccf7568fa87e34b55ed72b7c54774}
+      \strng{authorbibnamehash}{9b0ccf7568fa87e34b55ed72b7c54774}
+      \strng{authornamehash}{9b0ccf7568fa87e34b55ed72b7c54774}
+      \strng{authorfullhash}{ecf17f3323f7b2bd898b33c4b4c991d6}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1538-4357}
+      \field{journaltitle}{The Astrophysical Journal}
+      \field{number}{1}
+      \field{title}{The Low End of the Supermassive Black Hole Mass Function: Constraining the Mass of a Nuclear Black Hole in NGC 205 via Stellar Kinematics}
+      \field{volume}{628}
+      \field{year}{2005}
+      \field{pages}{137\bibrangedash 152}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1086/430752
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1086/430752
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1086/430752
+      \endverb
+    \endentry
     \entry{White_1978}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=b6c6fe2ff35a586cc62a3180c1add3c8}{%
@@ -4140,7 +4323,6 @@
     \endentry
   \enddatalist
   \missing{Prugniel}
-  \missing{Terzic}
 \endrefsection
 \endinput
 
