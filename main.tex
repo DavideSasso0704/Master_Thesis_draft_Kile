@@ -123,6 +123,17 @@
 
 
 
+\DeclareCiteCommand{\citealt}
+  {\usebibmacro{prenote}}
+  {\printtext[bibhyperref]{%
+    \printnames{labelname}%
+    \setunit{\space}%
+    \printfield{labelyear}}}
+  {\multicitedelim}
+  {\usebibmacro{postnote}}
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Contents
@@ -239,21 +250,21 @@ Runaway stellar collisions in high-density clusters may trigger a sequence of st
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\linewidth]{IMBH_Review_Formation.png}
-    \caption{Schematic representation of different BH seeding channels, from their formation and subsequent growth through mergers and accretion to the present day: Pop III stars (blue), direct collapse (red), and gravitational runaway (green). The corresponding present-day BH mass functions, occupation fractions, and BH–galaxy scaling relations are shown on the right. Picture from \textcite{Greene_2020}.}
+    \caption{Schematic representation of different BH seeding channels, from their formation and subsequent growth through mergers and accretion to the present day: Pop III stars (blue), direct collapse (red), and gravitational runaway (green). The corresponding present-day BH mass functions, occupation fractions, and BH–galaxy scaling relations are shown on the right. Figure taken from \textcite{Greene_2020}.}
     \label{IMBH_Pathways}
 \end{figure}
 Within the framework of the hierarchical growth scenario of galaxies \parencite{White_1978}, the formation of IMBH binaries is expected to occur naturally as a consequence of mergers between their host stellar systems \parencite{Maiolino_2024}. These systems are among the most powerful sources of gravitational waves (GWs) in the Universe \parencite{Maggiore_book}, making them prime targets for current and future GW observatories. In particular, the upcoming Laser Interferometer Space Antenna (LISA), a joint ESA/NASA space mission, will probe the low-frequency GW regime, from $\sim 10^{-4}$ to $\sim 10^{-1}$ Hz \parencite{Amaro-Seoane_2017,Amaro-Seaone_2023}, providing access to compact-object binaries with masses of $\sim10^4-10^7,M_\odot$ and enabling the detection of their mergers out to redshift $z\sim20$ \parencite{Colpi_2024}. At higher frequencies, the ground-based Einstein Telescope (ET) will complement LISA by extending the accessible frequency and mass ranges towards lower-mass systems, being expected to detect IMBH binaries with masses of $\sim10^2-10^3,M_\odot$ out to redshifts of a few \parencite{ET_book}. Therefore, current and future GW observatories may provide a unique opportunity to unveil the population of IMBHs through their gravitational-wave emission, which may be detectable even when their electromagnetic signatures are too faint to be observed.\\In light of this perspective, this thesis investigates the time evolution of the main orbital parameters of IMBH binaries, with particular focus on the semimajor axis $a$ and eccentricity $e$, and examines how BH masses, stellar background properties, and the binary initial condition influence their dynamical evolution and coalescence timescale through a series of numerical experiments. To this end, the evolution of IMBH binaries is studied using two complementary approaches: the numerical integration of the differential equations for the binary separation and eccentricity provided by the hybrid model developed by \textcite{Quinlan_1996} and extended by \textcite{Sesana_2010}, and high-resolution, gas-free N-body simulations of mergers between BHs and their stellar hosts performed with the hybrid tree-regularized code KETJU \parencite{Mannerkoski_2023}.\\The suite of numerical experiments presented in \textcite{Khan_2021} and \textcite{Khan_2024} on both nucleated and non-nucleated dwarf galaxies have highlighted the crucial role of the stellar background density,particularly in the vicinity of the BHB sphere of influence, in driving fast and efficient mergers. In particular, high-density stellar environments ensure an adequate supply of low-angular-momentum stars, thereby sustaining efficient hardening via stellar slinghot (see, e.g., \textcite{Mikkola_1992}), while in low-density environments, the insufficient replenishment of such orbits may lead to binary stalling, giving rise to the so-called "last-parsec problem" \parencite{Milosavljevic_2003}. The evidence that different stellar environments produce peculiar pathways to coalescence highlights the need to investigate the dynamical evolution of IMBH binaries across a representative range of realistic stellar hosts. The first class considered here comprises dwarf galaxies, whose most commonly adopted definition relies on an upper limit of $M_V>-18$ in absolute (V)-band magnitude \textcite{Grebel_2003}. The observation of these systems even at high redshifts (see, e.g., \textcite{Nguyen_2018}; \parencite{Kikuchihara_2020}) makes them plausible stellar hosts at the time of IMBH pairing, whose GW emission may be probed by present-day observatories. Although N-body simulations have shown that IMBH binaries embedded in non-nucleated dwarf galaxies have coalescence times exceeding the Hubble time, and despite the fact that most dwarf galaxies harbor a nuclear star cluster (see, e.g., \textcite{Neumayer_2020}), we artificially evolve non-nucleated dwarf galaxies back to redshift $z$ according to the cosmic size evolution law derived by \textcite{Ono_2023}. Together with the observed increase in the BH-to-bulge mass ratio towards higher redshifts as shown in Figure \ref{BH-Bulge mass}, this effect is expected to partially compensate for the absence of a nuclear star cluster, potentially allowing the binary to coalesce within the present-day Universe.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{Maiolino.png}
-    \caption{Black hole mass as a function of host galaxy stellar mass. Golden circles denote the JADES results, blue symbols high-z JWST measurements, grey triangles high-z QSOs, and red symbols local galaxies. Dashed orange lines connect candidate merging BHs. Picture from \textcite{Maiolino_2024}.}
+    \caption{Black hole mass as a function of host galaxy stellar mass. Golden circles denote the JADES results, blue symbols high-z JWST measurements, grey triangles high-z QSOs, and red symbols local galaxies. Dashed orange lines connect candidate merging BHs. Figure taken from \textcite{Maiolino_2024}.}
     \label{BH-Bulge mass}
 \end{figure}
 In recent years, several claims have been made regarding the possible presence of IMBHs in Galactic and extragalactic globular clusters (GCs). Although these detections are not always conclusive, dynamical measurements and signatures of accretion in the X-ray band have provided indications of central IMBHs in a number of old stellar clusters (e.g., \textcite{Gebhardt_2005}; \textcite{Baumgardt_2017}). At the same time, observations of galaxies at very high redshift are revealing stellar systems with properties that may provide insights into the possible progenitors of present-day GCs. An example of this is constituted by the "Misty Moons" \parencite{Eros_2026} and the "Bullet arc" \parencite{Bradac_2025}, two strongly lensed galaxies at a photometric redshift of \(z_{phot}\sim11-12\) and spectroscopic redshift $z_{spec}\sim11$ respectively, which are resolved into several massive stellar clumps. This suggests that star formation in the early universe may have been clump-dominated, with such stellar clumps potentially representing the progenitors of the more compact and less massive GCs observed in the local Universe, before undergoing substantial mass loss due to tidal interactions with their host galaxies. Figure \ref{size-mass} shows the size–mass relation of local star clusters, star-forming clumps, and dwarf galaxies, providing a direct comparison between the properties of local GCs and high-\(z\) stellar clumps.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\linewidth]{Eros.png}
-    \caption{Size–mass relation. Stars denote the entire systems, while circles denote individual stellar clumps. Other symbols denote local Globular Clusters, young massive star clusters, and Nuclear Star Clusters. Picture from \textcite{Eros_2026}.}
+    \caption{Size–mass relation. Stars denote the entire systems, while circles denote individual stellar clumps. Other symbols denote local Globular Clusters, young massive star clusters, and Nuclear Star Clusters. Figure taken from \textcite{Eros_2026}.}
     \label{size-mass}
 \end{figure}
 Mindful of these considerations, we also include stellar-clump-like backgrounds in our suite of numerical experiments, adopting IMBH masses consistent with the empirical scaling relation shown in Figure~\ref{BH-Bulge mass}.\\The structure of this thesis is outlined as follows.\\In \autoref{chap:chapter1}, we provide a brief overview of the main physical mechanisms promoting the shrinking of BH binaries, including violent relaxation, dynamical friction, stellar scattering by low-angular-momentum stars, and GW emission.\\In \autoref{chap:chapter2}, it will be introduced the self-consistent hybrid model developed by \textcite{Quinlan_1996} and \textcite{Sesana_2010}. We then present the evolutionary tracks obtained for the adopted sample of host galaxies and explore the relevant parameter space, highlighting how different environmental properties and initial conditions affect the binary evolution.\\In \autoref{chap:chapter3} are reported the main features of the codes used to generate equilibrium N-body initial conditions and carry out the numerical simulations. The chapter then presents the results obtained by combining the KETJU evolution, which follows the BH pair from early merger to the stellar-scattering-dominated regime, with the hybrid model used to track its subsequent evolution towards final coalescence.\\Finally, the main results of this work are summarized, and possible future improvements are reported in the concluding chapter.
@@ -289,7 +300,7 @@ Mindful of these considerations, we also include stellar-clump-like backgrounds 
 \begin{center}
 \begin{minipage}{0.65\textwidth}
 \centering
-\textit{In the "bottom-up" scenario, in which low-mass structures form first and progressively more massive systems assemble through hierarchical clustering and mergers, MBH binaries are expected to form as a consequence of mergers involving stellar systems or galaxies embidding such compact objects.\\This chapter reviews the main physical mechanisms driving the hardening of MBH binaries, from the initial merger of their hosts to the final coalescence. We first discuss violent relaxation, which efficiently converts the orbital energy of the merging systems into disordered kinetic energy of the newly formed system. Then, dynamical friction is considered. It acts on massive components such as MBHs and drags them toward the centre of the merger remnant, eventually leading to the formation of a gravitationally bound binary. The subsequent evolution is governed by three-body interactions with low-angular momentum stars: we discuss the gravitational slingshot mechanism, through which stellar ejections extract energy and angular momentum from the binary and promote its hardening, as well as the role of loss-cone refilling. Finally, we derive the key equations describing the binary orbital evolution once gravitational-wave emission becomes the dominant mechanism governing the orbital decay.}
+\textit{In the "bottom-up" scenario, in which low-mass structures form first and progressively more massive systems assemble through hierarchical clustering and mergers, massive black hole binaries are expected to form as a consequence of mergers involving stellar systems or galaxies embedding such compact objects.\\This chapter reviews the main physical mechanisms driving the hardening of MBH binaries, from the initial merger of their hosts to the final coalescence. We first discuss violent relaxation, which efficiently converts the orbital energy of the merging systems into disordered kinetic energy of the newly formed system. Then, dynamical friction is considered. It acts on massive components such as MBHs and drags them toward the centre of the merger remnant, eventually leading to the formation of a gravitationally bound binary. The subsequent evolution is governed by three-body interactions with low-angular momentum stars: we discuss the gravitational slingshot mechanism, through which stellar ejections extract energy and angular momentum from the binary and promote its hardening, as well as the role of loss-cone refilling. Finally, we derive the key equations describing the binary orbital evolution once gravitational-wave emission becomes the dominant mechanism governing the orbital decay.}
 \end{minipage}
 \end{center}
 
@@ -310,15 +321,16 @@ Mindful of these considerations, we also include stellar-clump-like backgrounds 
 
 
 
-\section{Galaxy Merger and Violent Relaxation}
+\section{Galaxy Merging and Violent Relaxation}
 \label{sec:Galaxy Mergers and Violent Relaxation}
-When two galaxies approach each other with sufficiently low relative velocity and small impact parameter, the encounter may result in a galaxy merger (see, e.g., \textcite{Toomre_1972}; \textcite{Cimatti_book}). Galaxy mergers can be broadly classified according to the physical properties of the systems involved. Of particular relevance here are dissipationless, or dry, mergers, which involve gas-poor galaxies and are characterized by negligible radiative energy losses, so that the total energy of the system is approximately conserved \parencite{Khochfar_2009}. Numerical $N$-body simulations have shown that collisions between galaxies of comparable mass, commonly referred to "major mergers", generally result in a single, virialized remnant (see, e.g.  \parencite{Barnes_1992}; \textcite{Hilz_2012}). The formation of this remnant proceeds through a series of relaxation processes driven by the rapidly varying gravitational potential during the encounter, which redistributes the energy and angular momentum of the system and drives the initially out-of-equilibrium configuration toward a new equilibrium state (see, e.g. \textcite{Lynden_1967}; \textcite{Saslaw_1970}).\\In the scientific literature, several approaches have been proposed to define and derive the timescale of violent relaxation. Here, we follow the approach of \textcite{Lynden_1967} and define it as the characteristic oscillation period of the newly formed galaxy around the equilibrium configuration established by the virial condition
+When two galaxies approach each other with sufficiently low relative velocity and small impact parameter, the encounter may result in a galaxy merger (see, e.g., \citealt{Toomre_1972};
+\citealt{Cimatti_book}). Galaxy mergers can be broadly classified according to the physical properties of the systems involved. Of particular relevance here are dissipationless, or dry, mergers, which involve gas-poor galaxies and are characterized by negligible radiative energy losses, so that the total energy of the system is approximately conserved \parencite{Khochfar_2009}. Numerical $N$-body simulations have shown that collisions between galaxies of comparable mass, commonly referred to as "major mergers", generally result in a single, virialized remnant (see, e.g.  \citealt{Barnes_1992}; \citealt{Hilz_2012}). The formation of this remnant proceeds through a series of relaxation processes driven by the rapidly varying gravitational potential during the encounter, which redistributes the energy and angular momentum of the system and drives the initially out-of-equilibrium configuration toward a new equilibrium state (see, e.g. \textcite{Lynden_1967}; \textcite{Saslaw_1970}).\\In the scientific literature, several approaches have been proposed to define and derive the timescale of violent relaxation. Here, we follow the approach of \textcite{Lynden_1967} and define it as the characteristic oscillation period of the newly formed galaxy around the equilibrium configuration established by the virial condition
 \begin{equation}\label{virial condition}
  2K+W=0,
 \end{equation}
-holding in its barycentric inertial reference system $S_{CM}$, with $K$ and $W$ standing for the total kinetic and gravitational potential energy of the galaxy remnant respectively. We therefore first characterize the equilibrium state attained by the system following the relaxation process.\\Let us consider two galaxies, each with mass $M_i$ and total energy $E_i=K_i+W_i$. In an ideal dissipationless merger, the total mass and energy are conserved, so the resulting remnant has mass $M=M_1+M_2$ and energy $E=E_1+E_2+E_{\rm orb}$, where $E_{\rm orb}$ accounts for the orbital energy of the pair, including both its ordered kinetic and mutual gravitational contributions. Following violent relaxation on a timescale $T_r$, the remnant settles into an equilibrium configuration that can be characterized by the virial velocity dispersion $\sigma_v$ and virial radius $r_v$, defined by
+holding in its barycentric inertial reference system $S_{CM}$, with $K$ and $W$ standing for the total kinetic and gravitational potential energy of the galaxy remnant respectively. We therefore first characterize the equilibrium state attained by the system following the relaxation process.\\Let us consider two galaxies, each with mass $M_i$ and total energy $E_i=K_i+W_i$. In an ideal dissipationless merger, the total mass and energy are conserved, so that the resulting remnant has mass $M=M_1+M_2$ and energy $E=E_1+E_2+E_{\rm orb}$, where $E_{orb}$ accounts for the orbital energy of the pair, including both its ordered kinetic and mutual gravitational contributions. Following violent relaxation on a timescale $T_r$, the remnant settles into an equilibrium configuration that can be characterized by the virial velocity dispersion $\sigma_v$ and gravitational radius $r_g$, defined by
 \begin{equation}
-\sigma_v^2=\frac{2K}{M}, \qquad r_v=-\frac{GM^2}{W},
+\sigma_v^2=\frac{2K}{M}, \qquad r_g=-\frac{GM^2}{W},
 \end{equation}
 which provide proxies for the characteristic stellar velocity dispersion and size of the galaxy in equilibrium, thus representing key information on the final stage reached by the merging galaxies.\\By combining the virial condition (\ref{virial condition})—which applies both to the progenitor galaxies prior to the interaction and to the remnant after the violent relaxation timescale $T_r$—with energy conservation, one obtains
 \begin{equation}\label{remnant_virial_sigma}
@@ -326,18 +338,18 @@ which provide proxies for the characteristic stellar velocity dispersion and siz
 \end{equation}
 and
 \begin{equation}\label{remnant_gravitational_radius}
-\frac{(M_1+M_2)^2}{r_v}=\frac{M_1^2}{r_{v,1}}+\frac{M_2^2}{r_{v,2}}-\frac{2E_{\rm orb}}{G},
+\frac{(M_1+M_2)^2}{r_g}=\frac{M_1^2}{r_{g,1}}+\frac{M_2^2}{r_{g,2}}-\frac{2E_{\rm orb}}{G},
 \end{equation}
-where $\sigma_{v,i}$ and $r_{v,i}$ denote the virial velocity dispersion and virial radius, respectively, of the colliding systems \parencite{Cimatti_book}. From Equations~(\ref{remnant_virial_sigma}) and~(\ref{remnant_gravitational_radius}), it follows that parabolic encounters between identical progenitors, defined by $E_{orb}=0$, which are the configuration considered here to carry out $N$-body numerical experiments, give rise to a galaxy remnant having
+where $\sigma_{v,i}$ and $r_{g,i}$ denote the virial velocity dispersion and the gravitational radius, respectively, of the colliding systems \parencite{Cimatti_book}. From Equations~(\ref{remnant_virial_sigma}) and~(\ref{remnant_gravitational_radius}), it follows that parabolic encounters between identical progenitors, defined by $E_{orb}=0$, which are the configuration considered in this thesis to carry out $N$-body numerical experiments as shown in chapter \ref{chap:chapter3}, give rise to a galaxy remnant having
 \begin{equation}
-M=2M_1=2M_2, \qquad r_v=2r_{v,1}=2r_{v,2}, \qquad \sigma_v=\sigma_{v,1}=\sigma_{v,2}.
+M=2M_1=2M_2, \qquad r_g=2r_{g,1}=2r_{g,2}, \qquad \sigma_v=\sigma_{v,1}=\sigma_{v,2}.
 \end{equation}
 Therefore, before the merger to occur, each progenitor galaxy, which is assumed to be made of $N$ stars of masses $m_i$ and velocities $\mathbf{v_i}$, is individually virialized and satisfies the virial equilibrium condition
 \begin{equation}
 2\sum_{i=1}^{N} \frac{1}{2} m_i v_i^2-\frac{1}{2} \sum_{i=1}^{N} \sum_{j \ne i} \frac{Gm_i m_j}{|\mathbf{x_i}-\mathbf{x_j}|}=2K+W=0.
 \label{extended virial condition}
 \end{equation}
-This condition is temporarily violated once the collision begins, as the newly formed remnant is driven far from equilibrium by the coherent motion inherited from the relative orbital motion of the progenitors. Consequently, during violent relaxation, Equation (\ref{virial condition}) is no longer satisfied at every instant; rather, the system obeys the time-dependent virial theorem,
+Neverthless, this condition is temporarily violated once the collision begins, as the newly formed remnant is driven far from equilibrium by the coherent motion inherited from the relative orbital motion of the progenitors. Consequently, during violent relaxation, Equation (\ref{virial condition}) is no longer satisfied at every instant; rather, the system obeys the time-dependent virial theorem,
 \begin{equation}
 \frac{1}{2}\ddot{I}=2K+W,
 \label{time_dependent_virial}
@@ -346,15 +358,19 @@ where $I$ denotes the polar moment of inertia.\\To quantitatively characterize t
 \begin{equation}
 Q\equiv \frac{2K}{|W|}.
 \end{equation}
-Figure \ref{Virial ratio image}, and particularly the green curves, illustrates how the virial ratio $Q$ oscillates about its equilibrium value, $Q=1$, while the amplitude of these oscillations rapidly decreases with time as the ordered kinetic energy is progressively redistributed into random stellar motions. This behaviour, also observed in numerical $N$-body simulations of galaxy mergers (see, e.g., \textcite{Nipoti_Londrillo_2007}), indicates that the system progressively approaches virial equilibrium and that most of the virialization process takes place in the vicinity of the final equilibrium configuration.
+Figure \ref{Virial ratio image} shows the results of $N$-body simulations of dissipationless galaxy mergers (see \citealt{Nipoti_Londrillo_2007}), focusing on the evolution of the virial ratio $Q$. The oscillations of $Q$ have been reconstructed both within the framework of Modified Newtonian Dynamics (MOND) and under Newtonian gravity. In the former case, the standard Poisson equation is replaced by the non-relativistic field equation \parencite{Bekenstein_1984}
+\begin{equation}
+\nabla\cdot\left[\mu\left(\frac{\|\nabla\phi\|}{a_0}\right)\nabla\phi\right]=4\pi G\rho,
+\end{equation}
+where $\phi$ denotes the MOND gravitational potential, $\rho$ is the mass density, $a_0\simeq1.2\times10^{-10}\,m/s^2$ is the characteristic acceleration scale of MOND, and $\mu(y)=y/\sqrt{1+y^2}$  \parencite{Milgrom_1983}.\\Although the merging timescales are significantly longer in MOND than in Newtonian gravity with dark matter, in the Newtonian case the amplitude of the virial ratio oscillations rapidly decreases with time as $Q$ approaches its equilibrium value, $Q=1$, owing to the progressive conversion of ordered kinetic energy into random stellar motions. As illustrated by the green curve, the system approaches virial equilibrium through a series of progressively damped oscillations, with most of the virialization process occurring in the vicinity of the equilibrium value. We will take advantage of this observed behaviour for estimating the timescale $T_r$ over which violent relaxation takes place.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\linewidth]{Nipoti_Londrillo_2007.png}
+    \includegraphics[width=0.7\linewidth]{Nipoti_Londrillo_2007.png}
     \caption{Time evolution of the virial ratio (top panels) and of
-the barycentric relative speed (bottom panels) for the two sets of galaxy merger simulations: head-on (left panels) and off-centre (right panels). Blue, red, and green curves refer to MOND, equivalent Newtonian, and purely baryonic Newtonian simulations, respectively. Picture from \textcite{Nipoti_Londrillo_2007}.}
+the barycentric relative speed (bottom panels) for the two sets of galaxy merger simulations: head-on (left panels) and off-centre (right panels). Blue, red, and green curves refer to MOND, equivalent Newtonian, and purely baryonic Newtonian simulations, respectively. Figure taken from \textcite{Nipoti_Londrillo_2007}.}
     \label{Virial ratio image}
 \end{figure}
-We are now in a position to introduce the violent relaxation timescale $T_r$ and derive an estimate for it. To this end, it is useful to start from the physical mechanism underlying violent relaxation and consider the evolution of the energy $\epsilon_*$ of an individual star moving in a time-dependent gravitational potential $\psi(\mathbf{x},t)$. We first show that the stellar energy can change only as a consequence of an explicit time dependence of the gravitational potential. Thus, if the potential is chosen to vanish at infinity, the energy $\epsilon_*$ of a star with mass $m_*$ and velocity $\mathbf{v}$ is given by
+To this end, it is useful to start from the physical mechanism underlying violent relaxation and consider the evolution of the energy $\epsilon_*$ of an individual star moving in a time-dependent gravitational potential $\psi(\mathbf{x},t)$. We first show that the stellar energy can change only as a consequence of an explicit time dependence of the gravitational potential. Thus, if the potential is chosen to vanish at infinity, the energy $\epsilon_*$ of a star with mass $m_*$ and velocity $\mathbf{v}$ is given by
 \begin{equation}\label{Stellar energy}
  \epsilon_*=\frac{1}{2}m_*v^2+m_*\psi(\mathbf{x},t).
 \end{equation}
@@ -398,20 +414,20 @@ I(t)=\lambda^2 MR^2(t),
 \end{equation}
 where $\lambda^2$ is a dimensionless structural factor of order unity that encodes the instantaneous mass distribution and is determined by the geometrical configuration of the masses $m_i$.\\Let us consider small radial perturbations of the system about its virial equilibrium configuration. In this regime, the instantaneous characteristic radius of the system can be expressed as a small deviation from its equilibrium value, which we identify with the gravitational radius. Therefore, to the first order,
 \begin{equation}
-R(t)\approx r_v+\delta R,
+R(t)\approx r_g+\delta R,
 \end{equation}
-with $|\delta R|\ll r_v$ representing the small radial displacement from equilibrium. Under this approximation, linearizing Equation (\ref{virial condition}), written in terms of $\sigma_v$ and $r_v$, with respect to the perturbation yields the equation
+with $|\delta R|\ll r_g$ representing the small radial displacement from equilibrium. In this regime, linearizing Equation (\ref{virial condition}) with respect to the perturbation gives
 \begin{equation}
-2\lambda^2r_v\ddot{\delta R}
--\frac{GM}{r_v^2},\delta R,
+2\lambda^2r_g\ddot{\delta R}
+-\frac{GM}{r_g^2}\delta R,
 \end{equation}
 which we recognize to be that of a simple harmonic oscillator, with angular frequency
 \begin{equation}
 \omega=\left(
-\frac{GM}{2\lambda^2r_v^3}
-\right)^{1/2}
+\frac{GM}{2\lambda^2r_g^3}
+\right)^{1/2}.
 \end{equation}
-It is worth of noticing that, introducing the galaxy mean density $\bar{\rho}=3M/(4\pi r_v^3)$, the latter quantity can be expressed as:
+It is worth of noticing that, introducing the galaxy mean density $\bar{\rho}=3M/(4\pi r_g^3)$, the latter quantity can be expressed as:
 \begin{equation}
 \omega=
 \left(
@@ -424,7 +440,7 @@ T_r\simeq
 \frac{3}{4\omega}=\frac{3}{\sqrt{32\pi G\bar{\rho}}}.
 \label{violent_relaxation_time_final}
 \end{equation}
-Thus, the violent relaxation timescale is directly related to the characteristic dynamical timescale of the newly formed system and is expected to be of the order of its free-fall timescale $t_{ff}\propto 1/\sqrt{G\bar{\rho}}$.\\To obtain an order-of-magnitude estimate of this timescale for the merger of two identical non-nucleated dwarf galaxies, we may consider ... . In this case, the violent relaxation timescale is expected to be of the order of ..., demonstrating that this mechanism can redistribute the orbital energy of the progenitor galaxies on a much shorter timescale than that associated with two-body relaxation $t_{2b}$. The latter will be introduced in \S~\ref{sec:Two-Body Relaxation and Dynamical Friction} as a key process responsible for replenishing the so-called binary "loss cone".
+Thus, the violent relaxation timescale is directly related to the characteristic dynamical timescale of the newly formed system and is expected to be of the order of its free-fall timescale $t_{ff}\propto 1/\sqrt{G\bar{\rho}}$.\\To obtain an order-of-magnitude estimate of this timescale for the merger of two identical non-nucleated dwarf galaxies, we may consider the non-nucleated galaxy model built by \textcite{Khan_2024} from a sample of non-nucleated dwarf galaxies ofthe Fornax cluster. For a galaxy of stellar mass $M_*=10^8\times M_\odot$, effective radius $R_e=0.56\,kpc$ and Sersic index $n=0.81$ (see Section \ref{sec:NGC 205 IMBH Binary evolution}), the violent relaxation timescale is expected to be of the order of $T_r=21.2\,Myr$. This estimate has been obtained from Equation (\ref{violent_relaxation_time_final}) by considering the average stellar density of the mentioned reference galaxy within its effective radius. This result demonstrates that this mechanism can redistribute the orbital energy of the progenitor galaxies on a much shorter timescale than that associated with two-body relaxation $t_{2b}$. The latter will be introduced in \S~\ref{sec:Two-Body Relaxation and Dynamical Friction} as a key process responsible for replenishing the so-called binary "loss cone".
 
 
 
@@ -437,7 +453,7 @@ Thus, the violent relaxation timescale is directly related to the characteristic
 
 \section{Two-Body Relaxation and Dynamical Friction}
 \label{sec:Two-Body Relaxation and Dynamical Friction}
-Galaxies are multi-component systems in dynamical equilibrium, where different stellar populations, gaseous phases, dust, and dark matter coexist \parencite{Cimatti_book}. These environments host an enormous number of stars, which makes it impossible to track the orbit of each element. Neverthless, by abandoning the idea of characterizing the time evolution of each degree of freedom in the phase-space (PS), a probabilistic description of the stellar population is still possible in terms of the one-particle distribution function (DF) $f(\mathbf{x},\mathbf{v},t)$. This can be interpreted as the probability density of finding a star at a given point $\mathbf{w}=(\mathbf{x},\mathbf{v})$ in phase space at time $t$. It is conventionally normalized so that
+Galaxies are multi-component systems in dynamical equilibrium, where different stellar populations, gaseous phases, dust, and dark matter coexist \parencite{Cimatti_book}. These environments host an enormous number of stars, which makes it impossible to track the orbit of each element. Neverthless, by abandoning the idea of characterizing the time evolution of each degree of freedom in the phase-space (PhS), a probabilistic description of the stellar population is still possible in terms of the one-particle distribution function (DF) $f(\mathbf{x},\mathbf{v},t)$. This can be interpreted as the probability density of finding a star at a given point $\mathbf{w}=(\mathbf{x},\mathbf{v})$ in PhS at time $t$. It is conventionally normalized so that
 \begin{equation}
 \rho(\mathbf{x},t)=\int_{\mathbb{R}^3}d^3\mathbf{v}\,f(\mathbf{x},\mathbf{v},t),
 \end{equation}
@@ -445,21 +461,21 @@ where $\rho(\mathbf{x},t)$ is the stellar density providing a smooth approximati
 \begin{equation}\label{CBE}
 \frac{df}{dt}\equiv \frac{\partial f}{\partial t}+\frac{d\mathbf{x}}{dt}\cdot \frac{\partial f}{\partial \mathbf{x}}+\frac{d\mathbf{v}}{dt}\cdot \frac{\partial f}{\partial \mathbf{v}}=0.
 \end{equation}
-Equation (\ref{CBE}) is expected to hold as long as the effects of repeated gravitational encounters between stars remain negligible over the age of the system. Although individual encounters are typically weak, their cumulative effect can progressively redistribute energy and angular momentum among stars, causing their trajectories to deviate from those drawn by the smooth potential $\Phi$ and DF to diffuse in PS \parencite{Binney_book}.\\The characteristic timescale over which these cumulative encounters significantly alter stellar trajectories is the two-body relaxation time $t_{2b}$, which provides a natural criterion for assessing the validity of the collisionless approximation. Systems whose age is shorter than their two-body relaxation time, i.e $t_{age}<t_{2b}$, are conventionally referred to as collisionless; otherwise, they will be referred to as collisional \parencite{Ciotti_book}.\\The approach of \textcite{Chandrasekhar_1943} for estimating $t_{2b}$ relies on the Impulsive Approximation. It consists of two main assumptions:
+Equation (\ref{CBE}) is expected to hold as long as the effects of repeated gravitational encounters between stars remain negligible over the age of the system. Although individual encounters are typically weak, their cumulative effect can progressively redistribute energy and angular momentum among stars, causing their trajectories to deviate from those drawn by the smooth potential $\Phi$ and DF to diffuse in PS \parencite{Binney_book}.\\The characteristic timescale over which these cumulative encounters significantly alter stellar trajectories is the two-body relaxation time $t_{2b}$, which provides a natural criterion for assessing the validity of the collisionless approximation. Systems whose age is shorter than their two-body relaxation time, i.e $t_{age}<t_{2b}$, are conventionally referred to as collisionless; otherwise, they will be referred to as collisional \parencite{Ciotti_book}.\\The approach of \textcite{Chandrasekhar_1943} for estimating $t_{2b}$ relies on the impulsive approximation. It consists of two main assumptions:
 \begin{enumerate}
 \item Stellar encounters are treated as independent events, so that correlations between consecutive encounters and simultaneous multiple interactions are neglected.
 \item The gravitational influence of the remaining $N-2$ stars is neglected during each encounter, reducing the problem to a sequence of isolated hyperbolic two-body interactions.
 \end{enumerate}
-Let us work under the simplifying assumption of a spatially homogeneous distribution of field stars with isotropic velocity field. The DF $f(\mathbf{x_f},\mathbf{v_f})$ of such system can be expressed as the product of the position-indipendent number density $n_f$ and probability density function $g(v_f)$ in the velocity space,
+Let us work under the simplifying assumption of a spatially homogeneous distribution of field stars with isotropic velocity field. The DF $f(\mathbf{x_f},\mathbf{v_f})$ of such system can be expressed as the product of the position-independent number density $n_f$ and probability density function $g(v_f)$ in the velocity space,
 \begin{equation}
     f(\mathbf{x_f},\mathbf{v_f})=n_fg(v_f).
 \end{equation}
-Two-body encounters between a test particle of mass $m_t$ and a field star of mass $m_f$ induce small changes in an orbital property $P$ of the test particle. Although each interaction produces only a small perturbation, the cumulative effect of many encounters causes $P$ to diffusive. This process is quantified by the diffusion coefficient $D(P)$, which measures the rate at which $P$ changes per unit time. Owing to the Impulsive Approximation, it can be written as
+Two-body encounters between a test particle of mass $m_t$ and a field star of mass $m_f$ induce small changes in an orbital property $P$ of the test particle. Although each interaction produces only a small perturbation, the cumulative effect of many encounters causes $P$ to diffuse. This process is quantified by the diffusion coefficient $D(P)$, which measures the rate at which $P$ changes per unit time. Owing to the Impulsive Approximation, it can be written as
 \begin{equation}\label{diffusion coeff def}
     D(P)\equiv 2\pi n_f\int_{\mathbb{R}^3} d^3\mathbf{v_f}\|\mathbf{v_t}-\mathbf{v_f}\|g(v_f)\int_0^\infty db\langle P\rangle b,
  \end{equation}
 where $\langle P\rangle$ denotes the angle-averaged value of the orbital property $P$, and $b$ is the impact parameter of the hyperbolic encounter \parencite{Ciotti_book}.
-Since significant deflections of the original orbits are expected beyond $t_{2b}$, corresponding to the onset of the collisional regime, a useful indicator for determining $t_{2b}$ may be the orbital property $P=\Delta\mathbf{v}_{t\perp}$, that is the component of the test-particle velocity change perpendicular to the initial relative velocity with respect to the field particle. However, under the assumption of isotropy, the first-order diffusion coefficients of the velocity components vanish \parencite{Binney_book}. Consequently, the leading non-vanishing contribution is represented by the second-order diffusion coefficient, hence, making the quantity $P=\|\Delta \mathbf{v}_{t\perp}\|^2$ the relevant orbital parameter for our analysis. By taking advantage of the small-angle scattering approximation (see, e.g., \textcite{Meneghetti_book}),
+Since significant deflections of the original orbits are expected beyond $t_{2b}$, corresponding to the onset of the collisional regime, a useful indicator for determining $t_{2b}$ may be the orbital property $P=\Delta\mathbf{v}_{t\perp}$, that is the component of the test-particle velocity change perpendicular to the initial relative velocity with respect to the field particle. However, under the assumption of isotropy, the first-order diffusion coefficients of the velocity components vanish \parencite{Binney_book}. Consequently, the leading non-vanishing contribution is represented by the second-order diffusion coefficient, hence, making the quantity $P=\|\Delta \mathbf{v}_{t\perp}\|^2$ the relevant orbital parameter for our analysis. By taking advantage of the small-angle scattering approximation (see, e.g., \textcite{Chandrasekhar_1943}),
 \begin{equation}\label{small angle approximation}
     \|\Delta \mathbf{v}_{t\perp} \|\simeq \frac{2Gm_f}{vb},
 \end{equation}
@@ -499,8 +515,13 @@ is normalized to unity as a consequence of the normalization of velocity-space d
     t_{2b}\equiv\frac{v_t^2(-\infty)}{D(\Delta E_{t\perp})}\sim \frac{v_t^3}{8\pi G^2n_fm_f^2ln\bar\Lambda},
 \end{equation}
 holding in the high velocity limit from Equation (\ref{Rosenbluth potential if isotropy}).
-As discussed above, two-body encounters redistribute the test particle's kinetic energy, increasing its velocity component perpendicular to the initial direction of motion. In this sense, two-body interactions act as a heating mechanism in the transverse direction. Conversely, dynamical friction produces a systematic loss of kinetic energy along the direction of motion and behaving as cooling process(see, e.g., \textcite{Chandrasekhar_1943}; \textcite{Binney_book}). This results in the sinking of massive objects, such as an intruding secondary BH, and \(N\)-body simulations by \textcite{Baumgardt_2006} have demonstrated that dynamical friction efficiently drives the secondary BH down to $a_0$, defined as the radius enclosing a stellar mass equal to twice that of $M_2$, that is
+Keeping in mind the estimate of $T_r$ obtained in \S~\ref{sec:Galaxy Mergers and Violent Relaxation} for a representative non-nucleated dwarf galaxy, we now compare it with the corresponding two-body relaxation time, $t_{2b}$, of the same system. An order-of-magnitude estimate can be obtained from
+\begin{equation}\label{t_2b approx}
+t_{2b}\approx t_{cross}\frac{N}{12\log{N}},
+\end{equation}
+where $N$ denotes the number of stars and $t_{cross}=2\sigma_v/R_e$ \parencite{Ciotti_book}. Assuming equal-mass stars with $m_*=1,M_\odot$, Equation (\ref{t_2b approx}) yields a $t_{2b}$ of the order of tens of Gyr, thus significantly exceeding the corresponding value of $T_r$.\\As discussed above, two-body encounters redistribute the test particle's kinetic energy, increasing its velocity component perpendicular to the initial direction of motion. In this sense, two-body interactions act as a heating mechanism in the transverse direction. Conversely, dynamical friction produces a systematic loss of kinetic energy along the direction of motion and behaving as cooling process(see, e.g., \citealt{Chandrasekhar_1943}; \citealt{Binney_book}). This results in the sinking of massive objects, such as an intruding secondary BH, and \(N\)-body simulations by \textcite{Baumgardt_2006} have demonstrated that dynamical friction efficiently drives the secondary BH down to $a_0$, defined as the radius enclosing a stellar mass equal to twice that of $M_2$, that is
 \begin{equation}
+\label{a_0 definition}
  M_*(<a_0)=2M_2.
 \end{equation}
 In order to derive an estimate for the dynamical friction timescale $t_{df}$, we follow the same approach and notation adopted above and first calculate the diffusion coefficient associated with the orbital property $P=\Delta \mathbf{v_t}$ for a test particle of mass $m_t$ moving through a stellar field composed of particles of mass $m_f$, i.e.
@@ -515,49 +536,49 @@ known as Chandrasekhar's dynamical friction formula \parencite{Chandrasekhar_194
 \begin{equation}
  t_{df}\equiv \frac{\|\mathbf{v_t}(-\infty)\|}{\|D(\Delta \mathbf{v_{t\parallel}})\|}\sim \frac{v_t^3}{4\pi G^2 n_fm_f(m_f+m_t)\ln{(\bar{\Lambda})}\Xi(v_t)},
 \end{equation}
-We conclude this Section by deriving, under physically motivated assumptions, an analytic expression for the dynamical friction timescale $t_{df}$ of an intruding secondary BH of mass $m_t$, which sinks towards the center of a stellar background characterized by a Maxwellian velocity distribution and a power-law density profile
+We conclude this Section by deriving, under physically motivated assumptions, an analytic expression for the dynamical friction timescale $t_{df}$ of an intruding secondary BH of mass $m_2$ and velocity $\mathbf{v_2}$, which sinks towards the center of a stellar background hosting a primary BH of mass $m_1$. Let us assume the stellar distribution to possess a Maxwellian velocity distribution and a power-law density profile
 \begin{equation}\label{Power low distribution}
-    \rho(r)=\rho_0\left(\frac{r}{r_0}\right)^{-\gamma}
+    \rho(r)=\rho_0\left(\frac{r}{r_0}\right)^{-\gamma}.
 \end{equation}
-and hosting a primary BH of mass $m_f$.\\For a Maxwellian velocity distribution, the integral over the stellar velocity distribution appearing in Equation (\ref{Chandrasekhar dynamical friction equation}) can be evaluated analytically, yielding
+We begin by noting that for a Maxwellian velocity distribution, the integral over the stellar velocity distribution appearing in Equation (\ref{Chandrasekhar dynamical friction equation}) can be evaluated analytically, yielding
 \begin{equation}\label{Chandrasekhar dynamical friction equation for MB}
-    \frac{d\mathbf{v_t}}{dt}=-4\pi \ln{\Lambda}\left[erf(X)-\frac{2X}{\sqrt{\pi}}e^{-X^2}\right]\frac{G^2m_t\rho(r)}{v_t^3}\mathbf{v_t}
+    \frac{d\mathbf{v_2}}{dt}=-4\pi \ln{\Lambda}\left[erf(X)-\frac{2X}{\sqrt{\pi}}e^{-X^2}\right]\frac{G^2m_2\rho(r)}{v_2^3}\mathbf{v_2}
 \end{equation}
 where 
 \begin{equation}\label{error function}
     erf(X)=\frac{2}{\sqrt{\pi}}\int_{0}^{X}dt \, e^{-t^2}
 \end{equation}
-is the so-called error function \parencite{Binney_book}. Here, $X\equiv v_c/(\sqrt{2}\sigma)$ is a dimensionless parameter that combines the circular velocity $v_c$ of the test particle with the velocity dispersion $\sigma$ of the stellar background.\\Let us now consider the orbital decay of the intruding BH along quasi-circular orbits after it enters the primary BH's sphere of influence. In this region, the gravitational potential is dominated by the primary BH of mass $m_f$, so that the angular momentum of the secondary BH and the dynamical friction force acting on it are given by
+is the so-called error function. Here, $X\equiv v_c/(\sqrt{2}\sigma)$ is a dimensionless parameter that combines the circular velocity $v_c$ of the test particle with the velocity dispersion $\sigma$ of the stellar background.\\For an intruder BH moving along quasi-circular orbits within the sphere of influence of the primary BH, the angular momentum and the dynamical friction force acting on it are given by
 \begin{equation}\label{dynamical friction angular momentum}
-    \tilde{L}=m_t\sqrt{Gm_fr}
+    \tilde{L}=m_2\sqrt{Gm_1r}
 \end{equation}
 and
 \begin{equation}\label{dynamical friction force}
-  \tilde{F}=m_t\frac{dv_t}{dt}=-C(\Lambda,X)\frac{G^2m_t^2\rho(r)}{v_c^2}
+  \tilde{F}=m_2\frac{dv_2}{dt}=-C(\Lambda,X)\frac{G^2m_2^2\rho(r)}{v_c^2}
 \end{equation}
 respectively. Here, $C(\Lambda,X)$ is the dimensionless factor implicitly defined through the Equations (\ref{Chandrasekhar dynamical friction equation for MB}) and (\ref{dynamical friction force}).\\At this point, we can exploit the fact that, within the primary BH's sphere of influence, the circular velocity can be approximated as
 \begin{equation}\label{dynamical friction v_c}
- v_c^2=\frac{Gm_f}{r}.
+ v_c^2=\frac{Gm_1}{r}.
 \end{equation}
 Under these assumptions, the second cardinal equation of dynamics takes the form
 \begin{equation}\label{dynamical friction angular momentum loss eq}
     \frac{d\tilde{L}}{dt}=\tilde{F}r,
 \end{equation}
-and leads to the differential equation for \(r=r(t)\) upon substituting the expressions given in Equations (\ref{dynamical friction force}), (\ref{dynamical friction angular momentum}) and (\ref{dynamical friction v_c}) (see, e.g., \textcite{Baumgardt_2006}; \textcite{Gualandris_2022}):
+and leads to the differential equation for \(r=r(t)\) upon substituting the expressions given in Equations (\ref{dynamical friction force}), (\ref{dynamical friction angular momentum}) and (\ref{dynamical friction v_c}) (see, e.g., \citealt{Baumgardt_2006}; \citealt{Gualandris_2022}):
 \begin{equation}\label{r(t) diff. eq. for dynamical friction}
     r^{-5/2}\frac{dr}{dt}=-2C(\Lambda,X(r))\frac{\sqrt{G}m_t}{m_f^{3/2}}\rho(r).
 \end{equation}
-Finally, we note that Equation (\ref{r(t) diff. eq. for dynamical friction}) admits an analytic solution for an isotropic power-law density profile. In this case,
+Equation (\ref{r(t) diff. eq. for dynamical friction}) admits an analytic solution for an isotropic power-law density profile. Indeed, in this case
 \begin{equation}
  X=\sqrt{\gamma-1}
 \end{equation}
-and is therefore independent of radius. Integrating the differential equation subject to the initial condition $r(t=0)=r_0<r_{inf}$, we obtain
+and is therefore independent of radius \parencite{Madigan_2011}. Integrating the differential equation subject to the initial condition $r(t=0)=r_0<r_{inf}$, we obtain
 \begin{equation}\label{r(t) of stellar cusp under dynamical friction}
 r(t)=
 \begin{cases}
-r_0\left[1-2C(\Lambda,X)\frac{\sqrt{G}m_t}{m_f^{3/2}}\left(\gamma-\frac{3}{2}\right)\rho_0r_0^{3/2}t\right]^{\frac{1}{\gamma-3/2}}
+r_0\left[1-2C(\Lambda,X)\frac{\sqrt{G}m_2}{m_1^{3/2}}\left(\gamma-\frac{3}{2}\right)\rho_0r_0^{3/2}t\right]^{\frac{1}{\gamma-3/2}}
 & \text{if } 1<\gamma\le 3 \land \gamma \ne \frac{3}{2} \\[6pt]
-r_0\exp\left[-2C(\Lambda,X)\frac{\sqrt{G}m_t}{m_f^{3/2}}\rho_0r_0^{3/2}t\right]
+r_0\exp\left[-2C(\Lambda,X)\frac{\sqrt{G}m_2}{m_1^{3/2}}\rho_0r_0^{3/2}t\right]
 & \text{if } \gamma = \frac{3}{2}
 \end{cases}
 \end{equation}
@@ -566,19 +587,34 @@ Equation (\ref{r(t) of stellar cusp under dynamical friction}) applies to an iso
 t_{\rm fric}=
 \begin{cases}
 \displaystyle
-\frac{m_f^{3/2}}
-{2C(\Lambda,X)\sqrt{G}\,m_t\,\rho_{\rm inf}r_{\rm inf}^{\gamma}}
+\frac{m_1^{3/2}}
+{2C(\Lambda,X)\sqrt{G}\,m_2\,\rho_{\rm inf}r_{\rm inf}^{\gamma}}
 \frac{r_{\rm inf}^{\gamma-3/2}-a_0^{\gamma-3/2}}
 {\gamma-\frac{3}{2}},
 & \text{if } \gamma\neq\frac{3}{2}, \\[10pt]
 \displaystyle
-\frac{m_f^{3/2}}
-{2C(\Lambda,X)\sqrt{G}\,m_t\,\rho_{\rm inf}r_{\rm inf}^{3/2}}
+\frac{m_1^{3/2}}
+{2C(\Lambda,X)\sqrt{G}\,m_2\,\rho_{\rm inf}r_{\rm inf}^{3/2}}
 \ln\left(\frac{r_{\rm inf}}{a_0}\right),
 & \text{if } \gamma=\frac{3}{2}.
 \end{cases}
 \end{equation}
-From $a_0$ onward, dynamical friction, which has driven the orbital decay and pairing of the BHs up to this point, becomes inefficient and the further hardening of the binary becomes primarily driven by individual encounters with low-angular-momentum stars that are unbound to the binary and can extract energy and angular momentum from it. We address this shrinking mechanism in \S~\ref{sec:Gravitational Slingshot Effect}.
+We now seek to determine both $r_{inf}$ and $a_0$ for a power-law stellar distribution hosting a BH binary of total mass $M_{12}=m_1+m_2$. In this case, the influence radius $r_{inf}$, defined as
+\begin{equation}
+\label{r_inf definition}
+ M_*(<r_{inf})=2M_{12},
+\end{equation}
+and $a_0$, defined by Equation (\ref{a_0 definition}),
+admit an analytical expression. They turn to be
+\begin{equation}
+ r_{inf}=r_0\left[\frac{(3-\gamma)M_{12}}{2\pi \rho_0r_0^3}\right]^{1/(3-\gamma)}
+\end{equation}
+and
+\begin{equation}
+\label{a_0=a_0(r_inf)}
+ a_0=r_{inf}\left(\frac{q}{1+q}\right)^{1/(3-\gamma)},
+\end{equation}
+respectively, with $q=m_2/m_1<1$ denoting the BH masses ratio. Equation (\ref{a_0=a_0(r_inf)}) shows that, at fixed power-law slope $\gamma$, $a_0$ spans the range from $0$ to $r_{inf}2^{1/\gamma-3}$ as $q$ varies from $0$ to $1$.\\From $a_0$ onward, dynamical friction, which has driven the orbital decay and pairing of the BHs up to this point, becomes inefficient and the further hardening of the binary becomes primarily driven by individual encounters with low-angular-momentum stars that are unbound to the binary and can extract energy and angular momentum from it. We address this shrinking mechanism in \S~\ref{sec:Gravitational Slingshot Effect}.
 
 
 
@@ -589,8 +625,8 @@ From $a_0$ onward, dynamical friction, which has driven the orbital decay and pa
 
 
 \section{Black Hole Binary–Star Three-Body Scattering}\label{sec:Gravitational Slingshot Effect}
-As discussed in \S~\ref{sec:Two-Body Relaxation and Dynamical Friction} and \S~\ref{sec:Galaxy Mergers and Violent Relaxation}, during a dry, major merger, the remnant evolves towards virial equilibrium on the violent relaxation timescale $T_r$, while the MBHs initially located at the centers of the progenitor galaxies sink towards the center of the remnant through dynamical friction on a timescale $t_{fric}$. As their separation decreases, the MBHs eventually cross each other sphere of influence and form a gravitationally bound pair at a separation of order $a_0$, defined as the binary separation at which the enclosed stellar mass equals the secondary BH mass $M_2$ \parencite{Baumgardt_2006}.
-At this stage, the binary separation is sufficiently small that distant stars mainly perturb the binary center of mass, with negligible effect on its orbital energy \parencite{Quinlan_1996}. Further hardening is therefore driven predominantly by low angular momentum stars passing in the vicinity of the binary and extracting both energy and angular momentum from it. Each time such a star---belonging to the so-called binary "loss cone", as we will discuss in more detail in \S~\ref{sec:Loss Cone}---passes sufficiently close to the binary, a three-body encounter takes place. Under suitable conditions, this interaction produces hyper-velocity stars (see, e.g., \textcite{Quinlan_1996}; \textcite{Sesana_2006}) through the so-called stellar slingshot mechanism \parencite{Mikkola_1992}. In this section, we review the main physical aspects of three-body scattering and the stellar slingshot mechanism, which are key processes driving the hardening of MBHBs.\\We begin by considering the so-called "two-body problem" and reviewing some of its key results, which will be useful in understanding the physics of the stellar slingshot. Adopting the same notation as in the previous Section, let us consider a test particle and a field particle, with masses $m_t$ and $m_f$, respectively, interacting solely through gravity. Introducing the total mass of the system, $M=m_t+m_f$, and the reduced mass, $\mu=m_tm_f/M$, the total energy in the mass centre frame $S_{CM}$ is given by
+As discussed in \S~\ref{sec:Galaxy Mergers and Violent Relaxation} and \S~\ref{sec:Two-Body Relaxation and Dynamical Friction}, during a dry, major merger, the remnant evolves towards equilibrium on the violent relaxation timescale $T_r$, while the MBHs initially located at the centers of the progenitor galaxies sink towards the center of the remnant through dynamical friction on a timescale $t_{fric}$. As their separation decreases, the MBHs eventually cross each other sphere of influence and form a gravitationally bound pair at a separation of order $a_0$, defined as the binary separation at which the enclosed stellar mass equals the secondary BH mass $M_2$ \parencite{Baumgardt_2006}.
+At this stage, the binary separation is sufficiently small that distant stars mainly perturb the binary center of mass, with negligible effect on its orbital energy \parencite{Quinlan_1996}. Further hardening is therefore driven predominantly by low angular momentum stars passing in the vicinity of the binary and extracting both energy and angular momentum from it. Each time such a star---belonging to the so-called binary "loss cone", as we will discuss in more detail in \S~\ref{sec:Loss Cone}---passes sufficiently close to the binary, a three-body encounter takes place. Under suitable conditions, this interaction produces hyper-velocity stars (see, e.g., \citealt{Quinlan_1996}; \citealt{Sesana_2006}) through the so-called stellar slingshot mechanism \parencite{Mikkola_1992}. In this section, we review the main physical aspects of three-body scattering and the stellar slingshot mechanism, which are key processes driving the hardening of MBHBs.\\We begin by considering the so-called "two-body problem" and reviewing some of its key properties, which will be useful in understanding the physics of the stellar slingshot. Adopting the same notation as in the previous Section, let us consider a test particle and a field particle, with masses $m_t$ and $m_f$, respectively, interacting solely through gravity. Introducing the total mass of the system, $M=m_t+m_f$, and the reduced mass, $\mu=m_tm_f/M$, the total energy in the mass centre frame $S_{CM}$ is given by
 \begin{equation}
 \label{E_in_S_cm}
     E=\frac{1}{2}\mu\|\mathbf{v}\|^2-\frac{Gm_fm_t}{r},
@@ -623,22 +659,22 @@ with the conservation of the center-of-mass velocity vector $\mathbf{v_{CM}}$, w
 \begin{equation}
     \Delta E_t=\mu\langle \Delta\mathbf{v}, \mathbf{v_{CM}} \rangle.
 \end{equation}
-We are now in a position to address three-body scattering involving a gravitationally bound BH binary and an incoming star. The dynamics of this encounter can be understood by considering the limiting case of strongly asymmetric binary in which $M_1\gg M_2\gg m_*$ so that both the star and the secondary BH, having masses $m_*$ and $M_2$, can travel along nearly Keplerian orbits around $M_1$ with slightly different radii and, consequently, possess slightly different Keplerian velocities. The secondary BH acts as the field particle, while the star plays the role of the test particle. The primary BH serves only to establish the relative velocity between the two bodies. As a result, the center of mass motion of this gravitationally unbound pair is essentially determined by the orbit of $M_2$ around $M_1$. Therefore, the approximation
+We are now in a position to address three-body scattering involving a gravitationally bound BH binary and an incoming star. The dynamics of this encounter can be understood by considering the limiting case of a strongly asymmetric binary in which $M_1\gg M_2\gg m_*$ so that both the star and the secondary BH, having masses $m_*$ and $M_2$, can travel along nearly Keplerian orbits around $M_1$ with slightly different radii and, consequently, possess slightly different Keplerian velocities. The secondary BH acts as the field particle, while the star plays the role of the test particle. The primary BH serves only to establish the relative velocity between the two bodies. As a result, the center of mass motion of this gravitationally unbound pair is essentially determined by the orbit of $M_2$ around $M_1$. Therefore, the approximation
 \begin{equation}\label{Primary BH approx CM}
     \mathbf{x_{CM}}\simeq \mathbf{x_f}, \qquad\mathbf{v_{CM}}\simeq \mathbf{v_f},
 \end{equation}
-applies and the mass center will move locally at costant velocity if the observation time is short compared to the orbital period, thus making negligible its acceleration.\\Hereafter, by analogy with the previous notation, we identify $M_2\equiv m_f$ and $m_*\equiv m_t$.
+applies and the center of mass will move locally at costant velocity if the observation time is short compared to the orbital period, thus making negligible its acceleration.\\Hereafter, by analogy with the previous notation, we identify $M_2\equiv m_f$ and $m_*\equiv m_t$.
 
 \paragraph{Binary hardening.}
-When the star is place outside the secondary BH orbit, the Keplerian velocity profile imposes $\|\mathbf{v_f}(-\infty) \| =\| \mathbf{v_{CM}}\| > \|\mathbf{v_t}(-\infty) \|$. Therefore, at point where $m_f$ surpasses $m_t$ and they are both located on the same radius, $\mathbf{v}(-\infty)$ is nearly antiparallel to $\mathbf{v_{CM}}$ and $\Delta\mathbf{v}_\parallel$ can be read as the projected vector along $\mathbf{v_{CM}}$ rather than $\mathbf{v}(-\infty)$. Taking advantage of Equation (\ref{slingshot negative scalar product}), it follows that
+When the star is outside the secondary BH orbit, the Keplerian velocity profile imposes $\|\mathbf{v_f}(-\infty) \| =\| \mathbf{v_{CM}}\| > \|\mathbf{v_t}(-\infty) \|$. Therefore, at point where $m_f$ surpasses $m_t$ and they are both located on the same radius, $\mathbf{v}(-\infty)$ is nearly antiparallel to $\mathbf{v_{CM}}$ and $\Delta\mathbf{v}_\parallel$ can be read as the projected vector along $\mathbf{v_{CM}}$ rather than $\mathbf{v}(-\infty)$. Taking advantage of Equation (\ref{slingshot negative scalar product}), it follows that
 \begin{equation}
 \label{stellar_hardening_inequality}
     0<\langle \Delta\mathbf{v}_\parallel, \mathbf{v_{CM}} \rangle=\langle \Delta\mathbf{v}, \mathbf{v_{CM}}\rangle=\Delta E_t/\mu.
 \end{equation}
-Equation (\ref{stellar_hardening_inequality}) shows that in the reference system centered on $M_1$ the star gains orbital energy and is scattered onto a wider orbit. On the other hand, the secondary BH experiences an equal and opposite change in orbital energy, leading to a reduction of the binary separation and, consequently, to binary hardening.\\ It is worth of noticing that if $\Delta E_t>|E_t(-\infty)|$, which occurs at very high circular velocity of the binary BHs, stellar ejection occurs; in this regime ‘‘hypervelocity stars’’ (HVSs) travelling along nearly radial orbits are produced (see, e.g., \textcite{Quinlan_1996};\textcite{Sesana_2006}).
+Equation (\ref{stellar_hardening_inequality}) shows that in the reference system centered on $M_1$ the star gains orbital energy and is scattered onto a wider orbit. On the other hand, the secondary BH experiences an equal and opposite change in orbital energy, leading to a reduction of the binary separation and, consequently, to binary hardening.\\ It is worth noticing that if $\Delta E_t>|E_t(-\infty)|$, which occurs at very high circular velocity of the binary BHs, stellar ejection occurs; in this regime ‘‘hypervelocity stars’’ (HVSs) travelling along nearly radial orbits are produced (see, e.g., \citealt{Quinlan_1996}; \citealt{Sesana_2006}).
 
 \paragraph{Binary softening.}
-Contrary to the previous case, binary softening takes place when the star is place inside the secondary BH orbit. Now $\mathbf{v}(-\infty)$ is nearly parallel to $\mathbf{v_{CM}}$ at the crossover point and by repeating the same arguments used above it follows
+Contrary to the previous case, binary softening takes place when the star is inside the secondary BH orbit. Now $\mathbf{v}(-\infty)$ is nearly parallel to $\mathbf{v_{CM}}$ at the crossover point and by repeating the same arguments used above it follows
 \begin{equation}
      E_t/\mu=\langle \Delta\mathbf{v}, \mathbf{v_{CM}}\rangle=\langle \Delta\mathbf{v}_\parallel, \mathbf{v_{CM}} \rangle<0.
 \end{equation}
@@ -646,7 +682,7 @@ On one hand the star loses energy to the binary, it is pushed inward and may und
 
 \par\vspace{0.5cm}
 \noindent
-Although our discussion has so far focused on a specific three-body scattering configuration, the results can be readily generalized by observing that the distinction between binary hardening and softening is determined by the relative magnitude of the BH binary's orbital velocity  and the velocity of the incoming loss-cone star.\\The binary BH embidded in an isotropic stellar background with costant velocity dispersion $\sigma$ is expected to undergo three-body scatterings with loss-cone stars that will approach the galactic centre where the binary lives with velocity of the order of $\sigma$. Because the specific binding energy of a keplerian with total mass $M=M_1+M_2$, reduced mass $\mu$ and semimajor axis $a$ is
+Although our discussion has so far focused on a specific three-body scattering configuration, the results can be readily generalized by observing that the distinction between binary hardening and softening is determined by the relative magnitude of the BH binary's orbital velocity  and the velocity of the incoming loss-cone star.\\The binary BH embidded in an isotropic stellar background with costant velocity dispersion $\sigma$ is expected to undergo three-body scatterings with loss-cone stars that will approach the galactic centre where the binary lives with velocity of the order of $\sigma$. Because the specific binding energy of a Keplerian with reduced mass $\mu$ and semimajor axis $a$ is
 \begin{equation}
  E_b=\frac{G\mu}{2a}
 \end{equation}
@@ -658,10 +694,10 @@ and the specific energy of the loss-cone star is of the order of $\sigma^2$, the
 softer.}
 \medskip
 
-\noindent By extrapolation of the two limiting cases, one can define the "hardening radius" $a_h$ as the binary separation at which binary passes from the soft to the hard regime. Despite its expected weak dependence on the BH mass ratio, throughout this work we adopt the definition proposed by \textcite{Quinlan_1996}, unless otherwise specified:\begin{equation}\label{a_h definition}
+\noindent By extrapolation of the two limiting cases, one can define the "hardening radius" $a_h$ as the binary separation at which binary passes from the soft to the hard regime. Throughout this thesis we adopt the definition proposed by \textcite{Quinlan_1996}, unless otherwise specified:\begin{equation}\label{a_h definition}
  a_h=\frac{GM_2}{4\sigma^2}.
 \end{equation}
-At this stage, it should be clear that stellar scattering plays a fundamental role in driving the binary toward the regime in which GWs emission dominates its evolution. Nevertheless, one may wonder how a binary can evolve from the soft to the hard regime. The key point is that most of the work for this evolution to continue in the the direction of binary hardening is done by dynamical friction with the stellar background rather than individual encounters, as explained in Section \ref{sec:Two-Body Relaxation and Dynamical Friction}.\\The discussion then turns to the loss-cone refilling problem, whose efficient replenishment is essential to ensure a sustained supply of low angular momentum stars capable of driving the continued hardening of the binary through stellar ejection.
+At this stage, it should be clear that stellar scattering plays a fundamental role in driving the binary toward the regime in which GWs emission dominates its evolution. Nevertheless, one may wonder how a binary can evolve from the soft to the hard regime. The key point is that this transition is driven primarily by dynamical friction against the stellar background, rather than by individual stellar encounters, as discussed in \S~\ref{sec:Two-Body Relaxation and Dynamical Friction}.\\The discussion then turns to the loss-cone refilling problem, whose efficient replenishment is essential to ensure a sustained supply of low angular momentum stars capable of driving the continued hardening of the binary through stellar ejection.
 
 
 
@@ -683,7 +719,7 @@ At this stage, it should be clear that stellar scattering plays a fundamental ro
 
 
 \section{Stellar Scattering and Loss Cone Problem}\label{sec:Loss Cone}
-In \S~\ref{sec:Gravitational Slingshot Effect} we have been concerned in describing the phisics of three-body scattering, pointing out its relevance to the orbital decay of the BH binary. In the following Section, instead, we will be explaining which stars can effectively exchange energy and angular momentum with the binary, the rate at which these close encounters take place and how all of this enters the self consistent model for MBHBs evolution developed by \textcite{Quinlan_1996} and \textcite{Sesana_2010} that will be presented in Chapter \ref{chap:chapter2}.\\Let $a(t)$ be the binary semimajor axis. Numerical experiments demonstrated that only stars intersecting the binary orbit can efficiently extract energy and angular momentum from when ejected at higher velocity \parencite{Mikkola_1992}. This class of stars of the stellar background populates the so-called “binary loss cone” and comprises both low-energy stars and high-energy, low angular momentum stars. Under the assumption of Keplerian orbits, the former have small mean radius $(\langle r\rangle<a)$ and specific energy $E_*<-GM/a$, while latter spend most of their orbital period $P(E_*)$ far from the binary but a close encounter can occur at the pericenter $r_P$ whenever $r_P<a$.\\The size of the binary loss cone, $J_{lc}$, in specific angular momentum space, hereafter J-space, is a function of $E_*$ and can be determined from the maximum and minimum angular momentum values allowed at a given specific energy.
+In \S~\ref{sec:Gravitational Slingshot Effect} we have been concerned in describing the phisics of three-body scattering, pointing out its relevance to the orbital decay of the BH binary. In the following Section, instead, we will be explaining which stars can effectively exchange energy and angular momentum with the binary, the rate at which these close encounters take place and how all of this enters the self consistent model for MBHBs evolution developed by \textcite{Quinlan_1996} and \textcite{Sesana_2010} that will be presented in Chapter \ref{chap:chapter2}.\\Let $a(t)$ be the binary semimajor axis. Numerical experiments demonstrated that only stars intersecting the binary orbit can efficiently extract energy and angular momentum from the binary when ejected at higher velocity \parencite{Mikkola_1992}. This class of stars of the stellar background populates the so-called “binary loss cone” and comprises both low-energy stars and high-energy, low angular momentum stars. Under the assumption of Keplerian orbits, the former have small mean radius $(\langle r\rangle<a)$ and specific energy $E_*<-GM/a$, while latter spend most of their orbital period $P(E_*)$ far from the binary but a close encounter can occur at the pericenter $r_P$ whenever $r_P<a$.\\The size of the binary loss cone, $J_{lc}$, in specific angular momentum space, hereafter J-space, is a function of $E_*$ and can be determined from the maximum and minimum angular momentum values allowed at a given specific energy.
  At the configuration of closest approach, the star radial velocity vanishes and the specific energy in terms of $r_P$ is
 \begin{equation}\label{Pericenter stellar energy}
  E_*=\frac{J^2}{2r_P^2}-\frac{GM}{r_P}.
@@ -694,6 +730,7 @@ From Equation (\ref{Pericenter stellar energy}) follows that the minimum value o
 \end{equation}
 which can be approximated to $\sim \sqrt{2GMa}$ as the vast majority of stars orbit far from the binary and have a specific angular energy $|E_*|\ll GM/a$.\\Besides, stars of fixed specific energy $E_*$, other than a minimum of the specific angular momentum $J_{min}=J_{lc}(E_*)$, possess a maximum set by the chain of inequalities
 \begin{equation}
+\label{E-J loss cone inequality}
  E_*\ge \frac{J^2}{2r^2}-\frac{GM}{r}\equiv V_{eff}(r)\ge V_{eff,\,min}=-\frac{G^2M^2}{2J^2},
 \end{equation}
 holding because of the non-negative behavior of the radial kinetic term. This constrain poses an upper limit to $J$, that is
@@ -701,11 +738,11 @@ holding because of the non-negative behavior of the radial kinetic term. This co
  J_{max}(E_*)=\frac{GM}{\sqrt{2|E_*|}},
 \end{equation}
 corresponding to the specific angular momentum of a circular orbit of specific energy $E_*$ \parencite{Capozziello_2008}.\\Once the binary has depleted, on a dynamical timescale $P(E_*)$, the population of stars that are bound to it and intersect its orbit—most of which, hence, reside within the binar sphere of influence—further hardening through stellar slingshot interactions depends on the rate at which the binary loss cone is replenished by stellar diffusion in both energy and angular momentum space, allowing new stars to enter the loss cone \parencite{Lightman_1977}. This diffusion arises from stellar encounters
-that have been proven to be efficient in exchanging angular momentum and results in a Random Walk in J-space (see, e.g., \textcite{Milosavljevic_2003}; \textcite{Merritt_2013}). Determining the rate at which this process occurs is crucial for assessing its role in the Quinlan–Sesana hybrid model.\\Let us define $j_2$ the rms angular momentum transferred in one orbital period  and $J_{max}(E_*)$ the same quantity associated with the timescale $t_{2b}$. Only stars with $J_{lc}\le J\le J_{lc}+j_2$ can be scattered into the loss cone over one orbital period and the kind of loss cone replenishing mechanism, along with the associated timescale, are set by the dimensionless quantity
+that have been proven to be efficient in exchanging angular momentum and results in a random walk (RW) in J-space (see, e.g., \citealt{Milosavljevic_2003}; \citealt{Merritt_2013}). Determining the rate at which this process occurs is in order to understand how it enters the self-consistent hybrid model devoled by \textcite{Quinlan_1996} and \textcite{Sesana_2010}, discussed in chapter \ref{chap:chapter2}.\\To this end, let us define $j_2$ the rms angular momentum transferred in one orbital period  and $J_{max}(E_*)$ the same quantity associated with the timescale $t_{2b}$. Only stars with $J_{lc}\le J\le J_{lc}+j_2$ can be scattered into the loss cone over one orbital period and the kind of loss cone replenishing mechanism, along with the associated timescale, are set by the dimensionless quantity
 \begin{equation}
-    q(E)\equiv\frac{j_2^2}{J_{min}^2}.
+    q(E_*)\equiv\frac{j_2^2}{J_{min}^2}.
 \end{equation}
-Taking Figure \ref{loss cone image} as a refernce, $q(E_*)$ enables us to distinguish between two extreme scenarios:
+Taking Figure \ref{loss cone image} as a reference, $q(E_*)$ enables us to distinguish between two extreme scenarios:
 \paragraph{Empty Loss Cone.}
 This condition is represented by picture on the left in Figure \ref{loss cone image}(b).\\When $q(E_*)\ll1$ the RW step size is very small compared to the loss cone size, making the process ascribable to a diffusion problem with timescale $t_{2b}$. Therefore, stars are removed from the loss cone faster than the rate at which it is fed, hence, remeining nearly empty.
 
@@ -714,13 +751,12 @@ This condition is represented by the picture on the right in Figure \ref{loss co
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\linewidth]{Loss_cone.png}
-    \caption{Fig. 1(a).—Velocity distribution of stars with fixed energy $E$;$J$ varies accordingly to the direction of $\mathbf{v}$ emphasising the two-dimensional nature of the problem. The vertical axis points towards the compact object of mass $M$.
-Fig. 1(6).—The velocity sphere viewed from below. On the left the empty loss cone scenario; stellar density is nearly indipendent of $J$ everywhere but $J\gtrsim J_{min}$ where is quickly declines. On the right the full loss cone regime; consumed stars are immediately replenished by stars from a region much more extended- and uniform density- than the loss cone itself (the “pinhole” limit). Picture from \textcite{Lightman_1977}.}
+    \caption{Panel (a): Velocity distribution of stars with fixed energy $E_*\equiv E$ and angular momentum $J$. The latter varies accordingly to Equation (\ref{E-J loss cone inequality}). The vertical axis points towards the compact object of mass $M$.\\Panel (b): The velocity sphere viewed from below. On the left the empty loss cone scenario. On the right the full loss cone regime. Figure taken from \textcite{Lightman_1977}.}
     \label{loss cone image}
 \end{figure}
 By employng the same dimensional analysis carried out by \textcite{Lightman_1977}, we expect that the stellar capture rate per unit energy $\Gamma_E(E_*)$ could be written as
 \begin{equation}\label{Lightman lc rate}
- \Gamma_E(E_*)\equiv\frac{d\Gamma}{dE}\approx \epsilon|E_*|^{-1}F_{max}(E_*)
+ \Gamma_E(E_*)\equiv\frac{d\Gamma}{dE_*}\approx \epsilon|E_*|^{-1}F_{max}(E_*)
 \end{equation}
 where $F_{max}(E_*)\sim N(E_*)/P(E_*)$ denotes the maximum rate of loss cone replenishing from stars with specific energy $E_*$ and $\epsilon$ is a correction factor helping us to account for the fraction of stars within the loss cone.\\Owing to the 2-D nature of the loss-cone problem in the J-space, $\epsilon$ is expected to be an area correction factor, thus scaling as
 \begin{equation}
@@ -749,11 +785,11 @@ express $\Gamma_Q$ in Equation (\ref{Quinlan Gamma_Q}) as
 \begin{equation}
  \Gamma_Q=2\pi \left(\frac{M}{m_*}\right) \frac{G\rho a}{v},
 \end{equation}
-with $\rho$ standing for the mass density of the homogeneous stellar background.\\On the other hand, \textcite{Sesana_2010} estimated the rate $\Gamma$ in Equation (\ref{Lightman lc rate}) under the assumption of a full loss cone, adopting an isothermal stellar sphere of total mass $M_*$, influence radius $r_{\rm inf}$ and costant stellar velocity dispersion $\sigma$.\\If all stars have the same mass $m_*$, the total number of stars inside $r$ is simply proportional to tha stellar mass enclosed within this sphere, that is
+with $\rho$ standing for the mass density of the homogeneous stellar background.\\On the other hand, \textcite{Sesana_2010} estimated the rate $\Gamma$ in Equation (\ref{Lightman lc rate}) under the assumption of a full loss cone, adopting an isothermal stellar sphere of total mass $M_*$, influence radius $r_{\rm inf}$ and costant stellar velocity dispersion $\sigma$.\\If all stars have the same mass $m_*$, the total number of stars inside $r$ is simply proportional to the stellar mass enclosed within this sphere, that is
 \begin{equation}
  N(<r)=\frac{M}{m_*}\frac{r}{r_{inf}},
 \end{equation}
-while, under the assumption of Keplerian orbits bound to the binary, the energy of each star depends on the semimajor only through the relation
+while, under the assumption of Keplerian orbits bound to the binary, the energy of each star depends on the semimajor axis only through the relation
 \begin{equation}
  E_*(r)=-\frac{GMm_*}{2r}.
 \end{equation}
@@ -765,7 +801,7 @@ Finally, approximating the orbital period as $P(r)\sim r/\sigma$ and substitutin
 \begin{equation}\label{Sesana Gamma}
 \Gamma=2\pi \frac{M}{m_*}\frac{G\rho_{\rm inf}a}{\sigma}.
 \end{equation}
-A comparison between Equations (\ref{Quinlan Gamma_Q})  and (\ref{Sesana Gamma}) shows that, by associating the velocity $v$ of an unbound star at infinity with the velocity dispersion $\sigma$ of the isothermal sphere, the prescriptions adopted for $H$ and $K$ effectively describe a system in which the loss cone is full at $r_{\rm inf}$. However, by introducing the dimensioless factor $LCN$, it is possible to describe, within the hybrid model formulation, different regimes of the loss-cone simply by replacing $\rho_{inf}$ with $LCN\cdot \rho_{inf}$ as will shown in chapter \ref{chap:chapter3}.
+A comparison between Equations (\ref{Quinlan Gamma_Q})  and (\ref{Sesana Gamma}) shows that, by associating the velocity $v$ of an unbound star at infinity with the velocity dispersion $\sigma$ of the isothermal sphere, the prescriptions adopted for $H$ and $K$ effectively describe a system in which the loss cone is full at $r_{\rm inf}$. However, by introducing the dimensioless factor $LCN$, it is possible to describe, within the hybrid model formulation, different regimes of the loss-cone simply by replacing $\rho_{inf}$ with $LCN\cdot \rho_{inf}$ as it will be shown in chapter \ref{chap:chapter3}.
 
 
 
@@ -1109,7 +1145,7 @@ By substituting Equation (\ref{a=a(e) Maggiore}) into Equation (\ref{tau coal. a
 
 
 
-\chapter{A Hybrid Approach to Binary Evolution}\label{chap:chapter2}
+\chapter{A Hybrid Approach to IMBH Binary Evolution}\label{chap:chapter2}
 
 
 
@@ -1121,7 +1157,8 @@ By substituting Equation (\ref{a=a(e) Maggiore}) into Equation (\ref{tau coal. a
 \begin{center}
 \begin{minipage}{0.65\textwidth}
 \centering
-\textit{In light of the forthcoming GW observatories, LISA and ET, investigating the properties and evolution of GW-loud sources is of particular importance. Among these, IMBH binaries are especially compelling and studying their dynamical evolution, along with the associated coalescence time, is essential for assessing their prospects as GW sources.\\This chapter aims to review the physical framework underlying the Quinlan-Sesana hybrid model for the dynamical evolution of black hole binaries and to present the main results of the numerical experiments performed using this approach. The chapter begins with a detailed description of the hybrid model, focusing on its main parameters and on the numerical integration of the differential equations governing the evolution of the binary semimajor axis and eccentricity. The model is then applied to physically motivated stellar backgrounds. The second section is devoted to numerical experiments in stellar-cusp environments. Finally, the chapter ends by reporting the main predictions of the model for nucleated dwarf galaxies and for non-nucleated, artificially evolved galaxies at redshift $z$, according to the observed cosmic evolution of galaxy sizes.}
+\textit{In light of the forthcoming GW observatories, LISA and ET, investigating the properties and evolution of GW-loud sources is of particular importance. Among these, IMBH binaries are especially compelling, and studying their dynamical evolution, together with their associated coalescence times, is essential for assessing their prospects as GW sources.\\This chapter aims to review the physical framework underlying the Quinlan-Sesana hybrid model for the dynamical evolution of black hole binaries and to present the main results of the numerical experiments performed using this approach. The chapter begins with a detailed description of the hybrid model, focusing on its main parameters and on the numerical integration of the differential equations governing the evolution of the binary semimajor axis and eccentricity. The model is then applied to physically motivated stellar backgrounds. The second section is therefore devoted to numerical experiments in stellar-cusp environments, while the third section presents the main results obtained by applying the model to nucleated dwarf galaxies. Finally, the chapter concludes with a study of IMBH binaries evolving within either present-day or artificially evolved high-$z$ non-nucleated dwarf galaxies, according to the observed cosmic size evolution of galaxies size.
+}
 \end{minipage}
 \end{center}
 
@@ -1245,71 +1282,72 @@ and
 with best-fitting parameters listed in Tables \ref{tab:H best-fit parameters} and \ref{tab:K best-fit_parameters}.
 \begin{table}[H]
 \centering
-\begin{tabular}{cccc}
+\begin{tabular}{p{2.5cm}ccc}
 \toprule
-$q$ & $A_H$  & $a_{0,H}$ & $\gamma_H$ \\
+\makebox[0.7cm][c]{$q$} & $A_H$  & $a_{0,H}$ & $\gamma_H$ \\
 \midrule
-1     & 14.55  & 3.48 & -0.95 \\
-1/3   & 15.82  & 4.18 & -0.90 \\
-1/9   & 17.17  & 3.59 & -0.79 \\
-1/27  & 18.15  & 3.32 & -0.77 \\
-1/81  & 18.81  & 3.87 & -0.82 \\
-1/243 & 19.16  & 4.16 & -0.86 \\
+\makebox[0.7cm][c]{$1$}\dotfill     & 14.55  & 3.48 & -0.95 \\
+\makebox[0.7cm][c]{$1/3$}\dotfill   & 15.82  & 4.18 & -0.90 \\
+\makebox[0.7cm][c]{$1/9$}\dotfill   & 17.17  & 3.59 & -0.79 \\
+\makebox[0.7cm][c]{$1/27$}\dotfill  & 18.15  & 3.32 & -0.77 \\
+\makebox[0.7cm][c]{$1/81$}\dotfill  & 18.81  & 3.87 & -0.82 \\
+\makebox[0.7cm][c]{$1/243$}\dotfill & 19.16  & 4.16 & -0.86 \\
 \bottomrule
 \end{tabular}
-\caption{H values}
+\caption{Best-fit parameters for the dimensionless stellar hardening function $H_u$ (see Equation (\ref{H fit Sesana})) as a function of the BH mass ratio $q$. The parameter $a_{0,H}$ is given in units of the hardening radius. Values from \textcite{Sesana_2006}.
+}
 \label{tab:H best-fit parameters}
 \end{table}
 
 \begin{table}[H]
 \centering
-\begin{tabular}{ccccc}
+\begin{tabular}{p{2.5cm}cccc}
 \specialrule{0.8pt}{0pt}{0pt}
-$e$ & $A_K$ & $a_{0,K}$ & $\gamma_K$ & $B_K$ \\
+\makebox[0.7cm][c]{$e$} & $A_K$ & $a_{0,K}$ & $\gamma_K$ & $B_K$ \\
 \specialrule{0.8pt}{0pt}{0pt}
 
 \multicolumn{5}{c}{$q=1$} \\
 \specialrule{0.8pt}{0pt}{0pt}
-0.15 & 0.037 & 0.339 & -3.335 & -0.012 \\
-0.3  & 0.075 & 0.151 & -1.548 & -0.008 \\
-0.45 & 0.105 & 0.088 & -0.893 & -0.005 \\
-0.6  & 0.121 & 0.090 & -0.895 & -0.008 \\
-0.75 & 0.134 & 0.064 & -0.544 & -0.006 \\
-0.9  & 0.082 & 0.085 & -0.663 & -0.004 \\
+\makebox[0.7cm][c]{$0.15$}\dotfill & 0.037 & 0.339 & -3.335 & -0.012 \\
+\makebox[0.7cm][c]{$0.3$}\dotfill  & 0.075 & 0.151 & -1.548 & -0.008 \\
+\makebox[0.7cm][c]{$0.45$}\dotfill & 0.105 & 0.088 & -0.893 & -0.005 \\
+\makebox[0.7cm][c]{$0.6$}\dotfill  & 0.121 & 0.090 & -0.895 & -0.008 \\
+\makebox[0.7cm][c]{$0.75$}\dotfill & 0.134 & 0.064 & -0.544 & -0.006 \\
+\makebox[0.7cm][c]{$0.9$}\dotfill  & 0.082 & 0.085 & -0.663 & -0.004 \\
 
 \specialrule{0.8pt}{0pt}{0pt}
 \multicolumn{5}{c}{$q=1/3$} \\
 \specialrule{0.8pt}{0pt}{0pt}
-0.15 & 0.082 & 0.042 & -0.168 & -0.048 \\
-0.3  & 0.095 & 0.213 & -1.152 & -0.012 \\
-0.45 & 0.129 & 0.137 & -0.655 & -0.006 \\
-0.6  & 0.166 & 0.081 & -0.546 & -0.006 \\
-0.75 & 0.159 & 0.079 & -0.497 & -0.010 \\
-0.9  & 0.095 & 0.122 & -0.716 & -0.008 \\
+\makebox[0.7cm][c]{$0.15$}\dotfill & 0.082 & 0.042 & -0.168 & -0.048 \\
+\makebox[0.7cm][c]{$0.3$}\dotfill  & 0.095 & 0.213 & -1.152 & -0.012 \\
+\makebox[0.7cm][c]{$0.45$}\dotfill & 0.129 & 0.137 & -0.655 & -0.006 \\
+\makebox[0.7cm][c]{$0.6$}\dotfill  & 0.166 & 0.081 & -0.546 & -0.006 \\
+\makebox[0.7cm][c]{$0.75$}\dotfill & 0.159 & 0.079 & -0.497 & -0.010 \\
+\makebox[0.7cm][c]{$0.9$}\dotfill  & 0.095 & 0.122 & -0.716 & -0.008 \\
 
 \specialrule{0.8pt}{0pt}{0pt}
 \multicolumn{5}{c}{$q=1/9$} \\
 \specialrule{0.8pt}{0pt}{0pt}
-0.15 & 0.051 & 0.385 & -0.891 & -0.011 \\
-0.3  & 0.111 & 0.307 & -1.107 & -0.007 \\
-0.45 & 0.172 & 0.526 & -1.174 & -0.016 \\
-0.6  & 0.181 & 0.251 & -1.169 & -0.007 \\
-0.75 & 0.179 & 0.195 & -0.846 & -0.004 \\
-0.9  & 0.117 & 0.400 & -1.170 & -0.001 \\
+\makebox[0.7cm][c]{$0.15$}\dotfill & 0.051 & 0.385 & -0.891 & -0.011 \\
+\makebox[0.7cm][c]{$0.3$}\dotfill  & 0.111 & 0.307 & -1.107 & -0.007 \\
+\makebox[0.7cm][c]{$0.45$}\dotfill & 0.172 & 0.526 & -1.174 & -0.016 \\
+\makebox[0.7cm][c]{$0.6$}\dotfill  & 0.181 & 0.251 & -1.169 & -0.007 \\
+\makebox[0.7cm][c]{$0.75$}\dotfill & 0.179 & 0.195 & -0.846 & -0.004 \\
+\makebox[0.7cm][c]{$0.9$}\dotfill  & 0.117 & 0.400 & -1.170 & -0.001 \\
 
 \specialrule{0.8pt}{0pt}{0pt}
 \multicolumn{5}{c}{$q=1/27$} \\
 \specialrule{0.8pt}{0pt}{0pt}
-0.15 & 0.064 & 0.284 & -1.206 & 0.021 \\
-0.3  & 0.143 & 1.033 & -1.537 & -0.021 \\
-0.45 & 0.212 & 0.722 & -1.257 & -0.022 \\
-0.6  & 0.216 & 0.430 & -1.163 & -0.014 \\
-0.75 & 0.173 & 0.771 & -1.934 & -0.014 \\
-0.9  & 0.129 & 0.329 & -1.125 & -0.020 \\
+\makebox[0.7cm][c]{$0.15$}\dotfill & 0.064 & 0.284 & -1.206 & 0.021 \\
+\makebox[0.7cm][c]{$0.3$}\dotfill  & 0.143 & 1.033 & -1.537 & -0.021 \\
+\makebox[0.7cm][c]{$0.45$}\dotfill & 0.212 & 0.722 & -1.257 & -0.022 \\
+\makebox[0.7cm][c]{$0.6$}\dotfill  & 0.216 & 0.430 & -1.163 & -0.014 \\
+\makebox[0.7cm][c]{$0.75$}\dotfill & 0.173 & 0.771 & -1.934 & -0.014 \\
+\makebox[0.7cm][c]{$0.9$}\dotfill  & 0.129 & 0.329 & -1.125 & -0.020 \\
 
 \specialrule{0.8pt}{0pt}{0pt}
 \end{tabular}
-\caption{Best-fit parameters.}
+\caption{Best-fit parameters for the dimensionless eccentricity growth rate function $K_u$ (see Equation (\ref{K fit Sesana})) as a function of the BH mass ratio $q$ and binary eccentricity $e$. The parameter $a_{0,K}$ is given in units of the hardening radius. Values from \textcite{Sesana_2006}.}
 \label{tab:K best-fit_parameters}
 \end{table}
 The absence of a column dedicated to the eccentricity sampling in Table \ref{tab:K best-fit_parameters} reflects one of the main findings of the scattering experiments by \textcite{Quinlan_1996} and \textcite{Sesana_2006}: the dimensionless hardening rate $H_u$ is almost independent of the BH binary eccentricity. This result, shown in Figure \ref{fig:H_comparison}, is in excellent agreement with the main statement of Heggie's law, discussed in \S~\ref{sec:Gravitational Slingshot Effect}.
@@ -1318,17 +1356,20 @@ The absence of a column dedicated to the eccentricity sampling in Table \ref{tab
     \begin{subfigure}[c]{0.48\textwidth}
         \centering
         \includegraphics[height=6cm]{H_1.png}
-        \caption{Quinlan}
+        \caption{"Single-velocity" binary hardening rate $H_1$ (see Equation \ref{H_1 Quinlan}) as a function of the initial stellar velocity $V$, normalized to the binary associated circular velocity $V_{bin}=\sqrt{GM_{12}/a}$, for three different values of the BH binary eccentricities, namely $e=(0,0.45,0.90)$, at fixed BH binary masses ratio $q=1$.\\Picture from \textcite{Quinlan_1996}.
+}
         \label{fig:H_Quinlan}
     \end{subfigure}
     \hfill
     \begin{subfigure}[c]{0.48\textwidth}
         \centering
         \includegraphics[height=6cm]{H_Sesana2006.png}
-        \caption{Sesana}
+        \caption{Binary hardening rate $H_U$  as a function of binary separation $a$, normalized to its hardening radius $a_h$ for different eccentricities $e$ (left) and mass ratios $q$ (right). In both panels, solid, long-dashed, short-dashed, and dot-dashed lines correspond to $e=(0,0.3,0.6,0.9)$ and $q=(1/3,1/9,1/27,1/81)$, respectively. Picture from \textcite{Sesana_2006}.
+}
         \label{fig:H_Sesana2006}
     \end{subfigure}
-    \caption{Comparison of the $H$ function according to Quinlan and Sesana.}
+    \caption{Comparison of the dimensionless stellar hardening rates obtained by \textcite{Quinlan_1996} and \textcite{Sesana_2006} from indipendent three-body scattering experiments.
+}
     \label{fig:H_comparison}
 \end{figure}
 In contrast, the dimensionless eccentricity growth rate $K_u$ depends on both the binary eccentricity $e$ and the separation $a$. Following the procedure illustrated by \textcite{Sesana_2010}, at a given binary separation, $K_u(a,e)$ is obtained from Equation (\ref{K fit Sesana}) by linearly interpolating in the eccentricity domain the best-fitting parameters reported in Table \ref{tab:K best-fit_parameters}. The interpolation is supplemented by the boundary conditions $K(a,e=0)=0$, as theoretically predicted in the test-particle limit for circular orbits, since circular binaries remain circular, and $K(a,e=1)=0$.\\Thus far, this Section has focused on introducing the main functions and equations that characterize the self-consistent hybrid model for the dynamical evolution of BH binaries in a fixed stellar environment. We are now in a position to illustrate how the model can be applied to an arbitrary stellar background and how the corresponding evolution of the binary separation and eccentricity, $a(t)$ and $e(t)$, is obtained numerically.\\As reported by \textcite{Quinlan_1996} and \textcite{Sesana_2006}, the three-body scattering experiments underlying the hybrid model consider stars that are initially unbound to the binary and whose velocities follow a Maxwellian distribution. Since these calculations are performed in a specific stellar background, a prescription is required to extend their results to the diverse stellar distributions hosting MBHs. A useful calibration is provided by \textcite{Sesana_2015}, who showed that the hardening rate measured from direct $N$-body simulations of a MBHB embedded in a spherically symmetric and isotropic stellar system, characterized by a mass density $\rho(r)$ and velocity dispersion $\sigma(r)$, agrees to within approximately $30\%$ with that predicted by the hybrid model for a homogeneous stellar background characterized by a constant density $\rho_{inf}$ and velocity dispersion $\sigma_{inf}$, denoting the stellar mass density and velocity dispertion values at the binary influence radius respectively. Indeed, once the binary has ejected most of the stars initially bound within its radius of influence, the loss cone is predominantly replenished by stars coming from just outside $r_{inf}$, thus having locally a nearly homogeneous spatial distribution with $\rho=\rho_{inf}$ and velocity dispersion $\sigma=\sigma_{inf}$.\\In summary, once the BH masses and the properties of the stellar background are specified, the dynamical evolution of the binary is governed by the following system of coupled differential equations:
@@ -1445,8 +1486,7 @@ and $F(e)$ is  a function of the eccentricity $e$ introduced in Equation (\ref{F
 \makebox[0.7cm][c]{$2$}\dotfill   & 0.36 & 0.18 & 0.045 & 0.84 \\
 \specialrule{0.8pt}{0pt}{0pt}
 \end{tabular}
-\caption{Column 1: Stellar cusp slope. Column 2: Influence radius of the stellar cusp. Column 3: Initial binary separation. Column 4: Binary hardening radius. Column 5:
-Hard–GW-dominated regime transition lengthscale.
+\caption{Hybrid model parameters for three different stellar cusp slopes $\gamma$. Column 1: Stellar cusp slope. Column 2: Influence radius of the stellar cusp. Column 3: Initial binary separation. Column 4: Binary hardening radius. Column 5:Stellar scattering-GW hardening transition lengthscale.
 }
 \label{tab:cusps lengthscales}
 \end{table}
@@ -1454,14 +1494,15 @@ A first inspection of Table \ref{tab:cusps lengthscales} and Figure \ref{Cusps_d
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\linewidth]{Cusps_density.png}
-    \caption{...}
+    \caption{Stellar density profiles for three different stellar cusp slopes $\gamma=(1,1.5,2)$ (solid blue, orange, and green lines, respectively), with the corresponding influence radii $r_{inf}$ marked by vertical dashed lines of the same colour.
+}
     \label{Cusps_density}
 \end{figure}
 As all three numerical experiments involve equal-mass binaries, the mass ratio is fixed to $q=1$ for all values of $\gamma$. The dimensionless hardening rate $H_u$ is therefore determined directly from Equation (\ref{H fit Sesana}), using the hardening radii $a_h$ listed in Table \ref{tab:cusps lengthscales} for each cusp slope and the fitting parameters reported in the first row of Table \ref{tab:H best-fit parameters}. The resulting hardening rates for the three stellar cusps are shown in Figure \ref{Cusps_H}.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\linewidth]{Cusps_H.png}
-    \caption{...}
+    \caption{Dimensionless hardening rate $H_u$ as a function of binary separation for three different stellar cusp slopes $\gamma=(1,1.5,2)$ (solid blue, orange, and green lines, respectively), with the corresponding hardening radii $a_h$ marked by vertical dashed lines of the same colour.}
     \label{Cusps_H}
 \end{figure}
 The final quantity required to numerically integrate Equations (\ref{hybrid model used differential equations}) is the dimensionless eccentricity growth function $K_u$. Unlike $H_u$, $K_u$ depends not only on the binary semimajor axis but also on its eccentricity. This dependence on eccentricity is encoded in the best-fitting parameters of Equation (\ref{K fit Sesana}), as reported in Table \ref{tab:K best-fit_parameters}. Although the best-fitting parameters are provided only at a discrete set of eccentricities, namely $e=(0.15,0.3,0.45,0.6,0.75,0.9)$, their values over the full interval $e\in[0,1]$ can be obtained by linear interpolation in eccentricity, once the mass ratio $q$ is specified (see, e.g., \textcite{Sesana_2006}; \textcite{Sesana_2010}). Figure \ref{Cusps: K best-fitting parameters} (a)-(b)-(c)-(d) illustrates this procedure.
@@ -1471,14 +1512,15 @@ The final quantity required to numerically integrate Equations (\ref{hybrid mode
     \begin{subfigure}[b]{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{A_K_vs_e.png}
-        \caption{}
+        \caption{Eccentricity growth rate parameter $A_K$ (solid blue piecewise line) as a function of binary eccentricity $e$ for binary masses ratio $q=1$. Red dashed vertical lines mark the sampled eccentricities, with red dots corresponding to the values listed in Table \ref{tab:K best-fit_parameters}.
+        }
         \label{fig:plot_1}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{a0_K_vs_e.png}
-        \caption{}
+        \caption{Eccentricity growth rate parameter $a_{0,K}$ (solid blue piecewise line), in $a_h$ units, as a function of binary eccentricity $e$ for binary masses ratio $q=1$. Red dashed vertical lines mark the sampled eccentricities, with red dots corresponding to the values listed in Table \ref{tab:K best-fit_parameters}.}
         \label{fig:plot_2}
     \end{subfigure}
 
@@ -1487,18 +1529,19 @@ The final quantity required to numerically integrate Equations (\ref{hybrid mode
     \begin{subfigure}[b]{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{gamma_K_vs_e.png}
-        \caption{}
+        \caption{Eccentricity growth rate parameter $\gamma_K$ (solid blue piecewise line) as a function of binary eccentricity $e$ for binary masses ratio $q=1$. Red dashed vertical lines mark the sampled eccentricities, with red dots corresponding to the values listed in Table \ref{tab:K best-fit_parameters}.}
         \label{fig:plot_3}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{B_K_vs_e.png}
-        \caption{}
+        \caption{Eccentricity growth rate parameter $B_K$ (solid blue piecewise line) as a function of binary eccentricity $e$ for binary masses ratio $q=1$. Red dashed vertical lines mark the sampled eccentricities, with red dots corresponding to the values listed in Table \ref{tab:K best-fit_parameters}.}
         \label{fig:plot_4}
     \end{subfigure}
 
-    \caption{Panels (a)-(b)-(c)-(d) show $K_u$ best-fitting parameters $A_k$, $a_{0,k}$, $\gamma_k$ and $B_k$ as a function of binary eccentricity, respectively. Red points mark the values obtained from scattering experiments, Table \ref{tab:K best-fit_parameters}, while the blue piecewise-linear curves show their linear interpolation. Vertical red dashed lines indicate the sampled eccentricity values.}
+    \caption{Panels (a)–(b)–(c)–(d) show the best-fitting parameters $A_K$, $a_{0,K}$, $\gamma_K$, and $B_K$ of the eccentricity growth-rate function $K_u$, respectively, as functions of the binary eccentricity $e$. Red points indicate the values obtained from three-body scattering experiments (see Table \ref{tab:K best-fit_parameters}), while blue piecewise-linear curves show their linear interpolation. Vertical red dashed lines mark the sampled eccentricity values.
+}
     \label{Cusps: K best-fitting parameters}
 \end{figure}
 These interpolated best-fitting parameters can then be used to derive $K_u(a,e)$ and, in order to extend the interpolation to the boundaries of the physical eccentricity interval, two additional points are manually introduced at $e=0$ and $e=1$ in order to ensure $K_u(a,0)=K_u(a,1)=0$.\\Figure \ref{Cusps K_u vs a and e} (a)–(b) show $K_u(a)=K_u(a,e_0)$ and $K_u(e)=K_u(\bar{a}_0,e)$, respectively, where $(\bar{a}_0,e_0)=(0.34pc,0.5)$ corresponds to the initial condition adopted in all three numerical simulations. As displyed, this two-variable function is smooth when evaluated at fixed $e$, while it is piecewise linear when evaluated at fixed $a$.
@@ -1507,17 +1550,18 @@ These interpolated best-fitting parameters can then be used to derive $K_u(a,e)$
     \begin{subfigure}[c]{0.49\textwidth}
         \centering
         \includegraphics[width=\linewidth]{Cusps_K_vs_a.png}
-        \caption{}
+        \caption{Dimensionless eccentricity growth rate $K_u(a,e)$, at fixed eccentricity $e_0=0.5$, as a function of binary separation for three different stellar cusp slopes $\gamma=(1,1.5,2)$ (solid blue, orange, and green lines, respectively), with the corresponding hardening radii $a_h$ marked by vertical dashed lines of the same colour.
+        }
         \label{Cusps_K_vs_a}
     \end{subfigure}
     \hfill
     \begin{subfigure}[c]{0.49\textwidth}
         \centering
         \includegraphics[width=\linewidth]{Cusps_K_vs_e.png}
-        \caption{}
+        \caption{Dimensionless eccentricity growth rate $K_u(a,e)$, at fixed binary semimajor axis $\bar{a}_0=0.34\,pc$, as a function of binary eccentricity for three different stellar cusp slopes $\gamma=(1,1.5,2)$ (solid blue, orange, and green lines, respectively). The boundary conditions $K_u(a,0)=K_u(a,1)=0$ have been included.}
         \label{Cusps_K_vs_e}
     \end{subfigure}
-    \caption{...}
+    \caption{1-D slices of the dimensionless eccentricity growth rate $K_u(a,e)$, at fixed eccentricity (a) and binary separation (b),for three different stellar cusps slopes $\gamma=(1,1.5,2)$.}
     \label{Cusps K_u vs a and e}
 \end{figure}
 Having reported how the essential ingredients of the adopted hybrid model are have been derived, we can now specify the setup adopted for the numerical integrations. In all the experiments presented in this Section, the integration starts from the initial conditions $(\bar{a}_0,e_0)=(0.34,\mathrm{pc},0.5)$ and is terminated when the binary separation reaches the Schwarzschild radius of the binary, defined as
@@ -1534,17 +1578,20 @@ where $\epsilon=0.001$ is the chosen safety factor.\\ Figure \ref{Cusps (a(t),e(
     \begin{subfigure}[c]{0.49\textwidth}
         \centering
         \includegraphics[width=\linewidth]{Cusps_a_vs_t_log.png}
-        \caption{}
+        \caption{Binary semimajor axis time evolution for three different stellar cusp slopes $\gamma=(1,1.5,2)$ (solid blue, orange, and green lines, respectively).\\Black horizontal lines indicate the mean values over the three stellar cusps of $a_0$ (dotted), $a_h$ (dashed), $a_{GW}$ (dash-dotted), and the binary $R_s$.
+}
         \label{Cusps a vs t}
     \end{subfigure}
     \hfill
     \begin{subfigure}[c]{0.49\textwidth}
         \centering
         \includegraphics[width=\linewidth]{Cusps_e_vs_t_log.png}
-        \caption{}
+        \caption{Binary eccentricity evolution for three stellar cusp slopes, $\gamma=(1,1.5,2)$ (solid blue, orange, and green lines, respectively).\\Vertical dashed lines of the corresponding colours mark the times $t_{GW}$ at which $a=a_{GW}$ and GW-driven circularization becomes dominant.
+}
         \label{Cusps e vs t}
     \end{subfigure}
-    \caption{...}
+    \caption{Evolutionary tracks $(t,a(t))$ in panel (a) and $(t,e(t))$ in panel (b) for three stellar cusp slopes, $\gamma=(1,1.5,2)$ and binary initial conditions $(a_0,e_0)=(0.34pc,0.5)$.
+}
     \label{Cusps (a(t),e(t))}
 \end{figure}
 The first relevant result concerns the estimated coalescence timescales; they turns out to be $\tau_{\rm coal}=(34.7, 17.6,  8.18 )\,Myr$. All three values are shorter than the Hubble time, $t_H=13.8,\mathrm{Gyr}$, indicating that, for the considered initial conditions, an equal-mass IMBH binary with $m_1=m_2=10^5,M_\odot$ may emit a potentially detectable GW signal in the LISA frequency band. Moreover, the coalescence time is found to decrease systematically with increasing cusp slope $\gamma$. This behaviour, shown in Figure \ref{Cusps (a(t),e(t))} (a), can be attributed to the higher central stellar densities associated with steeper cusps, which provide a larger supply of stars interacting with the binary through loss-cone dynamics. The enhanced rate of stellar interactions accelerates the binary hardening, allowing it to reach the separation at which GW emission becomes the dominant shrinking mechanism, and consequently shortening the overall time to coalescence.\\Figure \ref{Cusps (a(t),e(t))} (b), instead, shows that the binary eccentricity tends to increase during the phase dominated by stellar scattering. As the cusp becomes steeper, this dynamical regime becomes progressively shorter, allowing GW-driven circularization to take over at an earlier stage of the evolution. Consequently, the maximum eccentricity reached by the binary decreases with increasing $\gamma$.\\These results motivate a more detailed investigation of the role played by the compactness of the stellar background in shaping the binary evolution and determining its corresponding coalescence time. This aspect will be explored in the next Section.
@@ -1577,15 +1624,15 @@ The stellar density profile given in Equation (\ref{Prugniel Sersic profile}) is
 $p=1.0-0.6097/n+0.05563/n^2$ and $b \approx 2n-1/3+0.009876/n$ \parencite{Terzic_2005}.\\Table \ref{tab:NGC 205 structural parameters} summarizes the main structural parameters of the bulge and NSC of NGC 205, which are required to specify the corresponding Sersic profiles.
 \begin{table}[H]
 \centering
-\begin{tabular}{cccc}
+\begin{tabular}{p{2.5cm}ccc}
 \toprule
-Component & n & $R_e\,[pc]$  & $M_*\,[10^7\,M_\odot]$  \\
+\makebox[1.8cm][c]{Component} & $n$ & $R_e\,[pc]$  & $M_*\,[10^7\,M_\odot]$  \\
 \midrule
-NSC     & 1.6  & 1.3 & 0.18 \\
-Bulge   & 1.4  & 516 & 97.2 \\
+\makebox[1.8cm][c]{NSC}\dotfill     & 1.6  & 1.3 & 0.18 \\
+\makebox[1.8cm][c]{Bulge}\dotfill   & 1.4  & 516 & 97.2 \\
 \bottomrule
 \end{tabular}
-\caption{NGC205}
+\caption{NGC 205 structural parameters of stellar bulge and NSC. Column 1: Galaxy component. Column 2: Sersic index. Column 3: Effective radius. Column 4: Stellar mass. Values from \textcite{Khan_2021}.}
 \label{tab:NGC 205 structural parameters}
 \end{table}
 Since Chapter~\ref{chap:chapter3} is devoted to studying the dynamical evolution of IMBH binaries embedded in Sersic-like stellar backgrounds through direct $N$-body simulations, we briefly examine here the properties of this profile, defined by Equation (\ref{Prugniel Sersic profile}), that are relevant for constructing equilibrium $N$-body initial conditions and interpreting the results presented in the following chapter.\\Given the mass density profile in Equation (\ref{Prugniel Sersic profile}) for a spherically symmetric stellar component of total mass $M_*$, the mass enclosed within a sphere of radius $r$ is obtained by integrating the density profile over the corresponding volume:
@@ -1642,17 +1689,17 @@ We can now turn to the suite of numerical experiments performed. Here, we presen
     \begin{subfigure}{0.49\linewidth}
         \centering
         \includegraphics[width=\linewidth]{NGC205_density_profile.png}
-        \caption{}
+        \caption{Mass density profiles of the NGC 205 stellar components: bulge (blue dashed), NSC (orange dashed), and the total galaxy (black solid). Black vertical lines mark the binary influence radius (dotted) and the initial binary separation $a_0$ (dash-dotted).}
         \label{NGC 205 density profile}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.49\linewidth}
         \centering
         \includegraphics[width=\linewidth]{NGC205_mass_profile.png}
-        \caption{}
+        \caption{Cumulative stellar mass profile of NGC 205, normalized to the total stellar mass $M_{\rm Gal}$. Vertical dotted lines mark the characteristic scales $r_{\rm inf}$ (blue) and $a_0$ (red), while horizontal dash-dotted lines of the same colours indicate the corresponding mass values $2M_{12}$ and $2m_2$, respectively.}
         \label{NGC 205 mass profile}
     \end{subfigure}
-    \caption{}
+    \caption{NGC 205 mass density profile, together with those of its stellar components, and cumulative mass profile. }
     \label{NGC 205 density-mass profiles}
 \end{figure}
 As shown in Figure \ref{NGC 205 density-mass profiles}(b), the characteristic length scales $r_{\rm inf}$ and $a_0$ are determined from the cumulative mass profile by numerically solving equation
@@ -1680,7 +1727,8 @@ holding for spherically symmetric and isotropic stellar system. By combining the
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\linewidth]{NGC205_sigma_profile.png}
-    \caption{....}
+    \caption{NGC 205 velocity dispersion profile (black solid line), normalized to the circular speed $V_c=\sqrt{GM(r)/r}$. The red vertical line marks the binary influence radius $r_{inf}$.
+}
     \label{NGC 205 sigma/Vc profile}
 \end{figure}
 The main hybrid model parameters, obtained according the operations illustrated above and used for our numerical experiments, are conveniently listed in Table \ref{tab:NGC 205 hybrid model parameters}.
@@ -1693,7 +1741,7 @@ $r_{inf}\,[pc]$ & $a_{0}\,[pc]$ & $a_{h}\,[pc]$ & $\rho_{inf}\,[M_\odot/pc^3]$ &
 0.47     & 0.32  & 0.036 & 2.00 & 34.5 \\
 \bottomrule
 \end{tabular}
-\caption{NGC205}
+\caption{NGC 205 hybrid model parameters. Column 1: Binary influence radius. Column 2: Binary initial separation. Column 3: Binary hardening radius. Column 4: Stellar mass density at binary influence radius. Column 5: Stellar velocity dispersion at binary influence radius.}
 \label{tab:NGC 205 hybrid model parameters}
 \end{table}
 Finally, the numerical integration of Equations (\ref{hybrid model used differential equations}), performed following the procedure described in \S~\ref{sec:Stellar Cusps IMBH Binary Evolution}, yields the evolutionary tracks $(a(t),e(t))$ and the corresponding coalescence timescales, shown in Figure
@@ -1703,18 +1751,19 @@ Finally, the numerical integration of Equations (\ref{hybrid model used differen
     \begin{subfigure}{0.49\linewidth}
         \centering
         \includegraphics[width=\linewidth]{NGC205_a_vs_t_log_e_sampling.png}
-        \caption{...}
+        \caption{Binary semimajor axis time evolution for five different initial eccentricities $e_0=(0.01,0.25,0.5,0.75,0.99)$ (blue, orange, green, red, and violet, blue solid lines, respectively). Black horizontal lines indicate the common binary initial separation (dotted), hardening radius (dashed) and the binary $R_s$ (solid).
+        }
         \label{NGC205_a_vs_t_log_e_sampling}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.49\linewidth}
         \centering
         \includegraphics[width=\linewidth]{NGC205_e_vs_t_log_e_sampling.png}
-        \caption{...}
+        \caption{Binary eccentricity time evolution for five, different initial eccentricities, $e_0=(0.01,0.25,0.5,0.75,0.99)$ (blue, orange, green, red, and violet, blue solid lines, respectively). Horizontal dashed lines of the corresponding colours indicate the initial eccentricity of each the numerical experiment.}
         \label{NGC205_e_vs_t_log_e_sampling}
     \end{subfigure}
 
-    \caption{...}
+    \caption{NGC 205 IMBH binary evolutionary tracks $(t,a(t))$ in panel (a) and $(t,e(t))$ in panel (b) for five initial eccentricities, $e_0=(0.01,0.25,0.5,0.75,0.99)$  and binary initial separation $a_0=0.32\,pc$.}
     \label{NGC205_a_e_vs_t_log_e_sampling}
 \end{figure}
 In excellent agreement with \textcite{Sesana_2010} and \textcite{Khan_2021}, our analysis shows that IMBH binaries forming with a higher initial eccentricity $e_0$, together with the tendency of eccentric binaries to further increase their eccentricity during the stellar hardening phase, reach higher eccentricity peaks. As a result, the GW-driven regime takes over at an earlier stage, leading to a shorter coalescence timescale. Moreover, the presence of the NSC substantially increases the central stellar density of the galaxy, thereby providing a particularly favourable environment for the rapid hardening and coalescence of the IMBH binary.\\Specifically, it is found $\tau_{coal}=(67.0, 57.1, 27.5, 11.1 ,  2.4)\, Myr$ for $e=(0.01,0.25,0.50,0.75,0.99)$, respectively.
@@ -1738,7 +1787,7 @@ In excellent agreement with \textcite{Sesana_2010} and \textcite{Khan_2021}, our
 
 
 \section{Cosmic Size Evolution Down to NGC 205}
-
+\label{sec:Cosmic Size Evolution Down to NGC 205}
 In this final Section of Chapter \ref{chap:chapter2}, we investigate the effects of removing the NSC, allowing the IMBH binary to evolve within the stellar bulge alone, as well as those of cosmic size evolution on the bulge stellar distribution and of the initial eccentricity $e_0$ on the binary evolutionary tracks. This analysis allows us to combine them simultaneously in order to investigate their cumulative impact on the binary evolution. In particular, we determine which combinations of these effects may enable IMBH binaries hosted by non-nucleated dwarf galaxies at redshift $z$ to become potential GW sources for LISA and ET, detectable in the present-day Universe.\\To this end, we first perform numerical experiments on the same IMBH binary analysed in \S~\ref{sec:NGC 205 IMBH Binary evolution}, this time evolving it within the stellar bulge of NGC 205 alone. Adopting the same prescription described extensively in the previous Sections, we integrate Equations (\ref{hybrid model used differential equations}) from the initial condition $(a_0,e_0)=(a_0,0.5)$, with $a_0$ given by Equation (\ref{Sesana_2010 a_0}), down to $R_s$ using again RK4 scheme and the same integration timestep.\\The relevant quantities entering the hybrid model for this numerical experiment are reported in Table \ref{tab:NGC 205 Bulge hybrid model parameters}.
 
 \begin{table}[H]
@@ -1750,7 +1799,7 @@ $r_{inf}\,[pc]$ & $a_{0}\,[pc]$ & $a_{h}\,[pc]$ & $\rho_{inf}\,[M_\odot/pc^3]$ &
 10.5     & 7.81  & 0.10 & 25.4 & 20.8 \\
 \bottomrule
 \end{tabular}
-\caption{NGC205}
+\caption{NGC 205 stellar bulge hybrid model parameters. Column 1: Binary influence radius. Column 2: Binary initial separation. Column 3: Binary hardening radius. Column 4: Stellar bulge mass density at binary influence radius. Column 5: Stellar bulge velocity dispersion at binary influence radius.}
 \label{tab:NGC 205 Bulge hybrid model parameters}
 \end{table}
 Figure \ref{NGC205 bulge evolution} (a) and (b) show the predicted evolution of the IMBH binary semimajor axis and eccentricity, respectively, for this setup.
@@ -1759,20 +1808,21 @@ Figure \ref{NGC205 bulge evolution} (a) and (b) show the predicted evolution of 
     \begin{subfigure}{0.49\linewidth}
         \centering
         \includegraphics[width=\linewidth]{NGC205_Bulge_a_vs_t.png}
-        \caption{}
+        \caption{NGC 205 IMBH binary semimajor axis time evolution (blue, solid line). Black horizontal lines mark the binary initial separation (dotted), hardening radius (dashed) and the binary $R_s$ (solid).}
         \label{NGC205 bulge a vs t plot}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.49\linewidth}
         \centering
         \includegraphics[width=\linewidth]{NGC205_Bulge_e_vs_t.png}
-        \caption{}
+        \caption{NGC 205 IMBH binary eccentricity time evolution (blue, solid line). The black, horizontal line indicate the adopted binary initial eccentricity $e_0=0.5$.}
         \label{NGC205 bulge e vs t plot}
     \end{subfigure}
-    \caption{}
+    \caption{Evolutionary tracks $(t,a(t))$ in panel (a) and $(t,e(t))$ in panel (b) of the IMBH binary evolving within NGC 205 stellar bulge with initial condition $(a_0,e_0)=(7.81pc,0.5)$.}
     \label{NGC205 bulge evolution}
 \end{figure}
-The coalescence timescale estimated from this simulation is $t_{coal}=22.5\,Gyr$, significantly longer than the Hubble time, $t_H\approx14\,Gyr$ and in perfect agreement with \textcite{Khan_2024} findings. This result suggests that this IMBH binary hosted by this non-nucleated galaxy cannot reach coalescence within the present age of the Universe, even if the binary were as old as the universe itself.\\While the analysis presented above appears to disfavour non-nucleated dwarf galaxies as potential hosts of GW sources detectable by LISA and ET, at least in the local Universe, such environments may still host coalescing IMBH binaries when the effects of cosmic size evolution are taken into account. In particular, galaxies of a given mass are expected to have had smaller effective radii at higher redshifts, hence, potentially compensating for the absence of a NSC. Here, we follow the cosmic size evolution empirical relation derived by \textcite{Ono_2023}, according to which the effective radius $R_e=R_e(z)$ of a galaxy of fixed stellar mass evolves with redshift as
+The coalescence timescale estimated from this simulation is $t_{coal}=22.5,Gyr$, significantly longer than the Hubble time, $t_H\approx14,Gyr$, and in excellent agreement with the findings of \textcite{Khan_2024}. This result indicates that the IMBH binary hosted by this non-nucleated galaxy cannot reach coalescence within the current age of the Universe, even if the binary had formed at the earliest possible cosmic times.
+\\While the analysis presented above appears to disfavour non-nucleated dwarf galaxies as potential hosts of GW sources detectable by LISA and ET, at least in the local Universe, such environments may still host coalescing IMBH binaries when the effects of cosmic size evolution are taken into account. In particular, galaxies of a given mass are expected to have had smaller effective radii at higher redshifts, hence, potentially compensating for the absence of a NSC. Here, we follow the cosmic size evolution empirical relation derived by \textcite{Ono_2023}, according to which the effective radius $R_e=R_e(z)$ of a galaxy of fixed stellar mass evolves with redshift as
 \begin{equation}
 R_e(z)=R_e(z=0)(1+z)^{-1.22}.
 \label{Cosmic size evolution formula}
@@ -1781,7 +1831,7 @@ Therefore, we perform a suite of numerical experiments using the Quinlan--Sesana
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\linewidth]{Bulges_vs_NSC_density_profile.png}
-    \caption{...}
+    \caption{Mass density profiles of a representative subsample of galaxy models at $z=(0,2,4,6,8,10,12)$ (solid blue, orange, green, red, violet, brown, and pink lines, respectively), together with the NGC 205 NSC profile (solid black line). The corresponding influence radii are indicated by vertical dashed lines of the same colours.}
     \label{Bulges_vs_NSC_density_profile}
 \end{figure}
 Moving forward, repeating the same procedure extensively described in the previous Sections, for each density profile we determine the cumulative mass profile $M(<r)$ by using Equation (\ref{Sersic mass profile with M_*}), the influence radius $r_{inf}$ by numerically solving Equation (\ref{r_inf equation}), the mass density at the binary influence radius $\rho_{inf}$ by plugging $r_{inf}$ into the stellar density profile, the velocity dispersion at the binary influence radius $\sigma_{inf}$ by evaluating Equation (\ref{Jeans velocity dispersion equation}) at $r_{inf}$ and finally substituing it within Eqaution (\ref{Quinlan hardening radius}) to derive the hardening radius $a_h$.\\In Table \ref{tab:Galaxies hybrid model parameters} are listed all the parameters mentioned above for each galaxy model.
@@ -1827,7 +1877,7 @@ Moving forward, repeating the same procedure extensively described in the previo
 
 \specialrule{0.8pt}{0pt}{0pt}
 \end{tabular}
-\caption{...}
+\caption{Structural parameters (left of the double vertical line) and hybrid-model parameters (right of the double vertical line) for 25 galaxy models as a function of redshift. Column 1: Redshift. Column 2: Effective radius. Column 3: Sersic profile normalization density. Column 4: Sersic index. Column 5: Binary influence radius. Column 6: Stellar mass density at binary influence radius. Column 7: Binary hardening radius. Column 8: Stellar velocity dispersion at binary influence radius.}
 \label{tab:Galaxies hybrid model parameters}
 \end{table}
 It is worth noting that the parameters $a_{0,H}$ and $a_{0,K}$ entering the parametrization of $H_u$ and $K_u$ in Equations~(\ref{H fit Sesana}) and~(\ref{K fit Sesana}) are expressed in units of the binary hardening radius. Therefore, despite the primary and secondary BH masses are fixed across all the galaxies considered, the shapes of $H_u(a)$ and $K_u(a,e)$ vary from one galaxy to another. This is because the galaxies have different velocity dispersions at the binary influence radius, and consequently different hardening radii. This behaviour is clearly illustrated in Figure \ref{Galaxies_H_K}(a)-(b)-(c). Panels (a) and (b) show $H_u(a)$ and $K_u(a,0.5)$, respectively, along with the corresponding hardening radii, while panel (c) shows $K_u(10pc,e)$ for a subsample of the reconstructed galaxy models.
@@ -1836,61 +1886,52 @@ It is worth noting that the parameters $a_{0,H}$ and $a_{0,K}$ entering the para
     \begin{subfigure}{0.32\linewidth}
         \centering
         \includegraphics[width=\linewidth]{Galaxies_H_unbound.png}
-        \caption{}
+        \caption{Dimensionless stellar hardening rate $H_u$ of a representative subsample of galaxy models at $z=(0,2,4,6,8,10,12)$ (solid blue, orange, green, red, violet, brown, and pink lines, respectively). The corresponding hardening radii are indicated by vertical dashed lines of the same colours.}
         \label{Galaxies_H_unbound}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.32\linewidth}
         \centering
         \includegraphics[width=\linewidth]{Galaxies_K_vs_a.png}
-        \caption{}
+        \caption{Dimensionless eccentricity growth rate $K_u(a,0.5)$ of a representative subsample of galaxy models at $z=(0,2,4,6,8,10,12)$ (solid blue, orange, green, red, violet, brown, and pink lines, respectively). The corresponding hardening radii are indicated by vertical dashed lines of the same colours.}
         \label{Galaxies_K_vs_a}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.32\linewidth}
         \centering
         \includegraphics[width=\linewidth]{Galaxies_K_vs_e.png}
-        \caption{}
+        \caption{Dimensionless eccentricity growth rate $K_u(a,e)$, at fixed $a=10\,pc$, of a representative subsample of galaxy models at $z=(0,2,4,6,8,10,12)$ (solid blue, orange, green, red, violet, brown, and pink lines, respectively). The boundary conditions $K_u(a,0)=K_u(a,1)=0$ have been included. }
         \label{Galaxies_K_vs_e}
     \end{subfigure}
-    \caption{...}
+    \caption{Dimensionless stellar hardening and eccentricity growth rates for a representative subsample of galaxy models at $z=(0,2,4,6,8,10,12)$. Panels (a), (b), and (c) show $H_u(a)$, $K_u(a,0.5)$, and $K_u(10,pc,e)$, respectively.
+}
     \label{Galaxies_H_K}
 \end{figure}
-
-HERE!!!!!!!!!!!!!!!!
-
-
-
+Finally, Figure \ref{Galaxies_a_and_e_vs_t_z_e_sapling} shows the evolutionary tracks $(t,a(t))$ and $(t,e(t))$ for the same representative subsample of galaxies considered above, exploring the full range of initial eccentricities adopted in this analysis, $e_0=(0.1,0.3,0.5,0.7,0.9)$, all starting at initial separation $a_0=10\,pc$.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\linewidth]{Galaxies_a_vs_t.png}
-    \caption{...}
-    \label{Galaxies_a_vs_t}
+    \includegraphics[width=0.7\linewidth]{Galaxies_a_and_e_vs_t_z_e_sapling.png}
+    \caption{Evolutionary tracks of IMBH binaries evolving within a representative subsample of galaxy models. The left and right columns show the binary semimajor axis $a(t)$ and eccentricity $e(t)$, respectively, with each pair of panels in a given row corresponding to the evolution of the same galaxy model. The five rows, from top to bottom, correspond to initial eccentricities $e_0=(0.1,0.3,0.5,0.7,0.9)$, indicated by the panels on the left. Coloured curves correspond to galaxy models at $z=(0,2,4,6,8,10,12)$ (blue, orange, green, red, violet, brown, and pink, respectively).}
+    \label{Galaxies_a_and_e_vs_t_z_e_sapling}
 \end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{Galaxies_e_vs_t.png}
-    \caption{...}
-    \label{Galaxies_e_vs_t}
-\end{figure}
-
-
-
-
-
-
-
-
-
-
+The 125 runs performed to explore the redshift and initial eccentricity parameter spaces provide, in addition to an equal number of pairs of evolutionary tracks $(t,a(t))$ and $(t,e(t))$, an estimate of the coalescence time $t_{coal}$ for each sampled configuration. Here, $t_{coal}$ is defined as the time elapsed from the beginning of the numerical integration, corresponding to the initial binary conditions $(a_0,e_0)$, to the IMBH binary coalescence, assumed to occur at $a=R_s$. Whether a given galaxy model and set of binary initial conditions can host a GW-loud source detectable by LISA or ET in the present-day Universe depends not only on the estimated $t_{coal}$, but also on the cosmic time $t(z)$ corresponding to the redshift of the galaxy model (see, e.g. \textcite{Coles_book}).\\In standard $\Lambda$CDM  cosmology, within which the Friedmann--Lemaître--Robertson--Walker (FLRW) metric provides the appropriate description of the large-scale homogeneous and isotropic Universe, the Hubble function $H(z)$ describes the expansion rate of the Universe as a function of redshift and can be written as
+\begin{equation}
+    H(z) = H_0 \sqrt{\Omega_{k}(1+z)^2\Omega_{m}(1+z)^3 + \Omega_{r}(1+z)^4 +  + \Omega_{\Lambda}},
+    \label{Hubble function}
+\end{equation}
+where $H_0$ is the present-day Hubble constant, $\Omega_{k}$, $\Omega_{m}$, $\Omega_{r}$, and $\Omega_{\Lambda}$ are the present-day dimensionless density parameters associated with matter, radiation, spatial curvature, and dark energy, respectively. In the FLRW cosmological model, the cosmic time $t(z)$ corresponding to a given redshift $z$ can be obtained from the Hubble function through the standard redshift--time relation
+\begin{equation}
+    t(z) = \int_z^\infty \frac{dz'}{(1+z')H(z')}.
+    \label{cosmic time redshift}
+\end{equation}
+Adopting the cosmological parameters provided by \textcite{PLANK_2020}, namely $H_0=67.4\,km\,s^{-1}\,Mpc^{-1}$ and $\Omega_{m}=0.315$, and assuming a geometrically flat $\Lambda$CDM Universe, the cosmic time $t(z)$ is determined for each galaxy model from Equation (\ref{cosmic time redshift}). In this framework, $\Omega_{\Lambda}=1-\Omega_{m}=0.685$, the radiation contribution is negligible at the redshifts considered and the age of the universe is estimated to be $t_{age}=t(z=0)=13.8\,Gyr$. This allows the coalescence times obtained from the numerical integrations, measured from the initial epoch of each model, to be converted into the corresponding cosmic times at which the IMBH binaries reach coalescence. Both the coalescence times and the corresponding cosmic times of binary coalescence are reported in Table \ref{tab:Cosmic size coalescence timescales} (a) and (b), respectively, for each of the 125 runs.
 \begin{table}[H]
     \centering
     \begin{subtable}{0.45\textwidth}
         \centering
         \begin{tabular}{|c|c|c|c|c|c|}
             \hline
-            \diagbox{$z$}{$e$} & 0.1 & 0.3 & 0.5 & 0.7 & 0.9   \\ \hline
+            \diagbox{$z$}{$e_0$} & 0.1 & 0.3 & 0.5 & 0.7 & 0.9   \\ \hline
             0 & 58.3 & 49.5 & 29.6 & 15.0 & 7.79\\ \hline
             0.5 & 21.7 & 18.9 & 11.8 & 6.14 & 3.17\\ \hline
             1 & 10.8 & 9.53 & 6.13 & 3.26 & 1.67\\ \hline
@@ -1917,7 +1958,8 @@ HERE!!!!!!!!!!!!!!!!
             11.5 & 0.13 & 0.12 & 0.09 & 0.06 & 0.03\\ \hline
             12 & 0.12 & 0.11 & 0.08 & 0.05 & 0.03\\ \hline
         \end{tabular}
-        \caption{}
+        \caption{Coalescence timescales, in Gyr, for the galaxy models evolved to different redshifts $z$ and for different initial binary eccentricities $e_0$. Each entry gives the time elapsed from the beginning of the simulation, $t_0=0\,s$, to binary coalescence.
+}
         \label{tab:first}
     \end{subtable}
     \hfill
@@ -1925,39 +1967,53 @@ HERE!!!!!!!!!!!!!!!!
     \centering
     \begin{tabular}{|c|c|c|c|c|c|}
         \hline
-        \diagbox{$z$}{$e$} & 0.1 & 0.3 & 0.5 & 0.7 & 0.9\\ \hline
-        0   & 71.8 & 63.0 & 43.1 & 28.5 & 21.3\\ \hline
-        0.5 & 30.2& 27.3& 20.2& 14.6& 11.6\\ \hline
-        1   & 16.6& 15.3& 11.9& 9.02& 7.43\\ \hline
-        1.5 & 10.5& 9.80& 7.89& 6.20& 5.22\\ \hline
-        2   & 7.26& 6.85& 5.65& 4.57& 3.91\\ \hline
-        2.5 & 5.35& 5.08& 4.28& 3.53& 3.06\\ \hline
-        3   & 4.12 & 3.94 & 3.37 &2.82 & 2.47\\ \hline
-        3.5 & 3.28& 3.15& 2.73& 2.32& 2.05\\ \hline
-        4   & 2.68& 2.59& 2.26& 1.95& 1.74\\ \hline
-        4.5 & 2.24& 2.17& 1.92& 1.67& 1.49\\ \hline
-        5   & 1.90& 1.85& 1.65& 1.44& 1.30\\ \hline
-        5.5 & 1.64& 1.60& 1.43& 1.27& 1.15\\ \hline
-        6   & 1.43& 1.40& 1.26& 1.12& 1.02\\ \hline
-        6.5 & 1.26& 1.23& 1.12& 1.00& 0.92\\ \hline
-        7   & 1.12& 1.10& 1.00& 0.90& 0.83\\ \hline
-        7.5 & 1.01& 0.99& 0.90& 0.82& 0.75\\ \hline
-        8   & 0.91& 0.89& 0.82& 0.75& 0.69\\ \hline
-        8.5 & 0.83& 0.81& 0.75& 0.68& 0.63\\ \hline
-        9   & 0.75& 0.74& 0.69& 0.63& 0.59\\ \hline
-        9.5 & 0.69& 0.68& 0.63& 0.58& 0.54\\ \hline
-        10  & 0.64& 0.63& 0.59 & 0.54 & 0.50\\ \hline
-        10.5 & 0.59 & 0.58 & 0.54 & 0.50 & 0.47\\ \hline
-        11  & 0.55& 0.54& 0.51&0.47  &0.44 \\ \hline
-        11.5 & 0.51 & 0.50 & 0.47& 0.44 & 0.41...\\ \hline
-        12  & 0.48& 0.47 & 0.44 & 0.41 & 0.39\\ \hline
+        \diagbox{$z$}{$e_0$} & 0.1 & 0.3 & 0.5 & 0.7 & 0.9\\ \hline
+        0   & 72.1 & 63.3 & 43.4 & 28.8 & 21.6\\ \hline
+        0.5 & 30.3& 27.5& 20.4& 14.7& 11.8\\ \hline
+        1   & 16.7& 15.4& 12.0& 9.11& 7.52\\ \hline
+        1.5 & 10.5& 9.87& 7.95& 6.27& 5.29\\ \hline
+        2   & 7.31& 6.90& 5.70& 4.61& 3.96\\ \hline
+        2.5 & 5.38& 5.12& 4.31& 3.57& 3.10\\ \hline
+        3   & 4.15 & 3.97 & 3.39 &2.85 & 2.50\\ \hline
+        3.5 & 3.30& 3.17& 2.75& 2.35& 2.08\\ \hline
+        4   & 2.70& 2.61& 2.29& 1.97& 1.76\\ \hline
+        4.5 & 2.26& 2.18& 1.93& 1.68& 1.51\\ \hline
+        5   & 1.92& 1.86& 1.66& 1.46& 1.32\\ \hline
+        5.5 & 1.66& 1.61& 1.45& 1.28& 1.16\\ \hline
+        6   & 1.45& 1.41& 1.27& 1.14& 1.03\\ \hline
+        6.5 & 1.27& 1.24& 1.13& 1.01& 0.93\\ \hline
+        7   & 1.13& 1.11& 1.01& 0.91& 0.84\\ \hline
+        7.5 & 1.02& 1.00& 0.91& 0.83& 0.76\\ \hline
+        8   & 0.92& 0.90& 0.83& 0.76& 0.70\\ \hline
+        8.5 & 0.83& 0.82& 0.76& 0.69& 0.64\\ \hline
+        9   & 0.76& 0.75& 0.69& 0.64& 0.59\\ \hline
+        9.5 & 0.70& 0.69& 0.64& 0.59& 0.55\\ \hline
+        10  & 0.64& 0.63& 0.59 & 0.55 & 0.51\\ \hline
+        10.5 & 0.60 & 0.59 & 0.55 & 0.51 & 0.48\\ \hline
+        11  & 0.55& 0.55& 0.51&0.48  &0.45 \\ \hline
+        11.5 & 0.52 & 0.51 & 0.48& 0.45 & 0.42\\ \hline
+        12  & 0.48& 0.48 & 0.45 & 0.42 & 0.39\\ \hline
     \end{tabular}
-    \caption{}
+    \caption{Cosmic coalescence times, in Gyr, for the galaxy models evolved to different redshifts $z$ and for different initial binary eccentricities $e_0$. Each entry gives the cosmic time at which the binary reaches coalescence, measured from the initial time $t_0=t(z)$.}
     \label{tab:second}
 \end{subtable}
-\caption{...}
-\label{tab:combined}
+\caption{Coalescence times of the IMBH binaries for the 25 galaxy models as a function of redshift $z$ and initial binary eccentricity $e_0$. Panel (a) reports the coalescence timescale measured from $t_0=0\,s$, while panel (b) gives the corresponding cosmic time of coalescence.}
+\label{tab:Cosmic size coalescence timescales}
 \end{table}
+In this chapter, we have investigated the self-consistent hybrid model developed by \textcite{Quinlan_1996} and \textcite{Sesana_2006} to describe the dynamical evolution of massive black hole binaries within a fixed stellar background. Taking advantage of the versatility of this framework, we have performed a suite of numerical experiments aimed at identifying the main features of IMBH binary evolutionary tracks and systematically exploring the relevant parameter space. The collection of experiments presented in \S~\ref{sec:Stellar Cusps IMBH Binary Evolution}-\ref{sec:NGC 205 IMBH Binary evolution}-\ref{sec:Cosmic Size Evolution Down to NGC 205}, together with the analysis of the corresponding evolutionary tracks $(t,a(t))$ and $(t,e(t))$, allows us to draw the following main conclusions:
+
+\begin{itemize}
+\item Stellar environments characterised by enhanced central densities, such as nucleated galaxies, promote more efficient dynamical hardening of IMBH binaries, leading to a faster orbital decay.
+\item Eccentric IMBH binaries generally undergo further eccentricity growth during the stellar-scattering hardening phase. As a consequence, they can enter the GW-dominated regime at bigger eccentricity and reach coalescence on shorter timescales.
+
+\item Initially circular binaries tend to preserve their low eccentricity throughout both  stellar-driven and GW-driven regimes.
+
+\item In sufficiently low-density stellar environments, the stellar-driven hardening can be too inefficient to bring the binary into the GW-dominated regime within a Hubble time $t_H$, potentially preventing its coalescence within the present time and detection by LISA or ET.
+
+\item Present-day, non-nucleated dwarf galaxies characterised by low central densities may have been sufficiently compact at higher redshifts, $z>0$, to enable an IMBH binary hosted by them to coalesce within the present-day universe.
+
+\end{itemize}
+The results obtained in this chapter motivate the next step of our investigation, namely the transition from the semi-analytical hybrid description to direct $N$-body simulations. This approach will allow us to follow the evolution of the IMBH binary and its surrounding stellar system self-consistently, overcoming some of the main limitations inherent to the adopted hybrid model. In particular, direct $N$-body simulations will make it possible to follow the mutual dynamical evolution of the binary and the stellar background, rather than prescribing the latter as a fixed external potential, and will open the possibility of investigating the dynamical evolution and eventual merger of the stellar systems themselves.
 
 
 
@@ -2012,27 +2068,65 @@ HERE!!!!!!!!!!!!!!!!
 
 
 
+\chapter{IMBH Binary Evolution with KETJU N-Body Simulations}\label{chap:chapter3}
 
 
 
-\chapter{Generation of Initial Conditions for N-body Stellar Systems}\label{chap:chapter3}
+
+
+
+
+\vspace*{\fill}
+
+\begin{center}
+\begin{minipage}{0.65\textwidth}
+\centering
+\textit{The numerical experiments based on the Quinlan-Sesana hybrid model, presented in Chapter~\ref{chap:chapter2}, have shown that, once an IMBH binary forms, its coalescence can occur within a Hubble time even in non-nucleated, high-redshift galaxies. These results motivate a further investigation through self-consistent, direct $N$-body simulations, which allow the dynamical evolution of the stellar system and the black holes to be followed from the stages preceding binary formation through the subsequent evolution of the binary. This approach also makes it possible to relax some of the simplifying assumptions adopted in the hybrid model, in particular the assumption of a fully populated loss cone and the evolution within a fixed, spherically symmetric stellar background. In this context, KETJU provides a particularly suitable framework, as the interactions between the black holes and surrounding stars are resolved without gravitational softening.\\The chapter is structured as follows. Section 1 introduces the equilibrium theory of $N$-body systems and the procedure used to construct equilibrium initial conditions with OpOpGadget. Section 2 presents the results of high-resolution, direct $N$-body simulations of mergers between two identical systems, each consisting of an NGC 205-like stellar bulge hosting an IMBH. The final section explores a suite of numerical experiments designed to assess how the dynamical path toward binary coalescence is affected by the initial angular momentum of the merging systems.
+}
+\end{minipage}
+\end{center}
+
+\vspace*{\fill}
+
+
+
+
+
+
+
+\newpage
+
+
+
+
+
+
+
+
+
+
+
 
 
 \section{Dynamical Equilibrium of Stellar Systems}
- as anticipated in Section 1.1.\\As long as the stellar component is observed within $t_{2b}$, granularity  is unimportant, collisions are negligible and stars can be described as particles moving in a smooth potential
-generated by a continous mass density $\rho$, proxy of the actual stellar distribution. In this regime, when dealing with stars that are all identical to one another, the DF will be unique and will satisfy the Collisionless Boltzmann Equation (CBE). By denoting with $\mathbf{w}$ an arbitrary set of canonical coordinates of PS, this conservation equation descends from differentiating with respect to the time---along the orbits of the potential $\Phi(\mathbf{x},t)$ associated to $\rho(\mathbf{x},t)$---of the normalization condition
-
-\begin{equation}\label{DF normalization}
- \int_{\mathbb{R}^6}d\mathbf{w}\, f(\mathbf{w})=1.
+\label{sec:Dynamical Equilibrium of Stellar Systems}
+The first step towards performing $N$-body experiments of merging stellar systems hosting IMBHs is the generation of reliable $N$-body initial conditions that capture the main properties of the system in isolation, when at equilibrium, and reproduce its relevant observables, such as the density profile and stellar velocity dispersion, consistently with those of the corresponding idealized model. This, in turn, requires a well-defined framework for describing the dynamical state of the system.\\As discussed in \S~\ref{sec:Two-Body Relaxation and Dynamical Friction}, provided that the stellar system is considered on timescales shorter than its two-body relaxation time $t_{2b}$, the discrete nature of the stellar component can be neglected: collisional effects are negligible, and the stars can be treated as collisionless particles moving in a smooth gravitational potential generated by a continuous mass density distribution $\rho$, smooth proxy of the actual stellar system. In this regime, when dealing with stars that are all identical to one another, the dynamical state of the stellar component can be described by a unique one-particle distribution function (DF) $f(\mathbf{x},\mathbf{v},t)$ of phase space (PhS). Therefore, within $t_{2b}$, the system is said to be at equilibrium, its DF is time-independent and satisfies the Collisionless Boltzmann Equation (\ref{CBE}), while the corresponding gravitational potential $\Phi(\mathbf{x})$ is self-consistently determined by the mass distribution $\rho(\mathbf{x})$ through the Poisson equation
+\begin{equation}
+\label{Poisson equation}
+ \nabla^2 \Phi(\mathbf{x})=4\pi G\rho(\mathbf{x}).
 \end{equation}
-By extending the Lagrangian derivative notion $D/Dt$ to the coordinates of the phase-space, the CBE reads:
-
-\begin{equation}\label{CBE}
+Let us now examine in greater detail the properties of the DF, the CBE, and the description of equilibrium states in $N$-body systems, building on the discussion  in \S~\ref{sec:Two-Body Relaxation and Dynamical Friction}.\\We begin by introducing the normalized DF in phase space. Denoting by $\mathbf{w}$ an arbitrary set of canonical coordinates in phase space, we adopt the normalization
+\begin{equation}\label{DF normalized}
+\int_{\mathbb{R}^6}d\mathbf{w}, f(\mathbf{w})=1.
+\end{equation}
+The CBE follows from requiring the DF to be conserved along the trajectories generated by the potential $\Phi(\mathbf{x},t)$ associated with the density distribution $\rho(\mathbf{x},t)$. Taking the total derivative of the DF along these trajectories gives
+\begin{equation}\label{CBE new}
     \frac{Df}{Dt}=\frac{\partial f}{\partial t}+
     \mathbf{\dot{w}}\cdot \frac{\partial f}{\partial \mathbf{w}}=
     \frac{\partial f}{\partial t}+[f,H]=0,
 \end{equation}
-where the square bracket indicates the Poisson bracket, which is defined as
+where $D/Dt$ denotes the Lagrangian derivative,
+the square bracket indicates the Poisson bracket
 \begin{equation}
 [f,H]
 =
@@ -2046,11 +2140,11 @@ where the square bracket indicates the Poisson bracket, which is defined as
 \right),
 \label{Poisson bracket}
 \end{equation}
-and $H$ is the Hamiltonian function of the system.\\The arbitrariness of the canonical coordinates $\mathbf{w}$ enables us to specialize Equation (\ref{CBE}) to the inertial Cartesian coordinates $(\mathbf{x},\mathbf{v})$. With this choice, the Hamiltonian becomes
+and $H$ is the Hamiltonian function of the system (see, e.g. \citealt{Binney_book}).\\The arbitrariness of the canonical coordinates $\mathbf{w}$ enables us to specialize Equation (\ref{CBE}) to the inertial Cartesian coordinates $(\mathbf{x},\mathbf{v})$. With this choice, the Hamiltonian becomes
 \begin{equation}\label{Hamiltonian in cartesian coord.}
     H(\mathbf{x},\mathbf{v},t)=\frac{1}{2}v^2+\Phi(\mathbf{x},t)
 \end{equation}
-and the CBE turns into
+and the Equation (\ref{CBE new}) turns into
 \begin{equation}\label{CBE in cartesian coord.}
     \frac{\partial f}{\partial t}+\mathbf{v}\cdot
     \frac{\partial f}{\partial \mathbf{x}}-
@@ -2063,7 +2157,6 @@ Being interested in studying the equilibrium condition of galaxies and in partic
     \mathbf{\dot{w}}\cdot \frac{\partial f}{\partial \mathbf{w}}=
     [f,H]=0.
 \end{equation}
-Noteworthy, for this condition to apply it is sufficient to have a steady-state potential $\Phi(\mathbf{x},\mathbf{v})$.
 Solutions to Equation (\ref{Stationary CBE}) are referred to as integrals of motion. Specifically, the function $I(\mathbf{x},\mathbf{v})$ is an integral of motion for the potential $\Phi(\mathbf{x},\mathbf{v})$ if it satisfies
 \begin{equation}\label{Integral of motion def}
     \frac{D}{Dt}[I(\mathbf{x}(t),\mathbf{v}(t))]=0
@@ -2072,7 +2165,7 @@ along any orbit of the potential and a relevant example is represented by the Ha
 \begin{equation}
  [H,H]=0.
 \end{equation}
-The comparison between Equation (\ref{Integral of motion def}) and Equation (\ref{Stationary CBE}) reveals that solving the steady-state CBE is equivalent to being an integral of motion; this leads to the formulation of the Jeans theorem.
+The comparison between Equation Equation (\ref{Stationary CBE}) and (\ref{Integral of motion def}) reveals that solving the steady-state CBE is equivalent to being an integral of motion; this leads to the formulation of the Jeans theorem.
 \medskip
 
 \noindent\textbf{Jeans Theorem. --}
