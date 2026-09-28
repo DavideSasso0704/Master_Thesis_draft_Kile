@@ -724,7 +724,7 @@ In \S~\ref{sec:Gravitational Slingshot Effect} we have been concerned in describ
 \begin{equation}\label{Pericenter stellar energy}
  E_*=\frac{J^2}{2r_P^2}-\frac{GM}{r_P}.
 \end{equation}
-From Equation (\ref{Pericenter stellar energy}) follows that the minimum value of $J$, below which the star enters the binary loss cone, is
+From Equation (\ref{Pericenter stellar energy}) it follows that there exists a value of $J$ below which the star enters the binary loss cone. Hereafter, we refere to it as $J_{lc}(E_*)$ and is given by
 \begin{equation}\label{loss cone definition}
     J_{lc}(E_*)\equiv \left[2\left(E_*+\frac{GM}{a}\right)\right]^{1/2}a,
 \end{equation}
@@ -817,21 +817,22 @@ A comparison between Equations (\ref{Quinlan Gamma_Q})  and (\ref{Sesana Gamma})
 
 \section{Gravitational Radiation from Black Hole Binaries}
 \label{sec:Gravitational Radiation from Black Hole Binaries}
+This Section reviews the physics of gravitational-wave emission from a binary system within the framework of linearized general relativity, following the treatment presented by \textcite{Maggiore_book}, and examines their role as the final mechanism driving a binary black hole (BH) system towards progressively smaller separations and, ultimately, coalescence.\\The Section is organized into three Subsections. The first focuses on the linearized Einstein equations in the harmonic gauge. The second discusses the generation of GWs in the quadrupole approximation. Finally, the third derives the expected GW signal from a binary system and examines the associated radiation-reaction effects on its orbital evolution.
 
 
 
 
 \subsection{Linearized Gravitational Field Equation}
-
-The starting point of the theoretical derivation of GWs properties, such as the energy and angular momentum they transport, from BH binary and the associated back-reaction on the astrophysical source, is the linearization of  field equations of Generl Relativity (GR)
+The Einstein equations are the fundamental field equations of general relativity (GR). They are given by
 \begin{equation}\label{Einstein field eq.}
-    R_{\mu \nu}-\frac{1}{2}g_{\mu \nu} R=\frac{8\pi G}{c^4}T_{\mu \nu}.
+    R_{\mu \nu}-\frac{1}{2}g_{\mu \nu} R=\frac{8\pi G}{c^4}T_{\mu \nu},
 \end{equation}
-These constitute ten coupled, non-linear, second-order partial differential equations for the metric tensor; neverthless, they are not sufficient to uniquely set the ten indipendent components of $g_{\mu\nu}$ due to the four  Bianchi identities, equivalent to the same number of differential constraints, resulting in six  independent equations only. These four degrees of freedom are intimately connected to gauge symmetries, reflecting the arbitrariness of the four coordinates $x^\mu$ used to represent and solve Equation (\ref{Einstein field eq.}).\\To show how gravitational radiation emerges from Equation (\ref{Einstein field eq.}), we need to expand it around the Minkowski metric $\eta_{\mu \nu}=diag(-1,+1,+1,+1)$; therefore we assume
+where $R_{\mu\nu}$, $g_{\mu\nu}$, and $T_{\mu\nu}$ denote the components of the Ricci, metric, and energy-momentum tensors, respectively, while $R$ is the Ricci scalar, obtained by contracting the Ricci tensor.\\Equations (\ref{Einstein field eq.}) constitute ten coupled, non-linear, second-order partial differential equations for the metric tensor. Neverthless, owing to the four  Bianchi identities, they are not sufficient to uniquely set the ten indipendent components of $g_{\mu\nu}$, hence, resulting in six  independent equations only. These four degrees of freedom are intimately connected to gauge symmetries, reflecting the arbitrariness of the four coordinates $x^\mu$ used to represent and solve the tensor Equations (\ref{Einstein field eq.}).\\To examine how gravitational radiation arises in linearized GR within the quadrupole approximation, we first consider the weak-field limit, in which the metric tensor deviates only slightly from the Minkowski metric $\eta_{\mu \nu}=\mathrm{diag}(-1,+1,+1,+1)$, which describes the flat spacetime. We then derive the corresponding form of the Einstein equations in this limit. Therefore we assume
 \begin{equation}
+\label{weak filed metric tensor}
     g_{\mu \nu}(x)=\eta_{\mu \nu}+h_{\mu \nu}(x),
 \end{equation}
-with $|h_{\mu \nu}|\ll1$ being a symmetric tensor representing a small perturbation of the flat spacetime.\\The left-hand side of Equation (\ref{Einstein field eq.}) encodes the geometry and curvature of spacetime and contains all terms that are functions of the metric; in terms of the affine connection
+with $|h_{\mu \nu}|\ll1$ being a symmetric tensor representing a small perturbation of the flat spacetime.\\Linearizing Equations (\ref{Einstein field eq.}) requires performing this operation on the various terms appearing on the left-hand side. This side encodes the geometry and curvature of spacetime and contains all terms that are functions of the metric and its derivatives. Introducing the affine connections
 \begin{equation}\label{affine connection def}
     \Gamma^\lambda _{\mu\nu}=\frac{1}{2}g^{\lambda \rho}(\partial_\mu g_{\nu\rho}+\partial_\nu g_{\rho\mu}-\partial_\rho g_{\mu\nu})
 \end{equation}
@@ -846,11 +847,11 @@ they can be expressed indeed as
 and 
 \begin{equation}\label{Ricci scalar def} R=g^{\alpha\beta}R_{\alpha\beta}=R_\sigma^\sigma.
 \end{equation}
-On the right-hand side, instead, appears the Energy-Momentum tensor; it can be read as the source term of the gravitational field equations and turns out to be
-\begin{equation}\label{Energy-Momentum tensor def}
-    T^{\mu\nu}=(\rho+p/c^2)u^\mu u^\nu+pg^{\mu\nu}
+Bearing in mind that, owing to Equation (\ref{weak filed metric tensor}), the metric derivatives reduce to derivatives of the perturbation $h_{\mu\nu}$ and that at linear order the inverse metric tensor can be approximated as
+\begin{equation}
+ g^{\mu\nu}\approx \eta^{\mu\nu}-h^{\mu\nu},
 \end{equation}
-for a perfect fluid of density $\rho$, pressure $p$ and four-velocity $v^\mu$.\\It straightforward to prove that, to the first order in the metric perturbation, they become:
+it straightforward to prove that, to the first order in the metric perturbation, these terms reduce to
 \begin{equation}\label{linearized Ricci tensor}
     R_{\mu \nu}=-\frac{1}{2}(\Box h_{\mu \nu}+\partial_\mu \partial_\nu h-\partial_\lambda\partial_\mu h_\nu^\lambda-\partial_\nu\partial_\lambda h_\mu^\lambda)
 \end{equation}
@@ -858,61 +859,48 @@ for a perfect fluid of density $\rho$, pressure $p$ and four-velocity $v^\mu$.\\
 \begin{equation}\label{linearized ricci scalar}
     R=\partial_\mu \partial_\nu h^{\mu\nu}-\Box h,
 \end{equation}
-where $h$ denotes $h_{\mu \nu}$ trace.\\Defining the so-called "trace reverse" of $h_{\mu\nu}$
+respectively, whith $h$ denoting the trace of $h_{\mu \nu}$.\\The linearized Eistein equations are greatly simplified if they are expressed in terms of the so-called "trace reverse" of $h_{\mu\nu}$, defined as
 \begin{equation}\label{trace reverse definition}
-    \bar{h}_{\mu\nu}\equiv h_{\mu\nu}-\frac{1}{2}\eta_{\mu\nu} h
+    \bar{h}_{\mu\nu}\equiv h_{\mu\nu}-\frac{1}{2}\eta_{\mu\nu} h.
 \end{equation}
-and plugging the terms of Equations (\ref{linearized Ricci tensor}) and (\ref{linearized ricci scalar}) into Equation (\ref{Einstein field eq.}), the field equations take the form
+In this way, writing the original perturbation $h_{\mu\nu}$ as a function of the associated trace reverse $\bar{h}_{\mu\nu}$ and plugging the terms of Equations (\ref{linearized Ricci tensor}) and (\ref{linearized ricci scalar}) into Equation (\ref{Einstein field eq.}), the field equations, finally, take the form
 \begin{equation}\label{linearized Einstein Eq. LONG}
     \Box \bar{h}_{\mu\nu} + \eta_{\mu\nu}\partial_\alpha\partial_\beta \bar{h}^{\alpha\beta}-\partial_\mu\partial_\lambda \bar{h}^\lambda_\nu-\partial_\nu\partial_\lambda \bar{h}^\lambda_\mu=-\frac{16\pi G}{c^4}T_{\mu\nu}.
 \end{equation}
-Taking advantage of the gauge freedom of Equation (\ref{Einstein field eq.}), it can be performed an infintesimal coordinate transformation of the kind
+Equations (\ref{linearized Einstein Eq. LONG}) are already linearized in the metric perturbation, however they can be further simplified if we exploit the gauge freedom holding for the Einstein equations. This reflects the possibility of an infintesimal coordinate transformation of the kind
 \begin{equation}
-    x^\mu \rightarrow{}x'^\mu=x^\mu+\xi^\mu(x);
+\label{gauge trasf.}
+    x^\mu \rightarrow x'^\mu=x^\mu+\xi^\mu(x),
 \end{equation}
-as tensors obey to precise law of transformation, this yields
+with $\xi^\mu(x)$ four arbitrary functions of the spacetime.\\As tensors obey to precise law of transformations under change of coordinates, the coordinates transformation in Equation (\ref{gauge trasf.}) induces a variation of the trace reverse $\bar{h}_{\mu\nu}$ components, specifically:
 \begin{equation}
+\label{reverse trace trasf.}
     \bar{h}'_{\mu\nu}=\frac{\partial x^\alpha}{\partial x'^\mu}\frac{\partial x^\beta}{\partial x'^\nu}\bar{h}_{\alpha\beta}\approx \bar{h}_{\mu\nu}-\partial _\mu \xi_\nu -\partial_\nu \xi_\mu+\eta_{\mu\nu}\partial_\sigma\xi^\sigma.
 \end{equation}
-Yet, if the four functions $\xi^\mu$ are chosen so as to satisfy the so-called De Donder gauge condition, i.e. $\Box\xi^\mu=\partial_\sigma\bar{h}^{\sigma\mu}$, then $\partial_\sigma\bar{h}'^{\sigma\mu}=0$ and, dropping the prime, Equation (\ref{linearized Einstein Eq. LONG}) semplifies to
-\begin{equation}\label{linearized Einstein eq + gauge condition}
-\begin{cases}
-\Box \bar{h}_{\mu\nu} = -\dfrac{16\pi G}{c^4} T_{\mu\nu} \\
-\partial_\mu\bar{h}^{\mu\nu}=0.
-\end{cases}
-\end{equation}
+A direct inspection of Equations (\ref{linearized Einstein Eq. LONG}) and (\ref{reverse trace trasf.}) shows that, among the possible transformations, choosing the four functions $\xi^\mu$ such that they satisfy the so-called De Donder gauge condition, i.e. $\Box\xi^\mu=\partial_\sigma\bar{h}^{\sigma\mu}$, leads to $\partial_\sigma\bar{h}'^{\sigma\mu}=0$. Dropping the prime thereafter, Equation (\ref{linearized Einstein Eq. LONG}) then simplifies to
+\begin{equation}\label{linearized Einstein eq + gauge condition} \begin{cases} \Box \bar{h}_{\mu\nu} = -\dfrac{16\pi G}{c^4} T_{\mu\nu} \\ \partial_\mu\bar{h}^{\mu\nu}=0. \end{cases} \end{equation}
 We are now ready to address the problem of determining  the general solution of the linearized Einstein's equations coupled with the De Donder gauge condition. 
+
+
+
+
+
+
 
 
 \subsection{Generation and Propagation of Gravitational Waves}
 
-To study the formation of GWs we initially focus on the solution of the problem defined in Equation (\ref{linearized Einstein eq + gauge condition}) inside the source where $T_{\mu\nu}\ne 0$.\\Linear partial differential equations solution can be obtained by the method of Green's function; by definition, the Green's function $G$ is the solution of the associated equation in case of a pont-like source, i.e.
-\begin{equation}\label{Green equation}
-    \Box_x G(x-x') = \delta^{(4)}(x-x'),
-\end{equation}
-with $\delta^{(4)}(x-x')$ being the four-dimensional Dirac function.\\It is relevant to note that, apart from the B.C. of the problem, $G$ depends only on the linear operator; therefore, from the radiation problem in electromagnetism, we already know that the proper solution is the retarded Green's function 
-\begin{equation}\label{retarded Green function}
-    G(x-x')=-\frac{1}{4\pi |\mathbf{x}-\mathbf{x'}|}\delta^{(4)}(ct_{ret}-ct'),
-\end{equation}
-where 
-\begin{equation}\label{retarded time def}
-    t_{ret}=t-\frac{|\mathbf{x}-\mathbf{x'}|}{c}
-\end{equation}
-is the time in past at which the radiation was emitted at $\mathbf{x'}$ in order to be observed at $\mathbf{x}$ at time $t$. Once the Green's function is found, the general solution will be the convolution between it and source term:
-\begin{equation}\label{h_mn general solution}
-    \bar{h}_{\mu\nu}(t,\mathbf{x})=\frac{4G}{c^4}\int d^3x'\frac{T_{\mu\nu}(t_{ret},\mathbf{x'})}{|\mathbf{x}-\mathbf{x'}|}.
-\end{equation}
-Prior to examining the formula reported in Equation (\ref{h_mn general solution}) and assessing which additional simplifications can be implemented and when they apply, it is appropriate to analyze how GWs propagate in vacuo.\\Outside the GWs source, $T_{\mu\nu}$ vanishes and, owing to the linearity of the d’Alembert operator, the solution can be expressed as superposition of plane waves without loss of generality, that is
+To study the formation of GWs we initially focus on the solution of the problem defined in Equation (\ref{linearized Einstein eq + gauge condition}). Let us analyze first how GWs propagate in vacuo.\\Outside the GWs source, $T_{\mu\nu}$ vanishes and, owing to the linearity of the d’Alembert operator, the solution can be expressed as superposition of plane waves without loss of generality, that is
 \begin{equation}
-    \bar{h}_{\mu\nu}(x)=\int d^3k (A_{\mu\nu}(\mathbf{k})e^{ik_\rho x^\rho}+c.c.)
+    \bar{h}_{\mu\nu}(x)=\int d^3k (A_{\mu\nu}(\mathbf{k})e^{ik_\rho x^\rho}+c.c.),
 \end{equation}
-However, not all plane waves satisfy the linearized field equation in vacuo along with the gauge condition but linearity enables us to study the properties of a single plane wave separately; consequently, inserting the Ansatz $\bar{h}_{\mu\nu}\sim A_{\mu\nu}e^{ik_\rho x^\rho}$ yields the following two constraints:
+with "c.c" being a short for complex conjugate of the first term.\\It is worth noting that not all plane waves satisfy the linearized field equation in vacuo along with the gauge condition. However, linearity enables us to study the properties of a single plane wave separately; consequently, inserting the Ansatz $\bar{h}_{\mu\nu}\sim A_{\mu\nu}e^{ik_\rho x^\rho}$ into Equations (\ref{linearized Einstein eq + gauge condition}) yields the following two constraints:
 \begin{enumerate}
     \item $(k_\rho k^\rho=0)$: the four-vector $k^\mu=(\omega/c,\mathbf{k})$ is a light-like vector (GWs travel at light speed $c$ in vacuo).
     \item $(k_\mu A^{\mu\nu}=0)$: it implies $A^{0\nu}=A^{3\nu}$ if we deal with GWs propagating along the $x^3$ direction, hence $k^\mu=(k,0,0,k)$.
 \end{enumerate}
-At this stage, the amplitude tensor $A^{\mu\nu}$ possesses six indipendet components --- ten, due to symmetry, reduced by the four constraints imposed by the gauge conditions --- and can be written as
-\begin{equation}\label{A^mn 6 dof}   
+At this stage, the amplitude tensor $A^{\mu\nu}$ possesses six indipendet components and can be written as
+\begin{equation}\label{A^mn 6 dof}
 A^{\mu\nu} =
 \begin{pmatrix}
 A^{00} & A^{10} & A^{20} & A^{00} \\
@@ -921,8 +909,8 @@ A^{20} & A^{12} & A^{22} & A^{20} \\
 A^{00} & A^{10} & A^{20} & A^{00}
 \end{pmatrix}.
 \end{equation}
-Out of the six polarizations shown in Equation (\ref{A^mn 6 dof}), four are unphysical because they vanish when the residual gauge freedom associated with four arbitrary harmonic functions $\xi^\mu$ is exploited. One is free to adopt functions proportional to the plane wave solutions of the vacuo problem, i.e. $\xi^\mu=\epsilon^\mu e^{ik_\rho x^\rho}$ are harmonic, and to set their amplitudes $\epsilon^\mu$ such that 
-\begin{equation}\label{A^mn TT gauge}   
+Out of the six polarizations shown in Equation (\ref{A^mn 6 dof}), four are unphysical because they vanish when the residual gauge freedom associated with four arbitrary harmonic functions $\xi^\mu$ is exploited. Indeed, one is free to adopt functions proportional to the plane wave solutions of the vacuo problem, e.g. $\xi^\mu=\epsilon^\mu e^{ik_\rho x^\rho}$, preserving the validity of the De Donder gauge, and to set their amplitudes $\epsilon^\mu$ so that
+\begin{equation}\label{A^mn TT gauge}
 A^{\mu\nu}_{TT} =
 \begin{pmatrix}
 0 & 0 & 0 & 0 \\
@@ -931,11 +919,31 @@ A^{\mu\nu}_{TT} =
 0 & 0 & 0 & 0
 \end{pmatrix}.
 \end{equation}
-The coordinate system where $A^{\mu\nu}$ is in the form of Equation (\ref{A^mn TT gauge}), with two indipendent polarizations only, and defined by 
+The coordinate system where $A^{\mu\nu}$ is in the form of Equation (\ref{A^mn TT gauge}), with two independent polarizations only, and defined by
 \begin{equation}
     \partial_\mu h^{\mu\nu}=0, \quad h^{0\mu}=0, \quad h^i_i=0,
 \end{equation}
-is referred to as "TT gauge"\footnote{In the TT gauge, according to the definition provided, $\bar{h}_{ij}^{TT}=h_{ij}^{TT}$.}.\\Having analyzed the propagation of GWs in vacuo and the properties of the TT gauge, we are now in the position to focus again on the source solution reported in Equation (\ref{h_mn general solution}). One of the greatest simplifications to this integral consists of the so-called "Compact-source approximation"; it applies outside the source whenever its size is negligible with respect to the source-detector separation. In this regime, we can retain the leading term of the multipole expansion only, thus
+is referred to as transverse, traceless, or "TT",  gauge\footnote{In the TT gauge, according to the definition provided, $\bar{h}_{ij}^{TT}=h_{ij}^{TT}$.}.\\We now focus on the solutions of Equations (\ref{linearized Einstein eq + gauge condition}) in presence of the source term $T_{\mu\nu}\ne 0$. It can be read as the source term of the gravitational field equations and turns out to be
+\begin{equation}\label{Energy-Momentum tensor def}
+    T^{\mu\nu}=(\rho+p/c^2)u^\mu u^\nu+pg^{\mu\nu}
+\end{equation}
+for a perfect fluid of density $\rho$, pressure $p$ and four-velocity $v^\mu$.\\Solutions for linear partial differential equations  can be obtained by means of the Green's function method. By definition, the Green's function $G(x-x')$ is the solution of the associated equation in case of a pont-like source, i.e.
+\begin{equation}\label{Green equation}
+    \Box_x G(x-x') = \delta^{(4)}(x-x'),
+\end{equation}
+with $\delta^{(4)}(x-x')$ being the four-dimensional Dirac function.\\It is relevant to note that, apart from the B.C. of the problem, $G(x-x')$ depends only on the linear operator. Therefore, from the radiation problem in electromagnetism, we already know that the proper solution is the retarded Green's function
+\begin{equation}\label{retarded Green function}
+    G(x-x')=-\frac{1}{4\pi |\mathbf{x}-\mathbf{x'}|}\delta^{(4)}(ct_{ret}-ct'),
+\end{equation}
+where 
+\begin{equation}\label{retarded time def}
+    t_{ret}=t-\frac{|\mathbf{x}-\mathbf{x'}|}{c}
+\end{equation}
+is the time in past at which the radiation was emitted at $\mathbf{x'}$ for it to be observed at $\mathbf{x}$ at time $t$. Once the Green's function is found, the general solution will be the convolution between it and source term:
+\begin{equation}\label{h_mn general solution}
+    \bar{h}_{\mu\nu}(t,\mathbf{x})=\frac{4G}{c^4}\int d^3x'\frac{T_{\mu\nu}(t_{ret},\mathbf{x'})}{|\mathbf{x}-\mathbf{x'}|}.
+\end{equation}
+One of the greatest simplifications to this integral consists of the so-called "Compact-source approximation"; it applies outside the source whenever its size is negligible with respect to the source-detector separation. In this regime, we can retain the leading term of the multipole expansion only, thus
 \begin{equation}\label{h_mn compact source solution}
     h_{ij}^{TT}(t,\mathbf{x})=\frac{4G}{c^4r}\int d^3x'T_{ij}(t_{ret},\mathbf{x'}).
 \end{equation}
@@ -943,7 +951,7 @@ Furthermore, far from the source, the conservation of the Energy-Momentum tensor
 \begin{equation}\label{h_mn final form}
     h_{ij}^{TT}(t,\boldsymbol{x})=\frac{2G}{rc^4}\ddot{Q}^{TT}_{ij}(t-r/c)
 \end{equation}
-at lowest order in the low-velocity expansion.\\The term $Q^{TT}_{ij}$ introduced in Equation (\ref{h_mn final form})\footnote{The components with at least one time index are excluded from our analysis because they are constant and therefore do not contribute to GWs formation.} is the representation of the quadrupole moment in the class of coordinate systems satisfying the TT gauge conditions; defining the quadrupole moment of $T^{00}/c^2=\rho$ as
+at lowest order in the low-velocity expansion.\\The term $Q^{TT}_{ij}$ introduced in Equation (\ref{h_mn final form})\footnote{The components with at least one time index are excluded from our analysis because they are constant and therefore do not contribute to GWs formation.} is the representation of the quadrupole moment in the class of coordinate systems satisfying the TT gauge conditions. Defining the quadrupole moment of $T^{00}/c^2=\rho$ as
 \begin{equation}\label{M_ij definition}
     M^{ij}\equiv \frac{1}{c^2}\int d^3x T^{00}(t,\boldsymbol{x})x^ix^j,
 \end{equation}
@@ -951,19 +959,19 @@ it is thus possible to write
 \begin{equation}\label{Q_ij def}
     Q^{ij}\equiv M^{ij}-\frac{1}{3}\delta^{ij}M_{kk}=\int d^3x\rho(t,\mathbf{x})\left(x^ix^j-\frac{1}{3}r^2\delta^{ij}\right).
 \end{equation}
-Equation (\ref{h_mn compact source solution}) shows that, unlike electromagnetic radiation, at lowest order the gravitational radiation arises from changes in the quadrupole moment; other important observables such as the energy and angular momentum carried by GWs, needed to estimate the back-reaction, will be derived from the quantities defined in Equation (\ref{Q_ij def}) indeed.\\The energy and angular momentum conservation laws impose that the rates a which these quantities are carried away by GWs at time $t$ and at large separation $r$ from the source coincide with the corresponding rates of orbital energy ---if the emitting system consists of a BH binary--- and angular momentum, negletting the spin contribute, loss evaluated at the appropriate retarded time; in formulae:
+Equation (\ref{h_mn final form}) shows that, unlike electromagnetic radiation, at lowest order the gravitational radiation arises from changes in the quadrupole moment. We conclude by reporting other important observables such as the energy and angular momentum carried by GWs, needed to estimate the back-reaction and related to the time derivatives of quadrupole moment tensor defined in Equation (\ref{Q_ij def}).\\The conservation of energy and angular momentum requires that the rates at which GWs carry these quantities away from the source match the corresponding rates of orbital energy and angular momentum loss. The former are measured at a large distance $r$ from the source and at time $t$, while the latter must be evaluated at the appropriate retarded time. By neglecting the contributions from possible spins of the two black holes, it can be proved that the energy and angular momentum transported by GWs per unit time are
 \begin{equation}\label{energy loss rate by GWs}
     P_{quad}=\frac{dE_{gw}}{dt}=\frac{G}{5c^5}\langle\dddot{Q}_{ij}\dddot{Q}_{ij}\rangle=-\frac{dE_{source}}{dt},
 \end{equation}
-or equivalently in terms of $M_{ij}$
+or
 \begin{equation}\label{P_quad in terms of M_ij}
-     P_{quad}=\frac{G}{5c^5}\left\langle\dddot{M}_{ij}\dddot{M}_{ij}-\frac{1}{3}(\dddot{M}_{kk})^2\right\rangle,
+     P_{quad}=\frac{G}{5c^5}\left\langle\dddot{M}_{ij}\dddot{M}_{ij}-\frac{1}{3}(\dddot{M}_{kk})^2\right\rangle
 \end{equation}
-and 
+in terms of $M_{ij}$, and
 \begin{equation}\label{angular momentum loss rate by GWs}
     \frac{dL^i_{gw}}{dt}=\frac{2G}{5c^5}\epsilon^{ijk}\langle\ddot{Q}_{jl}\dddot{Q}_{kl}\rangle=-\frac{dL^i_{source}}{dt}.
 \end{equation}
-Equations (\ref{energy loss rate by GWs}) and (\ref{angular momentum loss rate by GWs}) will be of fundamental importance for estimating the back-reaction induced by GWs emission on the black hole binary.
+respectively. Equations (\ref{energy loss rate by GWs}) and (\ref{angular momentum loss rate by GWs}) will be of fundamental importance for estimating the back-reaction induced by GWs emission on the black hole binary.
 
 
 
@@ -980,65 +988,58 @@ Equations (\ref{energy loss rate by GWs}) and (\ref{angular momentum loss rate b
 
 
 \subsection{Gravitational Waves from Black Hole Binaries and Back-Reaction}
-We now focus on the gravitational radiation emitted by two masses $m_1$ and $m_2$ moving along elliptic Keplerian orbit. Let $m=m_1+m_2$ and $\mu=m_1\cdot m_2/{m}$ be the total mass and the reduced mass respectively.\\Regardless of whether the orbit is bound or unbound, the motion of the two bodies takes place in a plane due to the conservation of the angular momentum $\mathbf{L}$; therefore, in this plane, the x-y plane, perpendicular to $\mathbf{L}$, it is convenient to  
-introduce the polar coordinates $(r,\psi)$ with origin at center-of-mass.\\In this frame, as before denoted by $S_{CM}$, 
+We now focus on the gravitational radiation emitted by two masses $m_1$ and $m_2$ moving along elliptic Keplerian orbit. Let $m=m_1+m_2$ and $\mu=m_1m_2/{m}$ be the total mass and the reduced mass, respectively.\\Whether the orbit is bound or unbound, the motion of the two bodies is confined to a plane by the conservation of the angular momentum $\mathbf{L}$. It is therefore convenient to choose this plane as the \textit{x-y} plane, perpendicular to $\mathbf{L}$, and introduce polar coordinates $(r,\psi)$ centered on the center of mass. In this reference frame, denoted by $S_{CM}$,
 \begin{equation}\label{L of two body problem}
     L_z=\mu r^2\dot{\psi}
 \end{equation}
-coincides with the modulus $L$ of the costant vector while, as a consequence of the Köenig theorem,
+and, owing to the Köenig theorem, the total binary energy
 \begin{equation}\label{E of two body problem}
     E=\frac{1}{2}\mu \dot{r}^2+\frac{L^2}{2\mu r^2}-\frac{Gm\mu}{r}
 \end{equation}
-exhibits only the term of kinetic energy corresponding to the relative motion of the system, as in $S_{CM}$ holds $K_{CM}=0$ by definition.\\The integration of Equation (\ref{E of two body problem}) requires, as in \parencite{Capozziello_2008}, the introduction of the auxiliary variable $w(\psi)=1/r(\psi)$; plugging it into the energy conservation identity, Equation (\ref{E of two body problem}) becomes 
+exhibits only the term of kinetic energy corresponding to the relative motion of the system, as in $S_{CM}$ holds $K_{CM}=0$ by definition.\\The integration of Equation (\ref{E of two body problem}) requires the introduction of the auxiliary variable $w(\psi)=1/r(\psi)$ \parencite{Capozziello_2008}. Plugging it into the energy conservation identity, Equation (\ref{E of two body problem}) becomes
 \begin{equation}
     w'^2+w^2-\frac{2Gm_1m_2\mu}{L^2}w=\frac{2\mu E}{L^2}
 \end{equation}
-where $w'\equiv dw/d\psi$. Differentiating both sides of the last equation with respect to $\psi$ leads to
+where $w'\equiv dw/d\psi$.\\Differentiating both sides of the last identity with respect to $\psi$ leads to a new differential equation, which is
 \begin{equation}\label{u differential equation}
     w'\left(w''+w-\frac{Gm_1m_2\mu}{L^2}\right)=0.
 \end{equation}
-Apart from the solution $w=const$, corresponding to a circular binary, the problem admits harmonic–oscillator–like and, upon solving for $r(\psi)$, it is found to be given by
+Apart from the solution $w=const$, corresponding to a circular binary, the problem is formally identical to that of a harmonic oscillator. Therefore, upon solving for $r(\psi)$, it is found
 \begin{equation}\label{two-body solution}
     r(\psi)=\frac{R}{1+e\cos{\psi}},
 \end{equation}
-with $R=L^2/(Gm\mu^2)$ being semi-latus rectum --- the polar axis is aligned to the major axis $2a$, so that 
-$R$ corresponds to the distance between the origin and the point of the conic at $\psi=\pi/2$--- and is related to the eccentricity $e$ by 
-\begin{equation}\label{eccentricity formula}
-    e^2=1-\frac{R}{a}=1+\frac{2EL^2}{G^2m^2\mu^3}.
-\end{equation}
-It is worth of noticing that we are interested in the GWs emission process by a BH binary, which is by definition a gravitationally bound system; therefore, from this point onward it will be assumed $E<0$ and thus, by virtue of Equation (\ref{eccentricity formula}), $0\le e<1$.
-Since the two semiaxes are given by
+with $R=L^2/(Gm\mu^2)$ being the semi-latus rectum.\footnote{The polar axis is aligned with the major axis $2a$, so that $R$ corresponds to the distance between the origin and the point of the conic at $\psi=\pi/2$.}\\Being interested in the GW emission process by a BH binary, which is by definition a gravitationally bound system, from this point onward it will be assumed $E<0$. In this energy range, the trajectory is an ellipse semiaxes given by
 \begin{equation}\label{a and b as a function of e}
     a=\frac{R}{1-e^2} \qquad \qquad b=\frac{R}{\sqrt{1-e^2}},
 \end{equation}
-inserting Equation (\ref{eccentricity formula}) into the first identity of Equation (\ref{a and b as a function of e}) gives the semi-major axis in terms of $E$; explicitly:
+with
+\begin{equation}\label{eccentricity formula}
+    e^2=1-\frac{R}{a}=1+\frac{2EL^2}{G^2m^2\mu^3}.
+\end{equation}
+denoting the eccentricity $0\le e<1$ of a binary.\\Inserting Equation (\ref{eccentricity formula}) into the first identity of Equation (\ref{a and b as a function of e}) yields the semi-major axis $a$ in terms of $E$, i.e.
 \begin{equation}\label{a as a function of E}
-    a=-\frac{Gm\mu}{2E}
+    a=-\frac{Gm\mu}{2E},
 \end{equation}
-It follows that fixing the energy means setting the semi-major axis.\\The functions $r(t)$ and $\psi(t)$ can be obtained by direct integration of Equations (\ref{L of two body problem}) and (\ref{E of two body problem}); they are usually given in the parametric form
+implying that fixing the energy means setting the orbit size.\\The functions $r(t)$ and $\psi(t)$ can be obtained by direct integration of Equations (\ref{L of two body problem}) and (\ref{E of two body problem}); in the parametric form they can be written as
 \begin{equation}
-    r(t)=a[1-e\cos{u(t)}] \qquad \qquad\psi(t)=\frac{\cos{u(t)}-e}{1-e\cos{u(t)}}
+    r(t)=a[1-e\cos{u(t)}] \qquad \qquad\psi(t)=\frac{\cos{u(t)}-e}{1-e\cos{u(t)}},
 \end{equation}
-in terms of the "eccentric anomaly" $u$ defined in the famous Kepler equation
+involving the so-called "eccentric anomaly"
 \begin{equation}
     u(t)-e\sin{u(t)}=\left(\frac{Gm}{a^3}\right)^{1/2}t\equiv \omega_0 t.
 \end{equation}
-The transformation from from polar cordinates $(r,\psi)$ to Cartesian ones $(x,y)$ is illistrated below
+Once the motion of the Keplerian binary has been characterised, we have all the necessary ingredients to compute the rates at which energy and angular momentum are carried away by GWs. These quantities are essential for determining the back-reaction exerted on the binary system.\\In the reference system $S_{CM}$, the mass density distribution $\rho(\mathbf{x},t)$ of two point-like masses is
 \begin{equation}
-\begin{cases}
-x = r \cos\psi = a\left[\cos u(t) - e\right] \\
-y = r \sin\psi = b \sin u(t) .
-\end{cases}
+ \rho(\mathbf{x},t)=\mu\delta(x-r\cos{\psi})\delta(y-r\sin{\psi})\delta(z).
 \end{equation}
-We now possess all the necessary ingredients to proceed with the computation of the rates of energy and angular momentum carried by GWs, which will play a fundamental role in assessing the back-reaction on the binary system.\\In the reference system $S_{CM}$ holds $\rho(t,\mathbf{x})=\mu\delta(x-r\cos{\psi})\delta(y-r\sin{\psi})\delta(z)$
-and, according to \\Equation (\ref{M_ij definition}), it is immediate to get
+Therefore, according to the prescription provided by Equation (\ref{M_ij definition}), it is immediate to obtain
 \begin{equation}
 M_{ij} = \mu r^2(t)\begin{bmatrix}
 \cos^2(\psi) & \sin{(\psi)\cos(\psi)} \\
 \sin{(\psi)\cos(\psi)} & \sin^2(\psi)
 \end{bmatrix}.
 \end{equation}
-The time derivatives are easier computed when $r$, which is a function of time itself, is expressed as a function of $\psi$; this is accomplished by replacing this variable with the general solution of the two-body problem provided by Equation (\ref{two-body solution}). A simple computation returns the third time derivatives needed to derive the power radiated in the quadrupole approximation, i.e.
+The time derivatives of $M_{ij}$, required to compute the energy and angular momentum transfer rates via GW emission, are more easily computed when $r$ is expressed as a function of $\psi$. This is accomplished by replacing this variable with the general solution of the two-body problem provided by Equation (\ref{two-body solution}), thus finding
 \begin{equation}\label{d3M _11/dt3}  
 \dddot{M}_{11} = \beta (1 + e \cos \psi)^2 \left[ 2 \sin 2\psi + 3e \sin \psi \cos^2 \psi \right],
 \end{equation}
@@ -1046,16 +1047,15 @@ The time derivatives are easier computed when $r$, which is a function of time i
 \begin{equation}\label{d3M _22/dt3}  
     \dddot{M}_{22} = \beta (1 + e \cos \psi)^2 \left[ -2 \sin 2\psi - e \sin \psi (1 + 3 \cos^2 \psi) \right],
 \end{equation}
-
-
-\begin{equation}
+and
+\begin{equation}\label{d3M _12/dt3}
     \dddot{M}_{12} = \beta (1 + e \cos \psi)^2 \left[ -2 \cos 2\psi + e \cos \psi (1 - 3 \cos^2 \psi) \right],
 \end{equation}
-where the factor $\beta$ is defined as
+where the factor $\beta$ is defined by
 \begin{equation}
 \beta^2 \equiv \frac{4 G^3 \mu^2 m^3}{a^5 (1 - e^2)^5}. 
 \end{equation}
-By means of Equation (\ref{energy loss rate by GWs}) we get in conclusion
+Plugging Equations (\ref{d3M _11/dt3})-(\ref{d3M _22/dt3})-(\ref{d3M _12/dt3}) into Equation (\ref{energy loss rate by GWs}) yields
 \begin{equation}
     P(\psi)=\frac{8G^4}{15c^5}\frac{\mu^2m^3}{a^5(1-e^2)^5}(1+e\cos(\psi))^4[12(1+e\cos(\psi))^2+e^2\sin^2(\psi)].
 \end{equation}
@@ -1067,15 +1067,15 @@ with
 \begin{equation}\label{F(e) definition}
     F(e)=\frac{1}{(1-e^2)^{7/2}}\left(1+\frac{73}{24}e^2+\frac{37}{96}e^4\right)
 \end{equation}
-being a function strongly depending on the eccentricity, which reduces to unity in case of circular binary.\\Throughout the inspiral phase, the binary radiates not only energy but angular momentum as well, carried by GWS, and undergoes secular changes in both semimajor axis and ellipticity until coalescence eventually occurs. Therefore, another key ingredient in evaluating the back-reaction on the binary evolution is the determination of the angular momentum loss rate. It is quantified in Equation (\ref{angular momentum loss rate by GWs}) which becomes
+being a function strongly depending on the eccentricity, which reduces to unity in case of circular binary.\\Throughout the inspiral phase, the binary radiates not only energy but angular momentum as well, carried away by GWs, and undergoes secular changes in both semimajor axis and ellipticity until coalescence eventually occurs. Therefore, another key ingredient in evaluating the back-reaction on the binary evolution is the determination of the angular momentum loss rate. It was quantified in Equation (\ref{angular momentum loss rate by GWs}), which now becomes
 \begin{equation}\label{angular momentum loss rate in terms of M_ij}
     \frac{dL^i_{source}}{dt}=-\frac{2G}{5c^5}\epsilon^{ikl}\left<\dddot{M}_{ka}\dddot{M}_{la}\right>
 \end{equation}
-as the the terms of the form $\epsilon^{ijk}\delta_{jl}\dddot{Q}_{kl}$ vanish, since they correspond to the contraction of an antisymmetric tensor with a symmetric one.\\Taking into account that, in $S_{CM}$, all components $M_{i3}$ are identically zero and that $L=L_z=L^3_{source}$, one can rewrite Equation (\ref{angular momentum loss rate in terms of M_ij}) in a more convenient form consistent with the previous arguments:
+as the the terms of the form $\epsilon^{ijk}\delta_{jl}\dddot{Q}_{kl}$ vanish, since they correspond to the contraction of an antisymmetric tensor with a symmetric one.\\Taking into account that, in $S_{CM}$, all components of kind $M_{i3}$ are identically zero and that $L=L_z=L^3_{source}$, one can rewrite Equation (\ref{angular momentum loss rate in terms of M_ij}) as
 \begin{equation}
     \frac{dL}{dt}=\frac{4G}{5c^5}\langle \ddot{M}_{12}(\dddot{M}_{11}-\dddot{M}_{22})\rangle.
 \end{equation}
-The last identity provides $dL/dt$ in terms of the second and third derivatives of the quadrupole moment of $\rho$; although the second derivative $\ddot{M}_{12}$ has not been computed explicitly yet, it follows straightforwardly from the same procedure used to derive $\dddot{M}_{ij}$, hence
+The last identity provides $dL/dt$ in terms of the second and third derivatives of the quadrupole moment tensor $M_{ij}$. Although the second derivative $\ddot{M}_{12}$ has not been computed explicitly yet, it follows straightforwardly from the same procedure used to derive $\dddot{M}_{ij}$ that
 \begin{equation}\label{d2 M_12/dt2}
 \ddot{M}_{12}
 =
@@ -1085,11 +1085,11 @@ The last identity provides $dL/dt$ in terms of the second and third derivatives 
 + 2e \left( 3 \cos^2 \psi - 1 + 2e \cos^3 \psi \right)
 \right].
 \end{equation}
-Yet, adopting the expressions for reported in Equations (\ref{d3M _11/dt3}), (\ref{d3M _22/dt3}) and (\ref{d2 M_12/dt2}) respectively, we get the angular momentum loss, corresponding to minus the angular momentum carried by the gravitational radiation in the quadrupole approximation; then, the temporal average over a single orbital period $T$, transformed into an integral over the angular position $\psi$, returns
+Yet, upon substituting the expressions given in Equations (\ref{d3M _11/dt3}), (\ref{d3M _22/dt3}), and (\ref{d2 M_12/dt2}), respectively, we obtain the angular momentum loss, corresponding to the negative of the angular momentum carried away by gravitational radiation in the quadrupole approximation. Taking the temporal average over one orbital period $T$ and expressing it as an integral over the angular position $\psi$ then yields
 \begin{equation}
     \frac{dL}{dt}=-\frac{32}{5}\frac{G^{7/2}\mu^2m^{5/2}}{c^5a^{7/2}}\frac{1}{(1-e^2)^2}\left(1+\frac{7}{8}e^2\right)
 \end{equation}
-Lastly, the simi-major axis and eccentricity evolution of the BH binary results by imposing the conservation of the energy and angular momentum of the system composed of the binary and GWs; differentiating Equations (\ref{eccentricity formula}) and (\ref{a as a function of E}) with respect to the time yields
+Finally, the secular evolution of the binary orbit can be obtained by relating the losses of orbital energy and angular momentum to the corresponding changes in the semi-major axis and eccentricity. In particular, applying the corresponding conservation laws to the combined system of the BH binary and the emitted GWs, and differentiating Equations (\ref{eccentricity formula}) and (\ref{a as a function of E}) with respect to time, we get
 \begin{equation}
     \frac{da}{dt}=\frac{Gm\mu}{2E^2(a)}(-P)
 \end{equation}
@@ -1097,49 +1097,22 @@ and
 \begin{equation}
     2e\frac{de}{dt}=\frac{2}{G^2m^2\mu^3}\left[-PL^2(a,e)+2E(a)L(a,e)\frac{dL}{dt}\right].
 \end{equation}
-By rearranging all the terms and performing the appropriate substitutions, \textcite{Peters_1963} gave 
+Combining the resulting expressions and eliminating the intermediate quantities, \textcite{Peters_1963} derived
 \begin{equation}\label{da/dt Peterson}
     \frac{da}{dt} = -\frac{64}{5} \frac{G^3 \mu m^2}{c^5 a^3} \frac{1}{(1 - e^2)^{7/2}} \left( 1 + \frac{73}{24}e^2 + \frac{37}{96}e^4 \right)
 \end{equation}
 along with
 \begin{equation}\label{de/dt Peterson}
-    \frac{de}{dt} = -\frac{304}{15} \frac{G^3 \mu m^2}{c^5 a^4}  \frac{e}{(1 - e^2)^{5/2}} \left( 1 + \frac{121}{304}e^2 \right)
+    \frac{de}{dt} = -\frac{304}{15} \frac{G^3 \mu m^2}{c^5 a^4}  \frac{e}{(1 - e^2)^{5/2}} \left( 1 + \frac{121}{304}e^2 \right).
 \end{equation}
-that has been employed by \textcite{Quinlan_1996} and \textcite{Sesana_2010} in order to reconstruct evolutionary tracks of BH binaries through a "Hybrid model", which will be described later.\\Equations (\ref{da/dt Peterson}) and (\ref{de/dt Peterson}) prove that GWs emission  is efficient, more precisely at little binary separation due to $a^{-3}$ and $a^{-4}$ dependence respectively, not only in shrinking the BHs pair, by extracting orbital energy, but in promoting the orbit circularization as well, thus making this mechanism dominant over stellar scattering at late stage of binary inspiral.\\Furthermore, another key piece of information that can be derived from the theory is the expected coalescence time $\tau$ of the binary in the case of gravitational-wave emission alone. This should reproduce the characteristic hardening timescale of the final stage, when orbital shrinking driven by gravitational radiation takes over stellar scattering. This is obtained by combining Equations (\ref{da/dt Peterson}) and (\ref{de/dt Peterson}); this mathematical operation leads to a differential equation for $a=a(e)$, which reads
-\begin{equation}\label{da/de Maggiore}
-    \frac{da}{de}=\frac{12}{19}\frac{1+\frac{73}{24}e^2+\frac{37}{96}e^4}{e(1-e^2)\left(1+\frac{121}{304}e^2\right)}.
-\end{equation}
-The last equation admits analytic solution of the kind
-\begin{equation}\label{a=a(e) Maggiore}
-    a(e)=a_0\frac{g(e)}{g(e_0)}
-\end{equation}
-where 
-\begin{equation}\label{g(e) Maggiore}
-    g(e)=\frac{e^{12/19}}{1-e^2}\left(1+\frac{121}{304}e^2\right)^{870/2299}
-\end{equation}
-and $(a_0,e_0)$ denotes the initial point of the of binary evolutionary track.\\Last but not least, given the BH binary initial condition $(a_0,e_0)$, the coalescence time is found by integration over the eccentricity and by noticing that, if we set $(a(0),e(0))=(a_0,e_0)$, $e(\tau)=0$ due to orbit circularization:
-\begin{equation}\label{tau coal. analytical}
-\tau(a_0,e_0)=\int_0^{\tau(a_0,e_0)}dt=\int_{e_0}^{0}de \frac{dt}{de}=\int_{e_0}^{0}de \frac{a^4(e)(1-e^2)^{5/2}}{e\left(1+\frac{121}{304}e^2\right)}.
-\end{equation}
-By substituting Equation (\ref{a=a(e) Maggiore}) into Equation (\ref{tau coal. analytical}) one gets the final expression
-\begin{equation}\label{t_coal Maggiore} 
-\tau_{\mathrm{coal}}(a_0,e_0)
-=
-\frac{12}{19}
-\frac{c^5}{G^3}
-\frac{a_0^4}{\mu m^2}
-\int_{0}^{e_0}
-\frac{e^{29/19}
-\left(1+\frac{121}{304}e^2\right)^{1181/2299}}
-{(1-e^2)^{3/2}}
-\,\mathrm{d}e.
-\end{equation}
+Equations (\ref{da/dt Peterson}) and (\ref{de/dt Peterson}) show that GW emission becomes increasingly effective as the binary separation decreases, as reflected by the steep $a^{-3}$ and $a^{-4}$ dependences of the semi-major axis and eccentricity evolution, respectively. Therefore, at sufficiently small separations, GW emission is expected to become the dominant mechanism governing the binary evolution, superseding the effects of stellar scattering discussed in \S~\ref{sec:Gravitational Slingshot Effect}.\\These terms were incorporated into the self-consistent hybrid model developed independently by \textcite{Quinlan_1996} and \textcite{Sesana_2010}, which combines stellar dynamical interactions and GW emission to describe the evolution of massive black hole binaries across the different stages of their inspiral. A detailed discussion of this model, together with the characteristic transition lengthscales that ideally separate the regimes in which the different evolutionary mechanisms dominate, is presented in Chapter~\ref{chap:chapter2}.
 
 
 
 
 
-%\include{Chapter_2}
+
+
 
 
 
@@ -1924,7 +1897,31 @@ where $H_0$ is the present-day Hubble constant, $\Omega_{k}$, $\Omega_{m}$, $\Om
     t(z) = \int_z^\infty \frac{dz'}{(1+z')H(z')}.
     \label{cosmic time redshift}
 \end{equation}
-Adopting the cosmological parameters provided by \textcite{PLANK_2020}, namely $H_0=67.4\,km\,s^{-1}\,Mpc^{-1}$ and $\Omega_{m}=0.315$, and assuming a geometrically flat $\Lambda$CDM Universe, the cosmic time $t(z)$ is determined for each galaxy model from Equation (\ref{cosmic time redshift}). In this framework, $\Omega_{\Lambda}=1-\Omega_{m}=0.685$, the radiation contribution is negligible at the redshifts considered and the age of the universe is estimated to be $t_{age}=t(z=0)=13.8\,Gyr$. This allows the coalescence times obtained from the numerical integrations, measured from the initial epoch of each model, to be converted into the corresponding cosmic times at which the IMBH binaries reach coalescence. Both the coalescence times and the corresponding cosmic times of binary coalescence are reported in Table \ref{tab:Cosmic size coalescence timescales} (a) and (b), respectively, for each of the 125 runs.
+Adopting the cosmological parameters provided by \textcite{PLANK_2020}, namely $H_0=67.4\,km\,s^{-1}\,Mpc^{-1}$ and $\Omega_{m}=0.315$, and assuming a geometrically flat $\Lambda$CDM Universe, the cosmic time $t(z)$ is determined for each galaxy model from Equation (\ref{cosmic time redshift}). In this framework, $\Omega_{\Lambda}=1-\Omega_{m}=0.685$, the radiation contribution is negligible at the redshifts considered and the age of the universe is estimated to be $t_{age}=t(z=0)=13.8\,Gyr$. This allows the coalescence times obtained from the numerical integrations, measured from the initial epoch of each model, to be converted into the corresponding cosmic times at which the IMBH binaries reach coalescence. Both the coalescence times and the corresponding cosmic times of binary coalescence are reported in Table \ref{tab:Cosmic size coalescence timescales} (a) and (b), respectively, for each of the 125 runs. Moreover, the predicted cosmic times of coalescence for these 125 models are displayed in Figure \ref{Galaxies_t_univ_coal}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{Galaxies_t_univ_coal.png}
+    \caption{Cosmic coalescence time as a function of galaxy redshift for the 125 simulations. The solid blue, orange, green, red, and violet piecewise lines connect, respectively, the points corresponding to $e_0=(0.1,0.3,0.5,0.7,0.9)$ across the redshift sampling. The vertical black dashed line marks the present time.
+    }
+    \label{Galaxies_t_univ_coal}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \begin{table}[H]
     \centering
     \begin{subtable}{0.45\textwidth}
@@ -2000,6 +1997,17 @@ Adopting the cosmological parameters provided by \textcite{PLANK_2020}, namely $
 \caption{Coalescence times of the IMBH binaries for the 25 galaxy models as a function of redshift $z$ and initial binary eccentricity $e_0$. Panel (a) reports the coalescence timescale measured from $t_0=0\,s$, while panel (b) gives the corresponding cosmic time of coalescence.}
 \label{tab:Cosmic size coalescence timescales}
 \end{table}
+
+
+
+
+
+
+
+
+
+
+
 In this chapter, we have investigated the self-consistent hybrid model developed by \textcite{Quinlan_1996} and \textcite{Sesana_2006} to describe the dynamical evolution of massive black hole binaries within a fixed stellar background. Taking advantage of the versatility of this framework, we have performed a suite of numerical experiments aimed at identifying the main features of IMBH binary evolutionary tracks and systematically exploring the relevant parameter space. The collection of experiments presented in \S~\ref{sec:Stellar Cusps IMBH Binary Evolution}-\ref{sec:NGC 205 IMBH Binary evolution}-\ref{sec:Cosmic Size Evolution Down to NGC 205}, together with the analysis of the corresponding evolutionary tracks $(t,a(t))$ and $(t,e(t))$, allows us to draw the following main conclusions:
 
 \begin{itemize}
@@ -2110,22 +2118,31 @@ The results obtained in this chapter motivate the next step of our investigation
 
 \section{Dynamical Equilibrium of Stellar Systems}
 \label{sec:Dynamical Equilibrium of Stellar Systems}
-The first step towards performing $N$-body experiments of merging stellar systems hosting IMBHs is the generation of reliable $N$-body initial conditions that capture the main properties of the system in isolation, when at equilibrium, and reproduce its relevant observables, such as the density profile and stellar velocity dispersion, consistently with those of the corresponding idealized model. This, in turn, requires a well-defined framework for describing the dynamical state of the system.\\As discussed in \S~\ref{sec:Two-Body Relaxation and Dynamical Friction}, provided that the stellar system is considered on timescales shorter than its two-body relaxation time $t_{2b}$, the discrete nature of the stellar component can be neglected: collisional effects are negligible, and the stars can be treated as collisionless particles moving in a smooth gravitational potential generated by a continuous mass density distribution $\rho$, smooth proxy of the actual stellar system. In this regime, when dealing with stars that are all identical to one another, the dynamical state of the stellar component can be described by a unique one-particle distribution function (DF) $f(\mathbf{x},\mathbf{v},t)$ of phase space (PhS). Therefore, within $t_{2b}$, the system is said to be at equilibrium, its DF is time-independent and satisfies the Collisionless Boltzmann Equation (\ref{CBE}), while the corresponding gravitational potential $\Phi(\mathbf{x})$ is self-consistently determined by the mass distribution $\rho(\mathbf{x})$ through the Poisson equation
+
+This Section, the first of the final chapter, has two main purposes. First, it reviews the equilibrium theory of spherically symmetric, isotropic, collisionless stellar systems. Second, it introduces the main features of OpOpGadget, the numerical code used to generate the $N$-body initial conditions adopted in this thesis.\\The Section is therefore divided into two Subsections. The former summarizes the fundamental equations governing collisionless stellar systems, including the collisionless Boltzmann equation, the Jeans equations, and the Eddington inversion formula. The latter focuses on the numerical aspects of OpOpGadget, describing the algorithm used by the code to generate $N$-body initial conditions and the analysis tools it provides.
+
+
+
+
+
+\subsection{Equilibrium Theory of Stellar Systems}
+
+The first step towards performing $N$-body experiments of merging stellar systems hosting IMBHs is the generation of reliable $N$-body initial conditions that capture the main properties of the system in isolation, when at equilibrium, and reproduce its relevant observables, such as the density profile and stellar velocity dispersion, consistently with those of the corresponding idealized model. This, in turn, requires a well-defined framework for describing the dynamical state of the system.\\As discussed in \S~\ref{sec:Two-Body Relaxation and Dynamical Friction}, provided that the stellar system is considered on timescales shorter than its two-body relaxation time $t_{2b}$, collisional effects are negligible, and the stars can be treated as collisionless particles moving in a smooth gravitational potential generated by a continuous mass density distribution $\rho$, smooth proxy of the actual stellar distribution. In this regime, when dealing with stars that are all identical to one another, the dynamical state of the stellar component can be described by a unique one-particle distribution function (DF) $f(\mathbf{x},\mathbf{v},t)$ of phase space (PhS), while the corresponding gravitational potential $\Phi(\mathbf{x})$ is self-consistently determined by the mass distribution $\rho(\mathbf{x})$ through the Poisson equation
 \begin{equation}
 \label{Poisson equation}
  \nabla^2 \Phi(\mathbf{x})=4\pi G\rho(\mathbf{x}).
 \end{equation}
-Let us now examine in greater detail the properties of the DF, the CBE, and the description of equilibrium states in $N$-body systems, building on the discussion  in \S~\ref{sec:Two-Body Relaxation and Dynamical Friction}.\\We begin by introducing the normalized DF in phase space. Denoting by $\mathbf{w}$ an arbitrary set of canonical coordinates in phase space, we adopt the normalization
+For collisionless systems of this type, the corresponding DFs satisfy the so-called collisionless Boltzmann equation (CBE), which follows from the normalization of the DF and, consequently, from the conservation of the integrated probability, as it will be proved.\\Building on the discussion  in \S~\ref{sec:Two-Body Relaxation and Dynamical Friction}, we begin by introducing the normalized DF in phase space. If we indicate with $\mathbf{w}$ an arbitrary set of canonical PhS coordinates, the DF of a system with total mass $M$ can be set such that
 \begin{equation}\label{DF normalized}
-\int_{\mathbb{R}^6}d\mathbf{w}, f(\mathbf{w})=1.
+\int_{\mathbb{R}^6}d\mathbf{w}\, f(\mathbf{w})=M.
 \end{equation}
-The CBE follows from requiring the DF to be conserved along the trajectories generated by the potential $\Phi(\mathbf{x},t)$ associated with the density distribution $\rho(\mathbf{x},t)$. Taking the total derivative of the DF along these trajectories gives
+The CBE follows from requiring the DF to be conserved along the trajectories generated by the potential $\Phi(\mathbf{x},t)$ associated with the density distribution $\rho(\mathbf{x},t)$. Taking the total derivative with respect to the time of Equation (\ref{DF normalized}) yields
 \begin{equation}\label{CBE new}
     \frac{Df}{Dt}=\frac{\partial f}{\partial t}+
     \mathbf{\dot{w}}\cdot \frac{\partial f}{\partial \mathbf{w}}=
     \frac{\partial f}{\partial t}+[f,H]=0,
 \end{equation}
-where $D/Dt$ denotes the Lagrangian derivative,
+where $D/Dt$ has been used to denote the Lagrangian derivative,
 the square bracket indicates the Poisson bracket
 \begin{equation}
 [f,H]
@@ -2140,7 +2157,7 @@ the square bracket indicates the Poisson bracket
 \right),
 \label{Poisson bracket}
 \end{equation}
-and $H$ is the Hamiltonian function of the system (see, e.g. \citealt{Binney_book}).\\The arbitrariness of the canonical coordinates $\mathbf{w}$ enables us to specialize Equation (\ref{CBE}) to the inertial Cartesian coordinates $(\mathbf{x},\mathbf{v})$. With this choice, the Hamiltonian becomes
+and $H$ is the Hamiltonian function of the system (see, e.g. \citealt{Binney_book}).\\The arbitrariness of the canonical coordinates $\mathbf{w}$ enables us to specialize Equation (\ref{CBE}) to the inertial Cartesian coordinates $(\mathbf{x},\mathbf{v})$. With this choice, the Hamiltonian per unit mass becomes
 \begin{equation}\label{Hamiltonian in cartesian coord.}
     H(\mathbf{x},\mathbf{v},t)=\frac{1}{2}v^2+\Phi(\mathbf{x},t)
 \end{equation}
@@ -2151,18 +2168,19 @@ and the Equation (\ref{CBE new}) turns into
     \frac{\partial \Phi}{\partial \mathbf{x}}
     \cdot \frac{\partial f}{\partial \mathbf{v}}=0.
 \end{equation}
-Being interested in studying the equilibrium condition of galaxies and in particular of spherically symmetric models, it is usefull the following definition: a dynamical system is said to be stationary if $\partial f/\partial t=0$. Therefore, collisionless systems that have achieved equilibrium will be provided of a DF obeying to the steady-state CBE
+Equation (\ref{CBE in cartesian coord.}) gives the CBE for a collisionless system in Cartesian coordinates, valid on timescales shorter than the corresponding $t_{2b}$ and expresses the conservation of the phase-space probability density along the orbits generated by the potential $\Phi(\mathbf{x},t)$. However, it is too general for our purposes, as we are interested in studying the equilibrium of stellar systems, and in particular of spherically symmetric equilibrium models. It is therefore useful to introduce the following definition: a system composed of $N$ particles is said to be in equilibrium, or stationary, when any quantity $q(\mathbf{x},t)$ describing the system, including its distribution function (DF), is time-independent, such that $\partial q/\partial t=0$.\\Under this condition, the DF is time-independent and satisfies the so-called stationary CBE, which is obtained from Equation (\ref{CBE new}) by setting $\partial f/\partial t=0$:
 \begin{equation}\label{Stationary CBE}
     \frac{Df}{Dt}=
     \mathbf{\dot{w}}\cdot \frac{\partial f}{\partial \mathbf{w}}=
     [f,H]=0.
 \end{equation}
-Solutions to Equation (\ref{Stationary CBE}) are referred to as integrals of motion. Specifically, the function $I(\mathbf{x},\mathbf{v})$ is an integral of motion for the potential $\Phi(\mathbf{x},\mathbf{v})$ if it satisfies
+The solutions to Equation (\ref{Stationary CBE}) are referred to as integrals of motion. Specifically, the function $I(\mathbf{x},\mathbf{v})$ is an integral of motion for the potential $\Phi(\mathbf{x},\mathbf{v})$ if it satisfies
 \begin{equation}\label{Integral of motion def}
     \frac{D}{Dt}[I(\mathbf{x}(t),\mathbf{v}(t))]=0
 \end{equation}
-along any orbit of the potential and a relevant example is represented by the Hamiltonian itself of the system, provided
+along any orbit of the potential $\Phi(\mathbf{x})$ and a relevant example is represented by the Hamiltonian itself of the system, provided
 \begin{equation}
+\label{H as integral of motion}
  [H,H]=0.
 \end{equation}
 The comparison between Equation Equation (\ref{Stationary CBE}) and (\ref{Integral of motion def}) reveals that solving the steady-state CBE is equivalent to being an integral of motion; this leads to the formulation of the Jeans theorem.
@@ -2174,63 +2192,141 @@ the phase-space coordinates only through integrals of motion in the given potent
 equation.}
 \medskip
 
-\noindent The remaining quantities to be defined, which correspond to observables that can be inferred from kinematic measurements, are the first- and second-order velocity moments of the distribution function. These are
 
+(Jeans theorem (e.g., Binney and Tremaine 2008; see also
+Lynden-Bell 1962c))
+
+
+
+
+
+
+\noindent It follows from this theorem that, if $I_1,\ldots,I_N$ is a set of $N$ integrals of motion for a given collisionless and stationary system, its DF can be expressed as $f=f(I_1,\ldots,I_N)$, rather than as a general function of phase space. Nevertheless,  before examining the conditions under which a closed-form solution to Equation (\ref{Stationary CBE}) can be obtained, let us introduce the main moments of the DF, which are directly related to kinematic observables and will prove useful for this purpose.
+.\\The first- and second-order velocity moments of the distribution function $f$, the mean velocity and the velocity dispersion tensor, respectively, are defined as
 \begin{equation}\label{mean velocity of DF}
-    \overline{v_i}(\mathbf{x},t)\equiv 
+    \overline{v_i}(\mathbf{x},t)\equiv
     \frac{1}{\rho(\mathbf{x},t)}\int_{\mathbb{R}^6} d^3 \mathbf{v}\,f v_i
 \end{equation}
 and
 \begin{equation}\label{velocity-dispersion of DF}
-    \sigma_{ij}^2(\mathbf{x},t)\equiv 
+    \sigma_{ij}^2(\mathbf{x},t)\equiv
     \frac{1}{\rho(\mathbf{x},t)}\int_{\mathbb{R}^6} d^3 \mathbf{v}\,
     f (v_i-\overline{v_i})(v_j-\overline{v_j})=\overline{v_iv_j}-
-    \overline{v_i}\,\overline{v_j},
+    \overline{v_i}\,\overline{v_j}.
 \end{equation}
-respectively the mean velocity and the velocity dispersion tensor.\\We are now finally in a position to recall the most peculiar kinematical properties of an important subclass of equilibrium models, namely Ergodic systems. The Jeans Theorem imposes that the DF $f$ of systems at equilibrium will be any non-negative function of $H$; in case $f$ depends on $H$ only, i.e. $f=f(H)$, then systems with this type of DF are said Ergodic.\\Let us focus on first-order moment of the DF. In the inertial Cartesian frame where stars move under the action of a steady-state potential $\Phi(\mathbf{x})$, the Hamiltonian of the system is an even function of $\mathbf{v}$, causing $\overline{v_x}(\mathbf{x})=\overline{v_y}(\mathbf{x})=\overline{v_z}(\mathbf{x})$ to vanish.\\Similarly, it can be demonstrated that the velocity-dispersion tensor is isotropic; thus it holds
-\begin{equation}\label{Ergodic velocity dispersion tensor}
- \sigma^2_{ij}(\mathbf{x})=\sigma^2(\mathbf{x})\delta_{ij}=\delta_{ij}\frac{4\pi}{3\rho(\mathbf{x})}\int_0^{+\infty}dv\,v^4f\left(\frac{1}{2}v^2+\Phi(\mathbf{x})\right)
+These quantities enter the so-called Jeans equations, which follow from taking the first- and second-order velocity moments of Equation (\ref{CBE new}). In Cartesian coordinates they are
+\begin{equation}
+\label{stellar mass continuity eq}
+ \frac{\partial \rho}{\partial t}+\frac{\partial \rho \overline{v_i}}{\partial x_i}=0
 \end{equation}
-Therefore, every system characterized by an ergodic DF is isotropic. In the next Section, the properties of the generated steady-state isotropic stellar distributions will be presented and compared with the theoretical predictions summarized above.\\So far, we have been concerned with the velocity-moments of the distribution function of Ergodic systems; however, the generation of initial conditions (ICs) for N-body, equilibrium models relies on the correct sampling of the DF itself. Recovering it from $\rho$ for globally isotropic stellar systems can be done by means of the Eddington's formula
+and
+\begin{equation}
+\label{stellar momentum continuity eq}
+ \frac{\partial \rho\overline{v_i}}{\partial t}+\frac{\partial \rho \overline{v_i}\overline{v_j}}{\partial x_j}=-\rho\frac{\partial \Phi}{\partial x_i}
+\end{equation}
+respectively, where the Einstein summation convention over repeated indices is adopted.\\Equations (\ref{stellar mass continuity eq}) and (\ref{stellar momentum continuity eq}) generalize the mass continuity and momentum equations commonly used in fluid dynamics to collisionless stellar systems. For a spherically symmetric system, Equation (\ref{stellar momentum continuity eq}) can be written in spherical coordinates $(r,\theta,\phi)$ as
+\begin{equation}
+\label{jeans eq}
+\frac{d(\rho \sigma_r^2)}{dr}
++2\frac{\rho}{r}\beta \sigma_r^2
+=-\rho\frac{d\Phi}{dr},
+\end{equation}
+where $\beta=1-\sigma_t^2/(2\sigma_r^2)$ quantifies the degree of velocity anisotropy, with positive and negative values corresponding to radial and tangential anisotropy, respectively, while $\sigma_t^2=2\sigma_\theta^2=2\sigma_\phi^2\equiv \sigma^2$.\\A stellar system is defined to be isotropic if $\sigma_r^2=\sigma_\theta^2=\sigma_\phi^2$ and thus $\beta=0$. It is now clear from Equation (\ref{jeans eq}) that, for a spherically symmetric and isotropic system, with $\rho=\rho(r)$ and $d\Phi/dr=GM(<r)/r^2$, the 1D velocity dispersion formula, mentioned in \S~\ref{sec:NGC 205 IMBH Binary evolution}, is given by Equation (\ref{Jeans velocity dispersion equation}), which we reproduce here for convenience:
+\begin{equation}
+\sigma^2(r) =
+\frac{1}{\rho(r)}
+\int_r^\infty ds\,
+\frac{G M(<s)}{s^2}\rho(s).
+\end{equation}
+We can now turn to the analysis of Equation (\ref{Stationary CBE}) and its solutions. To this end, we recall the main properties of an important subclass of equilibrium models, namely ergodic systems, which are the type of systems we aim to initialize in our numerical experiments.\\By definition, a system with Hamiltonian $H$ is described by an ergodic DF if the latter depends solely on the Hamiltonian, i.e. $f=f(H)$. It is worth noting that, according to Equation (\ref{H as integral of motion}), all stationary and collisionless systems admit $H$ as an integral of motion. Therefore, the Jeans theorem implies that the DF can, for these systems, be written as $f=f(H,I_2,\ldots,I_N)$, with the ergodic case representing a particular and highly restrictive subclass. A key property of ergodic systems follows from the first-order moments of the corresponding DF. In an inertial Cartesian frame.\\In the inertial Cartesian frame where stars move under the action of a steady-state potential $\Phi(\mathbf{x})$, the Hamiltonian of the system is an even function of $\mathbf{v}$, causing $\overline{v_x}(\mathbf{x})=\overline{v_y}(\mathbf{x})=\overline{v_z}(\mathbf{x})$ to vanish, owing to Equation (\ref{mean velocity of DF}). Similarly, the velocity-dispersion tensor can be shown to be isotropic, since an ergodic DF depends on the velocity only through $v^2$, that is
+\begin{equation}
+ \sigma_{ij}^2(\mathbf{x})=\sigma^2(\mathbf{x})=\delta_{ij}\frac{4\pi}{3\rho(\mathbf{x})}\int_{0}^{+\infty}dv\,f\left(\frac{1}{2}v^2+\Phi(\mathbf{x})\right)v^4.
+\end{equation}
+Therefore, any system described by an ergodic DF is necessarily isotropic.\\So far, we have focused on several theoretical aspects of $N$-body systems, with particular emphasis on their equilibrium properties, without yet discussing in detail how the DF is made. However, generating initial conditions (ICs) for equilibrium $N$-body models requires sampling the DF directly, rather than relying solely on its moments. For
+ globally isotropic stellar systems, the DF can be recovered from the density profile $\rho$ through Eddington's inversion formula, which provides the corresponding phase-space distribution in terms of the density and gravitational potential. It reads
 \begin{equation}\label{Eddington's formula}
 f(\varepsilon)=\frac{1}{\sqrt{8}\pi^2}\frac{d}{d\varepsilon}
 \int_{\varepsilon_t}^{\varepsilon}
-\frac{d\rho}{d\Psi}\frac{d\Psi}{\sqrt{\varepsilon-\Psi}}
+\frac{d\rho}{d\Psi}\frac{d\Psi}{\sqrt{\varepsilon-\Psi}},
 \end{equation}
-with $\varepsilon=-H$ and $\Psi=-\Phi$ being the relative energy and potential respectively
-and $\varepsilon_t$ the truncation energy of the system.\\Finally, the last tool introduced in this Section is the virial ratio, closely connected with the Virial theorem, which provides a fast diagnostic for determining whether the generated model is in equilibrium or is either evolving toward collapse or expansion. By definition a self-gravitating system, constituted by N particles, with total kinteic energy
-\begin{equation}
-K = \sum_{i=1}^{N} \frac{1}{2} m_i v_i^2
-\end{equation}
-and gravitational potential energy
-\begin{equation}
-U = -\frac{1}{2} \sum_{i=1}^{N} \sum_{j \ne i} \frac{Gm_i m_j}{|\mathbf{x_i}-\mathbf{x_j}|}
-\end{equation}
-is virialized if it holds
-\begin{equation}
-   2K'+U=0 \qquad \forall t
-\end{equation}
-in the barycentric inertial reference system $S_{CM}$. For these systems the virial ratio
-\begin{equation}\label{virial ratio}
-    Q\equiv\frac{2K'}{|U|}
-\end{equation}
-should be close to unity. In presence of a non vanishing velocity of the system center of mass, which flags that the time evolution is studied in a frame $S$ moving with respet to $S_{CM}$, Equation (\ref{virial ratio}) must be adjusted as follows:
-\begin{equation}\label{virial ratio without offset}
-    Q\equiv\frac{2(K-K_{CM})}{|U|}.
-\end{equation}
+with $\varepsilon=-H$ and $\Psi=-\Phi$ being the relative energy and potential, respectively, and $\varepsilon_t$ the truncation energy of the system.\\The theoretical framework developed above allows us to turn a prescribed equilibrium density profile $\rho(r)$ into a self-consistent set of $N$-body initial conditions. In the following Subsection, we describe how this procedure is implemented for spherically symmetric, isotropic stellar systems, focusing in particular on the construction and sampling of the corresponding DF.
 
 
 
-\section{OpOpGadget and Galaxy Modeling}
-Once recasted the main aspects of the theory underlying the dynamical equilibrium configuration of stellar systems, with focus on Ergodic DFs, we can now address the problem of generatic N-body ICs for stellar populations which are compatible with the inferred quantites: total mass, density profile and associated structural parameters.\\Therefore, stellar positions and velocities are generated by means of \href{https://github.com/giulianoiorio/OpOpGadget}{\texttt{OpOpGadget}}. This Python module offers a number of tools for both generating N-body ICs and analyzing  N-body simulations outputs. OpOpGadget is equipped with an extensive library of analytic models for spherically symmetric stellar distributions. The first step in the workflow initialization is to specify the desired model, assign the values of the parameters appearing in its functional form, and choose the number of particles to represent the stellar environment. Then, particles spherical coordinates are assigned by randomly picked the cumulative mass profile
+
+
+
+
+
+
+
+
+
+
+
+(for more thorough discussions, see,
+e.g., Binney and Tremaine 2008; Chandrasekhar 1942; Ogorodnikov 1965; Saslaw 1987;
+Spitzer 1987; Woltjer 1967).
+
+
+
+\subsection{Generation of N-Body ICs with OpOpGadget}
+
+Having established the theoretical basis for describing dynamical equilibrium in stellar systems, we can now turn to the construction of $N$-body initial conditions. The goal is to generate a discrete stellar realization that consistently reproduces the prescribed total mass, density profile, and associated structural parameters, while satisfying the equilibrium conditions discussed above. For a given stellar distribution, stellar positions and velocities are generated by means of \href{https://github.com/giulianoiorio/OpOpGadget}{\texttt{OpOpGadget}}. This numerical code provides a range of tools for generating $N$-body initial conditions and analyzing the outputs of $N$-body simulations. It also includes an extensive library of analytical models for spherically symmetric stellar systems, allowing canonical stellar profiles to be constructed from their specified structural parameters.\\The first step in the workflow initialization is to specify the desired model, assign the values of the parameters required by the library model, and choose the number of particles to represent the stellar environment. After that, the code proceeds with assigning a set of spherical coordinates $(r,\theta,\phi)$ to each particle by randomly picking the cumulative mass profile
 \begin{equation}\label{cumulative mass formula}
  M_*(<r)=4\pi\int_0^{r}dy\,y^2\rho(y)
 \end{equation}
-through the variable $u=np.random.uniform(M_{min}=0, M_{max}=M_*, N)$. Because $M(<r)$ is a monotonically increasing function of radius, it can be inverted so that $N$ radii of kind $r=M_*^{-1}(u)$ are finally obtained. Yet, two additional independent random variables, uniformly distributed in the intervals $[-1,1]$ and $[0,2\pi]$ respectively, are used to sample the direction cosine and the azimuthal angle, thereby obtaining $N$ sets of spherical coordinates $(r,\theta,\phi.)$, which are subsequently transformed into Cartesian coordinates.\\While particle positions are drawn from the cumulative mass distribution, the velocity components are obtained by sampling the DF, assuming that the gravitational potential $\Phi$ is generated by the mass distribution associated with the previously initialized particles. Three random numbers $\mathbf{v}$ lying in the range $[-1,1]$ allows to temporary assign a normalized velocity to each particle, which will found to have the binding energy $\varepsilon=\Psi(1-v^2)$. Finally, the Von Neumann rejection method is implemented and the normalized velocity is accepted if
+using the variable $u=np.random.uniform(M_{min}=0, M_{max}=M_, N)$.\\Since $M(<r)$ is a monotonically increasing function of radius, it can be inverted to obtain the corresponding radii, $r=M_*^{-1}(u)$, for the $N$ sampled values of $u$. Yet, two additional independent random variables, uniformly distributed in the intervals $[-1,1]$ and $[0,2\pi]$ respectively, are used to sample the direction cosine and the azimuthal angle, thereby obtaining $N$ sets of spherical coordinates $(r,\theta,\phi.)$, which are then transformed into Cartesian coordinates.\\While particle positions are drawn from the cumulative mass distribution, the velocity components are obtained by sampling the DF, assuming the gravitational potential $\Phi$ to be generated by the mass distribution associated with the previously initialized particles. Therefore, three random numbers $\mathbf{v}$, lying in the range $[-1,1]$, allow to temporary assign a normalized velocity to each particle, which will found to have the binding energy $\varepsilon=\Psi(1-v^2)$. Then, the Von Neumann rejection method is implemented and the normalized velocity is accepted if
 \begin{equation}\label{Von Neumann rejection criterion}
- u\le \frac{f(\varepsilon)}{f(\varepsilon=\Psi)},
+ g\le \frac{f(\varepsilon)}{f(\varepsilon=\Psi)},
 \end{equation}
-where $u$ is another indipendent random number in $[0,1]$. If the Inequality (\ref{Von Neumann rejection criterion}) is true, the final velocity vector will be obtained by taking the product between the normalized one and the factor $\sqrt{2\Psi}$. At the end of the process, each particle will have its own $ID$, mass $m=M_*/N$, position $\mathbf{x}$ and $\mathbf{v}$.\\Let us denote with $p$ the variable containing all this information, OpOpGadget provides already-implemented methods to this objects and the most relevant are:
+where $g$ is another indipendent random number in $[0,1]$. If the inequality in Equation (\ref{Von Neumann rejection criterion}) is satisfied, the final velocity vector is obtained by multiplying the normalized vector by the factor $\sqrt{2\Psi}$. Once this procedure, which can be extended to multi-component stellar systems, is completed, each particle will have its own $ID$, mass $m=M_*/N$, position $\mathbf{x}$ and velocity $\mathbf{v}$.\\All numerical experiments of merging between identical systems of stellar background and IMBH that will be presented in the next Sections, involve Sersic stellar distribution as described by \textcite{Prugniel_1997}. However, the Sersic analytic model implemented within OpOpGadget library takes as a reference \textcite{Neto_1999} de-projection
+\begin{equation}\label{Sersic profile Neto}
+    \rho(r)=\rho_0\left(\frac{r}{a}\right)^{-p}e^{-(r/a)^\nu},
+\end{equation}
+where $\nu=n^{-1}$ denotes the inverse of the Sérsic index, while $a$ is the Sérsic scale length, defined such that $\Sigma(a)=\Sigma_0$. These quantities are referred to as the primary parameters. The remaining structural parameters can then be derived from them, so that the same density distribution may be equivalently described by different sets of parameters. This discrepancy  provides a useful opportunity to illustrate both how the parameters are consistently converted and, more importantly, how the numerical code constructs and analyses a multi-component, spherically symmetric stellar system in equilibrium. Therefore, here, we analyse the generated $N$-body initial conditions for the same model considered in \S~\ref{sec:NGC 205 IMBH Binary evolution}, consisting of the stellar bulge and nuclear star cluster (NSC) of NGC 205, together with the central IMBH binary.\\A consistent conversion between the primary parameters and the corresponding derived quantities is therefore required before generating $N$-body ICs. In particular, to convert from the scale length $a$ to the effective radius $R_{\rm eff}$, we adopt the following analytical approximation:
+\begin{equation}\label{Conversion between a and Reff}
+    \ln{R_{e}/a}=\frac{0.6950-\ln{\nu}}{\nu}-0.1789.
+\end{equation}
+
+
+
+
+
+
+Moreover, particular attention should be paid to the fact that the stellar particles to be initialized are required to be in dynamical equilibrium within the combined gravitational potential of both stars and central black hole. The presence of such a massive and compact object is expected to modify the equilibrium configuration of the stars with respect to the isolated case, primarily by increasing their velocity dispersion; this can be done by passing a Python list of OpOpGadget analytic models to NbdoyModel. Despite being a single object rather than a particles distribution, a given model can be realized even with just one particle and the adopted one for generating BHs is the Plummer sphere. According to this choice, density and cumulative mass are respectively
+\begin{equation}\label{Plummer density}
+\rho(r)=\frac{3M}{4\pi a^3}
+\left(1+\frac{r^2}{a^2}\right)^{-5/2}
+\end{equation}
+and
+\begin{equation}\label{Plummer cumulative mass}
+M(<r)
+=
+M\frac{r^3}{\left(r^2+a^2\right)^{3/2}};
+\end{equation}
+here, $a$ is the Plummer scalelength and is linked to the half-mass radius $r_{1/2}$ of the distribution by
+\begin{equation}\label{Plummer a to r_1/2 conversion}
+a
+\simeq
+0.766\,r_{1/2}.
+\end{equation}
+The use of gravitational softening in N-body experiments sets an intrinsic spatial resolution scale, below which the system cannot be accurately resolved. Accordingly, the Plummer scale radius a is taken to be the mean interparticle distance at the half-mass radius $r_h$
+\begin{equation}\label{mean intraparticle distance}
+ \lambda=r_h\left(\frac{2}{N}\right)^{1/3},
+\end{equation}
+which serves as a proxy for the gravitational softening length of the galaxy prior to its generation. Finally, Equation (\ref{spherical potential, general formula}) shows that the Plummer potential
+\begin{equation}\label{Plummer gravitational potential}
+\Phi(r)
+=
+-\frac{GM}{\sqrt{r^2+a^2}}
+\end{equation}
+reduces to the Keplerian form at distances much larger than the scale radius, $r\gg a$. This asymptotic behavior explains why the Plummer model is a convenient description of BHs.
+
+
+
+
+Let us denote with $p$ the variable containing all this information, OpOpGadget provides already-implemented methods to this objects and the most relevant are:
 \begin{itemize}
 \item \textbf{\emph{NbodyModel:}} generates a spherically symmetric, multi-component, equilibrium model as mentioned above
  \item \textbf{\emph{Analysis(NbodyModel):}}  takes as argument an $NbodyModel$ object and is furnished with the following methods, used in our analysis:
@@ -2262,42 +2358,14 @@ with $\bar{\rho}$ being, for a spherical system,
   \item \textbf{\emph{Profile.mass():}} outputs both the radial and cumulative mass grids
  \end{enumerate}
 \end{itemize}
-The dwarf galaxies, along with their nuclear star clusters, that have been generated are the same as those studied within the \textcite{Sesana_2010} hybrid model framework. The comparison between the results of this semi-analytical, shown in Section (?), and the numerical merger simulations is intended to assess whether a model based on an already-formed binary black hole embedded in a single galaxy can effectively capture the properties that, in our case, emerge self-consistently from the full merger process.\\In \textcite{Khan_2021}, galaxies bulge and NSCs density profiles are expressed in terms of a Sersic profile with de-projection formula analyzed by \textcite{Prugniel} and reported in Equation (\ref{Prugniel Sersic profile}). Nevertheless, the Sersic analytic model implemented in OpOpGadget takes as a reference \textcite{Neto_1999} de-projection
-\begin{equation}\label{Sersic profile Neto}
-    \rho(r)=\rho_0\left(\frac{r}{a}\right)^{-p}e^{-(r/a)^\nu},
-\end{equation}
-where $\nu=n^{-1}$, the inverse of the Sersic index, and $a$, denoting the Sersic profile scalelength at which the surface density $\Sigma(a)=\Sigma_0$, are known as primary parameters. Therefore, it is evident that the same density distribution can be described through different combinations of indipendent parameters and a proper conversion between primary and secondary, i.e. depending on primary ones, is required before continuing.Here, to pass from $a$ to $R_{eff}$, we need to use the following analytical approximation
-\begin{equation}\label{Conversion between a and Reff}
-    \ln{R_{eff}/a}=\frac{0.6950-\ln{\nu}}{\nu}-0.1789.
-\end{equation}
-Moreover, particular attention should be paid to the fact that the stellar particles to be initialized are required to be in dynamical equilibrium within the combined gravitational potential of both stars and central black hole. The presence of such a massive and compact object is expected to modify the equilibrium configuration of the stars with respect to the isolated case, primarily by increasing their velocity dispersion; this can be done by passing a Python list of OpOpGadget analytic models to NbdoyModel. Despite being a single object rather than a particles distribution, a given model can be realized even with just one particle and the adopted one for generating BHs is the Plummer sphere. According to this choice, density and cumulative mass are respectively
-\begin{equation}\label{Plummer density}
-\rho(r)=\frac{3M}{4\pi a^3}
-\left(1+\frac{r^2}{a^2}\right)^{-5/2}
-\end{equation}
-and
-\begin{equation}\label{Plummer cumulative mass}
-M(<r)
-=
-M\frac{r^3}{\left(r^2+a^2\right)^{3/2}};
-\end{equation}
-here, $a$ is the Plummer scalelength and is linked to the half-mass radius $r_{1/2}$ of the distribution by
-\begin{equation}\label{Plummer a to r_1/2 conversion}
-a
-\simeq
-0.766\,r_{1/2}.
-\end{equation}
-The use of gravitational softening in N-body experiments sets an intrinsic spatial resolution scale, below which the system cannot be accurately resolved. Accordingly, the Plummer scale radius a is taken to be the mean interparticle distance at the half-mass radius $r_h$
-\begin{equation}\label{mean intraparticle distance}
- \lambda=r_h\left(\frac{2}{N}\right)^{1/3},
-\end{equation}
-which serves as a proxy for the gravitational softening length of the galaxy prior to its generation. Finally, Equation (\ref{spherical potential, general formula}) shows that the Plummer potential
-\begin{equation}\label{Plummer gravitational potential}
-\Phi(r)
-=
--\frac{GM}{\sqrt{r^2+a^2}}
-\end{equation}
-reduces to the Keplerian form at distances much larger than the scale radius, $r\gg a$. This asymptotic behavior explains why the Plummer model is a convenient description of BHs.
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+
+
 
 
 

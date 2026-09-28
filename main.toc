@@ -15,7 +15,7 @@
 \contentsline {section}{\numberline {1.5}Gravitational Radiation from Black Hole Binaries}{23}{section.1.5}%
 \contentsline {subsection}{\numberline {1.5.1}Linearized Gravitational Field Equation}{23}{subsection.1.5.1}%
 \contentsline {subsection}{\numberline {1.5.2}Generation and Propagation of Gravitational Waves}{24}{subsection.1.5.2}%
-\contentsline {subsection}{\numberline {1.5.3}Gravitational Waves from Black Hole Binaries and Back-Reaction}{26}{subsection.1.5.3}%
+\contentsline {subsection}{\numberline {1.5.3}Gravitational Waves from Black Hole Binaries and Back-Reaction}{27}{subsection.1.5.3}%
 \contentsline {chapter}{\numberline {2}A Hybrid Approach to IMBH Binary Evolution}{31}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Quinlan-Sesana Hybrid Model}{32}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Stellar Cusps IMBH Binary Evolution}{37}{section.2.2}%
@@ -23,8 +23,9 @@
 \contentsline {section}{\numberline {2.4}Cosmic Size Evolution Down to NGC 205}{48}{section.2.4}%
 \contentsline {chapter}{\numberline {3}IMBH Binary Evolution with KETJU N-Body Simulations}{57}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Dynamical Equilibrium of Stellar Systems}{58}{section.3.1}%
-\contentsline {section}{\numberline {3.2}OpOpGadget and Galaxy Modeling}{60}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Analysis of the Generated Initial Conditions}{63}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}NCG 205 N-body Initial Conditions}{63}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}NCG 5206 N-body Initial Conditions}{64}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Ketju Numerical Simulations}{64}{section.3.4}%
+\contentsline {subsection}{\numberline {3.1.1}Equilibrium Theory of Stellar Systems}{58}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Generation of N-Body ICs with OpOpGadget}{61}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Analysis of the Generated Initial Conditions}{64}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}NCG 205 N-body Initial Conditions}{64}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}NCG 5206 N-body Initial Conditions}{65}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Ketju Numerical Simulations}{65}{section.3.3}%
