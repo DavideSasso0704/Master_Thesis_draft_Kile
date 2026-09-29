@@ -2541,12 +2541,32 @@
     <bcf:citekey order="176" intorder="1">PLANK_2020</bcf:citekey>
     <bcf:citekey order="177" intorder="1">Quinlan_1996</bcf:citekey>
     <bcf:citekey order="178" intorder="1">Sesana_2006</bcf:citekey>
-    <bcf:citekey order="179" intorder="1">Binney_book</bcf:citekey>
-    <bcf:citekey order="180" intorder="1">Prugniel_1997</bcf:citekey>
-    <bcf:citekey order="181" intorder="1">Neto_1999</bcf:citekey>
-    <bcf:citekey order="182" intorder="1">Springel_2005</bcf:citekey>
-    <bcf:citekey order="183" intorder="1">Mannerkoski_2023</bcf:citekey>
-    <bcf:citekey order="184" intorder="1">Khan_2021</bcf:citekey>
+    <bcf:citekey order="179" intorder="1">Boltzmann_1896</bcf:citekey>
+    <bcf:citekey order="180" intorder="1">Binney_book</bcf:citekey>
+    <bcf:citekey order="181" intorder="1">Ciotti_book</bcf:citekey>
+    <bcf:citekey order="182" intorder="1">Lynden-Bell_1962</bcf:citekey>
+    <bcf:citekey order="183" intorder="1">Binney_book</bcf:citekey>
+    <bcf:citekey order="184" intorder="1">Saslaw_1985</bcf:citekey>
+    <bcf:citekey order="185" intorder="1">Binney_book</bcf:citekey>
+    <bcf:citekey order="186" intorder="1">Eddington_1916</bcf:citekey>
+    <bcf:citekey order="187" intorder="1">Iorio_2019</bcf:citekey>
+    <bcf:citekey order="188" intorder="1">Aarseth_book</bcf:citekey>
+    <bcf:citekey order="189" intorder="1">Prugniel_1997</bcf:citekey>
+    <bcf:citekey order="190" intorder="1">Neto_1999</bcf:citekey>
+    <bcf:citekey order="191" intorder="1">Neto_1999</bcf:citekey>
+    <bcf:citekey order="192" intorder="1">Plummer_1911</bcf:citekey>
+    <bcf:citekey order="193" intorder="1">Springel_2005</bcf:citekey>
+    <bcf:citekey order="194" intorder="1">Mannerkoski_2023</bcf:citekey>
+    <bcf:citekey order="195" intorder="1">Khan_2021</bcf:citekey>
+    <bcf:citekey order="196" intorder="1">Springel_2021</bcf:citekey>
+    <bcf:citekey order="197" intorder="1">Mannerkoski_2023</bcf:citekey>
+    <bcf:citekey order="198" intorder="1">Springel_2005</bcf:citekey>
+    <bcf:citekey order="199" intorder="1">Rantala_2020</bcf:citekey>
+    <bcf:citekey order="200" intorder="1">Mikkola_1999a</bcf:citekey>
+    <bcf:citekey order="201" intorder="1">Mikkola_1999b</bcf:citekey>
+    <bcf:citekey order="202" intorder="1">Thorne_1985</bcf:citekey>
+    <bcf:citekey order="203" intorder="1">Blanchet_2014</bcf:citekey>
+    <bcf:citekey order="204" intorder="1">Mannerkoski_2023</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

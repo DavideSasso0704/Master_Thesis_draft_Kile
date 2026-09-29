@@ -19,6 +19,31 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{Aarseth_book}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=03bb552dd8bac5520ff677b30cb43b2a}{%
+           family={Aarseth},
+           familyi={A\bibinitperiod},
+           given={Sverre\bibnamedelima J},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{03bb552dd8bac5520ff677b30cb43b2a}
+      \strng{fullhash}{03bb552dd8bac5520ff677b30cb43b2a}
+      \strng{bibnamehash}{03bb552dd8bac5520ff677b30cb43b2a}
+      \strng{authorbibnamehash}{03bb552dd8bac5520ff677b30cb43b2a}
+      \strng{authornamehash}{03bb552dd8bac5520ff677b30cb43b2a}
+      \strng{authorfullhash}{03bb552dd8bac5520ff677b30cb43b2a}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Gravitational N-body simulations}
+      \field{volume}{430}
+      \field{year}{2003}
+    \endentry
     \entry{ET_book}{article}{}
       \true{moreauthor}
       \true{morelabelname}
@@ -673,6 +698,87 @@
       \field{title}{Galactic dynamics}
       \field{year}{2011}
     \endentry
+    \entry{Blanchet_2014}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=384523aa5490d99189cb76bdbc9bc6db}{%
+           family={{Blanchet}},
+           familyi={B\bibinitperiod},
+           given={Luc},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{384523aa5490d99189cb76bdbc9bc6db}
+      \strng{fullhash}{384523aa5490d99189cb76bdbc9bc6db}
+      \strng{bibnamehash}{384523aa5490d99189cb76bdbc9bc6db}
+      \strng{authorbibnamehash}{384523aa5490d99189cb76bdbc9bc6db}
+      \strng{authornamehash}{384523aa5490d99189cb76bdbc9bc6db}
+      \strng{authorfullhash}{384523aa5490d99189cb76bdbc9bc6db}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{2}
+      \field{eprintclass}{gr-qc}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Living Reviews in Relativity}
+      \field{month}{12}
+      \field{number}{1}
+      \field{title}{{Gravitational Radiation from Post-Newtonian Sources and Inspiralling Compact Binaries}}
+      \field{volume}{17}
+      \field{year}{2014}
+      \field{pages}{2}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.12942/lrr-2014-2
+      \endverb
+      \verb{eprint}
+      \verb 1310.1528
+      \endverb
+      \keyw{Gravitational radiation,Post-Newtonian approximations,Multipolar expansion,Inspiralling compact binary,General Relativity and Quantum Cosmology}
+    \endentry
+    \entry{Boltzmann_1896}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d345badf12911d8a2f21134f397de102}{%
+           family={Boltzmann},
+           familyi={B\bibinitperiod},
+           given={Ludwig},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=7132abe0224772aa222bafd7058a46b7}{%
+           family={Brush},
+           familyi={B\bibinitperiod},
+           given={Stephen\bibnamedelima G.},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Dover Publications}%
+      }
+      \strng{namehash}{d345badf12911d8a2f21134f397de102}
+      \strng{fullhash}{d345badf12911d8a2f21134f397de102}
+      \strng{bibnamehash}{d345badf12911d8a2f21134f397de102}
+      \strng{authorbibnamehash}{d345badf12911d8a2f21134f397de102}
+      \strng{authornamehash}{d345badf12911d8a2f21134f397de102}
+      \strng{authorfullhash}{d345badf12911d8a2f21134f397de102}
+      \strng{translatorbibnamehash}{7132abe0224772aa222bafd7058a46b7}
+      \strng{translatornamehash}{7132abe0224772aa222bafd7058a46b7}
+      \strng{translatorfullhash}{7132abe0224772aa222bafd7058a46b7}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Originally published in German as \emph{Vorlesungen über Gastheorie}, 1896--1898}
+      \field{title}{Lectures on Gas Theory}
+      \field{year}{1995}
+    \endentry
     \entry{Bradac_2025}{article}{}
       \name{author}{23}{}{%
         {{un=0,uniquepart=base,hash=30e0d5248c05872ef43548d293c8494b}{%
@@ -1143,6 +1249,38 @@
       \verb 0810.1057
       \endverb
       \keyw{black hole physics,instabilities,stellar dynamics,galaxies: nuclei,galaxies: formation,Astrophysics}
+    \endentry
+    \entry{Eddington_1916}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3cd4425f02e2513a99ed5e87734ac196}{%
+           family={{Eddington}},
+           familyi={E\bibinitperiod},
+           given={A.\bibnamedelimi S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3cd4425f02e2513a99ed5e87734ac196}
+      \strng{fullhash}{3cd4425f02e2513a99ed5e87734ac196}
+      \strng{bibnamehash}{3cd4425f02e2513a99ed5e87734ac196}
+      \strng{authorbibnamehash}{3cd4425f02e2513a99ed5e87734ac196}
+      \strng{authornamehash}{3cd4425f02e2513a99ed5e87734ac196}
+      \strng{authorfullhash}{3cd4425f02e2513a99ed5e87734ac196}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{mnras}
+      \field{month}{5}
+      \field{title}{{The distribution of stars in globular clusters}}
+      \field{volume}{76}
+      \field{year}{1916}
+      \field{pages}{572\bibrangedash 585}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1093/mnras/76.7.572
+      \endverb
     \endentry
     \entry{Farmer_2019}{article}{}
       \name{author}{5}{}{%
@@ -1709,6 +1847,67 @@
       \verb https://doi.org/10.1111/j.1365-2966.2012.21541.x
       \endverb
     \endentry
+    \entry{Iorio_2019}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=bf4f464921575b1e2c5d72e724c23513}{%
+           family={Iorio},
+           familyi={I\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f7b9e2dec67467d209ed2fdc94357016}{%
+           family={Nipoti},
+           familyi={N\bibinitperiod},
+           given={C},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2091e56e86ee04801192ebeaecf8aaca}{%
+           family={Battaglia},
+           familyi={B\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=15a48d91e96b51041f399422bf81e9a5}{%
+           family={Sollima},
+           familyi={S\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{dc02f868402a32a08599b6772f1da72e}
+      \strng{fullhash}{1c5857e0baff1fb08336c3aa21b40fc5}
+      \strng{bibnamehash}{dc02f868402a32a08599b6772f1da72e}
+      \strng{authorbibnamehash}{dc02f868402a32a08599b6772f1da72e}
+      \strng{authornamehash}{dc02f868402a32a08599b6772f1da72e}
+      \strng{authorfullhash}{1c5857e0baff1fb08336c3aa21b40fc5}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0035-8711}
+      \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
+      \field{month}{08}
+      \field{number}{4}
+      \field{title}{The effect of tides on the Sculptor dwarf spheroidal galaxy}
+      \field{volume}{487}
+      \field{year}{2019}
+      \field{pages}{5692\bibrangedash 5710}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1093/mnras/stz1342
+      \endverb
+      \verb{eprint}
+      \verb https://academic.oup.com/mnras/article-pdf/487/4/5692/28901729/stz1342.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1093/mnras/stz1342
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1093/mnras/stz1342
+      \endverb
+    \endentry
     \entry{Jahnke_2025}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=fcf34883290739a306b73a24047ffa9a}{%
@@ -2173,6 +2372,50 @@
       \endverb
       \keyw{accretion,accretion discs: black hole physics: hydrodynamics: instabilities: galaxies: formation: cosmology: theory,accretion discs,black hole physics,hydrodynamics,instabilities,galaxies: formation,cosmology: theory,Astrophysics}
     \endentry
+    \entry{Lynden-Bell_1962}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ea93d22d995c8da2aad83223927057b1}{%
+           family={Lynden-Bell},
+           familyi={L\bibinithyphendelim B\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ea93d22d995c8da2aad83223927057b1}
+      \strng{fullhash}{ea93d22d995c8da2aad83223927057b1}
+      \strng{bibnamehash}{ea93d22d995c8da2aad83223927057b1}
+      \strng{authorbibnamehash}{ea93d22d995c8da2aad83223927057b1}
+      \strng{authornamehash}{ea93d22d995c8da2aad83223927057b1}
+      \strng{authorfullhash}{ea93d22d995c8da2aad83223927057b1}
+      \field{extraname}{1}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0035-8711}
+      \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
+      \field{month}{02}
+      \field{number}{2}
+      \field{title}{Stellar Dynamics: Potentials with Isolating Integrals}
+      \field{volume}{124}
+      \field{year}{1962}
+      \field{pages}{95\bibrangedash 123}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1093/mnras/124.2.95
+      \endverb
+      \verb{eprint}
+      \verb https://academic.oup.com/mnras/article-pdf/124/2/95/8072797/mnras124-0095.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1093/mnras/124.2.95
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1093/mnras/124.2.95
+      \endverb
+    \endentry
     \entry{Lynden_1967}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=ea93d22d995c8da2aad83223927057b1}{%
@@ -2188,6 +2431,7 @@
       \strng{authorbibnamehash}{ea93d22d995c8da2aad83223927057b1}
       \strng{authornamehash}{ea93d22d995c8da2aad83223927057b1}
       \strng{authorfullhash}{ea93d22d995c8da2aad83223927057b1}
+      \field{extraname}{2}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{extradatescope}{labelyear}
@@ -2829,6 +3073,90 @@
       \verb{url}
       \verb http://dx.doi.org/10.12942/lrr-2005-8
       \endverb
+    \endentry
+    \entry{Mikkola_1999b}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d6282fd62c34dcf8e2e3b4c4024dfc19}{%
+           family={{Mikkola}},
+           familyi={M\bibinitperiod},
+           given={Seppo},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=be62199ab7254e20695251996793622c}{%
+           family={{Tanikawa}},
+           familyi={T\bibinitperiod},
+           given={Kiyotaka},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d2049185c259835e07b19d07d0a562e1}
+      \strng{fullhash}{d2049185c259835e07b19d07d0a562e1}
+      \strng{bibnamehash}{d2049185c259835e07b19d07d0a562e1}
+      \strng{authorbibnamehash}{d2049185c259835e07b19d07d0a562e1}
+      \strng{authornamehash}{d2049185c259835e07b19d07d0a562e1}
+      \strng{authorfullhash}{d2049185c259835e07b19d07d0a562e1}
+      \field{extraname}{1}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{mnras}
+      \field{month}{12}
+      \field{number}{3}
+      \field{title}{{Algorithmic regularization of the few-body problem}}
+      \field{volume}{310}
+      \field{year}{1999}
+      \field{pages}{745\bibrangedash 749}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1046/j.1365-8711.1999.02982.x
+      \endverb
+      \keyw{METHODS: ANALYTICAL,METHODS: NUMERICAL,CELESTIAL MECHANICS,STELLAR DYNAMICS,STARS: KINEMATICS}
+    \endentry
+    \entry{Mikkola_1999a}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d6282fd62c34dcf8e2e3b4c4024dfc19}{%
+           family={{Mikkola}},
+           familyi={M\bibinitperiod},
+           given={Seppo},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=be62199ab7254e20695251996793622c}{%
+           family={{Tanikawa}},
+           familyi={T\bibinitperiod},
+           given={Kiyotaka},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d2049185c259835e07b19d07d0a562e1}
+      \strng{fullhash}{d2049185c259835e07b19d07d0a562e1}
+      \strng{bibnamehash}{d2049185c259835e07b19d07d0a562e1}
+      \strng{authorbibnamehash}{d2049185c259835e07b19d07d0a562e1}
+      \strng{authornamehash}{d2049185c259835e07b19d07d0a562e1}
+      \strng{authorfullhash}{d2049185c259835e07b19d07d0a562e1}
+      \field{extraname}{2}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Celestial Mechanics and Dynamical Astronomy}
+      \field{month}{8}
+      \field{number}{4}
+      \field{title}{{Explicit Symplectic Algorithms For Time-Transformed Hamiltonians}}
+      \field{volume}{74}
+      \field{year}{1999}
+      \field{pages}{287\bibrangedash 295}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1023/A:1008368322547
+      \endverb
+      \keyw{symplectic integration,time-transformation}
     \endentry
     \entry{Mikkola_1992}{article}{}
       \name{author}{2}{}{%
@@ -4705,6 +5033,49 @@
       \endverb
       \keyw{cosmic background radiation,cosmological parameters,Astrophysics - Cosmology and Nongalactic Astrophysics}
     \endentry
+    \entry{Plummer_1911}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d99eba6319a166f1c081be055ddd8d22}{%
+           family={Plummer},
+           familyi={P\bibinitperiod},
+           given={H.\bibnamedelimi C.},
+           giveni={H\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d99eba6319a166f1c081be055ddd8d22}
+      \strng{fullhash}{d99eba6319a166f1c081be055ddd8d22}
+      \strng{bibnamehash}{d99eba6319a166f1c081be055ddd8d22}
+      \strng{authorbibnamehash}{d99eba6319a166f1c081be055ddd8d22}
+      \strng{authornamehash}{d99eba6319a166f1c081be055ddd8d22}
+      \strng{authorfullhash}{d99eba6319a166f1c081be055ddd8d22}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0035-8711}
+      \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
+      \field{month}{03}
+      \field{number}{5}
+      \field{title}{On the Problem of Distribution in Globular Star Clusters: (Plate 8.)}
+      \field{volume}{71}
+      \field{year}{1911}
+      \field{pages}{460\bibrangedash 470}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1093/mnras/71.5.460
+      \endverb
+      \verb{eprint}
+      \verb https://academic.oup.com/mnras/article-pdf/71/5/460/2937497/mnras71-0460.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1093/mnras/71.5.460
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1093/mnras/71.5.460
+      \endverb
+    \endentry
     \entry{Prugniel_1997}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=85e9de1e2661bdaa0993971d30bd00d1}{%
@@ -4779,6 +5150,69 @@
       \verb astro-ph/9601092
       \endverb
       \keyw{Astrophysics}
+    \endentry
+    \entry{Rantala_2020}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=fbe5dcaab977e466f2b1f575e2d2bc30}{%
+           family={{Rantala}},
+           familyi={R\bibinitperiod},
+           given={Antti},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ec82a6474727a4edffd0ef619ef78d32}{%
+           family={{Pihajoki}},
+           familyi={P\bibinitperiod},
+           given={Pauli},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0cc0c97b7bb7e0b78320ce7d376ccd99}{%
+           family={{Mannerkoski}},
+           familyi={M\bibinitperiod},
+           given={Matias},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e1cc88ae23b97f5830daea3787177bc9}{%
+           family={{Johansson}},
+           familyi={J\bibinitperiod},
+           given={Peter\bibnamedelima H.},
+           giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a76aca38cdca203a992dc4832b5928b6}{%
+           family={{Naab}},
+           familyi={N\bibinitperiod},
+           given={Thorsten},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7e4b3a5b7cbb258faf98af7e9221fc2a}
+      \strng{fullhash}{00faf185190facf7ea15f433b48e32d2}
+      \strng{bibnamehash}{7e4b3a5b7cbb258faf98af7e9221fc2a}
+      \strng{authorbibnamehash}{7e4b3a5b7cbb258faf98af7e9221fc2a}
+      \strng{authornamehash}{7e4b3a5b7cbb258faf98af7e9221fc2a}
+      \strng{authorfullhash}{00faf185190facf7ea15f433b48e32d2}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{astro-ph.IM}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{mnras}
+      \field{month}{3}
+      \field{number}{3}
+      \field{title}{{MSTAR - a fast parallelized algorithmically regularized integrator with minimum spanning tree coordinates}}
+      \field{volume}{492}
+      \field{year}{2020}
+      \field{pages}{4131\bibrangedash 4148}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1093/mnras/staa084
+      \endverb
+      \verb{eprint}
+      \verb 2001.03180
+      \endverb
+      \keyw{gravitation,methods: numerical,quasars: supermassive black holes,galaxies: star clusters: general,Astrophysics - Instrumentation and Methods for Astrophysics,Astrophysics - Astrophysics of Galaxies}
     \endentry
     \entry{Reines_2013}{article}{}
       \name{author}{3}{}{%
@@ -4909,14 +5343,38 @@
       \verb http://dx.doi.org/10.1103/PhysRevD.100.043027
       \endverb
     \endentry
+    \entry{Saslaw_1985}{book}{}
+      \name{author}{1}{}{%
+        {{un=2,uniquepart=given,hash=cec1a1efefa6e126c0cdfc42743042b0}{%
+           family={{Saslaw}},
+           familyi={S\bibinitperiod},
+           given={W.\bibnamedelimi C.},
+           giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=2}}%
+      }
+      \strng{namehash}{cec1a1efefa6e126c0cdfc42743042b0}
+      \strng{fullhash}{cec1a1efefa6e126c0cdfc42743042b0}
+      \strng{bibnamehash}{cec1a1efefa6e126c0cdfc42743042b0}
+      \strng{authorbibnamehash}{cec1a1efefa6e126c0cdfc42743042b0}
+      \strng{authornamehash}{cec1a1efefa6e126c0cdfc42743042b0}
+      \strng{authorfullhash}{cec1a1efefa6e126c0cdfc42743042b0}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Gravitational physics of stellar and galactic systems C. Saslaw.}}
+      \field{year}{1985}
+    \endentry
     \entry{Saslaw_1970}{article}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=47064435fd655ece3f34ca46a9abcec0}{%
+        {{un=2,uniquepart=given,hash=47064435fd655ece3f34ca46a9abcec0}{%
            family={Saslaw},
            familyi={S\bibinitperiod},
            given={William\bibnamedelima C.},
            giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod},
-           givenun=0}}%
+           givenun=2}}%
       }
       \strng{namehash}{47064435fd655ece3f34ca46a9abcec0}
       \strng{fullhash}{47064435fd655ece3f34ca46a9abcec0}
@@ -5232,6 +5690,63 @@
       \verb https://doi.org/10.1111/j.1365-2966.2005.09655.x
       \endverb
     \endentry
+    \entry{Springel_2021}{article}{}
+      \name{author}{4}{ul=1}{%
+        {{un=0,uniquepart=base,hash=d673f4b06bc18145fb87123390b4948f}{%
+           family={{Springel}},
+           familyi={S\bibinitperiod},
+           given={Volker},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=69de3efaeebbc09f97720c1f8f9f75b6}{%
+           family={{Pakmor}},
+           familyi={P\bibinitperiod},
+           given={Rüdiger},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4e8d2d4e2561a154fbb46ed257cd3fb7}{%
+           family={{Zier}},
+           familyi={Z\bibinitperiod},
+           given={Oliver},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e31e9ca16950ddb0b61f4bcc820416a7}{%
+           family={{Reinecke}},
+           familyi={R\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6310651d925c6f9bd6334da82082fecd}
+      \strng{fullhash}{cac9c77e436be5d2482aed030b5dabb3}
+      \strng{bibnamehash}{6310651d925c6f9bd6334da82082fecd}
+      \strng{authorbibnamehash}{6310651d925c6f9bd6334da82082fecd}
+      \strng{authornamehash}{6310651d925c6f9bd6334da82082fecd}
+      \strng{authorfullhash}{cac9c77e436be5d2482aed030b5dabb3}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{astro-ph.IM}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{mnras}
+      \field{month}{9}
+      \field{number}{2}
+      \field{title}{{Simulating cosmic structure formation with the GADGET-4 code}}
+      \field{volume}{506}
+      \field{year}{2021}
+      \field{pages}{2871\bibrangedash 2949}
+      \range{pages}{79}
+      \verb{doi}
+      \verb 10.1093/mnras/stab1855
+      \endverb
+      \verb{eprint}
+      \verb 2010.03567
+      \endverb
+      \keyw{methods: numerical,galaxies: interactions,dark matter,Astrophysics - Instrumentation and Methods for Astrophysics,Astrophysics - Cosmology and Nongalactic Astrophysics}
+    \endentry
     \entry{Taylor_2021}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=f9a050caf19c257d9bce4ce7a8968d90}{%
@@ -5311,6 +5826,46 @@
       \verb astro-ph/0506192
       \endverb
       \keyw{stellar dynamics,galaxies: elliptical and lenticular,cD,galaxies: kinematics and dynamics,galaxies: nuclei,galaxies: structure,Astrophysics}
+    \endentry
+    \entry{Thorne_1985}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=09e928bef0c66042b777c23f5eb91c00}{%
+           family={{Thorne}},
+           familyi={T\bibinitperiod},
+           given={Kip\bibnamedelima S.},
+           giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1ac7eee9cbb87f927beacb5616f7f48a}{%
+           family={{Hartle}},
+           familyi={H\bibinitperiod},
+           given={James\bibnamedelima B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{177955aeace6de3dd8cc34d34b255e1a}
+      \strng{fullhash}{177955aeace6de3dd8cc34d34b255e1a}
+      \strng{bibnamehash}{177955aeace6de3dd8cc34d34b255e1a}
+      \strng{authorbibnamehash}{177955aeace6de3dd8cc34d34b255e1a}
+      \strng{authornamehash}{177955aeace6de3dd8cc34d34b255e1a}
+      \strng{authorfullhash}{177955aeace6de3dd8cc34d34b255e1a}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{prd}
+      \field{month}{4}
+      \field{number}{8}
+      \field{title}{{Laws of motion and precession for black holes and other bodies}}
+      \field{volume}{31}
+      \field{year}{1985}
+      \field{pages}{1815\bibrangedash 1837}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1103/PhysRevD.31.1815
+      \endverb
+      \keyw{04.20.Me,97.60.Lf,Black holes}
     \endentry
     \entry{Toomre_1972}{article}{}
       \name{author}{2}{}{%

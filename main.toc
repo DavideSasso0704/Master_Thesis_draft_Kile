@@ -26,7 +26,7 @@
 \contentsline {subsection}{\numberline {3.1.1}Equilibrium Theory of Stellar Systems}{58}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}Generation of N-Body ICs with OpOpGadget}{61}{subsection.3.1.2}%
 \contentsline {subsection}{\numberline {3.1.3}Dynamical Evolution with KETJU}{66}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}Analysis of the Generated Initial Conditions}{68}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}NCG 205 N-body Initial Conditions}{68}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}NCG 5206 N-body Initial Conditions}{69}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Ketju Numerical Simulations}{69}{section.3.3}%
+\contentsline {section}{\numberline {3.2}Analysis of the Generated Initial Conditions}{69}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}NCG 205 N-body Initial Conditions}{69}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}NCG 5206 N-body Initial Conditions}{70}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Ketju Numerical Simulations}{70}{section.3.3}%
