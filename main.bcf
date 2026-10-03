@@ -2377,29 +2377,29 @@
     <bcf:citekey order="13" intorder="1">Maiolino_2024</bcf:citekey>
     <bcf:citekey order="14" intorder="1">Greene_2020</bcf:citekey>
     <bcf:citekey order="15" intorder="1">Fryer_2001</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">Lodato_2006</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">Rodriguez_2019</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">Devecchi_2009</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">Greene_2020</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">Loeb_1994</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">Lodato_2006</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">Rodriguez_2019</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">Devecchi_2009</bcf:citekey>
     <bcf:citekey order="20" intorder="1">Greene_2020</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">White_1978</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">Maiolino_2024</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">Maggiore_book</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">Amaro-Seoane_2017</bcf:citekey>
-    <bcf:citekey order="24" intorder="2">Amaro-Seaone_2023</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">Colpi_2024</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">ET_book</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">Quinlan_1996</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">Sesana_2010</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">Mannerkoski_2023</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">Khan_2021</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">Khan_2024</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">Mikkola_1992</bcf:citekey>
-    <bcf:citekey order="33" intorder="1">Milosavljevic_2003</bcf:citekey>
-    <bcf:citekey order="34" intorder="1">Grebel_2003</bcf:citekey>
-    <bcf:citekey order="35" intorder="1">Nguyen_2018</bcf:citekey>
-    <bcf:citekey order="36" intorder="1">Kikuchihara_2020</bcf:citekey>
-    <bcf:citekey order="37" intorder="1">Neumayer_2020</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">Greene_2020</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">White_1978</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">Maiolino_2024</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">Maggiore_book</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">Amaro-Seoane_2017</bcf:citekey>
+    <bcf:citekey order="25" intorder="2">Amaro-Seaone_2023</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">Colpi_2024</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">ET_book</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">Quinlan_1996</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">Sesana_2010</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">Mannerkoski_2023</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">Khan_2021</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">Khan_2024</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">Mikkola_1992</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">Milosavljevic_2003</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">Grebel_2003</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">Nguyen_2018</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">Kikuchihara_2020</bcf:citekey>
     <bcf:citekey order="38" intorder="1">Ono_2023</bcf:citekey>
     <bcf:citekey order="39" intorder="1">Maiolino_2024</bcf:citekey>
     <bcf:citekey order="40" intorder="1">Maiolino_2024</bcf:citekey>
@@ -2567,6 +2567,11 @@
     <bcf:citekey order="202" intorder="1">Thorne_1985</bcf:citekey>
     <bcf:citekey order="203" intorder="1">Blanchet_2014</bcf:citekey>
     <bcf:citekey order="204" intorder="1">Mannerkoski_2023</bcf:citekey>
+    <bcf:citekey order="205" intorder="1">Quinlan_1996</bcf:citekey>
+    <bcf:citekey order="206" intorder="1">Sesana_2006</bcf:citekey>
+    <bcf:citekey order="207" intorder="1">Sesana_2015</bcf:citekey>
+    <bcf:citekey order="208" intorder="1">Khan_2021</bcf:citekey>
+    <bcf:citekey order="209" intorder="1">Nipoti_2003</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

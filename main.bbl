@@ -2372,6 +2372,50 @@
       \endverb
       \keyw{accretion,accretion discs: black hole physics: hydrodynamics: instabilities: galaxies: formation: cosmology: theory,accretion discs,black hole physics,hydrodynamics,instabilities,galaxies: formation,cosmology: theory,Astrophysics}
     \endentry
+    \entry{Loeb_1994}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=85fae39731614de4064798a9fbcaef02}{%
+           family={{Loeb}},
+           familyi={L\bibinitperiod},
+           given={Abraham},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7d47e100757865d86f409e96c5fc9637}{%
+           family={{Rasio}},
+           familyi={R\bibinitperiod},
+           given={Frederic\bibnamedelima A.},
+           giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fc5f299a70b1e87ff42296c64b9abfb8}
+      \strng{fullhash}{fc5f299a70b1e87ff42296c64b9abfb8}
+      \strng{bibnamehash}{fc5f299a70b1e87ff42296c64b9abfb8}
+      \strng{authorbibnamehash}{fc5f299a70b1e87ff42296c64b9abfb8}
+      \strng{authornamehash}{fc5f299a70b1e87ff42296c64b9abfb8}
+      \strng{authorfullhash}{fc5f299a70b1e87ff42296c64b9abfb8}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{astro-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{apj}
+      \field{month}{9}
+      \field{title}{{Collapse of Primordial Gas Clouds and the Formation of Quasar Black Holes}}
+      \field{volume}{432}
+      \field{year}{1994}
+      \field{pages}{52}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1086/174548
+      \endverb
+      \verb{eprint}
+      \verb astro-ph/9401026
+      \endverb
+      \keyw{Astronomical Models,Black Holes (Astronomy),Collapse,Computerized Simulation,Galactic Evolution,Gas Dynamics,Hydrodynamics,Mathematical Models,Quasars,Accretion Disks,Active Galactic Nuclei,Galactic Bulge,Gravitational Fields,Supermassive Stars,Astrophysics,BLACK HOLE PHYSICS,GALAXIES: FORMATION,GALAXIES: QUASARS: GENERAL,HYDRODYNAMICS,METHODS: NUMERICAL,Astrophysics}
+    \endentry
     \entry{Lynden-Bell_1962}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=ea93d22d995c8da2aad83223927057b1}{%
@@ -3415,59 +3459,6 @@
       \verb https://arxiv.org/abs/2511.14483
       \endverb
     \endentry
-    \entry{Neumayer_2020}{article}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=5861aaf1687f4897f34c28cfab0dc77f}{%
-           family={Neumayer},
-           familyi={N\bibinitperiod},
-           given={Nadine},
-           giveni={N\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=46c46bec1eeabae216ff72636eddb251}{%
-           family={Seth},
-           familyi={S\bibinitperiod},
-           given={Anil},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=53a4fa3e0d9e8801e0b9d9ea77309538}{%
-           family={Böker},
-           familyi={B\bibinitperiod},
-           given={Torsten},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{2}{%
-        {Springer Science}%
-        {Business Media LLC}%
-      }
-      \strng{namehash}{c27ce5feb0186402868c06f3ade03752}
-      \strng{fullhash}{f8ae980a8f36c448310d1929feed29c7}
-      \strng{bibnamehash}{f8ae980a8f36c448310d1929feed29c7}
-      \strng{authorbibnamehash}{f8ae980a8f36c448310d1929feed29c7}
-      \strng{authornamehash}{c27ce5feb0186402868c06f3ade03752}
-      \strng{authorfullhash}{f8ae980a8f36c448310d1929feed29c7}
-      \field{sortinit}{N}
-      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1432-0754}
-      \field{journaltitle}{The Astronomy and Astrophysics Review}
-      \field{number}{1}
-      \field{title}{Nuclear star clusters}
-      \field{volume}{28}
-      \field{year}{2020}
-      \verb{doi}
-      \verb 10.1007/s00159-020-00125-0
-      \endverb
-      \verb{urlraw}
-      \verb http://dx.doi.org/10.1007/s00159-020-00125-0
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1007/s00159-020-00125-0
-      \endverb
-    \endentry
     \entry{Nguyen_2018}{article}{}
       \name{author}{15}{}{%
         {{un=0,uniquepart=base,hash=f6de856ee14edbbae7dfffb8ac71ffe1}{%
@@ -3594,14 +3585,65 @@
       \verb https://doi.org/10.3847/1538-4357/aabe28
       \endverb
     \endentry
+    \entry{Nipoti_2003}{article}{}
+      \name{author}{3}{}{%
+        {{un=2,uniquepart=given,hash=f7b9e2dec67467d209ed2fdc94357016}{%
+           family={{Nipoti}},
+           familyi={N\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=ac06effff5772cc5e91e6013e5826784}{%
+           family={{Londrillo}},
+           familyi={L\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8011f7af0fc19c006df54a7de3c42997}{%
+           family={{Ciotti}},
+           familyi={C\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{260df9f42a911556199fe31c719ec018}
+      \strng{fullhash}{96415818167def39c30e3f8312b964ad}
+      \strng{bibnamehash}{96415818167def39c30e3f8312b964ad}
+      \strng{authorbibnamehash}{96415818167def39c30e3f8312b964ad}
+      \strng{authornamehash}{260df9f42a911556199fe31c719ec018}
+      \strng{authorfullhash}{96415818167def39c30e3f8312b964ad}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{astro-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{mnras}
+      \field{month}{6}
+      \field{number}{2}
+      \field{title}{{Galaxy merging, the fundamental plane of elliptical galaxies and the M$_{BH}$-{\ensuremath{\sigma}}$_{0}$ relation}}
+      \field{volume}{342}
+      \field{year}{2003}
+      \field{pages}{501\bibrangedash 512}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1046/j.1365-8711.2003.06554.x
+      \endverb
+      \verb{eprint}
+      \verb astro-ph/0302423
+      \endverb
+      \keyw{black hole physics,galaxies: elliptical and lenticular,cD,galaxies: formation,galaxies: fundamental parameters,galaxies: kinematics and dynamics,Astrophysics}
+    \endentry
     \entry{Nipoti_Londrillo_2007}{article}{}
       \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=3ce93bea512e873e30bacbb7305bb520}{%
+        {{un=2,uniquepart=given,hash=3ce93bea512e873e30bacbb7305bb520}{%
            family={Nipoti},
            familyi={N\bibinitperiod},
            given={Carlo},
            giveni={C\bibinitperiod},
-           givenun=0}}%
+           givenun=2}}%
         {{un=0,uniquepart=base,hash=342d6bc7f20bbee181f89f61cdd85a37}{%
            family={Londrillo},
            familyi={L\bibinitperiod},
