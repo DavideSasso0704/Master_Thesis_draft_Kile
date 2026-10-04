@@ -5118,6 +5118,91 @@
       \verb https://doi.org/10.1093/mnras/71.5.460
       \endverb
     \endentry
+    \entry{Power_2003}{article}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=cd347058cb6b2686dfd2174aad09c464}{%
+           family={Power},
+           familyi={P\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=91449ee526f23ecdd8b2599a0c991ab7}{%
+           family={Navarro},
+           familyi={N\bibinitperiod},
+           given={J.\bibnamedelimi F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fd6a2815ce5370333dbf37188c45b041}{%
+           family={Jenkins},
+           familyi={J\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ef23aac7fe4d2fa9e78bdb2c475a6b77}{%
+           family={Frenk},
+           familyi={F\bibinitperiod},
+           given={C.\bibnamedelimi S.},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b6c6fe2ff35a586cc62a3180c1add3c8}{%
+           family={White},
+           familyi={W\bibinitperiod},
+           given={S.\bibnamedelimi D.\bibnamedelimi M.},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8d14f84c0b1740881731aadf0b220bb7}{%
+           family={Springel},
+           familyi={S\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=58b7f37031b7d115ee824f8080b0f208}{%
+           family={Stadel},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dff03002cf63c90618e830afdf6937a9}{%
+           family={Quinn},
+           familyi={Q\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6cd297865d2b88c38f7ca6cfbaddc0c1}
+      \strng{fullhash}{350f76442af1ec1041f9ef8a048394fc}
+      \strng{bibnamehash}{6cd297865d2b88c38f7ca6cfbaddc0c1}
+      \strng{authorbibnamehash}{6cd297865d2b88c38f7ca6cfbaddc0c1}
+      \strng{authornamehash}{6cd297865d2b88c38f7ca6cfbaddc0c1}
+      \strng{authorfullhash}{350f76442af1ec1041f9ef8a048394fc}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0035-8711}
+      \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
+      \field{month}{01}
+      \field{number}{1}
+      \field{title}{The inner structure of ΛCDM haloes — I. A numerical convergence study}
+      \field{volume}{338}
+      \field{year}{2003}
+      \field{pages}{14\bibrangedash 34}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1046/j.1365-8711.2003.05925.x
+      \endverb
+      \verb{eprint}
+      \verb https://academic.oup.com/mnras/article-pdf/338/1/14/3823514/338-1-14.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1046/j.1365-8711.2003.05925.x
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1046/j.1365-8711.2003.05925.x
+      \endverb
+    \endentry
     \entry{Prugniel_1997}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=85e9de1e2661bdaa0993971d30bd00d1}{%

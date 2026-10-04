@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.14)  3 OCT 2026 17:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.14)  4 OCT 2026 12:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -833,15 +833,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
- (./main.aux
-
-LaTeX Warning: Label `fig:Double_NGC205_snap_mass_profile' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:Double_NGC205_snap_mass_profile' multiply defined
-.
-
-)
+ (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 203.
@@ -1464,7 +1456,7 @@ g)
 Package pdftex.def Info: Thesis_images/Double_NGC205_NSC_BH_snap_BH_zoom.png  u
 sed on input line 2581.
 (pdftex.def)             Requested size: 237.01625pt x 156.49345pt.
-<Thesis_images/Double_NGC205_snap_density_profile.png, id=1439, 433.62pt x 325.
+<Thesis_images/Double_NGC205_snap_density_profile.png, id=1441, 433.62pt x 325.
 215pt>
 File: Thesis_images/Double_NGC205_snap_density_profile.png Graphic file (type p
 ng)
@@ -1472,76 +1464,76 @@ ng)
 Package pdftex.def Info: Thesis_images/Double_NGC205_snap_density_profile.png  
 used on input line 2594.
 (pdftex.def)             Requested size: 237.01625pt x 156.49345pt.
-<Thesis_images/Double_NGC205_snap_mass_profile.png, id=1440, 433.62pt x 325.215
+<Thesis_images/Double_NGC205_snap_mass_profile.png, id=1444, 433.62pt x 325.215
 pt>
 File: Thesis_images/Double_NGC205_snap_mass_profile.png Graphic file (type png)
 
 <use Thesis_images/Double_NGC205_snap_mass_profile.png>
 Package pdftex.def Info: Thesis_images/Double_NGC205_snap_mass_profile.png  use
-d on input line 2602.
+d on input line 2601.
 (pdftex.def)             Requested size: 237.01625pt x 156.49345pt.
 [77 <./Thesis_images/Double_NGC205_NSC_BH_snap_scatter.png> <./Thesis_images/Do
 uble_NGC205_NSC_BH_snap_BH_zoom.png>]
-<Thesis_images/Double_NGC205_snap_sigma_profile.png, id=1450, 433.62pt x 325.21
+<Thesis_images/Double_NGC205_snap_sigma_profile.png, id=1455, 433.62pt x 325.21
 5pt>
 File: Thesis_images/Double_NGC205_snap_sigma_profile.png Graphic file (type png
 )
 <use Thesis_images/Double_NGC205_snap_sigma_profile.png>
 Package pdftex.def Info: Thesis_images/Double_NGC205_snap_sigma_profile.png  us
-ed on input line 2615.
+ed on input line 2613.
 (pdftex.def)             Requested size: 386.95897pt x 290.23442pt.
  [78 <./Thesis_images/Double_NGC205_snap_density_profile.png> <./Thesis_images/
 Double_NGC205_snap_mass_profile.png>]
 
-LaTeX Warning: Command \textpm invalid in math mode on input line 2624.
+LaTeX Warning: Command \textpm invalid in math mode on input line 2622.
 
 
-LaTeX Warning: Command \textpm invalid in math mode on input line 2624.
+LaTeX Warning: Command \textpm invalid in math mode on input line 2622.
 
 Missing character: There is no ± in font cmr12!
-<Thesis_images/Double_NGC205_LCR_fit.png, id=1464, 433.62pt x 289.08pt>
+<Thesis_images/Double_NGC205_LCR_fit.png, id=1470, 433.62pt x 289.08pt>
 File: Thesis_images/Double_NGC205_LCR_fit.png Graphic file (type png)
 <use Thesis_images/Double_NGC205_LCR_fit.png>
 Package pdftex.def Info: Thesis_images/Double_NGC205_LCR_fit.png  used on input
- line 2627.
+ line 2625.
 (pdftex.def)             Requested size: 386.95897pt x 257.98615pt.
 [79 <./Thesis_images/Double_NGC205_snap_sigma_profile.png>]
-<Thesis_images/Double_NGC205_a_vs_t.png, id=1476, 433.62pt x 325.215pt>
+<Thesis_images/Double_NGC205_a_vs_t.png, id=1482, 433.62pt x 325.215pt>
 File: Thesis_images/Double_NGC205_a_vs_t.png Graphic file (type png)
 <use Thesis_images/Double_NGC205_a_vs_t.png>
 Package pdftex.def Info: Thesis_images/Double_NGC205_a_vs_t.png  used on input 
-line 2637.
+line 2635.
 (pdftex.def)             Requested size: 237.01625pt x 156.49345pt.
-<Thesis_images/Double_NGC205_e_vs_t.png, id=1477, 433.62pt x 325.215pt>
+<Thesis_images/Double_NGC205_e_vs_t.png, id=1483, 433.62pt x 325.215pt>
 File: Thesis_images/Double_NGC205_e_vs_t.png Graphic file (type png)
 <use Thesis_images/Double_NGC205_e_vs_t.png>
 Package pdftex.def Info: Thesis_images/Double_NGC205_e_vs_t.png  used on input 
-line 2645.
+line 2643.
 (pdftex.def)             Requested size: 237.01625pt x 156.49345pt.
  [80 <./Thesis_images/Double_NGC205_LCR_fit.png>]
-<Thesis_images/Model_4_0deg_scatter.png, id=1489, 433.62pt x 325.215pt>
+<Thesis_images/Model_4_0deg_scatter.png, id=1495, 433.62pt x 325.215pt>
 File: Thesis_images/Model_4_0deg_scatter.png Graphic file (type png)
 <use Thesis_images/Model_4_0deg_scatter.png>
 Package pdftex.def Info: Thesis_images/Model_4_0deg_scatter.png  used on input 
-line 2668.
+line 2666.
 (pdftex.def)             Requested size: 232.17242pt x 174.12973pt.
-<Thesis_images/Model_4_10deg_scatter.png, id=1490, 433.62pt x 325.215pt>
+<Thesis_images/Model_4_10deg_scatter.png, id=1496, 433.62pt x 325.215pt>
 File: Thesis_images/Model_4_10deg_scatter.png Graphic file (type png)
 <use Thesis_images/Model_4_10deg_scatter.png>
 Package pdftex.def Info: Thesis_images/Model_4_10deg_scatter.png  used on input
- line 2675.
+ line 2673.
 (pdftex.def)             Requested size: 232.17242pt x 174.12973pt.
-<Thesis_images/Model_4_20deg_scatter.png, id=1491, 433.62pt x 325.215pt>
+<Thesis_images/Model_4_20deg_scatter.png, id=1497, 433.62pt x 325.215pt>
 File: Thesis_images/Model_4_20deg_scatter.png Graphic file (type png)
 <use Thesis_images/Model_4_20deg_scatter.png>
 Package pdftex.def Info: Thesis_images/Model_4_20deg_scatter.png  used on input
- line 2684.
+ line 2682.
 (pdftex.def)             Requested size: 232.17242pt x 174.12973pt.
-<Thesis_images/Model_4_30deg_scatter.png, id=1492, 433.62pt x 325.215pt>
+<Thesis_images/Model_4_30deg_scatter.png, id=1498, 433.62pt x 325.215pt>
 File: Thesis_images/Model_4_30deg_scatter.png Graphic file (type png)
 <use Thesis_images/Model_4_30deg_scatter.png>
 Package pdftex.def Info: Thesis_images/Model_4_30deg_scatter.png  used on input
- line 2691.
+ line 2689.
 (pdftex.def)             Requested size: 232.17242pt x 174.12973pt.
  [81 <./Thesis_images/Double_NGC205_a_vs_t.png> <./Thesis_images/Double_NGC205_
 e_vs_t.png>] [82 <./Thesis_images/Model_4_0deg_scatter.png> <./Thesis_images/Mo
@@ -1549,30 +1541,43 @@ del_4_10deg_scatter.png> <./Thesis_images/Model_4_20deg_scatter.png> <./Thesis_
 images/Model_4_30deg_scatter.png>] [83
 
 ]
-Overfull \hbox (31.19432pt too wide) in paragraph at lines 2715--2715
+Overfull \hbox (31.19432pt too wide) in paragraph at lines 2713--2713
 [][]\T1/cmr/m/n/12 Colpi, Mon-ica et al. (Feb. 2024). ^^P  LISA Def-i-ni-tion S
 tudy Re-port^^Q. In: \T1/cmr/m/it/12 arXiv e-prints\T1/cmr/m/n/12 , arXiv:2402.
 07571,
  []
 
 [84]
-Overfull \hbox (13.10652pt too wide) in paragraph at lines 2715--2715
+Overfull \hbox (13.10652pt too wide) in paragraph at lines 2713--2713
 [][]\T1/cmr/m/n/12 Khan, Fazeel Mah-mood, Fiza Javed, et al. (Nov. 2024). ^^P  
 The Po-ten-tial for Long-lived Intermediate-
  []
 
 [85]
-Overfull \hbox (37.3494pt too wide) in paragraph at lines 2715--2715
+Overfull \hbox (37.3494pt too wide) in paragraph at lines 2713--2713
 \T1/cmr/m/it/12 Ce-les-tial Me-chan-ics and Dy-nam-i-cal As-tron-omy \T1/cmr/m/
 n/12 74.4, pp. 287^^U295. \T1/cmr/m/sc/12 doi\T1/cmr/m/n/12 : []$\T1/cmtt/m/n/1
 2 10 . 1023 / A : 1008368322547$[]\T1/cmr/m/n/12 . 
  []
 
 [86]
-Overfull \hbox (11.28075pt too wide) in paragraph at lines 2715--2715
+Overfull \hbox (11.28075pt too wide) in paragraph at lines 2713--2713
 [][]\T1/cmr/m/n/12 Ono, Yoshi-aki et al. (July 2023). ^^P  Mor-pholo-gies of Ga
 lax-ies at z $\U/msa/m/n/12 &$ \T1/cmr/m/n/12 9 Un-cov-ered by JWST/NIRCam
  []
+
+
+! LaTeX Error: Unicode character Î› (U+039B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2713 
+       
+You may provide a definition with
+\DeclareUnicodeCharacter 
 
 [87] [88] (./main.aux)
  ***********
@@ -1584,7 +1589,7 @@ L3 programming layer <2024-01-22>
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 08C7CB3F3D1A0FCA9277D7ED6FE1503C;6142.
@@ -1593,10 +1598,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25627 strings out of 476182
- 461220 string characters out of 5795595
+ 25635 strings out of 476182
+ 461465 string characters out of 5795595
  1974975 words of memory out of 5000000
- 46823 multiletter control sequences out of 15000+600000
+ 46830 multiletter control sequences out of 15000+600000
  584291 words of font info for 103 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  75i,20n,81p,4365b,1835s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1635,10 +1640,10 @@ s/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam
 10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm1
 0.pfb>
-Output written on main.pdf (88 pages, 11031657 bytes).
+Output written on main.pdf (88 pages, 11035330 bytes).
 PDF statistics:
- 2542 PDF objects out of 2984 (max. 8388607)
- 1690 compressed objects within 17 object streams
- 489 named destinations out of 1000 (max. 500000)
+ 2559 PDF objects out of 2984 (max. 8388607)
+ 1699 compressed objects within 17 object streams
+ 490 named destinations out of 1000 (max. 500000)
  437 words of extra memory for PDF output out of 10000 (max. 10000000)
 

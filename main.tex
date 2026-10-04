@@ -2523,7 +2523,7 @@ Figure~\ref{Double_NGC205_NSC_BH_scatter} shows the initial configuration of the
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{Double_NGC205_NSC_BH_scatter.png}
-    \caption{
+    \caption{Positions of the initialized NSC stars (blue and red dots) and IMBHs (black dots) in the center-of-mass frame $S_{CM}$. The black arrows indicate the initial bulk velocities of the two NSCs, with lengths corresponding to the displacement over their average half-mass dynamical time. The dashed circles mark the spheres containing $90\,\%$ of the total mass for each NSC.
 }
     \label{Double_NGC205_NSC_BH_scatter}
 \end{figure}
@@ -2531,7 +2531,7 @@ Following the same analysis of the IC generation performed in \S~\ref{sec:Dynami
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{Double_NGC205_NSC_position_hist.png}
-    \caption{Histograms of the position and velocity distributions of the NGC 205, $N$-body generated, stellar components (bulge and NSC). Each row shows, on the left, the distribution of the $i$-th Cartesian component of the stellar positions and, on the right, the corresponding distribution of the $i$-th component of the stellar velocities. The position histograms span $[-2,2]\,kpc$ and are divided into 50 bins, each with a width of $\Delta x_i=80\, pc$, while the velocity histograms span $[-100,100]\, km/s$ and are divided into 50 bins, each with a width of $\Delta v_i =4\,km/s$.
+    \caption{Histograms of the position distributions of both, $N$-body generated, NSCs. Each row shows the distribution of the $i$-th Cartesian component of the stellar positions for $NSC\,1$ (left) and $NSC\,2$ (right). All histograms span $[-10,10]\,\mathrm{kpc}$ and are divided into 50 bins, each with a width of $\Delta x_i=400\, \mathrm{pc}$. The first column distributions peak around $-(r_{90},0,0)$, while the second column around $+(r_{90},0,0)$.
 }
     \label{Double_NGC205_NSC_position_hist}
 \end{figure}
@@ -2539,7 +2539,7 @@ Following the same analysis of the IC generation performed in \S~\ref{sec:Dynami
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{Double_NGC205_NSC_velocity_hist.png}
-    \caption{Histograms of the position and velocity distributions of the NGC 205, $N$-body generated, stellar components (bulge and NSC). Each row shows, on the left, the distribution of the $i$-th Cartesian component of the stellar positions and, on the right, the corresponding distribution of the $i$-th component of the stellar velocities. The position histograms span $[-2,2]\,kpc$ and are divided into 50 bins, each with a width of $\Delta x_i=80\, pc$, while the velocity histograms span $[-100,100]\, km/s$ and are divided into 50 bins, each with a width of $\Delta v_i =4\,km/s$.
+    \caption{Histograms of the velocity distributions of both, $N$-body generated, NSCs. Each row shows the distribution of the $i$-th Cartesian component of the stellar velocities for $NSC\,1$ (left) and $NSC\,2$ (right). All histograms span $[-100,100]\,\mathrm{km/s}$ and are divided into 50 bins, each with a width of $\Delta v_i=4\, \mathrm{km/s}$. The first column distributions peak around $(v_{90},0,0)$, while the second column around $-(v_{90},0,0)$.
 }
     \label{Double_NGC205_NSC_velocity_hist}
 \end{figure}
@@ -2564,14 +2564,14 @@ When the initial separation is identified with the GW transition scale, $a_0=a_{
 
 
 
-To follow the complete dynamical evolution of the IMBH binary, from the merger of the stellar hosts to the final coalescence, we combine the $N$-body and hybrid approaches. During the numerical integration, KETJU periodically outputs a series of snapshots at fixed time intervals $\Delta t_{snap}$, containing the positions, velocities, masses, and IDs of all particles generated with OpOpGadget. In addition, it produces a separate series of files containing only the BBH information, e.g. $(t,a(t),e(t))$ ,which can be analysed using the KETJU-Utils analysis toolkit. The final snapshot can then be read with OpOpGadget, allowing us to perform the same analysis described at the end of \S~\ref{sec:Dynamical Equilibrium of Stellar Systems}. This procedure provides a physically motivated initial condition $(a_0,e_0)$ for the subsequent binary evolution, directly determined from the final KETJU state. Moreover, it allows us to derive the main quantities at the influence radius required by the hybrid model from the actual stellar background of the merger remnant. Overall, this approach combines the complementary strengths of the two methods: KETJU captures the dynamics of the galaxy merger and the subsequent hardening of the binary through stellar scattering, while the hybrid model can then be used to evolve the binary from a physically constrained stellar background and a initial condition.\\The numerical integration is stopped at the physical time $t = 18.75,\mathrm{TU} \simeq 18\,\mathrm{Myr}$. Figure~\ref{Double_NGC205_NSC_BH_snap_scatter} shows the state of the system in its centre-of-mass reference frame $S_{CM}$ at the time of the final snapshot.
+To follow the complete dynamical evolution of the IMBH binary, from the merger of the stellar hosts to the final coalescence, we combine the $N$-body and hybrid approaches. During the numerical integration, KETJU periodically outputs a series of snapshots at fixed time intervals $\Delta t_{snap}$, containing the positions, velocities, masses, and IDs of all particles generated with OpOpGadget. In addition, it produces a separate series of files containing only the BBH information, e.g. $(t,a(t),e(t))$ ,which can be analysed using the KETJU-Utils analysis toolkit. The final snapshot can then be read with OpOpGadget, allowing us to perform the same analysis described at the end of \S~\ref{sec:Dynamical Equilibrium of Stellar Systems}. This procedure provides a physically motivated initial condition $(a_0,e_0)$ for the subsequent binary evolution, directly determined from the final KETJU state. Moreover, it allows us to derive the main quantities at the influence radius required by the hybrid model from the actual stellar background of the merger remnant. Overall, this approach combines the complementary strengths of the two methods: KETJU captures the dynamics of the galaxy merger and the subsequent hardening of the binary through stellar scattering, while the hybrid model can then be used to evolve the binary from a physically constrained stellar background and a initial condition.\\The numerical integration is stopped at the physical time $t_{snap} = 18.75\,\mathrm{TU} \simeq 18\,\mathrm{Myr}$. Figure~\ref{Double_NGC205_NSC_BH_snap_scatter} shows the state of the system in its centre-of-mass reference frame $S_{CM}$ at the time of the final snapshot.
 
 \begin{figure}[H]
     \centering
     \begin{subfigure}{0.49\linewidth}
         \centering
         \includegraphics[width=\linewidth,height=5.5cm]{Double_NGC205_NSC_BH_snap_scatter.png}
-        \caption{Comparison between the reconstructed mass density profiles of the NGC 205 NSC $N$-body realization at the beginning (blue dashed line) and at the end (orange dashed line) of the simulation.
+        \caption{Positions of the initialized NSC stars (blue and red dots) and IMBHs (black dots) in the center-of-mass frame $S_{CM}$ at time $t_{snap}=18.75\,\mathrm{TU}$.
 }
         \label{fig:Double_NGC205_NSC_BH_snap_scatter}
     \end{subfigure}
@@ -2579,11 +2579,11 @@ To follow the complete dynamical evolution of the IMBH binary, from the merger o
     \begin{subfigure}{0.49\linewidth}
         \centering
         \includegraphics[width=\linewidth,height=5.5cm]{Double_NGC205_NSC_BH_snap_BH_zoom.png}
-        \caption{Comparison between the reconstructed cumulative mass profiles of the NGC 205 NSC $N$-body realization at the beginning (blue dashed line) and at the end (orange dashed line) of the simulation.}
+        \caption{Zoom-in on the IMBH binary shown in Figure \ref{fig:Double_NGC205_NSC_BH_snap_scatter}. The dashed circle marks the KETJU regularized region at time $t_{snap}=18.75\,\mathrm{TU}$.
+}
         \label{fig:Double_NGC205_NSC_BH_snap_BH_zoom}
     \end{subfigure}
-    \caption{Comparison between the reconstructed mass density (left) and cumulative mass (right) profiles of the NGC 205 NSC $N$-body realization at the beginning and end of the simulation.
-}
+    \caption{Positions of the two NSCs and their IMBH binary at $t_{snap}=18.75\,\mathrm{TU}$ in the center-of-mass frame $S_{CM}$, with a zoom-in on the KETJU regularized region shown on the right. }
     \label{fig:Double_NGC205_NSC_BH_snap}
 \end{figure}
 The two original stellar components appear to be well mixed, forming a more compact central core surrounded by diffuse outskirts, while the IMBH binary is located close to the centre of mass of the stellar distribution.\\From this configuration, the radial, i.e. angle-averaged, stellar density and cumulative mass profiles are derived using OpOpGadget, as shown in Figure~\ref{fig:Double_NGC205_snap_density_mass_profiles}(a) and (b), respectively.
@@ -2592,19 +2592,17 @@ The two original stellar components appear to be well mixed, forming a more comp
     \begin{subfigure}{0.49\linewidth}
         \centering
         \includegraphics[width=\linewidth,height=5.5cm]{Double_NGC205_snap_density_profile.png}
-        \caption{Comparison between the reconstructed mass density profiles of the NGC 205 NSC $N$-body realization at the beginning (blue dashed line) and at the end (orange dashed line) of the simulation.
-}
-        \label{fig:Double_NGC205_snap_mass_profile}
+        \caption{Reconstructed radial stellar density profile of the remnant stellar system at $t_{snap}=18.75,\mathrm{TU}$. The centre of the distribution was determined using the shrinking-spheres method (see, e.g., \citealt{Power_2003}). The black dot marks the influence radius of the IMBH binary.}
+        \label{fig:Double_NGC205_snap_density_profile}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.49\linewidth}
         \centering
         \includegraphics[width=\linewidth,height=5.5cm]{Double_NGC205_snap_mass_profile.png}
-        \caption{Comparison between the reconstructed cumulative mass profiles of the NGC 205 NSC $N$-body realization at the beginning (blue dashed line) and at the end (orange dashed line) of the simulation.}
+        \caption{}
         \label{fig:Double_NGC205_snap_mass_profile}
     \end{subfigure}
-    \caption{Comparison between the reconstructed mass density (left) and cumulative mass (right) profiles of the NGC 205 NSC $N$-body realization at the beginning and end of the simulation.
-}
+    \caption{Reconstructed cumulative mass profile of the remnant stellar system at $t_{snap}=18.75,\mathrm{TU}$. The black horizontal dashed and dot-dashed lines mark twice the stellar mass and the binary mass, respectively, while the black vertical dotted line marks the binary influence radius, $r_{\mathrm{inf}}$.}
     \label{fig:Double_NGC205_snap_density_mass_profiles}
 \end{figure}
 Yet, imposing $M_*(<r_{inf})=2M_{12}$ yields an influence radius of $r_{inf} = 1.44\,\mathrm{pc}$ for the system at the time of the snapshot. This value is then used to compute the corresponding stellar mass density, which is given by
