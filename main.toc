@@ -3,28 +3,35 @@
 \contentsline {paragraph}{Pop III.}{4}{chapter*.1}%
 \contentsline {paragraph}{Directe collapse.}{4}{chapter*.1}%
 \contentsline {paragraph}{Gravitational runaway.}{4}{chapter*.1}%
-\contentsline {chapter}{\numberline {1}Physical Mechanisms of Binary Hardening}{8}{chapter.1}%
+\contentsline {chapter}{\numberline {1}Physical Mechanisms of Black-Hole Binaries Hardening}{8}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Galaxy Merging and Violent Relaxation}{9}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Two-Body Relaxation and Dynamical Friction}{13}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Black Hole Binary–Star Three-Body Scattering}{18}{section.1.3}%
-\contentsline {paragraph}{Binary hardening.}{19}{equation.1.3.62}%
-\contentsline {paragraph}{Binary softening.}{20}{equation.1.3.63}%
-\contentsline {section}{\numberline {1.4}Stellar Scattering and Loss Cone Problem}{20}{section.1.4}%
-\contentsline {paragraph}{Empty Loss Cone.}{22}{equation.1.4.71}%
-\contentsline {paragraph}{Full Loss Cone.}{22}{equation.1.4.71}%
+\contentsline {paragraph}{Binary hardening.}{19}{equation.1.3.60}%
+\contentsline {paragraph}{Binary softening.}{20}{equation.1.3.61}%
+\contentsline {section}{\numberline {1.4}Loss Cone Problem}{20}{section.1.4}%
+\contentsline {paragraph}{Empty Loss Cone.}{22}{equation.1.4.69}%
+\contentsline {paragraph}{Full Loss Cone.}{22}{equation.1.4.69}%
 \contentsline {section}{\numberline {1.5}Gravitational Radiation from Black Hole Binaries}{25}{section.1.5}%
 \contentsline {subsection}{\numberline {1.5.1}Linearized Gravitational Field Equation}{25}{subsection.1.5.1}%
 \contentsline {subsection}{\numberline {1.5.2}Generation and Propagation of Gravitational Waves}{27}{subsection.1.5.2}%
 \contentsline {subsection}{\numberline {1.5.3}Gravitational Waves from Black Hole Binaries and Back-Reaction}{29}{subsection.1.5.3}%
-\contentsline {chapter}{\numberline {2}A Hybrid Approach to IMBH Binary Evolution}{33}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Quinlan-Sesana Hybrid Model}{34}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Stellar Cusps IMBH Binary Evolution}{40}{section.2.2}%
-\contentsline {section}{\numberline {2.3}NGC 205 IMBH Binary evolution}{46}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Cosmic Size Evolution Down to NGC 205}{51}{section.2.4}%
-\contentsline {chapter}{\numberline {3}IMBH Binary Evolution with KETJU N-Body Simulations}{60}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Dynamical Equilibrium of Stellar Systems}{61}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Equilibrium Theory of Stellar Systems}{61}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Generation of N-Body ICs with OpOpGadget}{64}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Dynamical Evolution with KETJU}{69}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}IMBH Binary Evolution with KETJU High-Resolution Simulations of NSCs Merger}{72}{section.3.2}%
-\contentsline {section}{\numberline {3.3}KETJU IMBH Binary evolution from Parabolic Encounters of Stellar Clumps}{82}{section.3.3}%
+\contentsline {chapter}{\numberline {2}A Hybrid Approach to Black-Hole Binaries Evolution}{34}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Quinlan-Sesana Hybrid Model Framework}{35}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Evolution of an IMBH Binary in a Family of Stellar Cusp Profiles}{41}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Evolution of an IMBH Binary in a NGC 205-Like Stellar Background}{47}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Evolution of an IMBH Binary in a Non-Nucleated Present-Day Dwarf Galaxy}{52}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Evolution of an IMBH Binary in a Family of Non-Nucleated High-Redshift Galaxies }{54}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Evolution of IMBH Binaries with KETJU N-Body Simulations}{63}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Dynamical Equilibrium of Isotropic and Spherically Symmetric Stellar Systems}{64}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Equilibrium Theory of Stellar Systems}{64}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Generation of N-Body Initial Conditions with OpOpGadget}{67}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Testing the Dynamical Equilibrium of OpOpGadget Initial Conditions with KETJU}{72}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Evolution of an IMBH Binary in High-Resolution KETJU Simulation of Merging NSCs}{75}{section.3.2}%
+\contentsline {section}{\numberline {3.3}KETJU IMBH Binary evolution from Parabolic Encounters of Stellar Clumps}{84}{section.3.3}%
+\contentsline {chapter}{Discussion and Conclusions}{86}{chapter*.44}%
+\contentsline {paragraph}{Future perspectives.}{87}{Item.23}%
+\contentsline {paragraph}{Exploring the parameter space.}{88}{Item.23}%
+\contentsline {paragraph}{Reconstruction of the GW signal.}{88}{Item.23}%
+\contentsline {paragraph}{NSC and IMBH formation via collision runaway.}{88}{Item.23}%
+\contentsline {paragraph}{From galaxy mergers to the IMBH merger rate.}{88}{Item.23}%
