@@ -668,20 +668,17 @@
     \entry{Binney_book}{book}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=7cb5734fc29a879adeda19d8fde85fc6}{%
-           family={Binney},
+           family={{Binney}},
            familyi={B\bibinitperiod},
            given={James},
            giveni={J\bibinitperiod},
            givenun=0}}%
         {{un=0,uniquepart=base,hash=1eb728ea8648b5eaf5ef61846f262239}{%
-           family={Tremaine},
+           family={{Tremaine}},
            familyi={T\bibinitperiod},
            given={Scott},
            giveni={S\bibinitperiod},
            givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Princeton university press}%
       }
       \strng{namehash}{e5912b094b9fa1213446f34603bd2f7e}
       \strng{fullhash}{e5912b094b9fa1213446f34603bd2f7e}
@@ -695,8 +692,8 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Galactic dynamics}
-      \field{year}{2011}
+      \field{title}{{Galactic Dynamics: Second Edition}}
+      \field{year}{2008}
     \endentry
     \entry{Blanchet_2014}{article}{}
       \name{author}{1}{}{%
@@ -737,47 +734,6 @@
       \verb 1310.1528
       \endverb
       \keyw{Gravitational radiation,Post-Newtonian approximations,Multipolar expansion,Inspiralling compact binary,General Relativity and Quantum Cosmology}
-    \endentry
-    \entry{Boltzmann_1896}{book}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=d345badf12911d8a2f21134f397de102}{%
-           family={Boltzmann},
-           familyi={B\bibinitperiod},
-           given={Ludwig},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-      }
-      \name{translator}{1}{}{%
-        {{hash=7132abe0224772aa222bafd7058a46b7}{%
-           family={Brush},
-           familyi={B\bibinitperiod},
-           given={Stephen\bibnamedelima G.},
-           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {New York}%
-      }
-      \list{publisher}{1}{%
-        {Dover Publications}%
-      }
-      \strng{namehash}{d345badf12911d8a2f21134f397de102}
-      \strng{fullhash}{d345badf12911d8a2f21134f397de102}
-      \strng{bibnamehash}{d345badf12911d8a2f21134f397de102}
-      \strng{authorbibnamehash}{d345badf12911d8a2f21134f397de102}
-      \strng{authornamehash}{d345badf12911d8a2f21134f397de102}
-      \strng{authorfullhash}{d345badf12911d8a2f21134f397de102}
-      \strng{translatorbibnamehash}{7132abe0224772aa222bafd7058a46b7}
-      \strng{translatornamehash}{7132abe0224772aa222bafd7058a46b7}
-      \strng{translatorfullhash}{7132abe0224772aa222bafd7058a46b7}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Originally published in German as \emph{Vorlesungen über Gastheorie}, 1896--1898}
-      \field{title}{Lectures on Gas Theory}
-      \field{year}{1995}
     \endentry
     \entry{Bradac_2025}{article}{}
       \name{author}{23}{}{%
@@ -5289,49 +5245,6 @@
       \verb 1807.06209
       \endverb
       \keyw{cosmic background radiation,cosmological parameters,Astrophysics - Cosmology and Nongalactic Astrophysics}
-    \endentry
-    \entry{Plummer_1911}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=d99eba6319a166f1c081be055ddd8d22}{%
-           family={Plummer},
-           familyi={P\bibinitperiod},
-           given={H.\bibnamedelimi C.},
-           giveni={H\bibinitperiod\bibinitdelim C\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{d99eba6319a166f1c081be055ddd8d22}
-      \strng{fullhash}{d99eba6319a166f1c081be055ddd8d22}
-      \strng{bibnamehash}{d99eba6319a166f1c081be055ddd8d22}
-      \strng{authorbibnamehash}{d99eba6319a166f1c081be055ddd8d22}
-      \strng{authornamehash}{d99eba6319a166f1c081be055ddd8d22}
-      \strng{authorfullhash}{d99eba6319a166f1c081be055ddd8d22}
-      \field{sortinit}{P}
-      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{0035-8711}
-      \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
-      \field{month}{03}
-      \field{number}{5}
-      \field{title}{On the Problem of Distribution in Globular Star Clusters: (Plate 8.)}
-      \field{volume}{71}
-      \field{year}{1911}
-      \field{pages}{460\bibrangedash 470}
-      \range{pages}{11}
-      \verb{doi}
-      \verb 10.1093/mnras/71.5.460
-      \endverb
-      \verb{eprint}
-      \verb https://academic.oup.com/mnras/article-pdf/71/5/460/2937497/mnras71-0460.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1093/mnras/71.5.460
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1093/mnras/71.5.460
-      \endverb
     \endentry
     \entry{Power_2003}{article}{}
       \name{author}{8}{}{%

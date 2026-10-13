@@ -174,7 +174,15 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% border issues
+% Reading Unibo Frontespizio
+
+\usepackage{pdfpages}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
@@ -184,23 +192,27 @@
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\includeonly{Chapter_1}
-
-%\includeonly{Chapter_2}
-
-%\includeonly{Chapter_3}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
 
 
 \begin{document}
+
+
+
+
+
+\includepdf[pages=1-2]{Frontespizio.pdf}
+
+
+
+
+
+
+
+
 
 
 
@@ -1946,7 +1958,7 @@ It is worth noting that the parameters $a_{0,H}$ and $a_{0,K}$ entering the para
     \begin{subfigure}{0.32\linewidth}
         \centering
         \includegraphics[width=\linewidth]{Galaxies_K_vs_e.png}
-        \caption{Dimensionless eccentricity growth rate $K_u(a,e)$, at fixed $a=10$ PC, of a representative subsample of galaxy models at $z=(0,2,4,6,8,10,12)$ (solid blue, orange, green, red, violet, brown, and pink lines, respectively). The boundary conditions $K_u(a,0)=K_u(a,1)=0$ have been included. }
+        \caption{Dimensionless eccentricity growth rate $K_u(a,e)$, at fixed $a=10$ pc, of a representative subsample of galaxy models at $z=(0,2,4,6,8,10,12)$ (solid blue, orange, green, red, violet, brown, and pink lines, respectively). The boundary conditions $K_u(a,0)=K_u(a,1)=0$ have been included. }
         \label{Galaxies_K_vs_e}
     \end{subfigure}
     \caption{Dimensionless stellar hardening and eccentricity growth rates for a representative subsample of galaxy models at $z=(0,2,4,6,8,10,12)$. Panels (a), (b), and (c) show $H_u(a)$, $K_u(a,0.5)$, and $K_u(10\,\mathrm{pc},e)$, respectively.
@@ -2050,7 +2062,7 @@ Adopting the cosmological parameters from \textcite{PLANK_2020}, namely $H_0=67.
 
 
 
-Figures~\ref{Galaxies_t_univ_coal} and \ref{} show how the cosmic time and redshift of coalescence, respectively, depend on the binary pairing redshift and initial eccentricity, highlighting the combinations of these parameters for which coalescence occurs within the present age of the Universe ($t_H\approx13.8,\mathrm{Gyr}$) and before the present epoch ($z=0$).
+Figures~\ref{Galaxies_t_univ_coal} and \ref{Galaxies_z_coal} show how the cosmic time and redshift of coalescence, respectively, depend on the binary pairing redshift and initial eccentricity, highlighting the combinations of these parameters for which coalescence occurs within the present age of the Universe ($t_H\approx13.8,\mathrm{Gyr}$) and before the present epoch ($z=0$).
 
 
 
@@ -2065,7 +2077,13 @@ Figures~\ref{Galaxies_t_univ_coal} and \ref{} show how the cosmic time and redsh
 
 
 
-!!!!!!!!!!FIGURE AND ONE REF ABOVE!!!!!!!!!!
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{Galaxies_z_coal.png}
+    \caption{Redshift of IMBH binary coalescence as a function of the redshift at binary formation for the 125 simulations. The solid blue, orange, green, red, and violet lines connect the points corresponding to $e_0=(0.1,0.3,0.5,0.7,0.9)$, respectively, across the sampled redshifts. The black dashed line marks the bisector of the first quadrant.}
+    \label{Galaxies_z_coal}
+\end{figure}
 
 
 
@@ -2104,6 +2122,12 @@ The results obtained in this chapter motivate the next step of our investigation
 
 
 
+
+
+
+
+
+
 \chapter{Evolution of IMBH Binaries with KETJU N-Body Simulations}\label{chap:chapter3}
 
 
@@ -2113,7 +2137,7 @@ The results obtained in this chapter motivate the next step of our investigation
 \begin{center}
 \begin{minipage}{0.65\textwidth}
 \centering
-\textit{The numerical experiments based on the Quinlan-Sesana hybrid model, presented in Chapter~\ref{chap:chapter2}, have shown that, once an IMBH binary forms, its coalescence can occur within a Hubble time even in non-nucleated, high-redshift galaxies. These results motivate a further investigation through self-consistent, direct $N$-body simulations, which allow the dynamical evolution of the stellar system and the black holes to be followed from the stages preceding binary formation through the subsequent evolution of the binary. This approach also makes it possible to relax some of the simplifying assumptions adopted in the hybrid model, in particular the assumption of a fully populated loss cone and the evolution within a fixed, spherically symmetric stellar background. In this context, KETJU provides a particularly suitable framework, as the interactions between the black holes and surrounding stars are resolved without gravitational softening.\\The chapter is structured as follows. Section 1 introduces the equilibrium theory of $N$-body systems and the procedure used to construct equilibrium initial conditions with OpOpGadget. Section 2 presents the results of high-resolution, direct $N$-body simulations of mergers between two identical systems, each consisting of an NGC 205-like stellar bulge hosting an IMBH. The final section explores a suite of numerical experiments designed to assess how the dynamical path toward binary coalescence is affected by the initial angular momentum of the merging systems.
+\textit{The numerical experiments based on the Quinlan-Sesana hybrid model, presented in Chapter~\ref{chap:chapter2}, have shown that, once an IMBH binary forms, its coalescence can occur within a Hubble time even in non-nucleated, high-redshift galaxies. These results motivate a further investigation through self-consistent, $N$-body simulations, which allow the dynamical evolution of the stellar system and the black holes to be followed from the stages preceding binary formation through the subsequent evolution of the binary. This approach also makes it possible to relax some of the simplifying assumptions adopted in the hybrid model, in particular the assumption of a fully populated loss cone and the evolution within a fixed, spherically symmetric stellar background. In this context, the $N$-body code KETJU provides a particularly suitable framework, as the interactions between the black holes and surrounding stars are resolved without gravitational softening.\\The chapter is structured as follows. Section 1 introduces the equilibrium theory of $N$-body systems and the procedure used to construct equilibrium initial conditions with the software OpOpGadget. Section 2 presents the results of high-resolution, $N$-body simulations of mergers between two identical systems, each consisting of an NGC 205-like nuclear star cluster hosting an IMBH. The final section presents a suite of $N$-body simulations investigating how the initial orbital angular momentum of encounters between two high-redshift stellar clumps, each hosting a central IMBH, influences the subsequent dynamical evolution of the black-hole binary, from the pairing and to the final coalescence.
 }
 \end{minipage}
 \end{center}
@@ -2139,7 +2163,7 @@ The results obtained in this chapter motivate the next step of our investigation
 \section{Dynamical Equilibrium of Isotropic and Spherically Symmetric Stellar Systems}
 \label{sec:Dynamical Equilibrium of Stellar Systems}
 
-This Section, the first of the final chapter, has two main purposes. First, it reviews the equilibrium theory of spherically symmetric, isotropic, collisionless stellar systems. Second, it introduces the main features of OpOpGadget, the numerical code used to generate the $N$-body initial conditions adopted in this thesis.\\The Section is therefore divided into two Subsections. The former summarizes the fundamental equations governing collisionless stellar systems, including the collisionless Boltzmann equation, the Jeans equations, and the Eddington inversion formula. The latter focuses on the numerical aspects of OpOpGadget, describing the algorithm used by the code to generate $N$-body initial conditions and the analysis tools it provides.
+This Section has two main purposes. First, it reviews the equilibrium theory of spherically symmetric, isotropic, collisionless stellar systems. Second, it introduces the main features of OpOpGadget, the software used to generate the $N$-body initial conditions adopted in this thesis.\\The section is divided into three subsections. The first outlines the fundamental equations governing collisionless stellar systems, including the collisionless Boltzmann equation, the Jeans equations, and the Eddington inversion formula. The second describes the numerical methods implemented in OpOpGadget, focusing on the algorithm used to generate $N$-body initial conditions and the analysis tools provided by the code. The final subsection presents the analysis carried out to assess the dynamical equilibrium of the OpOpGadget initial conditions when evolved with the $N$-body code KETJU.
 
 
 
@@ -2147,12 +2171,12 @@ This Section, the first of the final chapter, has two main purposes. First, it r
 
 \subsection{Equilibrium Theory of Stellar Systems}
 
-The first step towards performing $N$-body experiments of merging stellar systems hosting IMBHs is the generation of reliable $N$-body initial conditions that capture the main properties of the system in isolation, when at equilibrium, and reproduce its relevant observables, such as the density profile and stellar velocity dispersion, consistently with those of the corresponding idealized model. This, in turn, requires a well-defined framework for describing the dynamical state of the system.\\As discussed in \S~\ref{sec:Two-Body Relaxation and Dynamical Friction}, provided that the stellar system is considered on timescales shorter than its two-body relaxation time $t_{2b}$, collisional effects are negligible, and the stars can be treated as collisionless particles moving in a smooth gravitational potential generated by a continuous mass density distribution $\rho$, smooth proxy of the actual stellar distribution. In this regime, when dealing with stars that are all identical to one another, the dynamical state of the stellar component can be described by a unique one-particle distribution function (DF) $f(\mathbf{x},\mathbf{v},t)$ of phase space (PhS), while the corresponding gravitational potential $\Phi(\mathbf{x})$ is self-consistently determined by the mass distribution $\rho(\mathbf{x})$ through the Poisson equation
+The first step towards performing $N$-body experiments of merging stellar systems hosting IMBHs is the generation of reliable $N$-body initial conditions that capture the main properties of the system in isolation, when at equilibrium, and reproduce its relevant observables, such as the density profile and stellar velocity dispersion, consistently with those of the corresponding idealized model. This, in turn, requires a well-defined framework for describing the dynamical state of the system.\\As discussed in \S~\ref{sec:Two-Body Relaxation and Dynamical Friction}, provided that the stellar system is considered on timescales shorter than its two-body relaxation time $t_{2b}$, collisional effects are negligible, and the stars can be treated as collisionless particles moving in a smooth gravitational potential generated by a continuous mass density distribution $\rho(\mathbf{x},t)$, smooth proxy of the actual stellar distribution. In this regime, when dealing with stars that are all identical to one another, the dynamical state of the stellar component can be described by a unique one-particle distribution function (DF) $f(\mathbf{x},\mathbf{v},t)$ of phase-space (PhS), while the corresponding gravitational potential $\Phi(\mathbf{x},t)$ is self-consistently determined by the mass distribution $\rho(\mathbf{x},t)$ through the Poisson equation
 \begin{equation}
 \label{Poisson equation}
- \nabla^2 \Phi(\mathbf{x})=4\pi G\rho(\mathbf{x}).
+ \nabla^2 \Phi(\mathbf{x},t)=4\pi G\rho(\mathbf{x},t).
 \end{equation}
-For collisionless systems of this type, the corresponding DFs satisfy the so-called collisionless Boltzmann equation (CBE), which follows from the normalization of the DF and, consequently, from the conservation of the integrated probability, as it will be proved \parencite{Boltzmann_1896}.\\Building on the discussion  in \S~\ref{sec:Two-Body Relaxation and Dynamical Friction}, we begin by introducing the normalized DF in phase space. If we indicate with $\mathbf{w}$ an arbitrary set of canonical PhS coordinates, the DF of a system with total mass $M$ can be set such that
+For collisionless systems of this type, the corresponding DFs satisfy the so-called collisionless Boltzmann equation (CBE), which follows from the normalization of the DF and, consequently, from the conservation of the integrated probability.\\Building on the discussion  in \S~\ref{sec:Two-Body Relaxation and Dynamical Friction}, we begin by introducing the normalized DF in phase space. If we indicate with $\mathbf{w}=(\mathbf{q},\mathbf{p})$ an arbitrary set of canonical PhS coordinates, the DF of a system with total mass $M$ can be normalized such that
 \begin{equation}\label{DF normalized}
 \int_{\mathbb{R}^6}d\mathbf{w}\, f(\mathbf{w})=M.
 \end{equation}
@@ -2177,7 +2201,7 @@ the square bracket indicates the Poisson bracket
 \right),
 \label{Poisson bracket}
 \end{equation}
-and $H$ is the Hamiltonian function of the system (see, e.g. \citealt{Binney_book}).\\The arbitrariness of the canonical coordinates $\mathbf{w}$ enables us to specialize Equation (\ref{CBE}) to the inertial Cartesian coordinates $(\mathbf{x},\mathbf{v})$. With this choice, the Hamiltonian per unit mass becomes
+and $H(\mathbf{q},\mathbf{p})$ is the Hamiltonian function of the system (see, e.g. \citealt{Binney_book}).\\The arbitrariness of the canonical coordinates $\mathbf{w}$ enables us to specialize Equation (\ref{CBE}) to the inertial Cartesian coordinates $(\mathbf{x},\mathbf{v})$. With this choice, the Hamiltonian per unit mass becomes
 \begin{equation}\label{Hamiltonian in cartesian coord.}
     H(\mathbf{x},\mathbf{v},t)=\frac{1}{2}v^2+\Phi(\mathbf{x},t)
 \end{equation}
@@ -2188,22 +2212,22 @@ and the Equation (\ref{CBE new}) turns into
     \frac{\partial \Phi}{\partial \mathbf{x}}
     \cdot \frac{\partial f}{\partial \mathbf{v}}=0.
 \end{equation}
-Equation (\ref{CBE in cartesian coord.}) gives the CBE for a collisionless system in Cartesian coordinates, valid on timescales shorter than the corresponding $t_{2b}$ and expresses the conservation of the phase-space probability density along the orbits generated by the potential $\Phi(\mathbf{x},t)$. However, it is too general for our purposes, as we are interested in studying the equilibrium of stellar systems, and in particular of spherically symmetric equilibrium models. It is therefore useful to introduce the following definition: a system composed of $N$ particles is said to be in equilibrium, or stationary, when any quantity $q(\mathbf{x},t)$ describing the system, including its distribution function (DF), is time-independent, such that $\partial q/\partial t=0$.\\Under this condition, the DF is time-independent and satisfies the so-called stationary CBE, which is obtained from Equation (\ref{CBE new}) by setting $\partial f/\partial t=0$:
+Equation (\ref{CBE in cartesian coord.}) gives the CBE for a collisionless system in Cartesian coordinates, valid on timescales shorter than the corresponding $t_{2b}$ and expresses the conservation of the phase-space probability density along the orbits generated by the potential $\Phi(\mathbf{x},t)$. However, it is too general for our purposes, as we are interested in studying the equilibrium of stellar systems, and in particular of spherically symmetric, equilibrium models. It is therefore useful to introduce the following definition: a system composed of $N$ particles is said to be in equilibrium, or stationary, when any quantity $q(\mathbf{x},t)$ describing the system, including its distribution function (DF), is time-independent, such that $\partial q/\partial t=0$. The DF of such systems satisfies the so-called stationary CBE
 \begin{equation}\label{Stationary CBE}
     \frac{Df}{Dt}=
     \mathbf{\dot{w}}\cdot \frac{\partial f}{\partial \mathbf{w}}=
-    [f,H]=0.
+    [f,H]=0,
 \end{equation}
-The solutions to Equation (\ref{Stationary CBE}) are referred to as integrals of motion \parencite{Ciotti_book}. Specifically, the function $I(\mathbf{x},\mathbf{v})$ is an integral of motion for the potential $\Phi(\mathbf{x},\mathbf{v})$ if it satisfies
+obtained from Equation (\ref{CBE new}) by setting $\partial f/\partial t=0$.\\The solutions to Equation (\ref{Stationary CBE}) are referred to as integrals of motion \parencite{Ciotti_book}. Specifically, the function $I(\mathbf{x},\mathbf{v})$ is an integral of motion for the potential $\Phi(\mathbf{x},\mathbf{v})$ if it satisfies
 \begin{equation}\label{Integral of motion def}
     \frac{D}{Dt}[I(\mathbf{x}(t),\mathbf{v}(t))]=0
 \end{equation}
-along any orbit of the potential $\Phi(\mathbf{x})$ and a relevant example is represented by the Hamiltonian itself of the system, provided
+along any orbit of the potential $\Phi(\mathbf{x})$ and a relevant example is represented by the Hamiltonian itself of the system, given that
 \begin{equation}
 \label{H as integral of motion}
  [H,H]=0.
 \end{equation}
-The comparison between Equation Equation (\ref{Stationary CBE}) and (\ref{Integral of motion def}) reveals that solving the steady-state CBE is equivalent to being an integral of motion; this leads to the formulation of the Jeans theorem (see, e.g., \citealt{Lynden-Bell_1962}; \citealt{Binney_book}).
+The comparison between Equation (\ref{Stationary CBE}) and (\ref{Integral of motion def}) reveals that solving the steady-state CBE is equivalent to being an integral of motion; this leads to the formulation of the Jeans theorem (see, e.g., \citealt{Lynden-Bell_1962}; \citealt{Binney_book}).
 \medskip
 
 \noindent\textbf{Jeans Theorem. --}
@@ -2234,7 +2258,7 @@ and
 \label{stellar momentum continuity eq}
  \frac{\partial \rho\overline{v_i}}{\partial t}+\frac{\partial \rho \overline{v_i}\overline{v_j}}{\partial x_j}=-\rho\frac{\partial \Phi}{\partial x_i}
 \end{equation}
-respectively, where the Einstein summation convention over repeated indices is adopted.\\Equations (\ref{stellar mass continuity eq}) and (\ref{stellar momentum continuity eq}) generalize the mass continuity and momentum equations commonly used in fluid dynamics to collisionless stellar systems. For a spherically symmetric system, Equation (\ref{stellar momentum continuity eq}) can be written in spherical coordinates $(r,\theta,\phi)$ as
+respectively, where the Einstein summation convention over repeated indices is adopted.\\Equations (\ref{stellar mass continuity eq}) and (\ref{stellar momentum continuity eq}) generalize the mass continuity and momentum equations commonly used in fluid dynamics to collisionless, stellar systems. For a spherically symmetric system, Equation (\ref{stellar momentum continuity eq}) can be written in the spherical coordinates system $(r,\theta,\phi)$  as
 \begin{equation}
 \label{jeans eq}
 \frac{d(\rho \sigma_r^2)}{dr}
@@ -2248,18 +2272,18 @@ where $\beta=1-\sigma_t^2/(2\sigma_r^2)$ quantifies the degree of velocity aniso
 \int_r^\infty ds\,
 \frac{G M(<s)}{s^2}\rho(s).
 \end{equation}
-We can now turn to the analysis of Equation (\ref{Stationary CBE}) and its solutions. To this end, we recall the main properties of an important subclass of equilibrium models, namely ergodic systems, which are the type of systems we aim to initialize in our numerical experiments.\\By definition, a system with Hamiltonian $H$ is described by an ergodic DF if the latter depends solely on the Hamiltonian, i.e. $f=f(H)$. It is worth noting that, according to Equation (\ref{H as integral of motion}), all stationary and collisionless systems admit $H$ as an integral of motion. Therefore, the Jeans theorem implies that the DF can, for these systems, be written as $f=f(H,I_2,\ldots,I_N)$, with the ergodic case representing a particular and highly restrictive subclass. A key property of ergodic systems follows from the first-order moments of the corresponding DF. In an inertial Cartesian frame.\\In the inertial Cartesian frame where stars move under the action of a steady-state potential $\Phi(\mathbf{x})$, the Hamiltonian of the system is an even function of $\mathbf{v}$, causing $\overline{v_x}(\mathbf{x})=\overline{v_y}(\mathbf{x})=\overline{v_z}(\mathbf{x})$ to vanish, owing to Equation (\ref{mean velocity of DF}). Similarly, the velocity-dispersion tensor can be shown to be isotropic, since an ergodic DF depends on the velocity only through $v^2$, that is
+We can now turn to the analysis of Equation (\ref{Stationary CBE}) and its solutions. To this end, we recall the main properties of an important subclass of equilibrium models, namely ergodic systems, which are the type of systems we aim to initialize in our numerical experiments.\\By definition, a system with Hamiltonian $H$ is described by an ergodic DF if the latter depends solely on the Hamiltonian, i.e. $f=f(H)$. It is worth noting that, according to Equation (\ref{H as integral of motion}), all stationary and collisionless systems admit $H$ as an integral of motion. Therefore, the Jeans theorem implies that the DF can, for these systems, be written as $f=f(H,I_2,\ldots,I_N)$, with the ergodic case representing a particular and highly restrictive subclass. A key property of ergodic systems follows from the first-order moments of the corresponding DF.\\In the inertial Cartesian frame where stars move under the action of a steady-state potential $\Phi(\mathbf{x})$, the Hamiltonian of the system is an even function of $\mathbf{v}$, causing $\overline{v_x}(\mathbf{x})=\overline{v_y}(\mathbf{x})=\overline{v_z}(\mathbf{x})$ to vanish, owing to Equation (\ref{mean velocity of DF}). Similarly, the velocity-dispersion tensor can be shown to be isotropic, since an ergodic DF depends on the velocity only through $v^2$, that is
 \begin{equation}
  \sigma_{ij}^2(\mathbf{x})=\sigma^2(\mathbf{x})=\delta_{ij}\frac{4\pi}{3\rho(\mathbf{x})}\int_{0}^{+\infty}dv\,f\left(\frac{1}{2}v^2+\Phi(\mathbf{x})\right)v^4.
 \end{equation}
 Therefore, any system described by an ergodic DF is necessarily isotropic.\\So far, we have focused on several theoretical aspects of $N$-body systems, with particular emphasis on their equilibrium properties, without yet discussing in detail how the DF is made. However, generating initial conditions (ICs) for equilibrium $N$-body models requires sampling the DF directly, rather than relying solely on its moments. For
- globally isotropic stellar systems, the DF can be recovered from the density profile $\rho$ through Eddington's inversion formula \parencite{Eddington_1916}, which provides the corresponding phase-space distribution in terms of the density and gravitational potential. It reads
+ globally isotropic stellar systems, the DF can be recovered from the density profile $\rho$ through Eddington's inversion formula \parencite{Eddington_1916}, which provides the corresponding PhS distribution in terms of the density and gravitational potential. It reads
 \begin{equation}\label{Eddington's formula}
 f(\varepsilon)=\frac{1}{\sqrt{8}\pi^2}\frac{d}{d\varepsilon}
 \int_{\varepsilon_t}^{\varepsilon}
 \frac{d\rho}{d\Psi}\frac{d\Psi}{\sqrt{\varepsilon-\Psi}},
 \end{equation}
-with $\varepsilon=-H$ and $\Psi=-\Phi$ being the relative energy and potential, respectively, and $\varepsilon_t$ the truncation energy of the system.\\The theoretical framework developed above allows us to turn a prescribed equilibrium density profile $\rho(r)$ into a self-consistent set of $N$-body initial conditions. In the following Subsection, we describe how this procedure is implemented for spherically symmetric, isotropic stellar systems, focusing in particular on the construction and sampling of the corresponding DF.
+with $\varepsilon=-H$ and $\Psi=-\Phi$ being the relative energy and potential, respectively, and $\varepsilon_t$ the truncation energy of the system.\\The theoretical framework developed above allows us to turn a prescribed equilibrium density profile $\rho(r)$ into a self-consistent set of $N$-body initial conditions. In the following Subsection, we describe how this procedure is implemented for spherically symmetric, isotropic stellar systems by means of the software OpOpGadget.
 
 
 
@@ -2281,71 +2305,31 @@ with $\varepsilon=-H$ and $\Psi=-\Phi$ being the relative energy and potential, 
 
 \subsection{Generation of N-Body Initial Conditions with OpOpGadget}
 \label{subsec:Generation of N-Body ICs with OpOpGadget}
-Having established the theoretical basis for describing dynamical equilibrium in stellar systems, we can now turn to the construction of $N$-body initial conditions. The goal is to generate a discrete stellar realization that consistently reproduces the prescribed total mass, density profile, and associated structural parameters, while satisfying the equilibrium conditions discussed above. For a given stellar distribution, stellar positions and velocities are generated by means of \href{https://github.com/giulianoiorio/OpOpGadget}{\texttt{OpOpGadget}} (see \citealt{Iorio_2019}). This numerical code provides a range of tools for generating $N$-body initial conditions and analyzing the outputs of $N$-body simulations. It also includes an extensive library of analytical models for spherically symmetric stellar systems, allowing canonical stellar profiles to be constructed from their specified structural parameters.\\The first step in the workflow initialization is to specify the desired model, assign the values of the parameters required by the library model, and choose the number of particles to represent the stellar environment. After that, the code proceeds with assigning a set of spherical coordinates $(r,\theta,\phi)$ to each particle by randomly picking the cumulative mass profile
+Having established the theoretical basis for describing dynamical equilibrium in stellar systems, we can now turn to the construction of $N$-body initial conditions. The goal is to generate a discrete realization of a given stellar system at equilibrium that consistently reproduces its features, while satisfying the equilibrium conditions discussed above. For a given stellar distribution, stellar positions and velocities are generated by means of \href{https://github.com/giulianoiorio/OpOpGadget}{\texttt{OpOpGadget}} (see \citealt{Iorio_2019}). This numerical code provides a range of tools for generating $N$-body initial conditions and analyzing the outputs of $N$-body simulations. It also includes an extensive library of analytical models for spherically symmetric stellar systems, allowing stellar systems with canonical profiles to be constructed from their specified structural parameters.\\The first step in the workflow initialization is to specify the desired model, assign the values of the parameters required by the library model, and choose the number of particles to represent the stellar system. After that, the code proceeds with assigning a set of spherical coordinates $(r,\theta,\phi)$ to each particle by randomly sampling the cumulative mass profile
 \begin{equation}\label{cumulative mass formula}
- M_*(<r)=4\pi\int_0^{r}dy\,y^2\rho(y)
+ M_*(<r)=4\pi\int_0^{r}dy\,y^2\rho(y),
 \end{equation}
-using the variable $u=np.random.uniform(M_{min}=0, M_{max}=M_, N)$.\\Since $M(<r)$ is a monotonically increasing function of radius, it can be inverted to obtain the corresponding radii, $r=M_*^{-1}(u)$, for the $N$ sampled values of $u$. Yet, two additional independent random variables, uniformly distributed in the intervals $[-1,1]$ and $[0,2\pi]$ respectively, are used to sample the direction cosine and the azimuthal angle, thereby obtaining $N$ sets of spherical coordinates $(r,\theta,\phi.)$, which are then transformed into Cartesian coordinates.\\While particle positions are drawn from the cumulative mass distribution, the velocity components are obtained by sampling the DF, assuming the gravitational potential $\Phi$ to be generated by the mass distribution associated with the previously initialized particles. Therefore, three random numbers $\mathbf{v}$, lying in the range $[-1,1]$, allow to temporary assign a normalized velocity to each particle, which will found to have the binding energy $\varepsilon=\Psi(1-v^2)$. Then, the Von Neumann rejection method is implemented and the normalized velocity is accepted if
+and stores the extracted mass in the variable $u=np.random.uniform(M_{min}=0, M_{max}=M_, N)$.\\Since $M(<r)$ is a monotonically increasing function of radius, it can be inverted to obtain the corresponding radius, $r=M_*^{-1}(u)$, for the $N$ sampled values. Yet, two additional independent random variables, uniformly distributed in the intervals $[-1,1]$ and $[0,2\pi]$ respectively, are used to sample the direction cosine and the azimuthal angle, thereby obtaining $N$ sets of spherical coordinates $(r,\theta,\phi.)$, which are then transformed into Cartesian coordinates.\\While particle positions are drawn from the cumulative mass distribution, the velocity components are obtained by sampling the DF, assuming the gravitational potential $\Phi$ to be generated by the mass distribution associated with the previously initialized particles. Therefore, three random numbers $\mathbf{v}$, lying in the range $[-1,1]$, allow to temporary assign a normalized velocity to each particle with binding energy $\varepsilon=\Psi(1-v^2)$. Then, the Von Neumann rejection method is implemented and the normalized velocity is accepted if
 \begin{equation}\label{Von Neumann rejection criterion}
  g\le \frac{f(\varepsilon)}{f(\varepsilon=\Psi)},
 \end{equation}
-where $g$ is another indipendent random number in $[0,1]$. If the inequality in Equation (\ref{Von Neumann rejection criterion}) is satisfied, the final velocity vector is obtained by multiplying the normalized vector by the factor $\sqrt{2\Psi}$. Once this procedure, which can be extended to multi-component stellar systems, is completed, each particle will have its own $ID$, mass $m=M_*/N$, position $\mathbf{x}$ and velocity $\mathbf{v}$ (see, e.g., \citealt{Aarseth_book}).\\All numerical experiments of merging between identical systems of stellar background and IMBH that will be presented in the next Sections, involve Sersic stellar distribution as described by \textcite{Prugniel_1997}. However, the Sersic analytic model implemented within OpOpGadget library takes as a reference \textcite{Neto_1999} de-projection
+where $g$ is another indipendent random number in $[0,1]$. If the inequality in Equation (\ref{Von Neumann rejection criterion}) is satisfied, the final velocity vector is obtained by multiplying the normalized vector by the factor $\sqrt{2\Psi}$. Once this procedure, which can be extended to multi-component stellar systems, is completed, each particle will have its own identification number ($ID$), mass $m=M_*/N$, position $\mathbf{x}$ and velocity $\mathbf{v}$ (see, e.g., \citealt{Aarseth_book}).\\All numerical experiments of merging between identical stellar systems with a central IMBH that will be presented in the next Sections involve Sersic stellar distribution as described by \textcite{Prugniel_1997}. However, the Sersic analytic model implemented within OpOpGadget library takes as a reference \textcite{Neto_1999} de-projection
 \begin{equation}\label{Sersic profile Neto}
     \rho(r)=\rho_0\left(\frac{r}{a}\right)^{-p}e^{-(r/a)^\nu},
 \end{equation}
-where $\nu=n^{-1}$ denotes the inverse of the Sérsic index, while $a$ is the Sérsic scale length, defined such that $\Sigma(a)=\Sigma_0$. These quantities are referred to as the primary parameters and the remaining structural parameters can be derived from them, so that the same density distribution may be equivalently described by different sets of parameters.\\This discrepancy  provides a useful opportunity to illustrate both how the parameters are consistently converted and, more importantly, how the numerical code constructs and analyses a multi-component, spherically symmetric stellar system in equilibrium. Therefore, here, we analyse the generated $N$-body initial conditions for the same model considered in \S~\ref{sec:NGC 205 IMBH Binary evolution}, consisting of the stellar bulge and nuclear star cluster (NSC) of NGC 205, together with the central IMBH binary.\\A consistent conversion between the primary parameters and the corresponding derived quantities is therefore required before generating $N$-body ICs. In particular, to convert from the scale length $a$ to the effective radius $R_{e}$, we adopt the following analytical approximation (\citealt{Neto_1999}):
+where $\nu=n^{-1}$ denotes the inverse of the Sérsic index, while $a$ is the Sérsic scale length, defined such that $\Sigma(a)=\Sigma_0$. These quantities are referred to as the primary parameters and the remaining structural parameters can be derived from them, so that the same density distribution may be equivalently described by different sets of parameters.\\To convert from the scale length $a$ to the effective radius $R_{e}$, we adopt the following analytical approximation (\citealt{Neto_1999}):
 \begin{equation}\label{Conversion between a and Reff}
     \ln{R_{e}/a}=\frac{0.6950-\ln{\nu}}{\nu}-0.1789.
 \end{equation}
-Particular attention should be paid to the fact that the stellar particles to be initialized are required to be in dynamical equilibrium within the combined gravitational potential of both stars and central black hole. The presence of such a massive and compact object is expected to modify the equilibrium configuration of the stellar system compared to the isolated case. Although the IMBH is represented by a single object and would therefore generate an exactly Keplerian potential, we model it as a Plummer sphere (see, e.g., \citealt{Plummer_1911}) to avoid fixing its position. According to this, the density, the cumulative mass profile and the gravitational potential for a BH of mass $M$ are
-\begin{equation}\label{Plummer density}
-\rho(r)=\frac{3M}{4\pi a^3}
-\left(1+\frac{r^2}{a^2}\right)^{-5/2},
-\end{equation}
-\begin{equation}\label{Plummer cumulative mass}
-M(<r)
-=
-M\frac{r^3}{\left(r^2+a^2\right)^{3/2}};
-\end{equation}
-and
-\begin{equation}\label{Plummer gravitational potential}
-\Phi(r)
-=
--\frac{GM}{\sqrt{r^2+a^2}},
-\end{equation}
-respectively, with $a$ denoting the Plummer scalelength, linked to the half-mass radius $r_{1/2}$ of the distribution by
-\begin{equation}\label{Plummer a to r_1/2 conversion}
-a
-\simeq
-0.766\,r_{1/2}.
-\end{equation}
-The gavitational potential in Equation (\ref{Plummer gravitational potential}) approaches the Keplerian form for $r\gg a$, making the Plummer model a convenient representation of BH-like particles.\\Once the structural parameters of the NGC 205 stellar bulge and NSC, namely $(R_e,n,M_*)$, and the numbers of particles used to represent them, $N_{\rm bulge}$ and $N_{\rm NSC}$, are specified, the model is naturally characterised by a gravitational softening length, or softening scale, $\epsilon$. This parameter sets the intrinsic spatial resolution of the $N$-body realisation, below which the system cannot be reliably resolved.
-Since this quantity can only be computed by OpOpGadget after generating the model ICs, the Plummer scale radius $a$ is set to the mean interparticle separation at the half-mass radius, $R_h$,
-\begin{equation}\label{mean intraparticle distance}
-\lambda=R_h\left(\frac{2}{N_h}\right)^{1/3},
-\end{equation}
-with $N_h$ denoting the number of stars within $R_h$,which provides an estimate of the system gravitational softening length prior to generating its ICs.\\OpOpGadget computes $\epsilon$ using the spline kernel of Gadget2 \parencite{Springel_2005}, which is the same adopted in our suite of $N$-body simulations with KETJU \parencite{Mannerkoski_2023}. The softening procedure replaces the mass density of a point-like particle, $\rho(r)=m\delta(r)$, with a normalized spline kernel
-\begin{equation}
-\label{softened mass distribution}
-    W(r,h)=\frac{8}{\pi h^3}
-    \begin{cases}
-        1-6q^2+6q^3,
-        & 0\leq q\leq \frac{1}{2},\\[6pt]
-        2(1-q)^3,
-        & \frac{1}{2}<q\leq 1,\\[6pt]
-        0,
-        & q>1,
-    \end{cases}
-\end{equation}
-with $q\equiv r/h$ and $h=2.8\epsilon$ setting the spline compact support, beyond which the gravitational potential reverts to the standard Newtonian form.\\The positions, velocities, masses and IDs of each particle are stored within the object \textbf{\emph{NbodyModel:}}, which can be then passed as argument of \textbf{\emph{Analysis():}}, provided of the following useful methods:
+Particular attention should be paid to the fact that the stellar particles to be initialized are required to be in dynamical equilibrium within the combined gravitational potential of both stars and central black hole. The presence of such a massive and compact object is expected to modify the equilibrium configuration of the stellar system compared to the isolated case. Therefore, the initial conditions must account for the gravitational contribution of all components. This is achieved by adopting a multi-component system comprising different components, which are at most in this thesis project: the stellar bulge, the nuclear star cluster and the central IMBH. Once the ICs of a reference, equilibrium system are generated, several methods and analysis tools with which OpOpGadget is equipped be applied. We list below the most relevant ones.\\The positions, velocities, masses and IDs of each particle are stored within the object \textbf{\emph{NbodyModel:}}, which can be then passed as argument of \textbf{\emph{Analysis():}}, provided of the following useful methods:
  \begin{enumerate}
  \item  \texttt{Analysis.com()}: it returns Cartesian position and velocity of the center of mass for the generated $N$-body ICs.
- \item \texttt{Analysis.softening\_scale(kernel=Gadget)}: it computes the system's softening length $\epsilon$, which is used in Equation (\ref{softened mass distribution}) and throughout KETJU $N$-body simulations employing softened gravity.
+ \item \texttt{Analysis.softening\_scale(kernel=Gadget)}: it computes the system's softening length $\epsilon$\footnote{The next subsection will examine in greater detail which softening length $\epsilon$ is computed with OpOpGadget and how its role in KETJU $N$-body experiments.}, to be used in KETJU $N$-body simulations employing softened gravity.
   \item \texttt{Analysis.tdyn(mq=50)}: It provides the dynamical time of the system as
 \begin{equation}
  T_{dyn}=0.5\pi\sqrt{\frac{R_h^3}{G M_h}},
 \end{equation}
-with $M_h$ being the mass inside $R_h$. This estimate has been adjusted to match the definition of the dynamical time at half mass radius adopted here, which is
+with $M_h$ being the mass inside the half-mass radius $R_h$. This estimate has been adjusted to match the definition of the dynamical time at half mass radius adopted here, which is
 \begin{equation}\label{dynamical time def}
 t_{dyn}=\frac{1}{\sqrt{G\bar{\rho}}},
 \end{equation}
@@ -2356,22 +2340,22 @@ Lastly, the \textbf{\emph{NbodyModel}} object can be passed to \textbf{\emph{Pro
 \item \texttt{Profile.dens()}: returns the radial grid and the corresponding density profile.
 \item \texttt{Profile.mass()}: returns the radial grid and the corresponding cumulative mass profile.
 \end{enumerate}
-As a reference case and standard procedure adopted throughout the numerical experiments presented in the following sections, we now describe the generation and analysis of the $N$-body ICs for the NGC 205 stellar bulge, NSC, and IMBH model introduced in \S~\ref{sec:NGC 205 IMBH Binary evolution}.\\First, the NGC 205 observational data reported in Table \ref{tab:NGC 205 structural parameters} are used to derive the Sersic scalelengths of the stellar bulge and NSC according to Equation (\ref{Conversion between a and Reff}). This yields $a_{bulge}=1456\,pc$ and $a_{NSC}=0.24\,pc$, respectively. Following the choice adopted by \textcite{Khan_2021}, we then set the number of particles used to initialize the stellar bulge and NSC, $N_{bulge}$ and $N_{NSC}$, such that the BH-to-stellar mass ratio is equal to 160. For an IMBH with mass $4\times 10^4,M_\odot$, this results in $N_{bulge}=3888000$ and $N_{NSC}=7200$ generated stellar particles. These values are then used to estimate the mean interparticle separation, leading to $\lambda=5.5\,pc$, which in turn determines the Plummer sphere softening length. Therefore, once the masses, Sersic scalelengths, and Sersic indices of the two stellar components are provided to the OpOpGadget Sersic models, together with the IMBH mass and softening length for the Plummer sphere model and the corresponding number of particles for each component, the initial conditions are generated by assessing positions, velocities, masses, and particle IDs to all particles.\\Figure \ref{NGC205_BH_scatter_plot} shows the spatial distribution of the stellar particles and the IMBH projected onto the \textit{x-y} plane, on both the scale of the stellar bulge and that of the NSC.
+As a reference case and standard procedure adopted throughout the numerical experiments presented in the following Sections, we now describe the generation and analysis of the $N$-body ICs for A NGC 205-like stellar distribution with a central IMBH, which is the same model considered in \S~\ref{sec:NGC 205 IMBH Binary evolution}.\\First, NGC 205 observational data reported in Table \ref{tab:NGC 205 structural parameters} are used to derive the Sersic scalelengths of the stellar bulge and NSC according to Equation (\ref{Conversion between a and Reff}). This yields $a_{bulge}=1456$ pc and $a_{NSC}=0.24$ pc, respectively. Then, following the choice adopted by \textcite{Khan_2021}, we set the number of particles used to initialize the stellar bulge and NSC, $N_{bulge}$ and $N_{NSC}$, such that the BH-to-stellar mass ratio is equal to 160. For an IMBH with mass $4\times 10^4\,M_\odot$, this results in $N_{bulge}=3888000$ and $N_{NSC}=7200$ generated stellar particles. Once the parameters rquired by OpOpGadget library are given for each component, along with the corresponding number of particles to initialize, the $N$-body ICs are generated by assessing positions, velocities, masses, and particle IDs to all particles.\\Figure \ref{NGC205_BH_scatter_plot} shows the spatial distribution of the stellar particles and the IMBH projected onto the \textit{x-y} plane, on both the scale of the stellar bulge and that of the NSC.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{NGC205_bulge_NSC_BH_scatter.png}
-    \caption{Positions of the $N$-body initial conditions for the NGC 205 stellar bulge, NSC, and hosted IMBH (blue, red, and black dots, respectively), projected onto the \textit{x-y} plane. The main panel shows the system on the stellar-bulge scale, while the inset provides a zoomed-in view of the NSC and IMBH.}
+    \caption{Positions of the $N$-body initial conditions for NGC 205 stellar bulge, NSC, and central IMBH (blue, red, and black dots, respectively), projected onto the \textit{x-y} plane. The main panel shows the system on the stellar-bulge scale, while the inset provides a zoomed-in view on the scale of the NSC.}
     \label{NGC205_BH_scatter_plot}
 \end{figure}
-Another way of visualizing the generated $N$-body ICs is provided in Figure \ref{NGC205_BH_hists}, which shows the three Cartesian components of the position and velocity of the particles in six histograms. As expected, all distributions are centred around $0\,kpc$ and $0\,km/s$, respectively. While the bulge and NSC stars exhibit similar velocity distributions, their spatial distributions differ markedly, with a pronounced central peak arising from the compactness of the NSC relative to the stellar bulge.
+Another way of visualizing the generated $N$-body ICs is provided in Figure \ref{NGC205_BH_hists}, which shows the three Cartesian components of the position and velocity of the particles in six histograms. As expected, all distributions are centred around $0$.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{NGC205_position_velocity_hist.png}
-    \caption{Histograms of the position and velocity distributions of the NGC 205, $N$-body generated, stellar bulge and NSC. Each row shows, on the left, the distribution of the $i$-th Cartesian component of the stellar positions and, on the right, the corresponding distribution of the $i$-th component of the stellar velocities. The position histograms span $[-2,2]\,kpc$ and are divided into 50 bins, each with a width of $\Delta x_i=80\, pc$, while the velocity histograms span $[-100,100]\, km/s$ and are divided into 50 bins, each with a width of $\Delta v_i =4\,km/s$.
+    \caption{Histograms of the position and velocity distributions of the $N$-body realization of NGC 205 stellar bulge and NSC. Each row shows, on the left, the distribution of the $i$-th Cartesian component of the stellar positions and, on the right, the corresponding distribution of the $i$-th component of the stellar velocities. The position histograms span $[-2,2]\,kpc$ and are divided into 50 bins, each with a width of $\Delta x_i=80\, pc$, while the velocity histograms span $[-100,100]\, km/s$ and are divided into 50 bins, each with a width of $\Delta v_i =4\,km/s$.
 }
     \label{NGC205_BH_hists}
 \end{figure}
-The $0$-th order moments of these six distributions, namely the system centre-of-mass position $x_{CM}$ and velocity $v_{CM}$, are obtained using the OpOpGadget \texttt{Analysis.com()} method, while the corresponding first-order moments, namely the position and velocity dispersions, are computed through Python coding. The analysis yields $x_{CM}=[0.34 \pm 626,\,-0.37 \pm 627,\,0.10 \pm 627]\,pc$ and $v_{CM}=[-0.0086 \pm 28.9281,\,-0.0065 \pm 28.9258,\,0.0243 \pm 28.8984]\,km/s$, compatible with a spherically symmetric and isotropic stellar distribution whose centre of mass is located at the origin of the distribution's inertial frame $S_{CM}$.\\Lastly, applying the \texttt{Profile.dens()} and \texttt{Profile.mass()} methods to the generated ICs provides the $N$-body representations of the stellar density and cumulative mass profiles of NGC 205. These profiles are shown in panels (a) and (b) of Figure \ref{fig:NGC205_analytic_vs_nbody}, respectively, together with the corresponding analytical models.\\Although the analytic and $N$-body models show good agreement, the finite number of stars used to construct the $N$-body ICs introduces numerical noise into the reconstructed distributions, in particular at small radii. This effect is quite evident in the mass density profile, whereas the cumulative mass profile is less affected.
+The $0$-th order moments of these six distributions, namely the system centre-of-mass position $x_{CM}$ and velocity $v_{CM}$, are obtained using the OpOpGadget \texttt{Analysis.com()} method, while the corresponding first-order moments, namely the position and velocity dispersions, are computed through Python coding. The analysis yields $x_{CM}=[0.34 \pm 626,\,-0.37 \pm 627,\,0.10 \pm 627]\,\mathrm{pc}$ and $v_{CM}=[-0.0086 \pm 28.9281,\,-0.0065 \pm 28.9258,\,0.0243 \pm 28.8984]\,\mathrm{km/s}$, compatible with a spherically symmetric and isotropic stellar distribution whose centre of mass is located at the origin of the distribution's inertial frame $S_{CM}$.\\Lastly, applying the \texttt{Profile.dens()} and \texttt{Profile.mass()} methods to the generated ICs provides the $N$-body representations of the stellar density and cumulative mass profiles of NGC 205. These profiles are shown in panels (a) and (b) of Figure \ref{fig:NGC205_analytic_vs_nbody}, respectively, together with the corresponding analytical models.
 \begin{figure}[H]
     \centering
     \begin{subfigure}{0.49\linewidth}
@@ -2388,7 +2372,7 @@ The $0$-th order moments of these six distributions, namely the system centre-of
         \caption{Comparison between the analytic stellar cumulative mass profile of NGC 205 (blue solid line), also shown in Figure \ref{NGC 205 mass profile}, and the corresponding profile reconstructed from the generated $N$-body initial conditions (orange solid line) using \texttt{Profile.mass()}.}
         \label{fig:NGC205_analytic_vs_nbody_mass}
     \end{subfigure}
-    \caption{Comparison between the analytic and reconstructed stellar density (left) and cumulative mass (right) profiles of NGC 205 from the $N$-body ICs generated by OpOpGadget.
+    \caption{Comparison between the analytic and reconstructed stellar density (left) and cumulative mass (right) profiles of NGC 205 from the $N$-body ICs generated with OpOpGadget.
 }
     \label{fig:NGC205_analytic_vs_nbody}
 \end{figure}
@@ -2410,19 +2394,31 @@ Before examining the results of our suite of numerical experiments, we conclude 
 
 
 
+
+
 \subsection{Testing the Dynamical Equilibrium of OpOpGadget Initial Conditions with KETJU}
-As anticipated, the numerical code employed in this thesis to simulate galaxy mergers and, consequently, the dynamical evolution of IMBH binaries is KETJU. Originally developed as an extension of GADGET-3, here we adopt KETJU publicly available version implemented in the  GADGET-4 code (see, e.g., \citealt{Springel_2021}; \citealt{Mannerkoski_2023}). Before assessing the stability of the equilibrium $N$-body initial conditions when evolved with KETJU, we briefly review the main features of GADGET-4 code and KETJU module, and describe the numerical setup adopted for our simulations.\\GADGET-4 is a highly parallelized $N$-body and hydrodynamical code that provides two methods for computing gravitational forces: the one-sided tree-based multipole expansion and the Fast Multipole Method (FMM). Unlike the tree-based approach, the FMM computes gravitational interactions symmetrically, thereby ensuring momentum conservation when combined with a suitable time-integration scheme. Besides, GADGET-4 provides two time-integration schemes: the leapfrog integrator and a hierarchical time-integration scheme based on a hierarchy of timebins. The former assigns to each particle with acceleration $\mathbf{a}$ an adaptive time step \parencite{Springel_2005},
+As anticipated, the numerical code employed in this thesis to simulate galaxy mergers and, consequently, the dynamical evolution of IMBH binaries is KETJU. Originally developed as an extension of GADGET-3, here we adopt KETJU publicly available version implemented in the  GADGET-4 code (see, e.g., \citealt{Springel_2021}; \citealt{Mannerkoski_2023}). Before assessing the equilibrium $N$-body initial conditions when evolved with KETJU, we briefly review the main features of GADGET-4 code and KETJU module, and describe the numerical setup adopted for our simulations.\\GADGET-4 is a highly parallelized $N$-body and hydrodynamical code that provides two methods for computing gravitational forces: the one-sided, tree-based, multipole expansion and the Fast Multipole Method (FMM). Unlike the tree-based approach, the FMM computes gravitational interactions symmetrically, thereby ensuring momentum conservation when combined with a suitable time-integration scheme. In this regard, GADGET-4 provides two time-integration schemes: the leapfrog integrator and a hierarchical time-integration scheme based on a hierarchy of timebins. The former assigns to each particle with acceleration $\mathbf{a}$ an adaptive time step \parencite{Springel_2005},
 \begin{equation}
 \Delta t=\sqrt{\frac{2\eta\epsilon}{|\mathbf{a}|}},
 \end{equation}
-where $\eta$ is a user-specified accuracy parameter. The latter instead relies on a decomposition of the Hamiltonian into fast and slow components, optimizing the time integration by identifying subsystems that evolve slowly or rapidly and integrating each of them on the appropriate timescale.\\The main improvement introduced by KETJU is the regularized \textsc{mstar} integrator \parencite{Rantala_2020}. By employing algorithmic regularization, this integrator treats BH--star interactions without gravitational softening when a star enters the corresponding regularized region. This allows KETJU to accurately resolve close encounters and, in particular, the dynamical interactions between BHs and surrounding stars at small separations (see, e.g., \citealt{Mikkola_1999a}; \citealt{Mikkola_1999b}). The regularized region surrounding each BH-like particle is required to extend beyond the support radius, $2.8\epsilon$, of the spline softening kernel introduced in \S~\ref{subsec:Generation of N-Body ICs with OpOpGadget}. This ensures that BH--star interactions are exactly Newtonian when the star is outside the regularized region. In all simulations presented in the following Sections, the physical radius of the regularized region is set to $3\epsilon$.\\When two regularized regions overlap, KETJU can additionally account for relativistic corrections by including Post-Newtonian (PN) terms up to 3.5PN order (see, e.g., \citealt{Thorne_1985}; \citealt{Blanchet_2014}). This treatment allows the evolution of a BH binary to be followed from the hardening phase to its final coalescence, defined by default to $12R_s$, where $R_s$ is the Schwarzschild radius corresponding to the total binary mass.\\Finally, we summarize the main numerical setup adopted throughout the experiments presented in the following Sections. The simulations are controlled through two sets of options: compile-time options, specified in the \textbf{\emph{Configuration file}}, and run-time options, specified in the \textbf{\emph{Parameter file}}. The main options adopted in each case are reported below.\\The main options enabled in the \textbf{\emph{Configuration file}} are:
+where $\eta$ is a user-specified accuracy parameter. The latter instead relies on a decomposition of the Hamiltonian into fast and slow components, optimizing the time integration by identifying subsystems that evolve slowly or rapidly and integrating each of them on the appropriate timescale.\\The main improvement introduced by KETJU is the regularized \textsc{mstar} integrator \parencite{Rantala_2020}. By employing algorithmic regularization, this integrator treats BH--star interactions without gravitational softening when a star enters the corresponding regularized region. This allows KETJU to accurately resolve close encounters and, in particular, the dynamical interactions between BHs and surrounding stars at small separations (see, e.g., \citealt{Mikkola_1999a}; \citealt{Mikkola_1999b}). The regularized region surrounding each BH-like particle is required to extend beyond the support radius $h\equiv2.8\epsilon$ of Gadget-2 spline kernel \parencite{Springel_2005}, beyond which the gravitational potential reverts to the standard Newtonian form. This softening procedure replaces the mass density of a point-like particle, $\rho(r)=m\delta(r)$, with the normalized spline kernel
+\begin{equation}
+\label{softened mass distribution}
+    W(r,h)=\frac{8}{\pi h^3}
+    \begin{cases}
+        1-6q^2+6q^3,
+        & 0\leq q\leq \frac{1}{2},\\[6pt]
+        2(1-q)^3,
+        & \frac{1}{2}<q\leq 1,\\[6pt]
+        0,
+        & q>1,
+    \end{cases}
+\end{equation}
+with $q\equiv r/h$.\\The quantity $\epsilon$, appearing in Equation (\ref{softened mass distribution}) through the parameter $q$, is the same provided by OpOpGadget through the method \texttt{Analysis.softening\_scale(kernel=Gadget)} mentioned above.\\The lower limit to the size of KETJU regularized regions ensures that BH--star interactions are exactly Newtonian when the star is outside the regularized region. In all simulations presented in the following Sections, the physical radius of the regularized region is set to $3\epsilon$.\\When two regularized regions overlap, KETJU can additionally account for relativistic corrections by including Post-Newtonian (PN) terms up to 3.5PN order (see, e.g., \citealt{Thorne_1985}; \citealt{Blanchet_2014}). This treatment allows the evolution of a BH binary to be followed from the hardening phase to its final coalescence, defined by default to happen when the separation is $12R_s$, whith $R_s$ being the Schwarzschild radius corresponding to the total binary mass.\\Finally, we summarize the main numerical setup adopted throughout the experiments presented in the following Sections. The simulations are controlled through two sets of options: compile-time options, specified in the \textbf{\emph{Configuration file}}, and run-time options, specified in the \textbf{\emph{Parameter file}}. The main options adopted in each case are reported below.\\The main options enabled in the \textbf{\emph{Configuration file}} are:
 \begin{itemize}
     \item \textit{HIERARCHICAL\_GRAVITY}: enables hierarchical time integration by
     splitting the Hamiltonian into fast and slow components. This scheme ensures
     momentum-conserving time integration.
-
-    \item \textit{SELFGRAVITY}: enables the computation of the self-gravity of the
-    system when gravitational forces are evaluated.
 
     \item \textit{FMM}: enables the Fast Multipole Method (FMM) for the computation
     of gravitational forces.
@@ -2454,7 +2450,7 @@ The main options specified in the \textbf{\emph{Parameter file}} are grouped in:
     specified by \texttt{KetjuOutputTimeRelativeTolerance} and set to
     $10^{-6}$.
 \end{itemize}
-Once the main KETJU features and the setup adopted for our numerical experiments have been described, we can assess whether an isolated $N$-body system generated in equilibrium remains in this configuration after several orbital periods of a typical star. Since the following sections will focus on high-resolution numerical experiments of merging stellar hosts, here we assess the stability of the system composed solely of the NGC 205 NSC and IMBH, as described in \S~\ref{sec:NGC 205 IMBH Binary evolution}. To this end, we let the system evolve for $50\times t_{dyn}$ with the \textit{KETJU} functionality enabled, and monitor the evolution of the stellar mass density and cumulative mass profiles, as well as the virial ratio $Q$, over this timescale.\\Keeping the same BH-to-stellar mass ratio of $160$ adopted in the previous Subsection, we initialize $N_{NSC}=7200$ NSC stars, whose density and cumulative mass profiles are shown in Figure \ref{fig:NGC205_NSC_BH_nbody_density_mass} and compared with their corresponding analytical models.
+Once the main KETJU features and the setup adopted for our numerical experiments have been described, we can assess whether an isolated $N$-body system generated in equilibrium remains in this configuration after several orbital periods of a typical star. To this end, here we report the evolution with KETJU of an isolated, $N$-body system composed solely of NGC 205-like NSC and IMBH, as described in \S~\ref{sec:NGC 205 IMBH Binary evolution}.\\We let the system evolve for $50\times t_{dyn}$ with the \textit{KETJU} functionality enabled, and monitor the evolution of the stellar mass density and cumulative mass profiles, as well as the virial ratio $Q$, over this timescale.\\Keeping the same BH-to-stellar mass ratio of $160$ adopted in the previous Subsection, we initialize $N_{NSC}=7200$ NSC stars, whose density and cumulative mass profiles are shown in Figure \ref{fig:NGC205_NSC_BH_nbody_density_mass} and compared with their corresponding analytical models.
 \begin{figure}[H]
     \centering
     \begin{subfigure}{0.49\linewidth}
@@ -2470,14 +2466,10 @@ Once the main KETJU features and the setup adopted for our numerical experiments
         \caption{Comparison between the analytic cumulative mass profile of NGC 205 NSC (blue solid line) and the corresponding profile reconstructed from the generated $N$-body initial conditions (orange dashed line) using \texttt{Profile.mass()}}
         \label{fig:NGC205_NSC_BH_nbody_mass}
     \end{subfigure}
-    \caption{Comparison between the analytic and reconstructed stellar density (left) and cumulative mass (right) profiles of NGC 205 NSC from the $N$-body ICs generated by OpOpGadget.}
+    \caption{Comparison between the analytic and reconstructed stellar density (left) and cumulative mass (right) profiles of our NGC 205-like NSC from the $N$-body ICs generated with OpOpGadget.}
     \label{fig:NGC205_NSC_BH_nbody_density_mass}
 \end{figure}
-As already discussed, although OpOpGadget constructs the system such that particle coordinates are defined in the inertial frame of the centre of mass, $S_{CM}$, a non-vanishing centre-of-mass velocity can arise from the discrete realization of the $N$-body system. This contribution must be accounted for when computing the virial ratio. In particular, while Equation (\ref{virial ratio in S_cm}) applies to the centre-of-mass frame, in an arbitrary inertial reference frame the virial ratio is more generally given by
-\begin{equation}
-Q=\frac{2(K-K_{CM})}{|W|},
-\end{equation}
-where $K_{CM}$ is the center of mass kinetic energy. Therefore, at the beginning of the simulation, we find $Q\approx1$, clearly indicating a dynamically equilibrated configuration, as widely discussed in \S~\ref{sec:Galaxy Mergers and Violent Relaxation}.\\The dynamical time evaluated at the half-mass radius of the initialized system is found to be $t_{dyn}=aaa$. The system is therefore evolved over the interval $[0,\texttt{TimeMax}]$, with $\texttt{TimeMax}\approx 50\times t_{dyn}=3.7\,TU$. Finally, analyzing the KETJU output allows us to reconstruct the same distributions shown in Figure \ref{fig:NGC205_NSC_BH_nbody_density_mass}, compare them with the corresponding initial profiles, and recompute the virial ratio. Applying the same procedure at the end of the simulation, we obtain $Q\approx1$. The evolution of the system is further assessed in Figure \ref{fig:NGC205_NSC_BH_nbody_density_mass_evolution}, where the initial and final mass density and cumulative mass profiles are compared.
+As already discussed, although OpOpGadget constructs the system such that particle coordinates are defined in the inertial frame of the centre of mass, $S_{CM}$, a non-vanishing centre-of-mass velocity can arise from the discrete realization of the $N$-body system. This contribution must be accounted for when computing the virial ratio, by subtracting the center of mass velocity to each particle velocity. Therefore, at the beginning of the simulation, we find $Q\approx1$, clearly indicating a dynamically equilibrated configuration, as widely discussed in \S~\ref{sec:Galaxy Mergers and Violent Relaxation}.\\The dynamical time evaluated at the half-mass radius of the initialized system is found to be $t_{dyn}= 0.072$ Myr. The system is therefore evolved over the interval $[0,\texttt{TimeMax}]$, with $\texttt{TimeMax}\approx 50\times t_{dyn}=3.7\,TU$. Finally, analyzing the KETJU output allows us to reconstruct the same distributions shown in Figure \ref{fig:NGC205_NSC_BH_nbody_density_mass}, compare them with the corresponding initial profiles, and recompute the virial ratio. Applying the same procedure at the end of the simulation, we obtain $Q\approx1$. The evolution of the system is further assessed in Figure \ref{fig:NGC205_NSC_BH_nbody_density_mass_evolution}, where the initial and final mass density and cumulative mass profiles are compared.
 \begin{figure}[H]
     \centering
     \begin{subfigure}{0.49\linewidth}
@@ -2494,7 +2486,7 @@ where $K_{CM}$ is the center of mass kinetic energy. Therefore, at the beginning
         \caption{Comparison between the reconstructed cumulative mass profiles of the NGC 205 NSC at the beginning (blue dashed line) and at the end (orange dashed line) of the simulation.}
         \label{fig:NGC205_NSC_BH_nbody_mass_evolution}
     \end{subfigure}
-    \caption{Comparison of the NGC 205 NSC $N$-body realization at the beginning and end of the simulation: mass density profiles (left) and cumulative mass profiles (right).}
+    \caption{Comparison of the NGC 205 NSC, $N$-body realization at the beginning and end of the simulation: mass density profiles (left) and cumulative mass profiles (right).}
     \label{fig:NGC205_NSC_BH_nbody_density_mass_evolution}
 \end{figure}
 In conclusion, as demonstrated by \textcite{Mannerkoski_2023}, activating the KETJU module preserves the ability of GADGET-4 to evolve initially at equilibrium systems without introducing spurious dynamical evolution of numerical origin. The analysis presented in this Section has allowed us to review the $N$-body theory, the main features of the numerical tools adopted in this thesis, establish the standard procedure used to generate and analyse the $N$-body initial conditions, and verify that the KETJU implementation is well suited to our purposes. In particular, the stability of the isolated system over several dynamical times provides a necessary validation of the high-resolution merger simulations, involving pairs of stellar host and IMBH, that will be presented in the following Sections.
@@ -2514,14 +2506,14 @@ In conclusion, as demonstrated by \textcite{Mannerkoski_2023}, activating the KE
 
 
 
-\section{Evolution of an IMBH Binary in High-Resolution KETJU Simulation of Merging NSCs}
+\section{Evolution of an IMBH Binary in an N-body Simulation of Merging NSCs}
 \label{sec:IMBH Binary Evolution with KETJU High-Resolution Simulations of NSCs Merger}
 
 In Chapter~\ref{chap:chapter2}, we presented the theoretical foundations of the self-consistent hybrid model developed by \textcite{Quinlan_1996} and \textcite{Sesana_2006}, together with a series of numerical experiments investigating the evolution of IMBH binaries within this framework. Although the model was originally formulated for a fixed, homogeneous, and isotropic stellar background, we also described the procedure introduced by \textcite{Sesana_2015} to extend its applicability to arbitrary mass density distributions. Its versatility and its ability to reproduce evolutionary tracks in good agreement with those obtained from analogous $N$-body simulations allowed us to obtain the first predictions on IMBH binaries separation and eccentricty evolution, while studying the role of the central stellar density, eccentricity at pairing and cosmic size evolution effects on the original stellar host. Nevertheless, the hybrid model remains subject to several limitations arising from its underlying assumptions. We now identify the most relevant ones, which we aim to overcome through the use of KETJU $N$-body simulations:
 \begin{itemize}
     \item \textbf{Artificial BH binary initialization.} The secondary BH is artificially introduced inside the stellar background of the primary BH:
     \begin{enumerate}
-        \item \textbf{Merging stellar hosts not included.} The model does not account for the fact that massive BH binaries are expected to form following the merger of their stellar hosts. Consequently, either one of the two progenitor galaxies is adopted as the reference stellar background, rather than the merger remnant, whose structural and dynamical properties may differ significantly from those of either progenitor.
+        \item \textbf{Merging stellar systems not included.} The model does not account for the fact that massive BH binaries are expected to form following the merger of their stellar systems. As a consequence, the structural and dynamical properties of the stellar background, i.e. the merger remnant, may differ significantly from those of either progenitor.
 
         \item \textbf{Unknown pre-binary evolution.}The model does not describe the dynamical evolution preceding the formation of the BH binary. As a result, the binary initial conditions $(a_0,e_0)$ must be prescribed as input parameters rather than being determined self-consistently from the preceding dynamical evolution. While this represents an advantage of the model, as it enables an efficient exploration of the $(a_0,e_0)$ parameter space, it also constitutes a limitation when the goal is to investigate how the binary initial configuration emerges from the dynamical processes leading to its formation.
 
@@ -2530,15 +2522,15 @@ In Chapter~\ref{chap:chapter2}, we presented the theoretical foundations of the 
 
     \item \textbf{Arbitrary loss-cone refilling parameter.} Besides the initial binary conditions $(a_0,e_0)$, the only free parameter controlling the evolution in the hybrid model is the loss-cone refilling parameter $LCN$, mentioned \S~\ref{sec:Loss Cone}. However, its value must be prescribed a priori, introducing an additional degree of arbitrariness into the model.
 
-    \item \textbf{Assumption of isotropy.} By construction, the model assumes an isotropic stellar background and is therefore not suited to describe systems with significant net rotation, such as galaxies or merger remnants retaining non-zero angular momentum.
+    \item \textbf{Assumption of isotropy.} By construction, the model assumes an isotropic stellar background and is therefore not suited to describe systems with significant net rotation or velocity anisotropy, which are instead expected for merger remnants.
 
     \item \textbf{Fixed stellar background.} Although Equation~(\ref{J Q96}) provides a prescription for computing the stellar mass ejection rate, the binary evolution is still reconstructed within a fixed stellar background. The model therefore does not self-consistently account for the dynamical response of the stellar system to the binary's evolution.
 \end{itemize}
-These assumptions, along with the limitations arising from them, can be overcome by adopting a fully self-consistent $N$-body treatment. We therefore present here a KETJU $N$-body experiment designed to follow the evolution of a head-on, parabolic encounter between two $N$-body realizations of the NGC~205 NSC (see Table~\ref{tab:NGC 205 structural parameters}), each hosting an IMBH of mass $m_1=m_2=4\times10^4,M_\odot$ at its center.\\For this numerical experiments it adopted a BH-to-stellar mass ratio of 160 (see \citealt{Khan_2021}), resulting $N_{NSC}=7200$ stars for each realization of NGC 205 NSC and a total of $N_{tot}=14400+2$ particles. Each model of NSC and IMBH has been generated independently of the other one by employing OpOpGadget, which assigns particles coordinates by assuming the center of symmetry to be placed at the origin with null velocity.\\Although both IMBHs are generated by means of the Plummer sphere model, with adopted scalelength the mean intraparticle distance $\lambda\approx 0.1\,pc$ at half mass radius $R_{half}=1.74\,pc$, they have been then artificially placed at coordinates $(\mathbf{x},\mathbf{v})=(\mathbf{0},\mathbf{0})$.\\The initial conditions adopted for this merger follow the approach of \textcite{Nipoti_2003}. The two NSCs, namely $NSC\,1$ and $NSC\,2$, are initially positioned such that the spheres enclosing $90\,\%$ of their stellar mass, with radius $r_{90}$, are tangent to each other, neglecting distortions induced by tidal forces. They are then assigned a relative velocity equal to that which two point masses, each with the corresponding NSC mass, would possess at a separation of $2r_{90}$ if they were initially at rest at infinite separation. To this end, the two particle sets are displaced in position by $\mp(r_{90},0,0)=\mp(5.07,0,0)\,\mathrm{pc}$ and assigned opposite velocity offsets, $\pm(v_{90},0,0)=\pm(27.94,0,0)\,km/s$, with $v_{90}$ defined by
+These assumptions, along with the limitations arising from them, can be overcome by adopting a fully self-consistent $N$-body treatment. We therefore present here a KETJU $N$-body experiment designed to follow the evolution of a head-on, parabolic encounter between two $N$-body realizations of the NGC~205-like NSC (see Table~\ref{tab:NGC 205 structural parameters}), each hosting an IMBH of mass $m_1=m_2=4\times10^4,M_\odot$ at its center\footnote{NSCs reside at galaxy centres, so more realistic simulations should also include the stellar bulge and dark matter. However, our simplified approach is justified when galaxy interactions bring the two NSCs into close proximity.}.\\For this numerical experiment we adopted a BH-to-stellar mass ratio of 160 (see \citealt{Khan_2021}), $N_{NSC}=7200$ stellar particles for each realization of NGC 205-like NSC, for a total of $N_{tot}=14400+2$ particles. Each model of NSC and IMBH has been generated by employing OpOpGadget, which assigns particles coordinates by assuming the center of symmetry to be placed at the origin with null velocity. The IMBHs are placed at coordinates $(\mathbf{x},\mathbf{v})=(\mathbf{0},\mathbf{0})$.\\The initial conditions adopted for this merger follow the approach of \textcite{Nipoti_2003}. The two NSCs, namely $NSC\,1$ and $NSC\,2$, are initially positioned such that the spheres enclosing $90\,\%$ of their stellar mass, with radius $r_{90}=5.07\,\mathrm{pc}$, are tangent to each other, neglecting distortions induced by tidal forces. They are then assigned a relative velocity equal to that which two point masses, each with the corresponding NSC mass, would possess at a separation of $2r_{90}$ if they were initially at rest at infinite separation. To this end, the two particle sets are displaced in position by $\mp(r_{90},0,0)=\mp(5.07,0,0)\,\mathrm{pc}$ and assigned opposite velocity offsets, $\pm(v_{90},0,0)=\pm(27.94,0,0)\,km/s$, with $v_{90}$ defined by
 \begin{equation}
-v_{90} = \sqrt{\frac{G\left(M_{NSC} +m_1 \right)M_\odot}{2r_{90}}}.
+v_{90} = \sqrt{\frac{G\left(M_{NSC} +m_1 \right)}{2r_{90}}}.
 \end{equation}
-Figure~\ref{Double_NGC205_NSC_BH_scatter} shows the initial configuration of the numerical experiment in its center-of-mass reference frame, $S_{CM}$. The black arrows indicate the bulk velocities of the two systems, with their lengths representing the distance each system would travel over a timescale $t_{dyn}\approx0.07,\mathrm{Myr}$ if it continued to move at the initial speed $v_{90}$.
+Figure~\ref{Double_NGC205_NSC_BH_scatter} shows the initial configuration of the numerical experiment in its center-of-mass reference frame, $S_{CM}$. The black arrows indicate the bulk velocities of the two systems, with their lengths representing the distance each system would travel over a timescale $t_{dyn}\approx0.07\,\mathrm{Myr}$ if it continued to move at the initial speed $v_{90}$.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{Double_NGC205_NSC_BH_scatter.png}
@@ -2591,7 +2583,7 @@ When the initial separation is identified with the GW transition scale, $a_0=a_{
     \caption{Comparison of the semimajor axis evolution of SMBH (left) and IMBH (right) binaries, normalized to the respective initial separations $a_0$. Both evolutionary tracks were reconstructed from 2-hour simulation runs on a single CPU.}
     \label{fig:KETJU scaling check}
 \end{figure}
-To follow the complete dynamical evolution of the IMBH binary, from the merger of the stellar hosts to the final coalescence, we combine the $N$-body and hybrid approaches. During the numerical integration, KETJU periodically outputs a series of snapshots at fixed time intervals $\Delta t_{snap}$, containing the positions, velocities, masses, and IDs of all particles generated with OpOpGadget. In addition, it produces a separate series of files containing only the BBH information, e.g. $(t,a(t),e(t))$ ,which can be analysed using the KETJU-Utils analysis toolkit. The final snapshot can then be read with OpOpGadget, allowing us to perform the same analysis described at the end of \S~\ref{sec:Dynamical Equilibrium of Stellar Systems}. This procedure provides a physically motivated initial condition $(a_0,e_0)$ for the subsequent binary evolution, directly determined from the final KETJU state. Moreover, it allows us to derive the main quantities at the influence radius required by the hybrid model from the actual stellar background of the merger remnant. Overall, this approach combines the complementary strengths of the two methods: KETJU captures the dynamics of the galaxy merger and the subsequent hardening of the binary through stellar scattering, while the hybrid model can then be used to evolve the binary from a physically constrained stellar background and a initial condition.\\The numerical integration is stopped at the physical time $t_{snap} = 18.75\,\mathrm{TU} \simeq 18\,\mathrm{Myr}$. Figure~\ref{Double_NGC205_NSC_BH_snap_scatter} shows the state of the system in its centre-of-mass reference frame $S_{CM}$ at the time of the final snapshot.
+To follow the complete dynamical evolution of the IMBH binary, from the merger of the stellar hosts to the final coalescence, we combine the $N$-body and hybrid approaches. During the numerical integration, KETJU periodically outputs a series of snapshots at fixed time intervals $\Delta t_{snap}$, containing the positions, velocities, masses, and IDs of all particles generated with OpOpGadget. In addition, it produces a separate series of files containing only the BBH information, e.g. $(t,a(t),e(t))$ ,which can be analysed using the KETJU-Utils analysis toolkit. The final snapshot can then be read with OpOpGadget, allowing us to perform the same analysis described at the end of \S~\ref{sec:Dynamical Equilibrium of Stellar Systems}. This procedure provides a physically motivated initial condition $(a_0,e_0)$ for the subsequent binary evolution, directly determined from the final KETJU state. Moreover, it allows us to derive the main quantities at the influence radius required by the hybrid model from the actual stellar background of the merger remnant. Overall, this approach combines the complementary strengths of the two methods: KETJU captures the dynamics of the galaxy merger and the subsequent hardening of the binary through stellar scattering, while the hybrid model can then be used to evolve the binary from a physically constrained stellar background and a initial condition.\\The numerical integration is stopped at the physical time $t_{snap} = 18.75\,\mathrm{TU} \simeq 18\,\mathrm{Myr}$. Figure~\ref{fig:Double_NGC205_NSC_BH_snap_scatter} shows the state of the system in its centre-of-mass reference frame $S_{CM}$ at the time of the final snapshot.
 
 \begin{figure}[H]
     \centering
@@ -2648,7 +2640,7 @@ The last quantity required by the hybrid model before starting the numerical int
 a(t)=\left[\frac{1}{a_{in}}+\frac{G\rho_{inf}H(a_{in})}{\sigma_{inf}}LCN(t-t_{in})\right]^{-1}
 \label{best fit curve}
 \end{equation}
-obtained by integrating Equation (\ref{H Q96}), under the assumption that $H_u$ remains approximately constant in this regime, as discussed in \S~\ref{sec:Quinlan-Sesana Hybrid Model}. This operation, shown in Figure \ref{Double_NGC205_LCR_fit}, yields $LCN=14.00 ± 0.03$.
+obtained by integrating Equation (\ref{H Q96}), under the assumption that $H_u$ remains approximately constant in this regime, as discussed in \S~\ref{sec:Quinlan-Sesana Hybrid Model}. This operation, shown in Figure \ref{Double_NGC205_LCR_fit}, yields $LCN=14.00 \pm 0.03$.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{Double_NGC205_LCR_fit.png}
@@ -2675,7 +2667,7 @@ Once all the required quantities have been determined, the hybrid-model differen
 }
     \label{fig:Double_NGC205_a_e_vs_t.png}
 \end{figure}
-Figure \ref{fig:Double_NGC205_a_e_vs_t.png}(a) and (b) warrant further discussion. First, the label "MERGER", shown on the left-hand side of both panels, has been added to highlight the phase in which the two IMBHs are still unbound and the system is being numerically evolved with KETJU. During this stage, KETJU does not provide the usual binary output, as indicated by the absence of any curve to the left of the "KETJU" regions. Then, although the eccentricity evolution reconstructed from KETJU is relatively noisy, it still exhibits an increasing trend during the stellar-scattering phase, as discussed in \S~\ref{sec:NGC 205 IMBH Binary evolution}. By contrast, the binary separation is less affected by numerical fluctuations and displays a smooth evolution, in good agreement with the evolutionary tracks presented in \S~\ref{sec:NGC 205 IMBH Binary evolution}.\\The resulting coalescence timescale, here defined as the time elapsed from the beginning of the merger simulated with KETJU to the final coalescence reached with the hybrid model, is $\tau_{coal}= 26.45 \,\mathrm{Myr}$. Most importantly, this timescale is of the same order of magnitude as those obtained in \S~\ref{sec:NGC 205 IMBH Binary evolution} for different initial eccentricities $e_0$, providing further support for the hybrid-model approach. It is worth noting that, although, in this chapter, the coalescence time is measured from an earlier stage of the binary evolution than in the definition adopted in Chapter~\ref{chap:chapter2}, the value $LCN>1$ indicates that stellar-scattering hardening is more efficient in the merger remnant than assumed in the previous calculations, where $LCN=1$, promoting a faster orbital decay.\\We conclude this chapter by presenting the same analysis for different merger configurations involving a high-redshift, non-nucleated galaxy model.
+Figure \ref{fig:Double_NGC205_a_e_vs_t.png}(a) and (b) warrant further discussion. First, the label "MERGER", shown on the left-hand side of both panels, has been added to highlight the phase in which the two IMBHs are still unbound and the system is being numerically evolved with KETJU. During this stage, KETJU does not provide the usual binary output, as indicated by the absence of any curve to the left of the "KETJU" regions. Then, although the eccentricity evolution reconstructed from KETJU is relatively noisy, it still exhibits an increasing trend during the stellar-scattering phase, as discussed in \S~\ref{sec:NGC 205 IMBH Binary evolution}. By contrast, the binary separation is less affected by numerical fluctuations and displays a smooth evolution, in good agreement with the evolutionary tracks presented in \S~\ref{sec:NGC 205 IMBH Binary evolution}.\\The resulting coalescence timescale, here defined as the time elapsed from the beginning of the merger simulated with KETJU to the final coalescence reached with the hybrid model, is $\tau_{coal}= 26.45 \,\mathrm{Myr}$. Most importantly, this timescale is of the same order of magnitude as those obtained in \S~\ref{sec:NGC 205 IMBH Binary evolution} for different initial eccentricities $e_0$, providing further support for the hybrid-model approach. It is worth noting that, although, in this chapter, the coalescence time is measured from an earlier stage of the binary evolution than in the definition adopted in Chapter~\ref{chap:chapter2}, the value $LCN>1$ indicates that stellar-scattering hardening is more efficient in the merger remnant than assumed in the previous calculations, where $LCN=1$, promoting a faster orbital decay.\\We conclude this chapter by presenting the same analysis for different merger configurations involving a high-redshift, stellar clumps.
 
 
 
@@ -2692,44 +2684,32 @@ Figure \ref{fig:Double_NGC205_a_e_vs_t.png}(a) and (b) warrant further discussio
 \section{KETJU IMBH Binary evolution from Parabolic Encounters of Stellar Clumps}
 \label{sec:KETJU IMBH Binary evolution from Parabolic Encounters of Stellar Clumps}
 
-So far, we have investigated the dynamical evolution of IMBH binaries through a series of numerical experiments designed to characterise the mechanisms governing their orbital decay and coalescence. In Chapter~\ref{chap:chapter2}, we addressed this problem using the Quinlan--Sesana hybrid model, reconstructing the time evolution of the binary orbital parameters by treating the central BH of the stellar system as the primary component and introducing a secondary IMBH as an intruder initially placed in the central region of the host galaxy. In \S~\ref{sec:IMBH Binary Evolution with KETJU High-Resolution Simulations of NSCs Merger}, we instead investigated the binary evolution with high-resolution KETJU $N$-body simulations of mergers between identical nucleated stellar systems, each hosting a central IMBH.\\Recent observational evidences (see, e.g., \parencite{Eros_2026}) suggests that galaxies at high redshift may have undergone a clumpy phase, with present-day globular clusters potentially representing the surviving remnants of these early stellar clumps. The presence of IMBHs within such systems may therefore provide a common link between IMBH formation and the assembly of nuclear star clusters. Through dynamical friction, these compact stellar systems can lose orbital energy and migrate towards the galactic centre, where their subsequent infall and merging may contribute to the formation of dense nuclear environments (see, e.g., \citealt{Khan_2026}). The resulting high stellar densities may in turn favour runaway stellar collisions, providing favourable conditions for the formation and subsequent growth of IMBHs.\\Motivated by this broader evolutionary picture, we conclude Chapter~\ref{chap:chapter3} with a suite of $N$-body experiments aimed at:
+So far, we have investigated the dynamical evolution of IMBH binaries through a series of numerical experiments designed to characterise the mechanisms governing their orbital decay and coalescence. In Chapter~\ref{chap:chapter2}, we addressed this problem using the Quinlan--Sesana hybrid model, reconstructing the time evolution of the binary orbital parameters by treating the central BH of the stellar system as the primary component and introducing a secondary IMBH as an intruder initially placed in the central region of the host galaxy. In \S~\ref{sec:IMBH Binary Evolution with KETJU High-Resolution Simulations of NSCs Merger}, we instead investigated the binary evolution with high-resolution KETJU $N$-body simulations of mergers between identical nucleated stellar systems, each hosting a central IMBH.\\Recent, observational evidences (see, e.g., \parencite{Eros_2026}) suggest that galaxies at high redshift may have undergone a clumpy phase, with present-day globular clusters potentially representing the surviving remnants of these early stellar clumps. The presence of IMBHs within such systems may therefore provide a common link between IMBH formation and the assembly of nuclear star clusters. Through dynamical friction, these compact stellar systems can lose orbital energy and migrate towards the galactic centre, where their subsequent infall and merging may contribute to the formation of dense nuclear environments (see, e.g., \citealt{Khan_2026}). The resulting high stellar densities may in turn favour runaway stellar collisions, providing favourable conditions for the formation and subsequent growth of IMBHs.\\Motivated by this broader evolutionary picture, we conclude Chapter~\ref{chap:chapter3} with a suite of four $N$-body experiments, namely Model 1-2-3-4, aimed at:
 \begin{enumerate}
  \item Reconstructing the dynamical history of IMBH binaries formed as a result of the merger between observationally motivated stellar clumps models.
  \item Exploring different initial conditions of the merger, thus considerning parabolic encounters with non-vanishing angular momentum.
 \end{enumerate}
-Mindfull of the observed properties of the Misty Moons stellar clumps, displayed in Figure \ref{Maiolino_2024}, we realize a $N$-body representation of them by considering an equilibrium model of Sersic stellar profile and central IMBH. The stellar distribution with mass
-$M_*=10^7\,M_\odot$. We modeled this stellar distribution with the Sersic profile in Equation (\ref{Prugniel Sersic profile}). The Sersic index is set to $n=2$, while the effective radius to $R_e\approx 0.5\,Kpc$. Finally, an IMBH of mass $10^5\,M_\odot$ is pla
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+As shown in Figure \ref{BH-Bulge mass}, the stellar clumps resolved in the lensed, high-redshift Misty Moons have stellar masses of the order of $\sim 10^7\,M_\odot$ and effective radii ranging from $\sim 10$ pc to $\sim 70\,\mathrm{pc}$. Motivated by these observational constraints, we used OpOpGadget to generate four pairs of identical, spherical and isotropic equilibrium systems, each consisting of a stellar clump-like system and a central IMBH. The stellar component was modelled with a Sérsic profile, as defined in Equation (\ref{Prugniel Sersic profile}), with a total stellar mass of $M_*=10^7\,M_\odot$, a Sérsic index of $n=2$, and an effective radius of $R_e\approx 35\,\mathrm{pc}$. Although there is currently no observational evidence for IMBHs residing in the stellar clumps of the Misty Moons, we included a central IMBH with a mass of $10^5\,M_\odot$ in each system. This choice is motivated by the increasing BH-to-stellar mass ratio towards higher redshifts, as illustrated in Figure \ref{BH-Bulge mass}. All stellar clumps are generated with a fixed BH-to-stellar mass ratio of $1:200$, corresponding to $20000$ stellar particles per clump.\\The four merger simulations, namely Model 1-2-3-4, were performed with KETJU, adopting the same initial separation of $2r_{90}=2\times149.1\,\mathrm{pc}$ between the two IMBHs. The initial relative velocity was chosen to yield a parabolic encounter, with a magnitude determined by the total mass enclosed within $r_{90}$. To investigate the impact of orbital angular momentum on the merger dynamics, we varied the orientation of the initial velocity vectors across the four simulations. Specifically, the velocity vectors of the two stellar systems, both having modulus $v_{90}=11.3\,\mathrm{km/s}$, were symmetrically rotated by $\theta=0^\circ$, $10^\circ$, $20^\circ$, and $30^\circ$ with respect to the initial line connecting their centres.\\For a rotation angle $\theta$, the Cartesian components of the velocity of each system centre of mass were then assigned according to (see, e.g. \citealt{Nipoti_Londrillo_2007})
+\begin{equation}
+v_x = \frac{v_{90}}{\sqrt{1+\tan^2\theta}},
+\qquad
+v_y = v_x\tan\theta,
+\end{equation}
+with opposite signs for the two systems to ensure their prescribed relative motion. This setup preserves the magnitude of the initial relative velocity, and hence the parabolic nature of the encounter, while introducing a non-zero tangential component for $\theta>0^\circ$. The resulting sequence of simulations therefore provides a controlled test of how increasing orbital angular momentum affects the dynamical evolution of IMBH pairs during stellar-clump mergers.\\Model 1, Model 2, Model 3 and Model 4 generated initial conditions are shown in Figures \ref{fig:Model_4_0deg_scatter}, \ref{fig:Model_4_10deg_scatter}, \ref{fig:Model_4_20deg_scatter} and \ref{fig:Model_4_30deg_scatter}, respectively.
 \begin{figure}[H]
     \centering
 
     \begin{subfigure}[b]{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Model_4_0deg_scatter.png}
-        \caption{}
+        \caption{Model 1 $(\theta=0^\circ)$: Positions of the initialized stellar clumps stars (blue and red dots) and IMBHs (black dots) in the center-of-mass frame $S_{CM}$. The black arrows indicate the initial bulk velocities of the two stellar clumps, with lengths corresponding to the displacement over their average half-mass dynamical time. The dashed circles mark the spheres containing $90\,\%$ of the total mass for each NSC.}
         \label{fig:Model_4_0deg_scatter}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Model_4_10deg_scatter.png}
-        \caption{}
+        \caption{Model 2 $(\theta=10^\circ)$: Positions of the initialized stellar clumps stars (blue and red dots) and IMBHs (black dots) in the center-of-mass frame $S_{CM}$. The black arrows indicate the initial bulk velocities of the two stellar clumps, with lengths corresponding to the displacement over their average half-mass dynamical time. The dashed circles mark the spheres containing $90\,\%$ of the total mass for each NSC.}
         \label{fig:Model_4_10deg_scatter}
     \end{subfigure}
 
@@ -2738,20 +2718,134 @@ $M_*=10^7\,M_\odot$. We modeled this stellar distribution with the Sersic profil
     \begin{subfigure}[b]{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Model_4_20deg_scatter.png}
-        \caption{}
+        \caption{Model 3 $(\theta=20^\circ)$: Positions of the initialized stellar clumps stars (blue and red dots) and IMBHs (black dots) in the center-of-mass frame $S_{CM}$. The black arrows indicate the initial bulk velocities of the two stellar clumps, with lengths corresponding to the displacement over their average half-mass dynamical time. The dashed circles mark the spheres containing $90\,\%$ of the total mass for each NSC.}
         \label{fig:Model_4_20deg_scatter}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Model_4_30deg_scatter.png}
-        \caption{}
+        \caption{Model 4 $(\theta=30^\circ)$: Positions of the initialized stellar clumps stars (blue and red dots) and IMBHs (black dots) in the center-of-mass frame $S_{CM}$. The black arrows indicate the initial bulk velocities of the two stellar clumps, with lengths corresponding to the displacement over their average half-mass dynamical time. The dashed circles mark the spheres containing $90\,\%$ of the total mass for each NSC.}
         \label{fig:Model_4_30deg_scatter}
     \end{subfigure}
 
     \caption{Spatial distribution of the stellar particles and IMBHs for the four initial configurations of Model 4, corresponding to different inclination angles.}
     \label{fig:All_Model_IC_scatter}
 \end{figure}
+All four numerical experiments encountered the same bottleneck towards the end of the stellar-scattering phase, preventing the simulations from following the subsequent binary evolution to coalescence. We therefore resumed the evolution using the Quinlan–Sesana hybrid model, following the procedure described in \S~\ref{sec:IMBH Binary Evolution with KETJU High-Resolution Simulations of NSCs Merger}. Table \ref{tab:Stellar clumps hybrid model parameters} summarises the binary orbital parameters at the end of each KETJU simulation, at time $t_{\mathrm{snap}}$, which serve as initial conditions for the hybrid model, together with the quantities required to integrate the subsequent evolution.
+\begin{table}[H]
+\centering
+\setlength{\tabcolsep}{3pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{1.5cm}ccc||ccccc@{}}
+\specialrule{0.8pt}{0pt}{0pt}
+Model
+& $t_{\mathrm{snap}}\,[\mathrm{Myr}]$
+& $a_{\mathrm{snap}}\,[\mathrm{pc}]$
+& $e_{\mathrm{snap}}$
+& $LCN$
+& $r_{\mathrm{inf}}\,[\mathrm{pc}]$
+& $\rho_{\mathrm{inf}}\,[M_\odot/\mathrm{pc}^3]$
+& $\sigma_{\mathrm{inf}}\,[\mathrm{km/s}]$
+& $a_h\,[\mathrm{pc}]$\\
+\specialrule{0.8pt}{0pt}{0pt}
+
+\makebox[0.4cm][c]{1}\dotfill & 848.6 & 0.0018 & 0.96 & 3.79 & 11.2  & 30.1 & 14.7 & 1.00 \\
+\makebox[0.4cm][c]{2}\dotfill & 488.8 & 0.0026 & 0.98 & 3.08 & 8.96  & 61.1 & 17.6 & 0.70 \\
+\makebox[0.4cm][c]{3}\dotfill & 783.6 & 0.0031 & 0.51 & 4.17 & 11.9  & 30.5 & 14.7 & 1.00 \\
+\makebox[0.4cm][c]{4}\dotfill & 430.0 & 0.0061 & 0.71 & 1.29 & 7.65  & 97.6 & 14.0 & 1.10 \\
+
+\specialrule{0.8pt}{0pt}{0pt}
+\end{tabular*}
+\caption{IMBH binary status at the last KETJU output (left of the double vertical line) and hybrid-model parameters (right of the double vertical line) at $t_{snap}$ of Model 1-2-3-4. Column 1: Model name. Column 2: Time of last KETJU output. Column 3: IMBH binary at $t_{snap}$. Column 4: IMBH binary eccentricity at $t_{snap}$. Column 5: Loss-cone normalization from fitting KETJU outupt. Column 6: IMBH binary influence radius. Column 7: Stellar mass density at binary influence radius. Column 8: Stellar velocity dispersion at binary influence radius. Column 8: Binary hardening radius.}
+\label{tab:Stellar clumps hybrid model parameters}
+\end{table}
+Finally, the evolutionary tracks $(t,a(t))$ and $(t,e(t))$ of Model 1-2-3-4 are represented in Figure \ref{fig:Model_4_0deg_a_vs_t}-\ref{fig:Model_4_10deg_a_vs_t}-\ref{fig:Model_4_20deg_a_vs_t}-\ref{fig:Model_4_30deg_a_vs_t}, respectively.
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.49\linewidth}
+        \centering
+        \includegraphics[width=\linewidth,height=5.5cm]{Model_4_0deg_a_vs_t.png}
+        \caption{IMBH binary semimajor axis time evolution reconstructed with KETJU (N-body regions) and Quinlan-Sesana model (Hybrid model region).}
+        \label{fig:Model_4_0deg_a_vs_t}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.49\linewidth}
+        \centering
+        \includegraphics[width=\linewidth,height=5.5cm]{Model_4_0deg_e_vs_t.png}
+        \caption{IMBH binary eccentricity time evolution reconstructed with KETJU (N-body regions) and Quinlan-Sesana model (Hybrid model region)..}
+        \label{fig:Model_4_0deg_e_vs_t}
+    \end{subfigure}
+    \caption{Model 1 evolutionary tracks $(t,a(t))$ (on left) and $(t,e(t))$ (on right).
+}
+    \label{fig:Model_4_0deg_a_and_e_vs_t}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.49\linewidth}
+        \centering
+        \includegraphics[width=\linewidth,height=5.5cm]{Model_4_10deg_a_vs_t.png}
+        \caption{IMBH binary semimajor axis time evolution reconstructed with KETJU (N-body regions) and Quinlan-Sesana model (Hybrid model region)..}
+        \label{fig:Model_4_10deg_a_vs_t}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.49\linewidth}
+        \centering
+        \includegraphics[width=\linewidth,height=5.5cm]{Model_4_10deg_e_vs_t.png}
+        \caption{IMBH binary eccentricity time evolution reconstructed with KETJU (N-body regions) and Quinlan-Sesana model (Hybrid model region)..}
+        \label{fig:Model_4_10deg_e_vs_t}
+    \end{subfigure}
+    \caption{Model 2 evolutionary tracks $(t,a(t))$ (on left) and $(t,e(t))$ (on right).
+}
+    \label{fig:Model_4_10deg_a_and_e_vs_t}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.49\linewidth}
+        \centering
+        \includegraphics[width=\linewidth,height=5.5cm]{Model_4_20deg_a_vs_t.png}
+        \caption{IMBH binary semimajor axis time evolution reconstructed with KETJU (N-body regions) and Quinlan-Sesana model (Hybrid model region)..}
+        \label{fig:Model_4_20deg_a_vs_t}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.49\linewidth}
+        \centering
+        \includegraphics[width=\linewidth,height=5.5cm]{Model_4_20deg_e_vs_t.png}
+        \caption{IMBH binary eccentricity time evolution reconstructed with KETJU (N-body regions) and Quinlan-Sesana model (Hybrid model region)..}
+        \label{fig:Model_4_20deg_e_vs_t}
+    \end{subfigure}
+    \caption{Model 3 evolutionary tracks $(t,a(t))$ (on left) and $(t,e(t))$ (on right).
+}
+    \label{fig:Model_4_20deg_a_and_e_vs_t}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.49\linewidth}
+        \centering
+        \includegraphics[width=\linewidth,height=5.5cm]{Model_4_30deg_a_vs_t.png}
+        \caption{IMBH binary semimajor axis time evolution reconstructed with KETJU (N-body regions) and Quinlan-Sesana model (Hybrid model region)..}
+        \label{fig:Model_4_30deg_a_vs_t}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.49\linewidth}
+        \centering
+        \includegraphics[width=\linewidth,height=5.5cm]{Model_4_30deg_e_vs_t.png}
+        \caption{IMBH binary eccentricity time evolution reconstructed with KETJU (N-body regions) and Quinlan-Sesana model (Hybrid model region)..}
+        \label{fig:Model_4_30deg_e_vs_t}
+    \end{subfigure}
+    \caption{Model 4 evolutionary tracks $(t,a(t))$ (on left) and $(t,e(t))$ (on right).}
+    \label{fig:Model_4_30deg_a_and_e_vs_t}
+\end{figure}
+The resulting coalescence timescales are $\tau_{\mathrm{coal}}=()$ for Models 1–4, respectively. These results suggest that, for the adopted initial conditions, stellar clumps similar to those observed in the Misty Moons may provide favourable environments for IMBH binary coalescence. Assuming that these systems formed at the same redshift as the Misty Moons ($z=11$), the inferred timescales indicate that the binaries could coalesce by the present day.
+
+
+
+
+
+
+
 
 
 
@@ -2818,7 +2912,6 @@ The growing capabilities of current and forthcoming observational facilities may
 
 
 
-!!!!!!!!!QUALCOSA RELATIVO ALL ULTIMA SECTION (LIMITI)!!!!!!!!!
 
 
 
