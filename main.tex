@@ -45,6 +45,7 @@
 \usepackage{booktabs}
 \usepackage{diagbox}
 \usepackage[table]{xcolor}
+\usepackage{adjustbox}
 
 
 \graphicspath{{Thesis_images/}}
@@ -224,7 +225,7 @@
 
 \vspace{1cm}
 \noindent
-The next generation of gravitational-wave (GW) observatories, Laser Interferometer Space Antenna (LISA) and the Einstein Telescope (ET), will jointly probe compact objects with masses ranging from a few to $\sim 10^7\,M_\odot$ over the frequency interval extending from $10^{-4}$ to $10^{4}\,\mathrm{Hz}$. This unprecedented observational window makes it essential to identify promising GW sources, determine which of them may emit a detectable signal and characterize its physical properties. Among the most compelling candidates are intermediate-mass black hole (IMBH) binaries, whose inspiral GW emission would offer unique insights into this still poorly constrained population of massive black holes.\\This thesis investigates the dynamical evolution of IMBH binaries embedded in stellar backgrounds, with particular emphasis on the coalescence timescale and the time evolution of the binary separation and eccentricity. To this end, both the Quinlan--Sesana hybrid model and Ketju direct N-body simulations are employed. While the former approach provides an efficient framework for reconstructing the evolution of black-hole binaries once the stellar background properties and the binary initial conditions are specified, the KETJU module, implemented into GADGET-4, treating black-holes and stars as point particles during close encounters through an algorithmically regularized integrator, accurately captures the orbital decay driven by stellar scattering with unprecedented spatial resolution.\\The analysis explores different stellar backgrounds, including present-day nucleated dwarf galaxies, high redshift non-nucleated galaxies with enhanced stellar density and observationally motivated high-redshift stellar clump models. The obtained results confirm that IMBH binaries embedded in nucleated dwarf galaxies can merge within a few Myr, making them potentially detectable GW-loud sources even when pairing in the present-day universe. More remarkably, they show that even non-nucleated high-redshift dwarf galaxies and stellar clumps may drive binary coalescence within the Hubble time, identifying these systems as promising sources of detectable gravitational waves, provided the IMBH binary formed at sufficiently high redshift.\\Overall, this thesis project identifies a broader range of stellar environments capable of hosting IMBH binaries coalescing within the present-day universe, including high-redshift, non-nucleated systems as additional promising sources for future GW observatories. Further investigations incorporating a wider range of galaxy properties, binary parameters, and dynamical processes will be necessary to assess the contribution of these systems to the expected GW source population detectabale by LISA or ET.
+The next generation of gravitational-wave (GW) observatories, Laser Interferometer Space Antenna (LISA) and the Einstein Telescope (ET), will jointly probe compact objects with masses ranging from a few to $\sim 10^7\,M_\odot$ over the frequency interval extending from $10^{-4}$ to $10^{4}\,\mathrm{Hz}$. This unprecedented observational window makes it essential to identify promising GW sources, determine which of them may emit a detectable signal and characterize their physical properties. Among the most compelling candidates there are intermediate-mass black hole (IMBH) binaries, whose inspiral GW emission would offer unique insights into this still poorly constrained population of massive black holes.\\This thesis investigates the dynamical evolution of IMBH binaries embedded in stellar backgrounds, with particular emphasis on the coalescence timescale and the time evolution of the binary separation and eccentricity. To this end, both the hybrid model mainly developed by Quinlan and Sesana and N-body simulations with the KETJU code are employed. While the former approach provides an efficient framework for reconstructing the evolution of black-hole binaries once the stellar background properties and the binary initial conditions are specified, the KETJU module, implemented into the $N$-body code GADGET-4, treating black-holes and stars as point particles during close encounters through an algorithmically regularized integrator, accurately captures the orbital decay driven by stellar scattering with unprecedented spatial resolution.\\The analysis explores different stellar hosts, including present-day nucleated dwarf galaxies, high redshift non-nucleated galaxies with enhanced stellar density and observationally motivated high-redshift stellar clumps. The obtained results confirm that IMBH binaries embedded in nucleated dwarf galaxies can merge within a few Myr, making them potentially detectable GW-loud sources even when pairing in the present-day universe. More remarkably, they show that even non-nucleated high-redshift dwarf galaxies and stellar clumps may drive binary coalescence within the Hubble time, identifying these systems as promising sources of detectable gravitational waves, provided the IMBH binary formed at sufficiently high redshift.\\Overall, this thesis project identifies a broader range of stellar environments capable of hosting IMBH binaries coalescing within the present-day universe, including high-redshift, non-nucleated systems as additional promising sources for future GW observatories. Further investigations incorporating a wider range of host galaxy properties, binary parameters, and dynamical processes will be necessary to assess the contribution of these systems to the expected GW source population detectabale by LISA or ET.
 
 
 
@@ -1755,7 +1756,7 @@ and
 respectively. The former solution, i.e. $r_{inf}$, is then used to derive $\rho_{inf}$ as highlighted in Figure \ref{NGC 205 density-mass profiles} (a).\\At this stage, the remaining quantities required to fully specify all the terms in Equations (\ref{hybrid model used differential equations}) are the stellar velocity dispersion at the binary influence radius, $\sigma_{inf}$, and the hardening radius, $a_h$, which is given by \parencite{Quinlan_1996}
 \begin{equation}
 \label{Quinlan hardening radius}
-a_h=\frac{Gm_2}{4\sigma_{inf}}.
+a_h=\frac{Gm_2}{4\sigma_{inf}^2}.
 \end{equation}
 A more detailed discussion of the stellar velocity dispersion, along with its application to the construction of equilibrium $N$-body initial conditions, is deferred to Chapter~\ref{chap:chapter3}. In the present context, we limit ourselves to using the radial velocity dispersion
 \begin{equation}\label{Jeans velocity dispersion equation}
@@ -2509,11 +2510,11 @@ In conclusion, as demonstrated by \textcite{Mannerkoski_2023}, activating the KE
 \section{Evolution of an IMBH Binary in an N-body Simulation of Merging NSCs}
 \label{sec:IMBH Binary Evolution with KETJU High-Resolution Simulations of NSCs Merger}
 
-In Chapter~\ref{chap:chapter2}, we presented the theoretical foundations of the self-consistent hybrid model developed by \textcite{Quinlan_1996} and \textcite{Sesana_2006}, together with a series of numerical experiments investigating the evolution of IMBH binaries within this framework. Although the model was originally formulated for a fixed, homogeneous, and isotropic stellar background, we also described the procedure introduced by \textcite{Sesana_2015} to extend its applicability to arbitrary mass density distributions. Its versatility and its ability to reproduce evolutionary tracks in good agreement with those obtained from analogous $N$-body simulations allowed us to obtain the first predictions on IMBH binaries separation and eccentricty evolution, while studying the role of the central stellar density, eccentricity at pairing and cosmic size evolution effects on the original stellar host. Nevertheless, the hybrid model remains subject to several limitations arising from its underlying assumptions. We now identify the most relevant ones, which we aim to overcome through the use of KETJU $N$-body simulations:
+In Chapter~\ref{chap:chapter2}, we presented the theoretical foundations of the self-consistent hybrid model developed by \textcite{Quinlan_1996} and \textcite{Sesana_2006}, together with a series of numerical experiments investigating the evolution of IMBH binaries within this framework. Although the model was originally formulated for a fixed, homogeneous, and isotropic stellar background, we also described the procedure introduced by \textcite{Sesana_2015} to extend its applicability to arbitrary mass density distributions. Its versatility and its ability to reproduce evolutionary tracks in good agreement with those obtained from analogous $N$-body simulations allowed us to obtain the first predictions on IMBH binaries separation and eccentricty evolution, while studying the role of the central stellar density, eccentricity at pairing and cosmic size evolution effects on the original stellar host. Nevertheless, the hybrid model remains subject to several limitations arising from its underlying assumptions. We now identify the most relevant ones, which we aim to overcome through the use of $N$-body simulations:
 \begin{itemize}
     \item \textbf{Artificial BH binary initialization.} The secondary BH is artificially introduced inside the stellar background of the primary BH:
     \begin{enumerate}
-        \item \textbf{Merging stellar systems not included.} The model does not account for the fact that massive BH binaries are expected to form following the merger of their stellar systems. As a consequence, the structural and dynamical properties of the stellar background, i.e. the merger remnant, may differ significantly from those of either progenitor.
+        \item \textbf{Merging host stellar systems not included.} The model does not account for the fact that massive BH binaries are expected to form following the merger of their stellar systems. As a consequence, the structural and dynamical properties of the stellar background, i.e. the merger remnant, may differ significantly from those of either progenitor.
 
         \item \textbf{Unknown pre-binary evolution.}The model does not describe the dynamical evolution preceding the formation of the BH binary. As a result, the binary initial conditions $(a_0,e_0)$ must be prescribed as input parameters rather than being determined self-consistently from the preceding dynamical evolution. While this represents an advantage of the model, as it enables an efficient exploration of the $(a_0,e_0)$ parameter space, it also constitutes a limitation when the goal is to investigate how the binary initial configuration emerges from the dynamical processes leading to its formation.
 
@@ -2526,7 +2527,29 @@ In Chapter~\ref{chap:chapter2}, we presented the theoretical foundations of the 
 
     \item \textbf{Fixed stellar background.} Although Equation~(\ref{J Q96}) provides a prescription for computing the stellar mass ejection rate, the binary evolution is still reconstructed within a fixed stellar background. The model therefore does not self-consistently account for the dynamical response of the stellar system to the binary's evolution.
 \end{itemize}
-These assumptions, along with the limitations arising from them, can be overcome by adopting a fully self-consistent $N$-body treatment. We therefore present here a KETJU $N$-body experiment designed to follow the evolution of a head-on, parabolic encounter between two $N$-body realizations of the NGC~205-like NSC (see Table~\ref{tab:NGC 205 structural parameters}), each hosting an IMBH of mass $m_1=m_2=4\times10^4,M_\odot$ at its center\footnote{NSCs reside at galaxy centres, so more realistic simulations should also include the stellar bulge and dark matter. However, our simplified approach is justified when galaxy interactions bring the two NSCs into close proximity.}.\\For this numerical experiment we adopted a BH-to-stellar mass ratio of 160 (see \citealt{Khan_2021}), $N_{NSC}=7200$ stellar particles for each realization of NGC 205-like NSC, for a total of $N_{tot}=14400+2$ particles. Each model of NSC and IMBH has been generated by employing OpOpGadget, which assigns particles coordinates by assuming the center of symmetry to be placed at the origin with null velocity. The IMBHs are placed at coordinates $(\mathbf{x},\mathbf{v})=(\mathbf{0},\mathbf{0})$.\\The initial conditions adopted for this merger follow the approach of \textcite{Nipoti_2003}. The two NSCs, namely $NSC\,1$ and $NSC\,2$, are initially positioned such that the spheres enclosing $90\,\%$ of their stellar mass, with radius $r_{90}=5.07\,\mathrm{pc}$, are tangent to each other, neglecting distortions induced by tidal forces. They are then assigned a relative velocity equal to that which two point masses, each with the corresponding NSC mass, would possess at a separation of $2r_{90}$ if they were initially at rest at infinite separation. To this end, the two particle sets are displaced in position by $\mp(r_{90},0,0)=\mp(5.07,0,0)\,\mathrm{pc}$ and assigned opposite velocity offsets, $\pm(v_{90},0,0)=\pm(27.94,0,0)\,km/s$, with $v_{90}$ defined by
+Therefore, this Section presents the main results of an $N$-body simulation of merging NSCs performed with the KETJU code. It is divided into two Subsections: the first describes the setup of the $N$-body experiment, while the second discusses how the subsequent evolution is modelled using the hybrid model, starting from the final KETJU output.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{N-body Simulation}
+
+
+
+ We present here a KETJU $N$-body experiment designed to follow the evolution of a head-on, parabolic encounter between two $N$-body realizations of the NGC~205-like NSC (see Table~\ref{tab:NGC 205 structural parameters}), each hosting an IMBH of mass $m_1=m_2=4\times10^4,M_\odot$ at its center\footnote{NSCs reside at galaxy centres, so more realistic simulations should also include the stellar bulge and dark matter. However, our simplified approach is justified when galaxy interactions bring the two NSCs into close proximity.}.\\For this numerical experiment we adopted a BH-to-stellar mass ratio of 160 (see \citealt{Khan_2021}), $N_{NSC}=7200$ stellar particles for each realization of NGC 205-like NSC, for a total of $N_{tot}=14400+2$ particles. Each model of NSC and IMBH has been generated by employing OpOpGadget, which assigns particles coordinates by assuming the center of symmetry to be placed at the origin with null velocity. The IMBHs are placed at coordinates $(\mathbf{x},\mathbf{v})=(\mathbf{0},\mathbf{0})$.\\The initial conditions adopted for this merger follow the approach of \textcite{Nipoti_2003}. The two NSCs, namely $NSC\,1$ and $NSC\,2$, are initially positioned such that the spheres enclosing $90\,\%$ of their stellar mass, with radius $r_{90}=5.07\,\mathrm{pc}$, are tangent to each other, neglecting distortions induced by tidal forces. They are then assigned a relative velocity equal to that which two point masses, each with the corresponding NSC mass, would possess at a separation of $2r_{90}$ if they were initially at rest at infinite separation. To this end, the two particle sets are displaced in position by $\mp(r_{90},0,0)=\mp(5.07,0,0)\,\mathrm{pc}$ and assigned opposite velocity offsets, $\pm(v_{90},0,0)=\pm(27.94,0,0)\,\mathrm{km/s}$, with $v_{90}$ defined by
 \begin{equation}
 v_{90} = \sqrt{\frac{G\left(M_{NSC} +m_1 \right)}{2r_{90}}}.
 \end{equation}
@@ -2538,11 +2561,11 @@ Figure~\ref{Double_NGC205_NSC_BH_scatter} shows the initial configuration of the
 }
     \label{Double_NGC205_NSC_BH_scatter}
 \end{figure}
-Following the same analysis of the IC generation performed in \S~\ref{sec:Dynamical Equilibrium of Stellar Systems}, we examine the stellar spatial and velocity distributions of the two NSCs, shown in Figures~\ref{Double_NGC205_NSC_position_hist} and~\ref{Double_NGC205_NSC_velocity_hist}, respectively. It is worth noting that, unlike in the analysis presented in the previous Section, the spatial distributions are centered at $\mp(r_{90},0,0)$, while the corresponding velocity distributions are centered at $\mp(v_{90},0,0)$ for the first and second NSCs, respectively.
+Following the same analysis of the IC generation performed in \S~\ref{sec:Dynamical Equilibrium of Stellar Systems}, we examine the stellar spatial and velocity distributions of the two NSCs, shown in Figures~\ref{Double_NGC205_NSC_position_hist} and~\ref{Double_NGC205_NSC_velocity_hist}, respectively. It is worth noting that, unlike in the analysis presented in the previous Section, the spatial distributions are now centered at $\mp(r_{90},0,0)$, while the corresponding velocity distributions are centered at $\mp(v_{90},0,0)$ for the first and second NSCs, respectively.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{Double_NGC205_NSC_position_hist.png}
-    \caption{Histograms of the position distributions of both, $N$-body generated, NSCs. Each row shows the distribution of the $i$-th Cartesian component of the stellar positions for $NSC\,1$ (left) and $NSC\,2$ (right). All histograms span $[-10,10]\,\mathrm{kpc}$ and are divided into 50 bins, each with a width of $\Delta x_i=400\, \mathrm{pc}$. The first column distributions peak around $-(r_{90},0,0)$, while the second column around $+(r_{90},0,0)$.
+    \caption{Histograms of the position distributions of the $N$-body realisation of the two NSCs in the head-on merging simulation, at the beginning of the experiment. Each row shows the distribution of the $i$-th Cartesian component of the stellar positions for $NSC\,1$ (left) and $NSC\,2$ (right). The first column distributions peak around $(-r_{90},0,0)$, while the second column around $(r_{90},0,0)$.
 }
     \label{Double_NGC205_NSC_position_hist}
 \end{figure}
@@ -2550,11 +2573,11 @@ Following the same analysis of the IC generation performed in \S~\ref{sec:Dynami
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{Double_NGC205_NSC_velocity_hist.png}
-    \caption{Histograms of the velocity distributions of both, $N$-body generated, NSCs. Each row shows the distribution of the $i$-th Cartesian component of the stellar velocities for $NSC\,1$ (left) and $NSC\,2$ (right). All histograms span $[-100,100]\,\mathrm{km/s}$ and are divided into 50 bins, each with a width of $\Delta v_i=4\, \mathrm{km/s}$. The first column distributions peak around $(v_{90},0,0)$, while the second column around $-(v_{90},0,0)$.
+    \caption{Histograms of the velocity distributions of the $N$-body realisation of the two NSCs in the head-on merging simulation, at the beginning of the experiment. Each row shows the distribution of the $i$-th Cartesian component of the stellar velocities for $NSC\,1$ (left) and $NSC\,2$ (right). The first column distributions peak around $(v_{90},0,0)$, while the second column around $(-v_{90},0,0)$.
 }
     \label{Double_NGC205_NSC_velocity_hist}
 \end{figure}
-One of the main challenges encountered in the KETJU simulations is the unexpectedly long integration time required to evolve the systems. In all simulations considered in this thesis, including those presented in the following Section, we identified a numerical bottleneck associated with excessively short integration time steps $\Delta t$ compared with the timescale of the binary evolution. This behavior becomes particularly pronounced around the transition scale $a_{GW}$, defined in Equation (\ref{cusp a_GW}), below which GW emission dominates over stellar-scattering-driven hardening and drives the subsequent orbital decay.\\A physical interpretation of this behavior can be obtained, at least at the order-of-magnitude level, by comparing the binary coalescence timescale $\tau_0=\tau(a_0)$, as given by Equation~(\ref{tau_2}), with the initial orbital period $T_0$. For a BH binary with total mass $M_{12}$ and initial separation $a_0$, the coalescence timescale due to gravitational-wave emission scales as $\tau(a_0)\propto a_0^4/M_{12}^3$, whereas the orbital period scales as $T_0\propto a_0^{3/2}/M_{12}^{1/2}$. Their ratio therefore scales as
+One of the main challenges encountered in KETJU simulations is the long integration time required to evolve the systems. In all simulations considered in this thesis, including those presented in the following Section, we identified a numerical bottleneck associated with excessively short integration time steps $\Delta t$ compared with the timescale of the binary evolution. This behavior becomes particularly pronounced around the transition scale $a_{GW}$, defined in Equation (\ref{cusp a_GW}), below which GW emission dominates over stellar-scattering-driven hardening and drives the subsequent orbital decay.\\A physical interpretation of this behavior can be obtained, at least at the order-of-magnitude level, by comparing the binary coalescence timescale $\tau_0=\tau(a_0,e_0)$, as given by Equation~(\ref{tau_2}), with the initial orbital period $T_0$ of the binary. At fixed $e_0$, for a BH binary with total mass $M_{12}$ and initial separation $a_0$, the coalescence timescale due to gravitational-wave emission scales as $\tau(a_0)\propto a_0^4/M_{12}^3$, whereas the orbital period scales as $T_0\propto a_0^{3/2}/M_{12}^{1/2}$. Their ratio therefore scales as
 \begin{equation}
 \frac{\tau_0}{T_0}
 \propto
@@ -2564,48 +2587,61 @@ One of the main challenges encountered in the KETJU simulations is the unexpecte
 \left(a_0 M_{12}^{-1}\right)^{5/2}.
 \label{KETJU scaling}
 \end{equation}
-When the initial separation is identified with the GW transition scale, $a_0=a_{\mathrm{GW}}$, this relation implies that the ratio $\tau(a_{\mathrm{GW}})/T_0$ decreases with increasing binary mass, scaling as $M_{12}^{-5/8}$. The numerical bottleneck is therefore not primarily associated with the overall dynamical evolution of the stellar system, whose characteristic timescale remains of order $t_{dyn}$, but rather with the short orbital period of the binary  compared with the remaining coalescence timescale.\\This trend is further supported by two independent numerical experiments following the dynamical evolution of two symmetric BH binaries with different total masses, $M_{12}=2\times 10^8\,M_\odot$ and $M_{12}=2\times 4\times 10^4\,M_\odot$, and initial separations scaling with $M_{12}^{-5/8}$. While the SMBH binary reaches coalescence within approximately two hours of computational time, the IMBH binary, over the same runtime, remains far from exhibiting the characteristic drop of separation due to efficient GW emission, as shown in Figure~\ref{fig:KETJU scaling check}.
+When the initial separation is identified with the GW transition scale, $a_0=a_{\mathrm{GW}}\propto M_{12}^{3/4}$ as expressed in Equation (\ref{cusp a_GW}), this relation implies that the ratio $\tau(a_{\mathrm{GW}})/T_0$ decreases with increasing binary mass, scaling as $M_{12}^{-5/8}$. The numerical bottleneck is therefore not primarily associated with the overall dynamical evolution of the stellar system, whose characteristic timescale remains of order $t_{dyn}$, but rather with the short orbital period of the binary  compared with the remaining coalescence timescale.\\This trend is further supported by two independent numerical experiments following the dynamical evolution of two symmetric BH binaries with different total masses, $M_{12}=2\times 10^8\,M_\odot$ and $M_{12}=8\times 10^4\,M_\odot$. Since the IMBH binary is the same as that studied in \S~\ref{sec:NGC 205 IMBH Binary evolution}, we adopt as its initial separation the value of $a_{GW}$ as it evolved within a NGC 205-like stellar background, while the initial separation of the SMBH binary is set according to the $M_{12}^{-5/8}$ scaling.\\While the SMBH binary reaches coalescence within approximately two hours of computational time\footnote{Both simulations are performed by using 1 CPU with 2.3 GHz clock speed.} on one CPU, the IMBH binary, over the same runtime, remains far from exhibiting the characteristic drop of separation due to efficient GW emission, as shown in Figure~\ref{fig:KETJU scaling check}.
 \begin{figure}[H]
     \centering
     \begin{subfigure}{0.49\linewidth}
         \centering
-        \includegraphics[width=\linewidth,height=5.5cm]{SMBH_check.png}
+        \includegraphics[width=\linewidth]{SMBH_check.png}
         \caption{Evolution of the semimajor axis of the SMBH binary with total mass $M_{12}=2\times10^8\,M_\odot$, normalized to the initial separation $a_0$. The track was reconstructed from a 2-hour simulation run on a single CPU.}
         \label{fig:SMBH check}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.49\linewidth}
         \centering
-        \includegraphics[width=\linewidth,height=5.5cm]{IMBH_check.png}
-        \caption{Evolution of the semimajor axis of the IMBH binary with total mass $M_{12}=2\times 4\times 10^4\,M_\odot$, normalized to the initial separation $a_0$. The track was reconstructed from a 2-hour simulation run on a single CPU.}
+        \includegraphics[width=\linewidth]{IMBH_check.png}
+        \caption{Evolution of the semimajor axis of the IMBH binary with total mass $M_{12}=8\times 10^4\,M_\odot$, normalized to the initial separation $a_0$. The track was reconstructed from a 2-hour simulation run on a single CPU.}
         \label{fig:IMBH check}
     \end{subfigure}
     \caption{Comparison of the semimajor axis evolution of SMBH (left) and IMBH (right) binaries, normalized to the respective initial separations $a_0$. Both evolutionary tracks were reconstructed from 2-hour simulation runs on a single CPU.}
     \label{fig:KETJU scaling check}
 \end{figure}
-To follow the complete dynamical evolution of the IMBH binary, from the merger of the stellar hosts to the final coalescence, we combine the $N$-body and hybrid approaches. During the numerical integration, KETJU periodically outputs a series of snapshots at fixed time intervals $\Delta t_{snap}$, containing the positions, velocities, masses, and IDs of all particles generated with OpOpGadget. In addition, it produces a separate series of files containing only the BBH information, e.g. $(t,a(t),e(t))$ ,which can be analysed using the KETJU-Utils analysis toolkit. The final snapshot can then be read with OpOpGadget, allowing us to perform the same analysis described at the end of \S~\ref{sec:Dynamical Equilibrium of Stellar Systems}. This procedure provides a physically motivated initial condition $(a_0,e_0)$ for the subsequent binary evolution, directly determined from the final KETJU state. Moreover, it allows us to derive the main quantities at the influence radius required by the hybrid model from the actual stellar background of the merger remnant. Overall, this approach combines the complementary strengths of the two methods: KETJU captures the dynamics of the galaxy merger and the subsequent hardening of the binary through stellar scattering, while the hybrid model can then be used to evolve the binary from a physically constrained stellar background and a initial condition.\\The numerical integration is stopped at the physical time $t_{snap} = 18.75\,\mathrm{TU} \simeq 18\,\mathrm{Myr}$. Figure~\ref{fig:Double_NGC205_NSC_BH_snap_scatter} shows the state of the system in its centre-of-mass reference frame $S_{CM}$ at the time of the final snapshot.
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Hybrid-Model Evolution of the Binary}
+
+Given the aforementioned limitations due to large KETJU computational times, to follow the complete dynamical evolution of the IMBH binary, from the merger of the stellar hosts to the final coalescence, we combine the $N$-body and hybrid approaches. During the numerical integration, KETJU periodically outputs a series of snapshots at fixed time intervals $\Delta t_{snap}$, containing the positions, velocities, masses, and IDs of all particles generated with OpOpGadget. In addition, it produces a separate series of files containing only the BBH information, e.g. $(t,a(t),e(t))$ ,which can be analysed using the KETJU-Utils analysis toolkit. The final snapshot can then be read with OpOpGadget, allowing us to perform the same analysis described at the end of \S~\ref{sec:Dynamical Equilibrium of Stellar Systems}. This procedure provides a physically motivated initial condition $(a_0,e_0)$ for the subsequent binary evolution, directly determined from the final KETJU state. Moreover, it allows us to derive the main quantities at the influence radius required by the hybrid model from the actual stellar background of the merger remnant. Overall, this approach combines the complementary strengths of the two methods: KETJU captures the dynamics of the galaxy merger and the subsequent hardening of the binary through stellar scattering, while the hybrid model can then be used to evolve the binary from a physically constrained stellar background and a initial condition.\\The numerical integration of the $N$-body simulation is stopped at the physical time $t_{snap} = 18.75\,\mathrm{TU} \simeq 18\,\mathrm{Myr}$. Figure~\ref{fig:Double_NGC205_NSC_BH_snap_scatter} shows the state of the system in its centre-of-mass reference frame $S_{CM}$ at the time of the final snapshot.
 
 \begin{figure}[H]
     \centering
     \begin{subfigure}{0.49\linewidth}
         \centering
-        \includegraphics[width=\linewidth,height=5.5cm]{Double_NGC205_NSC_BH_snap_scatter.png}
-        \caption{Positions of the initialized NSC stars (blue and red dots) and IMBHs (black dots) in the center-of-mass frame $S_{CM}$ at time $t_{snap}=18.75\,\mathrm{TU}$.
+        \includegraphics[width=\linewidth]{Double_NGC205_NSC_BH_snap_scatter.png}
+        \caption{Positions of the initialized NSC stars (blue and red dots) and IMBHs (black dots) at time $t_{snap}=18.75\,\mathrm{TU}$.
 }
         \label{fig:Double_NGC205_NSC_BH_snap_scatter}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.49\linewidth}
         \centering
-        \includegraphics[width=\linewidth,height=5.5cm]{Double_NGC205_NSC_BH_snap_BH_zoom.png}
+        \includegraphics[width=\linewidth]{Double_NGC205_NSC_BH_snap_BH_zoom.png}
         \caption{Zoom-in on the IMBH binary shown in Figure \ref{fig:Double_NGC205_NSC_BH_snap_scatter}. The dashed circle marks the KETJU regularized region at time $t_{snap}=18.75\,\mathrm{TU}$.
 }
         \label{fig:Double_NGC205_NSC_BH_snap_BH_zoom}
     \end{subfigure}
-    \caption{Positions of the two NSCs and their IMBH binary at $t_{snap}=18.75\,\mathrm{TU}$ in the center-of-mass frame $S_{CM}$, with a zoom-in on the KETJU regularized region shown on the right. }
+    \caption{Positions of the stellar particles and two IMBHs at $t_{snap}=18.75\,\mathrm{TU}$ of the head-on NSCs merging simulation, with a zoom-in on the KETJU regularized region shown on the right. Blue and red dots mark the stellar particles initially belonging to $NSC\,1$ and $NSC\,2$, respectively.}
     \label{fig:Double_NGC205_NSC_BH_snap}
 \end{figure}
-The two original stellar components appear to be well mixed, forming a more compact central core surrounded by diffuse outskirts, while the IMBH binary is located close to the centre of mass of the stellar distribution.\\From this configuration, the radial, i.e. angle-averaged, stellar density and cumulative mass profiles are derived using OpOpGadget, as shown in Figure~\ref{fig:Double_NGC205_snap_density_mass_profiles}(a) and (b), respectively.
+From this configuration, the radial, i.e. angle-averaged, stellar density and cumulative mass profiles are derived using OpOpGadget, as shown in Figure~\ref{fig:Double_NGC205_snap_density_mass_profiles}(a) and (b), respectively.\\The two original stellar components appear to be well mixed, forming a compact central core surrounded by diffuse outskirts, while the IMBH binary is located close to the centre of mass of the stellar distribution. Furthermore, Figure \ref{fig:Double_NGC205_snap_density_profile} shows that the stellar density profile is less compact than the initial NGC 205-like NSC profile, as highlighted by the comparison with the initial density profiles of either NSCs. This expansion can be attributed both to the redistribution of energy and angular momentum during galaxy mergers, as discussed in \S~\ref{sec:Galaxy Mergers and Violent Relaxation}, and to the energy and angular momentum transferred from the IMBH binary to the stellar system during the stellar-scattering-driven hardening phase.
 \begin{figure}[H]
     \centering
     \begin{subfigure}{0.49\linewidth}
@@ -2619,7 +2655,7 @@ The two original stellar components appear to be well mixed, forming a more comp
     \begin{subfigure}{0.49\linewidth}
         \centering
         \includegraphics[width=\linewidth,height=5.5cm]{Double_NGC205_snap_mass_profile.png}
-        \caption{Reconstructed cumulative mass profile of the remnant stellar system at $t_{snap}=18.75\,\mathrm{TU}$. The black horizontal dashed and dot-dashed lines mark twice the stellar mass and the binary mass, respectively, while the black vertical dotted line marks the binary influence radius, $r_{\mathrm{inf}}$.}
+        \caption{Reconstructed cumulative mass profile of the remnant stellar system at $t_{snap}=18.75\,\mathrm{TU}$. The black horizontal dashed and dot-dashed lines mark the total stellar mass and the binary mass, respectively, while the black vertical dotted line marks the binary influence radius, $r_{\mathrm{inf}}$.}
         \label{fig:Double_NGC205_snap_mass_profile}
     \end{subfigure}
     \caption{Reconstructed radial stellar density (left) and cumulative mass (right) profiles of the remnant stellar system at $t_{snap}=18.75\,\mathrm{TU}$.
@@ -2628,7 +2664,7 @@ The two original stellar components appear to be well mixed, forming a more comp
 \end{figure}
 Yet, imposing $M_*(<r_{inf})=2M_{12}$ yields an influence radius of $r_{inf} = 1.44\,\mathrm{pc}$ for the system at the time of the snapshot. This value is then used to compute the corresponding stellar mass density, which is given by
 $\rho_{inf} = 7.11\times10^4\,M_\odot/\mathrm{pc}^3$.\\Another functionality of OpOpGadget, not introduced so far but particularly useful at this stage, is the \texttt{Profile.vdisp3d()} module. This routine is used to construct the radial velocity-dispersion profile, shown in Figure \ref{Double_NGC205_snap_sigma_profile}, and to determine its value at the binary influence radius,
-$\sigma_{inf} = 23.3,\mathrm{km/s}$. Finally, substituting $\sigma_{inf}$ into Equation (\ref{Quinlan hardening radius}) gives $a_{h} = 0.16,\mathrm{pc}$.
+$\sigma_{inf} = 23.3\,\mathrm{km/s}$. Finally, substituting $\sigma_{inf}$ into Equation (\ref{Quinlan hardening radius}) gives the binary hardening radius $a_{h} = 0.16\,\mathrm{pc}$.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{Double_NGC205_snap_sigma_profile.png}
@@ -2640,11 +2676,11 @@ The last quantity required by the hybrid model before starting the numerical int
 a(t)=\left[\frac{1}{a_{in}}+\frac{G\rho_{inf}H(a_{in})}{\sigma_{inf}}LCN(t-t_{in})\right]^{-1}
 \label{best fit curve}
 \end{equation}
-obtained by integrating Equation (\ref{H Q96}), under the assumption that $H_u$ remains approximately constant in this regime, as discussed in \S~\ref{sec:Quinlan-Sesana Hybrid Model}. This operation, shown in Figure \ref{Double_NGC205_LCR_fit}, yields $LCN=14.00 \pm 0.03$.
+obtained by integrating Equation (\ref{H Q96}), under the assumption that $H_u$ remains approximately constant in this regime, as discussed in \S~\ref{sec:Quinlan-Sesana Hybrid Model}. This operation, shown in Figure \ref{Double_NGC205_LCR_fit}, yields $LCN=14.04 \pm 0.03$.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{Double_NGC205_LCR_fit.png}
-    \caption{Best-fit curve (orange solid line), defined by Equation~\ref{best fit curve}, to the KETJU output (blue dots) over the range from $0.1a_h$ to the IMBH binary separation at the end of the KETJU numerical simulation.}
+    \caption{Best-fit curve (orange solid line), defined by Equation~\ref{best fit curve}, to the KETJU output (blue dots) over the range from $0.1a_h\approx 0.01$ pc to the IMBH binary separation at the end of the KETJU numerical simulation $a_{out}\approx 10^{-4}$ pc.}
     \label{Double_NGC205_LCR_fit}
 \end{figure}
 Once all the required quantities have been determined, the hybrid-model differential Equations (\ref{hybrid model used differential equations}), with $\rho_{inf}$ replaced by $LCN\cdot \rho_{inf}$, are integrated starting from the IC $(t_0,a_0,e_0) = (18.35\,\mathrm{Myr},\,1.94\times10^{-4}\,\mathrm{pc},\, 0.90)$, corresponding to the final KETJU binary output. This allows us to follow the IMBH binary evolution down to a separation equal to its Schwarzschild radius $R_s$, as shown in Figure~\ref{fig:Double_NGC205_a_e_vs_t.png}(a)-(b), where the KETJU and hybrid-model pieces of evolutionary tracks are shown together.
@@ -2663,11 +2699,21 @@ Once all the required quantities have been determined, the hybrid-model differen
         \caption{IMBH binary eccentricity time evolution.}
         \label{fig:Double_NGC205_e_vs_t}
     \end{subfigure}
-    \caption{IMBH binary evolutionary tracks reconstructed by combining KETJU numerical simulation and the Quinlan-Sesana hybrid model. Both plots are divided into three regions: “MERGER” denotes the phase, followed with KETJU, during which the IMBHs are still unbound and no output is provided by KETJU; “KETJU” denotes the subsequent binary dynamical evolution directly reconstructed from the KETJU simulation; and “HYBRID” denotes the remaining evolutionary track obtained with the hybrid model.
+    \caption{IMBH binary evolutionary tracks reconstructed by combining KETJU numerical simulation and the Quinlan-Sesana hybrid model for the head-on NSC merging simulation. Both plots are divided into three regions: “N-body (Unbound binary)” denotes the phase, followed with KETJU, during which the IMBHs are still unbound and no output is provided by KETJU; “N-body (Bound binary)” denotes the subsequent binary dynamical evolution directly reconstructed from the KETJU simulation; and “Hybrid model” denotes the remaining evolutionary track obtained with the hybrid model.
 }
     \label{fig:Double_NGC205_a_e_vs_t.png}
 \end{figure}
-Figure \ref{fig:Double_NGC205_a_e_vs_t.png}(a) and (b) warrant further discussion. First, the label "MERGER", shown on the left-hand side of both panels, has been added to highlight the phase in which the two IMBHs are still unbound and the system is being numerically evolved with KETJU. During this stage, KETJU does not provide the usual binary output, as indicated by the absence of any curve to the left of the "KETJU" regions. Then, although the eccentricity evolution reconstructed from KETJU is relatively noisy, it still exhibits an increasing trend during the stellar-scattering phase, as discussed in \S~\ref{sec:NGC 205 IMBH Binary evolution}. By contrast, the binary separation is less affected by numerical fluctuations and displays a smooth evolution, in good agreement with the evolutionary tracks presented in \S~\ref{sec:NGC 205 IMBH Binary evolution}.\\The resulting coalescence timescale, here defined as the time elapsed from the beginning of the merger simulated with KETJU to the final coalescence reached with the hybrid model, is $\tau_{coal}= 26.45 \,\mathrm{Myr}$. Most importantly, this timescale is of the same order of magnitude as those obtained in \S~\ref{sec:NGC 205 IMBH Binary evolution} for different initial eccentricities $e_0$, providing further support for the hybrid-model approach. It is worth noting that, although, in this chapter, the coalescence time is measured from an earlier stage of the binary evolution than in the definition adopted in Chapter~\ref{chap:chapter2}, the value $LCN>1$ indicates that stellar-scattering hardening is more efficient in the merger remnant than assumed in the previous calculations, where $LCN=1$, promoting a faster orbital decay.\\We conclude this chapter by presenting the same analysis for different merger configurations involving a high-redshift, stellar clumps.
+Figure \ref{fig:Double_NGC205_a_e_vs_t.png}(a) and (b) warrant further discussion. First, the label "MERGER", shown on the left-hand side of both panels, has been added to highlight the phase in which the two IMBHs are still unbound and the system is being numerically evolved with KETJU. During this stage, KETJU does not provide the usual binary output, as indicated by the absence of any curve to the left of the "KETJU" regions. Then, although the eccentricity evolution reconstructed from KETJU is relatively noisy, it still exhibits an increasing trend during the stellar-scattering phase, as discussed in \S~\ref{sec:NGC 205 IMBH Binary evolution}. By contrast, the binary separation is less affected by numerical fluctuations and displays a smooth evolution, in good agreement with the evolutionary tracks presented in \S~\ref{sec:NGC 205 IMBH Binary evolution}.\\The resulting coalescence timescale, here defined as the time elapsed from the beginning of the merger simulated with KETJU to the final coalescence reached with the hybrid model, is $\tau_{coal}= 26.45 \,\mathrm{Myr}$. Most importantly, this timescale is of the same order of magnitude as those obtained in \S~\ref{sec:NGC 205 IMBH Binary evolution} for different initial eccentricities $e_0$, providing further support for the hybrid-model approach. It is worth noting that, although, in this chapter, the coalescence time is measured from an earlier stage of the binary evolution than in the definition adopted in Chapter~\ref{chap:chapter2}, the value $LCN>1$ indicates that stellar-scattering hardening is more efficient in the merger remnant than assumed in the previous calculations, where $LCN=1$, promoting a faster orbital decay.\\We conclude this chapter by presenting a suite of numerical simulations, similar to that presented in this Section, but involving different stellar systems, that is high-redshift stellar clumps, and exploring also the effects of varying the initial, orbital, angular momentum.
+
+
+
+
+
+
+
+
+
+the same analysis for different merger configurations involving a .
 
 
 
@@ -2696,42 +2742,51 @@ v_x = \frac{v_{90}}{\sqrt{1+\tan^2\theta}},
 v_y = v_x\tan\theta,
 \end{equation}
 with opposite signs for the two systems to ensure their prescribed relative motion. This setup preserves the magnitude of the initial relative velocity, and hence the parabolic nature of the encounter, while introducing a non-zero tangential component for $\theta>0^\circ$. The resulting sequence of simulations therefore provides a controlled test of how increasing orbital angular momentum affects the dynamical evolution of IMBH pairs during stellar-clump mergers.\\Model 1, Model 2, Model 3 and Model 4 generated initial conditions are shown in Figures \ref{fig:Model_4_0deg_scatter}, \ref{fig:Model_4_10deg_scatter}, \ref{fig:Model_4_20deg_scatter} and \ref{fig:Model_4_30deg_scatter}, respectively.
+
+
+
+
 \begin{figure}[H]
     \centering
 
-    \begin{subfigure}[b]{0.48\textwidth}
+    \begin{subfigure}[t]{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Model_4_0deg_scatter.png}
-        \caption{Model 1 $(\theta=0^\circ)$: Positions of the initialized stellar clumps stars (blue and red dots) and IMBHs (black dots) in the center-of-mass frame $S_{CM}$. The black arrows indicate the initial bulk velocities of the two stellar clumps, with lengths corresponding to the displacement over their average half-mass dynamical time. The dashed circles mark the spheres containing $90\,\%$ of the total mass for each NSC.}
+        \caption{Model 1 ($\theta=0^\circ$): Positions of the initialized stellar clumps and IMBHs in the center-of-mass frame $S_{CM}$. The black arrows indicate the initial bulk velocities of the two stellar clumps, with lengths corresponding to the displacement over their average half-mass dynamical time. The dashed circles mark the spheres containing $90\,\%$ of the total mass for each NSC.}
         \label{fig:Model_4_0deg_scatter}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[b]{0.48\textwidth}
+    \begin{subfigure}[t]{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Model_4_10deg_scatter.png}
-        \caption{Model 2 $(\theta=10^\circ)$: Positions of the initialized stellar clumps stars (blue and red dots) and IMBHs (black dots) in the center-of-mass frame $S_{CM}$. The black arrows indicate the initial bulk velocities of the two stellar clumps, with lengths corresponding to the displacement over their average half-mass dynamical time. The dashed circles mark the spheres containing $90\,\%$ of the total mass for each NSC.}
+        \caption{Same as in panel (a), but for Model 2 ($\theta=10^\circ$).}
         \label{fig:Model_4_10deg_scatter}
     \end{subfigure}
 
     \vspace{0.5cm}
 
-    \begin{subfigure}[b]{0.48\textwidth}
+    \begin{subfigure}[t]{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Model_4_20deg_scatter.png}
-        \caption{Model 3 $(\theta=20^\circ)$: Positions of the initialized stellar clumps stars (blue and red dots) and IMBHs (black dots) in the center-of-mass frame $S_{CM}$. The black arrows indicate the initial bulk velocities of the two stellar clumps, with lengths corresponding to the displacement over their average half-mass dynamical time. The dashed circles mark the spheres containing $90\,\%$ of the total mass for each NSC.}
+        \caption{Same as in panel (a), but for Model 3 ($\theta=20^\circ$).}
         \label{fig:Model_4_20deg_scatter}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[b]{0.48\textwidth}
+    \begin{subfigure}[t]{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Model_4_30deg_scatter.png}
-        \caption{Model 4 $(\theta=30^\circ)$: Positions of the initialized stellar clumps stars (blue and red dots) and IMBHs (black dots) in the center-of-mass frame $S_{CM}$. The black arrows indicate the initial bulk velocities of the two stellar clumps, with lengths corresponding to the displacement over their average half-mass dynamical time. The dashed circles mark the spheres containing $90\,\%$ of the total mass for each NSC.}
+        \caption{Same as in panel (a), but for Model 4 ($\theta=30^\circ$).}
         \label{fig:Model_4_30deg_scatter}
     \end{subfigure}
 
     \caption{Spatial distribution of the stellar particles and IMBHs for the four initial configurations of Model 4, corresponding to different inclination angles.}
     \label{fig:All_Model_IC_scatter}
 \end{figure}
+
+
+
+
+
 All four numerical experiments encountered the same bottleneck towards the end of the stellar-scattering phase, preventing the simulations from following the subsequent binary evolution to coalescence. We therefore resumed the evolution using the Quinlan–Sesana hybrid model, following the procedure described in \S~\ref{sec:IMBH Binary Evolution with KETJU High-Resolution Simulations of NSCs Merger}. Table \ref{tab:Stellar clumps hybrid model parameters} summarises the binary orbital parameters at the end of each KETJU simulation, at time $t_{\mathrm{snap}}$, which serve as initial conditions for the hybrid model, together with the quantities required to integrate the subsequent evolution.
 \begin{table}[H]
 \centering
@@ -2854,28 +2909,30 @@ The resulting coalescence timescales are $\tau_{\mathrm{coal}}=()$ for Models 1�
 \chapter*{Discussion and Conclusions}
 \addcontentsline{toc}{chapter}{Discussion and Conclusions}
 
-This thesis investigated the dynamical evolution of intermediate-mass black hole (IMBH) binaries embedded in various stellar environments. The main objectives were to reconstruct their evolutionary tracks, namely the time evolution of IMBH binaries separation and eccentricity, and to estimate their coalescence times across a representative range of the parameter space. To this end, two complementary approaches were employed: the self-consistent hybrid model developed by \textcite{Quinlan_1996} and \textcite{Sesana_2010}, presented in Chapter \ref{chap:chapter2}, and direct $N$-body simulations performed with KETJU, presented in Chapter \ref{chap:chapter3}.\\The computational efficiency of the hybrid approach allowed an extensive exploration of the parameter space for IMBH binaries embedded in fixed, isotropic stellar backgrounds. In \S~\ref{sec:Stellar Cusps IMBH Binary Evolution}, the evolution of the same IMBH binary was studied within stellar cusps characterized by different density slopes, while keeping the initial conditions fixed. The results confirmed that a higher central stellar density enhances the efficiency of stellar-scattering-driven binary hardening, thereby shortening the timescale to coalescence \parencite{Sesana_2010}.\\Motivated by these results, \S~\ref{sec:NGC 205 IMBH Binary evolution} focused on an IMBH binary evolving within a present-day, nucleated dwarf galaxy, built taking as a reference model NGC 205. Concurrently, we assessed the extent to which the initial orbital eccentricity influences the subsequent hardening and coalescence of the binary.\\The main results can be summarized as follows:
+This thesis investigated the dynamical evolution of intermediate-mass black hole (IMBH) binaries embedded in various stellar systems. The main objectives were to reconstruct their evolutionary tracks, namely the time evolution of IMBH binaries separation and eccentricity, and to estimate their coalescence times across a representative range of the parameter space. To this end, two complementary approaches were employed: the hybrid model developed by \textcite{Quinlan_1996} and \textcite{Sesana_2010}, presented in Chapter \ref{chap:chapter2}, and $N$-body simulations performed with KETJU code, presented in Chapter \ref{chap:chapter3}.\\The computational efficiency of the hybrid approach allowed an extensive exploration of the parameter space for IMBH binaries embedded in fixed, isotropic stellar backgrounds. In \S~\ref{sec:Stellar Cusps IMBH Binary Evolution}, the evolution of the same IMBH binary was studied within stellar cusps characterized by different density slopes, while keeping the IMBH binaries  initial separation and eccentricity fixed. The results confirmed that a higher central stellar density enhances the efficiency of stellar-scattering-driven binary hardening, thereby shortening the timescale to coalescence \parencite{Sesana_2010}.\\Motivated by these results, \S~\ref{sec:NGC 205 IMBH Binary evolution} focused on an IMBH binary evolving within a present-day, nucleated dwarf galaxy, built taking as a reference model the nucleated, dwarf galaxy NGC 205, belonging to the local group. Concurrently, we assessed the extent to which the initial orbital eccentricity influences the subsequent hardening and coalescence of the binary.\\The main results on present-day, nucleated, dwarf galaxies can be summarized as follows:
 \begin{enumerate}
-\item Binaries entering the stellar-scattering hardening phase with higher eccentricities tend to further increase their eccentricity, thereby reaching the GW-dominated regime at larger separations and coalescing on shorter timescales \parencite{Sesana_2010}.
-\item The exceptionally high central stellar density of an NSC can sustain efficient binary hardening and lead to coalescence timescales of only a few tens of $\mathrm{Myr}$ \parencite{Khan_2021}. This result indicates that GW signals from IMBH binaries hosted by NSCs could, in principle, be observable in the present Universe even if the formation of a bound binary occurred relatively recently.
+\item Binaries entering the stellar-scattering hardening phase with higher eccentricities tend to further increase their eccentricity, thereby reaching the GW-dominated regime at larger separations and coalescing on shorter timescales, in agreement with the results of \textcite{Sesana_2010}.
+\item The exceptionally high central stellar density of an NSC can sustain efficient binary hardening and lead to coalescence timescales of only a few tens of $\mathrm{Myr}$, as also found by \textcite{Khan_2021}. This result indicates that GW signals from IMBH binaries hosted by NSCs could, in principle, be observable in the present Universe even if the formation of a bound binary occurred relatively recently.
 \end{enumerate}
-In \S~\ref{sec:Evolution of an IMBH binary in a non nucleated present-day dwarf}, the same experiment was performed using the bulge of NGC~205 as a reference model for a present-day non-nucleated dwarf galaxy. The main outcome is that the low stellar density leads to coalescence timescales exceeding the Hubble time, thereby hindering the detection of the binary inspiral GW signal within the present age of the Universe.\\The final part of Chapter \ref{chap:chapter2}, \S~\ref{sec:Cosmic Size Evolution Down to NGC 205}, extended the analysis to non-nucleated, high-redshift galaxies through a series of numerical experiments. Since galaxies at fixed stellar mass are expected to become progressively more compact towards higher redshifts, a sequence of high-$z$ galaxy models was constructed by applying the empirical cosmic size evolution formula, provided by \textcite{Ono_2023}, to the stellar bulge of NGC 205, adopted as the present-day ($z=0$) endpoint of the sequence of non-nucleated galaxies all sharing the same mass. For each galaxy model, corresponding to redshifts of IMBH binary pairing, and ranging from $z=0$ to $z=12$ in steps of $\Delta z=0.5$, and for a range of initial binary eccentricities, $e_0=(0.1,0.3,0.5,0.7,0.9)$, the corresponding evolutionary tracks were reconstructed. This allowed us to address which combinations of galaxy redshift, and hence look-back time, and initial eccentricity enable the same IMBH binary to coalesce within the present age of the Universe.\\The main conclusions are:
+In \S~\ref{sec:Evolution of an IMBH binary in a non nucleated present-day dwarf}, the same experiment was performed using the bulge of NGC~205 as a reference model for a present-day, non-nucleated, dwarf galaxy. The main outcome is that the low stellar density leads to coalescence timescales exceeding the Hubble time, thereby hindering the detection of the binary inspiral GW signal within the present age of the Universe (see, e.g., \citealt{Khan_2024}).\\The final part of Chapter \ref{chap:chapter2}, \S~\ref{sec:Cosmic Size Evolution Down to NGC 205}, extended the analysis to non-nucleated, high-redshift galaxies through a series of numerical experiments. Since galaxies at fixed stellar mass are expected to become progressively more compact towards higher redshifts, a sequence of high-$z$ galaxy models was constructed by applying the empirical cosmic size evolution formula, provided by \textcite{Ono_2023}, to the stellar bulge of NGC 205, adopted as the present-day ($z=0$) endpoint of the sequence of non-nucleated galaxies all sharing the same mass. For each galaxy model, corresponding to redshifts of IMBH binary pairing, and ranging from $z=0$ to $z=12$ in steps of $\Delta z=0.5$, and for a range of initial binary eccentricities, $e_0=(0.1,0.3,0.5,0.7,0.9)$, the corresponding evolutionary tracks were reconstructed. This allowed us to address which combinations of galaxy redshift, and hence look-back time, and initial eccentricity enable the same IMBH binary to coalesce within the present age of the Universe.\\The main conclusions on compact, high-z, non-nucleated dwarf galaxies are:
 \begin{enumerate}
-\item Typical low-redshift, non-nucleated dwarf galaxies do not provide sufficiently dense stellar environments to sustain efficient loss-cone replenishment. As a result, IMBH binaries can undergo prolonged stalling, with coalescence timescales exceeding the Hubble time.
-\item High-redshift, non-nucleated galaxies, owing to their enhanced compactness, may host IMBH binaries capable of producing GW signals detectable by future observatories such as LISA and ET, provided that the binaries form sufficiently early in cosmic history.
+\item Typical low-redshift, non-nucleated dwarf galaxies do not provide sufficiently dense stellar environments to sustain efficient loss-cone replenishment. As a result, IMBH binaries can undergo prolonged stalling, with coalescence timescales exceeding the Hubble time (see also \citealt{Khan_2024}).
+\item High-redshift, non-nucleated galaxies, owing to their enhanced compactness, may host IMBH binaries that can coalesce before $z=0$, producing GW signals detectable by future observatories such as LISA and ET, provided that the binaries form sufficiently early in cosmic history.
 \end{enumerate}
-In light of these results, the same astrophysical problem is investigated in Chapter \ref{chap:chapter3} through a suite of direct, high-resolution $N$-body simulations performed with KETJU \parencite{Mannerkoski_2023}. The algorithmically regularized integrator \texttt{mstar} enables the accurate treatment of close BH-star interactions without using any gravitational softening. However, its limited parallelization makes these simulations computationally demanding, preventing the direct $N$-body calculation from covering the entire IMBH binary evolution. The final stages of the evolution were therefore completed using the hybrid model presented in chapter \ref{chap:chapter2}.\\First, in \S~\ref{sec:IMBH Binary Evolution with KETJU High-Resolution Simulations of NSCs Merger}, a head-on, parabolic merger between two identical $N$-body realizations of NGC 205 NSC, each hosting an IMBH, was simulated. The main results can be summarized as follows:
+In light of these results, the same astrophysical problem has been investigated in Chapter \ref{chap:chapter3} through a suite of high-resolution, $N$-body simulations performed with KETJU code \parencite{Mannerkoski_2023}. The algorithmically regularized integrator \texttt{mstar} enables the accurate treatment of close BH-star interactions without using any gravitational softening. However, its limited parallelization makes these simulations computationally demanding, preventing the direct $N$-body calculation from covering the entire IMBH binary evolution, at least with the computing facilities available for the present thesis (8 CPUs with $2.2$ GHz clock speed). The final stages of the evolution were therefore completed using the hybrid model presented in chapter \ref{chap:chapter2}.\\First, in \S~\ref{sec:IMBH Binary Evolution with KETJU High-Resolution Simulations of NSCs Merger}, a head-on, parabolic merger between two identical $N$-body realizations of a NGC 205-like NSC, each hosting an IMBH, was simulated. The main results on merging NSCs can be summarized as follows:
 \begin{enumerate}
-\item The merger breaks the spherical symmetry assumed by the hybrid model, enhancing loss-cone replenishment, resulting in a shortening of the stellar-scattering-driven phase.
-\item The resulting coalescence timescale is comparable to that obtained in the numerical experiments presented in \S~\ref{sec:NGC 205 IMBH Binary evolution}, amounting to a few tens of $\mathrm{Myr}$ and supporting the consistency between the two approaches.
+\item The merger breaks the spherical symmetry and the isotropy assumed by the hybrid model, enhancing loss-cone replenishment, resulting in a shortening of the stellar-scattering-driven phase.
+\item The resulting coalescence timescale is comparable to that obtained in the numerical experiments presented in \S~\ref{sec:NGC 205 IMBH Binary evolution}, amounting to a few tens of $\mathrm{Myr}$ and supporting the consistency between the hybrid and $N$-body approaches.
 \end{enumerate}
-Lastly, \S~\ref{sec:KETJU IMBH Binary evolution from Parabolic Encounters of Stellar Clumps} presented a suite of KETJU simulations addressing whether massive stellar clumps in high-redshift galaxies can host GW sources if they harbour central IMBHs. To this end, were simulated parabolic encounters between observationally motivated stellar systems, each containing an IMBH, with different initial angular momenta \parencite{Eros_2026}. The results obtained show that:
+Lastly, \S~\ref{sec:KETJU IMBH Binary evolution from Parabolic Encounters of Stellar Clumps} presented a suite of KETJU simulations addressing whether massive stellar clumps in high-redshift galaxies can host GW sources if they harbour central IMBHs. To this end, we simulated parabolic encounters between observationally motivated stellar systems, each containing an IMBH, with different initial angular momenta \parencite{Eros_2026}. The results obtained for the high-z stellar clump mergers show that:
 \begin{enumerate}
 \item Increasing the initial angular momentum leads to a lower eccentricity of the IMBH binary at the moment of pairing.
 \item Increasing the initial angular momentum gives rise to longer coalescence timescales
-\item At sufficiently high redshift, these stellar environments can provide a viable evolutionary pathway towards IMBH coalescence within $z=0$, making them potential sites for the formation of gravitational-wave sources detectable by LISA or ET.
+\item At sufficiently high redshift, these stellar systems, i.e. stellar clump merger remnants, can provide a viable evolutionary pathway towards IMBH coalescence within $z=0$, making them potential sites for the generation of gravitational-wave sources detectable by LISA or ET.
 \end{enumerate}
-\paragraph{Future perspectives.}
+\begin{center}
+\textbf{Future Perspectives}
+\end{center}
 The results presented in this thesis open several directions for future work. These can be broadly divided into two complementary lines. The first concerns extensions of the present study, aimed at relaxing some of its assumptions and exploring additional physical processes and initial configurations. The second involves related research topics that build upon the results obtained here, extending the analysis towards other aspects of the formation, evolution, and observational signatures of IMBH binaries. The main prospects along these two lines are outlined below.
 \paragraph{Exploring the parameter space.}
 The parameter space relevant to this astrophysical problem remains far from being comprehensively explored. Further numerical experiments, building upon and complementing those presented in this thesis, could therefore investigate a broader range of initial configurations and physical processes not considered in the present work. The most relevant directions include:
@@ -2892,7 +2949,7 @@ A natural extension of the present work would be to connect the dynamical evolut
 \begin{itemize}
 \item Reconstructing the time evolution of the binary semimajor axis $a(t)$ and eccentricity $e(t)$.
 \item Determining the coalescence time of the binary from the onset of the pairing phase.
-\item Deriving the spectral energy distribution (SED) of the emitted gravitational radiation from the predicted binary orbital evolution.
+\item Deriving the spectral energy distribution of the emitted gravitational radiation from the predicted binary orbital evolution.
 \item Generating the corresponding gravitational-wave waveform and assessing its detectability with current and future observatories.
 \end{itemize}
 

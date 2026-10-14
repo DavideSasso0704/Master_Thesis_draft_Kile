@@ -28,10 +28,11 @@
 \contentsline {subsection}{\numberline {3.1.2}Generation of N-Body Initial Conditions with OpOpGadget}{69}{subsection.3.1.2}%
 \contentsline {subsection}{\numberline {3.1.3}Testing the Dynamical Equilibrium of OpOpGadget Initial Conditions with KETJU}{73}{subsection.3.1.3}%
 \contentsline {section}{\numberline {3.2}Evolution of an IMBH Binary in an N-body Simulation of Merging NSCs}{76}{section.3.2}%
-\contentsline {section}{\numberline {3.3}KETJU IMBH Binary evolution from Parabolic Encounters of Stellar Clumps}{85}{section.3.3}%
+\contentsline {subsection}{\numberline {3.2.1}N-body Simulation}{77}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Hybrid-Model Evolution of the Binary}{81}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}KETJU IMBH Binary evolution from Parabolic Encounters of Stellar Clumps}{86}{section.3.3}%
 \contentsline {chapter}{Discussion and Conclusions}{91}{chapter*.50}%
-\contentsline {paragraph}{Future perspectives.}{92}{Item.23}%
 \contentsline {paragraph}{Exploring the parameter space.}{93}{Item.23}%
 \contentsline {paragraph}{Reconstruction of the GW signal.}{93}{Item.23}%
 \contentsline {paragraph}{NSC and IMBH formation via collision runaway.}{93}{Item.23}%
-\contentsline {paragraph}{From galaxy mergers to the IMBH merger rate.}{93}{Item.23}%
+\contentsline {paragraph}{From galaxy mergers to the IMBH merger rate.}{94}{Item.23}%
